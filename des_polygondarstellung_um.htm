@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Polygondarstellung</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Maßkettenpunkte,Maßkettenpunkte einblenden/ausblenden,Polygonpunkte einblenden" />
+   <meta name="description" content="(untere Menüleiste) &nbsp;Die Polygondarstellung ist eine unterstützende Funktion, die Ihnen die Selektion und Bearbeitung von Elementgruppen erleichtert. Verwenden Sie diese Funkt" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_messen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_lkt.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Polygondarstellung</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_um_polygon" style="margin:0;width:0.3542in;height:0.2500in;border:none" src="i_um_polygon.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">(untere Men&uuml;leiste)</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Polygondarstellung ist eine unterst&uuml;tzende Funktion, die Ihnen die Selektion und Bearbeitung von Elementgruppen erleichtert.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Verwenden Sie diese Funktion, um bei der Bearbeitung (Verschieben, Kopieren, Dehnen usw.) besser zu erkennen, welche Zeichenelemente in der Selektion enthalten und im Bearbeitungsschritt ge&auml;ndert werden. So lassen sich inneinander geschachtelte oder sich &uuml;berlappende ISBCAD Gruppen pr&auml;ziser selektieren.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Beispiel: Polygontyp Vouten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In ISBCAD werden bei bestimmten Funktionen Fl&auml;chenbereiche abgesteckt, die f&uuml;r die Ausf&uuml;hrung einer Funktion notwendig sind. Beispielsweise muss f&uuml;r eine Voutenverlegung zun&auml;chst ein Umriss definiert werden, in dem die Voute gezeichnet werden soll. ISBCAD speichert diese Umrisse als Polygone ab, die aus Polygonpunkten und Verbindungslinien bestehen, und mit dieser Funktion eingeblendet werden k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.6771in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="SCR_polygon_beispiel_voute" style="margin:0;width:4.2396in;height:1.5104in;border:none" src="scr_polygon_beispiel_voute.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:4.6667in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="SCR_polygon_beispiel_voute_transparenz" style="margin:0;width:4.2396in;height:1.5104in;border:none" src="scr_polygon_beispiel_voute_transparenz.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.6771in; padding:0.0208in;"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Polygonpunkt; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Verbindungslinie</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:4.6667in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f__Bild_Legende_normal">Polygondarstellung mit Musterf&uuml;llung. Fl&auml;chen&uuml;berlappung ist sichtbar.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Die Polygonpunkte der Elemente werden mit dem Cursor gefangen und k&ouml;nnen als Referenzpunkte bei der Konstruktion angeklickt werden. Stellen Sie dabei sicher, dass die Elemente oder ihre Folie nicht gesperrt ist oder sie im Elemente-Filter von der Bearbeitung ausgeschlossen sind.</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Auf der Zeichnung eingeblendete Polygone werden nicht gedruckt.</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Die Einstellungen im Dialog </span><span class="f__Software_Element_deskriptiv">Ma&szlig;kettenpunkte und</span><span class="f_A_Allgemein"> </span><span class="f__Software_Element_deskriptiv">Polygone anzeigen</span><span class="f_A_Allgemein"> werden dauerhaft gespeichert und in neue Zeichnungen &uuml;bernommen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Ma&szlig;kettenpunkte und Polygone anzeigen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Polygone_anzeigen" style="margin:0;width:2.8229in;height:4.6667in;border:none" src="d_polygone_anzeigen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Punkte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;kettenpunkte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ja.png"/> in die Checkbox, um Ma&szlig;kettenpunkte an der Geometrie einzublenden. Entfernen Sie den Haken <img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/> , um die Punkte auszublenden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_masskettenpunkte" style="margin:0;width:2.4583in;height:1.1667in;border:none" src="scr_masskettenpunkte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Polygone</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_R_Option"> alle anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um alle Polygone ein- bzw. auszublenden, klicken Sie in die </span><span class="f__Software_Element_deskriptiv">alle anzeigen</span><span class="f_R_Option_Beschreibung">-Checkbox. Wenn mindestens ein Polygontyp ein- oder ausgeblendet ist, wird dieses Symbol <img alt="I_Checkbox-square" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-square.png"/> angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gespeicherte Polygone (Liste)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ja.png"/> in die Checkbox, um die Polygone in der Zeichnung anzuzeigen. Entfernen Sie den Haken <img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/> , um Polygone auszublenden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die folgenden Polygontypen k&ouml;nnen ein- oder ausgeblendet werden:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Schraffuren und F&uuml;llungen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Schraffur- und F&uuml;llungspolygone.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Sparrenverteilungen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone der Sparrenverteilungen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Nagelbilder - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone der Nagelbilder.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Massen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone der Massenermittlung.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">D&uuml;belleisten - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone der Funktion [</span><span class="f__Software_Element_deskriptiv">Bautl</span><span class="f_L_Listeneintrag">]: St&uuml;tze Rechteck, St&uuml;tze Kreis, Wandende und Wandecke. Bei der Kreisst&uuml;tze werden zus&auml;tzlich zum Kreiselement die freien Kanten dargestellt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Mattenverlegungen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone von Verlegungen im Rechteck [</span><span class="f__Software_Element_deskriptiv">VerRec</span><span class="f_L_Listeneintrag">] und Verlegungen im Polygon [</span><span class="f__Software_Element_deskriptiv">VerPol</span><span class="f_L_Listeneintrag">].</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Vouten - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone von Voutenverlegungen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">automatische Fl&auml;chenbewehrungen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone der automatischen Bewehrung [</span><span class="f__Software_Element_deskriptiv">AutBew</span><span class="f_L_Listeneintrag">], automatischen Bewehrung mit Bewehrungsteppichen [</span><span class="f__Software_Element_deskriptiv">BAMTEC</span><span class="f_L_Listeneintrag">] und der Fl&auml;chenbewehrung [</span><span class="f__Software_Element_deskriptiv">Fl&auml;Bew</span><span class="f_L_Listeneintrag">].</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Stahlliste auf dem Plan - </span><span class="f_L_Listeneintrag">Dargestellt werden die </span><span class="f_R_Option_Beschreibung">Diagonalpunkte der Stahlliste. Die Verbindungslinien werden immer horizontal und vertikal bezogen auf einen Systemwinkel von 0&ordm; gezeichnet.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.1771in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Blattrahmen - </span><span class="f_L_Listeneintrag">Dargestellt werden die Polygone des Druck- und Freibereichs. Diese Bereiche werden mit der Funktion [</span><span class="f__Software_Element_deskriptiv">RaEinf</span><span class="f_L_Listeneintrag">] definiert.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Transparenz (Musterf&uuml;llung)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um Fl&auml;chen oder auch eine &Uuml;berlappung von Fl&auml;chen besser zu erkennen, k&ouml;nnen geschlossene Polygone mit einem Schachbrettmuster gef&uuml;llt werden. Sie k&ouml;nnen die Transparenz des Musters einstellen, indem Sie den Schieberegler mit gedr&uuml;ckter Maustaste bewegen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_polygon_steuerelement_transparenz" style="margin:0;width:2.4375in;height:0.5000in;border:none" src="scr_polygon_steuerelement_transparenz.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">0 % (links) = vollst&auml;ndig deckend</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">ca. 50 % (mittig) = halb transparent</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">100 % (rechts) = keine F&uuml;llung</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Die Musterfarbe entspricht der eingestellten Farbe f&uuml;r die Darstellung der Polygone.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Bei F&uuml;llungen, die mit [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Schraff</span><span class="f_R_Option_Beschreibung">] erstellt wurden, werden lediglich die Polygonpunkte dargestellt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdatem_konstruktionsprogramm.htm" class="topiclink" title="Systemdaten">Gr&ouml;&szlig;e der Polygonpunkte einstellen (Systemdaten)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdatem_konstruktionsprogramm.htm" class="topiclink" title="Systemdaten">Gr&ouml;&szlig;e der Ma&szlig;kettenpunkte einstellen (Systemdaten)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Systemdaten - Farbeinstellung">Farbeinstellung f&uuml;r Polygone &auml;ndern (Systemdaten)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Systemdaten - Farbeinstellung">Farbeinstellung f&uuml;r Ma&szlig;kettenpunkte &auml;ndern (Systemdaten)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink">Auswahlfunktionen (Selektion)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_elemente-filter.htm" class="topiclink" title="Elemente-Filter (Dialog)">Elemente-Filter (Dialog)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_eleatr.htm" class="topiclink" title="Elemente sperren, freigeben, in Ebenen sortieren">Elemente sperren, freigeben, in Ebenen sortieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_umenue.htm" class="topiclink" title="Funktionen in der unteren Menüleiste">Funktionen in der unteren Men&uuml;leiste</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

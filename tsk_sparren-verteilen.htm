@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sparren verteilen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Dach,Holzbau,Holzbau Sparren bearbeiten,Sparren" />
+   <meta name="description" content="Für die Sparreneinteilung muss ein Polygon vorhanden sein, bei dem die erste und letzte Linie nicht parallel verlaufen, z. B. aus der Dachausmittlung. Weitere Unterteilungen kö" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="holzbau.htm">Holzbau</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_dach-ausmitteln.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="holzbau.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_sparrenbild-oder-einzelsparren-aendern.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Sparren verteilen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="holzbau.htm" class="topiclink" title="Holzverbindungen (Funktionsübersicht)"><img alt="Holzverbindungen (Funktionsübersicht)" title="Holzverbindungen (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_holzb.png"/></a> <img alt="B-akt_SpaVer_Holzb" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_spaver_holzb.png"/></span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">F&uuml;r die Sparreneinteilung muss ein Polygon vorhanden sein, bei dem die erste und letzte Linie nicht parallel verlaufen, z. B. aus der Dachausmittlung. Weitere Unterteilungen k&ouml;nnen mit dem Linienprogramm [Konst1 | Linien] vorgenommen werden.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Nach &Auml;nderungen in der Sparrenverteilung (Dialog </span><span class="f__Software_Element_deskriptiv">Sparrenverteilung</span><span class="f_Task_Info">) werden die Sparren gel&ouml;scht und neu gezeichnet. Manuelle &Auml;nderungen, z. B. teilweises L&ouml;schen von Sparrenlinien durch [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_Task_Info"> &#8594; </span><span class="f__Software_Element_deskriptiv">FenL&ouml;</span><span class="f_Task_Info">] werden wieder zur&uuml;ckgesetzt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Abstand</span><span class="f_Step"> den Sparrenabstand ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie bei der Abfrage </span><span class="f__Abfrage">Linie w&auml;hlen</span><span class="f_Step"> die Linien in Reihenfolge an. </span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Achten Sie darauf, dass die Mitte des Cursors auf der Seite liegt, auf die sich der Abstand bezieht.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Es wird ein affines Polygon mit den gew&auml;hlten Einstellungen gezeichnet. Mit Rechtsklick geben Sie einen neuen Abstand ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><img alt="B_Polygon_schliessen_ohne-Haken" style="margin:0;width:1.2813in;height:0.2083in;border:none" src="b_polygon_schliessen_ohne-haken.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Verlegewinkel</span><span class="f_Step"> den Winkel an, in dem die Sparren verlegt werden sollen und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Winkel bestimmt die Lage des Anfangspunktes. Bei schr&auml;g liegenden Bereichen m&uuml;ssen Sie den Geb&auml;udewinkel ber&uuml;cksichtigen. &Auml;ndern Sie ggf. den <a href="des_systemwinkel.htm" class="topiclink">Systemwinkel</a>.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Siehe auch: <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm#ausrichten" class="topiclink" title="Konstruktionshilfen; Ausrichtungsoptionen">Ausrichtungsoptionen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Sparrenverteilung</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Auml;ndern Sie gegebenenfalls die Einstellungen f&uuml;r die Sparrenverteilung im Dialog </span><span class="f__Software_Element_deskriptiv">Sparrenverteilung</span><span class="f_Step"> und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Sparren werden neu gezeichnet.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Beispiel:</span></p>
+<p class="p_Normal">Verlegung von Sparren 8/20cm, e <span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';">&#8773;</span> 80cm. Nur die Achsen sollen sichtbar sein.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:5.0000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0.2813in;"><img alt="Z_Sparrenverteilung_Bsp_01" style="margin:0;width:8.4583in;height:2.4167in;border:none" src="z_sparrenverteilung_bsp_01.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Linien so an, dass der Abstand auf der Seite der Cursormitte liegt.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">In dem Hilfspolygon wird die Sparrenverteilung aufgrund der Eingabeparameter dargestellt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_Sparrenverteilung_Bsp_02" style="margin:0;width:4.5000in;height:2.4063in;border:none" src="z_sparrenverteilung_bsp_02.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Sparrenachse an Element</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aus Element anklicken &#8594; e = 0,826 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">Anf</span><span class="f_R_Tabellenzeile"> = 0; a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">End</span><span class="f_R_Tabellenzeile"> = 0</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie am Anfang und/oder am Ende Abst&auml;nde &gt; 0 eingeben, werden die Sparren, die in diesen Bereichen liegen, nicht gezeichnet und der Anfangs- und/oder Endpunkt werden verschoben. Die &uuml;brigen Sparren ver&auml;ndern </span><span class="f__Hervorhebung">nicht</span><span class="f_R_Tabellenzeile"> ihre Lage.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_Sparrenverteilung_Bsp_03" style="margin:0;width:4.5104in;height:2.3542in;border:none" src="z_sparrenverteilung_bsp_03.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">ein Sparren in der Mitte</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand e = 0,8 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">Anf</span><span class="f_R_Tabellenzeile"> = 0,35 m; a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">End</span><span class="f_R_Tabellenzeile"> = 0,50 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Mitte der Sparrenverlegung wird wie folgt ermittelt: Alle Punkte des Hilfspolygons werden senkrecht auf die Verlegerichtung projiziert. Die entferntesten Punkte markieren den Bereich. Davon werden die Abst&auml;nde am Anfang und Ende abgezogen. Daraus wird die Mitte ermittelt.</span><br>
+<span class="f_R_Tabellenzeile">Von hier aus werden die Sparren mit dem eingestellten Abstand verteilt.</span><br>
+<span class="f_R_Tabellenzeile">Es wird auf eine ungerade Anzahl ge&auml;ndert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in; height:1.8021in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_Sparrenverteilung_Bsp_04" style="margin:0;width:4.4896in;height:2.3646in;border:none" src="z_sparrenverteilung_bsp_04.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in; height:1.8021in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Sparren au&szlig;erhalb der Mitte</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand e = 0,8 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">Anf</span><span class="f_R_Tabellenzeile"> = 0,25 m; a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">End</span><span class="f_R_Tabellenzeile"> = 0,2 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von der Mitte wird jeweils ein halber Abstand abgezogen und dann von da aus mit dem eingestellten Abstand die Einteilung berechnet.</span><br>
+<span class="f_R_Tabellenzeile">Es wird auf eine gerade Anzahl ge&auml;ndert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_Sparrenverteilung_Bsp_05" style="margin:0;width:4.4167in;height:2.2708in;border:none" src="z_sparrenverteilung_bsp_05.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Vom Anfang verteilen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand e = 0,8 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">Anf</span><span class="f_R_Tabellenzeile"> = 0,5 m; a</span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">End</span><span class="f_R_Tabellenzeile"> = 0,9 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von der Mitte wird jeweils ein halber Abstand abgezogen und dann von da aus mit dem eingestellten Abstand die Einteilung berechnet. Durch den Abstand am Ende wird hier der letzte Sparren unterdr&uuml;ckt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.5208in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_Sparrenverteilung_Bsp_06" style="margin:0;width:4.3542in;height:2.2083in;border:none" src="z_sparrenverteilung_bsp_06.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.9896in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><span class="f_R_Tabelle_Kopf">Vom Ende verteilen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand e = 0,8 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">aAnf</span><span class="f_R_Tabellenzeile"> = 0,6 m; </span><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: sub;">aEnd</span><span class="f_R_Tabellenzeile"> = 0,6 m</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wie vor beschrieben, jedoch wird hier vom Ende in Richtung Anfang verteilt.</span><br>
+<span class="f_R_Tabellenzeile">Der Abstand am Anfang gibt den Bereich an, in dem keine Sparren erzeugt werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Sparrenverteilung&quot;</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">W&auml;hrend Sie Eingaben im Dialog vornehmen, werden die Sparren sofort angepasst. Um in der Zeichnung zu navigieren, klicken Sie mit der linken Maustaste in die Zeichenfl&auml;che.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4375in;"><p class="p_ImageCaption"><img alt="D_Sparrenverteilung" style="margin:0;width:3.2083in;height:5.7083in;border:none" src="d_sparrenverteilung.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:10.6042in;"><p class="p_R_Bereich"><span class="f_R_Bereich">Sparrenabmessung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breite [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sparrenbreite in Meter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dicke [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sparrendicke in Meter.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Berechnungsparameter</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sparrenachse an Element</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Den Ausgangssparren der Verteilung an einen bestimmten Punkt verschieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">anklicken</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie einen Elementpunkt an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ein Sparren in der Mitte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der geometrischen Mitte des Polygons, abz&uuml;glich des Anfangs- und Endabstandes, wird ein Sparren angeordnet. Die Verteilung erfolgt von hier nach beiden Seiten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sparren au&szlig;erhalb der Mitte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Von der geometrischen Mitte, abz&uuml;glich der Anfangs- und Endabst&auml;nde, wird im halben Sparrenabstand zu beiden Seiten mit der Einteilung begonnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">vom Anfang verteilen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Einteilung wird von dem durch den Verlegewinkel bestimmten Anfang vorgenommen.</span><br>
+<span class="f_R_Option_Beschreibung">Weiter unten k&ouml;nnen Sie einen zus&auml;tzlichen Abstand eingeben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">vom Ende verteilen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verteilung wird vom anderen Ende gestartet.</span><br>
+<span class="f_R_Option_Beschreibung">Weiter unten k&ouml;nnen Sie einen zus&auml;tzlichen Abstand eingeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Sparrenabst&auml;nde</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sparren&shy;abstand [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den gew&uuml;nschten Abstand ein. Daraus ergibt sich die Sparrenanzahl. Diese wird in dem inaktiven Eingabefeld angezeigt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Position des ersten und letzten Sparrens l&auml;sst sich hiermit nur bedingt exakt bestimmen. Wenn die Sparren am Anfang und Ende genau platziert werden sollen, wechseln Sie auf die Eingabe &uuml;ber die Sparrenanzahl.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sparren&shy;anzahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alternativ k&ouml;nnen Sie auch die Anzahl eingeben. Dann wird der Sparrenabstand berechnet und in dem entsprechenden Feld angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Anfang [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Abstand bezieht sich im Normalfall auf die Sparrenachse!</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie sich in einer der beiden Eingaben befinden, wird der zugeh&ouml;rige Punkt durch ein Kreuz markiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Ende [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen am Anfang und am Ende jeweils einen Abstand angeben. Damit wird der Verlegebereich angepasst. Durch das Verschieben des Anfangs- und/oder des Endpunktes wird auch die Mitte neu berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abst&auml;nde als lichtes Ma&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 3.4792in 0.0625in 0.6146in;"><span class="f_R_Option_Beschreibung">Wenn dieser Haken gesetzt wird, werden alle Abst&auml;nde an den Sparrenkanten gemessen. Sonst beschreibt das Ma&szlig; den Achsabstand (Normalfall).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Achsen darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die Sparrenachsen sichtbar zu machen, setzen Sie in diese Checkbox den Haken.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kanten darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in dieser Checkbox ein Haken ist, werden die Kanten der Sparren gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">aus Verlegung &uuml;bernehmen&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie diese Schaltfl&auml;che und anschlie&szlig;end einen Sparren anklicken, werden die Parameter &uuml;bernommen.</span><br>
+<span class="f_R_Option_Beschreibung">Wichtig vor dem Anpassen der Sparrenachse an ein vorhandenes Element.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die aktuelle Darstellung der Sparrenverteilung ist auf der Zeichenfl&auml;che sichtbar. Klicken Sie diese Schaltfl&auml;che an, um die Darstellung zu best&auml;tigen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verwirft alle &Auml;nderungen und stellt den urspr&uuml;nglichen Zustand wieder her.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="holzbau.htm" class="topiclink">Holzbau (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

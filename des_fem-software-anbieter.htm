@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>FEM-Software-Anbieter</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="FEM - Finite Elemente,FEM - Finite Elemente Unterstützte FE-Programme,Finite Elemente,Finite Elemente Unterstützte FE-Programme" />
+   <meta name="description" content="Die Kopplung zu Finite Elemente-Programmen ist in ISBCAD auf zwei Wegen möglich. Erstens können die Geometriedaten an das Statikprogramm übergeben werden und zweitens können..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="con_fem.htm">Finite Elemente</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="con_fem.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_fem.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst3_femdef.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">FEM-Software-Anbieter</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Kopplung zu Finite Elemente-Programmen ist in ISBCAD auf zwei Wegen m&ouml;glich. Erstens k&ouml;nnen die Geometriedaten an das Statikprogramm &uuml;bergeben werden und zweitens k&ouml;nnen die Ergebnisse der Berechnung f&uuml;r die Bewehrung wieder eingelesen werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Zu folgenden Programmherstellern besteht momentan eine Verbindung:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Pollux Statiksoftware UG</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Heiligenstr.10</span><br>
+<span class="f_R_Tabellenzeile">68753 Wagh&auml;usel</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: 07254 / 710 97 19</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@pollux-statik.de" target="_blank" class="weblink">info@pollux-statik.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.pollux-statik.de" target="_blank" class="weblink">www.pollux-statik.de</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Dlubal GmbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Am Zellweg 2</span><br>
+<span class="f_R_Tabellenzeile">D-93464 Tiefenbach </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: +49 (0) 9673 / 9203-0 </span><br>
+<span class="f_R_Tabellenzeile">Fax: +49 (0) 9673 / 1770</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@dlubal.com" target="_blank" class="weblink">info@dlubal.com</a> </span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.dlubal.com/de" target="_blank" class="weblink">www.dlubal.com/de</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Frilo Software GmbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stuttgarter Stra&szlig;e 36</span><br>
+<span class="f_R_Tabellenzeile">70469 Stuttgart </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.:&nbsp;0711 / 81 00 20</span><br>
+<span class="f_R_Tabellenzeile">Fax:&nbsp;0711 / 85 80 20</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@frilo.de" target="_blank" class="weblink">info@frilo.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.frilo.eu/de/" target="_blank" class="weblink">www.frilo.eu/de</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">RIB Software AG</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Vaihinger Stra&szlig;e 151</span><br>
+<span class="f_R_Tabellenzeile">70567 Stuttgart</span><br>
+<span class="f_R_Tabellenzeile">Postfach 800 780</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: +49 711 7873-0</span><br>
+<span class="f_R_Tabellenzeile">Fax: +49 711 7873-311</span><br>
+<span class="f_R_Tabellenzeile"><a href="mailto:info@rib-software.de" target="_blank" class="weblink">info@rib-software.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.rib-software.com" target="_blank" class="weblink">www.rib-software.com</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Tornow Software</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dr. Volker Tornow</span><br>
+<span class="f_R_Tabellenzeile">Haslach 79</span><br>
+<span class="f_R_Tabellenzeile">94568&nbsp;St. Oswald</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: +49 (8558) 2580 </span><br>
+<span class="f_R_Tabellenzeile">Fax: +49 (8558) 91034 </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:tornow.software@t-online.de" target="_blank" class="weblink">tornow.software@t-online.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="http://tripla.de/" target="_blank" class="weblink">www.tornow-software.de</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">D.I.E. CAD und Statik Software GmbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nettelbeckstrasse 5</span><br>
+<span class="f_R_Tabellenzeile">46149 Oberhausen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: 0208 / 884 224 90</span><br>
+<span class="f_R_Tabellenzeile">Fax: 0208 / 884 224 99</span><br>
+<span class="f_R_Tabellenzeile"><a href="mailto:info@die.de" target="_blank" class="weblink">info@die.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.die.de/" target="_blank" class="weblink">www.die.de/</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Scia-Software GbR</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Emil-Figge-Str. 76-80</span><br>
+<span class="f_R_Tabellenzeile">D-44227 Dortmund</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.:(+49)/(0)231/9742586</span><br>
+<span class="f_R_Tabellenzeile">Fax.: (+49)/(0)231/9742587</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@scia.net" target="_blank" class="weblink">info@scia.net</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.scia.net/de/software/scia-engineer" target="_blank" class="weblink">www.scia-software.net/de</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">InfoGraph GmbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Kackertstra&szlig;e 10</span><br>
+<span class="f_R_Tabellenzeile">52072&nbsp; Aachen </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: 0049 (0) 241 889980</span><br>
+<span class="f_R_Tabellenzeile">Fax: 0049 (0) 241 8899888</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@infograph.de" target="_blank" class="weblink">info@infograph.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.infograph.de" target="_blank" class="weblink">www.infograph.de</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Cubus AG</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Felsenrainstrasse 1</span><br>
+<span class="f_R_Tabellenzeile">CH-8052 Z&uuml;rich </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: +41 (0)44 305 30 30 </span><br>
+<span class="f_R_Tabellenzeile">Fax: +41 (0)44 305 30 35 </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:cubus@cubus.ch" target="_blank" class="weblink">cubus@cubus.ch</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.cubus-software.com" target="_blank" class="weblink">www.cubus-software.com</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">mb AEC Software GmbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Europaallee 14 &nbsp;</span><br>
+<span class="f_R_Tabellenzeile">D-67657 Kaiserslautern </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: 06 31 / 3 03 33 11 </span><br>
+<span class="f_R_Tabellenzeile">Fax: 06 31 / 3 03 33 20 </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="mailto:info@mbaec.de" target="_blank" class="weblink">info@mbaec.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.mbaec.de" target="_blank" class="weblink">www.mbaec.de</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">pcae Gesellschaft f&uuml;r Programmvertrieb </span><br>
+<span class="f_Heading5">und Computer Aided Engineering mbH</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Kopernikusstra&szlig;e 4a</span><br>
+<span class="f_R_Tabellenzeile">30167 Hannover</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tel.: 0511 - 700830</span><br>
+<span class="f_R_Tabellenzeile">Fax: 0511 - 7008399</span><br>
+<span class="f_R_Tabellenzeile"><a href="mailto:dte@pcae.de" target="_blank" class="weblink">dte@pcae.de</a></span><br>
+<span class="f_R_Tabellenzeile"><a href="https://www.pcae.de" target="_blank" class="weblink">www.pcae.de</a></span></p>
+</td>
+<td style="vertical-align:top; width:3.3646in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">&nbsp;</span></h5>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_fem.htm" class="topiclink" title="Funktionen und Optionen (FEM)">as-Werte aus FE-Programmen einlesen (FEM)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_femdef.htm" class="topiclink" title="Funktionen und Optionen (FemDef)">Geometrie f&uuml;r Finite Elemente definieren (FemDef)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

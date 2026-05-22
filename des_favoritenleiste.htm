@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Favoritenleiste</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Favoritenleiste,Favoritenleiste bearbeiten,Favoritenleiste Verknüpfungen hinzufügen" />
+   <meta name="description" content="In der Favoritenleiste können Sie häufig verwendete Funktionen für den Schnellzugriff als Verknüpfungen platzieren. Die Leiste kann permanent eingeblendet bleiben, sodass sich..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="des_anwendungsoberflache.htm">Programmoberfläche</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_nachrichtenkanal.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="des_anwendungsoberflache.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konfiguration_und_einrichtung.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Favoritenleiste</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">In der Favoritenleiste k&ouml;nnen Sie h&auml;ufig verwendete Funktionen f&uuml;r den Schnellzugriff als Verkn&uuml;pfungen platzieren. Die Leiste kann permanent eingeblendet bleiben, sodass sich die Funktionen durch Anklicken der Verkn&uuml;pfungen jederzeit aufrufen lassen.</span></p>
+<p class="p_A_Allgemein"><img alt="SCR_Favoritenleiste_Programm" style="margin:0;width:8.2917in;height:4.8333in;border:none" src="scr_favoritenleiste_programm.png"/></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen der Favoritenleiste Funktionen aus dem <a href="des_funktionsbereich.htm" class="topiclink" title="Funktionsbereich - Programmoberfläche">Funktionsbereich</a> (Men&uuml;s 1 - 3) zuweisen. Dar&uuml;ber hinaus k&ouml;nnen auch Funktionen hinzugef&uuml;gt werden, die oben links unter der aktiven Abfrage angeboten werden und f&uuml;r die ein <a href="rd_systemdaten_hotkeys.htm" class="topiclink" title="Systemdaten - Hotkeys">Hotkey</a> definiert werden kann (z. B. [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">zeichn</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">RechEc</span><span class="f_L_Listeneintrag">]).</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie den Mauscursor &uuml;ber eine Verkn&uuml;pfung bewegen, zeigt Ihnen ein Tooltip an, um welche Funktion es sich handelt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Favoritenleiste ist eine computerspezifische Einstellung, die in einer ISBCAD-Konfigurationsdatei gespeichert wird. Diese Datei wird nicht im Profil angelegt, kann aber gesichert und auf andere Rechner &uuml;bertragen werden. Siehe: <a href="des_migration.htm" class="topiclink">Sichern und Einlesen der ISBCAD Konfiguration</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Optionen im Dialog &quot;Einstellungen&quot;</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In den Einstellungen [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_A_Allgemein">] k&ouml;nnen Sie:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">die Favoritenleiste deaktivieren oder aktivieren,</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">die Favoritenleiste entweder am linken oder am rechten Rand des Zeichenbereiches fixieren,</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">angeben, aus wie vielen Spalten und Zeilen die Favoritenleiste bestehen soll,</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">die Textgr&ouml;&szlig;e mit dem Regler f&uuml;r die Gr&ouml;&szlig;e von Men&uuml;texten einstellen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Weitere Informationen finden Sie unter <a href="option_einstellungen.htm#_favleiste" class="topiclink">Einstellungen &#8594; Favoritenleiste</a>.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritenleiste bearbeiten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Favoritenleiste mit der rechten Maustaste eine Verkn&uuml;pfung oder einen leeren Bereich an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Kontextmen&uuml; den Eintrag </span><span class="f__Software_Element_deskriptiv">Leiste bearbeiten</span><span class="f_Step">.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoriten-Leiste_bearbeiten" style="margin:0;width:2.2708in;height:1.3646in;border:none" src="scr_favoriten-leiste_bearbeiten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Bearbeitungsmodus wird aktiviert. In der Favoritenleiste werden die Gitternetzlinien eingeblendet.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Um eine Verkn&uuml;pfung hinzuzuf&uuml;gen</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Funktion wird der blau markierten Tabellenzelle als Verkn&uuml;pfung mit Icon-Darstellung hinzugef&uuml;gt. Sie k&ouml;nnen die Einf&uuml;geposition &auml;ndern, indem Sie vor dem Hinzuf&uuml;gen eine andere Zelle anklicken.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie mit der rechten Maustaste eine Funktion an und w&auml;hlen Sie im Kontextmen&uuml; den Eintrag </span><span class="f__Software_Element_deskriptiv">zu Favoriten hinzuf&uuml;gen</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verkn&uuml;pfung wird hinzugef&uuml;gt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoriten-Leiste_hinzufuegen" style="margin:0;width:4.2500in;height:1.4688in;border:none" src="scr_favoriten-leiste_hinzufuegen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Um die Darstellung zu &auml;ndern</span></h5>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Verkn&uuml;pfung mit der rechten Maustaste an. Fahren Sie mit der Maus &uuml;ber den Eintrag </span><span class="f__Software_Element_deskriptiv">Darstellung (Icon, Text, Icon+Text)</span><span class="f_Step"> und w&auml;hlen Sie aus, wie die Verkn&uuml;pfung dargestellt werden soll.</span><br>
+<span class="f_Step">Wenn eine gr&ouml;&szlig;ere Darstellung wie &quot;Icon+Text&quot; nicht m&ouml;glich ist, ist der Eintrag ausgegraut. Erh&ouml;hen Sie in diesem Fall die Anzahl der Spalten in den </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_Step">, oder verschieben Sie die Verkn&uuml;pfung an eine Position, die nach rechts gen&uuml;gend Raum bietet.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Ben&ouml;tigte Zellen:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Darstellung als Icon = 1 Tabellenzelle</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Darstellung als Text = 2 Tabellenzellen</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Darstellung als Icon + Text = 3 Tabellenzellen</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Um eine Verkn&uuml;pfung zu verschieben</span></h5>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken und halten Sie die linke Maustaste auf einer Verkn&uuml;pfung gedr&uuml;ckt und verschieben Sie sie an eine andere Position.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Bei der Darstellung Text + Icon z. B. gibt es drei Positionen, die Sie anklicken k&ouml;nnen (die linke, mittlere und rechte Tabellenzelle). Die angeklickte Position entspricht dem Einf&uuml;gepunkt. Wenn Sie z. B. eine Verkn&uuml;pfung (Text + Icon) in die letzte Zelle am rechten Rand verschieben wollen, klicken Sie beim Verschieben die rechte Tabellenzelle der Verkn&uuml;pfung an, um sie am rechten Rand platzieren zu k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritenleiste_verschieben" style="margin:0;width:2.8021in;height:0.9688in;border:none" src="scr_favoritenleiste_verschieben.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Um eine Verkn&uuml;pfung zu entfernen</span></h5>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Verkn&uuml;pfung mit der rechten Maustaste an und w&auml;hlen Sie im Kontextmen&uuml; den Eintrag </span><span class="f__Software_Element_deskriptiv">Entfernen</span><span class="f_Step">.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Um den Bearbeitungsmodus zu beenden</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Bearbeitungsmodus muss beendet werden, damit die Verkn&uuml;pfungen genutzt werden k&ouml;nnen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie au&szlig;erhalb der Favoritenleiste in den Zeichenbereich.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Die Gitternetzlinien in der Favoritenleiste werden ausgeblendet. Sie k&ouml;nnen die Verkn&uuml;pfung nun anklicken.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Alternativ: Klicken Sie in der Favoritenleiste mit der rechten Maustaste eine Verkn&uuml;pfung oder einen leeren Bereich an. W&auml;hlen Sie anschlie&szlig;end im Kontextmen&uuml; den Eintrag </span><span class="f__Software_Element_deskriptiv">Bearbeitung beenden</span><span class="f_Step_Anmerkung">.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Optionen in den Kontextmen&uuml;s</span></h5>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Entfernen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entfernt die zuvor mit der rechten Maustaste angeklickte Verkn&uuml;pfung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Darstellung (Icon, Text, Icon + Text)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndert die Darstellung der Verkn&uuml;pfung:</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Icon</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Text</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Icon + Text</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leiste bearbeiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktiviert den Bearbeitungsmodus. Im Bearbeitungsmodus werden in der Favoritenleiste Gitternetzlinien eingeblendet. Verkn&uuml;pfungen k&ouml;nnen hinzugef&uuml;gt, entfernt, verschoben und in der Darstellung ge&auml;ndert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bearbeitung beenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Deaktiviert den Bearbeitungsmodus. Die Verkn&uuml;pfungen k&ouml;nnen genutzt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leiste ausblenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Blendet die Favoritenleiste aus. Sie k&ouml;nnen die Favoritenleiste in [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Favoritenleiste</span><span class="f_R_Option_Beschreibung">] wieder einblenden, indem Sie den Haken setzen. Beim Ausblenden bleibt Ihre aktuelle Zusammenstellung der Schaltfl&auml;chen erhalten und wird beim erneuten Einblenden wieder angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kontexthilfe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet diesen Artikel.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anwendungsoberflache.htm" class="topiclink" title="Programmoberfläche">Programmoberfl&auml;che</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_funktionsbereich.htm" class="topiclink">Funktionsbereich</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="option_einstellungen.htm" class="topiclink">Einstellungen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_tastaturbelegungen.htm" class="topiclink">Hotkeys (Standardbelegung)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_hotkeys.htm" class="topiclink">Anlegen benutzerdefinierter Hotkeys (Systemdaten)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

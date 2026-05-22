@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Erzeugen einer Positionierung (Formstahl)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bauteilfaktor,Bauteilfaktor an Positionierung anzeigen,Bewehrung positionieren,Bewehrung positionieren Formstahl,FakAus,FaktAn,Faktor am Positionskreis,Positionierung erzeugen,Positionierung erzeugen Formstahl,Verlegefaktor,Verlegefaktor an Positionierung anzeigen" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf eine Linie oder einen Text." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_49" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="Positionierung-erzeugen-Formstahl"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_forzus_pozufo.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_formstahl.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_bipos_harfe.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Erzeugen einer Positionierung (Formstahl)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <img alt="B-akt_BiPos" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_bipos.png"/> </span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf eine Linie oder einen Text.</span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Folienbelegung: Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> (untere Men&uuml;leiste) eingestellt ist, werden die Elemente in Folie&nbsp;4 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_harfe.htm" class="topiclink" title="Positionierung als Harfe"><img alt="Positionierung als Harfe" title="Positionierung als Harfe" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_harfe.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionierung als Harfe.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_faecher.htm" class="topiclink" title="Fächerförmige Positionierung"><img alt="Fächerförmige Positionierung" title="Fächerförmige Positionierung" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_faecher.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">F&auml;cherf&ouml;rmige Positionierung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_rufrei_mafrei.htm" class="topiclink" title="Rundstahl und Matten frei positionieren"><img alt="Rundstahl und Matten frei positionieren" title="Rundstahl und Matten frei positionieren" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_rufrei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Rundstahl frei positionieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_rufrei_mafrei.htm" class="topiclink" title="Rundstahl und Matten frei positionieren"><img alt="Rundstahl und Matten frei positionieren" title="Rundstahl und Matten frei positionieren" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_mafrei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Matten frei positionieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_versch.htm" class="topiclink" title="Positionierung verschieben"><img alt="Positionierung verschieben" title="Positionierung verschieben" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_versch-bipos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionierung verschieben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_loesch.htm" class="topiclink" title="Positionierung löschen"><img alt="Positionierung löschen" title="Positionierung löschen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_loesche-bipos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionierung l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_aendern_bipos_formst.htm" class="topiclink" title="Positionierung ändern"><img alt="Positionierung ändern" title="Positionierung ändern" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_aendern_bipos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionierung &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_defpos.htm" class="topiclink" title="Konfiguration von Positionierungsstilen"><img alt="Konfiguration von Positionierungsstilen" title="Konfiguration von Positionierungsstilen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_defpos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Konfiguration von Positionierungsstilen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_bipos_gost.htm" class="topiclink" title="Positionierung im russischen Stil (keine weiteren Erläuterungen)"><img alt="Positionierung im russischen Stil (keine weiteren Erläuterungen)" title="Positionierung im russischen Stil (keine weiteren Erläuterungen)" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_gost.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionierung im russischen Stil (keine weiteren Erl&auml;uterungen).</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Linie-als-Endsymbol" style="margin:0;width:0.3333in;height:0.2500in;border:none" src="i_linie-als-endsymbol.png"/><img alt="I_Pfeil-als-Endsymbol" style="margin:0;width:0.3333in;height:0.2500in;border:none" src="i_pfeil-als-endsymbol.png"/><img alt="I_Pfeil-mit-Linie-als-Endsymbol" style="margin:0;width:0.3333in;height:0.2500in;border:none" src="i_pfeil-mit-linie-als-endsymbol.png"/><img alt="I_Kreis-als-Endsymbol" style="margin:0;width:0.3333in;height:0.2500in;border:none" src="i_kreis-als-endsymbol.png"/><img alt="I_Schraegstrich-als-Endsymbol" style="margin:0;width:0.3333in;height:0.2500in;border:none" src="i_schraegstrich-als-endsymbol.png"/><img alt="I_ohne-Endsymbol" style="margin:0;width:0.3854in;height:0.2500in;border:none" src="i_ohne-endsymbol.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl der Anfangs- und Endsymbole (nur bei: Verlegung als Staffel, Durchmesser im Schnitt und Verlegung mit Formdarstellung).</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Linie-als-mittleres-Symbol" style="margin:0;width:0.5104in;height:0.2500in;border:none" src="i_linie-als-mittleres-symbol.png"/><img alt="I_Schraegstrich-als-mittleres-Symbol" style="margin:0;width:0.5104in;height:0.2500in;border:none" src="i_schraegstrich-als-mittleres-symbol.png"/><img alt="I_Kreis-als-mittleres-Symbol" style="margin:0;width:0.5104in;height:0.2500in;border:none" src="i_kreis-als-mittleres-symbol.png"/><img alt="I_ohne-mittleres-Symbol" style="margin:0;width:0.5208in;height:0.2500in;border:none" src="i_ohne-mittleres-symbol.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Mittensymbole f&uuml;r Harfe (nur bei: Verlegung als Staffel und Durchmesser im Schnitt).</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Vermassungsstil" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_vermassungsstil.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Stilauswahl.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_so-wie" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_so-wie.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Uuml;bernahme des Stils aus einer vorhandenen Positionierung. </span><br>
+<span class="f_R_Tabellenzeile_Menue">Abfrage: Sowie welche Positionierung </span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Faktoren ausschalten" title="Faktoren ausschalten" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_fakaus.png"/><img alt="Faktoren anschalten" title="Faktoren anschalten" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_faktan.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Anzeige des Bauteil- und Verlegefaktors sowie des Verkn&uuml;pfungsstatus am Positionskreis aus- oder einschalten. Ein Bauteilfaktor = 1 wird nicht angeschrieben. Verkn&uuml;pfte Verlegungen werden mit &quot;_VKN&quot; gekennzeichnet. Auf dem geplotteten Plan nicht sichtbar.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0208in 0.0208in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4063in;"><p class="p_R_Tabellenzeile"><img alt="SCR_FaktAn" style="margin:0;width:1.5625in;height:0.6146in;border:none" src="scr_faktan.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4063in;"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A</span><span class="f__Bild_Legende_normal">: Bauteilfaktor; </span><br>
+<span class="f__Bild_Legende_fett">B</span><span class="f__Bild_Legende_normal">: Verlegefaktor; </span><br>
+<span class="f__Bild_Legende_fett">C</span><span class="f__Bild_Legende_normal">: Verlegung ist verkn&uuml;pft.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Die Stiftfarbe und -breite der Kennzeichnung entspricht der Einstellung in [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile_Menue"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Tabellenzeile_Menue"> | </span><span class="f__Software_Element_deskriptiv">Stiftfarben und -breiten</span><span class="f_R_Tabellenzeile_Menue"> &#8594; </span><span class="f__Software_Element_deskriptiv">Stift 1</span><span class="f_R_Tabellenzeile_Menue">].</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Multifangfenster bei &uuml;bereinanderliegenden Verlegungen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Im Positionierungsprogramm wird das Multifangfenster eingeblendet, wenn die angeklickte Verlegung nicht eindeutig erkannt werden kann, weil Verlegungen &uuml;bereinanderliegen. Im Fenster wird jede erkannte Rundstahl- und/oder Formmattenposition mit einem K&uuml;rzel und der jeweiligen Positionsnummer gekennzeichnet. Handelt es sich bei mehreren Eintr&auml;gen um dieselbe Position, wird zus&auml;tzlich die Gesamtzahl der Verlegungen angegeben.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie den Cursor &uuml;ber einen Eintrag bewegen, wird die zugeh&ouml;rige Verlegung in ihrer Originalfarbe dargestellt. Mit einem Linksklick auf einen Eintrag w&auml;hlen Sie die entsprechende Verlegung aus.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0313in 0.2917in;"><table class="Optionen_Palette" >
+<thead>
+<tr class="Optionen_Palette">
+<th class="Optionen_Palette" style="width:1.3333in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Multifangfenster</span></p>
+</th>
+<th class="Optionen_Palette" style="width:2.1250in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">K&uuml;rzel</span></p>
+</th>
+<th class="Optionen_Palette" style="width:1.3125in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Welche Position?</span></p>
+</th>
+<th class="Optionen_Palette" style="width:1.2396in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Wie oft verlegt?</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" rowspan="2"  style="width:1.3333in;"><p class="p_ImageCaption"><img alt="SCR_Auswahlfenster" style="margin:0;width:0.9167in;height:0.9792in;border:none" src="scr_auswahlfenster.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:2.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">R</span></p>
+<p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Rundstahl-Positionen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.3125in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">15</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">18x</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">M</span></p>
+<p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Formmatten-Positionen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.3125in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_49.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

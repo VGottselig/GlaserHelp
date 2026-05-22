@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Drucken eines Artikels</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="In der Kontexthilfe können Sie jederzeit ein oder mehrere Artikel auf ihrem Drucker oder in einer PDF-Datei ausgeben." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_willkommen.htm">Willkommen bei ISBCAD 2026</a> &gt; <a href="des_kontext.htm">Verwenden der Kontexthilfe</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_tipps-suche.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="des_kontext.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_konventionen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Drucken eines Artikels</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">In der Kontexthilfe k&ouml;nnen Sie jederzeit ein oder mehrere Artikel auf ihrem Drucker oder in einer PDF-Datei ausgeben.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Voraussetzung f&uuml;r das Drucken oder Ausgeben in einer PDF-Datei ist, dass Sie die entsprechenden Druckertreiber auf Ihrem PC installiert und eingerichtet haben. </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So drucken Sie einen Artikel</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie den Artikel </span><img alt="I_Task" style="margin:0;width:0.1458in;height:0.1771in;border:none" src="i_task.png"/><span class="f_Step">, der gedruckt werden soll, indem Sie diesen auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Inhalt</span><span class="f_Step"> anklicken.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der markierte Artikel wird blau hinterlegt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Bei mehreren Artikeln:</span><span class="f_Step_Anmerkung" style="font-weight: bold;"> </span><span class="f_Step_Anmerkung">Klicken Sie auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Inhalt</span><span class="f_Step_Anmerkung"> einen beliebigen Artikel innerhalb des Kapitels an, das gedruckt werden soll.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie das entsprechende Kapitel auch ausw&auml;hlen, indem Sie auf das Buch-Icon im Inhaltsverzeichnis klicken.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Rufen Sie per rechten Mausklick auf den Artikel das Kontextmen&uuml; auf.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Das Kontextmen&uuml; wird mit dem Eintrag </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Step_Anmerkung"> ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Thema drucken</span><span class="f_Step"> die Option </span><span class="f__Software_Element_deskriptiv">Ausgew&auml;hltes Thema drucken</span><span class="f_Step"> aus. Best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet. Hier k&ouml;nnen Sie den gew&uuml;nschten Drucker ausw&auml;hlen und ggf. die Druckereinstellungen konfigurieren. Alternativ k&ouml;nnen Sie den Dialog </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Step_Anmerkung"> auch in der Men&uuml;leiste &uuml;ber das Drucken-Symbol &ouml;ffnen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Bei mehreren Artikeln:</span><span class="f_Step_Anmerkung" style="font-weight: bold;"> </span><span class="f_Step_Anmerkung">W&auml;hlen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Thema drucken</span><span class="f_Step_Anmerkung"> die Option </span><span class="f__Software_Element_deskriptiv">Ausgew&auml;hltes Thema und alle Unterthemen drucken</span><span class="f_Step_Anmerkung"> aus. Unabh&auml;ngig davon, welchen Artikel Sie ausgew&auml;hlt haben, wird das komplette Kapitel ausgedruckt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Step">, um die Druckdaten an den Drucker zu senden.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls Sie eine PDF-Datei erzeugen, geben Sie den Speicherort der PDF ein und best&auml;tigen Sie diesen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="top_hilfe.htm" class="topiclink">Kontexthilfe (Oberfl&auml;che)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_kontext.htm" class="topiclink">Aufrufen der Hilfe</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_navigation.htm" class="topiclink">Navigieren in der Hilfe</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_tipps-suche.htm" class="topiclink">Tipps f&uuml;r die Suche</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_konventionen.htm" class="topiclink">Gestalterische Konventionen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

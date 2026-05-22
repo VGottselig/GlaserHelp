@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Positionsnummern umsortieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Formstahl,Formstahl Positionen neu durchzählen, ändern, umsortieren,Positionsnummern sortieren,Positionsnummern sortieren Positionen umsortieren" />
+   <meta name="description" content="Die Positionsnummern werden bei normaler Planbearbeitung nicht so sortiert, wie es letztendlich sinnvoll ist. Mit dieser Methode steht Ihnen eine Funktion zur Verfügung, in d" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_aendpos.htm">Positionierung neu durchzählen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_aendpos_reihe.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_aendpos.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_bewehrung-dehnen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Positionsnummern umsortieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><a href="formst_aendpos.htm" class="topiclink"><img alt="B-akt_AendPos" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_aendpos.png"/></a><span class="f_Aufruf" style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><a href="formst_aendpos_umpos.htm" class="topiclink" title="Matten umpositionieren"><img alt="Matten umpositionieren" title="Matten umpositionieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_umpos.png"/></a></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Positionsnummern werden bei normaler Planbearbeitung nicht so sortiert, wie es letztendlich sinnvoll ist. Mit dieser Methode steht Ihnen eine Funktion zur Verf&uuml;gung, in der die Positionsnummern einzeln oder bereichsweise umsortiert werden k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um die Positionsnummern einzeln umzusortieren</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B_einzeln" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_einzeln.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen neuen Startwert ein und best&auml;tigen Sie mit der Eingabetaste. Mit Rechtsklick k&ouml;nnen Sie den Startwert &uuml;bernehmen. [</span><span class="f__Abfrage">Neuer Z&auml;hlbeginn</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Entscheiden Sie, ob L&uuml;cken in der Nummerierung entfernt werden sollen oder nicht. Siehe Erkl&auml;rung in <a href="formst_aendpos_allpos.htm" class="topiclink">Alle Positionen neu durchz&auml;hlen</a>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">0</span><span class="f_Step_Anmerkung"> = </span><span class="f__Software_Element_deskriptiv">nein</span><span class="f_Step_Anmerkung">]; Leerpositionen bleiben erhalten. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">1</span><span class="f_Step_Anmerkung"> = </span><span class="f__Software_Element_deskriptiv">ja</span><span class="f_Step_Anmerkung">]; Leerpositionen werden entfernt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">ja</span><span class="f_Step"> oder </span><span class="f__Software_Element_deskriptiv">nein</span><span class="f_Step"> an und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">Leerpositionen entfernen?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Abfrage der Position, die als Startpunkt bestimmt werden soll, wird aktiviert.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Neben der Abfrage [</span><span class="f__Abfrage">Pos. w&auml;hlen</span><span class="f_ToDo_Info">] wird Ihnen unter [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_ToDo_Info">] die Positionsnummer angezeigt, die Sie in der Abfrage [</span><span class="f__Abfrage">Neuer Z&auml;hlbeginn</span><span class="f_ToDo_Info">] eingegeben haben. Wie die Positionsnummern nummeriert werden, h&auml;ngt einerseits davon ab, ob die aktuell zu vergebende Positionsnummer [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_ToDo_Info">] gr&ouml;&szlig;er oder kleiner ist als die Position, die Sie anklicken und, ob Leerpositionen beibehalten oder entfernt werden.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Nummerierung, wenn Sie &quot;nein&quot; gew&auml;hlt haben (Leerpositionen nicht entfernen):</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Task_Info">Wenn </span><span class="f_ToDo_Info">[</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_ToDo_Info">]</span><span class="f_Task_Info"> gr&ouml;&szlig;er ist als die Positionsnummer, die Sie anklicken: Ab der neuen Position werden alle folgenden Positionsnummern um eins hochgez&auml;hlt. </span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Task_Info">Wenn </span><span class="f_ToDo_Info">[</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_ToDo_Info">] </span><span class="f_Task_Info">kleiner ist als die Positionsnummer, die Sie anklicken: Ab der neuen Position werden die Positionsnummern bis zur alten Positionsnummer um eins hochgez&auml;hlt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="2"  style="width:3.8542in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">a) Z&auml;hlbeginn:</span><span class="f_R_Tabelle_Kopf_zentriert"> </span><span class="f__Abfrage_Resultat" style="font-weight: bold;">21</span></p>
+</td>
+<td class="Reference_Clean" colspan="2"  style="width:3.7083in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">b) Z&auml;hlbeginn:</span><span class="f_R_Tabelle_Kopf_zentriert"> </span><span class="f__Abfrage_Resultat" style="font-weight: bold;">19</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 1 &auml;ndert diese in Pos. 21.</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1 &#8594; 21</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 21 &auml;ndert diese in Pos. 19.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">21 &#8594; 19</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" rowspan="4"  style="width:2.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 2 &auml;ndert diese in Pos. 22. Zeitgleich werden alle nachfolgenden Nummern &uuml;ber 22 um eins hochgez&auml;hlt</span>.</p>
+</td>
+<td class="Reference_Clean" style="width:0.9896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2 &#8594; 22</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf n&auml;chste Position.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">22 &#8594; 20</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3 = 3</span></p>
+</td>
+<td class="Reference_Clean" rowspan="3"  style="width:2.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 3 z&auml;hlt zeitgleich alle nachfolgenden Nummern &uuml;ber 21 um eins hoch.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3 &#8594; 21</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">45 &#8594; 46</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">45 &#8594; 46</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">46 &#8594; 47</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">46 &#8594; 47</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Nummerierung, wenn Sie &quot;ja&quot; gew&auml;hlt haben (Leerpositionen entfernen):</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] gr&ouml;&szlig;er ist als die Positionsnummer, die Sie anklicken: Ab der neuen Position werden die Leerstellen aufgef&uuml;llt, bis keine Position mehr hochgez&auml;hlt werden muss, oder die letzte Position erreicht wurde.</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] kleiner ist als die Positionsnummer, die Sie anklicken: Ab der neuen Position werden die Leerstellen aufgef&uuml;llt, bis keine Position mehr hochgez&auml;hlt werden muss, oder die Ausgangsposition erreicht wurde.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="2"  style="width:3.8333in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">a) Z&auml;hlbeginn: </span><span class="f__Abfrage_Resultat" style="font-weight: bold;">21</span></p>
+</td>
+<td class="Reference_Clean" colspan="2"  style="width:3.7500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">b) Z&auml;hlbeginn: </span><span class="f__Abfrage_Resultat" style="font-weight: bold;">3</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.7813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 19 &auml;ndert diese in Pos. 21. Usw.</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9792in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">19 &#8594; 21</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klick auf Pos. 5 &auml;ndert diese in Pos. 3.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">5 &#8594; 3</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" rowspan="4"  style="width:2.7813in;"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;">&nbsp;</p>
+</td>
+<td class="Reference_Clean" style="width:0.9792in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">20 &#8594; 22</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Jeder weitere Klick f&uuml;llt die l&uuml;ckenhafte Nummerierung auf: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">[Pos. 7 - Pos. 43]</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">6 &#8594; 4</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9792in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">24 &#8594; 23</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5521in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0 0.0625in 0;">&nbsp;</p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">44 &#8594; 42</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9792in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">47 &#8594; 24</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5521in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0 0.0625in 0;">&nbsp;</p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">45 &#8594; 43</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9792in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">48 &#8594; 25</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.5521in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0 0.0625in 0;">&nbsp;</p>
+</td>
+<td class="Reference_Clean" style="width:1.0833in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">46 &#8594; 44</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Positionsnummern nacheinander in der gew&uuml;nschten Reihenfolge an. [</span><span class="f__Abfrage">Pos. w&auml;hlen</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">[akt. Pos.] wird nach jedem Klick automatisch hochgez&auml;hlt und zeigt Ihnen die aktuell zu vergebende Positionsnummer an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Positionsnummer wird aktualisiert. Die Leerpositionen werden, je nachdem, ob Sie &quot;nein&quot; oder &quot;ja&quot; gew&auml;hlt haben, beibehalten oder entfernt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Wenn die Positionsnummer </span><span class="f_Task_Info">[</span><span class="f_Step_Anmerkung">akt. Pos.</span><span class="f_Task_Info">]</span><span class="f_Step_Anmerkung"> bereits vergeben ist, wird die nachfolgende Nummer entsprechend um eins hochgez&auml;hlt. Beenden Sie das Umsortieren mit Rechtsklick. Die Abfrage [neuer Z&auml;hlbeginn] wird wieder aktiviert.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Um die Positionsnummern bereichsweise umzusortieren</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B_Rahmen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_rahmen.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen neuen Startwert ein und best&auml;tigen Sie mit der Eingabetaste. Mit Rechtsklick k&ouml;nnen Sie den Startwert &uuml;bernehmen. [</span><span class="f__Abfrage">Neuer Z&auml;hlbeginn</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Entscheiden Sie, ob L&uuml;cken in der Nummerierung entfernt werden sollen oder nicht. Siehe Erkl&auml;rung in <a href="formst_aendpos_allpos.htm" class="topiclink">Alle Positionen neu durchz&auml;hlen</a>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">0</span><span class="f_Step_Anmerkung"> = </span><span class="f__Software_Element_deskriptiv">nein</span><span class="f_Step_Anmerkung">]; Leerpositionen bleiben erhalten. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">1</span><span class="f_Step_Anmerkung"> = </span><span class="f__Software_Element_deskriptiv">ja</span><span class="f_Step_Anmerkung">]; Leerpositionen werden entfernt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">ja</span><span class="f_Step"> oder </span><span class="f__Software_Element_deskriptiv">nein</span><span class="f_Step"> an und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">Leerpositionen entfernen?</span><span class="f_Step">].</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Nummerierung, wenn Sie &quot;nein&quot; gew&auml;hlt haben (Leerpositionen nicht entfernen):</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] gr&ouml;&szlig;er ist als die erste Positionsnummer innerhalb des Bereiches, den Sie anklicken: Ab der neuen Position werden alle folgenden Positionsnummern um eins hochgez&auml;hlt. </span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] kleiner ist als die erste Positionsnummer innerhalb des Bereiches, den Sie anklicken: Ab der neuen Position werden die Positionsnummern bis zur alten Positionsnummer um eins hochgez&auml;hlt.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a6','toggle0186a6_ICON')">Nummerierung, wenn Sie &quot;ja&quot; gew&auml;hlt haben (Leerpositionen entfernen):</a></span></td></tr></table></div>
+<div id="toggle0186a6" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] gr&ouml;&szlig;er ist als die erste Positionsnummer innerhalb des Bereiches, den Sie anklicken: Ab der neuen Position werden die Leerstellen aufgef&uuml;llt, bis keine Position mehr hochgez&auml;hlt werden muss, oder die letzte Position erreicht wurde.</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.2708in;"><span class="f_Task_Info" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Task_Info">Wenn [</span><span class="f__Abfrage_Resultat">akt. Pos.</span><span class="f_Task_Info">] kleiner ist als die erste Positionsnummer innerhalb des Bereiches, den Sie anklicken: Ab der neuen Position werden die Leerstellen aufgef&uuml;llt, bis keine Position mehr hochgez&auml;hlt werden muss, oder die Startposition erreicht wurde.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen um den Bereich, in dem die Positionsnummern neu nummeriert werden sollen. [</span><span class="f__Abfrage">1. Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Klicken Sie hierf&uuml;r einen Punkt, von dem aus der Rahmen aufgezogen werden soll [1. Punkt], und bewegen Sie den Cursor bis die gew&uuml;nschte Rahmengr&ouml;&szlig;e erreicht worden ist. Best&auml;tigen Sie die Auswahl mit Linksklick. [2. Punkt].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.7604in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die L&uuml;cken zwischen den Positionen, die sich innerhalb des Rahmens befinden, werden immer entfernt. Nur die L&uuml;cken zwischen den Positionen, die sich au&szlig;erhalb des Rahmens befinden, bleiben erhalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie die Sortierrichtung fest. [</span><span class="f__Abfrage">Sortierrichtung</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.5729in;"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="Z_Sortierrichtung" style="margin:0;width:2.5313in;height:2.0833in;border:none" src="z_sortierrichtung.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:7.8229in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es gibt acht Richtungen. Wenn Sie den Cursor innerhalb des Rahmens bewegen, werden zwei Richtungspfeile (Haupt- und Nebenrichtung; siehe Bild) eingeblendet. Der Ausgangspunkt wird durch ein Kreis-Symbol dargestellt und kennzeichnet den Quadranten, in dem sich der Cursor gerade befindet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Positionen werden zun&auml;chst in Hauptrichtung umnummeriert. Zweigen weitere Positionen in vertikaler bzw. horizontaler Richtung von der Hauptrichtung ab, wird nach Positionen in die Nebenrichtung gesucht.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beispiel (siehe Bild):</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Positionsnummern werden nach unten in Y-Richtung (Hauptrichtung) abgescannt und umnummeriert, eine nach der anderen. Liegen mehrere Positionen auf einer Ebene, werden diese dann in X-Richtung (Nebenrichtung) umnummeriert. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in den entsprechenden Bereich. [</span><span class="f__Abfrage">Sortierrichtung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Positionsnummern werden aktualisiert. Die Leerpositionen werden, je nachdem, ob Sie &quot;nein&quot; oder &quot;ja&quot; gew&auml;hlt haben, beibehalten oder entfernt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.5000in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Position-umsortieren_01" style="margin:0 auto 0 auto;width:3.9583in;height:3.0208in;border:none" src="z_position-umsortieren_01.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:4.6250in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Position-umsortieren_02" style="margin:0 auto 0 auto;width:3.8542in;height:3.0521in;border:none" src="z_position-umsortieren_02.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.5000in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden zun&auml;chst die Positionsnummern mit der gr&ouml;&szlig;ten Y-Koordinate und dann nach den X-Koordinaten von klein nach gro&szlig; umnummeriert.</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:4.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Positionsnummern au&szlig;erhalb des markierten Bereiches werden in der vorhandenen Reihenfolge hochgez&auml;hlt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a6\',\'toggle0186a6_ICON\')');
+HMInitToggle('toggle0186a6','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

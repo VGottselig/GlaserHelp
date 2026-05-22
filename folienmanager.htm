@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Folienmanager (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="AutFol,Automatische Folienbelegung,Folien,Folien automatische Folienbelegung ein-/ausschalten,Folien Foliennummer ändern,Folien gruppieren,Folien löschen,Folien neu nummerieren,Folien sperren,Folien umbenennen,Folienmanager" />
+   <meta name="description" content="Folienverwaltung: Anlegen, Gruppieren, Sperren, Ein-/Ausblenden, Transformieren und Löschen von Folien." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_folien.htm">Folien</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="folienliste_drucken.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_folien.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="hilfspunkte_rechtes_menue.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Folienmanager </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Folienverwaltung: Anlegen, Gruppieren, Sperren, Ein-/Ausblenden, Transformieren und L&ouml;schen von Folien.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Folienmanager &ouml;ffnen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Klicken Sie in der unteren Men&uuml;leiste auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Task_Info">. Die Schaltfl&auml;che ist mit der aktuellen Folieneinstellung beschriftet, z.&nbsp;B. &quot;AutFol&quot;, wenn die automatische Folienzuweisung eingeschaltet ist, oder &quot;Texte&quot;, wenn Folie&nbsp;1 aktuell gesetzt ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Untere Men&uuml;leiste:</span></p>
+<p class="p_ImageCaption"><img alt="ML_untere_Menueleiste_Folienverwaltung" style="margin:0;width:7.2708in;height:0.4583in;border:none" src="ml_untere_menueleiste_folienverwaltung.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Foliengruppen werden im Gruppenfeld (links im Dialogbereich) angezeigt. Um die in der Standardgruppe enthaltenen Folien individuell zu gruppieren, k&ouml;nnen neue Foliengruppen angelegt und die gew&uuml;nschten Folien in die entsprechende Gruppe verschoben (kopiert) werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:6.7917in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="D_Folienmanager-Dialog" style="margin:0;width:6.6250in;height:4.8021in;border:none" src="d_folienmanager-dialog.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Automatische Folienbelegung (Folienautomatik)</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_A_Allgemein"> aktiviert ist (untere Men&uuml;leiste), werden die Zeichenelemente beim Konstruieren und beim Bewehren automatisch auf den f&uuml;r die jeweilige Funktion vorgesehenen Folien abgelegt. Der Wert &quot;-1&quot; in der Abfragezeile unter [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Folien</span><span class="f_A_Allgemein">] bedeutet, dass die automatische Folienbelegung aktiviert ist.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Siehe: <a href="ref_folienautomatik.htm" class="topiclink" title="Folienautomatik">Liste der automatischen Folienbelegung</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="folieaktuell" class="hmanchor"></a><span class="f_ToDo">Folienautomatik ein- oder ausschalten</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_AutomatischeFolien" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_automatischefolien.png"/><span class="f_R_Option"> automatische Folie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf dieses Symbol, um die Folienautomatik zu aktivieren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Folieaktuellsetzen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieaktuellsetzen.png"/><span class="f_R_Option"> Folie aktuell setzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Elemente, die Sie erzeugen, werden in die gew&auml;hlte Folie gezeichnet. Klicken Sie auf dieses Symbol, um die im Folienmanager markierte Folie als aktuelle Folie zu setzen. Auf der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_R_Option_Beschreibung"> wird der Name durch die ersten sechs Buchstaben der aktuellen Folie angezeigt (z. B. &quot;MATTEN&quot;). Die Folienautomatik ist deaktiviert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="B_Folienverwaltung_3-Matten" style="margin:0;width:7.2604in;height:0.4792in;border:none" src="b_folienverwaltung_3-matten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Aktionen zur&uuml;cksetzen oder wiederherstellen </span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Um &Auml;nderungen wie das Umbenennen oder L&ouml;schen von Folien r&uuml;ckg&auml;ngig zu machen oder wiederherzustellen, verwenden Sie die Korrekturfunktionen in der unteren Men&uuml;leiste.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="B_Folienverwaltung_Kor" style="margin:0;width:2.9896in;height:0.5104in;border:none" src="b_folienverwaltung_kor.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Siehe: <a href="rm_bearbeiten.htm" class="topiclink">Korrekturfunktionen</a></span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Optionen f&uuml;r das Markieren von Folien</span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.2813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.4375in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linksklick auf eine Tabellenzeile.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrfachauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.4375in;"><p class="p_R_Tabellenzeile"><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile"> + linke Maustaste auf eine Tabellenzeile.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Im Block</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.4375in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die erste Folie an, die markiert werden soll und anschlie&szlig;end, bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalt</span><span class="f_R_Tabellenzeile">-Taste </span><span class="f_R_Option_Beschreibung">(Shift)</span><span class="f_R_Tabellenzeile">, die letzte Folie. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Folien, die sich zwischen den ausgew&auml;hlten Folien befinden, werden markiert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Alle markieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.4375in;"><p class="p_R_Tabellenzeile"><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile"> + </span><span class="f__Tastatur">A</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Optionen im Dialog &quot;Folienmanager&quot;</span></p>
+<p class="p_R_Bereich"><a name="_fm_gruppe" class="hmanchor"></a><span class="f_R_Bereich">Gruppe</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Erstellen und L&ouml;schen von Foliengruppen. Die Foliengruppen werden im </span><span class="f_R_Option_Beschreibung"><a href="folienmanager.htm#gruppenfeld" class="topiclink">Gruppenfeld</a></span><span class="f_R_Bereich_Info_Rahmen"> angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Gruppehinzuf" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_gruppehinzuf.png"/><span class="f_R_Option"> Neue Gruppe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erstellt in der Gruppenliste eine neue Gruppe. Geben Sie den Namen der Gruppe ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Gruppeentfernen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_gruppeentfernen.png"/><span class="f_R_Option"> Gruppe l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht die in der Gruppenliste markierte Gruppe.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="austabelle" class="hmanchor"></a><span class="f_R_Bereich">aus Tabelle</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Verwalten und Bearbeiten von Folien &uuml;ber die Auswahl in der Folienliste. </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Diese und weitere Funktionen sind auch &uuml;ber das Kontextmen&uuml; erreichbar. Klicken Sie hierf&uuml;r mit der rechten Maustaste einen Tabelleneintrag an. Wenn Sie mehrere Folien markiert haben, werden nur Funktionen angezeigt, die auf die markierten Folien angewandt werden k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Tabellenzeile"><img alt="SCR_Folienmanager_Folienliste_Kontext" style="margin:0;width:6.6250in;height:4.9896in;border:none" src="scr_folienmanager_folienliste_kontext.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><a name="neuefolie" class="hmanchor"></a><img alt="I_Folienmanager_NeueFolie" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_neuefolie.png"/><span class="f_R_Option"> Neue Folie </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erstellen einer neuen Folie in der Gruppe </span><span class="f__Eigenname">Alle Folien</span><span class="f_R_Option_Beschreibung">. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><img alt="D_Neue-Folie" style="margin:0;width:3.4167in;height:1.4375in;border:none" src="d_neue-folie.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Foliennummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Foliennummer. Die Foliennummer muss kleiner oder gleich 9899 sein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folienname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Namen der Folie ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folie aktuell setzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Neue Folie als aktuelle Folie setzen; die automatische Folienbelegung (AutFol) wird ausgeschaltet. Die aktuelle Folie wird auf der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_R_Option_Beschreibung"> (Untere Men&uuml;leiste) angezeigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_AlleFolienAn" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_allefolienan.png"/><span class="f_R_Option"> Alle Folien an</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle ausgeschalteten Folien werden eingeschaltet. Diese Funktion bezieht sich auf die markierte Gruppe und auf &quot;Alle Folien&quot;.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_AlleFolienAus" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_allefolienaus.png"/><span class="f_R_Option"> Alle Folien aus </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle sichtbaren Folien werden ausgeschaltet. Diese Funktion bezieht sich auf die markierte Gruppe und auf &quot;Alle Folien&quot;.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_folien_sichtbarkeit" class="hmanchor"></a><img alt="I_Folienmanager_Sichtbarkeit" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_sichtbarkeit.png"/><span class="f_R_Option"> Sichtbarkeit umkehren </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle eingeschalteten <img alt="I_Symbol-Folie-an" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-an.png"/> und teilweise sichtbaren <img alt="I_Symbol-Folie-an_aus" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-an_aus.png"/> Folien werden ausgeschaltet (s. <a href="folienmanager.htm#_folienliste" class="topiclink">Folienliste</a>). Zugleich werden alle ausgeschalteten Folien eingeschaltet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Folieaktuellsetzen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieaktuellsetzen.png"/><span class="f_R_Option"> Folie aktuell setzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die markierte Folie wird als aktuelle Folie gesetzt. Auf der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_R_Option_Beschreibung"> wird der Name durch die ersten sechs Buchstaben der aktuellen Folie angezeigt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie eine ausgeschaltete und/oder gesperrte Folie als aktuelle Folie setzen, erhalten neue Elemente diesen Status nicht. Siehe: <a href="folienmanager.htm#_folman_status" class="topiclink">Status</a>.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie, dass die automatische Folienbelegung ausgeschaltet ist.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_AutomatischeFolien" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_automatischefolien.png"/><span class="f_R_Option"> automatische Folie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die automatische Folienbelegung wird aktiviert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Folieumbenennen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieumbenennen.png"/><span class="f_R_Option"> Folie umbenennen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie im Dialog einen neuen Foliennamen ein. Die vordefinierten Foliennummern 0 bis 19 k&ouml;nnen nicht umbenannt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_Hervorhebung_Text">Alternativ</span><span class="f_R_Option_Beschreibung">: F&uuml;hren Sie einen Doppelklick in der Tabellenzelle aus, um die Folie umzubenennen. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Folienmanager_umbenennen" style="margin:0;width:4.5104in;height:0.3750in;border:none" src="scr_folienmanager_umbenennen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienNeuNummerrieren" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folienneunummerrieren.png"/><span class="f_R_Option"> Folien neu nummerieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndern der Foliennummerierung f&uuml;r selbst erstellte Folien (nicht f&uuml;r Folien 0 bis 19). &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Folien neu nummerieren</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><img alt="D_Folie-neu-nummerieren" style="margin:0;width:5.2083in;height:4.0833in;border:none" src="d_folie-neu-nummerieren.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Startwert</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Foliennummer an, von der aus die Nummerierung beginnen soll, und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schrittweite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Rhythmus der Nummerierung an und best&auml;tigen Sie mit der Eingabetaste. Zum Beispiel:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Startwert = 20;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schrittweite = 3</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&#8594; Nr. Neu = 20, 23, 26, 29...</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Nr. Alt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die aktuelle Foliennummerierung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Foliennamen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn eine Folie keine Zeichenelemente enth&auml;lt wird in dieser Spalte in der zugeh&ouml;rigen Zeile ein X angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Nr. Neu</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die neue Foliennummerierung nach Angabe des Startwerts und/oder der Schrittweite an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">alle Folien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle in der Zeichnung vorhandenen Folien werden neu nummeriert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">markierte Folien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur die im Folienmanager markierten Folien werden mit neuen Nummern versehen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">leere Folien l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Folien, die keine Elemente enthalten, werden gel&ouml;scht.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">zu l&ouml;schende Folien anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Folien, die bei der Nummerierung gel&ouml;scht werden, werden anstelle des Namens mit &quot;wird gel&ouml;scht&quot; gekennzeichnet.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienNummerAendern" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_foliennummeraendern.png"/><span class="f_R_Option"> Foliennummer &auml;ndern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ein Dialog wird ge&ouml;ffnet. Geben Sie eine neue Foliennummer ein. Gesperrte Folien k&ouml;nnen auch mit neuen Foliennummern versehen werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienTransformieren" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folientransformieren.png"/><span class="f_R_Option"> Folie transformieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eine Ausgangsfolie wird in eine Zielfolie transformiert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ein Dialog wird ge&ouml;ffnet. Beachten Sie, dass diese Aktion auch auf ausgeblendete Folien angewendet wird. Gesperrte Folien werden nicht ber&uuml;cksichtigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienLoeschen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folienloeschen.png"/><span class="f_R_Option"> Folien l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die vorab markierten Folien werden gel&ouml;scht. Bei den Folien 0 bis 19 werden nur die Elemente gel&ouml;scht.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_AlleLeerenFolien" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_alleleerenfolien.png"/><span class="f_R_Option"> Alle leeren Folien l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Leere, selbst erstellte Folien k&ouml;nnen gel&ouml;scht werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Folienmanager-Dialog_Folie-loeschen" style="margin:0;width:3.4063in;height:1.8229in;border:none" src="d_folienmanager-dialog_folie-loeschen.png"/></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Anmerkungen:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Eine Wiederherstellung gel&ouml;schter Folien ist mit der Korrekturfunktion in der unteren Men&uuml;leiste m&ouml;glich.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die vordefinierten Folien 0 - 19 k&ouml;nnen auch dann nicht gel&ouml;scht werden, wenn sie leer sind.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ja</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht die erste Folie, die keine Elemente enth&auml;lt. Danach wird die n&auml;chste leere Folie angezeigt. Jede Folie muss einzeln best&auml;tigt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Nein</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die n&auml;chste leere Folie an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ja f&uuml;r alle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Folien, die keine Elemente enthalten, werden entfernt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Aktion wird abgebrochen und der Dialog geschlossen. Gel&ouml;schte Folien werden nicht wiederhergestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">aus Zeichnung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Verwalten und Bearbeiten von Folien &uuml;ber die Auswahl in der Zeichnung. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolieAusschalten" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieausschalten.png"/><span class="f_R_Option"> Folie ausschalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie in der Zeichenfl&auml;che auf ein Element, um die Folie, in der sich dieses Element befindet, auszuschalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Folieaktuellsetzen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieaktuellsetzen.png"/><span class="f_R_Option"> Folie aktuell setzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf ein Element der Folie, die Sie als aktuelle Folie setzen m&ouml;chten. Auf der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_R_Option_Beschreibung"> wird der Name durch die ersten sechs Buchstaben der aktuellen Folie angezeigt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie, dass die automatische Folienbelegung ausgeschaltet ist. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_Folieumbenennen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folieumbenennen.png"/><span class="f_R_Option"> Folie umbenennen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf ein Element der Folie, die Sie umbenennen m&ouml;chten. Ein Dialog wird ge&ouml;ffnet, in dem Sie die Folie umbenennen k&ouml;nnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienNummerAendern" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_foliennummeraendern.png"/><span class="f_R_Option"> Foliennummer &auml;ndern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf ein Element der Folie, die Sie umnummerieren m&ouml;chten. Ein Dialog wird ge&ouml;ffnet, in dem Sie der Folie eine neue Nummer zuweisen k&ouml;nnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienTransformieren" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folientransformieren.png"/><span class="f_R_Option"> Folie transformieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Inhalt der Ausgangsfolie wird in eine Zielfolie kopiert. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf ein Element der Folie, deren Inhalt Sie in eine andere Folie kopieren m&ouml;chten. Ein Dialog wird ge&ouml;ffnet, in dem Sie die Zielfolie ausw&auml;hlen k&ouml;nnen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie, dass diese Aktion auch auf ausgeblendete Folien angewendet wird. Gesperrte Folien werden nicht ber&uuml;cksichtigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolieSperren" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_foliesperren.png"/><span class="f_R_Option"> Folie sperren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sperrt die markierte Folie.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolieFreigeben" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_foliefreigeben.png"/><span class="f_R_Option"> Folie freigeben</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entsperrt die markierte Folie.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Folienmanager_FolienLoeschen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_folienloeschen.png"/><span class="f_R_Option"> Folie l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht die markierte Folie. Bei den Folien 0 bis 19 werden nur die Elemente gel&ouml;scht.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hinzuf&uuml;gen zu Gruppe (Kontextmen&uuml;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Kopiert die markierten Folien in eine Foliengruppe. Fahren Sie die Maus &uuml;ber die Option, um alle Foliengruppen aufzuklappen. Klicken Sie anschlie&szlig;end die gew&uuml;nschte Foliengruppe an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="gruppenfeld" class="hmanchor"></a><span class="f_R_Bereich">Gruppenfeld</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Anzeige und Verwaltung der Foliengruppen. Foliengruppen bleiben beim Auslagern [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Bereich_Info_Rahmen"> | </span><span class="f__Software_Element_deskriptiv">Auslag</span><span class="f_R_Bereich_Info_Rahmen">] erhalten und werden beim Einf&uuml;gen [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Bereich_Info_Rahmen"> | </span><span class="f__Software_Element_deskriptiv">Einf&uuml;g</span><span class="f_R_Bereich_Info_Rahmen">] an die vorhandenen Gruppen angeh&auml;ngt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Foliengruppen</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Gruppe </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_A_Allgemein"> steht immer zur Verf&uuml;gung und enth&auml;lt grunds&auml;tzlich die Folien 0 bis 19 (Standardfolien). Die Standardfolien k&ouml;nnen weder gel&ouml;scht noch verschoben werden. Zus&auml;tzliche Folien k&ouml;nnen nur in der Gruppe </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_A_Allgemein"> erstellt und dann in eine andere Gruppe verschoben (kopiert) werden. Gruppierte Folien bleiben immer als Original in der Gruppe </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_A_Allgemein"> enthalten.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Folienmanager_Foliengruppen_alle" style="margin:0;width:6.7292in;height:2.1458in;border:none" src="scr_folienmanager_foliengruppen_alle.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A:</span><span class="f__Bild_Legende_normal"> Gruppenfeld; </span><span class="f__Bild_Legende_fett">B:</span><span class="f__Bild_Legende_normal"> Folienliste</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Dieses Symbol <img alt="I_Folienmanager_Symbol-Markierung" style="margin:0;width:0.1458in;height:0.1458in;border:none" src="i_folienmanager_symbol-markierung.png"/> neben einer Foliengruppe zeigt an, dass die in der Folienliste markierte Folie der Gruppe zugewiesen ist. Wenn Sie eine Foliengruppe markieren, werden in der Folienliste nur die zugewiesenen Folien angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Folienmanager_Foliengruppen" style="margin:0;width:6.7396in;height:2.1563in;border:none" src="scr_folienmanager_foliengruppen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">&Uuml;ber das Kontextmen&uuml; (Rechtsklick auf eine Gruppe) k&ouml;nnen Sie Gruppen erstellen, l&ouml;schen, umbenennen und Folien gruppenweise ein-/ausblenden oder sperren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Gruppenfeld (Kontextmen&uuml;)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0.0417in 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Status</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Blendet alle in der Gruppe enthaltenen Folien ein [</span><span class="f__Software_Element_deskriptiv">An</span><span class="f_R_Tabellenzeile">] bzw. aus [</span><span class="f__Software_Element_deskriptiv">Aus</span><span class="f_R_Tabellenzeile">].</span><br>
+<span class="f_R_Tabellenzeile">Der Folienstatus wird in der Folienliste (Spalte </span><span class="f__Software_Element_deskriptiv">Status</span><span class="f_R_Tabellenzeile">) angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Sperre</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sperren [</span><span class="f__Software_Element_deskriptiv">An</span><span class="f_R_Tabellenzeile">] oder entsperren [</span><span class="f__Software_Element_deskriptiv">Aus</span><span class="f_R_Tabellenzeile">] aller in der Gruppe enthaltenen Folien.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Neue Gruppe </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nur bei der Standardgruppe </span><span class="f__Software_Element_deskriptiv">Alle&nbsp;Folien</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">F&uuml;gt der Gruppenliste einen weiteren Eintrag hinzu. Geben Sie den gew&uuml;nschten Namen ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Leere Gruppen l&ouml;schen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nur bei der Standardgruppe </span><span class="f__Software_Element_deskriptiv">Alle&nbsp;Folien</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">Alle Foliengruppen, die keine Folien enthalten, werden entfernt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Gruppe umbenennen </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert den Gruppennamen zum Editieren. Geben Sie den gew&uuml;nschten Namen ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Gruppe l&ouml;schen </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&ouml;scht die Gruppe.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Foliengruppen verwalten</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="Eine neue Gruppe der Gruppenliste hinzufügen" title="Eine neue Gruppe der Gruppenliste hinzufügen" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" title="Eine neue Gruppe der Gruppenliste hinzufügen" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um eine neue Foliengruppe zu erzeugen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Toggle_Tabelle" style="width:100%;" role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><img alt="I_Folienmanager_Gruppehinzuf" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_gruppehinzuf.png"/><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Gruppenliste wird eine neue Gruppe erzeugt, z.&nbsp;B. </span><span class="f__Eigenname">Gruppe&nbsp;1</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Namen f&uuml;r die neue Gruppe ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Gruppe wird mit dem eingegebenen Namen erstellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="Eine neue Gruppe der Gruppenliste hinzufügen" title="Eine neue Gruppe der Gruppenliste hinzufügen" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" title="Eine neue Gruppe der Gruppenliste hinzufügen" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Um einer Gruppe Folien hinzuzuf&uuml;gen</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Neue Folien werden immer in der Standardgruppe </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_ToDo_Info"> erstellt. Um Folien aus der Gruppe </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_ToDo_Info"> einer anderen Gruppe hinzuzuf&uuml;gen:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf den Gruppeneintrag </span><span class="f__Software_Element_deskriptiv">Alle Folien</span><span class="f_Step">, um die in der Standardgruppe enthaltenen Folien anzuzeigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie in der Folienliste die Folien, die einer Gruppe hinzugef&uuml;gt werden sollen. (Verwenden Sie </span><span class="f__Tastatur">Strg</span><span class="f_Step"> oder </span><span class="f__Tastatur">Shift</span><span class="f_Step"> + Mausklick, um mehrere Folien zu markieren).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie die Folien mit der Maus auf die gew&uuml;nschte Foliengruppe.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">oder:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Kontextmen&uuml; unter</span><span class="f__Software_Element_deskriptiv"> hinzuf&uuml;gen zu Gruppe</span><span class="f_Step"> die Gruppe, in die die markierten Folien kopiert werden sollen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die markierten Folien werden in die gew&auml;hlte Gruppe gelegt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="Eine Foliengruppe aus der Gruppenliste löschen" title="Eine Foliengruppe aus der Gruppenliste löschen" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" title="Eine Foliengruppe aus der Gruppenliste löschen" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Um eine Gruppe zu l&ouml;schen</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><img alt="I_Folienmanager_Gruppeentfernen" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="i_folienmanager_gruppeentfernen.png"/><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Best&auml;tigen Sie die Abfrage. Die Gruppe wird gel&ouml;scht.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="_folienliste" class="hmanchor"></a><span class="f_R_Bereich">Folienliste</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Zeigt alle Folien, die in der gew&auml;hlten Foliengruppe enthalten sind. Die Folien k&ouml;nnen &uuml;ber das Kontextmen&uuml; oder mit den Funktionen im Bereich </span><span class="f__Software_Element_deskriptiv">aus Tabelle</span><span class="f_R_Bereich_Info_Rahmen"> verwaltet werden. </span><span class="f_R_Option_Beschreibung"><a href="folienmanager.htm#austabelle" class="topiclink">&raquo;&nbsp;aus Tabelle</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Folien sortieren</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Klicken Sie eine Spalten&uuml;berschrift an (Nummer, Bezeichnung, Status, Gesperrt, Elemente), um die Folien entweder absteigend oder aufsteigend zu sortieren. Ein Pfeil am rechten Rand der Spalten&uuml;berschrift zeigt Ihnen die Sortierreihenfolge, wenn Sie sie anklicken.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Folienmanager_sortieren" style="margin:0;width:7.0625in;height:2.8229in;border:none" src="scr_folienmanager_sortieren.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Nummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Foliennummer. Die Folien 0 - 19 sind voreingestellt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bezeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Namen der Folien. Die Folien 0 - 19 k&ouml;nnen nicht umbenannt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_folman_status" class="hmanchor"></a><span class="f_R_Option">Status</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ein- und Ausschalten von Folien per Mausklick. Eine Folie kann nur ausgeblendet werden, wenn sie Zeichenelemente enth&auml;lt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.2708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Symbol-Folie-an" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-an.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0104in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folie ist eingeschaltet. Alle Elemente der Folie sind sichtbar.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Symbol-Folie-aus" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-aus.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0104in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folie ist ausgeschaltet. Keines der Elemente der Folie ist sichtbar.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Symbol-Folie-an_aus" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-an_aus.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0104in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1. Eine eingeschaltete Folie enth&auml;lt ein ausgeblendetes Element.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2. Eine ausgeschaltete Folie enth&auml;lt ein sichtbares Element.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Wenn Sie z. B. die Folie &quot;MAKET&quot; ausschalten und nachtr&auml;glich auf dieser Folie eine Ma&szlig;kette zeichnen, ist die neu erzeugte Ma&szlig;kette sichtbar und dieser Zustand wird angezeigt.</span><br>
+<span class="f_R_Tabellenzeile">Mit einem Klick auf das Symbol werden alle Elemente dieser Folie sichtbar. Mit einem weiteren Klick werden alle Elemente dieser Folie ausgeblendet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gesperrt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sperren und Entsperren per Mausklick.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.2813in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.0313in;"><img alt="I_Symbol-nicht-gesperrt" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-nicht-gesperrt.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0000in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folie ist nicht gesperrt. Alle Elemente der Folie k&ouml;nnen bearbeitet werden.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2813in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Symbol-gesperrt" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-gesperrt.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0000in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folie ist gesperrt. Keines der Elemente der Folie kann bearbeitet werden.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2813in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Symbol-Folie-gesperrt_nicht-gesperrt" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-gesperrt_nicht-gesperrt.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.0000in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1. Eine nicht gesperrte Folie enth&auml;lt ein gesperrtes Element. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2. Eine gesperrte Folie enth&auml;lt ein nicht gesperrtes Element. </span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Wenn Sie z. B. die Folie &quot;MAKET&quot; sperren und nachtr&auml;glich auf dieser Folie eine Ma&szlig;kette zeichnen, ist die neu erzeugte Ma&szlig;kette nicht gesperrt und dieser Zustand wird angezeigt.</span><br>
+<span class="f_R_Tabellenzeile">Mit einem Klick auf das Symbol wird die Folie entsperrt. Mit einem weiteren Klick wird die Folie gesperrt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_A_Allgemein">Siehe auch: <a href="konst3_eleatr.htm" class="topiclink" title="Einzelne Elemente sperren/freigeben">Einzelne Elemente sperren/freigeben</a>; <a href="konst1_elementeigenschaften_anzeigen.htm" class="topiclink" title="Elementeigenschaften anzeigen">Elementeigenschaften anzeigen</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Elemente </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;">Zeigt die Anzahl der Elemente in der Folie an.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Statusleiste</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">&Uuml;bersicht der gew&auml;hlten Einstellungen und Suchfunktion.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Aktuelle Folie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier wird der Name der aktuellen Folie angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Markierungsauswahl </span>(Ausklappliste)</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7292in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Keine Markierung </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0000in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Elemente werden so dargestellt, wie sie gezeichnet wurden. </span><br>
+<span class="f_R_Tabellenzeile">Wenn in [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">EleAtr</span><span class="f_R_Tabellenzeile">] </span><span class="f__Software_Element_deskriptiv"><a href="konst3_eleatr.htm" class="topiclink" title="Farbe für Markieren">MarFar</a></span><span class="f_R_Tabellenzeile"> gew&auml;hlt wurde, werden die gesperrten Elemente in dieser Farbe angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7292in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Selektierte Folien markieren </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0000in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Elemente der markierten Folie(n) werden in den normalen Farben dargestellt. Alle &uuml;brigen Elemente werden in der in [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm </span><span class="f_R_Tabellenzeile">|</span><span class="f__Software_Element_deskriptiv"> Elemente im Hintergrund</span><span class="f_R_Tabellenzeile">] eingestellten Farbe dargestellt. Siehe:</span><span class="f__Software_Element_deskriptiv"> <a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Elemente im Hintergrund">Elemente im Hintergrund</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7292in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Gesperrte Elemente markieren </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0000in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn in [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">EleAtr</span><span class="f_R_Tabellenzeile">] die Markierungsfarbe [</span><span class="f__Software_Element_deskriptiv">MarFar</span><span class="f_R_Tabellenzeile">] f&uuml;r gesperrte Elemente nicht eingestellt wurde, werden gesperrte Elemente in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_R_Tabellenzeile"> hervorgehoben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folie suchen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Suche nach Folienbezeichnungen in der angezeigten Foliengruppe. Die Folien, deren Namen mit dem Eintrag &uuml;bereinstimmen, werden in der Liste aufgef&uuml;hrt. Nutzen Sie auch den Platzhalter *, um die Suche einzugrenzen. Wenn Sie *m eingeben, werden alle Foliennamen gefunden, die ein m oder M enthalten. Um die Suche zu beenden, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">X</span><span class="f_R_Option_Beschreibung">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_folien.htm" class="topiclink" title="Folienfunktionen">Folien (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

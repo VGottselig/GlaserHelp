@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wolke erstellen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Änderungswolke,Änderungswolke erstellen,Revisionswolke,Revisionswolke erstellen,Symbole,Symbole Wolke erstellen,Wolke,Wolke erstellen" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf eine Wolke." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="symbole.htm">Symbole</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="symbol_fase.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="symbole.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="symbol_schweissnahtsymbol.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Wolke erstellen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="symbole.htm" class="topiclink" title="Symbole einfügen (Funktionsübersicht)"><img alt="Symbole einfügen (Funktionsübersicht)" title="Symbole einfügen (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_symbol.png"/></a> <img alt="B-akt_Wolke_Symbol" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_wolke_symbol.png"/></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf eine Wolke.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Einen beliebigen Bereich mit einer Wolkenform umrahmen, z.&nbsp;B. um einen ge&auml;nderten Zeichenbereich zu verdeutlichen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Stiftauswahl" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_stiftauswahl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Stiftauswahl. Falls Stifte als Favoriten aktiviert wurden, werden diese an erster/oberster Stelle angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_so-wie" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_so-wie.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Uuml;bernimmt die Stiftnummer und die Texteinstellungen (Schriftart, Textgr&ouml;&szlig;e, Breitenfaktor) der angeklickten Wolke. Wenn der Text mit einer anderen Stiftnummer abgesetzt wurde, wird beim Anklicken des Textes die Stiftnummer der Wolkenform &uuml;bernommen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_BGr" style="margin:0;width:0.7500in;height:0.2500in;border:none" src="b_bgr.png"/><img alt="B_BFa-1" style="margin:0;width:1.4792in;height:0.2500in;border:none" src="b_bfa-1.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Individuelle Textgr&ouml;&szlig;e (wird auf Textgr&ouml;&szlig;ennummer 8 gespeichert) bzw. individuelle Textbreite.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Schriftauswahl" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_schriftauswahl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl des Schrifttyps.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Schriftgroesse" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_schriftgroesse.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl der Textgr&ouml;&szlig;e.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Wolkenform" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_wolkenform.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl der Wolkenform &uuml;ber Ausklappliste oder Formnummer.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Rechte_Rahmen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_rechte_rahmen.png"/><img alt="B_Polygo_Rahmen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_polygo_rahmen.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Rahmenlinien rechteckig / polygonal.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Klicken Sie mit der Elementauswahl </span><span class="f__Software_Element_deskriptiv">Polygo</span><span class="f_Step_Anmerkung"> mehrere Punkte an, die den Bereich umschlie&szlig;en. [</span><span class="f__Abfrage">1.Punkt</span><span class="f_Step_Anmerkung">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step_Anmerkung">]. </span><br>
+<span class="f_Step_Anmerkung">Best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Ziehen Sie mit </span><span class="f__Software_Element_deskriptiv">Rechte</span><span class="f_Step_Anmerkung"> einen Rahmen um den Bereich.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Die Wolke wird an den Cursor geh&auml;ngt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit den Optionen <img alt="B_positiv" style="margin:0;width:1.1458in;height:0.1875in;border:none" src="b_positiv.png"/> / <img alt="B_negativ" style="margin:0;width:1.1458in;height:0.1875in;border:none" src="b_negativ.png"/> unter der Abfrage [</span><span class="f__Abfrage">Lage</span><span class="f_Step_Anmerkung">] w&auml;hlen Sie die Darstellung der Wolke:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:1.6875in;"><p class="p_ImageCaption_zentriert"><img alt="SCR_wolke_pos" style="margin:0 auto 0 auto;width:1.1458in;height:0.8021in;border:none" src="scr_wolke_pos.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:1.9063in;"><p class="p_ImageCaption_zentriert"><img alt="SCR_wolke_neg" style="margin:0 auto 0 auto;width:1.3646in;height:0.8854in;border:none" src="scr_wolke_neg.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:1.6875in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Positiv</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:1.9063in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Negativ</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schieben Sie die Wolke an die gew&uuml;nschte Stelle und legen Sie sie mit Linksklick ab. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bei der Texteingabe stehen Ihnen verschiedene Eingabe-M&ouml;glichkeiten zur Verf&uuml;gung. [</span><span class="f__Abfrage">Text (auch anklicken)</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Best&auml;tigen Sie die Texteingabe abschlie&szlig;end mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Hervorhebung_Text">Freie Texteingabe:</span><br>
+<span class="f_Step_Anmerkung">Geben Sie den Text ggf. mit <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink" title="Konst1 - Texte - Sonderzeichen einfügen">Sonderzeichen</a> </span><img alt="I_Sonderzeichen" style="margin:0;width:0.2708in;height:0.1979in;border:none" src="i_sonderzeichen.png"/><span class="f_ImageCaption"> </span><span class="f_Step_Anmerkung">in die Eingabezeile ein.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Hervorhebung_Text">Keine Texteingabe:</span><br>
+<span class="f_Step_Anmerkung">Wenn Sie das Eingabefeld leer lassen und best&auml;tigen, ist die Aktion beendet, und Sie k&ouml;nnen eine weitere Wolke zeichnen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Hervorhebung_Text">Favoritentext ausw&auml;hlen:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie einen bereits eingetragenen Text oder Favoritentext in der Auswahlliste an. Die Favoritentexte werden an oberster Position angeboten. Danach folgen die zuletzt eingetragenen Texte. Die angebotenen Favoritentexte f&uuml;r Wolken k&ouml;nnen in den <a href="rd_systemdaten_favoritentexte.htm" class="topiclink" title="Systemdaten - Favoritentexte (Registerkarte)">Systemdaten</a> definiert werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.9792in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_wolke_favoriten" style="margin:0;width:3.5104in;height:1.7917in;border:none" src="scr_wolke_favoriten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">d)</span><span class="f_Hervorhebung_Text">Makrotext ausw&auml;hlen:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie auf die &Uuml;berschrift </span><span class="f__Software_Element_deskriptiv">Makrotexte</span><span class="f_Step_Anmerkung">, um sich die Liste anzeigen zu lassen. Klicken Sie einen Makrotext an. Der Makrotext wird in der Form </span><span class="f__Eigenname">{Makrotext}</span><span class="f_Step_Anmerkung"> in die Eingabe &uuml;bernommen. In der Zeichnung wird dieser nach dem Platzieren des Textes durch den tats&auml;chlichen Inhalt ersetzt. Wenn Sie den Mauscursor &uuml;ber einen Makrotext in der Liste bewegen, wird Ihnen der Textinhalt als Tooltip angezeigt. Siehe auch: <a href="con_makrotexte.htm" class="topiclink">Verwenden von Makrotexten</a>.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">e)</span><span class="f_Hervorhebung_Text">Mehrzeiligen Text einf&uuml;gen:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie auf <img alt="I_Block_PosKre" style="margin:0;width:0.3438in;height:0.1979in;border:none" src="i_block_poskre.png"/>, um einen mehrzeiligen Text zu erzeugen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Texteingabe</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.9792in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Texteingabe_Wolke" style="margin:0;width:4.9167in;height:2.5521in;border:none" src="d_texteingabe_wolke.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.9792in;"><span class="f_Step_Anmerkung">Geben Sie unter </span><span class="f__Software_Element_deskriptiv">Text zur Wolke</span><span class="f_Step_Anmerkung"> den gew&uuml;nschten Text ggf. mit <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink" title="Konst1 - Texte - Sonderzeichen einfügen">Sonderzeichen</a> ein. Mit der Eingabetaste f&uuml;gen Sie einen Zeilenumbruch ein. Um einen vorhandenen Text aus der linken Spalte an die Cursorposition zu setzen, doppelklicken Sie den Text an. Sie k&ouml;nnen den Text auch markieren und auf <img alt="I_--ganz-nach-rechts" style="margin:0;width:0.4271in;height:0.2604in;border:none" src="i_--ganz-nach-rechts.png"/> klicken. Best&auml;tigen Sie die Eingabe, indem Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung"> klicken.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">f)</span><span class="f_Hervorhebung_Text">Text in Eingabe &uuml;bernehmen:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie einen auf der Zeichnung vorhandenen Text an, um diesen in die Eingabe zu &uuml;bernehmen. Nach dem Anklicken des Textes gelangen Sie direkt zur Ausrichtung des Textes (Winkeleingabe). Textfelder k&ouml;nnen nicht &uuml;bernommen werden.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Hervorhebung_Text" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">g)</span><span class="f_Hervorhebung_Text">Sonderzeichen einf&uuml;gen:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie rechts neben der Abfrage auf <img alt="I_Sonderzeichen" style="margin:0;width:0.2396in;height:0.1771in;border:none" src="i_sonderzeichen.png"/>. Geben Sie im Dialog die entsprechenden Sonderzeichen und ggf. weiteren Text ein. Best&auml;tigen Sie entweder mit </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_Step_Anmerkung">, dann gelangen Sie zur n&auml;chsten Abfrage, oder mit </span><span class="f__Software_Element_deskriptiv">Zur&uuml;ck zur Texteingabe</span><span class="f_Step_Anmerkung">, dann k&ouml;nnen Sie zus&auml;tzlichen Text einf&uuml;gen. Beachten Sie die Erl&auml;uterungen zum <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink">Einf&uuml;gen von Sonderzeichen</a>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie f&uuml;r die Ausrichtung einen Winkel ein. [</span><span class="f__Abfrage">Winkel</span><span class="f_Step">].</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Siehe auch: <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm#ausrichten" class="topiclink" title="Konstruktionshilfen; Ausrichtungsoptionen">Ausrichtungsoptionen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie den Text an die gew&uuml;nschte Stelle und platzieren Sie ihn mit Linksklick. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort eine weitere Wolke zeichnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Wolke" style="margin:0;width:5.6875in;height:1.5938in;border:none" src="z_wolke.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="symbol_loeschen.htm" class="topiclink">Symbol l&ouml;schen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="symbole.htm" class="topiclink">Symbole (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

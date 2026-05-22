@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>DWG/DXF Dateien importieren - [Import]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".DWG,.DXF,Datei,Datei DWG/DXF importieren,DWG/DXF-Dateien,DWG/DXF-Dateien DWG/DXF-Dateien mit ISBCAD verknüpfen,DWG/DXF-Dateien (Zeichenprogramm),DWG/DXF-Dateien (Zeichenprogramm) importieren,Import,Import DWG/DXF,Zeichnung,Zeichnung DWG/DXF importieren" />
+   <meta name="description" content="Öffnen einer DXF- oder DWG-Datei. Die Dateiinhalte werden in das ISBCAD (*.AKT)-Format umgewandelt und können als solches gespeichert werden. Öffnet den Dialog Öffnen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="dat_dwg_dxf_dateien_exportieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_datei.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="dat_pdf_export.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">DWG/DXF Dateien importieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_ImageCaption"> <img alt="B-akt_Import-Datei" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_import-datei.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">&Ouml;ffnen einer DXF- oder DWG-Datei. Die Dateiinhalte werden in das ISBCAD (*.AKT)-Format umgewandelt und k&ouml;nnen als solches gespeichert werden. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Task_Info">.</span></p>
+<h3 class="p_Heading3"><span class="f_Heading3">Unterschiede zwischen DXF/DWG-Import im Hauptmen&uuml; und im Zeichenprogramm:</span></h3>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:4.1667in;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Hauptmen&uuml;</span></p>
+</th>
+<th class="Reference_Menue" style="width:4.5208in;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Zeichenprogramm</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:4.1667in;"><p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Sie k&ouml;nnen mehrere Dateien aus unterschiedlichen Ordnern umwandeln und anschlie&szlig;end einlesen</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Sie k&ouml;nnen den Modellbereich importieren</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Die &Uuml;berpr&uuml;fung des Faktors k&ouml;nnen Sie erst nach dem Einlesen der Zeichnung vornehmen</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Siehe: <a href="des_hauptmenu_a.htm" class="topiclink" title="Das ISBCAD Hauptmenü">Das ISBCAD Hauptmen&uuml;</a></span></p>
+</td>
+<td class="Reference_Menue" style="width:4.5208in;"><p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Sie k&ouml;nnen nur eine Zeichnung importieren</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Sie k&ouml;nnen entweder den Modellbereich oder ein Layout importieren</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Eine Vorschau erm&ouml;glicht Ihnen die Korrektur des Faktors, Wahl der Stifte und aller weiteren Parameter</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein">Sie k&ouml;nnen ein Musterprofil f&uuml;r den Import aus dem Hauptmen&uuml; erzeugen</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">ISBCAD als Standardprogramm zum &Ouml;ffnen von DWG/DXF-Dateien festlegen</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen DWG/DXF-Dateien mit ISBCAD verkn&uuml;pfen, so dass bei einem Doppelklick auf eine DWG/DXF-Datei automatisch eine neue AKT-Zeichnung ge&ouml;ffnet und der Import-Dialog gestartet wird.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Step">Suchen Sie auf Ihrem Rechner nach einer DWG- oder DXF-Datei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">Klicken Sie mit der rechten Maustaste auf die Datei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">W&auml;hlen Sie im Kontextmen&uuml; </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen mit</span><span class="f_Step">. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">Klicken Sie im Untermen&uuml; auf</span><span class="f__Software_Element_deskriptiv"> Andere App ausw&auml;hlen</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">Aktivieren Sie das Kontrollk&auml;stchen </span><span class="f__Software_Element_deskriptiv">Immer diese App zum &Ouml;ffnen von .dwg-Dateien verwenden</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">6.</span><span class="f_Step">Wenn ISBCAD in der Liste </span><span class="f__Software_Element_deskriptiv">Weitere Optionen</span><span class="f_Step"> und </span><span class="f__Software_Element_deskriptiv">Weitere Apps</span><span class="f_Step"> nicht angezeigt wird, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Andere App auf diesem PC suchen</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">7.</span><span class="f_Step">Navigieren Sie in den ISBCAD Installationsordner. Standardm&auml;&szlig;ig wird ISBCAD im folgenden Pfad installiert: </span><span class="f__Eigenname">C:\Program Files\Glaser Programmsysteme\-isb cad-\</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">8.</span><span class="f_Step_Anmerkung">&Ouml;ffnen Sie den Ordner </span><span class="f__Eigenname">-isb cad-</span><span class="f_Step_Anmerkung"> und suchen Sie die Datei </span><span class="f__Eigenname">Zeichenprogramm.exe</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">9.</span><span class="f_Step_Anmerkung">Klicken Sie die Datei an und klicken Sie anschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step_Anmerkung">.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Datei ausw&auml;hlen und Einstellungen f&uuml;r die Konvertierung anpassen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_Step">eine Datei aus und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">AutoCAD-Import</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f__Software_Element_deskriptiv">AutoCAD-Import</span><span class="f_Step"> die gew&uuml;nschten Einstellungen f&uuml;r den Import der AutoCAD-Datei aus und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Siehe &quot;AutoCAD-Import (Dialogbeschreibung)&quot; weiter unten.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn die DXF/DWG-Datei referenzierte Bilddateien enth&auml;lt, werden diese ebenfalls importiert, wenn die Bilddateien mit der Originaldatei mitgeschickt wurden. Befinden sich die Bilddateien nicht im gleichen Ordner, oder sind sie gar nicht vorhanden, erscheint eine entsprechende Meldung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Dxf-Dwg-Bild" style="margin:0;width:2.7396in;height:1.6563in;border:none" src="d_dxf-dwg-bild.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Klicken Sie in der Meldung auf </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_Step_Anmerkung">, wird ein Dateiauswahldialog ge&ouml;ffnet, in dem Sie den Suchort bestimmen k&ouml;nnen. Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_Step_Anmerkung"> klicken, wird die Bilddatei ignoriert. Bei vielen Bilddateien kann es sinnvoll sein, den Haken bei </span><span class="f__Software_Element_deskriptiv">Nicht noch einmal Fragen </span><span class="f_Step_Anmerkung">zu setzen. Ansonsten wird die Meldung bei jedem fehlenden Bild aufgerufen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">(Optional) Rufen Sie ggf. nach dem Import der Zeichnung mit der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Einstellung</span><span class="f_Step"> im Funktionsbereich den Dialog </span><span class="f__Software_Element_deskriptiv">AutoCAD-Import</span><span class="f_Step"> erneut auf, um &Auml;nderungen an den Import-Einstellungen vorzunehmen. [</span><span class="f__Abfrage">Mit Einstellung zur&uuml;ck zur Dxf-Konfiguration</span><span class="f_Step">].</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><a name="empfdwg" class="hmanchor"></a><span class="f_Heading4">Empfohlene Vorgehensweise f&uuml;r den Import von DWG/DXF-Dateien</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Informationen zu einzelnen Zeichenelementen erhalten Sie &uuml;ber die Elementabfrage in der unteren Men&uuml;leiste.</span><br>
+<span class="f_A_Allgemein"><a href="konst1_elementeigenschaften_anzeigen.htm" class="topiclink" title="Elementeigenschaften anzeigen">&raquo; Elementeigenschaften anzeigen</a>, [</span><span class="f__Software_Element_deskriptiv">Untere Men&uuml;leiste</span><span class="f_A_Allgemein"> | [</span><span class="f__Software_Element_deskriptiv">?</span><span class="f_A_Allgemein">]].</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Darstellungsfaktor pr&uuml;fen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Kontrollieren Sie nach dem Import der Zeichnung als Erstes, ob der Faktor richtig gew&auml;hlt wurde, indem Sie mit der Funktion </span><span class="f__Software_Element_deskriptiv">Messen</span><span class="f_A_Allgemein"> eine bekannte geometrische Formation (Wanddicke, T&uuml;r&ouml;ffnung, Achsabstand etc.) messen und diese in der erwarteten Gr&ouml;&szlig;e angezeigt wird. Ist das der Fall, klicken Sie im Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Einstellung</span><span class="f_A_Allgemein">, um die weiteren Zuordnungen auf den einzelnen Registerkarten vorzunehmen. Stimmt das Messergebnis nicht mit dem erwarteten Ergebnis &uuml;berein, m&uuml;ssen Sie den Faktor &auml;ndern. Bereiten Sie die Zeichnung erneut auf, um die Geometrie zu kontrollieren. <a href="des_messen.htm" class="topiclink" title="Messen - Funktionsbeschreibung">&raquo; Messen</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Ma&szlig;stabskorrektur</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">DWG/DXF-Dateien k&ouml;nnen beim Import nur in einen Ma&szlig;stab umgewandelt werden. Die Zeichenelemente behalten aber ihre urspr&uuml;ngliche Gr&ouml;&szlig;e, so dass es zu Fehlinterpretationen kommen kann. Verwenden Sie gegebenenfalls die Funktion </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stabskorrektur</span><span class="f_A_Allgemein">, um ausgew&auml;hlten Elementen einen anderen Ma&szlig;stab zuzuweisen. <a href="konst2_massstab_aendern.htm" class="topiclink" title="Maßstäbe ändern">&raquo; Ma&szlig;stabskorrektur</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Stiftverwendung </span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die umgeformte Zeichnung dient als Voransicht f&uuml;r die Zuordnung der Stiftnummer zur Farbe. Sie sehen die Linien, wie sie mit den ISBCAD Stiften ausgef&uuml;hrt werden. Z. B. wird Farbe 3 in Stift 3 umgesetzt. Wenn damit d&uuml;nne Linien gezeichnet sind, &auml;ndern Sie die Stiftnummer z. B. auf 1.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipps:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Bei Layer/Folien empfiehlt es sich, alle Layer in Folien zu &uuml;bertragen, damit wichtige Planbestandteile nicht verloren gehen, weil sie in falschen Layern liegen.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn sich die Farben nicht eindeutig den Stiften zuordnen lassen, k&ouml;nnen Sie mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Fen&Auml;nd</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">Attrib</span><span class="f_Hinweis_in_Tabelle">] versuchen, die richtigen Einstellungen zu finden.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Folien lassen sich mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Folien</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">An</span><span class="f_Hinweis_in_Tabelle">/</span><span class="f__Software_Element_deskriptiv">Aus</span><span class="f_Hinweis_in_Tabelle">] untersuchen, um festzustellen, ob Elemente in falschen Folien liegen.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn alle Parameter richtig eingestellt sind, und mit dieser Einstellung weitere Dateien umgeformt werden k&ouml;nnen, sollten Sie die Konfiguration als Import-Profil speichern. Siehe Registerkarte [</span><span class="f__Software_Element_deskriptiv">Import-Profile</span><span class="f_Hinweis_in_Tabelle">].</span></p></td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Situationsbeispiel</span></h4>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.2708in;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:8.3646in; padding:0.0417in; border:solid thin #000000; border-top:none; border-right:none; border-bottom:none; border-left:none;"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="clip0019" style="margin:0;width:6.8542in;height:3.4375in;border:none" src="clip0019.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:8.3646in; padding:0.0417in; border:solid thin #000000; border-top:none; border-right:none; border-bottom:none; border-left:none;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Stifte 1 und 2 k&ouml;nnen &uuml;bernommen werden. Die Linien mit Stift 12 werden zu dick und sollten z. B. in Stift 7 (0,18mm) ge&auml;ndert werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><a name="einstellungendialog" class="hmanchor"></a><span class="f_R_Dialog">Optionen im Dialog &quot;AutoCAD-Import&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_AutoCAD-Import" style="margin:0;width:6.4792in;height:4.6563in;border:none" src="d_autocad-import.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Allgemeines zur Auswahl von Tabellenzeilen auf den Registerkarten</span></h4>
+<h5 class="p_Heading5"><span class="f_Heading5">Auswahlm&ouml;glichkeiten</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0.3021in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3958in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzeln markieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5000in;"><p class="p_R_Tabellenzeile"><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile"> + linke Maustaste</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3958in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Alle markieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5000in;"><p class="p_R_Tabellenzeile"><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile"> + </span><span class="f__Tastatur">A</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3958in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Im Block markieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5000in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die erste Tabellenzeile an, die markiert werden soll und anschlie&szlig;end, bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalt</span><span class="f_R_Tabellenzeile">-Taste, die letzte Tabellenzeile.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Tabelleneintr&auml;ge, die sich zwischen den angeklickten Eintr&auml;gen befinden, werden markiert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">W&auml;hlen Sie anschlie&szlig;end aus einer der Dropdown-Listen [<img alt="I_--nach-unten" style="margin:0;width:0.1771in;height:0.1771in;border:none" src="i_--nach-unten.png"/>] die gew&uuml;nschte Eigenschaft aus, die f&uuml;r alle gew&auml;hlten Eintr&auml;ge &uuml;bernommen werden soll. </span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">[</span><span class="f__Software_Element_deskriptiv">Import?</span><span class="f_R_Dialog_Info">] Importieren oder vom Import ausschlie&szlig;en? Setzen Sie einen Haken </span><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Dialog_Info">, wenn der Eintrag konvertiert werden soll.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.3021in;"><img alt="D_AutoCAD-Import_01" style="margin:0;width:5.4896in;height:1.4271in;border:none" src="d_autocad-import_01.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Datei</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Angaben zu Geometrie und Ma&szlig;stab der zu importierenden Datei.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor Texte </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndern Sie diesen Wert nur bei Bedarf.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor Geometrie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie den Wert f&uuml;r die Umrechnung ein. Die Geometrie wird mit dem eingestellten Faktor dargestellt.</span><br>
+<span class="f_R_Option_Beschreibung">Siehe: <a href="dat_dwg_dxf_dateien_importieren.htm#empfdwg" class="topiclink" title="Tipps zum Import von DWG-Dateien">Empfohlene Vorgehensweise f&uuml;r den Import von DWG-Dateien</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;stab</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen globalen Ma&szlig;stab f&uuml;r die Darstellung der Zeichnung in ISBCAD. Alle Elemente der Zeichnung werden in diesem Ma&szlig;stab gezeichnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ansicht</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Zeichnungsperspektive.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;stab Layout</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur verf&uuml;gbar, wenn im </span><span class="f__Software_Element_deskriptiv">Modellbereich</span><span class="f_R_Option_Beschreibung"> (s. unten) ein Papierbereich (Layout) gew&auml;hlt worden ist. </span><br>
+<span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, wenn der Ma&szlig;stab aus dem Papierbereich &uuml;bernommen werden soll. Die einzelnen Anzeigefenster (Views) behalten ihren urspr&uuml;nglichen Ma&szlig;stab bei. Nach dem Import k&ouml;nnen Sie sich die in der Zeichnung enthaltenen Views mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;Kor</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Info</span><span class="f_R_Option_Beschreibung">] anzeigen lassen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_zeicheneinheit" class="hmanchor"></a><span class="f_R_Option">Einheit pro Meter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur verf&uuml;gbar, wenn bei </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab Layout</span><span class="f_R_Option_Beschreibung"> ein Haken gesetzt ist.</span><br>
+<span class="f_R_Option_Beschreibung">W&auml;hlen Sie hier eine Zeicheneinheit aus, die einem Meter entsprechen soll. Sie k&ouml;nnen auch einen eigenen Wert eintippen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Anmerkung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">AutoCAD arbeitet im Koordinatensystem grunds&auml;tzlich dimensionslos mit Zeicheneinheiten (ZE). Dies bedeutet, dass in der Zeichnung keine L&auml;ngeneinheiten verwendet werden; es wird immer im Ma&szlig;stab 1:1, also in der Originalgr&ouml;&szlig;e, gezeichnet. Dabei wird vorher festgelegt, in welchem 1:1 Ma&szlig;stab gezeichnet wird, z. B. 1 ZE = 1mm oder 1 ZE = 1m.</span><br>
+<span class="f_Hinweis_in_Tabelle">Erst bei der Druckausgabe wird angegeben, wie viele Einheiten des verwendeten Blattpapiers einer Zeicheneinheit entsprechen.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Beispiel">Beispiel</span><span class="f_Hinweis_in_Tabelle">: Eine Zeichnung wird im Modellbereich im Ma&szlig;stab 1:1 gezeichnet. Im Papierbereich (Layout) wird der Ausgabema&szlig;stab auf 1:100 gesetzt und als Zeicheneinheit Meter [m] angegeben. In diesem Fall entspricht bei einem Ausgabema&szlig;stab von 1:100 eine L&auml;nge von 1m in der Realit&auml;t genau 10mm auf dem Papier. Somit ist in jeder Zeicheneinheit 1m = 10mm lang.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Profil</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie ein Import-Profil.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Aktives Import-Profil</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt das aktuelle Import-Profil an.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Vorschau</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Im Voransichtsbereich k&ouml;nnen Sie zwischen dem Modellbereich und den Layouts w&auml;hlen. Darunter werden n&auml;here Angaben zur gew&auml;hlten Datei gemacht.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Hier w&auml;hlen Sie, welches Layout importiert werden soll.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.3646in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.4271in; padding:0.0521in; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0;"><img alt="SCR_Modellbereich" style="margin:0;width:2.2917in;height:2.4375in;border:none" src="scr_modellbereich.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.6146in; padding:0.0521in; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.1979in;"><img alt="SCR_Layoutbereich" style="margin:0;width:2.2708in;height:2.4375in;border:none" src="scr_layoutbereich.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.4271in; padding:0.0521in; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Modell</span></p>
+</td>
+<td style="vertical-align:top; width:2.6146in; padding:0.0521in; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Layout</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Pfeil-nach-links-AutoCad" style="margin:0;width:0.2396in;height:0.2396in;border:none" src="i_pfeil-nach-links-autocad.png"/><img alt="I_Pfeil-nach-rechts-AutoCad" style="margin:0;width:0.2396in;height:0.2396in;border:none" src="i_pfeil-nach-rechts-autocad.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vor- und Zur&uuml;ckbl&auml;ttern der verschiedenen Ebenen. Das gew&auml;hlte Layout wird importiert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Farben/Stifte</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Farben" style="margin:0;width:5.4896in;height:1.2604in;border:none" src="d_autocad-import_farben.png"/></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Das Programm schl&auml;gt die Stiftnummer anhand der AutoCAD-Farbe automatisch vor. Ab Farbe 33 wird immer Stift 1 vorgeschlagen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">AutoCAD Farbe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden aus allen gew&auml;hlten Dateien die gefundenen Farbnummern angeboten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndern Sie die Stiftnummer so, dass in den ISBCAD Zeichnungen die „richtigen“ Strichbreiten erzeugt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie ein vorhandenes Import-Profil benutzen, sind die Einstellungen schon von Ihnen vorgenommen worden. &Auml;nderungen sind dann erforderlich, wenn zus&auml;tzliche Farbnummern gefunden werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Texte</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Fonts" style="margin:0;width:5.4479in;height:1.0729in;border:none" src="d_autocad-import_fonts.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">AutoCAD Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Tabelle werden die in den Zeichnungen benutzten Schriftarten angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die gew&uuml;nschten Schriftarten aus.</span><br>
+<span class="f_R_Option_Beschreibung">Die ISBCAD Fonts k&ouml;nnen Sie in den Systemdaten einstellen. [</span><span class="f__Software_Element_deskriptiv">Hauptmen&uuml;</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">] oder im Zeichenprogramm &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Folien/Layer</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Layer" style="margin:0;width:5.5104in;height:1.1042in;border:none" src="d_autocad-import_layer.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">AutoCAD Layer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Liste enth&auml;lt die Layer aus allen Dateien.</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zur Information wird die dem Layer zugeordnete Farbe angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linientyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der dem Layer zugewiesene Linientyp wird angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linienst&auml;rke</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die im Layer verwendete Linienst&auml;rke wird angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Folien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Layer werden automatisch, bei Namensgleichheit, entsprechenden Folien zugeordnet. Zum &Auml;ndern klicken Sie auf die gew&uuml;nschte Zeile, diese wird markiert und das Feld f&uuml;r ISBCAD Folien wird zum Auswahl- und Eingabefeld. Tragen Sie hier den Namen der neuen Folie ein, eine freie Foliennummer wird automatisch vergeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Schraffuren</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Schraffuren" style="margin:0;width:5.4583in;height:1.2708in;border:none" src="d_autocad-import_schraffuren.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">AutoCAD Schraffur</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Schraffuren aus allen Zeichnungen werden erfasst.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Schraffur</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zuordnung einer ISBCAD Schraffur. Damit die Zuordnung &uuml;bernommen wird, setzen Sie auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_R_Option_Beschreibung"> einen Haken bei</span><span class="f__Software_Element_deskriptiv"> ISBCAD Schraffur aus Zuordnungstabelle</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Damit die Schraffur zur Geometrie passt, k&ouml;nnen Sie hier einen Faktor eingeben oder ausw&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Winkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Schraffurwinkels f&uuml;r die ISBCAD Schraffur. Klicken Sie in die Zelle und w&auml;hlen Sie einen Winkel aus. Geben Sie alternativ einen positiven oder negativen Winkel ein.</span><br>
+<span class="f_R_Option_Beschreibung">Die Schraffurbilder sind Grafiken und bilden nicht den eingegebenen Winkel ab.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Linien</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Linien" style="margin:0;width:5.4583in;height:1.0521in;border:none" src="d_autocad-import_linien.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">AutoCAD Linienart</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gefundene Linien, alphabetisch sortiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Muster/Beschreibung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn f&uuml;r Linienarten Beschreibungen und/oder Muster vorliegen, werden diese hier aufgef&uuml;hrt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Strichtyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn keine &Uuml;bereinstimmung zwischen den AutoCAD-Namen und den ISBCAD Namen besteht, wird vom Programm der erste Strichtyp </span><span class="f__Software_Element_deskriptiv">DURCHG</span><span class="f_R_Option_Beschreibung"> vorgeschlagen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a6','toggle0186a6_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a6" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Registerkarte_Info" style="page-break-inside: avoid;"><img alt="D_AutoCAD-Import_Optionen" style="margin:0;width:5.4583in;height:4.7083in;border:none" src="d_autocad-import_optionen.png"/></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Setzen Sie einen Haken </span><span class="f_Heading5" style="font-family: Wingdings,Tidbits;">&thorn;</span><span class="f_Heading5"> bei den Optionen, die beim Importieren ber&uuml;cksichtigt werden sollen.</span></h5>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Farben</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ByLayer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Farben vom Layer &uuml;bernehmen?</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ByBlock</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Farben vom Block &uuml;bernehmen?</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Linien</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ByLayer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Strichtyp vom Layer &uuml;bernehmen?</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ByBlock</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Strichtyp vom Block &uuml;bernehmen?</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Layer</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leere Layer importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden alle Folien angelegt. Damit besteht die M&ouml;glichkeit, diese bei der weiteren Bearbeitung zu benutzen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Layergruppen importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in den Import-Dateien Layergruppen gefunden werden, werden diese als Foliengruppen in den ISBCAD Zeichnungen &uuml;bernommen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Umlaute konvertieren (ASCII-&gt;ANSI)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei &auml;lteren DXF/DWG-Dateien werden die Umlaute nicht richtig konvertiert. Dazu muss hier der Haken gesetzt sein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Freigestellte Texte freistellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn freigestellte Texte vorhanden sind, werden die Texte ebenfalls in der ISBCAD Zeichnung freigestellt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Attribute importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Attribute sind spezielle Texte bei eingef&uuml;gten Bl&ouml;cken, &auml;hnlich der Makrotexte in ISBCAD.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schraffuren</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Schraffuroptionen sind nur aktiv, wenn im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Sonstiges</span><span class="f_R_Bereich_Info_Rahmen"> (siehe weiter unten) kein Haken f&uuml;r </span><span class="f__Software_Element_deskriptiv">ohne Schraffur</span><span class="f_R_Bereich_Info_Rahmen"> gesetzt ist!</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">In Linien aufl&ouml;sen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Schraffurlinien werden als einzelne Linien &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Schraffur generieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird versucht, aus den gefundenen Schraffuren neue ISBCAD Schraffuren zu erzeugen. W&auml;hrend der Umformung erscheint eine Meldung, aus der Sie den Speicherort der neuen Schraffuren entnehmen k&ouml;nnen. Sie k&ouml;nnen diese dann mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Schraff</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Winkel</span><span class="f_R_Option_Beschreibung"> </span><span class="f__Software_Element_deskriptiv">o. Faktor</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_R_Option_Beschreibung">] in Ihre </span><span class="f__Eigenname">Schraff.dat</span><span class="f_R_Option_Beschreibung"> &uuml;bernehmen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Schraffur aus Zuordnungstabelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird die Schraffurzuordnung von der Registerkarte </span><span class="f__Software_Element_deskriptiv">Schraffuren</span><span class="f_R_Option_Beschreibung"> &uuml;bernommen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Sonstiges</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mit gef&uuml;llten Fl&auml;chen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es k&ouml;nnen die gef&uuml;llten Fl&auml;chen &uuml;bernommen werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne Schraffuren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, wenn Schraffuren nicht importiert werden sollen. Wenn hier kein Haken gesetzt ist, werden die Optionen f&uuml;r Schraffuren aktiv. So wie dort eingestellt, werden die Schraffuren in die ISBCAD Zeichnung umgesetzt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Keine 3D-Objekte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Originaldateien k&ouml;nnen 3D-Objekte enthalten. Hier k&ouml;nnen Sie bestimmen, ob diese Objekte mit in die Zeichnung &uuml;bernommen werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;ketten neu berechnen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Ma&szlig;ketten werden vor dem Speichern gepr&uuml;ft und ggf. korrigiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gruppen importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die in der AutoCAD-Datei definierten Gruppen werden importiert und k&ouml;nnen im Gruppenmanager eingesehen und bearbeitet werden. Wenn die importierten Gruppen keine Zeichenelemente enthalten, werden nur die Gruppennamen angezeigt.</span><br>
+<span class="f_R_Option_Beschreibung">[</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Gruppe </span><span class="f_R_Option_Beschreibung">| </span><span class="f__Software_Element_deskriptiv">Managr</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeichnung auf Plotfl&auml;che verschieben</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Plotfl&auml;che passt sich an die importierte AutoCAD-Zeichnung an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Elemente au&szlig;erhalb des Rahmens entfernen (Nur Modellbereich)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen einen Bereich definieren, der den zu &uuml;bernehmenden Zeichnungsteil beinhaltet. Damit kann verhindert werden, dass eine scheinbar „leere“ Zeichnung entsteht, in der die Geometrie ganz klein unten links und ein Punkt oben rechts liegt. Wenn Sie den Haken in die Checkbox setzen, werden die Eingabefelder f&uuml;r die Koordinaten aktiviert. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">(ZE = <a href="dat_dwg_dxf_dateien_importieren.htm#_zeicheneinheit" class="topiclink">Zeicheneinheit</a>)</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Protokoll</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Protokolldatei erzeugen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Falls es beim Umformen der Zeichnung zu Fehlern kommt, werden diese in der Protokolldatei festgehalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Protokolldatei nach Umformung anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Im Falle, dass eine Protokolldatei geschrieben wird, kann sie sofort angezeigt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Protokoll-Datei &ouml;ffnen mit</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier k&ouml;nnen Sie das Programm w&auml;hlen, mit dem die Protokolldatei ge&ouml;ffnet werden soll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a7','toggle0186a7_ICON')">Info</a></span></td></tr></table></div>
+<div id="toggle0186a7" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><img alt="D_AutoCAD-Import_Info" style="margin:0;width:5.6146in;height:3.9479in;border:none" src="d_autocad-import_info.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Datei-Informationen </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Allgemeine Informationen &uuml;ber die zu importierende Zeichnung.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Zeichnungs-Informationen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Polylinien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der Polylinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">F&uuml;llungen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der F&uuml;llungen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schraffuren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der Schraffuren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">3D-Objekte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der 3D-Objekte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Proxies</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Proxy-Elemente an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gruppen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der enthaltenen Gruppen an.</span><br>
+<span class="f_R_Option_Beschreibung">Um Gruppen in ISBCAD zu importieren oder vom Import auszuschlie&szlig;en, siehe: [Registerkarte </span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Sonstiges</span><span class="f_R_Option_Beschreibung"> </span>&#8594; <span class="f__Software_Element_deskriptiv">Gruppen importieren</span><span class="f_R_Option_Beschreibung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a8','toggle0186a8_ICON')">Import-Profile</a></span></td></tr></table></div>
+<div id="toggle0186a8" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Verf&uuml;gbare Import-Profile</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Anlegen, L&ouml;schen und Bearbeiten von Import-Profilen.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Import-Profile werden im <a href="top_konfigurationsmodule.htm#_hm_akt_profil" class="topiclink" title="Hauptmenü - Programmmodule">aktiven ISBCAD Profil</a> gespeichert.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Das aktuell eingestellte Import-Profil wird Ihnen im linken unteren Dialogbereich unter der Vorschau angezeigt. Um ein Import-Profil zu aktivieren, klappen Sie die Dropdown-Liste </span><img alt="I_Dropdown" style="margin:0;width:0.1979in;height:0.1563in;border:none" src="i_dropdown.png"/> auf und klicken Sie das entsprechende Profil an. Alternativ k&ouml;nnen Sie auch ein Profil in der Tabelle unter <span class="f__Software_Element_deskriptiv">Profilname:</span> anklicken und anschlie&szlig;end mit <span class="f__Software_Element_deskriptiv">Profil aktivieren</span> &uuml;bernehmen.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.4896in; padding:0.0208in;"><p class="p_ImageCaption"><img alt="RK_ACAD_Import-Profil" style="margin:0;width:6.8854in;height:4.8021in;border:none" src="rk_acad_import-profil.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Profilname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie dem Profil einen aussagekr&auml;ftigen Namen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kommentar</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beliebiger Text zur Beschreibung des Import-Profils.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-aktivieren" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-aktivieren.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernimmt die Einstellungen des in der Liste markierten Import-Profils.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-aendern" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-aendern.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog Profil &auml;ndern. Sie k&ouml;nnen den Profilnamen und Kommentar &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-hinzufuegen" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-hinzufuegen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Erstellt eine Kopie des markierten Profils. Mit der Schaltfl&auml;che</span><span class="f__Software_Element_deskriptiv"> Profil &auml;ndern</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie einen neuen Profilnamen vergeben und erg&auml;nzend einen Kommentar hinzuf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-loeschen" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-loeschen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das markierte Profil wird gel&ouml;scht.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-exprotieren" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-exprotieren.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es wird der Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_R_Tabellenzeile"> ge&ouml;ffnet. W&auml;hlen Sie den Pfad und geben einen Namen an. Das gew&auml;hlte Profil wird als XML-Datei gespeichert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4688in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Profil-importieren" style="margin:0 auto 0 auto;width:1.3125in;height:0.2396in;border:none" src="b_profil-importieren.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Im Dialog </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie den Pfad angeben, von wo ein externes Import-Profil eingelesen werden soll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_datei.htm" class="topiclink">Datei- und Ausgabefunktionen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a6\',\'toggle0186a6_ICON\')');
+HMInitToggle('toggle0186a6','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a7\',\'toggle0186a7_ICON\')');
+HMInitToggle('toggle0186a7','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a8\',\'toggle0186a8_ICON\')');
+HMInitToggle('toggle0186a8','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

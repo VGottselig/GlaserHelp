@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gruppenmanager: Gruppen erzeugen und verwalten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Gruppe,Gruppe auflösen,Gruppe durchsuchen,Gruppe Elemente entfernen,Gruppe Elemente hinzufügen,Gruppe erzeugen,Gruppe Leere Gruppen entfernen,Gruppe umbenennen,Gruppe verschieben (im Gruppenmanager),Gruppenmanager" />
+   <meta name="description" content="Erzeugen, Bearbeiten und Verwalten von individuell erzeugten Gruppen. Öffnet den Dialog Gruppenmanager." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="rm_gruppe.htm">Gruppe</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_mit-gruppierten-elementen-arbeiten.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_gruppe.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="ref_gruppenmanager.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Gruppenmanager: Gruppen erzeugen und verwalten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="rm_gruppe.htm" class="topiclink" title="Gruppe"><img alt="Gruppe" title="Gruppe" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_gruppe_(konst3).png"/></a></span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="B-akt_GrpMng" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_grpmng.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erzeugen, Bearbeiten und Verwalten von individuell erzeugten Gruppen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Gruppenmanager</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">W&auml;hrend der Arbeit mit dem Gruppenmanager stehen Ihnen alle Funktionen der unteren Men&uuml;leiste zur Verf&uuml;gung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Gruppenmanager_KM" style="margin:0;width:7.5313in;height:3.8438in;border:none" src="d_gruppenmanager_km.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Diese M&ouml;glichkeiten haben Sie:</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.3125in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5521in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grerzeugen" class="topiclink">Neue Gruppe erzeugen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grentfernen" class="topiclink">Gruppe aufl&ouml;sen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grentfernen" class="topiclink">Gruppe mit allen Untergruppen aufl&ouml;sen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grumbenennen" class="topiclink">Gruppe umbenennen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#gr_beschreibung" class="topiclink" title="Beschreibung hinzufügen oder ändern">Beschreibung hinzuf&uuml;gen oder &auml;ndern</a></span></p></td>
+<td style="vertical-align:top; width:12.8750in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grhinzuf" class="topiclink">Elemente zur Gruppe hinzuf&uuml;gen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grelemententfernen" class="topiclink">Elemente aus Gruppe entfernen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#gr_leeregrentferner" class="topiclink">Gruppe ohne Elemente entfernen</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#grverschieben" class="topiclink">Gruppen verschieben</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gruppenmanager.htm#gruppendurchsuchen" class="topiclink">Gruppen durchsuchen</a></span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grerzeugen" class="hmanchor"></a><span class="f_ToDo">Neue Gruppe erzeugen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Neue Gruppen werden immer in der Unterebene der markierten Gruppe erzeugt. Die Wurzelebene &quot;Zeichnung&quot; befindet sich in der Gruppenordnung an oberster Stelle.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe, in der eine Untergruppe erzeugt werden soll und klicken Sie auf </span><img alt="I_Neue-Gruppe-erzeugen" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_neue-gruppe-erzeugen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie eine Gruppenbezeichnung ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Wenn Sie keine Gruppenbezeichnung eintragen und best&auml;tigen, wird die Gruppe mit </span><span class="f_Step_Anmerkung">*unbenannt*</span><span class="f_Step_Anmerkung" style="font-style: italic;"> </span><span class="f_Step_Anmerkung">gekennzeichnet.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Optional k&ouml;nnen Sie unter </span><span class="f__Software_Element_deskriptiv">Beschreibung</span><span class="f_Step_Anmerkung"> einen erg&auml;nzenden Text eingeben. Wechseln Sie anschlie&szlig;end die Gruppe oder klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">, damit der Text &uuml;bernommen wird.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grentfernen" class="hmanchor"></a><span class="f_ToDo">Gruppe aufl&ouml;sen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Falls die Gruppe eine Untergruppe der Wurzelebene &quot;Zeichnung&quot; ist, wird die Gruppierung der enthaltenen Elemente vollst&auml;ndig aufgel&ouml;st und im Gruppenmanager nicht mehr angezeigt. Eine versehentlich gel&ouml;schte Gruppe k&ouml;nnen Sie mit </span><img alt="I_Grp_Kor" style="margin:0;width:0.1771in;height:0.1250in;border:none" src="i_grp_kor.png"/><span class="f_ToDo_Info"> wiederherstellen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe und klicken Sie auf </span><img alt="I_Gruppe-loeschen" style="margin:0;width:0.1771in;height:0.1875in;border:none" src="i_gruppe-loeschen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der ausgeklappten Liste auf den Eintrag &quot;Gruppe aufl&ouml;sen&quot;.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Gruppe wird aus der Baumstruktur entfernt und ihre Untergruppen der n&auml;chsth&ouml;heren Gruppenebene zugeordnet.</span></p>
+<p class="p_Step" style="text-indent: -0.0104in;"><img alt="SCR_Gruppe-aufloesen" style="margin:0;width:3.8646in;height:0.8750in;border:none" src="scr_gruppe-aufloesen.png"/></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="graufloesmunter" class="hmanchor"></a><span class="f_ToDo">Gruppe und alle Untergruppen aufl&ouml;sen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe und klicken Sie auf </span><img alt="I_Gruppe-loeschen" style="margin:0;width:0.1771in;height:0.1875in;border:none" src="i_gruppe-loeschen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der ausgeklappten Liste auf den Eintrag &quot;Gruppe und alle Untergruppen aufl&ouml;sen&quot;.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Gruppe wird mit allen Untergruppen aus der Baumstruktur entfernt. Alle enthaltenen Elemente sind nicht mehr gruppiert.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grumbenennen" class="hmanchor"></a><span class="f_ToDo">Gruppe umbenennen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe und klicken Sie auf </span><img alt="I_Gruppe-umbenennen" style="margin:0;width:0.1979in;height:0.1875in;border:none" src="i_gruppe-umbenennen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ: Markieren Sie die Gruppe und klicken Sie diese an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen neuen Gruppennamen ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="gr_beschreibung" class="hmanchor"></a><span class="f_ToDo">Beschreibung hinzuf&uuml;gen, &auml;ndern oder l&ouml;schen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Sie k&ouml;nnen im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Beschreibung</span><span class="f_ToDo_Info"> den Beschreibungstext der aktuell markierten Gruppe bearbeiten.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Um eine Beschreibung hinzuzuf&uuml;gen, klicken Sie in das Eingabefeld und geben Sie den Text ein. Sie k&ouml;nnen auch einen Text &uuml;ber die Zwischenablage (</span><span class="f__Tastatur">Strg</span><span class="f_Step"> + </span><span class="f__Tastatur">C </span><span class="f_Step">/ </span><span class="f__Tastatur">Strg</span><span class="f_Step"> + </span><span class="f__Tastatur">V</span><span class="f_Step">) aus einem anderen Dokument hineinkopieren. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Eine neue Zeile k&ouml;nnen Sie mit der Tastenkombination </span><span class="f__Tastatur">Strg</span><span class="f_Step_Anmerkung"> + </span><span class="f__Tastatur">Eingabetaste</span><span class="f_Step_Anmerkung"> einf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Um die Beschreibung zu erg&auml;nzen, setzen Sie den Cursor per Mausklick oder mit den Pfeiltasten an die entsprechende Textstelle und geben Sie den neuen Text ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">c)</span><span class="f_Step">Um eine Beschreibung zu &auml;ndern, markieren Sie durch das Ziehen der Maus die Textstelle und geben Sie einen neuen Text ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">d)</span><span class="f_Step">Um den Text oder eine Textstelle zu l&ouml;schen, markieren Sie den Text und dr&uuml;cken Sie die L&ouml;schtaste auf der Tastatur.</span></p>
+<p class="p_Step"><span class="f_Step">Wechseln Sie anschlie&szlig;end die Gruppe, damit die &Auml;nderung &uuml;bernommen wird, oder best&auml;tigen Sie mit der Eingabetaste (der Dialog wird geschlossen).</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grhinzuf" class="hmanchor"></a><span class="f_ToDo">Elemente zu einer Gruppe hinzuf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe und klicken Sie auf </span><img alt="I_Element-hinzufuegen" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_element-hinzufuegen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Gruppenmanager wird ausgeblendet. Die Elemente der gew&auml;hlten Gruppe werden auf der Zeichnung in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_Step_Anmerkung"> dargestellt. </span><br>
+<span class="f_Registerkarte_Info">[</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Registerkarte_Info"> | </span><span class="f__Software_Element_deskriptiv">SysDat </span><span class="f_Registerkarte_Info">| </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm </span><span class="f_Registerkarte_Info">| </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_Registerkarte_Info"> &#8594; </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_Registerkarte_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die Zeichenelemente, die in einer Gruppe zusammengefasst werden sollen, oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenelemente werden markiert.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen beliebig viele Rahmen aufziehen. Um eine Teilzeichnung wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung"> und ziehen Sie einen Rahmen um die entsprechende Teilzeichnung. Wechseln Sie nach dem Abw&auml;hlen wieder zur&uuml;ck zur Funktion </span><span class="f__Software_Element_deskriptiv">Hinzuf</span><span class="f_Step_Anmerkung">, um ggf. weitere Elemente hinzuzuf&uuml;gen. Wenn Sie einzelne Elemente abw&auml;hlen m&ouml;chten, halten Sie die Umschalt-Taste gedr&uuml;ckt und klicken die Elemente nacheinander an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenelemente werden der Gruppe hinzugef&uuml;gt und der Gruppenmanager wird wieder eingeblendet.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grelemententfernen" class="hmanchor"></a><span class="f_ToDo">Elemente aus einer Gruppe entfernen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Einzelne Elemente k&ouml;nnen nur aus der in der Baumstruktur markierten Gruppe entfernt werden. Das Ausw&auml;hlen einzelner Elemente in Untergruppen ist nicht m&ouml;glich.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die Gruppe und klicken Sie auf </span><img alt="I_Element-entfernen" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_element-entfernen.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Gruppenmanager wird ausgeblendet und die Gruppenelemente markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die Zeichenelemente, die aus der Gruppe entfernt werden sollen, oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenelemente werden markiert.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen beliebig viele Rahmen aufziehen. Um eine Teilzeichnung wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung"> und ziehen Sie einen Rahmen um die entsprechende Teilzeichnung. Wechseln Sie nach dem Abw&auml;hlen wieder zur&uuml;ck zur Funktion </span><span class="f__Software_Element_deskriptiv">Hinzuf</span><span class="f_Step_Anmerkung">, um ggf. weitere Elemente hinzuzuf&uuml;gen. Wenn Sie einzelne Elemente abw&auml;hlen m&ouml;chten, halten Sie die Umschalt-Taste gedr&uuml;ckt und klicken die Elemente nacheinander an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenelemente werden aus der Gruppe entfernt und der Gruppenmanager wird wieder eingeblendet.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="gr_leeregrentferner" class="hmanchor"></a><span class="f_ToDo">Gruppen ohne Elemente entfernen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die entsprechenden Gruppen werden ohne R&uuml;ckfrage aus der Baumstruktur entfernt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Um alle leeren Gruppen zu entfernen, klicken Sie auf </span><img alt="I_Gruppe-ohne Elemente" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="hmfile_hash_2ec52ab7.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="grverschieben" class="hmanchor"></a><span class="f_ToDo">Gruppe verschieben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Sie k&ouml;nnen die Gruppe entweder unter- oder oberhalb einer anderen Gruppe platzieren oder als Untergruppe in eine andere Gruppe einf&uuml;gen. Die Wurzelebene &quot;Zeichnung&quot; befindet sich in der Gruppenordnung grunds&auml;tzlich an der obersten Stelle und kann nicht verschoben werden.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">M&ouml;chten Sie eine Gruppe unter- oder oberhalb eine andere Gruppe setzen, ziehen Sie die Gruppe in </span><span class="f_R_Option_Beschreibung">der Baumstruktur</span><span class="f_Step"> nach oben oder nach unten. Lassen Sie die Maustaste los, wenn die hervorgehobene Linie an der gew&uuml;nschten Stelle angezeigt wird.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">M&ouml;chten Sie die Gruppe in eine andere Gruppe verschieben, ziehen Sie die Gruppe &uuml;ber eine andere Gruppe. Lassen Sie die Maustaste los, wenn die entsprechende Gruppe blau markiert wird.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="gruppendurchsuchen" class="hmanchor"></a><span class="f_ToDo">Gruppen durchsuchen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Durchsucht werden </span><span class="f_Step">Gruppennamen</span><span class="f_ToDo_Info">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unter der Baumstruktur in die Suchmaske</span><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Suchtext (z. B. Tragende W&auml;nde), die ersten Zeichen (Tr) oder Platzhalter und Zeichen (*W&auml;nde oder *W..) ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Suchergebnisse werden in der Baumstruktur gelb hervorgehoben. Nicht zutreffende </span><span class="f_Step">Gruppennamen</span><span class="f_Step_Anmerkung"> werden ausgeblendet. Sollte kein Suchergebnis gefunden werden, wird in der Baumstruktur nur die Wurzelebene &quot;Zeichnung&quot; angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.0000in; padding:0; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Suchtext ausgeschrieben</span></p>
+</td>
+<td style="vertical-align:top; width:1.9896in; padding:0; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Eingabe der ersten Zeichen</span></p>
+</td>
+<td style="vertical-align:top; width:2.0208in; padding:0; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Platzhalter und Zeichen</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0000in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Gruppenmanager_Suche_Ausgechrieben" style="margin:0;width:2.0000in;height:1.1458in;border:none" src="scr_gruppenmanager_suche_ausgechrieben.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.9896in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Gruppenmanager_Suche_Zeichen" style="margin:0;width:2.0000in;height:1.1458in;border:none" src="scr_gruppenmanager_suche_zeichen.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.0208in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Gruppenmanager_Suche" style="margin:0;width:1.9896in;height:1.1458in;border:none" src="scr_gruppenmanager_suche.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf ein Suchergebnis, um die Vorschau anzuzeigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Um Eingaben aus der Suchmaske zu entfernen, klicken Sie auf </span><img alt="I_X" style="margin:0;width:0.1458in;height:0.1563in;border:none" src="i_x.png"/><span class="f_ImageCaption">.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_mit-gruppierten-elementen-arbeiten.htm" class="topiclink" title="Gruppierte Elemente auswählen und bearbeiten">Gruppierte Elemente ausw&auml;hlen und bearbeiten</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink" title="Auswahlfunktionen">Elemente ausw&auml;hlen (Selektion)</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein"><a href="ref_gruppenmanager.htm" class="topiclink" title="Gruppenmanager (Dialog)">Gruppenmanager</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Einstellungen - Dialog</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatisches Anpassen von Hakenlängen,Automatisches Anpassen von Hakenlängen aktivieren,Automatisches Anpassen von Hakenlängen deaktivieren,Cursor,Cursor Koordinaten anzeigen,Einstellungen - Dialog,Haken,Haken Hakenanpassung aktivieren,Haken Hakenanpassung deaktivieren,Konstruktions- und Bewehrungsprogramm,Konstruktions- und Bewehrungsprogramm konfigurieren,Optionen,Optionen Funktionen,Programmoberfläche,Programmoberfläche Globale Einstellungen ändern,Texte anpassen (Programmoberfläche)" />
+   <meta name="description" content="Konfiguration der Programmoberfläche und des Programmverhaltens. Öffnet den Dialog Einstellungen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_notiz.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="optionen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="dat_zeichnung_per_e-mail_senden.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Einstellungen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_Einste_Option" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_einste_option.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konfiguration der </span>Programmoberfl&auml;che<span class="f_R_Dialog_Info"> und des Programmverhaltens. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Einstellungen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Einstellungen" style="margin:0;width:8.9375in;height:5.5833in;border:none" src="d_einstellungen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="eingabetextementexte" class="hmanchor"></a><span class="f_R_Bereich">Eingabetexte / Men&uuml;texte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Textgr&ouml;&szlig;e kann mit den Schiebe&shy;reglern eingestellt werden. Die &Auml;nderung ist sofort in der Programmoberfl&auml;che sichtbar. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Schieberegler f&uuml;r die Textgr&ouml;&szlig;e der Men&uuml;texte steuert auch die Textgr&ouml;&szlig;e der Verkn&uuml;pfungen in der Favoritenleiste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schrift</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen der Standardschrift oder der Einstellung </span><span class="f__Software_Element_deskriptiv">Fett</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_R_Bereich"><a name="spaltenrechtesmen" class="hmanchor"></a><span class="f_R_Bereich">Spalten rechtes Men&uuml;</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Breite des Funktionsbereiches (Men&uuml;paletten). Hier k&ouml;nnen Sie die Breite der Schaltfl&auml;chen im Funktionsbereich w&auml;hlen.</span></p>
+<p class="p_R_Bereich"><a name="menues" class="hmanchor"></a><span class="f_R_Bereich">Men&uuml;s</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Darstellung der Schaltfl&auml;chen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2188in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Icons</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.1979in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Texte</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2813in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Icons und Texte</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.6354in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Individuelle Farben mit Farbverlauf</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2188in;"><p class="p_ImageCaption"><img alt="SCR_Button03" style="margin:0;width:0.9271in;height:0.9896in;border:none" src="scr_button03.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:1.1979in;"><p class="p_ImageCaption"><img alt="SCR_Button02" style="margin:0;width:0.9271in;height:0.9896in;border:none" src="scr_button02.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:1.2813in;"><p class="p_ImageCaption"><img alt="SCR_Button01" style="margin:0;width:0.9271in;height:0.9896in;border:none" src="scr_button01.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:2.6354in;"><p class="p_ImageCaption"><img alt="SCR_Icons-mit-Farbverlauf" style="margin:0;width:0.9375in;height:0.9896in;border:none" src="scr_icons-mit-farbverlauf.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Systemfarben</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Menue_Palette" >
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aktive und nicht-aktive Schaltfl&auml;chen werden entsprechend den Microsoft-Windows-Einstellungen dargestellt.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schaltfl&auml;chen werden entsprechend den ISBCAD Einstellungen unterschieden </span><br>
+<span class="f_R_Tabellenzeile">[</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellung</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Men&uuml;s</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Farbverlauf</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nur wenn die Option </span><span class="f__Software_Element_deskriptiv">Systemfarben</span><span class="f_R_Tabellenzeile"> deaktiviert ist: Schaltfl&auml;chen werden mit Farbverlauf dargestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="eingabeeinheiten" class="hmanchor"></a><span class="f_R_Bereich">Eingabeeinheiten</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der Eingabeeinheit. (Einheit f&uuml;r die bei der Abfrage einzugebenden L&auml;ngen- oder Abstandswerte).</span></p>
+<p class="p_R_Bereich"><a name="stiftbreiten" class="hmanchor"></a><span class="f_R_Bereich">Stiftbreiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Darstellung von Zeichenelementen (Linien, Kreise, Texte), der Zeichenmarke, Fangmarken und des Cursors am Monitor.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auf Monitoren mit hoher Aufl&ouml;sung (z. B. 4k/UHD) kann es sinnvoll sein, mit der Option </span><span class="f__Software_Element_deskriptiv">halbierte Aufl&ouml;sung</span><span class="f_R_Option_Beschreibung"> zu arbeiten. Die native Aufl&ouml;sung des Monitors (z. B. 3840 x 2160) wird halbiert, wodurch z. B. d&uuml;nne Linien dicker dargestellt werden und besser sichtbar sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ein Pixel unabh&auml;ngig von Zoomtiefe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellt Zeichenelemente, Zeichenmarke, Fangmarken und den Cursor mit einer Breite von 1&nbsp;Pixel (</span><span class="f__Software_Element_deskriptiv">native Aufl&ouml;sung</span><span class="f_R_Option_Beschreibung">) oder 2&nbsp;Pixel (</span><span class="f__Software_Element_deskriptiv">halbierte Aufl&ouml;sung</span><span class="f_R_Option_Beschreibung">) dar.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">In Millimeter abh&auml;ngig von Zoomtiefe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellt Zeichenelemente mit ihrer tats&auml;chlichen Stiftbreite dar. Zeichenmarke, Fangmarken und Cursor werden mit einer Breite von 1 Pixel (</span><span class="f__Software_Element_deskriptiv">native Aufl&ouml;sung</span><span class="f_R_Option_Beschreibung">) oder 2&nbsp;Pixel (</span><span class="f__Software_Element_deskriptiv">halbierte Aufl&ouml;sung</span><span class="f_R_Option_Beschreibung">) dargestellt.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Grafik</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Cursor von ISBCAD zeichnen lassen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Option wirkt sich nur aus, wenn der <a href="rd_systemdaten_fangrechteck-cu.htm" class="topiclink" title="Systemdaten - Fangrechteck-Cursor">gro&szlig;e Cursor</a> aktiviert ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Menue_Palette" >
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der kleine und gro&szlig;e Cursor liegen exakt &uuml;bereinander, sodass bei Mausbewegungen der &quot;Nachzieheffekt&quot; zwischen dem kleinen und gro&szlig;en Cursor verhindert wird. Je nach Hardwarekonfiguration kann es zu einem Ruckeln oder Verz&ouml;gerungen bei Mausbewegungen kommen (s. empfohlene <a href="des_systemanforderung.htm" class="topiclink">Systemanforderungen</a>).</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ruckeln oder Verz&ouml;gerungen bei Mausbewegungen werden verhindert, jedoch tritt der &quot;Nachzieheffekt&quot; auf.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="_favleiste" class="hmanchor"></a><span class="f_R_Bereich">Favoritenleiste</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">In der Favoritenleiste k&ouml;nnen Sie h&auml;ufig genutzte Funktionen ablegen. Aktivieren Sie die Checkbox, um die Favoritenleiste auf der Zeichenfl&auml;che einzublenden, oder deaktivieren Sie die Checkbox, um die Leiste auszublenden. Beim Ausblenden bleibt Ihre aktuelle Zusammenstellung der Schaltfl&auml;chen erhalten und wird beim erneuten Einblenden wieder angezeigt.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Wenn Sie die Fensterseite, die Spalten- und Zeilenanzahl &auml;ndern, wird die Favoritenleiste in der Zeichenfl&auml;che sofort an die neuen Einstellungen angepasst.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fensterseite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Durch Auswahl k&ouml;nnen Sie die Favoritenleiste entweder am linken oder rechten Rand der Zeichenfl&auml;che platzieren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Spalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmt die Anzahl der Spalten. Es k&ouml;nnen maximal zwischen 57 und 61 Spalten eingegeben werden (abh&auml;ngig von der Option </span><span class="f__Software_Element_deskriptiv">Spalten rechtes Men&uuml;</span><span class="f_R_Option_Beschreibung">).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeilen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmt die Anzahl der Zeilen. Es k&ouml;nnen maximal 31 Zeilen eingegeben werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span style="width:0.0833in;display:inline-block">&nbsp;</span><span class="f_Hervorhebung_Text">Anmerkungen</span><span class="f_R_Option_Beschreibung">: </span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Die maximale Spalten- und Zeilenanzahl ist unabh&auml;ngig von der Gr&ouml;&szlig;e des Programmfensters und der Bildschirmaufl&ouml;sung. Wird das Programmfenster bei maximaler Spaltenanzahl verkleinert, so wird die Favoritenleiste am rechten Rand angeschnitten und damit nicht vollst&auml;ndig angezeigt. Bei einer vertikalen Verkleinerung oder Vergr&ouml;&szlig;erung des Programmfensters werden die Schaltfl&auml;chen entsprechend skaliert.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Sind alle Spalten einer Zeile belegt und die Spaltenanzahl wird verringert, wechselt die Anzeige zur n&auml;chst kleineren Darstellungsform (max. Icon). Abh&auml;ngig vom verf&uuml;gbaren Platz werden die Verkn&uuml;pfungen entweder in die n&auml;chst freien Zellen verschoben oder nicht mehr in der Leiste angezeigt. Gleicherma&szlig;en verh&auml;lt es sich bei einer Verringerung der Zeilenanzahl. Stellen Sie die urspr&uuml;ngliche Spalten- und/oder Zeilenanzahl wieder her, erscheinen die Verkn&uuml;pfungen in der zuvor gew&auml;hlten Darstellung.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_favoritenleiste.htm" class="topiclink">Favoritenleiste</a></span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Weitere Einstellungen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="zoomfaktorfrmausrad" class="hmanchor"></a><span class="f_R_Option">Zoomfaktor f&uuml;r Mausrad</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung"> Einstellung f&uuml;r die Empfindlichkeit der Drehbewegung. Je gr&ouml;&szlig;er der Wert, desto gr&ouml;&szlig;er wird der Unterschied zwischen den Zoomstufen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_pos_window" class="hmanchor"></a><img alt="B_Fensterposition-speichern" style="margin:0;width:1.4583in;height:0.2396in;border:none" src="b_fensterposition-speichern.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Speichert Fensterposition und -gr&ouml;&szlig;e; ISBCAD wird beim n&auml;chsten Start an derselben Position angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="messwerteindertitelleisteanzeigen" class="hmanchor"></a><span class="f_R_Option">Messwerte in der Titelleiste anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Statt in einem gesonderten Fenster werden die Ergebnisse der Funktion </span><span class="f__Software_Element_deskriptiv">Messen</span><span class="f_R_Option_Beschreibung"> in der Titelleiste angezeigt. In beiden F&auml;llen k&ouml;nnen die Inhalte der Werte direkt durch Klick mit der linken Maustaste in die aktive Eingabe &uuml;bertragen werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="zoomcontrolaufderzeichenflche" class="hmanchor"></a><span class="f_R_Option">Zoomcontrol auf der Zeichenfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Blendet links oben (unter der Eingabezeile) die <a href="des_bildausschnitt-zoomen-und-verschieben.htm#zoomcontroll" class="topiclink" title="Bildausschnitt zoomen und verschieben">Zoomcontrol</a>-Funktion ein. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="P_Zoom-Control" style="margin:0;width:0.3542in;height:0.3542in;border:none" src="p_zoom-control.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_uebersichtsfenster_einstellungen" class="hmanchor"></a><span class="f_R_Option">mit &Uuml;bersichtsfenster arbeiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Im unteren rechten Bereich des Bildschirms wird eine &Uuml;bersicht der kompletten Zeichnung angezeigt. Entfernen Sie den Haken, wenn das &Uuml;bersichtsfenster ausgeblendet werden soll.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_uebersicht.htm" class="topiclink">&Uuml;bersichtsfenster</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="mittelpunktfang" class="hmanchor"></a><span class="f_R_Option">Erweitertes Fangen ausschalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden nur Linienanfang und -ende erkannt, aber keine Mittel- und Schnittpunkte. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_elementfang.htm" class="topiclink">Elementfang</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;kettenwinkel nicht vorschlagen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Winkel (0&deg; oder 90&deg;) wird nicht automatisch vorgeschlagen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Selektieren von Elementen nicht automatisch</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl &uuml;ber Rechteck ist Standardeinstellung. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink">Auswahlfunktionen</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Positionsnummern manuell hochz&auml;hlen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie kein automatisches Weiterz&auml;hlen der Positionsnummern w&uuml;nschen, setzen Sie hier einen Haken.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="koordin" class="hmanchor"></a><span class="f_R_Option">Mauskoordinaten nicht anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Statusleiste werden die laufenden Mauskoordinaten angezeigt. Setzen Sie einen Haken in die Checkbox, um die Funktion abzuschalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mehrdeutigkeit beim Fangen ausschalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bereinanderliegende Elemente werden nicht mehr zur Auswahl angeboten.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_elementfang.htm#elementnummer" class="topiclink">Elementfang</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="richtungmausrad" class="hmanchor"></a><span class="f_R_Option">Richtung des Mausrades umdrehen (erfordert einen Neustart des Programms)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Standardeinstellung bewegt sich das Bild in die gleiche Richtung, in die das Mausrad gedreht wird. Sie k&ouml;nnen die Richtung umkehren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_stlmassen" class="hmanchor"></a><span class="f_R_Option">Stahlmassen nicht automatisch aktualisieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Anzeige in der Statusleiste wird normalerweise immer sofort aktualisiert. Setzen Sie einen Haken in die Checkbox, um die Funktion abzuschalten. Wenn diese Funktionalit&auml;t ausgeschaltet ist, muss auf die Anzeige </span><img alt="I_Aktualisierung-Stahl" style="margin:0;width:0.1354in;height:0.1354in;border:none" src="i_aktualisierung-stahl.png"/><span class="f_R_Option_Beschreibung"> geklickt werden, um den aktuellen Stand der Stahlmassen anzuzeigen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Messergebnisse am Cursor abschalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hrend die Funktion </span><span class="f__Software_Element_deskriptiv">Messen</span><span class="f_R_Option_Beschreibung"> aktiv ist, k&ouml;nnen am Cursor die X-, Y- und L-Differenzen zum ersten angeklickten Punkt angezeigt werden. Setzen Sie einen Haken in die Checkbox, um die Funktion abzuschalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hinweis Fenster f&uuml;r Folien nicht anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken, wenn kein Hinweis-Fenster bei ausgeblendeten Folien angezeigt werden soll.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Folien-nicht-anzeigen" style="margin:0;width:3.1146in;height:1.9063in;border:none" src="d_folien-nicht-anzeigen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text f&uuml;r Neuerungen nicht anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nach dem Start von ISBCAD werden die aktuellen Neuerungen in einem Fenster angezeigt. Setzen Sie einen Haken, wenn nach Programmstart die Neuerungen nicht angezeigt werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_aut-haken" class="hmanchor"></a><span class="f_R_Option">automatische Hakenerkennung bei Formstahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktiviert oder deaktiviert die automatische Anpassung der Hakenl&auml;ngen. In der Standardeinstellung ist diese Option aktiviert. Diese Einstellung wird nicht im Anwenderprofil gespeichert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken, wenn Sie die M&ouml;glichkeit haben m&ouml;chten, die Haken an der Auszugsform an einen neuen Stabdurchmesser anzupassen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_endhaken.htm" class="topiclink" title="Hakenlängen an den Stabdurchmesser anpassen">Hakenl&auml;ngen an den Stabdurchmesser anpassen</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berschreibmodus verwenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie bei der Option einen Haken, um <a href="des_abfrage-_und_eingabezeile.htm#_texteingabe" class="topiclink" title="Überschreib- und Einfügemodus">Texteingaben</a> im &Uuml;berschreibmodus zu beginnen. Ist der Haken nicht gesetzt (Auslieferungszustand), wird standardm&auml;&szlig;ig der Einf&uuml;gemodus verwendet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hinweis beim Sperren von Texten mit Makrotexten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">EleAtr</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">ElSper</span><span class="f_R_Option_Beschreibung">] erscheint eine Meldung, wenn Makrotexte gesperrt werden sollen. Entfernen Sie hier den Haken, falls diese Meldung nicht mehr erscheinen soll. In der Standardeinstellung ist diese Option aktiviert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textfeld horizontal ausrichten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie bei der Option einen Haken, um beim Bearbeiten und &Auml;ndern gedrehter Textfelder, diese automatisch horizontal am Bildschirm auszurichten. Dadurch wird tempor&auml;r die Zeichenfl&auml;che gedreht, bis Sie die Bearbeitung abschlie&szlig;en.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ist der Haken nicht gesetzt, werden Textfelder im gew&auml;hlten Drehwinkel auf der Zeichenfl&auml;che dargestellt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="rm_blocktext.htm#_textfeld_ausrichten" class="topiclink">Textfeld ausrichten</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_alt-ifc" class="hmanchor"></a><span class="f_R_Option">Neues IFC Section Tool aktivieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn der Haken gesetzt ist, wird mit [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">IFC-ST</span><span class="f_R_Option_Beschreibung">] das IFC Section Tool ge&ouml;ffnet, das ab ISBCAD 2026 verf&uuml;gbar ist. Bei Bedarf k&ouml;nnen Sie zum vorherigen IFC Section Tool wechseln, indem Sie den Haken entfernen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="optionen_sysdat.htm" class="topiclink" title="Allgemeine Voreinstellungen">Systemdaten</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Biegeform - [BiForm] Formmatten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeform,Biegeform Formmatten,BiForm,BiForm Formmatten,Formmatten,Formmatten Biegeform erzeugen" />
+   <meta name="description" content="Erzeugen, Ableiten und Bearbeiten einer Biegeform." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="matten_main.htm">Formmatten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_vorgabewert-fuer-die-betonueberdeckung-aendern.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="matten_main.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="biegeform_an_der_schalkante_ab.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Biegeform</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="matten_main.htm" class="topiclink" title="Formmatten-Funktionen (Übersicht)"><img alt="Formmatten-Funktionen (Übersicht)" title="Formmatten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formma.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_BiForm_Formmatten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_biform_formmatten.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erzeugen, Ableiten und Bearbeiten einer Biegeform.</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Empfehlung</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">W&auml;hlen Sie zur Erzeugung der Biegeform die Funktion [</span><span class="f__Software_Element_deskriptiv">ForSch</span><span class="f_A_Allgemein">]. Diese Funktion bietet die meisten M&ouml;glichkeiten. F&uuml;r &uuml;bliche Bewehrungsformen steht Ihnen die Formtyptabelle f&uuml;r Standardtypen [</span><span class="f__Software_Element_deskriptiv">ForTyp</span><span class="f_A_Allgemein">] zur Verf&uuml;gung. Wenn die Schalform so ausgebildet ist, dass kein Standardtyp verwendet werden kann, k&ouml;nnen Sie den Auszug mit der Funktion [</span><span class="f__Software_Element_deskriptiv">ForAbl</span><span class="f_A_Allgemein">] an einer Schalkante ableiten. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Eine weitere M&ouml;glichkeit besteht darin, die Form aus Linien und Teilkreisen vorzuzeichnen und dann in eine Auszugsform mit Verlegung zu &auml;ndern [</span><span class="f__Software_Element_deskriptiv">ForGeo</span><span class="f_A_Allgemein">]. Mit [</span><span class="f__Software_Element_deskriptiv">ForGeo</span><span class="f_A_Allgemein">] kann auch aus einer Stabstahlform eine Mattenform und umgekehrt gebildet werden.</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Vorbemerkungen</span></h4>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Ausf&uuml;hrbarkeit einer Biegeform wird nicht gepr&uuml;ft.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Bei der Biegerichtung k&ouml;nnen Sie zwischen (1) L&auml;ngs - und (2) Querrichtung unterscheiden. Biegerichtung 1 bedeutet, dass die L&auml;ngsst&auml;be gebogen und als Biegeform dargestellt werden. W&auml;hlen Sie diese Biegerichtung f&uuml;r normale B&uuml;gelmatten. Mit der Biegerichtung 2 k&ouml;nnen Sie die Biegeform hintereinander in L&auml;ngsrichtung, z. B. in einer Wand, verlegen.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Beim Erzeugen und Ver&auml;ndern der Biegeformen wird die maximale Ausdehnung gepr&uuml;ft. Wenn die Summe der Teill&auml;ngen gr&ouml;&szlig;er ist als die Abmessungen der Matte, werden Sie durch einen Warndialog darauf hingewiesen. Die Abmessungen k&ouml;nnen Sie in der Rundstahlliste eintragen bzw. &auml;ndern. [</span><span class="f__Software_Element_deskriptiv">ISBCAD Hauptmen&uuml;</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Betonstahl Tabellen</span><span class="f_Hinweis_in_Tabelle">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Hinweis_Teillaengen" style="margin:0;width:2.6979in;height:1.6354in;border:none" src="d_hinweis_teillaengen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="biegeform_an_der_schalkante_ab.htm" class="topiclink" title="Biegeform an Schalkante ableiten"><img alt="Biegeform an Schalkante ableiten" title="Biegeform an Schalkante ableiten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forabl-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform an Schalkante ableiten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="biegeform_aus_einer_typentabel.htm" class="topiclink" title="Biegeform aus einer Typentabelle erzeugen"><img alt="Biegeform aus einer Typentabelle erzeugen" title="Biegeform aus einer Typentabelle erzeugen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_fortyp.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform aus einer Typentabelle erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="biegeform_aus_geometrie-polygo.htm" class="topiclink" title="Biegeform aus Geometrie-Polygon erzeugen"><img alt="Biegeform aus Geometrie-Polygon erzeugen" title="Biegeform aus Geometrie-Polygon erzeugen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forgeo-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform aus Geometrie-Polygon erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formtyp_an_schalung_ableiten.htm" class="topiclink" title="Formtyp an Schalung ableiten"><img alt="Formtyp an Schalung ableiten" title="Formtyp an Schalung ableiten" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_forsch.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Formtyp an Schalung ableiten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="einzelne_position_loeschen.htm" class="topiclink" title="Einzelne Position löschen (Form bleibt erhalten)"><img alt="Einzelne Position löschen (Form bleibt erhalten)" title="Einzelne Position löschen (Form bleibt erhalten)" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_loe-typ.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Einzelne Position l&ouml;schen (Form bleibt erhalten).</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="form_komplett_loeschen.htm" class="topiclink" title="Form löschen"><img alt="Form löschen" title="Form löschen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_loeform-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Form l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="matte_ueber_den_auszug_aendern.htm" class="topiclink" title="Matte über den Auszug ändern"><img alt="Matte über den Auszug ändern" title="Matte über den Auszug ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aendmat.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Matte &uuml;ber den Auszug &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="auszug-form_ueber_dehnen_verae.htm" class="topiclink" title="Auszugsform über Dehnen verändern"><img alt="Auszugsform über Dehnen verändern" title="Auszugsform über Dehnen verändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_dehfor-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auszugsform &uuml;ber Dehnen ver&auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="geometrie_dehnen.htm" class="topiclink" title="Geometrie dehnen"><img alt="Geometrie dehnen" title="Geometrie dehnen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_dehgeo-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Geometrie dehnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="1_teillaenge_an_der_auszugs-fo.htm" class="topiclink" title="1 Teillänge an der Auszugsform verändern"><img alt="1 Teillänge an der Auszugsform verändern" title="1 Teillänge an der Auszugsform verändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aendtlg-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">1 Teill&auml;nge an der Auszugsform ver&auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; height:0.3125in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="1_teillaenge_an_der_auszugs-f2.htm" class="topiclink" title="1 Teillänge an der Auszugsform anfügen"><img alt="1 Teillänge an der Auszugsform anfügen" title="1 Teillänge an der Auszugsform anfügen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_addtlg-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; height:0.3125in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">1 Teill&auml;nge an der Auszugsform anf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="vorhandene_form_kopieren.htm" class="topiclink" title="Vorhandene Form kopieren"><img alt="Vorhandene Form kopieren" title="Vorhandene Form kopieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forkop-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Vorhandene Form kopieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="informationen_ueber_rundstahla.htm" class="topiclink" title="Informationen über vorhandene Rundstahlauszüge- und verlegungen"><img alt="Informationen über vorhandene Rundstahlauszüge- und verlegungen" title="Informationen über vorhandene Rundstahlauszüge- und verlegungen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_info.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Informationen &uuml;ber vorhandene Rundstahlausz&uuml;ge- und verlegungen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="biegerollendurchmesser.htm" class="topiclink" title="Biegerollendurchmesser anzeigen"><img alt="Biegerollendurchmesser anzeigen" title="Biegerollendurchmesser anzeigen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_biedur-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegerollendurchmesser anzeigen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="zusatztext_fuer_biegeliste_ein.htm" class="topiclink" title="Biegeliste mit Zusatztext ergänzen"><img alt="Biegeliste mit Zusatztext ergänzen" title="Biegeliste mit Zusatztext ergänzen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_bilitx-formma.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeliste mit Zusatztext erg&auml;nzen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formmatten_biform_summtx.htm" class="topiclink" title="Summandentext für Auszüge festlegen"><img alt="Summandentext für Auszüge festlegen" title="Summandentext für Auszüge festlegen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_summtx.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Summandentext f&uuml;r Ausz&uuml;ge festlegen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_formma_oertbie.htm" class="topiclink" title="Örtlich zu biegende Bewehrung erzeugen oder ändern"><img alt="Örtlich zu biegende Bewehrung erzeugen oder ändern" title="Örtlich zu biegende Bewehrung erzeugen oder ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_oertbie.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;rtlich zu biegende Bewehrung erzeugen oder &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_formma_oertbie_loesche.htm" class="topiclink" title="Örtlich zu biegende Bewehrung entfernen"><img alt="Örtlich zu biegende Bewehrung entfernen" title="Örtlich zu biegende Bewehrung entfernen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_oertloes.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;rtlich zu biegende Bewehrung entfernen.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:12.5104in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Auf den Schaltfl&auml;chen wird jeweils die aktuelle Einstellung angezeigt. Die Einstellungen k&ouml;nnen situationsbedingt &uuml;ber die Schaltfl&auml;chen ge&auml;ndert werden.</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Gewählte Positionsnummer" title="Gewählte Positionsnummer" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pos-x-matten.png"/><img alt="Voreinstellung des Durchmessers" title="Voreinstellung des Durchmessers" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_mattentyp_formmatten-klein.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Pos.X</span><span class="f_R_Tabellenzeile_Menue">: Anzeige der aktuellen Position.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue"> </span><span class="f__Software_Element_deskriptiv">&Oslash;...</span><span class="f_R_Tabellenzeile_Menue">: Voreinstellung des Durchmessers; &nbsp;Anzeige ggf. mit aktueller Anzahl der Stahlelemente.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Bauteilfakor" title="Bauteilfakor" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_nbautl_formmatten.png"/><img alt="Voreingestellte Betondeckung" title="Voreingestellte Betondeckung" style="margin:0;width:1.1042in;height:0.2188in;border:none" src="b_betondeckung.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_R_Tabellenzeile_Menue">=...: Bauteilfaktor.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">0.03</span><span class="f_R_Tabellenzeile_Menue">: Voreingestellte Betondeckung. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Betondeckung nach EC2</span><span class="f_R_Tabellenzeile_Menue">.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Aktuelle Länge" title="Aktuelle Länge" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b_lg-formmatten.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Aktuelle L&auml;nge (in Eingabeeinheiten).</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

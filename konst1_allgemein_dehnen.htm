@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Allgemein dehnen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Dehnen - Konstruktion,Dehnen - Konstruktion dehnen" />
+   <meta name="description" content="Im Gegensatz zum Verschieben [Konst1 | Versch] werden beim Dehnen auch angehängte Elemente mitgezo­gen. Diese Elemente erfahren so eine Dehnung bzw. Stauchung." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="konst1_elemente_dehnen.htm">Dehnen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst1_elemente_dehnen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_elemente_dehnen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst1_bis_zu_einer_linie_oder_einem_.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Allgemein dehnen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="konst1_elemente_dehnen.htm" class="topiclink" title="Konstruktionen dehnen (Übersicht)"><img alt="Konstruktionen dehnen (Übersicht)" title="Konstruktionen dehnen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_dehnen.png"/></a> <img alt="B-akt_allgem_Dehnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_allgem_dehnen.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Im Gegensatz zum Verschieben [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_Task_Info">] werden beim Dehnen auch angeh&auml;ngte Elemente mitgezo&shy;gen. Diese Elemente erfahren so eine Dehnung bzw. Stauchung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung: Bewehrungen werden mit dieser Funktion u.&nbsp;U. nicht korrekt gedehnt.</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Verwenden Sie zum Dehnen oder Verzerren von Bewehrungen die Dehnen-Funktion im Formstahl-Men&uuml;. <a href="konst3_bewdeh.htm" class="topiclink">&raquo; Bewehrung dehnen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn eine Teilzeichnung in zwei Richtungen gedehnt werden soll, gehen Sie in zwei Schritten vor, erst in die eine und dann in die zweite Richtung dehnen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die zu dehnenden Zeichenelemente oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Teilzeichnung wird markiert. Zeichenelemente, die vollst&auml;ndig im Rahmen liegen, werden verschoben. Die Linien, die nur mit einem Punkt im Rahmen liegen, werden gedehnt oder gestaucht. Wenn Sie einzelne Linien anklicken, wird nur die angeklickte Teillinie markiert.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Um Elemente wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">. Ziehen Sie einen Rahmen um die entsprechenden Elemente oder klicken Sie einzelne Elemente an. Bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) wird automatisch der </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">-Modus aktiviert – am Cursor wird ein Minuszeichen eingeblendet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Punkt als Referenzpunkt an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Dies kann ein beliebiger Punkt sein. Der Cursor beh&auml;lt bei Mausbewegung den Abstand zum angeklickten Punkt bei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, ob ohne Eingabe von Differenzen oder mit einer Differenzeingabe die Lage des angeklickten Referenzpunktes bestimmt werden soll. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_R_Tabellenzeile"><img alt="B_Retaus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_retaus.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ohne Differenzeingabe:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie die Abst&auml;nde f&uuml;r X und Y zwischen Referenzpunkt und Zielkoordinate ein und best&auml;tigen Sie jeweils mit der Eingabetaste. Sie k&ouml;nnen die Zielkoordinate auch durch Anklicken von Punkten bestimmen. </span><br>
+<span class="f_R_Tabellenzeile">Ist der Bereich schr&auml;g angeordnet bzw. liegt mindestens eine Zielkoordinate auf einer schr&auml;gen Linie, ist es ratsam, das Arbeitskoordinatensystem zu drehen. Alternativ k&ouml;nnen Sie auch die Hilfsfunktion </span><span class="f__Software_Element_deskriptiv">S</span><span class="f_R_Tabellenzeile"> [Schnitt] verwenden. Tippen Sie in das Eingabefeld ein </span><span class="f__Software_Element_deskriptiv">s</span><span class="f_R_Tabellenzeile"> ein und klicken Sie anschlie&szlig;end die Schr&auml;ge oder die Schr&auml;gen an. Achten Sie darauf, bei beiden Parametern dieselbe Hilfsfunktion einzugeben.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_R_Tabellenzeile"><img alt="B_Retan" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_retan.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mit Differenzeingabe:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie ein Bezugselement an, zu dem eine Differenz eingegeben werden soll.</span><br>
+<span class="f_R_Tabellenzeile">Die Linienkennung wird in die Eingabe geschrieben.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie nach der Linienkennung den Abstand mit dem entsprechenden Vorzeichen ein und best&auml;tigen Sie mit Eingabetaste.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Teilzeichnung wird verschoben oder gedehnt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel: Dehnen mit Retaus/Retan</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen die Beispielzeichnung mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_Task_Info">] oder [</span><span class="f__Software_Element_deskriptiv">Konst2</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Wandze</span><span class="f_Task_Info">] nachzeichnen. </span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Eingabeeinheit: m (Meter). Best&auml;tigen Sie alle Eingaben mit Enter.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Dehnen mit Differenzeingabe (Retan)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1042in; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="Z_Dehnen_allgemein_01" style="margin:0;width:3.5521in;height:2.3958in;border:none" src="z_dehnen_allgemein_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4063in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel 1</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Schritt 1</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen um die Wand auf und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">1. Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die untere Wandlinie an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Wert </span><span class="f__Abfrage_Resultat">0</span><span class="f_Step"> (Null) ein, damit keine Verschiebung in X-Richtung stattfindet. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schalten Sie die Differenzfunktion [</span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step">] ein. [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Bezugslinie an und geben Sie nach der Linienkennung die Differenz </span><span class="f__Abfrage_Resultat">+3.01</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">A16+3.01</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6354in;"><span class="f_Step_Anmerkung">Die Linienkennung (z. B. &quot;A16&quot; = Anfangspunkt der Linie Nr. 16) kann abweichen. Die Dehnung wird ausgef&uuml;hrt.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.1042in; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="Z_Dehnen_allgemein_05" style="margin:0;width:3.5625in;height:2.4271in;border:none" src="z_dehnen_allgemein_05.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4063in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Schritt 2</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen um die Wand auf und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">1. Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die untere Wandlinie an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die rechte Seite der linken Wand an und geben Sie die Differenz </span><span class="f__Abfrage_Resultat">+2.875</span><span class="f_Step"> ein. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">].</span><br>
+<span class="f_Step">Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">E17+2.875</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Wert </span><span class="f__Abfrage_Resultat">0</span><span class="f_Step"> (Null) ein, damit keine Verschiebung in Y-Richtung stattfindet. [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Beispiel"><span class="f_Beispiel">Dehnen ohne Differenzeingabe (Retaus)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1042in; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0.1146in;"><img alt="Z_Dehnen_allgemein_03" style="margin:0;width:3.0104in;height:4.1667in;border:none" src="z_dehnen_allgemein_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4063in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel 2:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen um die Wand auf und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">1. Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Wandecke an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie sicher, dass die Funktionen [</span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step">], [</span><span class="f__Software_Element_deskriptiv">EleAn</span><span class="f_Step">] und [</span><span class="f__Software_Element_deskriptiv">Or aus</span><span class="f_Step">] eingeschaltet sind. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine beliebige Stelle der Zeichenfl&auml;che an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6354in;"><span class="f_Step_Anmerkung">Die markierten Elemente sind bei Mausbewegung als Voransicht an den Cursor geh&auml;ngt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die linke Maustaste. [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6354in;"><span class="f_Step_Anmerkung">Wenn Sie den Cursor bewegen, werden die markierten Elemente nur in vertikaler Richtung bewegt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schalten Sie die Funktionen [</span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step">], [</span><span class="f__Software_Element_deskriptiv">EleAn</span><span class="f_Step">] und [</span><span class="f__Software_Element_deskriptiv">Or an</span><span class="f_Step">] ein. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4167in;"><span class="f_Step_Anmerkung">Befindet sich der Cursor in einem Sektor zwischen 315&deg; und 45&deg; wird nur horizontal nach rechts gedehnt, zwischen 45&deg; und 135&deg; wird nur nach oben gedehnt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine beliebige Stelle der Zeichenfl&auml;che an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6354in;"><span class="f_Step_Anmerkung">Die aktuelle X- oder Y-Koordinate wird &uuml;bernommen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie ein Zeichenelement an.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4167in;"><span class="f_Step_Anmerkung">Je nach Lage des Cursors an dem Element wird die X- bzw. Y-Koordinate des Anfangs-, Mittel- oder Endpunktes &uuml;bernommen. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1042in; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0.1250in;"><img alt="Z_Dehnen_allgemein_04" style="margin:0;width:3.0938in;height:2.3229in;border:none" src="z_dehnen_allgemein_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4063in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel 3:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen um die Wand auf und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">1. Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Wandecke an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schalten Sie die Funktionen [</span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step">], [</span><span class="f__Software_Element_deskriptiv">EleAn</span><span class="f_Step">] und [</span><span class="f__Software_Element_deskriptiv">Or an</span><span class="f_Step">] ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1875in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor an eine beliebige Stelle und klicken Sie die linke Maustaste jeweils f&uuml;r die X- und Y-Koordinate. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6354in;"><span class="f_Step_Anmerkung">Die Zeichenelemente werden bis zur Cursorposition gedehnt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst1_elemente_dehnen.htm" class="topiclink" title="Dehnenfunktionen">Dehnen (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

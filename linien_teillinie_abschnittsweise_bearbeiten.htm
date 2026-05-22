@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Teillinie abschnittsweise bearbeiten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="aTeili,Linien,Linien bearbeiten" />
+   <meta name="description" content="Löschen oder Ersetzen einer Linie oder eines Kreises zwischen zwei benachbarten Linien oder Kreisen. ISBCAD sucht die nächstgelegenen Begrenzungen selbst. Endbereiche von Lin" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_linien.htm">Linien</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="linien_n-fache_teillinie_bearbeiten.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_linien.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="linien_vieleck_zeichnen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Teillinie abschnittsweise bearbeiten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_linien.htm" class="topiclink" title="Linienfunktionen (Übersicht)"><img alt="Linienfunktionen (Übersicht)" title="Linienfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_linien.png"/></a> <img alt="B-akt_aTeili_Linien" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_ateili_linien.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">L&ouml;schen oder Ersetzen einer Linie oder eines Kreises zwischen zwei benachbarten Linien oder Kreisen. ISBCAD sucht die n&auml;chstgelegenen Begrenzungen selbst. Endbereiche von Linien oder Teilkreisen, die nicht von anderen Elementen begrenzt werden, k&ouml;nnen ebenfalls gel&ouml;scht oder ersetzt werden. (s. Beispiel unten).</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Strichtyp und Liniendarstellung (Stift) der parallelen Linie k&ouml;nnen im Funktionsbereich gew&auml;hlt oder mit der </span><span class="f__Software_Element_deskriptiv">so&nbsp;wie</span><span class="f_Task_Info">-Funktion von einem anderen Element &uuml;bernommen werden.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.62;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.1979in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Task_Info_Toggle"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Stiftnummer, Strichtyp &auml;ndern und so wie-Funktion</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="P_Strichtypauswahl" style="margin:0 auto 0 auto;width:2.1979in;height:0.4896in;border:none" src="p_strichtypauswahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strichtyp-Auswahl.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_so-wie" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_so-wie.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">so&nbsp;wie</span><span class="f_R_Tabellenzeile">-Funktion: Auswahl der Linien- und Stifteinstellungen entsprechend eines anderen Kreis- oder Linienelementes.</span><br>
+<span class="f_R_Tabellenzeile">Abfrage: </span><span class="f__Abfrage">Sowie welche Linie?</span><span class="f_R_Tabellenzeile"> (Abfrage bleibt aktiv, bis eine beliebige Linie gew&auml;hlt oder mit </span><span class="f__Tastatur">Esc</span><span class="f_R_Tabellenzeile"> abgebrochen wurde.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="P_Stiftauswahl" style="margin:0 auto 0 auto;width:2.1979in;height:0.4896in;border:none" src="p_stiftauswahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stiftauswahl. Falls Stifte als Favoriten aktiviert wurden, werden diese an erster/oberster Stelle angezeigt. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Verlinkung" style="margin: 0.1771in 0 0 0;"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.1042in 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_aendern.htm" class="topiclink" title="Strichtyp auswählen">Strichtyp ausw&auml;hlen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.1042in 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_aendern.htm" class="topiclink" title="Stift auswählen">Stift ausw&auml;hlen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.1042in 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_aendern.htm" class="topiclink" title="Die 'so wie'-Schaltfläche">Die 'so wie'-Schaltfl&auml;che</a></span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, welche Funktion ausgef&uuml;hrt werden soll. [</span><span class="f__Abfrage">Welche(r) Linie/Kreis</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Standardm&auml;&szlig;ig ist der Modus </span><span class="f__Software_Element_deskriptiv">L&ouml;sche</span><span class="f_Step_Anmerkung"> eingestellt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1875in;"><p class="p_R_Tabellenzeile"><img alt="B_loesche_nTeili_Linien" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_loesche_nteili_linien.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&ouml;scht den Teilabschnitt.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie das Teilelement an, das aus dem Teilbereich entfernt werden soll. </span><br>
+<span class="f_R_Tabellenzeile">Das Teilelement wird entfernt.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1875in;"><p class="p_R_Tabellenzeile"><img alt="B_Ersetz_nTeili_Linien" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_ersetz_nteili_linien.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ersetzt die Stiftnummer und/oder den Strichtyp. Mit der </span><span class="f__Software_Element_deskriptiv">sowie</span><span class="f_R_Tabellenzeile">-Funktion k&ouml;nnen die Eigenschaften einer Linie &uuml;bernommen werden.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Linie an, die mit den eingestellten Eigenschaften neu gezeichnet werden soll. </span><br>
+<span class="f_R_Tabellenzeile">Der Teilabschnitt wird ersetzt.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel" style="text-indent: 0; margin: 0.1771in 0 0.0625in 0.7708in;"><span class="f_Beispiel">Beispiel: Teillinie abschnittsweise l&ouml;schen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.7188in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Teillinie_ateili_01" style="margin:0;width:1.8854in;height:1.9583in;border:none" src="z_teillinie_ateili_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Teillinie_ateili_02" style="margin:0;width:1.8750in;height:1.9896in;border:none" src="z_teillinie_ateili_02.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.7813in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Teillinie_ateili_04" style="margin:0;width:1.8021in;height:1.9063in;border:none" src="z_teillinie_ateili_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.6979in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Teillinie_ateili_03" style="margin:0;width:1.8958in;height:1.9792in;border:none" src="z_teillinie_ateili_03.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.7188in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(1) Cursor (zu l&ouml;schende Teillinie).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(2) Cursor (zu l&ouml;schende Teillinie).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(3) Cursor (zu l&ouml;schender Teilkreis).</span></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(4) Cursor (zu l&ouml;schender Teilkreis).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(5) Cursor (zu l&ouml;schender Teilkreis).</span></p>
+</td>
+<td style="vertical-align:top; width:2.7813in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(6) Cursor (zu l&ouml;schender Endbereich).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(7) Cursor (zu l&ouml;schender Endbereich).</span></p>
+</td>
+<td style="vertical-align:top; width:2.6979in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gel&ouml;schte Teilelemente.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_linien.htm" class="topiclink" title="Linienfunktionen (Menü)">Linien (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

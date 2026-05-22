@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Biegeform bearbeiten (Dialog) - Formstahl</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Individuelle Ausformung einer Standard- oder frei definierten Biegeform und Ausrichtung an vorhandenen Schalkanten (Zeichenelementen)." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__RD_Biegeform-bearbeiten"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_biform_bearbeiten.htm">Biegeform</a> &gt; <a href="formst_biform_forsch.htm">Biegeform aus Schalung ableiten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="_rd_biegeform-erzeugen_an-schalkanten.xhtm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_biform_forsch.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_biform_lfdm.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Biegeform bearbeiten (Dialog) </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_biform_bearbeiten.htm" class="topiclink" title="Biegeform (Funktionsübersicht)"><img alt="Biegeform (Funktionsübersicht)" title="Biegeform (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_biform.png"/></a> <img alt="B-akt_ForSch" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_forsch.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Individuelle Ausformung einer Standard- oder frei definierten Biegeform und Ausrichtung an vorhandenen Schalkanten (Zeichenelementen).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Biegeform-bearbeiten_Anfangszustand" style="margin:0;width:5.1250in;height:3.4688in;border:none" src="d_biegeform-bearbeiten_anfangszustand.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um die Biegeform an den Schalkanten auszurichten und anzupassen:</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Mithilfe des Formfensters im Dialog k&ouml;nnen die Biegeform-Teill&auml;ngen nacheinander an die Schalkanten angepasst werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Drehen und/oder spiegeln Sie die Biegeform so, dass sie m&ouml;glichst entsprechend den Schaltkanten ausgerichtet ist.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:middle; width:0.4063in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Drehen-Links" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_drehen-links.png"/></p>
+</td>
+<td style="vertical-align:middle; width:18.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drehen</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.4063in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Spiegeln-Horizontal" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_spiegeln-horizontal.png"/></p>
+</td>
+<td style="vertical-align:middle; width:18.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Spiegeln</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung die Schalkante auf der Seite an, an welche die gr&uuml;n markierte Biegeform-Teill&auml;nge angelegt werden soll.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Biegeform wird in der Zeichnung mit der markierten Teill&auml;nge an die Schalkante gelegt. Im Formfenster wird automatisch die n&auml;chste Teill&auml;nge markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung nacheinander die Schalkanten an, an die die jeweils markierte Teill&auml;nge anliegen soll. Achten Sie beim Anklicken auf die richtige Seite der Schalkante.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Die Biegeform wird in der Zeichnung automatisch an die gew&auml;hlten Schalkanten angepasst.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen die automatische Vorwahl der Teill&auml;ngen im Formfenster jederzeit per Mausklick oder &uuml;ber die Schaltfl&auml;chen &auml;ndern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um eine Teill&auml;nge zu &auml;ndern, klicken Sie im Formfenster die Teill&auml;nge an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die gew&auml;hlte Teill&auml;nge wird im Formfenster gr&uuml;n markiert. Ein einfacher Klick markiert sowohl die Teill&auml;nge als auch den Wert der L&auml;nge. Ein Doppelklick markiert das Ende der Teill&auml;nge und erlaubt eine Wert-Eingabe. Nach einem Doppelklick reicht anschlie&szlig;end ein einfacher Klick in der L&auml;ngentabelle, um einen Wert zu &auml;ndern. Hier k&ouml;nnen Sie den Wert eingeben, der sofort in der Zeichnung angewendet wird.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn die Biegeform Ihren Vorstellungen entspricht: Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Beispiel: <a href="_rd_biegeform-bearbeiten.xhtm#biformbeispiel" class="topiclink">Standardform erzeugen</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Siehe auch: <a href="_rd_biegeform-erzeugen_an-schalkanten.xhtm" class="topiclink">Freie Form erzeugen und bearbeiten</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Funktionen</span></h5>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Auswahl- und Ausrichtungsfunktionen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5313in;"><p class="p_ImageCaption"><img alt="I_Teillaenge-vor" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_teillaenge-vor.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5938in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Teill&auml;nge weiter</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert die n&auml;chste, gegen den Uhrzeigersinn liegende Teill&auml;nge. Sie k&ouml;nnen auch eine andere Teill&auml;nge durch Anklicken im Formfenster markieren.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5313in;"><p class="p_ImageCaption"><img alt="I_Punkt-wechseln" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_punkt-wechseln.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5938in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Punkt wechseln auf Teill&auml;nge</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der markierten Teill&auml;nge wird jeweils von einem Punkt zum anderen gewechselt. Sie k&ouml;nnen auch einen anderen Punkt durch Anklicken im Formfenster markieren.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5313in;"><p class="p_ImageCaption"><img alt="I_Drehen-Links" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_drehen-links.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5938in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Form drehen (vor der Bearbeitung) </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es wird gegen den Uhrzeiger gedreht.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5313in;"><p class="p_ImageCaption"><img alt="I_Spiegeln-Horizontal" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_spiegeln-horizontal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5938in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Form spiegeln (vor der Bearbeitung) </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es wird horizontal gespiegelt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bearbeitungsfunktionen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Teillaenge-loeschen" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_teillaenge-loeschen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Teill&auml;nge l&ouml;schen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die erste oder letzte Teill&auml;nge markiert ist, kann sie gel&ouml;scht werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Laenge-aendern" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_laenge-aendern.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Teill&auml;nge direkt eingeben</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Ende einer Teill&auml;nge ist markiert. Dieser Punkt wird durch die Direkteingabe verschoben. Sie k&ouml;nnen auch die Teill&auml;nge in der Tabelle anklicken. Bei Doppelklick auf einen Teill&auml;ngentext in der Tabelle wird die numerische Eingabe aktiviert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Falls eine Ausrundung vorgenommen wurde, kann diese mit </span><span class="f__Software_Element_deskriptiv">Au&szlig;en &Oslash;</span><span class="f_R_Tabellenzeile"> nachtr&auml;glich angepasst werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Parallel-anpassen" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_parallel-anpassen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Teill&auml;nge an Schalkante </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Standardeinstellung. Klicken Sie Linien oder (Teil-)Kreise auf der Betonseite an, um die markierte Teill&auml;nge an die angeklickte Kante zu legen. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Punkt-verschieben" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_punkt-verschieben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Punkt verschieben auf Linie</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der markierte Punkt wird verschoben. Vorher Abstand eingeben. Klicken Sie eine Linie an, zu der der Abstand zu der Seite ber&uuml;cksichtigt werden soll, auf der der Cursormittelpunkt liegt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I-Ausrunden" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i-ausrunden.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ausrunden</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">W&auml;hlen Sie einen Au&szlig;endurchmesser aus der Auswahlliste. Alternativ k&ouml;nnen Sie eine Zahlenwert direkt eingeben oder durch Eingabe von z. B. &quot;6ds&quot; den Wert in Bezug auf den Stabdurchmesser berechnen lassen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hervorhebung_Text">Wichtig</span><span class="f_R_Tabellenzeile">: Die Eingabe des Au&szlig;endurchmessers ist nicht zu verwechseln mit dem inneren Biegerollendurchmesser. W&uuml;nscht man einen Biegerollendurchmesser von z. B. 4ds, betr&auml;gt der Au&szlig;endurchmesser 4ds + 2ds = 6ds.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nach Eingabe des Au&szlig;endurchmessers bewegen Sie den Cursor an die auszurundende Ecke, und klicken diese an.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei Doppelklick auf einen Teill&auml;ngentext wechselt das Programm zu </span><span class="f__Software_Element_deskriptiv">Teill&auml;nge direkt eingeben</span><span class="f_R_Tabellenzeile">. Hier kann der Au&szlig;endurchmesser ggf. angepasst werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Winkehaken-erzeugen" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_winkehaken-erzeugen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Winkelhaken erzeugen </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Art des Endhakens. Es wird eine Teill&auml;nge gebildet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Haken-erzeugen" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_haken-erzeugen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Haken erzeugen </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Art des Endhakens. Es werden zwei Teill&auml;ngen gebildet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Haken-erzeugen_am-Anfang" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_haken-erzeugen_am-anfang.png"/><img alt="I_Haken-erzeugen_am-Ende" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_haken-erzeugen_am-ende.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Winkelhaken oder Haken am Anfang bzw. am Ende </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie im Formfenster mit dem Cursor fahren, wird ein Haken angezeigt. Je nach Position werden die Richtungen in verschiedenen Winkeln zur Anschlussteill&auml;nge bzw. zur Waagerechten oder Senkrechten angeboten. Durch Mausklick wird die Richtung &uuml;bernommen. Die L&auml;nge entspricht dem 14-fachen Durchmesser.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_ImageCaption"><img alt="I_Korrektur_nur-Pfeil" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_korrektur_nur-pfeil.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Korrektur </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Setzt die vorherigen Aktionen schrittweise zur&uuml;ck.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand der Biegeform zur Schalkante (Beton&uuml;berdeckung). Der Abstand kann jeweils vor dem Anklicken einer Teill&auml;nge ge&auml;ndert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Au&szlig;en &Oslash;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gibt den Au&szlig;endurchmesser an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Hakenenden in [m] (nur Form 15)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Abstand der Hakenenden an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bergreifungsl&auml;nge l&uuml; in [m] (nur Form 15)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die &Uuml;bergreifungsl&auml;nge an. Wenn die &Uuml;bergreifungsl&auml;nge zu klein ist, k&ouml;nnen Sie hier einen anderen Wert eingeben, um die L&auml;nge des Bogens anzupassen. Doppelklicken Sie dazu auf die L&auml;nge des Bogens in der Liste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t die Erzeugung der Biegeform ab. Der Dialog wird geschlossen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nach R&uuml;ckfrage wird die Erzeugung der Biegeform abgebrochen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Biegeform</span><span class="f_R_Option_Beschreibung"> zur Auswahl einer Biegeform-Grundlage.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="biformbeispiel" class="hmanchor"></a><span class="f_Task">Beispiel: Standardform erzeugen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Der Durchmesser wurde vorher gew&auml;hlt. Klicken Sie in der Formtyptabelle den &quot;Typ 4&quot; an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Form4" style="margin:0;width:4.5521in;height:3.7396in;border:none" src="scr_form4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Im Dialog m&uuml;ssen Sie zun&auml;chst die Form drehen, damit sie so ausgerichtet ist, dass sie in die Schalung passt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie hierf&uuml;r 2x auf <img alt="I_Drehen-Links" style="margin:0;width:0.3125in;height:0.3125in;border:none" src="i_drehen-links.png"/>.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_D-Biegeform_03" style="margin:0;width:5.1250in;height:3.4688in;border:none" src="scr_d-biegeform_03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Im Formfenster werden nacheinander die Teill&auml;ngen markiert. F&uuml;r die Teill&auml;ngen klicken Sie die zugeh&ouml;rigen Schalkanten in der Zeichnung an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Biegeform_Beispiel03" style="margin:0;width:7.3958in;height:1.2917in;border:none" src="scr_biegeform_beispiel03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Mit einem Doppelklick auf einen Wert k&ouml;nnen Sie diesen &auml;ndern. Anschlie&szlig;end reicht ein einfacher Klick in der L&auml;ngentabelle, um einen Wert zu &auml;ndern.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_D-Biegeform_02" style="margin:0;width:5.1250in;height:3.4688in;border:none" src="scr_d-biegeform_02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn die Biegeform Ihren Vorstellungen entspricht: Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">. Anschlie&szlig;end k&ouml;nnen Sie die Biegeform optional ausrichten und den Auszugstext absetzen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Normal"><span class="f_A_Allgemein"><a href="formst_biform_forsch.htm" class="topiclink" title="Biegeform aus Schalung ableiten">&raquo; Biegeform aus Schalung ableiten</a></span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

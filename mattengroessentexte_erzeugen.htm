@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mattengrößentexte erzeugen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Mattentexte,Mattentexte Größentexte erzeugen" />
+   <meta name="description" content="ISBCAD schreibt automatisch an die erste Verlegung einer Position unter den Mattentext die Größe. Damit die Mattengröße auch an andere Matten geschrieben wird, können Sie hie" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_matten.htm">Matten</a> &gt; <a href="mattentexte.htm">Mattentexte</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="matten_lage_des_mattentextes_festlege.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="mattentexte.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_koment-hinzufuegen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Mattengr&ouml;&szlig;entexte erzeugen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_matten.htm" class="topiclink" title="Matten-Funktionen (Übersicht)"><img alt="Matten-Funktionen (Übersicht)" title="Matten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_matten.png"/></a><span class="f_Aufruf"> <a href="mattentexte.htm" class="topiclink" title="Mattentexte (Funktionsübersicht)"><img alt="Mattentexte (Funktionsübersicht)" title="Mattentexte (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_texte_matten.png"/></a> <img alt="B-akt_GrText_Texte_Matten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_grtext_texte_matten.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">ISBCAD schreibt automatisch an die erste Verlegung einer Position unter den Mattentext die Gr&ouml;&szlig;e. Damit die Mattengr&ouml;&szlig;e auch an andere Matten geschrieben wird, k&ouml;nnen Sie hiermit den Gr&ouml;&szlig;entext zum Mattentext erg&auml;nzen.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie eine der folgenden Optionen und klicken Sie anschlie&szlig;end die Mattendiagonale an. [</span><span class="f__Abfrage">Diagonale anklicken</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1563in;"><p class="p_R_Tabellenzeile" style="text-align: center; text-indent: -0.0104in; margin: 0.0521in 0 0.0625in 0.0104in;"><img alt="B_Einzel_Matten" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_einzel_matten.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.3333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Erzeugt den Gr&ouml;&szlig;entext f&uuml;r die angeklickte Matte.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1563in;"><p class="p_R_Tabellenzeile" style="text-align: center; text-indent: -0.0104in; margin: 0.0521in 0 0.0625in 0.0104in;"><img alt="B_Gruppe_Matten" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_gruppe_matten.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.3333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Erzeugt bei Anklicken der Diagonalen einer Gruppe f&uuml;r alle dazugeh&ouml;rigen Matten die Gr&ouml;&szlig;entexte.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen das Erzeugen von Mattengr&ouml;&szlig;entexten jederzeit beenden, indem Sie in eine andere Funktion wechseln.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="mattentexte.htm" class="topiclink">Mattentexte (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

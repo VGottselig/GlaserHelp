@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Spiegeln - [Spiege]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Elemente,Elemente spiegeln,Konstruktion 2,Konstruktion 2 Funktionen,Spiegeln" />
+   <meta name="description" content="Spiegeln von Teilzeichnungen oder einzelnen Zeichenelementen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="drehen_frei_verschieben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_konstruktion-2.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst2_elemente_duplizieren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Spiegeln</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_ImageCaption"> <img alt="B-akt_Spiege" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_spiege.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Spiegeln von Teilzeichnungen oder einzelnen Zeichenelementen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Notizen in der Auswahl enthalten sind, wird lediglich die Position ge&auml;ndert. Die Notiz-Zeigerlinie wird nicht angepasst. Wenn Notizen nicht selektiert werden sollen, blenden Sie diese im Notizprogramm mit der Funktion [</span><span class="f__Software_Element_deskriptiv">AllAus</span><span class="f_L_Listeneintrag">] aus.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Ma&szlig;stabsbereiche oder FEM-Datens&auml;tze bei der Selektion vollst&auml;ndig im Auswahlrahmen liegen, werden Sie mitgespiegelt. Ausgeblendete Elemente werden nicht selektiert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Element oder Bereich festlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die zu spiegelnden Zeichenelemente oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Zeichenelemente werden markiert.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Um Elemente wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">. Ziehen Sie einen Rahmen um die entsprechenden Elemente oder klicken Sie einzelne Elemente an. Bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) wird automatisch der </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">-Modus aktiviert – am Cursor wird ein Minuszeichen eingeblendet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Spiegelwinkel festlegen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte aus: [</span><span class="f__Abfrage">Spiegelwinkel oder -achse</span><span class="f_ToDo_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Geben Sie</span><span class="f__Abfrage"> </span><span class="f_Step">den Winkel (Winkel zur Horizontalen) um den die Teilzeichnung gespiegelt werden soll an und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Klicken Sie eine beliebige Bezugslinie an. Diese dient als Spiegelachse.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">c)</span><span class="f_Step">Klicken Sie auf die Winkelvorgabe 0&deg; oder 90&deg;. Die Teilzeichnung wird um die horizontale (0&deg;) bzw. vertikale (90&deg;) Achse gespiegelt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">d)</span><span class="f_Step">Klicken Sie eine der Ausrichtungsoptionen an - </span><span class="f__Software_Element_deskriptiv">P... </span><span class="f_Step">(parallel) oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step"> (orthogonal). Die Teilzeichnung wird um das lokale Zentrum mit der Neigung des angeklickten Elements gespiegelt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Teilzeichnung wird platziert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Nutzen Sie [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Kopier</span><span class="f_Hinweis_in_Tabelle">], um von einer Teilzeichnung eine gespiegelte Kopie zu erzeugen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="SCR_Spiegeln01" style="margin:0;width:1.2396in;height:1.5417in;border:none" src="scr_spiegeln01.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.5104in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="SCR_Spiegeln02" style="margin:0;width:1.3229in;height:1.5208in;border:none" src="scr_spiegeln02.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.1458in; padding:0; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="SCR_Spiegeln03" style="margin:0;width:1.9583in;height:1.5417in;border:none" src="scr_spiegeln03.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.6042in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="SCR_Spiegeln04" style="margin:0;width:1.2396in;height:1.5000in;border:none" src="scr_spiegeln04.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.8021in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="SCR_Spiegeln05" style="margin:0;width:1.1250in;height:1.5729in;border:none" src="scr_spiegeln05.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Ausgangslage</span></p>
+</td>
+<td style="vertical-align:top; width:1.5104in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">a) Eingabe: 15&deg;</span></p>
+</td>
+<td style="vertical-align:top; width:2.1458in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">b) Linie anklicken</span></p>
+</td>
+<td style="vertical-align:top; width:1.6042in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">c) 0&deg; bzw. 90&deg; Schalter</span></p>
+</td>
+<td style="vertical-align:top; width:1.8021in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">d) um Linie gespiegelt</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>NEU in GLASER -isb cad- 2015</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Allgemein Kontextsensitive Hilfe Mit der kontextsensitiven Hilfe erhalten Sie genau die Informationen, die Sie gerade benötigen. Betätigen Sie einfach die Tastenkombination &nbsp;+ ." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__DES_Neu-in-isbcad-2015"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     &raquo;Keine übergeordneten Inhalte gefunden&laquo;
+     </p>
+
+     <div id="headernav">
+     <img class="nav" src="btn_prev_d.png" 
+        ><a href="rm_support.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><img class="nav" src="btn_next_d.png">
+    </div>
+    <p class="p_Header"><span class="f_Header">Neu in GLASER ISBCAD 2015</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Allgemein</span></h4>
+<h5 class="p_Heading5"><span class="f_Heading5">Kontextsensitive Hilfe</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der kontextsensitiven Hilfe erhalten Sie genau die Informationen, die Sie gerade ben&ouml;tigen. Bet&auml;tigen Sie einfach die Tastenkombination <img alt="T_Shift" style="margin:0;width:0.1979in;height:0.1771in;border:none" src="t_shift.png"/> + <img alt="T_F1" style="margin:0;width:0.1979in;height:0.1771in;border:none" src="t_f1.png"/>. Egal in welchem Men&uuml; oder Programm Sie sich befinden oder welche Funktion Sie gerade nutzen, die Hilfe wird immer auf der passenden Seite aufgerufen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="top_willkommen.htm" class="topiclink">&raquo;&nbsp;Willkommen in der -isb cad- Hilfe</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Neue Icons</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Zur besseren Differenzierung haben viele Unterprogramme individuelle Symbole erhalten, mit denen sie schneller auffindbar sind.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Integration im Windows&reg; Explorer</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn eine Datei mit Vorschau gespeichert wurde, wird sie in der Voransicht der Dateiauswahl zusammen mit allen Angaben, die in der Planbeschreibung gespeichert wurden, angezeigt. Dazu geh&ouml;rt der Projektname, das Bauwerk, die Plan-Nummer und weitere Daten. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="dat_datei_offnen.htm" class="topiclink" title="Dialog Datei öffnen">&raquo;&nbsp;Dialog Datei &ouml;ffnen</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Neuer Dialog f&uuml;r Systemdaten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Systemdateneinstellungen sind der zentrale Ort f&uuml;r alle benutzerspezifischen Einstellungen. Um die gesuchten Parameter schneller finden zu k&ouml;nnen, wurden neue Kategorien geschaffen. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Kategorien sind am Men&uuml;rand &uuml;bersichtlich w&auml;hlbar. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="optionen_sysdat.htm" class="topiclink" title="Dialog Systemdaten">&raquo;&nbsp;Dialog Systemdaten</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Benutzerdefinierte Navigation</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">F&uuml;r die Dialoge </span><span class="f__Software_Element_deskriptiv">Datei lesen</span><span class="f_A_Allgemein"> und </span><span class="f__Software_Element_deskriptiv">Zeichnung speichern</span><span class="f_A_Allgemein"> k&ouml;nnen Sie die Schaltfl&auml;chen f&uuml;r den Schnellzugriff auf Laufwerke oder Pfade individuell einstellen. Auf diese Weise erreichen Sie h&auml;ufig genutzte Speicherorte noch schneller. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_datei-oeffnen-speichern.htm" class="topiclink">&raquo;&nbsp;Systemdaten – Datei &ouml;ffnen/speichern</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Datei&nbsp;&ouml;ffnen/speichern</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">256 Stifte und Favoriten</span></h5>
+<p class="p_A_Allgemein">Es stehen Ihnen bei der Bearbeitung Ihrer Projekte 256 Stifte zur Verf&uuml;gung. Mit der neuen Favoritenfunktion k&ouml;nnen Sie h&auml;ufig benutzte Stifte schnell ausw&auml;hlen. Stifte, die Sie als Favoriten markiert haben, werden Ihnen in allen Auswahlmen&uuml;s zuerst angeboten. </p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_stiftfarben.htm" class="topiclink">&raquo;&nbsp;Dialog Systemdaten - Stiftfarben</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Stiftfarben</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Reale Stiftbreitendarstellung am Bildschirm </span></h5>
+<p class="p_L_Einleitung"><span class="f_L_Einleitung">Stiftbreiten k&ouml;nnen bereits auf dem Bildschirm dargestellt werden. Folgende Darstellungsmodi stehen zur Verf&uuml;gung:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">mit voreingestellter Anzahl von Bildpunkten (unabh&auml;ngig von der Zoomtiefe)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">in Millimetern (abh&auml;ngig von der Zoomtiefe)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">mit konstanter Breite von einem Bildpunkt (unabh&auml;ngig von der Zoomtiefe, entspricht der Darstellung bis -isb&nbsp;cad- 2014herigen)</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">&Uuml;ber den Dialog </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_A_Allgemein"> k&ouml;nnen Sie zwischen den verschiedenen Darstellungsmodi wechseln. Alle anderen Grundeinstellungen k&ouml;nnen im Dialog </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> konfiguriert werden. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="option_einstellungen.htm" class="topiclink">&raquo;&nbsp;Dialog Einstellungen</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_A_Allgemein"> </span><span class="f__Software_Element_deskriptiv">&#8594; Stiftbreiten</span><span class="f_A_Allgemein">] </span><br>
+<span class="f_A_Allgemein"><a href="rd_systemdaten_stiftfarben.htm" class="topiclink">&raquo;&nbsp;Dialog Systemdaten - Stiftfarben</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Stiftfarben</span><span class="f_A_Allgemein">]</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Konstruktion</span></h4>
+<h5 class="p_Heading5"><span class="f_Heading5">Selektion mehrerer Gruppen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Bei Programmfunktionen wie Drehen, Verschieben, Kopieren oder Duplizieren sparen Sie k&uuml;nftig viel Zeit. Es ist n&auml;mlich m&ouml;glich, mehrere Gruppen zur Bearbeitung zu selektieren. So muss die jeweilige Funktion nur noch einmal durchgef&uuml;hrt werden. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink">&raquo;&nbsp;Elementgruppen selektieren</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Genauigkeit beim Messen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen die Messgenauigkeit im Allgemeinen Konstruktionsprogramm einstellen. Messergebnisse, die per Klick in die aktive Abfrage &uuml;bernommen werden, ben&ouml;tigen zur Weiterverwendung nicht mehr nachtr&auml;glich gerundet zu werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdatem_konstruktionsprogramm.htm" class="topiclink" title="Dialog Systemdaten - Konstruktionsprogramm">&raquo;&nbsp;Dialog Systemdaten - Konstruktionsprogramm</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | &#8594; </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verma&szlig;ung ohne Nachkommastellen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Nachkommastellen k&ouml;nnen jetzt ganzzahlig verma&szlig;t werden. Dies ist besonders bei der Verma&szlig;ung von Winkeln interessant. Die Funktion zur Winkelverma&szlig;ung greift dabei auf die Ma&szlig;kettendefinitionen zur&uuml;ck. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="masskettenstil_konfigurieren.htm" class="topiclink">&raquo;&nbsp;Ma&szlig;ketten &#8594; Einstellungen f&uuml;r Texte</a> [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ketten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;kettenstil</span><span class="f_A_Allgemein"> </span><span class="f__Software_Element_deskriptiv">konfigurieren</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Schraffuren entlang von Kreisen oder Kreisb&ouml;gen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der Funktion </span><span class="f__Software_Element_deskriptiv">1Reihe</span><span class="f_A_Allgemein"> k&ouml;nnen Sie jetzt auch Schraffuren an Kreisen und Kreisb&ouml;gen erzeugen. Ein neuentwickelter Algorithmus sorgt f&uuml;r optisch &uuml;berzeugende Ergebnisse. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="schraffur_an_einer_reihe_festl.htm" class="topiclink">&raquo;&nbsp;Schraffur entlang einer Linie oder eines Kreisbogens anlegen</a> [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Schraffur</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">1Reihe</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Parallele Kreise zeichnen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Funktion </span><span class="f__Software_Element_deskriptiv">n&nbsp;Kreise</span><span class="f_A_Allgemein"> hilft Ihnen, schnell mehrere parallele Kreise zu konstruieren. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="konst1_kr_parallelenkreisoderteilkreiszeichnen.htm" class="topiclink">&raquo;&nbsp;Parallelen Kreis oder Teilkreis zeichnen</a> [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Kreise</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">n&nbsp;Kreise</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">FEM-Daten: Stiftfarbe und Textgr&ouml;&szlig;e von As-Werten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Verbesserte Darstellung von FEM-Werten. Dazu besteht in den Systemdaten die M&ouml;glichkeit, sowohl die Schriftart und -gr&ouml;&szlig;e einzustellen als auch unterschiedliche Stiftnummern f&uuml;r bis zu vier verschiedene Wertebereiche zu definieren. Dies erlaubt Ihnen eine bessere optische Differenzierung der Werte und sorgt f&uuml;r mehr &Uuml;bersicht.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_fem.htm" class="topiclink">&raquo; Dialog Systemdaten - FEM</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">FEM</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Rahmen f&uuml;r Blocktexte</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Einfache oder doppelte Umrandungen f&uuml;r Blocktexte. Zeigerlinien k&ouml;nnen nun au&szlig;erdem auch von der Mitte der linken und rechten Seite einer Umrandung aus gezogen werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="texte_unterstreichungen_und_zeigerli.htm" class="topiclink">&raquo;&nbsp;Unterstreichungen und Zeigerlinien hinzuf&uuml;gen</a> [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Zeilin</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Eingabe von Hochzahlen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Hochzahlen mittels Tastatur (Nummernblock) eingeben. Dazu brauchen Sie einfach nur die </span><span class="f__Tastatur">STRG</span><span class="f_A_Allgemein">-Taste Ihrer Tastatur gedr&uuml;ckt zu halten, w&auml;hrend Sie die gew&uuml;nschten Ziffern dr&uuml;cken. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="ref_tastaturbelegungen.htm" class="topiclink">&raquo;&nbsp;Tastaturfunktionen</a></span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Bewehrung</span></h4>
+<h5 class="p_Heading5"><span class="f_Heading5">Mehrdimensionale Voutenbewehrung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Biegeformen k&ouml;nnen mehrdimensional variabel erzeugt werden. Ein B&uuml;gel kann z. B. sowohl in der Breite als auch in der H&ouml;he ver&auml;nderlich verlegt werden. Jeder variablen Teill&auml;nge wird ein eigenes Polygon zugeordnet. Es besteht die M&ouml;glichkeit, je Biegeform bis zu zehn ver&auml;nderliche Teill&auml;ngen zu definieren. Am Auszug werden die jeweiligen Teill&auml;ngen mit L1, L2 etc. gekennzeichnet. Die zugeh&ouml;rigen L&auml;ngen werden in der automatisch generierten Voutentabelle angegeben.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="tsk_voute-mehrdirektional-verlegen.htm" class="topiclink">&raquo; Mehrdirektionale Voute verlegen</a> [</span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">VeVout</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">nTlgVe</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Neues Formstahldetail Bogenstaffel</span></h5>
+<p class="p_L_Einleitung"><span class="f_L_Einleitung">Erweiterung der Bogenstaffel-Funktionen:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ermittlung der Beton&uuml;berdeckung und &Uuml;bergreifungsl&auml;ngen nach EC&nbsp;2</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Steuerung der Positionsanzahl &uuml;ber die Verschwenkung der St&ouml;&szlig;e</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Anzeige aller Bewehrungsdaten wie z. B. Positionsanzahl und St&uuml;ckzahl in der integrierten Positionstabelle</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Darstellung der errechneten St&ouml;&szlig;e in der Vorschau, die Ihre Eingaben unmittelbar visualisiert</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Kennzeichnung benachbarter St&ouml;&szlig;e, die sich aus den Parametern ergeben, mittels roter Markierungen</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Definition radialer und tangentialer &Uuml;berst&auml;nde f&uuml;r alle geraden und/oder ungeraden Spuren am Bogenanfang und/oder -ende</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Angabe des Neigungswinkels zwischen &auml;u&szlig;erer und innerer Schalkante (exakte Berechnung, wenn die Bogenstaffel geneigt verlegt wird)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Konfiguration der in der Voutentabelle angezeigten Nachkommastellen, der Rundungsgenauigkeit und der Lage der optionalen Positionsnummern am Stab</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="formst_bogenstaffel.htm" class="topiclink">&raquo;&nbsp;Kreisb&ouml;gen bewehren (Bogenstaffel)</a> [</span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Detail</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Bogenstaffel</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Neue Optionen f&uuml;r Durchstanzbewehrung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Ausgabe einer nach Herstellern differenzierten St&uuml;ckliste und Sortierung der Liste nach technischen Kriterien, z.&nbsp;B. nach </span><span class="f_L_Listeneintrag">Durchmesser, H&ouml;he und Anzahl der Bolzen/D&uuml;bel oder Leistenl&auml;nge.  </span><span class="f_A_Allgemein">Dar&uuml;ber hinaus k&ouml;nnen Sie die Zusammenstellung auch frei sortieren, indem Sie einzelne Eintr&auml;ge gezielt verschieben. Zur weiteren Nutzung kann die St&uuml;ckliste entweder in die Zwischenablage kopiert oder in die Zeichnung &uuml;bernommen werden. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="konst3_dublei_liste.htm" class="topiclink">&raquo;&nbsp;St&uuml;ckliste</a> [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">D&uuml;bLei</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Liste</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verbesserte Differenzierung von Formstahl und Formmatten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Differenzierte Darstellungsparameter f&uuml;r die Bewehrungsausz&uuml;ge von Formstahl- und Formmatten-Verlegungen. Mit einer m&ouml;glichst differenzierten Plandarstellung tragen dazu bei, Fehler bei der Umsetzung Ihrer Vorgaben zu vermeiden. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_formstahl.htm" class="topiclink" title="Dialog Systemdaten - Formstahl">&raquo;&nbsp;Dialog Systemdaten - Formstahl</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Zusatzausz&uuml;ge kennzeichnen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Stiftnummer f&uuml;r Zusatzausz&uuml;ge kann unabh&auml;ngig von der Stiftnummer f&uuml;r Originalausz&uuml;ge eingestellt werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Zusatzausz&uuml;ge dienen dazu, die Biegeform einer Verlegung in schematischer Weise erg&auml;nzend zum eigentlichen Stahlauszug darzustellen. Neben der gestrichelt und vereinfacht dargestellten Biegeform werden die Positionsnummer, die St&uuml;ckzahl und der Durchmesser angegeben. Besonders auf umfangreichen Pl&auml;nen mit einer hohen Anzahl von Positionen stellen Zusatzausz&uuml;ge wertvolle Hilfsmittel dar. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Daher wurde in -isb cad- 2015 ein neuer Parameter eingef&uuml;hrt, mit dem sich die Stiftnummer von Zusatzausz&uuml;gen getrennt von den Originalausz&uuml;gen einstellen l&auml;sst.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_formstahl.htm" class="topiclink" title="Dialog Systemdaten - Formstahl">&raquo;&nbsp;Dialog Systemdaten - Formstahl</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Auszug&nbsp;Rundstahl</span><span class="f_A_Allgemein">] </span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Polygonverlegung von Matten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die polygonale Mattenverlegung arbeitet noch flexibler als bisher. Zu jeder Kante des gew&auml;hlten Verlegebereichs kann ein eigener Abstand definiert werden. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="matten_im_polygon_verlegen.htm" class="topiclink">&raquo;&nbsp;Matten im Polygon verlegen</a> [</span><span class="f__Software_Element_deskriptiv">Matten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">VerPol</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Verleg</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Formmattenverlegungen dehnen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der Funktion </span><span class="f__Software_Element_deskriptiv">Bewehrung dehnen </span><span class="f_A_Allgemein">k&ouml;nnen Sie neben Rundstahlverlegungen auch Verlegungen aus gebogenen Betonstahlmatten (Formmatten) bearbeiten. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="konst3_bewdeh.htm" class="topiclink">&raquo;&nbsp;Bewehrung dehnen</a> [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BewDeh</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">DehBew</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Summandentext f&uuml;r Formmatten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">&Uuml;ber die optionale Einblendung des Summandentextes einer Bewehrungsposition k&ouml;nnen Sie sich die Gesamtst&uuml;ckzahl einer Verlegung per Mausklick in Form der Addition ihrer einzelnen Verlegungen darstellen lassen. Dies erleichtert die Kontrolle Ihrer Ergebnisse erheblich. In -isb cad- 2015 kann diese Assistenzfunktion auch f&uuml;r Formmattenverlegungen genutzt werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="rd_systemdaten_formstahl.htm" class="topiclink" title="Dialog Systemdaten - Formstahl">&raquo; Dialog Systemdaten - Formstahl</a> [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Auszug Rundstahl</span><span class="f_A_Allgemein">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Vereinfachte Definition von S-Haken</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Definition von S-Haken wurde vereinfacht. Das Au&szlig;enma&szlig; wird nun direkt abgefragt und setzt sich nicht l&auml;nger aus der Summe der beiden B&ouml;gen und des geraden Mittelst&uuml;cks zusammen. Zudem wird die Auszugsform automatisch mit einer Ma&szlig;kette &uuml;ber das Au&szlig;enma&szlig; versehen. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein"><a href="formst_biform_fortyp.htm" class="topiclink">&raquo;&nbsp;Biegeform aus einer Typentabelle erzeugen</a> [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BiForm</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">ForTyp</span><span class="f_A_Allgemein">]</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

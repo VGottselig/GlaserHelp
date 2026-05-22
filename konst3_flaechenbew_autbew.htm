@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Flächen automatisch bewehren - [AutBew]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="AutBew,AutBew *Funktionen und Optionen,Automatische Bewehrung - AutBew,Bewehrung automatisch verlegen,Bewehrung verlegen,Bewehrung verlegen Formstahl,Formstahl,Formstahl Automatische Bewehrung" />
+   <meta name="description" content="Folienbelegung: Wenn AutFol (untere Menüleiste) eingestellt ist, werden Matten in Folie 3, die Stabstahlverlegungen in Folie 4 und die Stahlauszüge in Folie 17 abgelegt." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst3_bewdeh.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_formstahl.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_automatisch_bewehren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Automatische Bewehrung</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_AutBew" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_autbew.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Folienbelegung: Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> (untere Men&uuml;leiste) eingestellt ist, werden Matten in Folie 3, die Stabstahlverlegungen in Folie 4 und die Stahlausz&uuml;ge in Folie 17 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Generierung eines Bewehrungsvorschlages f&uuml;r Platten oder Scheiben mit unregelm&auml;&szlig;ig geformten Umrissen, die mit <a href="con_fem.htm" class="topiclink" title="Arbeiten mit FEM-Daten">FEM-Programmen</a> berechnet wurden. Im Ergebnis wird die optimale Materialnutzung ber&uuml;cksichtigt. </span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Sie k&ouml;nnen die a</span><span class="f_R_Dialog_Info" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Dialog_Info">-Werte aus der FEM-Berechnung &uuml;bernehmen oder im weiteren Verlauf Bereiche ge&auml;nderter Bewehrungsgehalte mit erh&ouml;hten a</span><span class="f_R_Dialog_Info" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Dialog_Info">-Werten definieren.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">a</span><span class="f_R_Dialog" style="vertical-align: sub;">s</span><span class="f_R_Dialog">-Werte (Dialog)</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Abfrage, ob die a</span><span class="f_R_Dialog_Info" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Dialog_Info">-Werte aus der FEM-Berechnung &uuml;bernommen werden sollen.</span></p>
+<p class="p_R_Dialog_Info"><img alt="D_as_Werte" style="margin:0;width:2.3854in;height:2.0000in;border:none" src="d_as_werte.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte werden aus dem angeklickten FEM-Datensatz &uuml;bernommen. [</span><span class="f__Abfrage">Welche FE-Werte? (anklicken)</span><span class="f_R_Option_Beschreibung">]. Falls kein FEM-Datensatz vorhanden ist, werden Sie dazu aufgefordert, eine Ergebnisdatei einzulesen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird nur die Grundbewehrung erzeugt. Zus&auml;tzlich k&ouml;nnen mit Bereichen ge&auml;nderter Bewehrungsgehalte Gebiete mit erh&ouml;hten as-Werten definiert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterabstand (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe des Abstandes f&uuml;r das Punktraster.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die Eingaben und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab und schlie&szlig;t den Dialog.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" colspan="2"  style="width:11.6667in; border:solid 0.0417in #ffffff; border-left:none;" scope="colgroup"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen (abh&auml;ngig von der Auswahl zur &Uuml;bernahme der a</span><span class="f_R_table_header" style="vertical-align: sub;">s</span><span class="f_R_table_header">-Werte)</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_automatisch_bewehren.htm#umrissgeometriedesverlegebereichesdefinieren" class="topiclink" title="Verlegebereich definieren"><img alt="Verlegebereich definieren" title="Verlegebereich definieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_umrgeo_autbew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Verlegebereich definieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_automatisch_bewehren.htm" class="topiclink" title="FEM-Datei öffnen"><img alt="FEM-Datei öffnen" title="FEM-Datei öffnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_lesfem.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">FEM-Datei &ouml;ffnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_automatisch_bewehren.htm#grofak" class="topiclink" title="Größenfaktor ändern"><img alt="Größenfaktor ändern" title="Größenfaktor ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_grofak_autbew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Gr&ouml;&szlig;enfaktor &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="rm_einstellungen-fuer-die-verlegung.htm" class="topiclink" title="Automatische Bewehrung bearbeiten: Landesnormen, Bewehrungsparameter, Anzeige"><img alt="Automatische Bewehrung bearbeiten: Landesnormen, Bewehrungsparameter, Anzeige" title="Automatische Bewehrung bearbeiten: Landesnormen, Bewehrungsparameter, Anzeige" style="margin:0;width:1.1875in;height:0.2500in;border:none" src="b_einste_autbew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Automatische Bewehrung bearbeiten: Landesnormen, Bewehrungsparameter, Anzeige.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="rm_polygon-loeschen_(autbew).htm" class="topiclink" title="Polygon löschen"><img alt="Polygon löschen" title="Polygon löschen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_loesch_autbew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Verlegebereich l&ouml;schen.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Punkte-Massen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte-massen.png"/><img alt="B_Elemen-Massen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemen-massen.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Teilzeichnung mittels Punkten oder Elementen (Linien, Kreise, Teilkreise) markieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Hinzuf" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_hinzuf.png"/><img alt="B_Entfer_Elementauswahl" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_entfer_elementauswahl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Elemente hinzuf&uuml;gen / entfernen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Elemente-im-Rechteck" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck.png"/><img alt="I_Elemente-im-Polygon" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-polygon.png"/><img alt="I_Einzelelemente" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_einzelelemente.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahlrahmen rechteckig / polygonal / einzelne Elemente fangen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_letzte-Markierung-aufnehmen" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_letzte-markierung-aufnehmen.png"/><img alt="I_Elemente-im-Rechteck-und-E-Element" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck-und-e-element.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Zuletzt markiertes erneut markieren / automatischer Elementfang.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_fem.htm" class="topiclink" title="Arbeiten mit FEM-Daten">Finite Elemente Methode</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_automatische_bewehrung_bearbei.htm" class="topiclink">Automatische Bewehrung (allgemeiner Ablauf)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

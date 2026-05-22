@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Abfrage- und Eingabeleiste</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="In ISBCAD gelangen Sie nach dem Aufruf einer Funktion in eine Abfrageroutine, die aus unterschiedlichen Eingabe- oder Auswahlfeldern besteht. ISBCAD führt Sie dabei..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_anzeige-auswahl-und-filterfunktionen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Abfrage- und Eingabeleiste</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">In ISBCAD gelangen Sie nach dem Aufruf einer Funktion in eine Abfrageroutine, die aus unterschiedlichen Eingabe- oder Auswahlfeldern besteht. ISBCAD f&uuml;hrt Sie dabei schrittweise durch alle notwendigen Angaben, bis die Routine abgeschlossen ist. Danach gelangen Sie entweder wieder an den Startpunkt der Abfrageroutine oder zur n&auml;chsten Funktion. Wenn die Abfrageroutine abgeschlossen ist, wurde die Aktion durchgef&uuml;hrt und Sie k&ouml;nnen die Funktion erneut ausf&uuml;hren oder eine andere Funktion w&auml;hlen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">M&ouml;chten Sie eine Abfrageroutine abbrechen, dr&uuml;cken Sie die </span><span class="f__Tastatur">Esc</span><span class="f_A_Allgemein">-Taste. Wenn Sie zur vorherigen Abfrage zur&uuml;ckkehren m&ouml;chten, klicken Sie in der unteren Men&uuml;leiste die Funktion </span><span class="f__Software_Element_deskriptiv">Bst</span><span class="f_A_Allgemein"> an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:6.7604in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Abfragezeile" style="margin:0;width:6.7083in;height:2.2083in;border:none" src="scr_abfragezeile.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:6.7604in; padding:0; border:none"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Aktuelle Abfrage; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Eingabefeld;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">C.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Inaktive Abfrage;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">D.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Rechnerfunktion; </span><span class="f__Bild_Legende_fett">E.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Konstruktionshilfen</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Abfragen</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In der Abfragezeile werden die f&uuml;r die aktuell gew&auml;hlte Funktion ben&ouml;tigten Eingaben abgefragt. Aktuelle Abfragen werden im Auslieferungszustand in roter Textfarbe dargestellt, z. B. [</span><span class="f__Abfrage">von Punkt X</span><span class="f_A_Allgemein">], und fordern jeweils zu einer Eingabe, Auswahl in der Zeichnung oder Best&auml;tigung eines vorhandenen Wertes auf. Inaktive Abfragen kennzeichnen weitere erforderliche Angaben, die erst nach dem Best&auml;tigen der aktuellen Abfrage aktiviert werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In den <a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Systemdaten - Farbeinstellung">Systemdaten</a> k&ouml;nnen Sie die Textfarbe und den Texthintergrund f&uuml;r verschiedene Programmelemente individuell anpassen.</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Eingaben</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Im Eingabefeld unterhalb einer Abfrage k&ouml;nnen die ben&ouml;tigten Daten eingegeben werden. Jede Eingabe muss mit der Eingabetaste oder per Rechtsklick (situationsabh&auml;ngig) best&auml;tigt werden. Eingaben zur Elementauswahl k&ouml;nnen meistens auch per Mausklick in der Zeichnung erfolgen. Zudem lassen sich die Ergebnisse der Funktion <a href="des_messen.htm" class="topiclink" title="Messen-Funktion (Beschreibung)">Messen</a> mit einem Mausklick in das Eingabefeld &uuml;bernehmen. Nach der Best&auml;tigung wechselt das Programm automatisch zur n&auml;chsten Abfrage.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Eingegebene Werte, wie z. B. ein Radius, eine L&auml;nge oder ein Text, bleiben bei einer nochmaligen Ausf&uuml;hrung der Funktion erhalten. Dies hat den Vorteil, dass Sie Eingaben, die weiterhin g&uuml;ltig sind, mit Rechtsklick best&auml;tigen k&ouml;nnen, um zur n&auml;chsten Abfrage zu gelangen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Elementkennung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie Zeichenelemente anklicken, z. B. den Endpunkt einer Linie, wird eine Buchstaben- und Zahlenkombination, die Elementkennung (z. B. E23) des angeklickten Punktes, in die Eingabe geschrieben. Dabei beschreibt der Buchstabe &quot;E&quot; den Endpunkt des Elements und die Zahl, dass es sich um das 23-igste gezeichnete Element handelt. Zu dem angeklickten Bezugspunkt k&ouml;nnen Sie mit dem Differenzmodus [</span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_A_Allgemein">] einen Abstand zum Bezugspunkt eingeben.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Siehe auch: <a href="des_elementfang.htm" class="topiclink" title="Linien- Kreis- und Texpunkte fangen, Mehrdeutigkeiten usw.">Elementfang</a>; <a href="des_differenzmodus.htm" class="topiclink" title="Abstände zu Bezugspunkten angeben">Differenzmodus</a></span></p>
+<h5 class="p_Heading5"><a name="_texteingabe" class="hmanchor"></a><span class="f_Heading5">Eingabemodus</span></h5>
+<p class="p_A_Allgemein"><span class="f_Hervorhebung_Text">&Uuml;berschreibmodus</span><span class="f_A_Allgemein">: Im &Uuml;berschreibmodus ersetzt die Eingabe neuer Zeichen die bestehenden Zeichen rechts von der Einf&uuml;gemarke.</span></p>
+<p class="p_A_Allgemein"><span class="f_Hervorhebung_Text">Einf&uuml;gemodus</span><span class="f_A_Allgemein">: Im Einf&uuml;gemodus werden neue Zeichen links von der Einf&uuml;gemarke eingesetzt.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">F&uuml;r beide Modi gilt: Sollten sich Zeichen rechts von der Einf&uuml;gemarke befinden, werden diese nach dem Best&auml;tigen entfernt. Wenn Sie die Einf&uuml;gemarke per Mausklick oder mit der </span><span class="f__Tastatur">Ende</span><span class="f_A_Allgemein">-Taste an das Textende setzen, wird die komplette Eingabe &uuml;bernommen.</span></p>
+<p class="p_A_Allgemein"><span class="f_Hervorhebung_Text">&Uuml;berschreib- oder Einf&uuml;gemodus als Standard-Einstellung</span><span class="f_A_Allgemein">: In den <a href="option_einstellungen.htm" class="topiclink">Einstellungen</a> k&ouml;nnen Sie mit der Option [</span><span class="f__Software_Element_deskriptiv">&Uuml;berschreibmodus verwenden</span><span class="f_A_Allgemein">] zwischen beiden Modi dauerhaft wechseln. Setzen Sie bei der Option einen Haken, um Texteingaben im &Uuml;berschreibmodus zu beginnen. Ist der Haken nicht gesetzt (Auslieferungszustand), wird standardm&auml;&szlig;ig der Einf&uuml;gemodus verwendet.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der Tastaturtaste </span><span class="f__Tastatur">Einfg</span><span class="f_A_Allgemein"> wechseln Sie tempor&auml;r den Eingabemodus. Sie erkennen in der Statusleiste, ob der Einf&uuml;ge- oder &Uuml;berschreibmodus aktiv ist:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_statusleiste_einfuege_modus" style="margin:0;width:6.2396in;height:0.8958in;border:none" src="scr_statusleiste_einfuege_modus.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><a name="rechnerfunktion" class="hmanchor"></a><span class="f_Heading4">Rechnerfunktion </span></h4>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="Z_Rechner01" style="margin:0;width:1.9479in;height:0.5104in;border:none" src="z_rechner01.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In Eingabefeldern mit <img alt="I_Rechner" style="margin:0;width:0.1146in;height:0.1979in;border:none" src="i_rechner.png"/> k&ouml;nnen Rechenfunktionen (Grundrechenarten, Winkelfunktionen (im Bogenma&szlig;) ausgef&uuml;hrt werden. Klammer- und Punkt vor Strich-Regeln werden ber&uuml;cksichtigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8021in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Symbol</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0000in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Operation</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8021in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">+</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Addition</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8021in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Subtraktion</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8021in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">*</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Multiplikation</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8021in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">\</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Division</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Hilfsfunktionen (Konstruktionshilfen)</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Funktionen zur aktuellen Abfrage. &Uuml;ber das nach unten gerichtete Dreieck unterhalb des Eingabefeldes k&ouml;nnen Hilfsfunktionen durch das Anfahren mit dem Cursor aufgerufen und jeweils mit einem Klick auf die linke Maustaste in die Eingabe &uuml;bernommen werden. Der Aufruf einer Hilfsfunktion ist durch Eintippen des entsprechenden K&uuml;rzels (w=Winkel, s=Schnittpunkt, o=Orthogonale usw.) ebenfalls m&ouml;glich.</span><br>
+<span class="f_A_Allgemein">Siehe: <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm" class="topiclink" title="Konstruktionslinien, Hilfs- und Zeichenfunktionen und Eingabe von Polarkoordinaten (Winkelraster)">Konstruktionshilfen</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Hilfsfunktionen" style="margin:0;width:2.7292in;height:2.5313in;border:none" src="scr_hilfsfunktionen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anwendungsoberflache.htm" class="topiclink" title="Programmoberfläche">Programmoberfl&auml;che</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="top_-isbcad-allgemeine-bedienung.htm" class="topiclink">Grundlagen der Bedienung</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

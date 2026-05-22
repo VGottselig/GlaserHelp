@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Maßkettenpunkt modifizieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bemaßung,Maßkettenpunkte,Maßkettenpunkte auf Maßkette verschieben,Maßkettenpunkte modifizieren" />
+   <meta name="description" content="Durch das Löschen von Linien und Kreisen kann es vorkommen, dass Maßkettenpunkte auf der Zeichnung ohne offensichtlichen Elementbezug zurückbleiben." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_massketten.htm">Maßketten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="masskettenstil_konfigurieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_massketten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="massketten_durch_text_ergaenze.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Ma&szlig;kettenpunkt modifizieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_massketten.htm" class="topiclink" title="Maßketten-Funktionen (Übersicht)"><img alt="Maßketten-Funktionen (Übersicht)" title="Maßketten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massket.png"/></a> <img alt="B-akt_ModPkt_Massket" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_modpkt_massket.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Durch das L&ouml;schen von Linien und Kreisen kann es vorkommen, dass Ma&szlig;kettenpunkte auf der Zeichnung ohne offensichtlichen Elementbezug zur&uuml;ckbleiben.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Diese Punkte k&ouml;nnen mit dieser Funktion entfernt oder auf die zugeh&ouml;rige Ma&szlig;kette verschoben werden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie aus den folgenden Funktionen, wie Sie die Ma&szlig;kettenpunkte modifizieren m&ouml;chten. [</span><span class="f__Abfrage">Welche Ma&szlig;kette</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6563in;"><p class="p_Step" style="text-align: center; margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="B_einzeln-verschieben" style="margin:0 auto 0 auto;width:1.5104in;height:0.2396in;border:none" src="b_einzeln-verschieben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.7604in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Einzelne Punkte l&ouml;schen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.1563in; margin: 0.0625in 0 0.0208in 0;"><span style="display:inline-block;width:0.1563in;margin-left:-0.1563in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Ma&szlig;kette an, in der Ma&szlig;kettenpunkte gel&ouml;scht werden sollen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.1563in; margin: 0.0104in 0 0.0833in 0.3125in;"><span class="f_Step_Anmerkung">Es werden alle Punkte markiert, die zu der angeklickten Ma&szlig;kette geh&ouml;ren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.1563in; margin: 0.0625in 0 0.0208in 0;"><span style="display:inline-block;width:0.1563in;margin-left:-0.1563in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die verma&szlig;ten Punkte an, die nicht mehr in der Ma&szlig;kette enthalten sein sollen. [</span><span class="f__Abfrage">Welche Ma&szlig;kettenpunkte l&ouml;schen</span><span class="f_Step">].</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Jeder angeklickte Punkt wird aus der Auswahl entfernt. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">H&ouml;henkoten: Wird die Bezugsh&ouml;he (&quot;H&ouml;he 1. Linie&quot; z. B. &plusmn; 1,15) entfernt, erh&auml;lt die bei der Erstellung nachfolgend angeklickte H&ouml;henlage diese H&ouml;henangabe und wird zur neuen Bezugsh&ouml;he. Alle weiteren H&ouml;henkoten werden entsprechend aktualisiert, wobei das H&ouml;henkoten-Symbol erhalten bleibt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.1563in; margin: 0.0625in 0 0.0208in 0;"><span style="display:inline-block;width:0.1563in;margin-left:-0.1563in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schlie&szlig;en Sie mit Rechtsklick ab.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.1563in; margin: 0.0104in 0 0.0833in 0.3125in;"><span class="f_Step_Anmerkung">Die Ma&szlig;kette wird aktualisiert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6563in;"><p class="p_Step" style="text-align: center; margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="B_alle-verschieben" style="margin:0 auto 0 auto;width:1.5104in;height:0.2396in;border:none" src="b_alle-verschieben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.7604in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Punkte auf Ma&szlig;kettenh&ouml;he verschieben.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.0625in 0 0.0938in 0.0104in;"><span class="f_ToDo_Info">Beim Auslagern von Teilzeichnungen m&uuml;ssen alle Elemente einer Ma&szlig;kette eingerahmt werden, damit diese auf der neuen Zeichnung erscheint. Um alle Ma&szlig;kettenpunkte inkl. der Ma&szlig;kettenlinien und Texte einfach zu finden, k&ouml;nnen mit dieser Funktion alle zugeh&ouml;rigen Punkte auf die Grundlinie der Ma&szlig;kette verschoben werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.1563in; margin: 0.0625in 0 0.0208in 0;"><span style="display:inline-block;width:0.1563in;margin-left:-0.1563in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Ma&szlig;kette an, deren Ma&szlig;kettenpunkte auf die Ma&szlig;linie verschoben werden sollen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.1563in; margin: 0.0104in 0 0.0833in 0.3125in;"><span class="f_Step_Anmerkung">Die Ma&szlig;kettenpunkte werden auf die Grundlinie der Ma&szlig;kette verschoben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um Erg&auml;nzungstexte neu zuzuordnen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Erg&auml;nzungstexte, die zu einem Ma&szlig; geh&ouml;ren, das neu berechnet wird, m&uuml;ssen neu zugeordnet werden.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Dialog </span><span class="f__Software_Element_deskriptiv">H&ouml;hentexte zuordnen</span><span class="f_Task_Info"> wird auch nach [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Dehnen</span><span class="f_Task_Info">], [</span><span class="f__Software_Element_deskriptiv">Konst2</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Drehen</span><span class="f_Task_Info">], [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Fen&Auml;nd</span><span class="f_Task_Info"> &#8594; </span><span class="f__Software_Element_deskriptiv">l&ouml;schen mit Ma&szlig;kettenpunkten</span><span class="f_Task_Info">] usw. ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.5313in;"><img alt="D_Hoehentexte-zuordnen" style="margin:0;width:4.5313in;height:2.7813in;border:none" src="d_hoehentexte-zuordnen.png"/></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Jedes einzelne Ma&szlig; der Ma&szlig;kette wird nacheinander von links nach rechts markiert. Der aktuelle Ma&szlig;kettentext wird im Dialog angeschrieben.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In der Tabelle stehen die Erg&auml;nzungstexte, die neu zugeordnet werden m&uuml;ssen, ebenfalls in der Reihenfolge von links nach rechts.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Um einen Text dem markierten Ma&szlig; zuzuordnen, klicken Sie den Text an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zoomfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dem Schieberegler kann der Zoomausschnitt vergr&ouml;&szlig;ert oder verkleinert werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Drehen Sie das Mausrad nach vorne zum Verkleinern, bzw. nach hinten zum Vergr&ouml;&szlig;ern. Vorher muss der Regler markiert werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Zoomausschnitt ist auf das Bezugsma&szlig; fokussiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vorheriges Ma&szlig;&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf diese Schaltfl&auml;che, um ein Ma&szlig; zur&uuml;ckzugehen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ist eine Ma&szlig;zahl markiert, zu der ein H&ouml;hentext geh&ouml;rt, klicken Sie in der Tabelle auf den entsprechenden Eintrag.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">N&auml;chstes Ma&szlig;&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dr&uuml;cken Sie auf diese Schaltfl&auml;che, um die n&auml;chste Ma&szlig;zahl zu markieren oder klicken Sie den Eintrag in der Tabelle an, der zu dem markierten Ma&szlig; geh&ouml;rt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fertig&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Dialog wird geschlossen. Befinden sich noch Texte in der Tabelle, werden diese verworfen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die gesamte Aktion (Ma&szlig;kette &auml;ndern bzw. generieren) wird abgebrochen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die angeklickte Ma&szlig;kette wird wieder im urspr&uuml;nglichen Zustand angezeigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_massketten.htm" class="topiclink">Ma&szlig;ketten (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mattengruppe genau verlegen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="GenVer,LisMat,Listenmatten,Listenmatten genau verlegen" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Mattentext oder ein anderes Mattenelement." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_matten.htm">Matten</a> &gt; <a href="matten.htm">Mattenverlegung im Rechteck</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="matten.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="matten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="mattengruppe_frei_verlegen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Mattengruppe genau verlegen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_matten.htm" class="topiclink" title="Matten-Funktionen (Übersicht)"><img alt="Matten-Funktionen (Übersicht)" title="Matten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_matten.png"/></a><span class="f_Aufruf"> <a href="matten.htm" class="topiclink" title="Mattenverlegung im Rechteck (Funktionsübersicht)"><img alt="Mattenverlegung im Rechteck (Funktionsübersicht)" title="Mattenverlegung im Rechteck (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_verrec_matten.png"/></a> <img alt="B-akt_GenVer_VerRec" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_genver_verrec.png"/></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Mattentext oder ein anderes Mattenelement.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Matten desselben Mattentyps in einem vorhandenen, rechtwinkligen Bereich verlegen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung: Matten (eindimensionale Fl&auml;chenmatten) und Formmatten (zweidimensionale Form) sind nicht kompatibel!</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Formmatten (zweidimensional) m&uuml;ssen mit den Funktionen im Formmatten-Men&uuml; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Hinweis_in_Tabelle">] verlegt und bearbeitet werden. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipps:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Um die Matten in einem beliebigen, rechtwinkligen Bereich zu verlegen, verwenden Sie die Funktion Freies&nbsp;Verlegen. <a href="mattengruppe_frei_verlegen.htm" class="topiclink">&raquo;&nbsp;Mattengruppe frei verlegen</a></span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Bei schr&auml;gen und kreisf&ouml;rmigen Schalkanten verwenden Sie die Funktion [</span><span class="f__Software_Element_deskriptiv">VerPol</span><span class="f_Hinweis_in_Tabelle">]. <a href="matten_in_polygonalen_bereichen_verlegen.htm" class="topiclink">&raquo;&nbsp;Mattenverlegung im Polygon</a></span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Mit Rechtsklick k&ouml;nnen Sie den in der Eingabe stehenden Wert best&auml;tigen, oder mit Linksklick einen Vorschlag aus der Auswahlliste unterhalb der jeweiligen Abfrage w&auml;hlen.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabelle_Kopf" style="margin: 0.0521in 0 0.0313in 0.2813in;"><span class="f_R_Tabelle_Kopf">Verlegeoptionen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B-akt_Tausche-Wert_VerRec" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b-akt_tausche-wert_verrec.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Vertauschung der Reihenfolge. Die ganze Matte steht am Ende.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Verslae" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_verslae.png"/><img alt="B_Versqu" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_versqu.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sto&szlig;versatz in L&auml;ngsrichtung/Querrichtung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_1-Lage" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_1-lage.png"/><img alt="B_2-Lage" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_2-lage.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl der Mattenlage.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B-akt_Tragr0_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_tragr0_verrec.png"/><img alt="B-akt_Tragr1_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_tragr1_verrec.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drehung der Matten um 90&deg;.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B-akt_F-Kons_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_f-kons_verrec.png"/><img alt="B-akt_F-ReOb_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_f-reob_verrec.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ver&auml;nderungen des Verlegebereiches bei Anpassung der Mattenabmessungen bzw. &Uuml;berdeckungen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Um ungewollte &Auml;nderungen des Verlegebereiches zu vermeiden, sollte </span><span class="f__Software_Element_deskriptiv">F.Kons</span><span class="f_R_Tabellenzeile"> aktiviert sein.</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><span class="f__Software_Element_deskriptiv">F.Kons</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Keine Ver&auml;nderung.</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><span class="f__Software_Element_deskriptiv">F.ReOb</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Anpassung des Verlegebereiches nach rechts oder oben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2396in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B-akt_F-LiUn_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_f-liun_verrec.png"/><img alt="B-akt_F-Zent_VerRec" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_f-zent_verrec.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:5.1250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Anpassung des Verlegebereiches.</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><span class="f__Software_Element_deskriptiv">F.LiUn</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: - </span><span class="f_R_Tabellenzeile">nach links oder unten.</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><span class="f__Software_Element_deskriptiv">F.Zent</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: - </span><span class="f_R_Tabellenzeile">gleichm&auml;&szlig;ig in beide Richtungen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Auflagerbreite und Verlegefaktor angeben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Werte f&uuml;r die Auflagertiefe (A)</span><span class="f__Software_Element_deskriptiv"> </span><span class="f_ToDo_Info">und den Verlegefaktor (N) werden auf den Schaltfl&auml;chen </span><span class="f__Software_Element_deskriptiv">A=... </span><span class="f_ToDo_Info">bzw. </span><span class="f__Software_Element_deskriptiv">N=...</span><span class="f_ToDo_Info"> (im Funktionsbereich) angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die angezeigten Werte zu &auml;ndern, klicken Sie auf die entsprechende Schaltfl&auml;che.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie in der Abfrage unter </span><span class="f__Abfrage">Auflagertiefe</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">Wie oft herstellen</span><span class="f_Step"> (Verlegefaktor) den gew&uuml;nschten Wert ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der angegebene Wert wird auf der jeweiligen Schaltfl&auml;che angezeigt und f&uuml;r alle weiteren Verlegungen verwendet. ISBCAD wechselt automatisch in den vorher verwendeten Verlegemodus [</span><span class="f__Software_Element_deskriptiv">GenVer</span><span class="f_Step_Anmerkung">] bzw. [</span><span class="f__Software_Element_deskriptiv">FreVer</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Verlegebereich definieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Angabe des Verlegebereiches &uuml;ber zwei Diagonalpunkte.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Winkel</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bestimmen Sie die Verlegerichtung, indem Sie einen Winkel eingeben oder eine der <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm" class="topiclink">Ausrichtungsoptionen</a> w&auml;hlen. Best&auml;tigen Sie die Eingabe eines Winkels mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Im Funktionsbereich stehen Ihnen Schaltfl&auml;chen zur Verf&uuml;gung, mit denen Sie die Matten parallel [</span><span class="f__Software_Element_deskriptiv">Trag0</span><span class="f_Step_Anmerkung">] oder senkrecht [</span><span class="f__Software_Element_deskriptiv">Trag1</span><span class="f_Step_Anmerkung">] zum eingegebenen Winkel verlegen k&ouml;nnen.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">1.Pkt.X</span><span class="f_Step">]</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid; margin: 0.0521in 0 0.1042in 0.5625in;"><span class="f_Task_Info">Der Verlegebereich wird &uuml;ber die X- und Y-Koordinate des Anfangs- und Endpunktes beschrieben. Liegt der Anfangs- oder Endpunkt der Staffel an einer schr&auml;gen Linie, ist es ratsam, das Arbeitskoordinatensystem zu drehen. Alternativ k&ouml;nnen Sie auch die Hilfsfunktion </span><span class="f__Software_Element_deskriptiv">S</span><span class="f_Task_Info"> [Schnittpunkt] verwenden, um den Anfangs- und/oder Endpunkt an den Schnittpunkt zweier Linien zu setzen. Tippen Sie in das Eingabefeld ein </span><span class="f__Software_Element_deskriptiv">s</span><span class="f_Task_Info"> ein und klicken Sie anschlie&szlig;end die Bezugslinie an. Mit Rechtsklick k&ouml;nnen Sie die Auflagertiefe &uuml;bernehmen. Wenn Sie bei einem Parameter (X oder Y) f&uuml;r den Anfangs- und/oder Endpunkt die Hilfsfunktion verwenden, achten Sie darauf, auch beim anderen Parameter die Hilfsfunktion einzugeben!</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine Bezugslinie f&uuml;r den Anfangspunkt an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls Sie die voreingestellte Auflagertiefe &uuml;bernehmen m&ouml;chten, achten Sie darauf, die Linie mit dem Cursor auf der Seite anzuklicken, zu der die Auflagertiefe ber&uuml;cksichtigt werden soll.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linienkennung wird in die Eingabe geschrieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nach der Linienkennung den Wert f&uuml;r die Auflagertiefe mit dem entsprechenden Vorzeichen ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit Rechtsklick k&ouml;nnen Sie die voreingestellte Auflagertiefe &uuml;bernehmen. Wenn kein Abstand angegeben werden soll, geben Sie als Differenz </span><span class="f__Tastatur">0</span><span class="f_Step_Anmerkung"> (Null) ein. </span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">1.Pkt.Y</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Gehen Sie f&uuml;r die Angabe des Y-Wertes wie bei [XBer-Anf] beschrieben vor.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenmarke wird an den Anfangspunkt gesetzt.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">2.Pkt.X</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Pkt.Y</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie Bezugslinien f&uuml;r den Endpunkt wie bei [1.Pkt] beschrieben an.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Ma&szlig;e und Verlegerichtung definieren</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Mattentyp</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Mattentyp aus der Auswahlliste an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Mattentyp auch direkt eingeben. Beachten Sie dabei die korrekte Schreibweise.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Um eigene Parameter f&uuml;r die Listenmatte zu definieren, klicken Sie neben der Auswahlliste auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">LisMat</span><span class="f_Step_Anmerkung">. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Abmessungen der Listenmatte</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Abmessungen der Listenmatte (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Option" style="page-break-after: avoid;"><img alt="D_Abmessungen-der-Listenmatte" style="margin:0;width:4.1979in;height:2.5729in;border:none" src="d_abmessungen-der-listenmatte.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bezeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen beliebigen Text ein. Sie d&uuml;rfen keine Leerzeichen verwenden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge; Breite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die &auml;u&szlig;eren Abmessungen der Listenmatte ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;ngs&uuml;berdeckung; Quer&uuml;berdeckung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier k&ouml;nnen beliebige Werte eingegeben werden. F&uuml;r L&uuml;cken m&uuml;ssen Sie negative Werte eingeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verlegung wird mit diesen Parametern durchgef&uuml;hrt. Die Werte werden </span><span class="f__Hervorhebung">nicht</span><span class="f_Step_Anmerkung"> in der</span><span class="f_Step_Anmerkung" style="font-size: 9pt;"> </span><span class="f__Eigenname">Matten.dat</span><span class="f_Step_Anmerkung"> gespeichert! F&uuml;r den Mattenaufbau m&uuml;ssen Sie sp&auml;ter den Editor f&uuml;r die Listenmatten </span><span class="f__Software_Element_deskriptiv">LiMaEd</span><span class="f_Step_Anmerkung"> starten.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Bevor Sie die maximale L&auml;nge und Breite der Matte definieren, k&ouml;nnen Sie zwischen folgenden Verlegearten w&auml;hlen.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Verlegearten</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:none"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="B-akt_VersLae_VerRec" style="margin:0 auto 0 auto;width:1.1563in;height:0.2500in;border:none" src="b-akt_verslae_verrec.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.2083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Versatz in L&auml;ngsrichtung</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Matten werden so verlegt, dass die St&ouml;&szlig;e in L&auml;ngsrichtung versetzt angeordnet werden. Die jeweils ersten Matten einer Reihe sind unterschiedlich lang.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:none"><br>
+</td>
+<td style="vertical-align:top; width:13.2083in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Mattengruppe_Versatz-in-Laengsrichtung" style="margin:0;width:3.8125in;height:1.7604in;border:none" src="z_mattengruppe_versatz-in-laengsrichtung.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:none"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="B-akt_VersQu_VerRec" style="margin:0 auto 0 auto;width:1.1771in;height:0.2500in;border:none" src="b-akt_versqu_verrec.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.2083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Versatz in Querrichtung</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Matten werden so verlegt, dass die St&ouml;&szlig;e in Querrichtung versetzt angeordnet werden. Die jeweils ersten Matten einer Reihe sind gleich lang.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:none"><br>
+</td>
+<td style="vertical-align:top; width:13.2083in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Mattengruppe_Versatz-in-Querrichtung" style="margin:0;width:3.8021in;height:1.7813in;border:none" src="z_mattengruppe_versatz-in-querrichtung.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">max. L&auml;nge</span><span class="f_Step">]; [</span><span class="f__Abfrage">max. Breite</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die maximale L&auml;nge/Breite der Matte ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Soll die Verlegung mit Mattenst&uuml;cken erfolgen, die von den Werten der Mattenliste abweichen, k&ouml;nnen Sie die entsprechenden Werte in die Eingabe eintragen.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">An dieser Stelle macht das Programm einen Verlegevorschlag. Die Richtung der Matten ergibt sich aus der Kombination von Winkel und Tragrichtung. In der Regel wird die erste Matte unten links verlegt. Daran anschlie&szlig;end werden, unter Ber&uuml;cksichtigung der Sto&szlig;&uuml;berdeckungen, weitere Matten angef&uuml;gt. Es ergeben sich u. U. ung&uuml;nstige Mattenabmessungen. Diese k&ouml;nnen im Anschluss durch Ver&auml;ndern der Parameter verbessert werden.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Bearbeitung der Verlegung erfolgt in drei Abschnitten. Zuerst wird die Querrichtung und dann die erste und die zweite Reihe bearbeitet. Die erste Reihe steht f&uuml;r alle ungeraden Reihen und die zweite f&uuml;r alle geraden Reihen. </span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Rechts neben den Eingabezeilen wird Ihnen das aktuelle Gewicht des Verlegebereiches angezeigt. Unter dem Gewicht sind die Schaltfl&auml;chen </span><span class="f__Software_Element_deskriptiv">Zur&uuml;ck</span><span class="f_ToDo_Info">/</span><span class="f__Software_Element_deskriptiv">F11</span><span class="f_ToDo_Info"> und </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_ToDo_Info">/</span><span class="f__Software_Element_deskriptiv">F12</span><span class="f_ToDo_Info"> angeordnet, die zu jedem Zeitpunkt gedr&uuml;ckt werden k&ouml;nnen. Mit diesen Schaltfl&auml;chen gelangen Sie entweder zum vorherigen Abschnitt oder zum n&auml;chsten Bearbeitungsabschnitt.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Querrichtung bearbeiten</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Anpassen der Parameter in Querrichtung.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Breite 1.Matte</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Breite der ersten Matte ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Resteanzahl</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Das Programm berechnet die noch erforderliche Anzahl der Matten unter Ber&uuml;cksichtigung der eingestellten &Uuml;berdeckung. </span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Unterhalb der Eingabe erscheinen Schaltfl&auml;chen mit den Werten f&uuml;r n+1, n+2/3, n+1/2, n+1/3, n+1/4 und n. {n = ganzzahliger Anteil der nach der ersten Matte noch erforderlichen Anzahl von Matten}.</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Sie k&ouml;nnen die Restanzahl vergr&ouml;&szlig;ern oder verkleinern. Wenn die Gr&ouml;&szlig;e des Verlegebereiches nicht ver&auml;ndert werden soll, stellen Sie die Option </span><span class="f__Software_Element_deskriptiv">F.Kons</span><span class="f_ToDo_Info"> ein! In diesem Fall werden die Werte f&uuml;r die Restgr&ouml;&szlig;e und die &Uuml;berdeckung angepasst. Im Falle einer Anpassung des Verlegebereiches wird die Restgr&ouml;&szlig;e angepasst, die &Uuml;berdeckung beibehalten und je nach gew&auml;hlter Verschieberichtung wird der Verlegebereich angepasst.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den entsprechenden Wert direkt ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Restgr.</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Aus der Restanzahl ergibt sich die Gr&ouml;&szlig;e des letzten verlegten Mattenst&uuml;cks. </span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Unterhalb der Eingabe erscheinen Schaltfl&auml;chen mit den Werten f&uuml;r ganze und halbe Mattenbreite sowie </span><span class="f__Software_Element_deskriptiv">0.000</span><span class="f_ToDo_Info"> (Null) Meter. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den entsprechenden Wert direkt ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit Linksklick k&ouml;nnen Sie einen Vorschlag aus der Auswahlliste w&auml;hlen. Klicken Sie den Wert an, der f&uuml;r die Einteilung der Querrichtung am besten geeignet ist.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">&Uuml;berdeckung</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Es wird der Wert aus der <a href="rm_betonstahltabelle.htm" class="topiclink">Mattentabelle</a> (Matten.dat) vorgeschlagen bzw. aus den vorangegangenen Parametern berechnet.</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Im Falle, dass Lagermatten verwendet werden, erscheint unterhalb der Eingabe die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Eurocode 2</span><span class="f_ToDo_Info">. Um die erforderliche &Uuml;berdeckung zu berechnen, klicken Sie die Schaltfl&auml;che an. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">&Uuml;berdeckung nach Eurocode 2</span><span class="f_ToDo_Info">.</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Im Falle, dass Vorratsmatten verwendet werden, wird die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">&Uuml;bergreifung</span><span class="f_ToDo_Info"> eingeblendet. Klicken Sie diese an, um eine PDF-Datei zu &ouml;ffnen, in der die m&ouml;glichen &Uuml;bergreifungen im Ein&#8209;Ebenen&#8209;Sto&szlig; abzulesen sind.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">&Uuml;berdeckung nach Eurocode 2 (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5417in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mattenabh&auml;ngige Berechnung der Sto&szlig;&uuml;berdeckung nach Eurocode&nbsp;2 f&uuml;r den ausgew&auml;hlten Mattentyp. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Ueberdeckung-nach-Eurocode-2" style="margin:0;width:4.6146in;height:2.2604in;border:none" src="d_ueberdeckung-nach-eurocode-2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Verbund</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der Verbundart.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Guter Verbund I; M&auml;&szlig;iger Verbund II</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen gutem und m&auml;&szlig;igem Verbund.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Quersto&szlig; bei R&#8209;Matten</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl des Quersto&szlig;-Typs (nur m&ouml;glich bei R&#8209;Matten).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tragsto&szlig;; Verteilersto&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie an, ob es sich um einen Trag- oder Verteilersto&szlig; handelt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betong&uuml;te</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Betong&uuml;te.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;&uuml;berdeckung L&auml;ngs; Sto&szlig;&uuml;berdeckung Quer </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In Abh&auml;ngigkeit von der Betong&uuml;te und den Verbundbedingungen wird die erforderliche &Uuml;bergreifungsl&auml;nge ls im Zwei-Ebenen-Sto&szlig; angezeigt. Das Verh&auml;ltnis von [</span><span class="f__Software_Element_deskriptiv">erf as</span><span class="f_R_Option_Beschreibung">] zu [</span><span class="f__Software_Element_deskriptiv">vorh as</span><span class="f_R_Option_Beschreibung">] betr&auml;gt 1,0.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Werte wurden dem Faltblatt des Institutes f&uuml;r Stahlbetonbewehrung entnommen. <a href="https://www.isb-ev.de" target="_blank" class="weblink" title="Institut für Stahlbetonbewehrung e.V. (ISB)">https://www.isb-ev.de</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den entsprechenden Wert direkt ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die erste Abfrage wird wieder aktiviert. [</span><span class="f__Abfrage">Breite 1.Matte</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die Taste </span><span class="f__Tastatur">F12</span><span class="f_Step">, um zum n&auml;chsten Bearbeitungsschritt zu gelangen.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Mattenreihen bearbeiten</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Es folgen die Eingaben f&uuml;r die erste und zweite Reihe. W&auml;hrend der Bearbeitung kann es zu ungew&uuml;nschten „Ergebnissen“ in den 2. Reihen kommen. Diese k&ouml;nnen Sie im Anschluss bearbeiten.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">L&auml;nge 1.Matte</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Die L&auml;nge der ersten Matte wird entweder als volle L&auml;nge oder, wenn das Feld kleiner als eine Mattenl&auml;nge ist, mit der maximal m&ouml;glichen L&auml;nge vorgeschlagen.</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Unterhalb der Eingabe erscheint eine Auswahl f&uuml;r L&auml;ngen. Es wird 1/1, 2/3, 1/2, 1/3, 1/4 und 0 x Mattenl&auml;nge angeboten.</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_ToDo_Info">Soll der Verlegebereich an die Matteneinteilung angepasst werden, m&uuml;ssen Sie eine der Schaltfl&auml;chen f&uuml;r den Fl&auml;chenangleich benutzen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die L&auml;nge ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Restanzahl</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Es wird angezeigt, wie viele Matten noch in den Verlegebereich passen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Anzahl ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Restgr.</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Es wird die L&auml;nge des letzten Mattenst&uuml;cks angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die L&auml;nge ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">&Uuml;berdeckung</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Wenn Sie bei der Querrichtung die Werte aus dem Dialog </span><span class="f__Software_Element_deskriptiv">&Uuml;berdeckung nach Eurocode 2 </span><span class="f_ToDo_Info">&uuml;bernommen haben, wird hier die erforderliche &Uuml;bergreifungsl&auml;nge angeboten.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die L&auml;nge ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die Taste </span><span class="f__Tastatur">F12</span><span class="f_Step">, um zum n&auml;chsten Bearbeitungsschritt zu gelangen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen nun die zweite Reihe bearbeiten. Wenn Sie die zweite Reihe bearbeitet haben, dr&uuml;cken Sie </span><span class="f__Tastatur">F12</span><span class="f_Step_Anmerkung">, um die Verlegung abzuschlie&szlig;en.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Matten werden entsprechend den Einstellungen in [</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_Step_Anmerkung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fl&auml;chenmatten</span><span class="f_Step_Anmerkung">] gezeichnet. Die Nummerierung der Matten erfolgt automatisch. Dabei wird die erste Zahl nach der gr&ouml;&szlig;ten verwendeten Positionsnummer als Startwert genommen. Bei gleichen Typen mit identischen Abmessungen werden vorhandene Nummern wiederverwendet. An die jeweils erste verlegte Position wird der Mattengr&ouml;&szlig;entext geschrieben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p class="p_ImageCaption"><img alt="Abb_2.1.1-05_Matten_Rechteck_Bereich" style="margin:0;width:3.6146in;height:2.9792in;border:none" src="abb_2.1.1-05_matten_rechteck_bereich.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Best&auml;tigen Sie den vorgeschlagenen Wert des Winkels mit der rechten Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie mit der linken Maustaste die senkrechte Wandlinie so an, als ob Sie eine Parallele nach links zeichnen wollten, und &uuml;bernehmen die Auflagertiefe von 10cm durch die rechte Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auf welcher Seite Sie die untere horizontale Linie anklicken, spielt keine Rolle, da Sie den Abstand mit +5cm individuell eingeben. </span><span class="f_Step">Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um die maximale horizontale Ausdehnung zu erzielen, klicken Sie die schr&auml;ge Wand auf der Innenseite an und &uuml;bernehmen mit der rechten Maustaste die Auflagertiefe.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Begrenzung nach oben geben Sie &uuml;ber die Au&szlig;enkante mit dem Abstand von -5cm an.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0833in 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abfrage</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Winkel</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">1.Pkt.X</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">1.Pkt.Y</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">2.Pkt.X</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">2.Pkt.Y</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eingabe</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">0</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">M1185-.1 (Auflagertiefe)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">A1169 +.05</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">E1209+.1</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">E1158 -.05</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Mattentyp</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">max.L&auml;nge</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">max.Breite</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Q335A</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">5</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2.15</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Abb_2.1.1-06_Matten_Rechteck_Trag0-Trag1" style="margin:0;width:3.6042in;height:2.8750in;border:none" src="abb_2.1.1-06_matten_rechteck_trag0-trag1.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drehen Sie die Matten mit dem Schalter </span><span class="f__Software_Element_deskriptiv">Trag1</span><span class="f_R_Tabellenzeile"> um 90&deg;.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dr&uuml;cken Sie die rechte Maustaste, bis Sie auf die &Uuml;berdeckung kommen. Aktivieren Sie die Ermittlung der &Uuml;bergreifungsl&auml;nge nach </span><span class="f__Software_Element_deskriptiv">Eurocode&nbsp;2</span><span class="f_R_Tabellenzeile"> durch Klick auf den Schalter. Nach dem Dr&uuml;cken auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile"> werden die Matten neu gezeichnet und die Zahlen in den Eingaben entsprechend angepasst.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Benutzen Sie wieder die rechte Maustaste, um auf die Eingabe f&uuml;r die Restanzahl zu kommen. &Auml;ndern Sie den Wert auf 2.5 St&uuml;ck durch Anklicken der zugeh&ouml;rigen Schaltfl&auml;che. Die Restbreite und die &Uuml;berdeckung werden nochmals angeglichen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zum Abschluss der Eingaben f&uuml;r die Querrichtung dr&uuml;cken Sie auf den Knopf mit </span><span class="f__Software_Element_deskriptiv">Weiter/F12</span><span class="f_R_Tabellenzeile">.</span></p>
+<div style="text-align: left; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0833in 0 0 0.0208in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Abfrage</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Quer</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Abfrage">Breite 1.Matte</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Abfrage">Restanzahl</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Abfrage">Restgr.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:2.2604in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Abfrage">&Uuml;berdeckung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Gewicht [kg]</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Eingabe</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Trag1</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2.15</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2.8405</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1.807075</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:2.2604in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Eurocode&nbsp;2</span><span class="f_R_Tabellenzeile"> &ouml;ffnen,</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Betong&uuml;te=C20/25</span><span class="f_R_Tabellenzeile"> einstellen und </span><span class="f__Software_Element_deskriptiv">OK</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">288.43</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2.5</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette" style="width:2.2604in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">252.36</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Weiter/F12</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette" style="width:2.2604in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dr&uuml;cken Sie die rechte Maustaste, bis Sie zur Restgr&ouml;&szlig;e gelangen, und &auml;ndern den Wert auf 1.25. Mit der </span><span class="f__Software_Element_deskriptiv">Weiter/F12</span><span class="f_R_Tabellenzeile">-Taste wird die Eingabe f&uuml;r die 1. Reihe beendet.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0833in 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Abfrage</p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">1.Reihe</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">L&auml;nge 1.Matte</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Restanzahl</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Restgr</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">&Uuml;berdeckung</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Gewicht [kg]</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Eingabe</p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">5</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">.249</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1.25</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">.38499999</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">252.47</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Weiter/F12</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Abb_2.1.1-07_Matten_Rechteck_F.Konst" style="margin:0;width:3.6146in;height:2.8958in;border:none" src="abb_2.1.1-07_matten_rechteck_f.konst.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Fangen Sie die zweite Reihe mit einer Viertelmatte an. Die Anzahl der noch zu verlegenden Matten stellen Sie auf 1.000. </span><br>
+<span class="f_R_Tabellenzeile">Mit Dr&uuml;cken des Schalters</span><span class="f__Software_Element_deskriptiv"> Weiter/F12</span><span class="f_R_Tabellenzeile"> beenden Sie die Verlegung.</span></p>
+<div style="text-align: left; text-indent: 0.1250in; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0833in 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Abfrage</p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">2.Reihe</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">L&auml;nge 1.Matte</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Restanzahl</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Restgr</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">&Uuml;berdeckung</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Gewicht [kg]</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">Eingabe</p>
+</td>
+<td class="Optionen_Palette"><br>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1.25</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">(Rechtsklick)</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1.000</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">0</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">.3849</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><span class="f__Software_Element_deskriptiv">252.56</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;">&nbsp;</p>
+</td>
+<td class="Optionen_Palette"><p class="p_Normal" style="text-indent: -0.0208in; margin: 0.0417in 0 0.0625in 0.0208in;"><span class="f__Software_Element_deskriptiv">Weiter/F12</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette"><br>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Variante f&uuml;r die Quereinteilung:</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Abb_2.1.1-08_Matten_Rechteck_F.reob" style="margin:0;width:3.6042in;height:2.8438in;border:none" src="abb_2.1.1-08_matten_rechteck_f.reob.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nach dem Drehen der Tragrichtung um 90&deg; klicken Sie auf den Schalter f&uuml;r die Bereichsanpassung nach rechts </span><span class="f__Software_Element_deskriptiv">F.ReOb</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dr&uuml;cken Sie die rechte Maustaste, bis Sie auf die &Uuml;berdeckung kommen. Tragen Sie hier den Wert 0.35m ein. Der Verlegebereich wird nach rechts verschoben. Stellen Sie die Fl&auml;che wieder auf </span><span class="f__Software_Element_deskriptiv">F.Kons</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dr&uuml;cken Sie die rechte Maustaste, bis Sie auf die Restanzahl kommen, und klicken hier auf den Vorschlag f&uuml;r 2.5 St&uuml;ck. Der rechte Rand hat seine endg&uuml;ltige Lage eingenommen. Klicken Sie auf den Schalter f&uuml;r konstanten Verlegebereich.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bearbeiten Sie die erste und zweite Reihe wie beschrieben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="mattengruppe_frei_verlegen.htm" class="topiclink">Mattengruppe frei verlegen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="matten_verlegebereich_aendern.htm" class="topiclink">Mattenverlegung &auml;ndern</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="matten.htm" class="topiclink">Mattenverlegung im Rechteck (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

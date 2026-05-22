@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Dübelleisten - Stückliste</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Dübelleisten,Dübelleisten Stückliste erzeugen" />
+   <meta name="description" content="In der Zeichnung verwendete Dübelleisten in einer Stückliste zusammenfassen. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="kont3_dublei.htm">Dübelleisten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_dueblei_schnitt.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="kont3_dublei.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst3_dublei_konfig.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">St&uuml;ckliste f&uuml;r D&uuml;belleisten erzeugen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="kont3_dublei.htm" class="topiclink" title="Dübelleisten (Funktionsübersicht)"><img alt="Dübelleisten (Funktionsübersicht)" title="Dübelleisten (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_c7c7ff85.png"/></a> <img alt="B-akt_Liste_DübLei" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="hmfile_hash_645373f4.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_L_Listeneintrag">In der Zeichnung verwendete D&uuml;belleisten in eine</span><span class="f_Task_Info">r St&uuml;ckliste zusammenfassen. </span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die St&uuml;ckliste l&auml;sst sich auf D&uuml;belleisten-Hersteller filtern und nach verschiedenen Kriterien sortieren. Sie kann per Mausklick in der Zeichnung platziert und/oder in die Windows&reg;-Zwischenablage kopiert werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die Zusammenstellung der D&uuml;belleisten wird nicht automatisch aktualisiert. Wenn sich die Anzahlen und/oder die Typen ge&auml;ndert haben, m&uuml;ssen Sie die Liste neu erzeugen. Erzeugen Sie die Liste daher erst, wenn Sie alle D&uuml;belleisten in der Zeichnung angelegt haben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Zusammenstellung D&uuml;belleisten&quot;</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0.2396in;"><img alt="D_Duebelleisten_Liste" style="margin:0;width:6.9375in;height:3.8021in;border:none" src="d_duebelleisten_liste.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Anzeigefeld</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Tabelle mit den in der Zeichnung enthaltenen D&uuml;belleisten. F&uuml;r jede Verlegung wird eine eigene Zeile angelegt.</span><br>
+<span class="f_R_Bereich_Info_Rahmen">Um die Sortierung zu &auml;ndern, klicken Sie auf den entsprechenden Spaltenkopf (auf- oder absteigend) oder verwenden Sie die Optionen unter </span><span class="f__Software_Element_deskriptiv">Bezeichnung sortieren nach</span><span class="f_R_Bereich_Info_Rahmen">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Anzahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Anzahl der verwendeten D&uuml;belleisten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Bezeichnung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">D&uuml;belleisten-Bezeichnung entsprechend Definition.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Anzeige</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Liste auf ausgew&auml;hlten Hersteller filtern. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">alle D&uuml;belleisten</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Listet alle in der Zeichnung verwendeten D&uuml;belleisten auf.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Sch&ouml;ck Bole</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Listet nur die in der Zeichnung verwendeten Sch&ouml;ck-Bole-D&uuml;belleisten auf.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Halfen HDB</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Listet nur die in der Zeichnung verwendeten Halfen-HDB-D&uuml;belleisten auf.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bezeichnung sortieren nach</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Sortierung der Liste entsprechend dem gew&auml;hlten Kriterium. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zwischenablage</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die angezeigte Liste in die Windows-Zwischenablage. Der Dialog wird geschlossen. Sie k&ouml;nnen die St&uuml;ckliste in ein </span><span class="f_Task_Info">Text- oder Tabellenverarbeitungsprogramm einf&uuml;gen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">In Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernahme der Liste in die Zeichnung. </span><br>
+<span class="f_R_Option_Beschreibung">Der Dialog wird geschlossen, die Liste wird als Rechteck an den Mauszeiger geh&auml;ngt und kann per Mausklick in der Zeichnung platziert werden. (Abfrage: </span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_R_Option_Beschreibung">).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab und schlie&szlig;t den Dialog.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;">
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

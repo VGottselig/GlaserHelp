@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Positionskreise - [PosKre]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Konstruktion 2,Konstruktion 2 Funktionen,Positionskreise,Positionskreise *Funktionen und Optionen,PosKre,Statische Positionen (s. Positionskreise)" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Zeigerlinie oder einen Positionstext." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="waende_wandaufbau_definieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_konstruktion-2.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_positionskreise.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Statische Positionskreise</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="positionskreise.htm" class="topiclink" title="Positionskreise (Funktionsübersicht)"><img alt="Positionskreise (Funktionsübersicht)" title="Positionskreise (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_poskre.png"/></a></span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Zeigerlinie oder einen Positionstext.</span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Folienbelegung: Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> eingestellt ist, werden die Elemente in Folie 6 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Anlegen und Bearbeiten statischer Positionskreise. Siehe auch: <a href="des_positionskreise.htm" class="topiclink">Positionskreise (Beschreibung, Verwendung)</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_positionierung_erzeugen.htm" class="topiclink" title="Positionskreise erzeugen"><img alt="Positionskreise erzeugen" title="Positionskreise erzeugen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_zeichn_poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreis erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="pos_kre_positionierung_aendern.htm" class="topiclink" title="Positionskreis ändern"><img alt="Positionskreis ändern" title="Positionskreis ändern" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_aendern_poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreis &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_positionierung_loeschen.htm" class="topiclink" title="Positionskreis löschen"><img alt="Positionskreis löschen" title="Positionskreis löschen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_loesche-poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreis l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_positionskreis_verschieben.htm" class="topiclink" title="Positionskreis verschieben"><img alt="Positionskreis verschieben" title="Positionskreis verschieben" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_versch-poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreis verschieben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_tabellentexte_schreiben_ordnen.htm" class="topiclink" title="Tabellentexte anlegen"><img alt="Tabellentexte anlegen" title="Tabellentexte anlegen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_tabtxt.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Tabellentext anlegen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink" title="Positionstabelle aktualisieren und platzieren"><img alt="Positionstabelle aktualisieren und platzieren" title="Positionstabelle aktualisieren und platzieren" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_tabakt_poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionstabelle anlegen oder aktualisieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_positionsuebersicht.htm" class="topiclink" title="Positionsübersicht anzeigen und ausgeben"><img alt="Positionsübersicht anzeigen und ausgeben" title="Positionsübersicht anzeigen und ausgeben" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_info_poskre.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positions&uuml;bersicht anzeigen und ausgeben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_positionskreisstile_definieren.htm" class="topiclink" title="Positionskreisstile definieren"><img alt="Positionskreisstile definieren" title="Positionskreisstile definieren" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_defpos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreisstil definieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_fl_statik_link.htm" class="topiclink" title="F+L Statik Link"><img alt="F+L Statik Link" title="F+L Statik Link" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_f+l.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">FRILO-Programm starten (F+L Statik Link).</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="poskre_programm_bautext.htm" class="topiclink" title="Programm VCmaster"><img alt="Programm VCmaster" title="Programm VCmaster" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_bautxt.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Position an VCmaster &uuml;bergeben.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Stilauswahl-statische-Positionen" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_stilauswahl-statische-positionen.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionskreisstil-Auswahl f&uuml;r die Darstellung der statischen Positionen.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Siehe: <a href="poskre_positionskreisstile_definieren.htm" class="topiclink">Stile f&uuml;r statische Positionen konfigurieren</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_so-wie" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_so-wie.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Uuml;bernahme der Attribute eines Positionskreises (Linie, Text, Pfeilspitzenl&auml;nge). </span><br>
+<span class="f_R_Tabellenzeile_Menue">Abfrage/Eingabe: So wie welche Position?</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Siehe: <a href="ref_die_so_wie_schaltflaeche.htm" class="topiclink" title="Format übertragen">Die &quot;so&nbsp;wie&quot;-Funktion</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Formauswahl-statische-Positionen" style="margin:0;width:2.1875in;height:0.4896in;border:none" src="p_formauswahl-statische-positionen.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Formauswahl f&uuml;r die Positionierung.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Siehe: <a href="poskre_positionskreisstile_definieren.htm" class="topiclink">Stile f&uuml;r statische Positionen konfigurieren</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Or-an" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-an.png"/><img alt="B_Or-aus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-aus.png"/></p>
+<p class="p_R_Tabellenzeile_Menue"><img alt="B_Or-Win" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-win.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ausrichtung der Spannrichtungs- und Zeigerlinien</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Or an</span><span class="f_R_Tabellenzeile_Menue">: orthogonal bzw. parallel zu gedrehten Achsen.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Or aus</span><span class="f_R_Tabellenzeile_Menue">: unabh&auml;ngig vom Winkel (Spannrichtungs- und Zeigerlinien).</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Or Win</span><span class="f_R_Tabellenzeile_Menue">: rechtwinklig zur Richtung des Positionstextes. Kann ebenfalls mit gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_R_Tabellenzeile_Menue"> (Shift) aktiviert werden.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_o-Pfei" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_o-pfei.png"/><img alt="B_Pfei-o" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-o.png"/></p>
+<p class="p_R_Tabellenzeile_Menue"><img alt="B_Pfei-u" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-u.png"/><img alt="B_Pfei-b" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-b.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Darstellung der Spannrichtungs- und Zeigerlinien</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">o.Pfei</span><span class="f_R_Tabellenzeile_Menue">: ohne Pfeilspitze; </span><span class="f__Software_Element_deskriptiv">Pfei.o</span><span class="f_R_Tabellenzeile_Menue">: Pfeilspitze einseitig links</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Pfei.u</span><span class="f_R_Tabellenzeile_Menue">: Pfeilspitze einseitig rechts; </span><span class="f__Software_Element_deskriptiv">Pfei.b</span><span class="f_R_Tabellenzeile_Menue">: mit Pfeilspitzen nach unten und oben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_LgBel" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_lgbel.png"/><img alt="B_LgFest" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_lgfest.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">LgBel</span><span class="f_R_Tabellenzeile_Menue">: beliebig lang.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">LgFest</span><span class="f_R_Tabellenzeile_Menue">: mit konstanter L&auml;nge. Ma&szlig;gebend ist die L&auml;nge der ersten Linie. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

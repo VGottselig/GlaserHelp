@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Eingabe für Bogenstaffel (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bogenstaffel,Bogenstaffel konfigurieren" />
+   <meta name="description" content="Detailangaben für die Berechnung einer Bogenstaffel." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="Bogenstaffel">
+<param name="alink name" value="$topicid__RD_Eingabe-Bogenstaffel"></object>
+
+<object id="hhctrl_19" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="Bogenstaffel"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_bewehrungsdetails.htm">Detail</a> &gt; <a href="formst_bogenstaffel.htm">Bogenstaffel</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_bogenstaffel-loeschen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_bogenstaffel.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_wendelbew.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Eingabe f&uuml;r Bogenstaffel </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Detailangaben f&uuml;r die Berechnung einer Bogenstaffel.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Eingabe f&uuml;r Bogenstaffel&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Bogenstaffel" style="margin:0;width:7.7917in;height:3.2188in;border:none" src="d_bogenstaffel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Im linken Dialogbereich k&ouml;nnen die Eigenschaften der Bogenstaffel ge&auml;ndert werden (Registerkarten </span><span class="f__Software_Element_deskriptiv">Geometrie</span><span class="f_R_Dialog_Info">, </span><span class="f__Software_Element_deskriptiv">Spureinteilung</span><span class="f_R_Dialog_Info">, </span><span class="f__Software_Element_deskriptiv">Bewehrung</span><span class="f_R_Dialog_Info"> und </span><span class="f__Software_Element_deskriptiv">Konfiguration</span><span class="f_R_Dialog_Info">. Nach &Uuml;bernahme der &Auml;nderungen wird die Bogenstaffel neu berechnet und auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Ansicht</span><span class="f_R_Dialog_Info"> als Vorschau angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Eingaben auf den Registerkarten m&uuml;ssen explizit &uuml;bernommen werden. Verwenden Sie die Optionen im unteren Bereich des Dialoges.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_uebernehmen" style="margin:0;width:0.8125in;height:0.2604in;border:none" src="b_uebernehmen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Manuelle &Uuml;bernahme der eingegebenen Daten. </span><br>
+<span class="f_R_Option_Beschreibung">(Wird nur ben&ouml;tigt, wenn die Option </span><span class="f__Software_Element_deskriptiv">Eingabe automatisch &uuml;bernehmen</span><span class="f_R_Option_Beschreibung"> deaktiviert ist.) </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Option"> Eingabe automatisch &uuml;bernehmen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingaben werden automatisch &uuml;bernommen; Vorschau und Positionierungsliste werden sofort aktualisiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. Der Auszug kann anschlie&szlig;end platziert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verwirft die Eingaben und schlie&szlig;t den Dialog.</span></p>
+<p style="line-height: 1.20; margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Gegebenenfalls problematische Bereiche in den Sto&szlig;bereichen werden in der Vorschau rot markiert. Diese sollten durch gezielte &Auml;nderungen in der Spureinteilung oder Bewehrung weitestgehend ausgeschlossen werden. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="_Sicherheitshinweis"  role="presentation">
+<tr class="_Sicherheitshinweis">
+<td class="_Sicherheitshinweis"><p class="p_Erford_Massnahmen"><span class="f_Erford_Massnahmen">Nicht immer gelingt es, alle Problembereiche auszuschlie&szlig;en. In einem solchen Fall sollten Sie die fertige Bogenstaffel in der Zeichnung mit einem entsprechenden Hinweis deutlich kennzeichnen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Unter </span><span class="f__Software_Element_deskriptiv">Positionen</span><span class="f_R_Dialog_Info"> (rechts im Dialog) werden die ben&ouml;tigten Stahlelemente mit weiteren Informationen aufgelistet:</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Registerkarte Positionen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Auflistung der f&uuml;r die Bogenstaffel ben&ouml;tigten Positionen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:2.1667in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Tabellen&uuml;berschrift</span></p>
+</th>
+<th class="Reference_Clean" style="width:8.1354in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Pos.</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Positionsnummer</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stck.</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Anzahl der St&auml;be</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">0 [mm]</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stabdurchmesser</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Spur</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verlegung in Spur</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Radius [m]</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Biegeradius</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&auml;nge [m]</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stabl&auml;nge in Meter</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Breite [m]</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verlegebreite in Meter</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.1667in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gewicht [kg]</span></p>
+</td>
+<td class="Reference_Clean" style="width:8.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stabgewicht in kg</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Registerkarte Geometrie</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Definition der Bogengeometrie (Radien, &Ouml;ffnungswinkel, Abst&auml;nde, Neigung, Verlegebreite).</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bogen im Grundriss</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Geometrische Werte f&uuml;r die &auml;u&szlig;ere (Au&szlig;enkante) und innere (Innenkante) Begrenzung der Bogenstaffel.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anfangswinkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Teilkreisen. Der Winkel wird aus der Zeichnung &uuml;bernommen. Sie k&ouml;nnen aber auch &Auml;nderungen vornehmen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Anfangswinkel der Au&szlig;en- und Innenkante der Teilkreise an. Die Winkel der Au&szlig;en- und Innenkante k&ouml;nnen voneinander abweichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Endwinkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Teilkreisen. Der Winkel wird aus der Zeichnung &uuml;bernommen. Sie k&ouml;nnen aber auch &Auml;nderungen vornehmen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Endwinkel der Au&szlig;en- und Innenkante der Teilkreise an. Die Winkel der Au&szlig;en- und Innenkante k&ouml;nnen voneinander abweichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eckabstand Anfang</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Eingabe ist nur f&uuml;r Teilkreise aktiv. Legen Sie den Abstand der Bewehrung zur Ecke am Anfang des Teilkreises fest.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eckabstand Ende</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Eingabe ist nur f&uuml;r Teilkreise aktiv.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Legen Sie den Abstand der Bewehrung zur Ecke am Ende des Teilkreises fest.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Radius</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Radius der Au&szlig;en- und der Innenkante der Kreise an. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Randabstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Programm schl&auml;gt einen Randabstand vor.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_nom-c" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_nom-c.png"/><span class="f_R_Option"> </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Berechnung der Betondeckung nach EC 2 f&uuml;r den gew&auml;hlten Randabstand konfigurieren. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Betondeckung nach EC 2</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neigung in der Draufsicht</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie hier die Neigung der Bewehrungsst&auml;be ein. Diese k&ouml;nnen Sie in der Draufsicht erkennen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Durch die Angabe eines Neigungswinkels werden Spuranzahl und -abstand bei Bogenstaffeln in geneigten Ebenen (Draufsicht &#8800; wahre L&auml;nge) berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verlegebreite/Anzahl/Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verlegebreite, die Anzahl der Bewehrungsst&auml;be und der Abstand dieser zueinander wird automatisch aus den zuvor getroffenen Eingaben berechnet. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bogenstaffel als Vollkreis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Legen Sie zuerst fest, ob die Bewehrung im Vollkreis oder in einem Teilkreis verlegt werden soll.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie ein H&auml;kchen in der Checkbox gesetzt haben, wird die Bewehrung im Vollkreis verlegt. Sie k&ouml;nnen den Radius und Randabst&auml;nde definieren.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">M&ouml;chten Sie die Bewehrung nur im Teilkreis verlegen, entfernen Sie den Haken aus der Checkbox.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen nun Anfangs- und Endwinkel sowie Eckabst&auml;nde festlegen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Bogengeometrien, Verlegeradien, Betonüberdeckung usw." href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Registerkarte Spureinteilung</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">&Uuml;berst&auml;nde der Bewehrung f&uuml;r die jeweiligen Spuren und die Verschwenkung der St&ouml;&szlig;e definieren. Die Spureinteilung erfolgt von au&szlig;en nach innen!</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">&Uuml;berstand der Bewehrung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Nur bei Teilkreisen: Sie k&ouml;nnen die St&auml;be &uuml;ber die Grenzen der B&ouml;gen hinaus verl&auml;ngern. Damit werden &Uuml;berg&auml;nge in angrenzende Bereiche erm&ouml;glicht.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Am Bogenanfang/Am Bogenende</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie f&uuml;r die jeweiligen Spuren die gew&uuml;nschten L&auml;ngen ein oder w&auml;hlen Sie einen der vorgeschlagenen Werte aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand tangential</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Menue_Palette" >
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;berstand wird nicht als Verl&auml;ngerung der B&ouml;gen verwendet, sondern als gerade Teill&auml;nge angef&uuml;gt.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-nein" style="margin:0;width:0.1979in;height:0.1563in;border:none" src="i_checkbox-nein.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:8.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;berstand wird als Verl&auml;ngerung der B&ouml;gen verwendet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Verschwenkung der St&ouml;&szlig;e</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Durch die Verschwenkung werden St&ouml;&szlig;e gegeneinander verschoben. Auf diese Weise wird vermieden, dass die St&ouml;&szlig;e auf einer Linie liegen. Solche kritischen Stellen werden in der Ansicht rot markiert. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne verschwenken</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Grunds&auml;tzlich werden gleichlange St&auml;be auf den jeweiligen Teilkreis verteilt. Sie k&ouml;nnen die Anzahl der gleichlangen St&auml;be jedoch erh&ouml;hen, um die St&ouml;&szlig;e zu verschieben. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie &quot;ohne verschwenken&quot; und &quot;n + ...&quot;, um die Anzahl der gleichlangen St&auml;be zu erh&ouml;hen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie die ge&auml;nderte L&auml;nge der St&auml;be.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Spur 1,3,5 ... verschwenken</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktivieren Sie diese Funktion und die Spuren 1,3,5 ... werden verschwenkt. Die St&auml;be der ungeraden Spuren 1,3,5 ... werden vom Bogenanfang aus verteilt und die St&auml;be der geraden Spuren 2,4,6 ... vom Bogenende aus. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Spur 2,4,6 ... verschwenken</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktivieren Sie diese Funktion und die Spuren 2,4,6 ... werden verschwenkt. Die St&auml;be der geraden Spuren 2,4,6 ... werden vom Bogenanfang aus verteilt und die St&auml;be der ungeraden Spuren 1,3,5 ... vom Bogenende aus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="Bewehrungsparameter: Betongüte. Stahldurchmesser- und Länge ..." title="Bewehrungsparameter: Betongüte. Stahldurchmesser- und Länge ..." style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Bewehrungsparameter: Betongüte. Stahldurchmesser- und Länge ..." href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Registerkarte Bewehrung</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Festlegung der Bewehrungsparameter.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungsparameter</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betong&uuml;te</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Betong&uuml;te aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verbundbereich</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie ein H&auml;kchen in die Checkbox, um einen guten Verbund festzulegen. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stabdurchmesser in Millimeter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Abstand f&uuml;r die Bewehrungsst&auml;be an, wenn diese Box aktiv ist. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Definierte Anzahl der Bewehrungsst&auml;be.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Max. Stabl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Maximal zul&auml;ssige Stabl&auml;nge.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bergreifungsl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bergreifungsl&auml;nge der Bewehrungsst&auml;be.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor f&uuml;r Sto&szlig;versatz</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand der Sto&szlig;mittelpunkte zueinander. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Max. Transporth&ouml;he</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie ein H&auml;kchen in die Checkbox setzen und einen Wert f&uuml;r die maximale Transporth&ouml;he eingeben, wird die Verlegung der Bewehrung dementsprechend angepasst. Beachten Sie die ge&auml;nderten Stabl&auml;ngen. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeichnerischer Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand der Bewehrungsst&auml;be beim Sto&szlig;. Dieser Wert dient der deutlichen Darstellung der &Uuml;bergreifungen in der Zeichnung. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verlegefaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie, wie oft die Bewehrung verlegt werden soll. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel: 2-lagige Verlegung (oben und unten) - Verlegefaktor 2</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bauteilfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie, in wie vielen Bauteilen die Bewehrung verlegt werden soll. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel: 4 identische Kreisfundamente, nur eins in der Zeichnung - Bauteilfaktor 4.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="Darstellungsparameter" title="Darstellungsparameter" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Darstellungsparameter" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Registerkarte Konfiguration</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Allgemeine Einstellungen f&uuml;r die Ausgabe als Tabelle und Konfiguration der Farbeinstellungen in der Ansicht des Eingabedialogs. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Allgemeine Einstellungen</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Ausgabe der Liste nach der Eingabe der Parameter f&uuml;r die Bogenstaffel.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_bogenkomma" class="hmanchor"></a><span class="f_R_Option">Anzahl Nachkommastellen (&gt;1)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus, mit wie vielen Nachkommastellen die L&auml;ngen der St&auml;be in der Liste angegeben werden sollen. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Auf 5mm runden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Durch die Aktivierung dieser Checkbox werden alle Werte auf 5mm gerundet. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mit Positionsnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, damit jedem Stab eine Positionsnummer gegeben wird. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Positionsnummern werden mit der St&uuml;ckzahl &quot;n&quot;, der L&auml;nge &quot;L&quot; und dem Radius aufgelistet. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lage Positionsnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Legen Sie die Lage der Positionsnummer, ausgehend vom Anfang des Bewehrungsstabes, fest. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel 50%: Die Positionsnummer liegt in der Mitte des Stabes. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Farbeinstellungen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Cursor und Schnellzoom</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Farbeinstellung f&uuml;r die Darstellung des Cursors auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Ansicht</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Unterpositionen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe der Textgr&ouml;&szlig;e f&uuml;r den Positionstext.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Stiftnummer.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Breitenfaktors. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Schriftart und -auszeichnung. Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_19.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

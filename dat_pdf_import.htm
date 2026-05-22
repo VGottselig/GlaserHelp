@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>PDF importieren - [PDFImp]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".PDF,Datei,Datei PDF importieren,Import,Import PDF,PDF,PDF importieren,Zeichnung,Zeichnung PDF importieren" />
+   <meta name="description" content="Importieren einer PDF-Datei. Öffnet den Dialog PDF-Import. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="dat_pdf_export.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_datei.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="dat_zeichnung_plotten.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">PDF importieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_ImageCaption"> <img alt="B-akt_PDFImp-Datei" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_pdfimp-datei.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Importieren einer PDF-Datei. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">PDF-Import</span><span class="f_R_Dialog_Info">. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die PDF-Datei wird in einer neuen Zeichnung ge&ouml;ffnet.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">PDF-Dateien werden in das ISBCAD AKT-Format konvertiert. Somit k&ouml;nnen Sie Zeichnungen importieren, die nicht im DXF/DWG-Format verf&uuml;gbar sind. So lassen sich beispielsweise Einbauskizzen von Maschinen oder &auml;hnlichen Komponenten aus Katalogen &uuml;bernehmen. Voraussetzung ist, dass die PDF-Datei vektorbasierte Zeichnungen enth&auml;lt. Aus einem Foto (z.&#8239;B. PNG, JPG) kann keine Linie &uuml;bernommen werden, da ein Foto aus Pixeln besteht.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn in der PDF-Datei </span><span class="f_Hervorhebung_Text">Pixelgrafiken</span><span class="f_L_Listeneintrag"> enthalten sind, k&ouml;nnen Sie auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_L_Listeneintrag"> ein Ablageverzeichnis angeben, in dem die Grafiken gespeichert werden sollen. </span><span class="f_R_Option_Beschreibung">In der Zeichnung selbst werden nur die Dateipfade zu den Grafiken gespeichert.</span><span class="f_L_Listeneintrag"> Wenn Sie Grafikdateien oder das Ablageverzeichnis umbenennen, verschieben oder l&ouml;schen, k&ouml;nnen die Grafiken in der Zeichnung nicht mehr angezeigt werden. &Uuml;ber [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Grafik</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Liste</span><span class="f_L_Listeneintrag">] k&ouml;nnen Sie fehlende Verkn&uuml;pfungen pr&uuml;fen und Dateipfade korrigieren. Auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_L_Listeneintrag"> k&ouml;nnen Sie Grafiken auch vom Import ausschlie&szlig;en.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Ergebnisse sehen nach dem Import m&ouml;glicherweise gleich aus, aber der Inhalt der Dateien kann unterschiedlich sein. Zum Beispiel werden gestrichelte Linien in einzelne Linien aufgel&ouml;st oder Ma&szlig;ketten in einzelne Linien und Texte.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ber&uuml;cksichtigung unterschiedlicher Ma&szlig;st&auml;be:</span><br>
+<span class="f_L_Listeneintrag">PDF-Dateien k&ouml;nnen beim Import nur in einen Ma&szlig;stab umgewandelt werden. Die Zeichenelemente behalten aber ihre urspr&uuml;ngliche Gr&ouml;&szlig;e, so dass es zu Fehlinterpretationen kommen kann. Verwenden Sie nach dem Import gegebenenfalls die Ma&szlig;stabskorrektur, um bestimmten Elementen einen anderen Ma&szlig;stab zuzuweisen.</span><br>
+<span class="f_L_Listeneintrag"><a href="konst2_massstab_aendern.htm" class="topiclink">&raquo; Ma&szlig;stabskorrektur</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen eine PDF-Datei auch als Dokument in die aktuelle Zeichnung einf&uuml;gen. Nutzen Sie daf&uuml;r die Funktion [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Dokum</span><span class="f_L_Listeneintrag">].</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Datei f&uuml;r die Konvertierung anpassen und importieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf <img alt="I_...oeffnen" style="margin:0;width:0.3750in;height:0.1875in;border:none" src="i_...oeffnen.png"/> und w&auml;hlen Sie die PDF-Datei aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Passen Sie ggf. die Einstellungen an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Siehe Dialogbeschreibung weiter unten.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Meldung </span><span class="f__Software_Element_deskriptiv">Konvertiere PDF...</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet und die Konvertierung beginnt. Die Konvertierung ist abgeschlossen, wenn der Ladebalken 100% anzeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="ML_PDF-Import" style="margin:0;width:4.1354in;height:2.8542in;border:none" src="ml_pdf-import.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Konvertierung abschlie&szlig;en</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Datei wird in einer neuen Zeichnung eingef&uuml;gt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;PDF-Import&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_PDF-Import" style="margin:0;width:6.5833in;height:4.5521in;border:none" src="d_pdf-import.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Datei</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der zu importierenden PDF-Datei.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="I_...oeffnen" style="margin:0;width:0.3750in;height:0.1875in;border:none" src="i_...oeffnen.png"/> <span class="f_R_Option_Beschreibung">&Ouml;ffnet die Dateiauswahl.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_pdfimpbitmap" class="hmanchor"></a><span class="f_R_Option">Als Bitmap konvertieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie diese Option aktivieren, wird die PDF-Datei in eine Grafik im PNG-Format (Bitmap) umgewandelt und in einer neuen, leeren Zeichnung platziert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_Hervorhebung_Text">Wichtig</span><span class="f_R_Option_Beschreibung">: Bei der Konvertierung wird im Speicherpfad der PDF-Datei ein neuer Ordner mit dem Namen der PDF-Datei angelegt. In diesem Ordner befindet sich die Pixelgrafik, die in der Zeichnung referenziert wird. In der Zeichnung selbst wird somit nur der Dateipfad zur Grafik gespeichert. Wenn Sie den Dateipfad &auml;ndern, z. B. den Ordner oder die Grafik umbenennen, verschieben oder l&ouml;schen, kann sie in der Zeichnung nicht mehr angezeigt werden. &Uuml;ber [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Grafik</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Liste</span><span class="f_R_Option_Beschreibung">] k&ouml;nnen Sie fehlende Verkn&uuml;pfungen pr&uuml;fen und Dateipfade korrigieren (siehe <a href="dat_grafikliste.htm" class="topiclink" title="Anzeigen und Korrigieren verknüpfter Grafiken">Grafikliste</a>).</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie Grafiken und andere Dokumente einbetten und vollst&auml;ndig in der Zeichnung speichern m&ouml;chten, verwenden Sie die Funktion <a href="konst1_ole-objekte.htm" class="topiclink" title="Einfügen von Dokumenten in die aktuelle Zeichnung">Dokumenteinbettung</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattgr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Blattgr&ouml;&szlig;e in der Ausgangsdatei.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Damit die Geometrie mit den richtigen Ma&szlig;en erscheint, m&uuml;ssen Sie den richtigen Faktor eingeben. Klicken Sie zun&auml;chst auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung">, um die Umformung zu starten und anschlie&szlig;end in der unteren Men&uuml;leiste auf <img alt="B_Messen" style="margin:0;width:0.7083in;height:0.2500in;border:none" src="b_messen.png"/> (s. <a href="dat_dwg_dxf_dateien_exportieren.htm" class="topiclink">DWG/DXF Dateien exportieren</a>).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;stab:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier k&ouml;nnen Sie einen geeigneten Ma&szlig;stab w&auml;hlen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">PDF-Vorschau</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Voransicht der PDF-Datei. &Uuml;ber der Voransicht wird angezeigt, aus wie vielen Seiten die PDF-Datei besteht (z. B. [1 / 4]). W&auml;hlen Sie mit den Pfeiltasten die Seite, die importiert werden soll, oder geben Sie die Seitenzahl per Tastatur ein. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Konvertiert die PDF-Datei und &ouml;ffnet sie in ISBCAD. Um zu &uuml;berpr&uuml;fen, ob der richtige Faktor gew&auml;hlt wurde, nutzen Sie die Funktion [<a href="des_messen.htm" class="topiclink">Messen</a>] in der unteren Men&uuml;leiste. Sie k&ouml;nnen mit dem <a href="folienmanager.htm" class="topiclink">Folienmanager</a> st&ouml;rende Folien ausblenden und &uuml;ber [<a href="konst1_elementeigenschaften_anzeigen.htm" class="topiclink" title="Elementeigenschaften anzeigen">?</a>] die Elementeigenschaften abfragen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die gesamte Aktion wird abgebrochen. Klicken Sie im Funktionsbereich auf [</span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Option_Beschreibung">], um den PDF-Import Dialog wieder zu &ouml;ffnen. Wenn Sie im Funktionsbereich eine andere Funktion anklicken, ist die Konvertierung der PDF-Datei abgeschlossen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Farben</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Zuweisen der ISBCAD Stiftnummern f&uuml;r die im PDF erkannten Farben.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Achten Sie bei der Auswahl der Stifte darauf, dass sich die Farben von der ISBCAD Hintergrundfarbe deutlich unterscheiden. </span><br>
+<span class="f_L_Listeneintrag"><a href="rd_systemdaten_farbeinstellung.htm" class="topiclink">&raquo;&nbsp;Systemdaten – Farbeinstellung</a>; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie f&uuml;r mehrere PDF-Farben dieselbe ISBCAD Stiftnummer verwenden wollen, klicken Sie die entsprechenden Eintr&auml;ge bei gedr&uuml;ckter </span><span class="f__Tastatur">Strg</span><span class="f_L_Listeneintrag">-Taste an und w&auml;hlen Sie die Stiftnummer bei einem der markierten Eintr&auml;ge.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">PDF-Farbe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Im PDF erkannten Farbe und Verwendung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die voreingestellten Stiftnummern wurden automatisch anhand einer m&ouml;glichst &auml;hnlichen Bildschirmdarstellung gew&auml;hlt. Die Farben k&ouml;nnen von der Darstellung im PDF abweichen.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">F&uuml;r F&uuml;llungen k&ouml;nnen Sie den Vorschlag in der Regel akzeptieren.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">F&uuml;r Linien w&auml;hlen Sie den Stift, dessen Breite dem gefundenen m&ouml;glichst nahe kommt (s. [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_L_Listenunterpunkt"> | </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_L_Listenunterpunkt"> | </span><span class="f__Software_Element_deskriptiv">Ausgabeprofil</span><span class="f_L_Listenunterpunkt">]).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Import</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eigenschaft importieren? (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&thorn;</span><span class="f_R_Option_Beschreibung"> = Ja); (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&uml;</span><span class="f_R_Option_Beschreibung"> = Nein)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Farbe/der Stift nicht &uuml;bernommen werden sollen, entfernen Sie den Haken.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Fonts</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Zuweisung der ISBCAD Fonts f&uuml;r die im PDF erkannten Fonts.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">PDF-Fonts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier werden alle gefundenen Schriftarten aufgelistet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Fonts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn der gefundene Font in der Dropdown-Liste [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> </span><span class="f_R_Option_Beschreibung" style="font-family: 'Wingdings 3';">&quot;</span><span class="f_R_Option_Beschreibung"> </span><span class="f__Software_Element_deskriptiv"><a href="rd_systemdaten_fontauswahl.htm" class="topiclink">Fontauswahl</a></span><span class="f_R_Option_Beschreibung">] steht, wird er auch vorgeschlagen. Gibt es keinen Font mit demselben Namen, wird der erste ausgew&auml;hlte Font vorgeschlagen. Soll eine andere Schriftart verwendet werden, k&ouml;nnen Sie die Auswahlbox &ouml;ffnen und den gew&uuml;nschten Font anklicken.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Import</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eigenschaft importieren? (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&thorn;</span><span class="f_R_Option_Beschreibung"> = Ja); (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&uml;</span><span class="f_R_Option_Beschreibung"> = Nein)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Font wird &uuml;bernommen, wenn in der jeweiligen Zeile der Haken gesetzt ist.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Folien</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Zuweisung der ISBCAD Folien auf die im PDF erkannten Folien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">PDF-Folien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sofern die PDF-Datei Folien enth&auml;lt, werden sie hier angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Folien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Folien werden ab Nummer 20 aufw&auml;rts angelegt. Sie erhalten den urspr&uuml;nglichen Namen. Wenn eine ISBCAD Zeichnung zur&uuml;ck konvertiert wird, wird auch die Nummer Bestandteil des Namens.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Import</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eigenschaft importieren? (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&thorn;</span><span class="f_R_Option_Beschreibung"> = Ja); (</span><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&uml;</span><span class="f_R_Option_Beschreibung"> = Nein)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen den Import einzelner Folien unterdr&uuml;cken, indem Sie den Haken entfernen. Es wird jedoch dringend davon abgeraten, weil der Inhalt nicht immer dem Namen entspricht. Benutzen Sie nach dem Datenimport zur Kontrolle den <a href="folienmanager.htm" class="topiclink">Folienmanager</a>. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Optionen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Allgemein</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Komplette Seite importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Importiert die gesamte, aktuelle Seite des Dokuments.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="clip0115" style="margin:0;width:3.0208in;height:1.9375in;border:none" src="clip0115.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattgr&ouml;&szlig;e auf Inhalt verkleinern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Importiert nur die Elemente. Damit Elemente nicht genau auf dem Rand platziert werden, wird die Plotfl&auml;che etwas vergr&ouml;&szlig;ert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="clip0116" style="margin:0;width:4.2813in;height:1.3333in;border:none" src="clip0116.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Texte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Direkt aus PDF</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Texte werden so importiert, wie sie in der PDF-Datei gespeichert sind. Einzelne W&ouml;rter k&ouml;nnen sich aus mehreren Teilen zusammensetzen. Diese Teile sind so angeordnet, dass der Eindruck entsteht, es handele sich bei jedem Wort um eine Einheit. Werden die Texte sp&auml;ter vergr&ouml;&szlig;ert oder verkleinert, bleiben die Textanfangspunkte an Ort und Stelle, aber die Textteile werden &uuml;bereinandergeschoben bzw. auseinandergezogen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel: aus B&uuml;|ron|ame kann B&uuml; &nbsp; ron &nbsp; ame werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zusammenfassen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird versucht, die Textteile zu einer Textzeile zusammenzufassen, wenn die Richtungen der einzelnen Textteile gleich sind und sie auf einer Linie liegen. Bei horizontalen und vertikalen Texten trifft dies h&auml;ufiger zu als bei schr&auml;gen Texten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bilder</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eine PDF-Datei kann aus sehr vielen Bildern bestehen. Es ist m&ouml;glich, dass eine Linie als Bild und nicht als Vektor gespeichert wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ablageverzeichnis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Bilder importiert werden, werden in der Zeichnung nur die Dateipfade zu den Grafiken gespeichert. Wenn Sie die Grafiken oder das Ablageverzeichnis umbenennen, verschieben oder l&ouml;schen, k&ouml;nnen die Grafiken in der Zeichnung nicht mehr angezeigt werden. &Uuml;ber [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Grafik</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Liste</span><span class="f_R_Option_Beschreibung">] k&ouml;nnen Sie fehlende Verkn&uuml;pfungen pr&uuml;fen und Dateipfade korrigieren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Separates Verzeichnis anlegen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Programm legt einen Ordner f&uuml;r die Bilder im PDF-Quellverzeichnis an.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">PDF-Quellverzeichnis</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bilder werden in dem Verzeichnis gespeichert, wo sich auch die PDF-Datei befindet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">benutzerdefiniert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Angabe eines beliebigen Verzeichnisses. </span></p>
+<p class="p_R_Tabellenzeile"><img alt="I_...oeffnen" style="margin:0;width:0.3750in;height:0.1875in;border:none" src="i_...oeffnen.png"/><span class="f_R_Tabellenzeile"> &Ouml;ffnet die Verzeichnisauswahl (Dialog</span><span class="f__Software_Element_deskriptiv"> Ordner&nbsp;ausw&auml;hlen</span><span class="f_R_Tabellenzeile">).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Import</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim Import wird jedes enthaltene Bild automatisch in ein geeignetes Grafikformat konvertiert (PNG, JPEG oder TIFF), um eine geringe Dateigr&ouml;&szlig;e und korrekte Darstellung sicherzustellen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Alle Bildelemente einzeln importieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bilder werden als einzelne Grafiken im Ablageverzeichnis gespeichert und nach ISBCAD importiert. Sie k&ouml;nnen im Plan einzeln bearbeitet, z. B. verschoben werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Alle Bildelemente zusammenfassen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Bilder einzeln importiert werden, kann es vorkommen, dass sie in Bildfragmenten importiert werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aktivieren Sie diese Option, um beim Import alle Bilder in einer Grafikdatei zusammenzufassen und eine Fragmentierung zu verhindern. Die Grafikdatei kann nur im Ganzen bearbeitet, z. B. verschoben werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3229in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">keine Bildelemente importieren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden keine Bilder nach ISBCAD &uuml;bergeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Info</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dateiinformationen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige von Dateiinformationen. Insbesondere wird angezeigt, mit welchem Programm die PDF-Datei erzeugt wurde und mit welcher Versionsnummer.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Seiteninformationen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige von Informationen &uuml;ber die Bestandteile der PDF-Datei.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_datei.htm" class="topiclink">Datei- und Ausgabefunktionen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

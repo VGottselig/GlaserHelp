@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Fläche ermitteln</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Flächen - Massenermittlung,Massenermittlung,Massenermittlung Fläche ermitteln" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf einen Massen- oder Tabellentext." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="konst3_massen.htm">Massenermittlung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst3_massen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst3_massen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst3_massen_laenge.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Fl&auml;che ermitteln</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="konst3_massen.htm" class="topiclink" title="Massenermittlung (Funktionsübersicht)"><img alt="Massenermittlung (Funktionsübersicht)" title="Massenermittlung (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massen.png"/></a> </span><img alt="B-akt_Flaeche_Massen" style="margin:0;width:1.1563in;height:0.2500in;border:none" src="b-akt_flaeche_massen.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf einen Massen- oder Tabellentext.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Ermittlung begrenzter Fl&auml;chen sowie Ausgabe der Massen-Angaben auf der Zeichenfl&auml;che.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Falls die Kontur des Polygons aus unterschiedlichen Ma&szlig;st&auml;ben besteht, werden Sie nach dem Best&auml;tigen des Polygons in einer Meldung darauf hingewiesen. Ihnen werden alle gefundenen Ma&szlig;st&auml;be angezeigt, sodass Sie f&uuml;r die Massenberechnung den korrekten Ma&szlig;stab ausw&auml;hlen k&ouml;nnen. W&auml;hlen Sie aus der Dropdown-Liste den gew&uuml;nschten Ma&szlig;stab und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Hinweis_in_Tabelle">.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.0521in 0 0.0417in 0.1354in;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung!</span><span class="f_Hinweis_in_Tabelle"> Der im Dialog gew&auml;hlte Ma&szlig;stab wird nur f&uuml;r die Berechnung verwendet. Die urspr&uuml;nglichen Ma&szlig;st&auml;be der Elemente werden nicht ge&auml;ndert!</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.0521in 0 0.0417in 0.1250in;"><img alt="D_Unterschiedliche-Massstaebe" style="margin:0;width:3.2396in;height:1.6250in;border:none" src="d_unterschiedliche-massstaebe.png"/></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Darstellung der Massen-Angaben kann vorab &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Massen</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Einstellung</span><span class="f_Hinweis_in_Tabelle">] konfiguriert werden.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Ausgabeeinheit k&ouml;nnen Sie in den Systemdaten &auml;ndern. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Ausgabeeinheiten</span><span class="f_Hinweis_in_Tabelle">].</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Polygon(e) abstecken</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unterhalb der Abfrage, wie Sie die Fl&auml;che ermitteln wollen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3750in;"><p class="p_ImageCaption_zentriert"><img alt="B_Punkte-Massen" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_punkte-massen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Punkte anklicken:</span><span class="f_R_Tabellenzeile"> Definition eines Polygons durch Anklicken von Zeichenpunkten. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die gew&uuml;nschten Zeichenpunkte nacheinander an. Wenn Sie den ersten Punkt wieder anklicken, wird die Fl&auml;che geschlossen. [</span><span class="f__Abfrage">Klicken Sie Punkte an</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span><span class="f_R_Tabellenzeile"> Mit einem Rechtsklick werden der erste und letzte Punkt automatisch miteinander verbunden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3750in;"><p class="p_ImageCaption_zentriert"><img alt="B_Elemente" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_elemente.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Elemente anklicken:</span><span class="f_R_Tabellenzeile"> Bestimmung eines Polygons oder Auswahl eines Kreises durch Anklicken von Elementen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die gew&uuml;nschten Elemente nacheinander an und best&auml;tigen Sie die Auswahl durch Rechtsklick. [</span><span class="f__Abfrage">Klicken Sie Elemente an</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span><span class="f_R_Tabellenzeile"> Mit einem Rechtsklick werden das erste und letzte Element verschnitten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3750in;"><p class="p_ImageCaption_zentriert"><img alt="B_Auto_112x24px" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_auto_112x24px.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">In ein Polygon klicken:</span><span class="f_R_Tabellenzeile"> Auswahl einer in der Zeichnung vorhandenen, geschlossenen Form (aus Linien und/oder Kreisen).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie in eine geschlossene Form. [</span><span class="f__Abfrage">Punkt w&auml;hlen</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3750in;"><p class="p_ImageCaption_zentriert"><img alt="B_Uebernahme_112x24px" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_uebernahme_112x24px.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Massentext anklicken und Werte &uuml;bernehmen</span><span class="f_R_Tabellenzeile">: Angaben aus einer frei platzierten Massen-Angabe, einem Schwerpunkt oder aus einem Raumstempel &uuml;bernehmen. [</span><span class="f__Abfrage">Massentext ausw&auml;hlen</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie eine frei platzierte Massen-Angabe (Fl&auml;che, L&auml;nge, Volumen, Gewicht), einen Schwerpunkt oder einen Raumstempel an. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folgen Sie der Abfrage, um weitere Massen-Angaben zu ermitteln und diese zu addieren oder zu subtrahieren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Das Ergebnis wird Ihnen neben der Abfrage in der aktuellen Ausgabeeinheit angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Fl&auml;che positiv anzusetzen, klicken Sie unterhalb der Abfrage auf [</span><span class="f__Software_Element_deskriptiv">+Add</span><span class="f_Step">] oder klicken Sie [</span><span class="f__Software_Element_deskriptiv">-Sub</span><span class="f_Step">] f&uuml;r eine negativ angesetzte Fl&auml;che. [</span><span class="f__Abfrage">Positiv + Negativ -</span><span class="f_Step">]. Best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort eine weitere Fl&auml;che ausw&auml;hlen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Polygoneingabe zu verlassen, dr&uuml;cken Sie die Eingabetaste, Rechtsklick oder </span><img alt="B_Weiter-mit-Haken" style="margin:0;width:1.0208in;height:0.1979in;border:none" src="b_weiter-mit-haken.png"/><span class="f_Step">.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Beschriftung hinzuf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie eine Bezeichnung f&uuml;r die Fl&auml;che bzw. den Raum an und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">Bezeichnung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen unterhalb der Abfrage aus der Dropdown-Liste eine vordefinierte Bezeichnung w&auml;hlen und diese bei Bedarf weiterbearbeiten. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen einen Text auf der Zeichenfl&auml;che anklicken, um diesen in die Eingabe zu &uuml;bernehmen. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen einen individuellen Text eingeben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Textwinkel</span><span class="f_Step"> die Ausrichtung des Massen-Textes (in Grad) an und best&auml;tigen Sie mit der Eingabetaste oder Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Um den Massen-Text orthogonal oder parallel an oder auf einer Linie zu platzieren, w&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">O </span><span class="f_Step_Anmerkung">oder </span><span class="f__Software_Element_deskriptiv">P </span><span class="f_Step_Anmerkung">und klicken Sie die Linie an.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7813in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.1875in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Optionen</a></span><span class="f_Step_Anmerkung"> </span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.7813in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span>Massen-Text platzieren <span class="f_Step">[</span><span class="f__Abfrage">Textlage</span>]: <br>
+<span class="f_Step">Klicken Sie die Stelle an, an der der Massen-Text platziert werden soll. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Massen-Text wird in der Zeichnung angelegt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.2708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markierung mittels [</span><span class="f__Software_Element_deskriptiv">Punkte</span><span class="f_R_Tabellenzeile">]:</span></p>
+<p class="p_R_Tabelle_Kopf"><img alt="Z_Flaechen-ermitteln" style="margin:0;width:3.1771in;height:2.0000in;border:none" src="z_flaechen-ermitteln.png"/></p>
+</td>
+<td style="vertical-align:top; width:5.0625in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markierung mittels [</span><span class="f__Software_Element_deskriptiv">Elemente</span><span class="f_R_Tabellenzeile">]:</span></p>
+<p style="line-height: 1.20; margin: 0.0833in 0 0 0.3125in;"><img alt="Z_Flaechen-ermitteln_F-Elemente" style="margin:0;width:3.7708in;height:4.4688in;border:none" src="z_flaechen-ermitteln_f-elemente.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_massen.htm" class="topiclink">Massenermittlung (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

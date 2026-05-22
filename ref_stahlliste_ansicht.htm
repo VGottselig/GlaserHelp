@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahlliste Ansicht (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeliste,Biegeliste ausgeben,Gesamtliste,Gesamtliste ausgeben,Listenmatten,Listenmatten ausgeben,Schneideskizze,Schneideskizze ausgeben" />
+   <meta name="description" content="/ &nbsp; Vorschau und Ausgabe der generierten Stahllisten in verschiedene Dateiformate oder auf der Zeichnung. In dieser Übersicht werden die Listentypen angezeigt, die im Dialog" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a> &gt; <a href="ref_stahlliste.htm">Stahlliste (Referenz)</a> &gt; <a href="ref_stlmain.htm">Stahlliste (Dialog)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_stahlliste-grundwerte-listenmatten.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="ref_stlmain.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="ref_stahlliste_einzelliste.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Stahlliste Ansicht (Dialog)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_stahlliste.htm" class="topiclink" title="Stahlliste (Funktionsübersicht)"><img alt="Stahlliste (Funktionsübersicht)" title="Stahlliste (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stllis.png"/></a> <img alt="B-akt_Neu-erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_neu-erzeugen.png"/> / <img alt="B-akt_Teil-erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_teil-erzeugen.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Vorschau und Ausgabe der generierten Stahllisten in verschiedene Dateiformate oder auf der Zeichnung.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">In dieser &Uuml;bersicht werden die Listentypen angezeigt, die im Dialog </span><span class="f__Software_Element_deskriptiv">Stahlliste</span><span class="f_L_Listeneintrag"> unter</span><span class="f__Software_Element_deskriptiv"> Ausgabe (Drucker)</span><span class="f_L_Listeneintrag"> ausgew&auml;hlt worden sind. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">In der Vorschau werden alle Linien und Texte mit einer konstanten Breite dargestellt. Beim Ausdrucken wird dann die tats&auml;chlich voreingestellte Breite ber&uuml;cksichtigt. Die farbige Darstellung der Stiftnummern bleibt erhalten.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Spezifische Angaben auf der Stahlliste und die Darstellung der Elemente sind unter [</span><span class="f__Software_Element_deskriptiv">Stahlliste</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Grundwerte</span><span class="f_Hinweis_in_Tabelle"> </span><span class="f_R_Dialog_Info">&#8594;</span><span class="f_Hinweis_in_Tabelle"> </span><span class="f__Software_Element_deskriptiv">Grundwerte</span><span class="f_Hinweis_in_Tabelle"> </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_Hinweis_in_Tabelle">] einstellbar.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Darstellungsfehler bei Biegeformen:</span></h5>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die folgende Meldung erscheint, wenn in den Biegelisten-Einstellungen Parameter eingestellt sind, mit denen eine Biegeform nicht einwandfrei skaliert und in der Tabellenzeile dargestellt werden kann. Zum Beispiel wurden zu gro&szlig;e Textgr&ouml;&szlig;en f&uuml;r &Uuml;berschriften oder eine zu gro&szlig;e Beschriftungsgr&ouml;&szlig;e f&uuml;r Teill&auml;ngen gew&auml;hlt, sodass es bei der Beschriftung zu &Uuml;berschneidungen kommt. In diesem Fall wird die Biegeform unskaliert aus der Zeichnung &uuml;bernommen, wobei der Darstellungsfehler weiterhin besteht. Es werden lediglich die Schriftfarben f&uuml;r Teill&auml;ngentexte und Verma&szlig;ungen an die Biegelisten-Einstellungen angepasst.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In der Meldung erhalten Sie eine Auflistung der betroffenen Positionen. Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Dialog_Info">, um die Stahlliste zu generieren. Sehen Sie sich die Darstellung der betroffenen Positionen an und passen Sie anschlie&szlig;end in den <a href="rd_einste_stahl_biegeliste.htm" class="topiclink" title="Einstellungen Stahlliste (Biegeliste)">Biegelisten-Einstellungen</a> die notwendigen Parameter an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="ML_Darstellungsfehler_Ansicht" style="margin:0;width:3.8542in;height:2.1771in;border:none" src="ml_darstellungsfehler_ansicht.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Ansicht&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Ansicht-Biegeliste-Ausgeben" style="margin:0;width:4.3542in;height:5.5833in;border:none" src="d_ansicht-biegeliste-ausgeben.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Fenstergr&ouml;&szlig;e anpassen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Um den Vorschaubereich anzupassen, fahren Sie mit dem Cursor an einen beliebigen Rand- oder Eckbereich des Dialogs. Ziehen Sie mit gedr&uuml;ckter Maustaste das Dialogfenster zusammen oder auseinander.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="SCR_dialog_resize_ansicht" style="margin:0;width:1.9479in;height:1.0833in;border:none" src="scr_dialog_resize_ansicht.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;">A. </span><span class="f_R_Tabellenzeile" style="font-size: 10pt;">vertikales Anpassen; </span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;">B. </span><span class="f_R_Tabellenzeile" style="font-size: 10pt;">vertikales und horizontales Anpassen; </span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;">C. </span><span class="f_R_Tabellenzeile" style="font-size: 10pt;">horizontales Anpassen</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Men&uuml;leiste</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons+Stahlliste+2022-06_Zeichenfläche+1" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_cd016487.png"/></p>
+<p style="text-align: justify; line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Drucken</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Druckparameter</span><span class="f_R_Tabellenzeile">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Druckparameter" style="margin:0;width:5.8438in;height:4.4896in;border:none" src="d_druckparameter.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Drucker</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines Druckers oder eines Druckertreibers f&uuml;r die Ausgabe. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Exemplare</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Exemplare</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie die Anzahl ein. Sie k&ouml;nnen die Zahl direkt eintippen oder durch die Pfeiltasten herauf- bzw. herabsetzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="_stl-edoc-druckparameter" class="hmanchor"></a><span class="f_R_Bereich">Erweiterte Einstellungen f&uuml;r den eDocPrinter PDF Pro GLASER:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Stahlliste der aktuellen Zeichnung ausgeben oder mehrere hinzugef&uuml;gte Stahllisten in einer oder jeweils in einzelnen PDF-Dateien ausgeben. Es stehen zus&auml;tzliche Speicheroptionen zur Verf&uuml;gung. F&uuml;r die Druckausgabe werden die Voreinstellungen aus dem Dialog <a href="des_pdf-parameter.htm" class="topiclink">PDF-Parameter</a> verwendet.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">F&uuml;r die getrennte </span><span class="f_Hervorhebung_Text">Ausgabe mehrerer Stahllisten</span><span class="f_R_Bereich_Info_Rahmen"> muss im </span><span class="f__Software_Element_deskriptiv">Ansicht</span><span class="f_R_Bereich_Info_Rahmen">-Dialog die </span><span class="f__Software_Element_deskriptiv">Sortierung nach Pl&auml;nen</span><span class="f_R_Bereich_Info_Rahmen"> aktiviert sein.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Ansicht-Sortierung-Plaene-ausgeben" style="margin:0;width:4.5000in;height:0.9583in;border:none" src="d_ansicht-sortierung-plaene-ausgeben.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">getrennte Stahllisten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Option kann aktiviert werden, wenn mehrere Stahllisten ausgegeben werden oder wenn bei der Ausgabe der aktuellen Stahlliste der Listentyp </span><span class="f__Software_Element_deskriptiv">Gesamtliste</span><span class="f_R_Option_Beschreibung"> im Stahllisten-Dialog aktiviert ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7708in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Tabellenzeile"> getrennte Stahllisten</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gew&auml;hlte Stahllisten werden jeweils in einzelnen PDF-Dateien ausgegeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7708in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_R_Tabellenzeile"> getrennte Stahllisten</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gew&auml;hlte Stahllisten werden in einer PDF-Datei ausgegeben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Gesamtliste wird bei dieser Option nicht ausgegeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit Gesamtstahlliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Option kann aktiviert werden, wenn im Stahllisten-Dialog der Listentyp </span><span class="f__Software_Element_deskriptiv">Gesamtliste</span><span class="f_R_Option_Beschreibung"> aktiviert ist und bei </span><span class="f__Software_Element_deskriptiv">getrennte Stahllisten</span><span class="f_R_Option_Beschreibung"> ein Haken gesetzt ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7708in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Tabellenzeile"> mit Gesamtstahlliste</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.5625in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Gesamtstahlliste wird in einer separaten Datei mit ausgegeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7708in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_R_Tabellenzeile"> mit Gesamtstahlliste</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.5625in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Gesamtstahlliste wird nicht ausgegeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Automatischer Dateipfad/-name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die PDF-Datei(en) werden automatisch im gleichen Speicherpfad und mit dem Dateinamen der AKT-Zeichnung(en) erstellt. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Dialog </span><span class="f__Software_Element_deskriptiv">PDF-Datei speichern als</span><span class="f_R_Option_Beschreibung"> wird ge&ouml;ffnet, wenn</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">zus&auml;tzlich eine Gesamtstahlliste ausgegeben wird. In diesem Fall werden Speicherort und Dateiname f&uuml;r die Gesamtstahlliste abgefragt.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">mehrere Stahllisten ausgegeben werden und der Haken bei </span><span class="f__Software_Element_deskriptiv">getrennte Stahllisten</span><span class="f_R_Option_Beschreibung"> nicht gesetzt ist.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">bei der Option </span><span class="f__Software_Element_deskriptiv">&quot;Speichern unter&quot;-Dialog anzeigen</span><span class="f_R_Option_Beschreibung"> ein Haken gesetzt ist.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ansonsten werden die PDF-Dateien ohne Abfrage des Speicherpfads und Dateinamens erzeugt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_drei-punkte-button" style="margin:0;width:0.3958in;height:0.2188in;border:none" src="b_drei-punkte-button.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">PDF - Speicherort</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_PDF-Speicherort" style="margin:0;width:8.3854in;height:2.0104in;border:none" src="d_pdf-speicherort.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfad</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Dateipfad an, in dem PDF-Dateien gespeichert werden sollen. Der dynamische Makrotext {Directory} entspricht dem Dateipfad der Zeichnung(en).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_drei-punkte-button" style="margin:0;width:0.3958in;height:0.2188in;border:none" src="b_drei-punkte-button.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Ordner ausw&auml;hlen</span><span class="f_R_Option_Beschreibung">. W&auml;hlen Sie das gew&uuml;nschte Verzeichnis aus und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">PDF - Dateiname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der dynamische Makrotext {Filename} entspricht dem Speichernamen der auszugebenden Zeichnung(en). Sie k&ouml;nnen ihn mit weiteren Makrotexten und festen Texten kombinieren. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ein Beispiel: Tragen Sie </span><span class="f_Hervorhebung_Text">{Filename}_Stahlliste</span><span class="f_R_Option_Beschreibung"> ein, um an den Dateinamen das Wort &quot;Stahlliste&quot; anzuh&auml;ngen. Dadurch k&ouml;nnen Sie zwischen der Ausgabe der Stahlliste(n) und Zeichnung(en) unterscheiden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="D_PDF-Speicherort_Beispiel" style="margin:0;width:7.5938in;height:0.9479in;border:none" src="d_pdf-speicherort_beispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vorschau</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt eine Vorschau des vollst&auml;ndigen Dateipfades inklusive des Dateinamens der Stahlliste an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Makros" style="margin:0;width:1.0000in;height:0.2396in;border:none" src="b_makros.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet eine Liste mit dynamischen Makrotexten:</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Today - aktuelles Datum</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Save Date - letztes Speicherdatum</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Create Date - Erstellungsdatum</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Filename - Dateiname</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Directory (nur bei </span><span class="f__Software_Element_deskriptiv">Pfad</span><span class="f_L_Listenunterpunkt"> verf&uuml;gbar) - Dateiverzeichnis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen die Formatierung von Datumsangaben bearbeiten. Siehe: <a href="ref_dyn_makrotexte.htm" class="topiclink">Dynamische Makrotexte (Referenz)</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zur&uuml;cksetzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzt den </span><span class="f__Software_Element_deskriptiv">Pfad</span><span class="f_R_Option_Beschreibung"> auf {Directory} und </span><span class="f__Software_Element_deskriptiv">PDF - Dateiname</span><span class="f_R_Option_Beschreibung"> auf {Filename} zur&uuml;ck.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die Einstellungen und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzt alle &Auml;nderungen zur&uuml;ck und schlie&szlig;t den Dialog.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&quot;Speichern unter&quot;-Dialog anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, wenn bei der PDF-Ausgabe der Speicherort und Dateiname immer abgefragt werden sollen. Standardm&auml;&szlig;ig wird der Speicherort der Zeichnung und der Dateiname vorgeschlagen. Falls die Zeichnung noch nicht gespeichert wurde, lautet der Vorschlag &quot;Unbekannt.pdf&quot;. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ohne gesetzten Haken erfolgt die Ausgabe automatisch gem&auml;&szlig; den Einstellungen im Dialog </span><span class="f__Software_Element_deskriptiv">PDF - Speicherort</span><span class="f_R_Option_Beschreibung">, wenn die Option </span><span class="f__Software_Element_deskriptiv">Automatischer Dateipfad/-name</span><span class="f_R_Option_Beschreibung"> aktiviert ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn die Optionen </span><span class="f__Software_Element_deskriptiv">Automatischer Dateipfad/-name</span><span class="f_Hinweis_in_Tabelle"> und </span><span class="f__Software_Element_deskriptiv">&quot;Speichern unter&quot;- Dialog anzeigen</span><span class="f_Hinweis_in_Tabelle"> nicht aktiviert sind, werden PDF-Dateien im Benutzerordner </span><span class="f__Software_Element_deskriptiv">Dokumente</span><span class="f_Hinweis_in_Tabelle"> gespeichert: </span><br>
+<span class="f_Hervorhebung_Text">C:\Users\Benutzername\Dokumente</span><span class="f_Hinweis_in_Tabelle">.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Ist in den Druckereinstellungen des </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_Hinweis_in_Tabelle"> (Dialog: </span><span class="f__Software_Element_deskriptiv">Eigenschaften von eDocPrinter Pro GLASER</span><span class="f_Hinweis_in_Tabelle">; Registerkarte: </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_Hinweis_in_Tabelle">) ein Standardverzeichnis festgelegt, erfolgt die Ausgabe in dieses Verzeichnis. Die Pfadangabe im Dialog </span><span class="f__Software_Element_deskriptiv">PDF - Speicherort</span><span class="f_Hinweis_in_Tabelle"> wird in diesem Fall ignoriert. Um einen Dateipfad im Dialog </span><span class="f__Software_Element_deskriptiv">PDF - Speicherort </span><span class="f_Hinweis_in_Tabelle">festlegen zu k&ouml;nnen, m&uuml;ssen Sie zun&auml;chst das Standardverzeichnis aus den eDocPrinter-Einstellungen entfernen, indem Sie es aus der Eingabe l&ouml;schen und den Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Hinweis_in_Tabelle"> best&auml;tigen.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">In den Druckereinstellungen des </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_Hinweis_in_Tabelle"> (Dialog: </span><span class="f__Software_Element_deskriptiv">Eigenschaften von eDocPrinter Pro GLASER</span><span class="f_Hinweis_in_Tabelle">; Registerkarte: </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_Hinweis_in_Tabelle">; Option: </span><span class="f__Software_Element_deskriptiv">Wenn Datei existiert</span><span class="f_Hinweis_in_Tabelle">) k&ouml;nnen Sie angeben, was bei bereits existierenden Dateien geschehen soll. Dateien k&ouml;nnen beispielsweise direkt ersetzt oder auch bei jeder Ausgabe automatisch nummeriert werden.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Siehe auch: <a href="tsk_stl-pdf-erzeugen.htm" class="topiclink">Stahllisten mit dem eDocPrinter ausgeben</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Konformit&auml;t</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die PDF-Konformit&auml;tsebene aus, mit der die PDF-Ausgabe erfolgen soll:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Normal (keine Konformit&auml;t)</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-1a</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-1b</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-2a</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-2b</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-2u</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-3a</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-3b</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">PDF/A-3u</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Formate ZUGFeRD und Factur-X sind elektronische Rechnungsdatenformate f&uuml;r den Austausch von Rechnungen. F&uuml;r die Ausgabe von ISBCAD-Daten haben diese Formate keine Bedeutung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4063in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die Konformit&auml;tsebenen PDF/A-2 und PDF/A-3 sind ab der eDocPrinter PDF Pro Version 9.77 verf&uuml;gbar, die ab ISBCAD 2025 ausgeliefert wird.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle"><a href="https://www.glasercad.de/downloads/sonstige-anwendungen/" target="_blank" class="weblink" title="Öffnet den Downloadbereich auf www.glasercad.de">Weitere Informationen</a> finden Sie auf der Website der GLASER Programmsysteme GmbH.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ausgabe in Datei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird eine Plotdatei (*.PLT) geschrieben. Im Dialog </span><span class="f__Software_Element_deskriptiv">Datei speichern</span><span class="f_R_Option_Beschreibung"> k&ouml;nnen Sie einen Ordner w&auml;hlen und den Dateinamen eingeben. Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_R_Option_Beschreibung"> klicken, wird die Datei geschrieben, der Dialog geschlossen und zur Ansichtsseite zur&uuml;ckgekehrt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eigenschaften</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eigenschaften</span><span class="f_R_Option_Beschreibung"> des gew&auml;hlten Druckers.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Stahlliste wird mit den gew&auml;hlten Parametern gedruckt oder es folgt der Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_R_Option_Beschreibung"> f&uuml;r die Ausgabe als PDF.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Aktion ab und sclie&szlig;t den Dialog.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Programm Icon Brand Tag Tag weiß 24 x 24" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="hmfile_hash_79426575.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Zeichenprogramm</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Legt die Stahlliste in den Zwischenspeicher und schlie&szlig;t den Dialog. Klicken Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Stahlliste</span><span class="f_R_Tabellenzeile"> auf </span><span class="f__Software_Element_deskriptiv">Ende</span><span class="f_R_Tabellenzeile">, um die Stahlliste auf der Zeichnung abzulegen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Zeichenprogramm-ausgeben" style="margin:0;width:0.1875in;height:0.1771in;border:none" src="i_zeichenprogramm-ausgeben.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn bereits eine Stahlliste auf der Zeichnung abgelegt ist, k&ouml;nnen Listen &uuml;ber den </span><span class="f__Software_Element_deskriptiv">Ansicht</span><span class="f_R_Tabellenzeile">-Dialog der Funktion [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">StlLis</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">ausgeben</span><span class="f_R_Tabellenzeile">] nicht auf der Zeichnung abgelegt werden. Um in der Zeichnung liegende Listen zu aktualisieren, nutzen Sie die Funktion [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">StlLis</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Neu erzeugen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Stahlliste (Dialog)</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Ansicht</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-02" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_86f730de.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Speichern</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die aktuelle Seite bzw. alle Seiten werden gespeichert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Im Auswahlfeld </span><span class="f__Software_Element_deskriptiv">Dateityp:</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie folgende Dateiformate w&auml;hlen: </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">ISBCAD Zeichnungsdatei (*.akt) </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Plotdatei (*.plt) </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Enhanced Meta File (*.emf)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Richtextdatei (*.rtf)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Textdatei f&uuml;r Excel (*.txt)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Excel-Datei (*.xlsx) - Auswahl nur verf&uuml;gbar, wenn Excel auf dem PC installiert ist.</span><br>
+<span class="f_R_Tabellenzeile">Beim Schreiben der Datei wird der Dateiname der AKT-Zeichnung f&uuml;r die Bezeichnung des Excel-Blatts genommen. Die Bezeichnung auf einem Excel-Blatt wird auf max. 20 Zeichen begrenzt.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Adobe (*.pdf)</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-03" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_76954151.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Aktuelle Seite</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nur die aktuelle Seite wird ausgegeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-04" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_cdea6b25.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Alle Seiten</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden alle Seiten ausgegeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-05" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_87c913b5.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Anschrift</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog</span><span class="f__Software_Element_deskriptiv"> <a href="rd_stl-anschriften.htm" class="topiclink">Anschriften</a></span><span class="f_R_Tabellenzeile">. W&auml;hlen Sie die Anschrift f&uuml;r den Briefkopf und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_R_Tabellenzeile">. Der Ansichts-Dialog wird anschlie&szlig;end geschlossen. Wenn Sie den Dialog erneut &ouml;ffnen, wird die gew&auml;hlte Anschrift angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-06" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_1beb4711.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Sortierung nach Pl&auml;nen</span></p>
+<p class="p_R_Tabellenzeile"><a name="_stlsortieren" class="hmanchor"></a><span class="f_R_Tabellenzeile">Bei Ausf&uuml;hrung einer Gesamtstahlliste, werden die Seiten nach den Pl&auml;nen sortiert.</span><br>
+<span class="f_R_Tabellenzeile">(B1-Stahlliste, B1-Biegeliste, B1-Schneideskizze, B2-Stahlliste, B2-Biegeliste, B2-Schneideskizze … usw.)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-07" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_31bf2ef2.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Sortierung nach Listentyp</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Seiten werden nach Listentypen sortiert. Zuerst die Stahllisten, dann die Biegelisten und zum Schluss die Schneideskizzen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-08" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_d5796034.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Ganze Seite</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Setzt in der Seiten-Ansicht <img alt="Icons Stahlliste 2022-06-11" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_d6c95a73.png"/> und Zeichnungs-Ansicht <img alt="Icons Stahlliste 2022-06-12" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_48555338.png"/> nach dem Zoomen die Zoomstufe auf 100% zur&uuml;ck. Die aktuelle Zoomstufe wird links unten im Dialog-Fenster angezeigt (nur Seiten-Ansicht).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-10" style="margin:0;width:0.1875in;height:0.1563in;border:none" src="hmfile_hash_6b5c96b1.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Zoom verkleinern</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zoomt schrittweise heraus. Nutzen Sie alternativ das Scrollrad Ihrer Maus.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-09-09-09" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_ce12c1c5.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Zoom vergr&ouml;&szlig;ern</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zoomt schrittweise heran. Nutzen Sie alternativ das Scrollrad Ihrer Maus.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-11" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_d6c95a73.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Seiten-Ansicht</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt die in der Seitennavigation <img alt="B_Seitenauswahl" style="margin:0;width:1.3750in;height:0.2188in;border:none" src="b_seitenauswahl.png"/> gew&auml;hlte Seite an. Der zugeh&ouml;rige Listentyp (z. B. Biegeliste) wird unter der Men&uuml;leiste im oberen linken Fensterbereich angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="Icons Stahlliste 2022-06-12" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="hmfile_hash_48555338.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_stahlliste_zeichnungsansicht" class="hmanchor"></a><span class="f_Hinweis_in_Tabelle_Kopfzeile">Zeichnungs-Ansicht</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt alle Seiten je nach gew&auml;hlter Sortierung (Plan/Listentyp) an. Dies ist eine Vorschau der Stahlliste, wie sie auf der Zeichnung abgelegt wird (s. <img alt="I_Programm Icon Brand Tag Tag weiß 24 x 24" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="hmfile_hash_79426575.png"/> Zeichenprogramm).</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Sie k&ouml;nnen eine Seite fokussieren, indem Sie im Ansichtsbereich einen Doppelklick auf die Seite ausf&uuml;hren. Alternativ k&ouml;nnen Sie die Seitennavigation zum Durchbl&auml;ttern der Seiten verwenden.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Sie k&ouml;nnen die Aufteilung der Seiten im Unterdialog <a href="rd_stahlliste-grundwerte-allgemein.htm#_stahlliste_seitenaufteilung" class="topiclink">Allgemein</a> anpassen. Das nachtr&auml;gliche Verschieben einzelner Seiten ist mit [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_R_Tabellenzeile">] m&ouml;glich.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Details der einzelnen Listen k&ouml;nnen mittels <a href="des_bildausschnitt-zoomen-und-verschieben.htm#idfreihandsymbol" class="topiclink" title="Bildausschnitt - zoomen und verschieben">Mausgesten</a> betrachtet werden.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:1.7083in;"><p class="p_R_Tabellenzeile"><img alt="B_Seitenauswahl" style="margin:0;width:1.7188in;height:0.2708in;border:none" src="b_seitenauswahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.0000in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Seitennavigation</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um eine Seite gezielt anzugeben, f&uuml;hren Sie einen Doppelklick auf der Seitenangabe [aktuelle Seite/Seiten gesamt] aus, tragen die gew&uuml;nschte Seitenzahl ein und beenden mit der Eingabetaste.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.3438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_nav_zur-ersten-Seite" style="margin:0;width:0.2396in;height:0.2500in;border:none" src="i_nav_zur-ersten-seite.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zur ersten Seite </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_nav_eine-Seite-zurueck" style="margin:0;width:0.2396in;height:0.2500in;border:none" src="i_nav_eine-seite-zurueck.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eine Seite zur&uuml;ck </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_nav_eine-Seite-vor" style="margin:0;width:0.2396in;height:0.2500in;border:none" src="i_nav_eine-seite-vor.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eine Seite weiter</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_nav_zur-letzten-Seite" style="margin:0;width:0.2396in;height:0.2500in;border:none" src="i_nav_zur-letzten-seite.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.6667in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zur letzten Seite</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4688in;"><p class="p_R_Tabellenzeile"><img alt="I_Schliessen" style="margin:0;width:0.1458in;height:0.1354in;border:none" src="i_schliessen.png"/></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:13.3438in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schlie&szlig;t den Dialog und kehrt zum Dialog </span><span class="f__Software_Element_deskriptiv">Stahlliste</span><span class="f_R_Tabellenzeile"> zur&uuml;ck.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stahllisten-erzeugen-und_ausgeben.htm" class="topiclink">Stahllisten erzeugen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stl-pdf-erzeugen.htm" class="topiclink">Stahllisten mit dem eDocPrinter ausgeben</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stlmain.htm" class="topiclink">Stahlliste (Dialog)</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stahlliste-direkt-ausgeben.htm" class="topiclink">Stahlliste direkt ausgeben</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stahlliste_vorlage-erzeuge.htm" class="topiclink">Stahllistenvorlage erzeugen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

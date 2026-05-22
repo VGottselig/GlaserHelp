@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Achsabschnitt bearbeiten (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Je nachdem, welches Trassierungselement Sie im Dialog Stationsabschnitt für... gewählt haben, werden die entsprechenden Optionen eingeblendet." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_modules.htm">Zusatzprogramme</a> &gt; <a href="des_trassierung.htm">Trassierung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_eigenschaften-fuer-achse.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="des_trassierung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_stationsabschnitt.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Achsabschnitt bearbeiten (Dialog)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.2917in;"><img alt="D_Achsabschnitt-bearbeiten-Poly" style="margin:0;width:7.0000in;height:2.4896in;border:none" src="d_achsabschnitt-bearbeiten-poly.png"/></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Je nachdem, welches Trassierungselement Sie im Dialog</span><span class="f__Software_Element_deskriptiv"> Stationsabschnitt f&uuml;r...</span><span class="f_R_Dialog_Info"> gew&auml;hlt haben, werden die entsprechenden Optionen eingeblendet.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Achsabschnitt (Trassierungselement)</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">q (Lm/L)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Polynomial. Verh&auml;ltnis des Bogenma&szlig;es zur Geraden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge; Radius; Winkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der L&auml;nge und Kr&uuml;mmung der Linie. M&ouml;gliche Angaben: [L&auml;nge / Radius]; [L&auml;nge / Winkel] und [Radius / Winkel].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Max</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Errechnet in Abh&auml;ngigkeit von der eingegebenen L&auml;nge oder dem Winkel den maximal zul&auml;ssigen Radius.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Anfang</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge; Radius; Winkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmung des Bogenanfangs &uuml;ber die L&auml;nge, den Radius oder den Winkel.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Richtung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rechtsdrehung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Drehung des Achsabschnittes nach rechts, wenn der Haken gesetzt ist.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">R&uuml;ckw&auml;rts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Verlauf beginnt am urspr&uuml;nglichen Endpunkt.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Tangentenwinkel</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auto</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Linien werden automatisch tangential angeschlossen.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Genauigkeit</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auto</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Linien werden automatisch tangential angeschlossen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">dTau; dL&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">- dTau: Angabe des Winkels (in Grad) f&uuml;r die Ausrundung des Bogens. Je kleiner der eingegebene Winkel, desto deutlicher die Ausrundung.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">- dL&auml;nge: Angabe der L&auml;nge (in Meter) f&uuml;r die Ausrundung des Bogens. Zeichnet vom Stationsstart bis zum Endpunkt Linien mit der eingegeben L&auml;nge. Je kleiner die eingegebenen L&auml;nge, desto deutlicher die Ausrundung.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Rechts-/Hochwert</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auto</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Linien werden automatisch tangential angeschlossen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des zu bearbeitenden Abschnitts.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ansicht</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet eine Vorschau der erstellten Trassierungselemente. (s. <a href="des_trassierung.htm#ansicht" class="topiclink">Ansicht</a>).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbruch</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verwirft die &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

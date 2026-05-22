@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Export-Einstellungen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="IFC Section Tool,IFC Section Tool Darstellung der Kanten konfigurieren,IFC Section Tool Darstellung der Schnittbezeichnung konfigurieren" />
+   <meta name="description" content="Auf der Registerkarte Export-Einstellungen geben Sie an, wie die Kanten des Schnitts ausgegeben werden sollen. Zudem haben Sie die Möglichkeit, die Darstellung der Schnittpf" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a> &gt; <a href="con_ifc-import.htm">IFC Section Tool</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_schnittdef_export.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_ifc-import.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_ifc_schnitt-bearbeiten.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Export-Einstellungen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_Aufruf"> <a href="con_ifc-import.htm" class="topiclink" title="IFC-Geometriedaten importieren"><img alt="IFC-Geometriedaten importieren" title="IFC-Geometriedaten importieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_ifcimp.png"/></a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_ifc_export-einstellungen" style="margin:0;width:3.9688in;height:1.1250in;border:none" src="scr_ifc_export-einstellungen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Export-Einstellungen</span><span class="f_A_Allgemein"> geben Sie an, wie die Kanten des Schnitts ausgegeben werden sollen. Zudem haben Sie die M&ouml;glichkeit, die Darstellung der Schnittpfeilbezeichnung und der Schnittpfeile zu definieren.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Einstellungen werden im aktiven Profil gespeichert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p___Einschuebe_linksbuendigausrichten"><span class="f___Einschuebe_linksbuendigausrichten">&nbsp;</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">W&auml;hlen Sie aus den Dropdown-Listen (<img alt="I_arrow_dropdown" style="margin:0;width:0.1771in;height:0.1458in;border:none" src="i_arrow_dropdown.png"/>) die entsprechenden Eigenschaften.</span></p>
+<p class="p_R_Bereich"><a name="_ifc_kanten" class="hmanchor"></a><span class="f_R_Bereich">Kanten und Schraffuren</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sichtbare Kanten </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit diesen Parametern werden alle Kanten gezeichnet, die in der Schnittebene liegen und von keinen Objekten verdeckt werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option">Anmerkung</span><span class="f_R_Option_Beschreibung">: Wenn die Option </span><span class="f__Software_Element_deskriptiv">&Uuml;berschneidende Linien reduzieren</span><span class="f_R_Option_Beschreibung"> (s. weiter unten) deaktiviert ist, werden sichtbare Kanten &uuml;ber geschnittene Kanten gelegt. Sie k&ouml;nnen </span><span class="f__Software_Element_deskriptiv">Geschnittene Kanten</span><span class="f_R_Option_Beschreibung"> mit den gew&auml;hlten Parametern darstellen, indem Sie sie &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">EleAtr</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Ebene</span><span class="f_R_Option_Beschreibung">] in der Ebene h&ouml;her setzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Versteckte Kanten </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Objekte in der Schnittebene von z. B. einer Wand, T&uuml;r oder Decke verdeckt werden, werden sie mit den hier gew&auml;hlten Parametern gezeichnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Geschnittene Kanten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit diesen Parametern werden alle Kanten gezeichnet, die am Schnittansatz angeschnitten werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schnittfl&auml;chen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Schnittfl&auml;chen </span><span class="f_Hervorhebung_Text">geschnittener Kanten</span><span class="f_R_Option_Beschreibung"> k&ouml;nnen gef&uuml;llt oder schraffiert werden. Ist der Haken nicht gesetzt, werden nur die Konturen exportiert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schnittfl&auml;chen exportieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktivieren Sie diese Option, um die Schnittfl&auml;chen geschnittener Kanten mit einer F&uuml;llung oder einer Schraffur zu versehen. W&auml;hlen Sie anschlie&szlig;end die gew&uuml;nschte Stiftnummer f&uuml;r die Darstellung. </span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#191919;text-decoration:none;">&#45;</span><span class="f_R_Option_Beschreibung">Wenn die Schnittfl&auml;chen als F&uuml;llungen exportiert werden sollen, setzen Sie einen Haken bei </span><span class="f__Software_Element_deskriptiv">Als F&uuml;llung exportieren</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#191919;text-decoration:none;">&#45;</span><span class="f_R_Option_Beschreibung">Soll stattdessen eine Schraffur verwendet werden, w&auml;hlen Sie den passenden Schraffurtyp aus der Auswahlliste.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texte</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Mit diesen Parametern definieren Sie die Darstellung der &Uuml;berschrift des Schnittes.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Zum Beispiel: </span><span class="f_Hervorhebung_Text">A-A</span><span class="f_R_Bereich_Info_Rahmen">, </span><span class="f_Hervorhebung_Text">B-B</span><span class="f_R_Bereich_Info_Rahmen">, </span><span class="f_Hervorhebung_Text">C-C</span><span class="f_R_Bereich_Info_Rahmen"> usw.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Textgr&ouml;&szlig;e in [mm] ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Schriftfarbe.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Breitenfaktor f&uuml;r den Text oder tippen Sie diesen ein.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Ein Breitenfaktor = 1 stellt den Text unverzerrt dar.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Ein Breitenfaktor &lt; 1 staucht den Text.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Ein Breitenfaktor &gt; 1 streckt den Text.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Schriftart. Bei TrueType-Schriften k&ouml;nnen Sie zus&auml;tzlich Textauszeichnungen (fett, kursiv, unterstrichen, durchgestrichen) w&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textauszeichnungen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine oder mehrere Auszeichnungen f&uuml;r den Text.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_ImageCaption_zentriert"><img alt="B_Fett" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_fett.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9896in;"><p class="p_ImageCaption_zentriert"><img alt="B_Kursiv" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_kursiv.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption_zentriert"><img alt="B_Unterstrichen" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_unterstrichen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2604in;"><p class="p_ImageCaption_zentriert"><img alt="B_Durchgestrichen" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_durchgestrichen.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="font-weight: bold;">Fett</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9896in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="font-style: italic;">Kursiv</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="text-decoration: underline;">Unterstrichen&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2604in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="text-decoration: line-through;">Durchgestrichen&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schnittpfeile</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Mit diesen Parametern definieren Sie die Darstellung der Schnittpfeillinien und -texte.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="SCR_ifc_pfeil" style="margin:0;width:1.6979in;height:0.6563in;border:none" src="scr_ifc_pfeil.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfeildarstellung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Darstellung der Schnittpfeile.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie </span><span class="f_L_Listenunterpunkt">die Stiftnummer, mit der die Linien der Schnittpfeile und die Schnitttexte dargestellt werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schnitttexte</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Geben Sie die Textgr&ouml;&szlig;e in [mm] ein.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Schriftart.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine oder mehrere Auszeichnungen f&uuml;r den Text.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Allgemein</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schnitte als Gruppe erstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktivieren Sie die Option, um Schnittebenen in einzelnen, anwenderdefinierten Gruppen zusammenzufassen. Im Gruppenmanager [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Gruppe</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Managr</span><span class="f_R_Option_Beschreibung">] erhalten die Schnitte die jeweilige Schnittbezeichnung (Schnitt A-A, Schnitt B-B usw.).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bereinanderliegende Linien reduzieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aktivieren Sie diese Option, um Linien, die &uuml;bereinanderliegen und vom unterschiedlichen Kantentyp sind, zu l&ouml;schen oder zu k&uuml;rzen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hierbei gilt die folgende Hierarchie:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1.</span><span class="f_R_Option_Beschreibung">Geschnittene Kanten</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2.</span><span class="f_R_Option_Beschreibung">Sichtbare Kanten</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">3.</span><span class="f_R_Option_Beschreibung">Versteckte Kanten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel: Wenn eine sichtbare Kantenlinie &uuml;ber einer versteckten Kantenlinie liegt, und die Start- und Endpunkte dieselben sind, wird Letztere gel&ouml;scht.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option">Anmerkung</span><span class="f_R_Option_Beschreibung">: Wenn die Option deaktiviert ist, werden sichtbare Kanten &uuml;ber geschnittene Kanten gelegt. Sie k&ouml;nnen </span><span class="f__Software_Element_deskriptiv">Geschnittene Kanten</span><span class="f_R_Option_Beschreibung"> mit den gew&auml;hlten Parametern darstellen, indem Sie sie &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">EleAtr</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Ebene</span><span class="f_R_Option_Beschreibung">] in der Ebene h&ouml;her setzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Info</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt das aktive Profil der Zeichnung an, in der das IFC Section Tool ge&ouml;ffnet wurde. Wird das Profil in ISBCAD gewechselt, werden bei der &Uuml;bergabe die Stiftnummern des gewechselten Profils verwendet.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_ifc_schnitt-export.htm" class="topiclink">Schnitt exportieren</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_ifc-import.htm" class="topiclink">IFC Section Tool (Referenz)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

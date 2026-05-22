@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wendelbewehrung - Detail</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bewehrungsdetails,Bewehrungsdetails Wendelbewehrung erzeugen,Detail,Detail Wendelbewehrung erzeugen,Wendelbewehrung erzeugen - Detail" />
+   <meta name="description" content="Bewehrung runder oder rechteckiger Stützen und Pfähle mit unterschiedlicher Ganghöhe." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_bewehrungsdetails.htm">Detail</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="_rd_eingabe-bogenstaffel.xhtm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_bewehrungsdetails.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_runde_dbr.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Wendelbewehrung erzeugen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_bewehrungsdetails.htm" class="topiclink" title="Bewehren von Standardkonstruktionen (Detail)"><img alt="Bewehren von Standardkonstruktionen (Detail)" title="Bewehren von Standardkonstruktionen (Detail)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_detail.png"/></a></span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="B-akt_Wendelbew" style="margin:0;width:2.3438in;height:0.2500in;border:none" src="b-akt_wendelbew.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Bewehrung runder oder rechteckiger St&uuml;tzen und Pf&auml;hle mit unterschiedlicher Gangh&ouml;he.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die M&ouml;glichkeit, einzelne Parameter zu definieren. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Zur Erg&auml;nzung sollten Sie die Beschriftung &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">F&auml;cher</span><span class="f_Hinweis_in_Tabelle">] durchf&uuml;hren.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">F&uuml;r die Bema&szlig;ung der Bereiche werden von ISBCAD Hilfspunkte erzeugt. [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ket</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">M.zeic</span><span class="f_Hinweis_in_Tabelle">].</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Gangh&ouml;hen k&ouml;nnen Sie als Erg&auml;nzungstext schreiben. [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ket</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">ErgTxt</span><span class="f_Hinweis_in_Tabelle">].</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_BiForm-für Wendel" style="margin:0;width:1.8021in;height:0.2396in;border:none" src="hmfile_hash_c6d0f0ff.png"/></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Bauteilform und Bewehrung angeben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Sie k&ouml;nnen zwischen runden und rechteckigen Bauteilen w&auml;hlen</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unter Bauteilform auf </span><span class="f__Software_Element_deskriptiv">Kreis</span><span class="f_Step"> oder </span><span class="f__Software_Element_deskriptiv">Rechteck</span><span class="f_Step"> oder geben Sie f&uuml;r einen Kreis den Wert </span><span class="f__Tastatur">1</span><span class="f_Step"> bzw. f&uuml;r ein Rechteck den Wert </span><span class="f__Tastatur">2</span><span class="f_Step"> ein und best&auml;tigen Sie die Eingabe mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Bauteilma&szlig;e an:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="width:100%; border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:6.9271in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei einem Kreis:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie den St&uuml;tzenkreis an oder geben Sie unter</span><span class="f__Abfrage"> Durchmesser St&uuml;tze</span><span class="f_R_Tabellenzeile"> den Durchmesser des Betonquerschnittes ein und best&auml;tigen Sie die Eingabe.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei einem Rechteck:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie eine L&auml;ngsseite des St&uuml;tzenrechteckes an oder geben Sie unter </span><span class="f__Abfrage">Breite St&uuml;tze</span><span class="f_R_Tabellenzeile"> die Bauteilbreite an </span><span class="f_Step">und best&auml;tigen Sie die Eingabe.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie eine Querseite des St&uuml;tzenrechteckes an oder geben Sie unter </span><span class="f__Abfrage">Dicke St&uuml;tze</span><span class="f_R_Tabellenzeile"> die Bauteildicke an </span><span class="f_Step">und best&auml;tigen Sie die Eingabe</span><span class="f_R_Tabellenzeile">.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nacheinander die abgefragten Werte ein und best&auml;tigen Sie die Angaben jeweils mit der Eingabetaste. </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Durchmesser</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stabdurchmesser oder Auswahl Bandeisen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">nom c</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Betondeckung.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei Rundstahl: Um die Berechnungshilfe f&uuml;r die Betondeckung zu &ouml;ffnen, klicken Sie auf <img alt="B_nom-c_Wendel" style="margin:0;width:1.6563in;height:0.2396in;border:none" src="b_nom-c_wendel.png"/>. (&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Betondeckung nach EC2</span><span class="f_R_Tabellenzeile">).</span><br>
+<span class="f_R_Tabellenzeile"><a href="rd_betondeckung-nach-ec2.htm" class="topiclink">&raquo; Betondeckung nach EC2</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Verlegeh&ouml;he</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hier k&ouml;nnen Sie die Linie der St&uuml;tzenansicht anklicken. Es wird die L&auml;nge der Linie abz&uuml;glich 2 x Betondeckung angeschrieben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn sich die Gesamtl&auml;nge aus mehreren Teilen zusammensetzt, k&ouml;nnen Sie in der Eingabe die Rechnung direkt eingeben. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Gangh&ouml;he 1</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl der ersten Gangh&ouml;he.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">weitere Gangh&ouml;he</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um mehrere Gangh&ouml;hen-Bereiche einzugeben: </span><span class="f__Tastatur">1</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile">. Geben Sie anschlie&szlig;end die n&auml;chste Verlegeh&ouml;he an. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um nur einen Gangh&ouml;hen-Bereich zu verwenden: </span><span class="f__Tastatur">2</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Lage Auszug</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Auszug befindet sich am Cursor. Platzieren Sie den Auszug per Mausklick an der gew&uuml;nschten Stelle.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Der Ma&szlig;stab ist abh&auml;ngig von der Eingabe der Verlegeh&ouml;he. </span><br>
+<span class="f_R_Tabellenzeile">Haben Sie bei der ersten Verlegeh&ouml;he eine Linie angeklickt, wird der Ma&szlig;stab der Linie &uuml;bernommen.</span><br>
+<span class="f_R_Tabellenzeile">Wenn keine Linie angeklickt wurde, wird der Ma&szlig;stab aus der unteren Men&uuml;leiste benutzt, der am Anfang der Eingaben eingestellt war.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Korrektur</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">1</span><span class="f_R_Tabellenzeile">: Die bisherigen Eingaben werden verworfen, die Wendelbewehrung muss komplett neu definiert werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile">: Die Eingaben werden &uuml;bernommen. </span><br>
+<span class="f_R_Tabellenzeile">Das Programm wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Ansicht frei</span><span class="f_R_Tabellenzeile">. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nach &Uuml;bernahme der Eingaben (Korrektur = Nein) wird die Bewehrung in der Zeichnung angezeigt. Bei der Darstellung des Auszuges wird zwischen runder und eckiger Form unterschieden. Die Form wird als Text &uuml;ber den Auszug geschrieben und bei der eckigen Form werden zwischen die „Zick-Zack Linien“ kleine senkrechte Linien gezeichnet.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">ISBCAD wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Ansicht frei </span><span class="f_Step_Anmerkung">(Wendelansicht frei ausrichten). Alternativ k&ouml;nnen Sie die Wendelansicht gezielt setzen.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Wendel setzen</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Wendelansicht frei ausrichten</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.1771in 0 0 0.4583in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_Ansicht-frei_Wendel-frei-setzen" style="margin:0;width:1.8021in;height:0.2396in;border:none" src="b_ansicht-frei_wendel-frei-setzen.png"/></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Verlegewinkel</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn vorher eine Linie angeklickt wurde, wird der entsprechende Verlegewinkel vorgeschlagen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die St&uuml;tze in einem Winkel auf der Zeichnung vorliegt, k&ouml;nnen Sie nach dem Dr&uuml;cken der </span><span class="f__Software_Element_deskriptiv">P</span><span class="f_R_Tabellenzeile">…&nbsp; oder  </span><span class="f__Software_Element_deskriptiv">O</span><span class="f_R_Tabellenzeile">…&nbsp;-Schaltfl&auml;che die schr&auml;ge Linie anklicken, zu der die Ansicht parallel oder rechtwinklig ausgerichtet werden soll.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Lage</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei einem Kreis:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="B_Klappen" style="margin:0;width:1.8021in;height:0.2396in;border:none" src="b_klappen.png"/><span class="f_R_Tabellenzeile">: Dreht die Reihenfolge der Bereiche um.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei einem Rechteck: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">F&uuml;r die endg&uuml;ltige Form der Darstellung k&ouml;nnen Sie noch mit</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f__Software_Element_deskriptiv">Klappen</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Tabellenzeile">die Reihenfolge der Bereiche umdrehen. Wenn nicht wie vorgeschlagen die Breite, d. h. die zuerst angeklickte Linie, dargestellt werden soll, sondern die zweite, m&uuml;ssen Sie auf den Schalter</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f__Software_Element_deskriptiv">Dicke</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Tabellenzeile">klicken</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn bei</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span style="font-size: 10pt; font-family: 'Wingdings 3'; color: #0070c0;">&quot;</span><span class="f__Software_Element_deskriptiv">Verlegeh&ouml;he</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Tabellenzeile">eine Linie angeklickt wurde, wird die Ansicht als Voransicht in der St&uuml;tzengeometrie gezeichnet. Best&auml;tigen Sie die Lage mit der rechten Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alternativ klicken Sie an eine geeignete Stelle in der Zeichnung um die Darstellung der Wendel zu setzen. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Korrektur</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile"> oder</span><span class="f_ImageCaption"> </span><span class="f__Tastatur">1</span><span class="f_ImageCaption">: </span><span class="f_R_Tabellenzeile">Die Angaben zum freien Setzen der Wendel werden verworfen; Sie k&ouml;nnen mit dem Verlegewinkel neu beginnen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile">: Die Eingaben werden &uuml;bernommen. </span><br>
+<span class="f_R_Tabellenzeile">Das Programm wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Schnitt frei</span><span class="f_R_Tabellenzeile">. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">ISBCAD wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Ansicht frei </span><span class="f_Step_Anmerkung">(Wendel in der Ansicht frei setzen). Alternativ k&ouml;nnen Sie die Wendel in der Ansicht gezielt setzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Wendelansicht gezielt ausrichten</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.1771in 0 0 0.4583in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf <img alt="B_Ansicht-gez_Wendel-setzen" style="margin:0;width:1.7708in;height:0.2083in;border:none" src="b_ansicht-gez_wendel-setzen.png"/>. &nbsp;</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Verlegewinkel</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn vorher eine Linie angeklickt wurde, wird der entsprechende Verlegewinkel vorgeschlagen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die St&uuml;tze in einem Winkel auf der Zeichnung vorliegt, k&ouml;nnen Sie nach dem Dr&uuml;cken der </span><span class="f__Software_Element_deskriptiv">P</span><span class="f_R_Tabellenzeile">…&nbsp; oder  </span><span class="f__Software_Element_deskriptiv">O</span><span class="f_R_Tabellenzeile">…&nbsp;-Schaltfl&auml;che die schr&auml;ge Linie anklicken, zu der die Ansicht parallel oder rechtwinklig ausgerichtet werden soll.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Lage</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7708in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Schieben Sie die Ansicht an eine beliebige freie Stelle und legen Sie sie durch Klick mit der linken Maustaste ab.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">X-Neu</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Abfrage">Y-Neu</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Programm setzt die Zeichenmarke als Referenzpunkt an einen Eckpunkt der Ansicht. Dieser wird durch Linienbezug exakt platziert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie eine Linie als Bezug mit der linken Maustaste an. Beachten Sie die Lage der Cursormitte! Um die vorgew&auml;hlte Beton&uuml;berdeckung auf der Seite der Cursormitte hinzuzuf&uuml;gen, dr&uuml;cken Sie die rechte Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alternativ k&ouml;nnen Sie nach dem Anklicken der Linie den gew&uuml;nschten Abstand mit + oder - &uuml;ber die Tastatur eingeben und mit der Eingabetaste best&auml;tigen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Korrektur</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7708in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile"> oder</span><span class="f_ImageCaption"> </span><span class="f__Tastatur">1</span><span class="f_ImageCaption">: </span><span class="f_R_Tabellenzeile">Die Angaben zum gezielten Setzen der Wendel werden verworfen; Sie k&ouml;nnen mit dem Verlegewinkel neu beginnen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile">: Die Eingaben werden &uuml;bernommen. </span><br>
+<span class="f_R_Tabellenzeile">Das Programm wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Schnitt frei.</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">ISBCAD wechselt automatisch in den Eingabemodus </span><span class="f__Software_Element_deskriptiv">Schnitt frei </span><span class="f_Step_Anmerkung">(Wendel im Schnitt frei setzen). Alternativ k&ouml;nnen Sie die Wendel im Schnitt gezielt setzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Wendelschnitt frei ausrichten</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.1771in 0 0 0.4583in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_Wendelschnitt-frei" style="margin:0;width:1.7708in;height:0.2083in;border:none" src="b_wendelschnitt-frei.png"/></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Verlegewinkel</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn vorher eine Linie angeklickt wurde, wird der entsprechende Verlegewinkel vorgeschlagen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die St&uuml;tze in einem Winkel auf der Zeichnung vorliegt, k&ouml;nnen Sie nach dem Dr&uuml;cken der </span><span class="f__Software_Element_deskriptiv">P</span><span class="f_R_Tabellenzeile">…&nbsp; oder  </span><span class="f__Software_Element_deskriptiv">O</span><span class="f_R_Tabellenzeile">…&nbsp;-Schaltfl&auml;che die schr&auml;ge Linie anklicken, zu der die Ansicht parallel oder rechtwinklig ausgerichtet werden soll.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Lage</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Best&auml;tigen Sie die Lage mit der rechten Maustaste oder klicken Sie an die gew&uuml;nschte Position, um den B&uuml;gel abzulegen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Korrektur</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile"> oder</span><span class="f_ImageCaption"> </span><span class="f__Tastatur">1</span><span class="f_ImageCaption">: </span><span class="f_R_Tabellenzeile">Die Angaben zum freien Setzen der Wendel werden verworfen; Sie k&ouml;nnen mit dem Verlegewinkel neu beginnen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile">: Die Eingaben werden &uuml;bernommen. </span><br>
+<span class="f_R_Tabellenzeile">Die Wendelverlegung ist abgeschlossen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Wendelschnitt gezielt ausrichten</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.1771in 0 0 0.4583in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf <img alt="B_Wendelschnitt-gezielt" style="margin:0;width:1.7708in;height:0.2083in;border:none" src="b_wendelschnitt-gezielt.png"/>.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Verlegewinkel</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie den passenden Winkel ein und best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">oder klicken Sie eine Schaltfl&auml;che an, um den Wendelschnitt direkt oder durch anschlie&szlig;endes Anklicken einer Linie exakt zu drehen.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Lage</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Best&auml;tigen Sie die Lage mit der rechten Maustaste oder klicken Sie an die gew&uuml;nschte Position, um den Wendelschnitt abzulegen.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Korrektur</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.7500in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile"> oder</span><span class="f_ImageCaption"> </span><span class="f__Tastatur">1</span><span class="f_ImageCaption">: </span><span class="f_R_Tabellenzeile">Die Angaben zum freien Setzen der Wendel werden verworfen; Sie k&ouml;nnen mit dem Verlegewinkel neu beginnen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile">: Die Eingaben werden &uuml;bernommen. </span><br>
+<span class="f_R_Tabellenzeile">Die Wendelverlegung ist abgeschlossen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0625in 0.3021in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" colspan="2"  style="width:6.6979in;"><p class="p_ImageCaption_zentriert"><img alt="Abb_2.2.10.9-01_Detail_Wendelbewehrung" style="margin:0 auto 0 auto;width:7.3438in;height:2.1667in;border:none" src="abb_2.2.10.9-01_detail_wendelbewehrung.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.2813in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fertige Darstellung einer runden St&uuml;tze.</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:3.2708in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fertige Darstellung einer rechteckigen St&uuml;tze.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_bewehrungsdetails.htm" class="topiclink">Detail (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1197 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f___Einschuebe_linksbuendigausrichten /* __Einschübe_linksbündigausrichten */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+}
+span.f__Abfrage /* _Abfrage */
+{
+ color: #ff0000;
+}
+span.f__Abfrage_Resultat /* _Abfrage-Resultat */
+{
+ color: #008040;
+}
+span.f__Bild_Legende_fett /* _Bild_Legende_fett */
+{
+ font-size: 10pt;
+ font-weight: bold;
+}
+span.f__Bild_Legende_normal /* _Bild_Legende_normal */
+{
+ font-size: 10pt;
+}
+span.f__Eigenname /* _Eigenname */
+{
+ font-style: italic;
+}
+span.f__Hervorhebung /* _Hervorhebung */
+{
+ letter-spacing: 0.0104in;
+ text-decoration: underline;
+}
+span.f__seealso_list /* _seealso_list */
+{
+}
+span.f__Software_Element_deskriptiv /* _Software-Element-(deskriptiv) */
+{
+ color: #0064a0;
+}
+span.f__Tastatur /* _Tastatur */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #333333;
+ letter-spacing: 0.0104in;
+}
+span.f_A_Allgemein /* A_Allgemein */
+{
+}
+span.f_A_fett /* A_fett */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #1e1e1e;
+}
+span.f_A_rechtsbuendig /* A_rechtsbündig */
+{
+ font-weight: bold;
+}
+span.f_A_Verlinkung /* A_Verlinkung */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_ACHTUNG /* ACHTUNG */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #d70000;
+}
+span.f_Aufruf /* Aufruf */
+{
+}
+span.f_Beispiel /* Beispiel */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_Bereich_Neuerungen /* Bereich_Neuerungen */
+{
+ font-size: 13pt;
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #333333;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Consol /* Consol */
+{
+ font-size: 9pt;
+ font-family: Consolas;
+ color: #a31515;
+}
+span.f_Erford_Massnahmen /* Erford-Massnahmen */
+{
+}
+span.f_Formel /* Formel */
+{
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Header /* Header */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_HeadingMenue /* Heading Menue */
+{
+ font-size: 16pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #4b4b4b;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 20pt;
+ font-weight: bold;
+ color: #4b4b4b;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 18pt;
+ font-weight: bold;
+ color: #4b4b4b;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 16pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #4b4b4b;
+}
+span.f_Heading4 /* Heading4 */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #4b4b4b;
+}
+span.f_Heading5 /* Heading5 */
+{
+ font-size: 13pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_Hervorhebung_Text /* Hervorhebung_Text */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #1f1f1f;
+}
+span.f_Hinweis_in_Tabelle /* Hinweis-in-Tabelle */
+{
+}
+span.f_Hinweis_in_Tabelle_Achtung /* Hinweis-in-Tabelle-Achtung */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #f90000;
+}
+span.f_Hinweis_in_Tabelle_Kopfzeile /* Hinweis-in-Tabelle-Kopfzeile */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+ color: #1f1f1f;
+}
+span.f_Icon /* Icon */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+ color: #333333;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+ color: #333333;
+}
+span.f_ImageCaption_zentriert /* Image Caption - zentriert */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+ color: #333333;
+}
+span.f_L_Einleitung /* L_Einleitung */
+{
+}
+span.f_L_Listeneintrag /* L_Listeneintrag */
+{
+}
+span.f_L_Listenunterpunkt /* L_Listenunterpunkt */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_R_Bereich /* R_Bereich */
+{
+ font-size: 13pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ color: #333333;
+}
+span.f_R_Bereich_Varianten /* R_Bereich_Varianten */
+{
+ font-size: 13pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ color: #333333;
+}
+span.f_R_Bereich_Info_Rahmen /* R_Bereich-Info_(Rahmen) */
+{
+ color: #191919;
+}
+span.f_R_Dialog /* R_Dialog */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_R_Dialog_Info /* R_Dialog_Info */
+{
+}
+span.f_R_Menues_und_Funktionen /* R_Menues-und-Funktionen */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_R_Option /* R_Option */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_R_Option_Beschreibung /* R_Option-Beschreibung */
+{
+ color: #191919;
+}
+span.f_R_Option_Toggle /* R_Option-Toggle */
+{
+ color: #191919;
+}
+span.f_R_RegisterkarteOrdner /* R_Registerkarte(Ordner) */
+{
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_R_RegisterkarteSeite /* R_Registerkarte(Seite) */
+{
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_R_Tabelle_Kopf /* R_Tabelle-Kopf */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_R_Tabelle_Kopf_zentriert /* R_Tabelle-Kopf-zentriert */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_R_Tabellenzeile /* R_Tabellenzeile */
+{
+}
+span.f_R_Tabellenzeile_Menue /* R_Tabellenzeile_Menue */
+{
+}
+span.f_R_Tabellenzeile_rechts /* R_Tabellenzeile-rechts */
+{
+}
+span.f_R_Tabellenzeile_zentriert /* R_Tabellenzeile-zentriert */
+{
+}
+span.f_R_table_header /* R_table_header */
+{
+ font-size: 10pt;
+ font-family: Roboto;
+ font-weight: bold;
+ color: #faffff;
+}
+span.f_Registerkarte_Info /* Registerkarte_Info */
+{
+ color: #1e1e1e;
+}
+span.f_SA_Liste /* SA_Liste */
+{
+}
+span.f_SA_Tabelle /* SA_Tabelle */
+{
+}
+span.f_Step /* Step */
+{
+}
+span.f_Step_Anmerkung /* Step_Anmerkung */
+{
+}
+span.f_Step_Info /* Step_Info */
+{
+}
+span.f_Task /* Task */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #333333;
+}
+span.f_Task_Info /* Task_Info */
+{
+}
+span.f_Task_Info_Toggle /* Task_Info-Toggle */
+{
+}
+span.f_Task_Toggle /* Task_Toggle */
+{
+ font-size: 12pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #0000c8;
+}
+span.f_ToDo /* ToDo */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_ToDo_Info /* ToDo_Info */
+{
+}
+span.f_ToDo_Optional /* ToDo_Optional */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-weight: bold;
+ color: #414141;
+}
+span.f_ToDo_Optional_Toggle /* ToDo_Optional-Toggle */
+{
+ font-size: 14pt;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ color: #333399;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.38;
+ padding: 0 0 0 0;
+ margin: 0.0417in 0 0.0625in 0.2708in;
+}
+.p___Einschuebe_linksbuendigausrichten /* __Einschübe_linksbündigausrichten */
+{
+ font-size: 10pt;
+ line-height: 1.20;
+ margin: 0.0104in 0 0.0104in 0;
+}
+.p__Bild_Legende_fett /* _Bild_Legende_fett */
+{
+ font-size: 10pt;
+ line-height: 1.62;
+ margin: 0.0521in 0 0.0625in 0;
+}
+.p__Bild_Legende_normal /* _Bild_Legende_normal */
+{
+ font-size: 10pt;
+ line-height: 1.62;
+ margin: 0.0521in 0 0.0625in 0;
+}
+.p__Hervorhebung /* _Hervorhebung */
+{
+ font-size: 11pt;
+ text-indent: -0.2604in;
+ line-height: 1.32;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.0208in 0 0.0521in 0.8646in;
+}
+.p__seealso_list /* _seealso_list */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ margin: 0.0521in 0 0.1042in 0.2708in;
+}
+.p_A_Allgemein /* A_Allgemein */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.1042in 0 0.1458in 0.2708in;
+}
+.p_A_fett /* A_fett */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.1042in 0 0.1458in 0.2708in;
+}
+.p_A_rechtsbuendig /* A_rechtsbündig */
+{
+ font-size: 11pt;
+ text-align: right;
+ line-height: 1.62;
+ margin: 0.1042in 0 0.1458in 0.2708in;
+}
+.p_A_Verlinkung /* A_Verlinkung */
+{
+ font-size: 14pt;
+ line-height: 1.62;
+ margin: 0.1771in 0 0 0.2708in;
+}
+.p_ACHTUNG /* ACHTUNG */
+{
+ font-size: 12pt;
+ text-indent: -0.2292in;
+ line-height: 1.20;
+ margin: 0.0417in 0 0.0417in 0.3542in;
+}
+.p_Aufruf /* Aufruf */
+{
+ font-size: 11pt;
+ line-height: 1.32;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.0417in 0 0.0521in 0.2708in;
+}
+.p_Beispiel /* Beispiel */
+{
+ font-size: 12pt;
+ text-indent: -0.2813in;
+ line-height: 1.20;
+ margin: 0.1771in 0 0.0625in 0.5521in;
+}
+.p_Bereich_Neuerungen /* Bereich_Neuerungen */
+{
+ font-size: 13pt;
+ line-height: 1.20;
+ border-color: #e5e5e5;
+ border-style: solid;
+ border-width: thin;
+ background: #e5e5e5;
+ padding: 0.0313in 0.0313in 0.0313in 0.0313in;
+ margin: 0.1875in 0 0 0.2396in;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+ margin: 0 0 0 0;
+}
+.p_Comment /* Comment */
+{
+ font-size: 11pt;
+}
+.p_Consol /* Consol */
+{
+ font-size: 9pt;
+ margin: 0 0 0 0;
+}
+.p_Erford_Massnahmen /* Erford-Massnahmen */
+{
+ font-size: 11pt;
+ line-height: 1.20;
+ margin: 0 0 0.0313in 0.3646in;
+}
+.p_Formel /* Formel */
+{
+ font-size: 11pt;
+ text-align: center;
+ line-height: 1.0;
+ white-space: nowrap;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ padding: 0.0417in 0.0417in 0.0417in 0.0417in;
+ margin: 0.0104in 0 0 0;
+}
+.p_Header /* Header */
+{
+ font-size: 14pt;
+ margin: 0.3021in 0 0.0729in 0.2500in;
+}
+.p_HeadingMenue /* Heading Menue */
+{
+ font-size: 16pt;
+ border-color: #999999;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 0.0208in 0.0208in 0.0208in 0.0208in;
+ margin: 0.1979in 0 0.1042in 0.2500in;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.38;
+ padding: 0 0 0 0;
+ margin: 0.2083in 0 0.0625in 0.2708in;
+}
+.p_Heading2 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.38;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 0.1771in 0 0.0313in 0.2708in;
+}
+.p_Heading3 /* Heading3 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.38;
+ padding: 0 0 0 0;
+ margin: 0.1979in 0 0.0833in 0.2708in;
+}
+.p_Heading4 /* Heading4 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.38;
+ border-color: #999999;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 0.0208in 0.0208in 0.0208in 0.0208in;
+ margin: 0.1979in 0 0.0417in 0.2500in;
+}
+.p_Heading5 /* Heading5 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ line-height: 1.32;
+ padding: 0 0 0 0;
+ margin: 0.1771in 0 0.0313in 0.2708in;
+}
+.p_Hervorhebung_Text /* Hervorhebung_Text */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.1042in 0 0.1458in 0.2708in;
+}
+.p_Hinweis_in_Tabelle /* Hinweis-in-Tabelle */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ page-break-inside: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.0521in 0 0.0417in 0;
+}
+.p_Hinweis_in_Tabelle_Achtung /* Hinweis-in-Tabelle-Achtung */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ page-break-inside: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.0313in 0 0.0417in 0;
+}
+.p_Hinweis_in_Tabelle_Kopfzeile /* Hinweis-in-Tabelle-Kopfzeile */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ page-break-inside: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.0313in 0 0.0417in 0;
+}
+.p_Icon /* Icon */
+{
+ font-size: 10pt;
+ line-height: 1.20;
+ margin: 0.0313in 0.0521in 0 0;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 10pt;
+ line-height: 1.20;
+ margin: 0.0625in 0 0.0625in 0;
+}
+.p_ImageCaption_zentriert /* Image Caption - zentriert */
+{
+ font-size: 10pt;
+ text-align: center;
+ line-height: 1.20;
+ margin: 0 0 0 0;
+}
+.p_L_Einleitung /* L_Einleitung */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.0521in 0 0.0625in 0.3125in;
+}
+.p_L_Listeneintrag /* L_Listeneintrag */
+{
+ font-size: 11pt;
+ line-height: 1.56;
+ margin: 0.0313in 0 0.0833in 0.3958in;
+}
+.p_L_Listenunterpunkt /* L_Listenunterpunkt */
+{
+ font-size: 11pt;
+ text-indent: -0.0938in;
+ line-height: 1.56;
+ margin: 0.0313in 0 0.0521in 0.7292in;
+}
+.p_Notes /* Notes */
+{
+ font-size: 11pt;
+ margin: 0.0313in 0 0.0417in 0.1979in;
+}
+.p_R_Bereich /* R_Bereich */
+{
+ font-size: 13pt;
+ line-height: 1.20;
+ border-color: #e5e5e5;
+ border-style: solid;
+ border-width: thin;
+ background: #e5e5e5;
+ padding: 0.0208in 0.0208in 0.0208in 0.0208in;
+ margin: 0.1354in 0 0.0208in 0.3021in;
+}
+.p_R_Bereich_Varianten /* R_Bereich_Varianten */
+{
+ font-size: 13pt;
+ line-height: 1.20;
+ border-color: #e5e5e5;
+ border-style: solid;
+ border-width: thin;
+ background: #e5e5e5;
+ padding: 0.0313in 0.0313in 0.0313in 0.0313in;
+ margin: 0.1250in 0 0 0.2917in;
+}
+.p_R_Bereich_Info_Rahmen /* R_Bereich-Info_(Rahmen) */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ page-break-after: avoid;
+ background: #ffffff;
+ padding: 0.0208in 0.0208in 0.0208in 0.0208in;
+ margin: 0.0208in 0.0208in 0.0417in 0.3333in;
+}
+.p_R_Dialog /* R_Dialog */
+{
+ font-size: 14pt;
+ text-align: justify;
+ line-height: 1.20;
+ page-break-after: avoid;
+ margin: 0.2188in 0 0.0833in 0.2708in;
+}
+.p_R_Dialog_Info /* R_Dialog_Info */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.0313in 0 0.0833in 0.2708in;
+}
+.p_R_Menues_und_Funktionen /* R_Menues-und-Funktionen */
+{
+ font-size: 14pt;
+ text-align: justify;
+ line-height: 1.20;
+ page-break-after: avoid;
+ margin: 0.1667in 0 0.0521in 0.2708in;
+}
+.p_R_Option /* R_Option */
+{
+ font-size: 12pt;
+ text-align: justify;
+ line-height: 1.20;
+ page-break-after: avoid;
+ margin: 0.1250in 0 0.0104in 0.4167in;
+}
+.p_R_Option_Beschreibung /* R_Option-Beschreibung */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ page-break-after: avoid;
+ margin: 0 0 0.0625in 0.4167in;
+}
+.p_R_Option_Toggle /* R_Option-Toggle */
+{
+ font-size: 11pt;
+ text-indent: -0.1979in;
+ line-height: 1.44;
+ page-break-after: avoid;
+ margin: 0 0 0.0625in 0.6771in;
+}
+.p_R_RegisterkarteOrdner /* R_Registerkarte(Ordner) */
+{
+ font-size: 11pt;
+ text-indent: -0.3542in;
+ line-height: 1.20;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #e5e5e5;
+ border-style: solid;
+ border-width: thin;
+ background: #e5e5e5;
+ padding: 0.0313in 0.0313in 0.0313in 0.0313in;
+ margin: 0.2188in 0 0.0521in 0.6563in;
+}
+.p_R_RegisterkarteSeite /* R_Registerkarte(Seite) */
+{
+ font-size: 11pt;
+ text-indent: -0.3542in;
+ line-height: 1.20;
+ page-break-inside: avoid;
+ border-color: #e5e5e5;
+ border-style: solid;
+ border-width: thin;
+ background: #e5e5e5;
+ padding: 0.0313in 0.0313in 0.0313in 0.0313in;
+ margin: 0.1667in 0 0 0.6563in;
+}
+.p_R_Tabelle_Kopf /* R_Tabelle-Kopf */
+{
+ font-size: 12pt;
+ line-height: 1.20;
+ margin: 0.0521in 0 0.0313in 0;
+}
+.p_R_Tabelle_Kopf_zentriert /* R_Tabelle-Kopf-zentriert */
+{
+ font-size: 12pt;
+ text-align: center;
+ line-height: 1.20;
+ margin: 0.0521in 0 0.0313in 0;
+}
+.p_R_Tabellenzeile /* R_Tabellenzeile */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.0521in 0 0.0625in 0;
+}
+.p_R_Tabellenzeile_Menue /* R_Tabellenzeile_Menue */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ margin: 0.0313in 0 0.0208in 0.0208in;
+}
+.p_R_Tabellenzeile_rechts /* R_Tabellenzeile-rechts */
+{
+ font-size: 11pt;
+ text-align: right;
+ line-height: 1.32;
+ margin: 0.1979in 0 0.0417in 0.3021in;
+}
+.p_R_Tabellenzeile_zentriert /* R_Tabellenzeile-zentriert */
+{
+ font-size: 11pt;
+ text-align: center;
+ line-height: 1.62;
+ margin: 0.0521in 0 0.0625in 0;
+}
+.p_R_table_header /* R_table_header */
+{
+ font-size: 10pt;
+ line-height: 1.20;
+ margin: 0.0208in 0 0.0208in 0.0208in;
+}
+.p_Registerkarte_Info /* Registerkarte_Info */
+{
+ font-size: 11pt;
+ line-height: 1.20;
+ page-break-inside: avoid;
+ margin: 0.0417in 0 0 0.2604in;
+}
+.p_SA_Liste /* SA_Liste */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ margin: 0.0104in 0 0.0833in 0.9792in;
+}
+.p_SA_Tabelle /* SA_Tabelle */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ margin: 0.0104in 0 0.0833in 0.1458in;
+}
+.p_Step /* Step */
+{
+ font-size: 11pt;
+ text-indent: -0.2188in;
+ margin: 0.0625in 0 0.0208in 0.7708in;
+}
+.p_Step_Anmerkung /* Step_Anmerkung */
+{
+ font-size: 11pt;
+ line-height: 1.44;
+ margin: 0.0104in 0 0.0833in 0.7813in;
+}
+.p_Step_Info /* Step_Info */
+{
+ font-size: 11pt;
+ margin: 0.0625in 0 0.0313in 0.5729in;
+}
+.p_Task /* Task */
+{
+ font-size: 14pt;
+ line-height: 1.44;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.2813in 0 0.0625in 0.2708in;
+}
+.p_Task_Info /* Task_Info */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.0521in 0 0.1042in 0.2708in;
+}
+.p_Task_Info_Toggle /* Task_Info-Toggle */
+{
+ font-size: 11pt;
+ text-indent: -0.1979in;
+ line-height: 1.62;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.0521in 0 0.1042in 0.4688in;
+}
+.p_Task_Toggle /* Task_Toggle */
+{
+ font-size: 12pt;
+ line-height: 1.44;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ background: #f0f8ff;
+ margin: 0.2500in 0 0.0625in 0.2708in;
+}
+.p_ToDo /* ToDo */
+{
+ font-size: 14pt;
+ text-indent: -0.1875in;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.1771in 0 0 0.4583in;
+}
+.p_ToDo_Info /* ToDo_Info */
+{
+ font-size: 11pt;
+ line-height: 1.62;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.0625in 0 0.0938in 0.5313in;
+}
+.p_ToDo_Optional /* ToDo_Optional */
+{
+ font-size: 14pt;
+ text-indent: -0.3125in;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ margin: 0.1250in 0 0 0.8438in;
+}
+.p_ToDo_Optional_Toggle /* ToDo_Optional-Toggle */
+{
+ font-size: 14pt;
+ text-indent: -0.3125in;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #f9f9f9;
+ margin: 0.1771in 0 0 0.6771in;
+}
+/* Table styles */
+table._Sicherheitshinweis {
+ background-color: #FFF0F0;
+ border: solid thin #FF0000;
+ border-spacing: 0.0313in;
+}
+table._Sicherheitshinweis tr._Sicherheitshinweis {
+ text-align: left;
+}
+table._Sicherheitshinweis th._Sicherheitshinweis, table._Sicherheitshinweis td._Sicherheitshinweis {
+ vertical-align: top;
+ padding: 0.0625in;
+ border: none;
+}
+table._Hinweis {
+ background-color: #E9E9E9;
+ border: solid 0.0208in #EAEAEA;
+ border-spacing: 0;
+}
+table._Hinweis tr._Hinweis {
+ text-align: left;
+}
+table._Hinweis th._Hinweis, table._Hinweis td._Hinweis {
+ vertical-align: top;
+ padding: 0.0104in;
+ border: none;
+}
+table._Hinweis th._Hinweis {
+ background-color:#e9e9e9;
+}
+table.Aufruf {
+ border: none;
+ border-spacing: 0;
+}
+table.Aufruf tr.Aufruf {
+ text-align: left;
+}
+table.Aufruf th.Aufruf, table.Aufruf td.Aufruf {
+ vertical-align: top;
+ padding: 0;
+ border: none;
+}
+table.B_Bild_Tabelle {
+ border: none;
+ border-spacing: 0;
+}
+table.B_Bild_Tabelle tr.B_Bild_Tabelle {
+ text-align: left;
+}
+table.B_Bild_Tabelle th.B_Bild_Tabelle, table.B_Bild_Tabelle td.B_Bild_Tabelle {
+ vertical-align: top;
+ padding: 0.0208in;
+ border: none;
+}
+table.Menue_Palette {
+ width: 6.8750in;
+ border: solid 0.0208in #E1E1E1;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Menue_Palette tr.Menue_Palette {
+ text-align: left;
+}
+table.Menue_Palette th.Menue_Palette, table.Menue_Palette td.Menue_Palette {
+ vertical-align: top;
+ padding: 0.0313in;
+ border: solid thin #E1E1E1;
+}
+table.Optionen_Palette {
+ border: solid 0.0208in #E1E1E1;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Optionen_Palette tr.Optionen_Palette {
+ text-align: left;
+}
+table.Optionen_Palette th.Optionen_Palette, table.Optionen_Palette td.Optionen_Palette {
+ vertical-align: top;
+ padding: 0.0521in;
+ border: solid thin #E1E1E1;
+}
+table.Optionen_Palette th.Optionen_Palette {
+ background-color:#e1e1e1;
+}
+table.R_Bereich_Rahmen {
+ width: 100%;
+ border: none;
+ border-spacing: 0;
+}
+table.R_Bereich_Rahmen tr.R_Bereich_Rahmen {
+ text-align: left;
+}
+table.R_Bereich_Rahmen th.R_Bereich_Rahmen, table.R_Bereich_Rahmen td.R_Bereich_Rahmen {
+ vertical-align: top;
+ padding: 0;
+ border: none;
+}
+table.R_Bereich_Rahmen th.R_Bereich_Rahmen {
+ background-color:#ffffff;
+}
+table.Reference_Clean {
+ border: solid 0.0208in #E1E1E1;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Reference_Clean tr.Reference_Clean {
+ text-align: left;
+}
+table.Reference_Clean th.Reference_Clean, table.Reference_Clean td.Reference_Clean {
+ vertical-align: top;
+ padding: 0.0521in;
+ border: solid thin #E1E1E1;
+}
+table.Reference_Clean th.Reference_Clean {
+ background-color:#e1e1e1;
+}
+table.Reference_Menue {
+ background-color: #F5F5F5;
+ border: none;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Reference_Menue tr.Reference_Menue {
+ text-align: left;
+}
+table.Reference_Menue th.Reference_Menue, table.Reference_Menue td.Reference_Menue {
+ vertical-align: top;
+ padding: 0.0417in;
+ border: solid 0.0417in #FFFFFF;
+}
+table.Reference_Menue th.Reference_Menue {
+ background-color:#525252;
+}
+table.Referenztabelle {
+ background-color: #FDFDFD;
+ border: solid 0.0208in #E1E1E1;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Referenztabelle tr.Referenztabelle {
+ text-align: left;
+}
+table.Referenztabelle th.Referenztabelle, table.Referenztabelle td.Referenztabelle {
+ vertical-align: top;
+ padding: 0.0208in;
+ border: solid thin #E1E1E1;
+}
+table.Referenztabelle th.Referenztabelle {
+ background-color:#dfdfdf;
+}
+table.Toggle_Tabelle {
+ width: 100%;
+ background-color: #FFFFFF;
+ border: none;
+ border-spacing: 0;
+}
+table.Toggle_Tabelle tr.Toggle_Tabelle {
+ text-align: left;
+}
+table.Toggle_Tabelle th.Toggle_Tabelle, table.Toggle_Tabelle td.Toggle_Tabelle {
+ vertical-align: top;
+ padding: 0.0104in;
+ border: none;
+}
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+a.imagetogglelink {
+  position: relative;
+  display: inline-block;
+}
+svg.image-toggle-magnifier { /* Magnifier icon for image toggles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40pt;
+  height: 40pt;
+  max-width: 80%;
+  max-height: 80%;
+  fill: #FFFFFF;
+  stroke: #808080;
+  stroke-width: 0.5pt;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+img.image-toggle:hover + svg.image-toggle-magnifier, svg.image-toggle-magnifier:hover {
+  opacity: 1;
+}
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFDD;
+  padding: 6px;
+  border:1px solid #C0C0C0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }

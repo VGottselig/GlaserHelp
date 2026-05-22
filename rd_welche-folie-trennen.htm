@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Folienbelegung wählen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Folien,Folien,Folien,Folien einfügen,Folien Folienbelegung beim Einfügen,Folien trennen" />
+   <meta name="description" content="Angaben zur Folienbelegung bei identischen Foliennummern. Die Folien des bestehenden Plans werden nicht geändert!" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a> &gt; <a href="dat_datei_einfuegen.htm">Zeichnung einfügen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="dat_datei_einfuegen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="dat_datei_einfuegen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="dat_teilzeichnung_auslagern.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Folienbelegung w&auml;hlen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_Aufruf"> <a href="dat_datei_einfuegen.htm" class="topiclink" title="Einfügen einer Zeichnung"><img alt="Einfügen einer Zeichnung" title="Einfügen einer Zeichnung" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_einfueg-datei.png"/></a> </span><img alt="B_Folien-trenn-Einfueg" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b_folien-trenn-einfueg.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Angaben zur Folienbelegung bei identischen Foliennummern. Die Folien des bestehenden Plans werden nicht ge&auml;ndert!</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Listen enthalten alle Folien, die in der aktuellen Zeichnung und in der eingef&uuml;gten Zeichnung identische Foliennummern haben. Foliennummern, die nur in einer Zeichnung vorkommen, werden nicht angezeigt.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Unter </span><span class="f__Software_Element_deskriptiv">eingef&uuml;gte Zeichnung</span><span class="f_R_Dialog_Info"> k&ouml;nnen Sie die Folien markieren (aktivieren), die nicht zusammengef&uuml;hrt werden sollen. Entscheidend ist hierbei die Foliennummer. Die Foliennamen k&ouml;nnen verschieden sein.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">In der Liste </span><span class="f__Software_Element_deskriptiv">eingef&uuml;gte Zeichnung</span><span class="f_L_Listeneintrag"> </span><span class="f_Hervorhebung_Text">aktivierte</span><span class="f_L_Listeneintrag"> Folien (Haken vor der Foliennummer) bekommen beim Einf&uuml;gen automatisch neue Foliennummern (vgl. Option <a href="rd_welche-folie-trennen.htm#abfoliennummer" class="topiclink">Neue Folien einf&uuml;gen ab Foliennummer</a>). Die Folienbezeichnung bleibt dabei erhalten.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">In der Liste </span><span class="f__Software_Element_deskriptiv">eingef&uuml;gte Zeichnung</span><span class="f_L_Listeneintrag"> </span><span class="f_Hervorhebung_Text">nicht aktivierte</span><span class="f_L_Listeneintrag"> Folien (kein Haken vor der Foliennummer) werden zusammengef&uuml;hrt; die Zeichenelemente aus der eingef&uuml;gten Zeichnung werden in die Folie gleicher Nummer der aktuellen Zeichnung &uuml;bertragen (transformiert).</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Welche Folien trennen?&quot;</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Der Positionsplan des Obergeschosses soll auf den Plan des Erdgeschosses gelegt werden. Damit Sie sp&auml;ter die W&auml;nde des Obergeschosses wieder ausblenden k&ouml;nnen, m&uuml;ssen diese in einer separaten Folie liegen. Bei den Ursprungspl&auml;nen sind die gleichen Foliennummern verwendet worden. Hier haben Sie nun die M&ouml;glichkeit, direkt beim Einf&uuml;gen der Datei die Folien zu trennen.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Folien, die nicht in beiden Dateien vorkommen, werden nicht in der Liste aufgef&uuml;hrt! Die Nummern werden aber beim weiteren Vorgehen ber&uuml;cksichtigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Welche-Folien-trennen" style="margin:0;width:4.5000in;height:6.8646in;border:none" src="d_welche-folien-trennen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">aktuelle Zeichnung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Liste der in der aktuellen Zeichnung enthaltenen Folien. Gibt es mehr Folien als angezeigt werden k&ouml;nnen, k&ouml;nnen Sie am Scrollbalken die Ansicht in der Tabelle nach unten bzw. nach oben schieben. Das Scrollen mit dem Scrollrad ist ebenfalls m&ouml;glich.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">eingef&uuml;gte Zeichnung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Liste der in der eingef&uuml;gten Zeichnung enthaltenen Folien. </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Aktivierte Folien werden im aktuellen Plan als neue Folien angelegt. Ist eine Folie nicht aktiviert (kein Haken vor der Foliennummer), werden die Zeichenelemente aus dem eingef&uuml;gten Plan in die Folie des aktuellen Plans transformiert. Der Name der vorhandenen Folie bleibt erhalten.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Optionen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Automatische Folien (0-19) nicht trennen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Folien 0 bis 19 sind in jeder Zeichnung vorhanden. Wenn Sie im Wesentlichen nur mit der Folienautomatik gearbeitet haben und zwei Grundrisse &uuml;bereinanderlegen m&ouml;chten, k&ouml;nnen Sie die Elemente der eingef&uuml;gten Zeichnung von denen der aktuellen Zeichnung trennen, wenn der Haken </span><span class="f_Hervorhebung_Text">nicht</span><span class="f_R_Option_Beschreibung"> gesetzt ist. Wenn der Haken gesetzt ist, werden die Folienelemente der Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_R_Option_Beschreibung"> aus der eingef&uuml;gten Zeichnung in die Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_R_Option_Beschreibung"> der aktuellen Zeichnung eingef&uuml;gt usw.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folien mit gleicher Nummer und Namen nicht trennen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Folien mit gleicher Nummer und gleichem Namen werden zusammengef&uuml;hrt. Nach dem Aktivieren dieser Option werden diese Folien nicht mehr in der Liste aufgef&uuml;hrt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">alle Haken an/aus</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schnellaktivierung und Aktivierungsstatus f&uuml;r die unter </span><span class="f__Software_Element_deskriptiv">eingef&uuml;gte Zeichnung</span><span class="f_R_Option_Beschreibung"> aufgef&uuml;hrten Folien.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4271in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Folien deaktiviert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4271in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Folien aktiviert, gilt auch f&uuml;r die Folien, die durch andere Ma&szlig;nahmen nicht in der Liste angezeigt werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4271in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_teilaktiviert" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_teilaktiviert.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mindestens eine Folie ist aktiviert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.3646in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Mehrfachaktivierungsselektion ist durch gedr&uuml;ckte Umschalttaste (Shift) und Anklicken der ersten und letzten Checkbox m&ouml;glich.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leere Folien nicht anlegen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie hier den Haken setzen, werden Folien, die keine Elemente enthalten, nicht angelegt. Das erstreckt sich auch auf Folien, die nicht in der Liste aufgef&uuml;hrt sind. Die leeren Folien der aktuellen Zeichnung bleiben erhalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&uuml;cken in Nummerierung schlie&szlig;en</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, wenn L&uuml;cken in der Nummerierung geschlossen werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folien, die nur in der Quelle (= eingef&uuml;gte Zeichnung) vorhanden sind:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nach Nummern sortieren:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Folien, bei denen ein Haken gesetzt ist, werden getrennt und ab der Foliennummer einsortiert, die unter </span><span class="f__Software_Element_deskriptiv">Neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung"> angegeben ist. </span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Folien, bei denen kein Haken gesetzt ist, werden zusammengef&uuml;hrt. Die Folienelemente der eingef&uuml;gten Zeichnung werden in die Folien der aktuellen Zeichnung mit gleicher Foliennummer &uuml;bertragen.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Folien, die nicht in der Liste aufgef&uuml;hrt werden, werden in die Folien gleicher Nummer der aktuellen Zeichnung einsortiert. F&uuml;r diese Folien gilt die Angabe einer Foliennummer unter </span><span class="f__Software_Element_deskriptiv">Neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung"> nicht.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">hinten anh&auml;ngen:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Im Unterschied zu </span><span class="f__Software_Element_deskriptiv">nach Nummern sortieren:</span><span class="f_R_Option_Beschreibung"> werden Folien, die nicht in der Liste aufgef&uuml;hrt werden, ab der Foliennummer einsortiert, die unter </span><span class="f__Software_Element_deskriptiv">Neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung"> angegeben ist.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="rd_welche-folie-trennen.htm#_folien-trennen_kombinationen" class="topiclink">M&ouml;gliche Kombinationen (Tabelle)</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Die gr&ouml;&szlig;te Foliennummer der aktuellen Zeichnung ist (</span><span class="f_R_Option" style="font-style: italic;">n</span><span class="f_R_Option" style="font-size: 8pt; vertical-align: sub;">max=9899</span><span class="f_R_Option">)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Anzeige hilft Ihnen bei der Festlegung der Startnummer f&uuml;r die neuen Foliennummern. Die h&ouml;chste Foliennummer ist 9899!</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Startnummer darf nicht kleiner sein als die h&ouml;chste Foliennummer der aktuell ge&ouml;ffneten Zeichnung, damit keine bestehenden Folien durch neue Elemente ver&auml;ndert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="abfoliennummer" class="hmanchor"></a><span class="f_R_Option">Neue Folien einf&uuml;gen ab Foliennummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die erste Nummer f&uuml;r die hinzugef&uuml;gten Folien an.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie die angezeigte gr&ouml;&szlig;te Foliennummer. In einer Zeichnung k&ouml;nnen maximal 9899 Folien enthalten sein. Beim Versuch, weitere Folien hinzuzuf&uuml;gen, werden die darin enthaltenen Elemente in die letzte verf&uuml;gbare Folie 9899 &uuml;bertragen. Sie erhalten dann eine entsprechende Meldung. Sie k&ouml;nnen die Aktion mit </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Option_Beschreibung"> ausf&uuml;hren oder mit </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Option_Beschreibung"> abbrechen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Keine leeren Foliengruppen erzeugen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sind in der eingef&uuml;gten Zeichnung Foliengruppen angelegt, werden diese in der aktuellen Zeichnung fortbestehen. Sind leere Foliengruppen vorhanden, k&ouml;nnen sie durch den Haken beim Import ignoriert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;hrt die Aktion aus. Falls die h&ouml;chste Foliennummer (</span><span class="f_R_Option_Beschreibung" style="font-style: italic;">n</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">max </span><span class="f_R_Option_Beschreibung">= 9899) &uuml;berschritten wird, werden Sie durch eine Meldung darauf hingewiesen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Einf&uuml;gen der Zeichnung wird abgebrochen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4063in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Drucken Sie vorher die Folienliste der beiden Pl&auml;ne aus, um ggf. im aktuellen Plan Folien umzunummerieren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><a name="_folien-trennen_kombinationen" class="hmanchor"></a><span class="f_Task_Info">W&auml;hrend der Bearbeitung ist der </span><span class="f__Software_Element_deskriptiv">Folienmanager</span><span class="f_Task_Info"> gesperrt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:2.7500in; height:0.2917in; background-color:#E1E1E1; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">M&ouml;gliche Kombinationen</span></p>
+</td>
+<td style="vertical-align:top; width:0.5417in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 1:</span></p>
+</td>
+<td style="vertical-align:top; width:0.6667in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 2:</span></p>
+</td>
+<td style="vertical-align:top; width:0.5938in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 3:</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.7500in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Tabellenspalte &quot;eingef&uuml;gte Zeichnung&quot;:</span></p>
+</td>
+<td style="vertical-align:top; width:0.5417in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td style="vertical-align:top; width:0.6667in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td style="vertical-align:top; width:0.5938in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.7500in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option &quot;nach Nummern sortieren&quot;:</span></p>
+</td>
+<td style="vertical-align:top; width:0.5417in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td style="vertical-align:top; width:0.6667in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td style="vertical-align:top; width:0.5938in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.7500in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option &quot;hinten anh&auml;ngen&quot;:</span></p>
+</td>
+<td style="vertical-align:top; width:0.5417in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><span class="f_ImageCaption_zentriert">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:0.6667in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td style="vertical-align:top; width:0.5938in; height:0.2917in; padding:0.0417in; border:solid 0.0208in #bfbfbf;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Fall 1</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Folien mit gleicher Nummer werden zusammengef&uuml;hrt. Folien, die nicht in der Liste aufgef&uuml;hrt werden, werden in die Folien der aktuellen Zeichnung einsortiert, und behalten ihre Foliennummer.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4063in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Dieser Fall entspricht der Funktion </span><span class="f__Software_Element_deskriptiv">Folie&nbsp;beibeh</span><span class="f_Hinweis_in_Tabelle">. Die Foliengruppen bleiben erhalten (nicht bei </span><span class="f__Software_Element_deskriptiv">Folie beibeh</span><span class="f_Hinweis_in_Tabelle">). Im Gegensatz zu </span><span class="f__Software_Element_deskriptiv">Folie beibeh</span><span class="f_Hinweis_in_Tabelle"> k&ouml;nnen Sie durch das Aktivieren der Optionen </span><span class="f__Software_Element_deskriptiv">Leere Folien nicht anlegen</span><span class="f_Hinweis_in_Tabelle"> und </span><span class="f__Software_Element_deskriptiv">Keine leeren Foliengruppen erzeugen</span><span class="f_Hinweis_in_Tabelle"> vermeiden, dass nicht gewollte leere Folien bzw. Gruppen entstehen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Fall 1" style="margin:0;width:3.4167in;height:5.1979in;border:none" src="hmfile_hash_e30e5467.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Elemente der Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_L_Listenunterpunkt"> werden in die Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_L_Listenunterpunkt"> transformiert.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Elemente der Folie 1 </span><span class="f__Eigenname">TEXTE</span><span class="f_L_Listenunterpunkt"> werden in die Folie 1 </span><span class="f__Eigenname">TEXTE</span><span class="f_L_Listenunterpunkt"> transformiert usw.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Elemente der Folien 65 </span><span class="f__Eigenname">DBR EG </span><span class="f_L_Listenunterpunkt">und</span><span class="f__Eigenname"> </span><span class="f_L_Listenunterpunkt">67</span><span class="f__Eigenname"> Treppe</span><span class="f_L_Listenunterpunkt"> (nicht in der Liste aufgef&uuml;hrt) werden in die Folien 65 und 67 der aktuellen Zeichnung transformiert. Die Bezeichnung </span><span class="f__Eigenname">DBR EG </span><span class="f_L_Listenunterpunkt">und</span><span class="f__Eigenname"> Treppe</span><span class="f_L_Listenunterpunkt"> wird &uuml;bernommen.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Elemente der Folie 120 </span><span class="f__Eigenname">1OGTragendeWand</span><span class="f_L_Listenunterpunkt"> werden in die Folie 120 </span><span class="f__Eigenname">EGTragendeWand</span><span class="f_L_Listenunterpunkt"> transformiert.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Elemente der Folie 125 </span><span class="f__Eigenname">1OGnichttrWand</span><span class="f_L_Listenunterpunkt"> werden in die Folie 125 </span><span class="f__Eigenname">EGnichttrWand</span><span class="f_L_Listenunterpunkt"> transformiert.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listenunterpunkt">Die Folien 60 </span><span class="f__Eigenname">Gr&uuml;ndung</span><span class="f_L_Listenunterpunkt">, 70 </span><span class="f__Eigenname">St&uuml;tze</span><span class="f_L_Listenunterpunkt">, 75 </span><span class="f__Eigenname">Achsen</span><span class="f_L_Listenunterpunkt"> und 77 </span><span class="f__Eigenname">Blattrand</span><span class="f_L_Listenunterpunkt"> (nicht in der Liste aufgef&uuml;hrt) sind in der aktuellen Zeichnung enthalten.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nach dem Einf&uuml;gen:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Folien-ohne-Haken" style="margin:0;width:3.5521in;height:3.3438in;border:none" src="scr_folien-ohne-haken.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="I_r_flaeche" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_r_flaeche.png"/><span class="f_R_Tabellenzeile">: Eingef&uuml;gte Folien bzw. transformierte Folienelemente.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="I_b_flaeche" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_b_flaeche.png"/><span class="f_R_Tabellenzeile">: In der aktuellen Zeichnung enthaltene Folien, die nicht in der Liste aufgef&uuml;hrt wurden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Fall 2 (nach Nummern einsortieren)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die mit einem Haken versehenen Folien werden getrennt. Die Nummerierung erfolgt aufgrund der Angabe der Startnummer unter </span><span class="f__Software_Element_deskriptiv">neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Fall 2" style="margin:0;width:3.4167in;height:5.1979in;border:none" src="hmfile_hash_b9b995ad.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Folien, die nicht in der Liste aufgef&uuml;hrt werden, werden in die Folien gleicher Nummer der aktuellen Zeichnung transformiert. F&uuml;r diese Folien gilt die Angabe einer Foliennummer unter </span><span class="f__Software_Element_deskriptiv">neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung"> nicht.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Jede mit einem Haken versehene Folie beh&auml;lt nach dem Einf&uuml;gen den zahlenm&auml;&szlig;igen Abstand zu der vorherigen Folie bei:</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Abstand zwischen der Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_L_Listenunterpunkt"> und Folie 8 </span><span class="f__Eigenname">SCHNPF</span><span class="f_L_Listenunterpunkt"> = 8 entspricht der neuen Nummerierung (126 &#8594; 134).</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Abstand zwischen der Folie 8 </span><span class="f__Eigenname">SCHNPF</span><span class="f_L_Listenunterpunkt"> und Folie 120 </span><span class="f__Eigenname">10TragendeWand</span><span class="f_L_Listenunterpunkt"> = 112 entspricht der neuen Nummerierung (134 &#8594; 246) usw.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nach dem Einf&uuml;gen:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Folien-einsortieren" style="margin:0;width:3.5521in;height:3.3438in;border:none" src="scr_folien-einsortieren.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="I_r_flaeche" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_r_flaeche.png"/><span class="f_R_Tabellenzeile">: Die nicht in der Liste aufgef&uuml;hrten Folien 65 und 67 aus der eingef&uuml;gten Zeichnung werden einsortiert. Die mit einem Haken versehenen Folien werden getrennt und ab der Foliennummer einsortiert, die unter [</span><span class="f__Software_Element_deskriptiv">neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Tabellenzeile">] angegeben ist (im Beispiel = 126).</span></p>
+<p class="p_R_Tabellenzeile"><img alt="I_b_flaeche" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_b_flaeche.png"/><span class="f_R_Tabellenzeile">: In der aktuellen Zeichnung enthaltene Folien.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie bei </span><span class="f__Software_Element_deskriptiv">L&uuml;cke in Nummerierung schlie&szlig;en</span><span class="f_R_Option_Beschreibung"> einen Haken setzen und als Startnummer z. B. 600 w&auml;hlen, erhalten die mit einem Haken versehenen Folien 600er Nummern, und werden fortlaufend nummeriert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nach dem Einf&uuml;gen:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Folien-einsortieren_luecke_schliessen" style="margin:0;width:3.5625in;height:3.3438in;border:none" src="scr_folien-einsortieren_luecke_schliessen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Fall 3 (hinten anh&auml;ngen)</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Die mit einem Haken versehenen Folien werden getrennt und mit neuer Foliennummer in die aktuelle Zeichnung &uuml;bernommen. Die neu hinzukommenden, auch nicht aufgef&uuml;hrten Folien werden ab der Foliennummer einsortiert, die unter </span><span class="f__Software_Element_deskriptiv">neue Folien einf&uuml;gen ab Foliennummer</span><span class="f_R_Option_Beschreibung"> angegeben ist (im Beispiel: 126).</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Jede eingef&uuml;gte Folie beh&auml;lt nach dem Einf&uuml;gen den zahlenm&auml;&szlig;igen Abstand zu der vorherigen Folie bei:</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Abstand zwischen der Folie 0 </span><span class="f__Eigenname">GEOMETRIE</span><span class="f_L_Listenunterpunkt"> und Folie 8 </span><span class="f__Eigenname">SCHNPF</span><span class="f_L_Listenunterpunkt"> = 8 entspricht der neuen Nummerierung (126 &#8594; 134).</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Abstand zwischen der Folie 8 </span><span class="f__Eigenname">SCHNPF</span><span class="f_L_Listenunterpunkt"> und Folie 65 </span><span class="f__Eigenname">DBR EG</span><span class="f_L_Listenunterpunkt"> (nicht in der Liste aufgef&uuml;hrt) = 57 entspricht der neuen Nummerierung (134 &#8594; 191) usw.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.7396in;"><p class="p_R_Tabellenzeile"><img alt="SCR_Fall 3" style="margin:0;width:3.4167in;height:5.1979in;border:none" src="hmfile_hash_4e909d27.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:14.4167in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nach dem Einf&uuml;gen:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Folien-ab-Nummer" style="margin:0;width:3.5625in;height:3.3438in;border:none" src="scr_folien-ab-nummer.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="dat_datei_einfuegen.htm" class="topiclink" title="Einfügen einer Zeichnung">Einf&uuml;gen einer Zeichnung</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

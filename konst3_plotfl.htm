@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Plotfläche - [Plotfl]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Blattgröße,Konstruktion 3,Konstruktion 3 Funktionen,Plotfläche,Plotfläche einstellen,Plotflächenbegrenzung" />
+   <meta name="description" content="Einstellen der Plotfläche. Öffnet den Dialog Plotfläche." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_konstruktion-3.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_konstruktion-3.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst3_planbe.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Plotfl&auml;cheneinstellungen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <img alt="B-akt_PlotFl" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_plotfl.png"/> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Einstellen der Plotfl&auml;che. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Plotfl&auml;che</span><span class="f_R_Dialog_Info">.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Vorbemerkungen:</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Voreinstellungen f&uuml;r die Plotfl&auml;che k&ouml;nnen im Dialog </span><span class="f__Software_Element_deskriptiv">Systemdaten</span><span class="f_L_Listeneintrag"> vorgenommen werden. <a href="rd_systemdaten_plottflaeche.htm" class="topiclink">&raquo; Systemdaten – Plotfl&auml;che</a>.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen Elemente, die au&szlig;erhalb der Plotfl&auml;che liegen, mit der Funktion [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Fen&Auml;nd</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">l&ouml;auPl</span><span class="f_L_Listeneintrag">] l&ouml;schen. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die aktuell eingestellte Plotfl&auml;che wird in der Statusleiste angezeigt:</span><br>
+<img alt="ML_Statusleiste_markiert" style="margin:0;width:6.7917in;height:0.1771in;border:none" src="ml_statusleiste_markiert.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Plotfl&auml;che&quot;</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Registerkarte: Feste Blattgr&ouml;&szlig;e</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auf dieser Registerkarte k&ouml;nnen Sie ein individuelles Blattformat f&uuml;r die Plotfl&auml;che einstellen oder ein DIN- oder selbstdefiniertes Format w&auml;hlen. Sie k&ouml;nnen bestimmen, in welche Richtung die Gr&ouml;&szlig;en&auml;nderung der Plotfl&auml;che erfolgen soll, damit beispielsweise der Plankopf seine Position nach der &Auml;nderung beh&auml;lt.</span></p>
+<p class="p_ImageCaption"><img alt="D_Plotflaeche" style="margin:0;width:4.6563in;height:4.0417in;border:none" src="d_plotflaeche.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattl&auml;nge (1/10mm); Blatth&ouml;he (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die Gr&ouml;&szlig;e zu &auml;ndern, tragen Sie die Werte unter Blattl&auml;nge und Blatth&ouml;he in 1/10mm in die Eingabefelder ein oder klicken eine der Blattgr&ouml;&szlig;en in der Auswahlliste an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fixpunkt der Plotfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie einen Fixpunkt auf der Plotfl&auml;che, von dem aus die Plotfl&auml;che vergr&ouml;&szlig;ert bzw. zu dem sie verkleinert werden soll.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:5.0104in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Plotfl_fix-unten-rechts" style="margin:0;width:4.9479in;height:3.5313in;border:none" src="scr_plotfl_fix-unten-rechts.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.4063in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Fixpunkt unten rechts </span><img alt="I_PlotFl_rechts-unten" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_rechts-unten.png"/><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Plotfl&auml;che wird nach oben links von DIN A2 quer zu DIN A1 quer vergr&ouml;&szlig;ert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Da der Haken bei </span><span class="f__Software_Element_deskriptiv">Blattrand automatisch anpassen</span><span class="f_R_Tabellenzeile"> gesetzt ist, wird auch dieser an das neue Blattformat angepasst.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Benutzerdefinierte Gr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Konfiguration von bis zu zehn beliebigen Blattformaten, z. B. f&uuml;r b</span><span class="f_R_Dialog_Info">&uuml;rospezifische Blattformate, verschiedene Normformate, &Uuml;bergr&ouml;&szlig;en oder Standardgr&ouml;&szlig;en, die um den doppelten Schneiderand vergr&ouml;&szlig;ert sind</span><span class="f_R_Option_Beschreibung">. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Benutzerdefinierte Plotfl&auml;che</span><span class="f_R_Option_Beschreibung">. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Benutzerdefinierte_Plotfl" style="margin:0;width:3.5729in;height:2.8750in;border:none" src="d_benutzerdefinierte_plotfl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Registerkarte: Mindestgr&ouml;&szlig;e</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auf dieser Registerkarte stehen Ihnen M&ouml;glichkeiten einer automatischen Anpassung der n&ouml;tigen Plotfl&auml;che an die vorhandenen Elemente zur Verf&uuml;gung. Die Plotfl&auml;che wird auf das notwendige Ma&szlig; vergr&ouml;&szlig;ert oder verkleinert. Es werden alle Elemente ber&uuml;cksichtigt, die in eingeschalteten Folien gezeichnet sind. Die Zeichnung wird sofort auf die maximale Bildschirmgr&ouml;&szlig;e angepasst.</span></p>
+<p class="p_ImageCaption"><img alt="D_Plotflaeche_Mindestgroesse" style="margin:0;width:4.6563in;height:4.0417in;border:none" src="d_plotflaeche_mindestgroesse.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattl&auml;nge (1/10mm); Blatth&ouml;he (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Angaben dienen nur zur Information und k&ouml;nnen nicht editiert werden. Die Angaben werden je nach gew&auml;hlter Einstellung, wie </span><span class="f__Software_Element_deskriptiv">mit Ma&szlig;stabsbereichen</span><span class="f_R_Option_Beschreibung"> oder ohne, oder </span><span class="f__Software_Element_deskriptiv">DIN Ma&szlig;e einhalten</span><span class="f_R_Option_Beschreibung"> oder nicht, aktualisiert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Option </span><span class="f__Software_Element_deskriptiv">DIN Ma&szlig;e einhalten</span><span class="f_R_Option_Beschreibung"> aktiviert ist, wird neben der Blattl&auml;nge das resultierende Blattformat angegeben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lage der Elemente in der Plotfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verf&uuml;gbar, wenn </span><span class="f__Software_Element_deskriptiv">DIN Ma&szlig;e einhalten</span><span class="f_R_Option_Beschreibung"> aktiviert ist. Bestimmen Sie, wo die Zeichnung innerhalb der Plotfl&auml;che nach dem Vergr&ouml;&szlig;ern oder Verkleinern liegen soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.1771in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Lage links oben:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Plotfl_oben-links" style="margin:0;width:3.1250in;height:2.2292in;border:none" src="scr_plotfl_oben-links.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Lage mittig:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Plotfl_mittig" style="margin:0;width:3.1250in;height:2.2292in;border:none" src="scr_plotfl_mittig.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:4.1771in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">W&auml;hlen Sie die Lage links oben <img alt="I_PlotFl_links-oben" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_links-oben.png"/> , dann wird die Zeichnung in der linken oberen Ecke der neuen Plotfl&auml;che platziert.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:4.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie die Lage mittig <img alt="I_PlotFl_mittig" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_mittig.png"/> w&auml;hlen, wird der Mittelpunkt aller Elemente (mit oder ohne Hilfspunkte, Ma&szlig;stabsbereiche) in die Mitte der Plotfl&auml;che gelegt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Randabstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Abstand in Zentimetern ein. Dieser Streifen wird um die ganze Zeichnung gelegt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei </span><span class="f__Software_Element_deskriptiv">DIN Ma&szlig;e einhalten</span><span class="f_R_Option_Beschreibung"> bezieht sich der Randabstand auf die gew&auml;hlte Lage der Zeichnung in der Plotfl&auml;che, zum Beispiel:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><img alt="I_PlotFl_links-unten" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_links-unten.png"/><span class="f_R_Option_Beschreibung"> Lage links unten = Randabstand zum linken und unteren Rand der Plotfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><img alt="I_PlotFl_links-mittig" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_links-mittig.png"/><span class="f_R_Option_Beschreibung"> Lage links mittig = Randabstand zum linken Rand der Plotfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><img alt="I_PlotFl_links-oben" style="margin:0;width:0.2396in;height:0.2188in;border:none" src="i_plotfl_links-oben.png"/><span class="f_R_Option_Beschreibung"> Lage links oben = Randabstand zum linken und oberen Rand der Plotfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">usw.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit Hilfspunkten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, wenn Hilfspunkte ber&uuml;cksichtigt werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit Ma&szlig;stabsbereichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, damit die Ma&szlig;stabsbereiche vollst&auml;ndig in der Plotfl&auml;che liegen. Wenn kein Haken gesetzt wird, werden bei der Anpassung der Plotfl&auml;che nur die enthaltenen Elemente ber&uuml;cksichtigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">DIN Ma&szlig;e einhalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn der Haken gesetzt ist, wird die Plotfl&auml;che, falls m&ouml;glich, auf das n&auml;chst gr&ouml;&szlig;ere oder kleinere DIN Ma&szlig; ver&auml;ndert. Wenn kein Haken gesetzt wird, werden bei der Anpassung der Plotfl&auml;che nur die enthaltenen Elemente ber&uuml;cksichtigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ausrichtung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie, welche DIN-Formate eingehalten werden sollen:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Automatisch: Es werden Quer- und Hochformate ber&uuml;cksichtigt</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Querformat: nur Querformate werden ber&uuml;cksichtigt</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Hochformat: nur Hochformate werden ber&uuml;cksichtigt</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattrand automatisch anpassen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie hier einen Haken, damit ein mit [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Blattr</span><span class="f_R_Option_Beschreibung">] erstellter Blattrand bei einer Plotfl&auml;chen&auml;nderung mit angepasst wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_OK" style="margin:0;width:0.7708in;height:0.2396in;border:none" src="b_ok.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die Gr&ouml;&szlig;en&auml;nderung und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verwirft alle &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

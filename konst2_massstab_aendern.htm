@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Maßstabskorrektur - [MaßKor]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Konstruktion 2,Konstruktion 2 Funktionen,Maßstab,Maßstab korrigieren,Maßstabskorrektur,Maßstabskorrektur *Funktionen und Optionen" />
+   <meta name="description" content="Mit dieser Funktion ändern Sie den Maßstab einzelner oder mehrerer Zeichenelemente. Informationen zu den in der Zeichnung verwendeten Maßstäben und den zugehörigen Elementen e" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="koorvm_darstellung_konfigurieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_konstruktion-2.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_info_(massstab).htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Ma&szlig;stabskorrektur </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_ImageCaption"> <img alt="B-akt_Masskor" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_masskor.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Mit dieser Funktion &auml;ndern Sie den Ma&szlig;stab einzelner oder mehrerer Zeichenelemente. Informationen zu den in der Zeichnung verwendeten Ma&szlig;st&auml;ben und den zugeh&ouml;rigen Elementen erhalten Sie &uuml;ber die Schaltfl&auml;che <a href="rm_info_(massstab).htm" class="topiclink" title="Anzeigen der in der Zeichnung vorhandenen Maßstäbe">Info</a> im Funktionsbereich.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Vorbemerkungen</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wird der Ma&szlig;stab eines Elements ge&auml;ndert, muss der betroffene Ma&szlig;stabsbereich neu definiert werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Liegen nicht alle Punkte einer Ma&szlig;kette im Rahmen, erscheint ein Warnfenster.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">DXF-Dateien k&ouml;nnen nur in einen Ma&szlig;stab umgewandelt werden. Die Linien behalten ihre alten L&auml;ngen, so dass Linien in Schnitten durch eine falsche Ma&szlig;stabszugeh&ouml;rigkeit falsch gemessen werden. Um diesen Linien den gew&uuml;nschten Ma&szlig;stab zuzuweisen, zeichnen Sie zun&auml;chst eine Linie im gew&uuml;nschten Ma&szlig;stab. W&auml;hlen Sie die Linie und die zu korrigierenden Elemente aus und geben Sie f&uuml;r den alten und neuen Ma&szlig;stab den neuen Wert ein.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sind f&uuml;r die Ma&szlig;stabs&auml;nderung ben&ouml;tigte Folien ausgeblendet, erscheint ein Hinweis. Schalten Sie sie bei Bedarf im </span><span class="f__Software_Element_deskriptiv">Folienmanager</span><span class="f_L_Listeneintrag"> ein. <a href="folienmanager.htm" class="topiclink">&raquo; Folienmanager</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="mstbandern" class="hmanchor"></a><span class="f_ToDo">Ma&szlig;stab ausgew&auml;hlter Elemente &auml;ndern</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen f&uuml;r die Ma&szlig;stabs&auml;nderung zun&auml;chst beliebige Elemente ausw&auml;hlen. Haben diese unterschiedliche Ma&szlig;st&auml;be, m&uuml;ssen Sie die Auswahl auf einen der vorhandenen Ausgangsma&szlig;st&auml;be beschr&auml;nken und die Aktion f&uuml;r die verbliebenen Elemente wiederholen.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Elemente w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die Zeichenelemente oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Elemente werden markiert.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen beliebig viele Rahmen aufziehen. Um Elemente wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung"> und ziehen Sie einen Rahmen um die entsprechende Teilzeichnung. Wechseln Sie nach dem Abw&auml;hlen wieder zur&uuml;ck zur Funktion </span><span class="f__Software_Element_deskriptiv">Hinzuf</span><span class="f_Step_Anmerkung">, um ggf. weitere Elemente hinzuzuf&uuml;gen. Wenn Sie einzelne Elemente abw&auml;hlen m&ouml;chten, halten Sie die </span><span class="f__Tastatur">Umschalt</span><span class="f_Step_Anmerkung">-Taste (Shift) gedr&uuml;ckt und klicken die Elemente nacheinander an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">&Uuml;ber die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Info</span><span class="f_Step_Anmerkung"> im Funktionsbereich k&ouml;nnen Sie sich jederzeit den Ma&szlig;stab der markierten Elemente anzeigen lassen. (Siehe: <a href="rm_info_(massstab).htm" class="topiclink" title="Anzeigen der in der Zeichnung vorhandenen Maßstäbe">Ma&szlig;stabsinfo (Dialog)</a>)</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn die selektierten Elemente alle denselben Ma&szlig;stab haben, k&ouml;nnen Sie sofort den gew&uuml;nschten Ma&szlig;stab eingeben. [Neuer Ma&szlig;stab].</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Unterschiedliche Ma&szlig;st&auml;be in der Auswahl</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Sind Elemente mit unterschiedlichen Ma&szlig;st&auml;ben in der Auswahl enthalten, werden Sie in einer Meldung darauf hingewiesen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="M_Masskor" style="margin:0;width:4.6563in;height:2.9792in;border:none" src="m_masskor.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Um fortzufahren, best&auml;tigen Sie die Meldung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. Anschlie&szlig;end k&ouml;nnen Sie den Ma&szlig;stab w&auml;hlen, der ge&auml;ndert wendet soll.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Um die Ma&szlig;st&auml;be der ausgew&auml;hlten Zeichenelemente zu pr&uuml;fen, klicken Sie in der Meldung auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Info</span><span class="f_Step_Anmerkung">. &Ouml;ffnet den Dialog <a href="rm_info_(massstab).htm" class="topiclink" title="Anzeigen der in der Zeichnung vorhandenen Maßstäbe">Ma&szlig;stabsinfo</a>. Wenn Sie die Ma&szlig;st&auml;be gepr&uuml;ft haben, k&ouml;nnen Sie im n&auml;chsten Schritt den Ma&szlig;stab w&auml;hlen, der ge&auml;ndert soll. Schlie&szlig;en Sie den Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. Best&auml;tigen Sie den Hinweis mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter der Abfrage [</span><span class="f__Abfrage">Alter Ma&szlig;stab</span><span class="f_Step">] den Ma&szlig;stab, in dem die Hauptzeichnung erstellt ist, und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Auml;nderungen an den anderen, in der Auswahl angezeigten Ma&szlig;st&auml;ben m&uuml;ssen mit einem weiteren Durchlauf bearbeitet werden.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Neuen Ma&szlig;stab w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter [</span><span class="f__Abfrage">Neuer Ma&szlig;stab</span><span class="f_Step">] eine Angabe oder geben Sie den gew&uuml;nschten Ma&szlig;stab ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den Modus:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Aendern-lang" style="margin:0;width:1.2396in;height:0.2396in;border:none" src="b_aendern-lang.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeichnet die gew&auml;hlten Elemente entsprechend dem neuen Ma&szlig;stab.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Beibehalten" style="margin:0;width:1.2396in;height:0.2396in;border:none" src="b_beibehalten.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Elementgr&ouml;&szlig;e wird beibehalten, der Ma&szlig;stab wird ge&auml;ndert. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hervorhebung_Text">Achtung</span><span class="f_R_Tabellenzeile">: Die Darstellung entspricht gegebenenfalls nicht mehr dem tats&auml;chlichen Ma&szlig;stab, dieser sollte dann in der Zeichnung angegeben werden. Verwenden Sie diese Option z.&nbsp;B., um nach dem Import einer DXF- oder PDF-Datei bestimmten Elementen den der Gr&ouml;&szlig;e entsprechenden Ma&szlig;stab zuzuweisen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie mit den Optionen im Funktionsbereich, wie Zeichenelemente angepasst werden sollen (nur im Modus </span><span class="f__Software_Element_deskriptiv">&auml;ndern </span><span class="f_Step">verf&uuml;gbar):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_o-Text" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_o-text.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Textelemente werden nicht ge&auml;ndert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_m-Text" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_m-text.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Textelemente werden dem Ma&szlig;stab entsprechend angepasst.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_o-Schr" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_o-schr.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Schraffur wird anhand der urspr&uuml;nglichen Einstellungen neu generiert. Der Schraffurfaktor bleibt erhalten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_m-Schr" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_m-schr.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Schraffurfaktor wird dem Ma&szlig;stab entsprechend neu berechnet. Beispielsweise wird aus dem Schraffurfaktor = 0,5 im Ma&szlig;stab 1 : 100 bei der &Auml;nderung in den Ma&szlig;stab 1 : 50 der neue Faktor = 1.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_o-Massk" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_o-massk.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Ma&szlig;kette wird anhand der urspr&uuml;nglichen ID-Einstellungen neu generiert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_m-Massk" style="margin:0;width:1.0938in;height:0.2396in;border:none" src="b_m-massk.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Ma&szlig;kettenlinien werden dem Ma&szlig;stab entsprechend angepasst. Ob auch Ma&szlig;zahlen angepasst werden, h&auml;ngt von der Einstellung </span><span class="f__Software_Element_deskriptiv">o.Text</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">m.Text</span><span class="f_R_Tabellenzeile"> ab.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie den neuen Ma&szlig;stab und die Gr&ouml;&szlig;enanpassung durch Rechtsklick oder mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die gew&auml;hlten Elemente h&auml;ngen mit der gew&uuml;nschten Gr&ouml;&szlig;enanpassung am Cursor. Die &Auml;nderungen an Schraffuren und Ma&szlig;ketten, die mit </span><span class="f__Software_Element_deskriptiv">o.Schr</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">o.Ma&szlig;k</span><span class="f_Step_Anmerkung"> generiert werden, sind erst nach dem Absetzen sichtbar.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Elemente absetzen </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die urspr&uuml;ngliche Position (alte Lage) mit der Eingabetaste oder mit Rechtsklick oder setzen Sie den Rahmen per Mausklick an der gew&uuml;nschten Stelle ab. [</span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die Elemente mit angepasster Gr&ouml;&szlig;e an der urspr&uuml;nglichen Stelle absetzen, wird die linke untere Ecke der Elementgruppe als Referenzpunkt verwendet. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort weitere Ma&szlig;st&auml;be &auml;ndern.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="massstab_einstellen.htm" class="topiclink" title="Einstellen des Maßstabs und Definition von Maßstabsbereichen.">Ma&szlig;stabseinstellungen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

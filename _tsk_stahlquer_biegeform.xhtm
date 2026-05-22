@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>_TSK_Stahlquer_Biegeform</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Eisen-Abstand bzw. Anzahl der Eisen können automatisch anhand des erforderlichen Stahlquerschnittes (erf.as(cm²/m bzw. erf.As(cm²)) und des gewählten Stahldurchmessers..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__TSK_Stahlquer_Biegeform"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     &raquo;Keine übergeordneten Inhalte gefunden&laquo;
+     </p>
+
+     <div id="headernav">
+     <img class="nav" src="btn_prev_d.png" 
+        ><a href="rm_support.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><img class="nav" src="btn_next_d.png">
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlquerschnitt ermitteln </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Eisen-Abstand bzw. Anzahl der Eisen k&ouml;nnen automatisch anhand des erforderlichen Stahlquerschnittes </span><span class="f_R_Tabellenzeile">(</span><span class="f__Abfrage">erf.as(cm&sup2;/m </span><span class="f_R_Tabellenzeile">bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) </span><span class="f_ToDo_Info">und des gew&auml;hlten Stahldurchmessers ermittelt werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.5208in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Bei der Formstahlverlegung wird nach Eingabe der Verlegebereichsl&auml;nge der wahre Abstand zwischen den Eisen ermittelt. Wird dabei der zul&auml;ssige Mindestabstand unterschritten, werden Sie durch eine Meldung darauf hingewiesen. Erg&auml;nzende Hinweise unterst&uuml;tzen Sie bei der Probleml&ouml;sung. Wenn Sie die Meldung ignorieren, k&ouml;nnen Sie auch mit den gew&auml;hlten Einstellungen weiterarbeiten. </span><br>
+<span class="f_Hinweis_in_Tabelle">Um nicht fachgerechte Verlegungen zu vermeiden, empfehlen wir dringend, die Hinweise in der Meldung zu ber&uuml;cksichtigen. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte Berechnungsart (Schaltfl&auml;chen unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step">):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Abstand" style="margin:0 auto 0 auto;width:0.9792in;height:0.2292in;border:none" src="b_abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch den Eisen-Abstand f&uuml;r den pro Meter erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.as(cm&sup2;/m</span><span class="f_R_Tabellenzeile">). Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe des erforderlichen Stahlquerschnittes ist optional. Wird kein Wert oder 0 angegeben, muss der Abstand der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;</span><span class="f_R_Tabellenzeile">)] den gew&uuml;nschten Wert hat. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Anzahl" style="margin:0 auto 0 auto;width:0.9896in;height:0.2292in;border:none" src="b_anzahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch die f&uuml;r den erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) ben&ouml;tigte Mindestanzahl der Eisen. Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe von </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile"> ist optional. Wird kein Wert oder 0 angegeben, muss die Anzahl der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">] den gew&uuml;nschten Wert hat.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der Positionierung wird auch der nominelle Abstand angeschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_sowie_bew" style="margin:0 auto 0 auto;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Durchmessers, Abstands bzw. der Anzahl aus einer vorhandenen Verlegung. [</span><span class="f__Abfrage">So wie welche Verlegung?</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Je nach Berechnungsart wird </span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Anzahl</span><span class="f_R_Tabellenzeile"> aktiviert. Die Abfrage wechselt zu [</span><span class="f__Abfrage">KOR?</span><span class="f_R_Tabellenzeile">] (s. weiter unten).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den erforderlichen Stahlquerschnitt ein und best&auml;tigen Sie die Angabe [</span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&oslash;</span><span class="f_Step"> per Mausklick den Stahldurchmesser.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn der erforderliche Stahlquerschnitt eingegeben wurde, berechnet ISBCAD automatisch den bestm&ouml;glichen Wert f&uuml;r den Abstand bzw. die Eisenzahl und schl&auml;gt diesen unter </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung">) vor. Der resultierende Stahlquerschnitt wird unter </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Weicht der an dieser Stelle angegebene Durchmesser von dem unter Schritt 1 ab, k&ouml;nnen die Hakenl&auml;ngen der Biegeform nach dem Best&auml;tigen des Verlegefaktors an den neuen Durchmesser angepasst werden. Sie erhalten in diesem Fall eine Meldung.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn der resultierende Stahlquerschnitt</span><span class="f_Step_Anmerkung"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step"> gr&ouml;&szlig;er/gleich dem erforderlichen Stahlquerschnitt </span><span class="f__Abfrage">erf.As(cm&sup2;/m) </span><span class="f_Step">ist, k&ouml;nnen Sie den Wert f&uuml;r </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> </span><span class="f_Step">best&auml;tigen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie einen anderen Wert angeben (und best&auml;tigen) und den resultierenden Stahlquerschnitt </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> pr&uuml;fen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Pr&uuml;fen Sie, ob das Resultat Ihren Anforderungen entspricht. </span><br>
+<span class="f_Step">Wollen Sie die Angaben &auml;ndern.</span><span class="f_ImageCaption"> </span><span class="f_Step">[</span><span class="f__Abfrage">KOR</span><span class="f_Step">]?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Ja_Klein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Korrigieren Sie Ihre Angaben beginnend mit </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_R_Tabellenzeile"> (erforderlicher Stahlquerschnitt) oder verwenden Sie <img alt="B_--Bst" style="margin:0;width:0.6354in;height:0.1979in;border:none" src="b_--bst.png"/> (untere Men&uuml;leiste).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B-akt_Nein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der resultierende Stahlquerschnitt wird beibehalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

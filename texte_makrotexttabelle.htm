@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Makrotext definieren und bearbeiten (Makrotext-Editor)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".ISBMAKRO,Makrotext,Makrotext bearbeiten,Makrotext definieren,Makrotext Makrotext-Editor,MkrEdt,MkrTbl,Texte,Texte ändern" />
+   <meta name="description" content="Sie können Makrotexte definieren, bearbeiten und löschen. Es ist möglich, beliebig viele Makrotexte zu definieren und in der Zeichnung zu verwenden. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_texte.htm">Texte</a> &gt; <a href="con_makrotexte.htm">Verwenden von Makrotexten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="texte_makrotexte_erzeugen__aendern_u.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_makrotexte.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_makrotexte-einfuegen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Makrotext definieren und bearbeiten (Makrotext-Editor)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_texte.htm" class="topiclink" title="Textfunktionen (Übersicht)"><img alt="Textfunktionen (Übersicht)" title="Textfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_texte.png"/></a> <img alt="B-akt_MkrTbl_Texte" style="margin:0;width:1.1563in;height:0.2500in;border:none" src="b-akt_mkrtbl_texte.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_A_Allgemein">Sie k&ouml;nnen Makrotexte definieren, bearbeiten und l&ouml;schen. Es ist m&ouml;glich, beliebig viele Makrotexte zu definieren und in der Zeichnung zu verwenden. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Makrotexte werden zusammen mit der Zeichnung gespeichert und stehen ausschlie&szlig;lich in der Zeichnung zur Verf&uuml;gung, in der sie definiert wurden. Ein Austausch zwischen Zeichnungen ist &uuml;ber die Export- und Importfunktion im Dialog m&ouml;glich. Dar&uuml;ber hinaus k&ouml;nnen Makrotexte aus Microsoft Excel importiert bzw. nach Excel exportiert werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Dynamische Makrotexte werden automatisch aus der aktuellen Zeichnung generiert. Sie k&ouml;nnen weder bearbeitet noch gel&ouml;scht werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die in der Tabelle markierten Makrotexte werden in der Zeichnung in der definierten Markierungsfarbe hervorgehoben; s. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Makrotexte</span><span class="f_L_Listeneintrag">]. Eine Mehrfachauswahl ist per </span><span class="f__Tastatur">Strg- </span><span class="f_L_Listeneintrag">oder</span><span class="f__Tastatur"> Umschalttaste (Shift) </span><span class="f_L_Listeneintrag">m&ouml;glich. Zus&auml;tzlich kann ein Makrotext direkt in der Zeichnung angeklickt werden, um ihn in der Tabelle zu markieren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Makrotext-Editor" style="margin:0;width:6.3750in;height:5.3854in;border:none" src="d_makrotext-editor.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Makrotext definieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Spalte </span><span class="f__Software_Element_deskriptiv">Makro</span><span class="f_Step"> in eine leere Tabellenzelle. Nutzen Sie ggf. den Scrollbalken am rechten Dialogrand, um an das Tabellenende zu scrollen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Bezeichnung f&uuml;r den Makrotext ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Dieses Spezialzeichen ist nicht erlaubt: &quot;</span><span class="f_Hervorhebung_Text">$</span><span class="f_Step_Anmerkung">&quot;. Leerzeichen k&ouml;nnen verwendet werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie mit der Tab-Taste in die benachbarte Zelle in der Spalte </span><span class="f__Software_Element_deskriptiv">Inhalt</span><span class="f_Step"> oder klicken Sie die Zelle mit der Maus an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Textinhalt ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Textinhalt auch zu einem sp&auml;teren Zeitpunkt angeben und zun&auml;chst leer lassen, oder Sie k&ouml;nnen einen Platzhaltertext einf&uuml;gen. Wird der Textinhalt nicht angegeben, kann der Makrotext trotzdem in der Zeichnung eingef&uuml;gt werden. Der Makrotext ist dann an der eingef&uuml;gten Stelle nicht sichtbar, wird aber durch eine Unterstreichung gekennzeichnet, wenn Sie sich in einer Funktion befinden, mit der Texte bearbeitet werden k&ouml;nnen. Sie k&ouml;nnen die Darstellung in den Systemdaten anpassen, s. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Makrotexte</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink">Sonderzeichen</a> einzuf&uuml;gen, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Sonderzeichen</span><span class="f_Step">. Bearbeiten Sie den Text im Dialog und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Definieren Sie ggf. weitere Makrotexte.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Definitionen zu &uuml;bernehmen, schlie&szlig;en Sie den Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Makrotext bearbeiten</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sowohl die Bezeichnung der Makrotexte als auch die Textinhalte k&ouml;nnen ge&auml;ndert werden. In der Zeichnung und in Dialogfeldern werden die Texte automatisch aktualisiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Spalte </span><span class="f__Software_Element_deskriptiv">Makro</span><span class="f_Step"> oder </span><span class="f__Software_Element_deskriptiv">Inhalt</span><span class="f_Step"> einen Text an und tippen Sie den neuen Text ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit einem Doppelklick wird der Text markiert, und Sie k&ouml;nnen ihn &uuml;ber das </span><span class="f__Software_Element_deskriptiv">Kontextmen&uuml;</span><span class="f_Step_Anmerkung"> (Rechtsklick auf den markierten Eintrag) zum Beispiel kopieren oder ausschneiden, und an anderer Stelle einf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Eingabe mit der Eingabetaste oder wechseln Sie mit der Tab-Taste in die n&auml;chste Tabellenzelle.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makro-aendern" style="margin:0;width:8.2188in;height:4.4167in;border:none" src="scr_makro-aendern.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Makrotexte verschieben</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Im Makrotext-Editor entspricht die Anordnung der benutzerdefinierten Makrotexte der Reihenfolge, in der sie in den Auswahllisten angezeigt werden, z. B. in [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">zeichn</span><span class="f_Task_Info">]. Sie k&ouml;nnen die Anordnung &auml;ndern, indem Sie die Makrotexte sortieren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie eine einzelne oder mehrere Tabellenzeilen an eine neue Position:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelne Tabellenzeile</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Halten Sie auf einer Tabellenzelle die linke Maustaste gedr&uuml;ckt, und ziehen Sie den Inhalt nach oben oder unten. </span><span class="f_SA_Tabelle">Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeile verschoben wird.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Lassen Sie die Maustaste an der Position los, an die der Inhalt verschoben werden soll.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrere Tabellenzeilen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Tabellenzeilen im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Tabellenzeilen auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt, und w&auml;hlen Sie die Makrotexte nacheinander aus. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um die Tabellenzeilen zu verschieben:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Klicken Sie eine markierte Zelle an und halten Sie die linke Maustaste gedr&uuml;ckt. Ziehen Sie die Inhalte nach oben oder unten. Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeilen verschoben werden. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die Maustaste an der Position los, an die die Inhalte verschoben werden sollen.</span><br>
+<span class="f_R_Tabellenzeile">Die Tabellenzeilen werden hintereinander abgesetzt.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro-loeschen" class="hmanchor"></a><span class="f_Task">Makrotext l&ouml;schen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Durch das L&ouml;schen wird der Makrotext (Makro und Inhalt) aus dem Editor entfernt. An allen Stellen, an denen der Makrotext verwendet wurde, bleibt der zugewiesene Textinhalt als normaler Text stehen. Das L&ouml;schen dynamischer Makrotexte ist nicht m&ouml;glich.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den oder die zu l&ouml;schenden Makrotexte aus, indem Sie die gesamte Tabellenzeile markieren:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Makrotext an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrfachauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Makrotexte im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zeile an. Klicken Sie anschlie&szlig;end die zweite Zeile an, um den Tabellenbereich zwischen den angeklickten Zeilen auszuw&auml;hlen.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Makrotexte auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt und w&auml;hlen Sie die Makrotexte aus.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unter der Tabelle mit den benutzerdefinierten Makrotexten auf </span><span class="f__Software_Element_deskriptiv">L&ouml;schen</span><span class="f_Step">.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro-exportieren" class="hmanchor"></a><span class="f_Task">Makrotexte in eine isbmakro-Datei exportieren</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Export der benuterzerdefinierten Makrotexte in einer isbmakro-Datei, um sie in anderen Zeichnungen verwenden zu k&ouml;nnen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie zu [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">MkrEdt</span><span class="f_Step">], um den Makrotext-Editor zu &ouml;ffnen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Im Editor werden Ihnen alle benutzerdefinierten Makrotexte angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Step"> und anschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Makrotexte exportieren</span><span class="f_Step">.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Makrotext-Editor_export" style="margin:0;width:4.8333in;height:1.4063in;border:none" src="d_makrotext-editor_export.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie das Verzeichnis, in dem die Makrotext-Datei gespeichert werden soll.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Dateinamen ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie abschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die isbmakro-Datei wird gespeichert. Diese Datei k&ouml;nnen Sie in einer anderen ISBCAD-Instanz importieren.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro-importieren" class="hmanchor"></a><span class="f_Task">Makrotexte aus einer isbmakro-Datei importieren</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Import einer isbmakro-Datei. Die importierten Makrotexte werden der aktuellen Liste hinzugef&uuml;gt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie zu [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">MkrEdt</span><span class="f_Step">], um den Makrotext-Editor zu &ouml;ffnen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Step"> und anschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Makrotexte importieren</span><span class="f_Step">.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Makrotext-Editor_import" style="margin:0;width:4.8333in;height:1.3958in;border:none" src="d_makrotext-editor_import.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die isbmakro-Datei aus, die eingelesen werden soll, und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Makrotexte werden importiert und der Liste im </span><span class="f__Software_Element_deskriptiv">Makrotext-Editor</span><span class="f_Step_Anmerkung"> hinzugef&uuml;gt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Falls Makrotexte mit derselben Bezeichnung aber anderem Textinhalt importiert werden, siehe: <a href="texte_makrotexttabelle.htm#_makro-konflikt" class="topiclink">Konflikte bei Makrotexten aufl&ouml;sen</a>.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Makrotexte-importieren" style="margin:0;width:6.8958in;height:3.5833in;border:none" src="d_makrotexte-importieren.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro_excel_export" class="hmanchor"></a><span class="f_ToDo_Optional">Makrotexte nach Excel &uuml;bertragen</span></p>
+<p class="p_Step"><span class="f_Step">Sie k&ouml;nnen benutzerdefinierte Makrotexte nach Excel &uuml;bertragen. Die Makrotexte werden automatisch zweispaltig eingef&uuml;gt (Makrotext-Name/Textinhalt).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie durch Anklicken einen Makrotext oder mehrere per Mehrfachselektion mit der Strg- oder Umschalttaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+C</span><span class="f_Step">, um die Makrotexte zu kopieren.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexte_Excel_export" style="margin:0;width:3.8646in;height:3.4792in;border:none" src="scr_makrotexte_excel_export.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Ouml;ffnen oder wechseln Sie zu Excel und klicken Sie eine Tabellenzelle f&uuml;r die Einf&uuml;geposition an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Nutzen Sie die Einf&uuml;gefunktion oder dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+V</span><span class="f_Step">, um die Makrotexte einzuf&uuml;gen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Makrotexte werden ohne Leerzeilen eingef&uuml;gt.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexte_Excel_export_zellen" style="margin:0;width:3.4063in;height:1.0104in;border:none" src="scr_makrotexte_excel_export_zellen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro_excelimport" class="hmanchor"></a><span class="f_ToDo_Optional">Makrotexte aus Excel importieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Sie k&ouml;nnen Makrotexte in Excel definieren und sie in die Liste benutzerdefinierter Makrotexte einf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie die Makrotexte in Excel an:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Makrotext-Namen stehen dabei in einer Spalte (z. B. Spalte A), der zugeh&ouml;rige Textinhalt in der danebenliegenden Spalte (z. B. Spalte B).</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Nicht jedem Makrotext-Namen muss ein Textinhalt zugewiesen sein.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexte_Excel" style="margin:0;width:2.7917in;height:1.4375in;border:none" src="scr_makrotexte_excel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den Tabellenbereich aus, der &uuml;bertragen werden soll, indem Sie ihn markieren.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexteditor_Excel_markieren_spalte" style="margin:0;width:2.8021in;height:1.4688in;border:none" src="scr_makrotexteditor_excel_markieren_spalte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie nur Makrotext-Namen definiert haben, und diese &uuml;bertragen m&ouml;chten, markieren Sie auch die danebenliegenden leeren Zellen. Das Einf&uuml;gen in den Makrotext-Editor ist nur m&ouml;glich, wenn zwei Spalten (Maktotext-Name und Textinhalt) &uuml;bertragen werden.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexteditor_Excel_markieren_leer_spalte" style="margin:0;width:2.8021in;height:1.4688in;border:none" src="scr_makrotexteditor_excel_markieren_leer_spalte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Kopieren Sie den Bereich mit der Kopierfunktion oder dr&uuml;cken Sie</span><span class="f_R_Tabelle_Kopf"> </span><span class="f__Tastatur">Strg+C</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Ouml;ffnen oder wechseln Sie zu ISBCAD und rufen Sie den Makrotext-Editor auf.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie eine beliebige Zelle in der Spalte </span><span class="f__Software_Element_deskriptiv">Makro</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die einzuf&uuml;genden Makrotexte werden ab der letzten (freien) Tabellenzeile eingef&uuml;gt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+V</span><span class="f_Step">, um die Makrotexte einzuf&uuml;gen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Makrotexte werden importiert und der Liste im </span><span class="f__Software_Element_deskriptiv">Makrotext-Editor</span><span class="f_Step_Anmerkung"> hinzugef&uuml;gt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Bei doppelten Makrotext-Namen mit unterschiedlichen Textinhalten wird nur der zuerst gefundene Makrotext-Name mit seinem zugewiesenen Textinhalt eingef&uuml;gt.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Makrotexteditor_Excel_markieren" style="margin:0;width:8.2500in;height:4.7292in;border:none" src="scr_makrotexteditor_excel_markieren.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_makro-konflikt" class="hmanchor"></a><span class="f_ToDo_Optional">Konflikte bei Makrotexten aufl&ouml;sen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Wenn Sie Makrotexte in eine Zeichnung einf&uuml;gen, in der bereits Makrotexte mit derselben Bezeichnung aber anderem Textinhalt definiert sind, k&ouml;nnen Sie die kollidierenden Makros anpassen. In der Spalte </span><span class="f__Software_Element_deskriptiv">Aktueller Inhalt</span><span class="f_ToDo_Info"> werden Ihnen die Textinhalte der Zeichnung angezeigt, in die Sie Makrotexte einf&uuml;gen m&ouml;chten. Unter </span><span class="f__Software_Element_deskriptiv">Neuer Inhalt</span><span class="f_ToDo_Info"> werden Ihnen die Textinhalte der einzuf&uuml;genden Makrotexte angezeigt. Sind unter den einzuf&uuml;genden Makrotexten neue Makrotexte, die nicht in der aktuellen Zeichnung vorhanden sind, werden sie der Liste der bestehenden Makrotexte angeh&auml;ngt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, ob die aktuellen Inhalte beibehalten werden sollen, oder ob sie durch die neuen Inhalte ersetzt werden sollen. Aktivieren Sie dazu im unteren Dialogbereich die entsprechende Option.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Makrotexte_Konflikte" style="margin:0;width:3.9688in;height:3.4583in;border:none" src="d_makrotexte_konflikte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_Step">, um den Import fortzusetzen, oder klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Abbrechen</span><span class="f_Step">, um ihn abzubrechen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Textinhalte werden &uuml;bernommen und in der Zeichnung aktualisiert, falls die neuen Inhalte &uuml;bernommen wurden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Makrotext-Editor&quot;</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Datei</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Makrotexte exportieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Makrotexte exportieren</span><span class="f_R_Option_Beschreibung"> zum Speichern der Makrotext-Liste und der zugewiesenen Textinhalte in einer isbmakro-Datei.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Makrotexte importieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Makrotexte importieren</span><span class="f_R_Option_Beschreibung"> zur Auswahl einer isbmakro-Datei.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Hilfe</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hilfe zu Makrotexten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ruft diese Hilfe-Seite auf.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Makrotexte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Makro</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die definierten Makrotexte an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Inhalt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die definierten Textinhalte an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verwendung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt an, wie oft der Makrotext in der Zeichnung vorhanden ist.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">In Planbeschreibung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ist der Haken gesetzt, wird der Makrotext in der <a href="konst3_planbe.htm" class="topiclink">Planbeschreibung</a> verwendet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entfernt den oder die markierten Makrotexte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sonderzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Eingabe-Dialog f&uuml;r <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink" title="Sonderzeichen eingeben">Sonderzeichen</a>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt alle &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verwirft alle &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Dynamische Makrotexte</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Siehe: <a href="ref_dyn_makrotexte.htm" class="topiclink">Dynamische Makrotexte (Referenz)</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_makrotexte-einfuegen.htm" class="topiclink">Makrotexte in die Zeichnung einf&uuml;gen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_planbe.htm" class="topiclink">Makrotexte in die Planbeschreibung einf&uuml;gen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="texte_makrotexte_erzeugen__aendern_u.htm" class="topiclink">Text in Makrotext konvertieren oder Zuweisung aufl&ouml;sen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_makrotexte.htm" class="topiclink" title="Systemdaten - Makrotexte">Darstellung von Makrotexten in der Zeichnung (Systemdaten)</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_makrotexte.htm" class="topiclink">Verwenden von Makrotexten</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_dyn_makrotexte.htm" class="topiclink">Dynamische Makrotexte (Referenz)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_makrotexte.htm" class="topiclink" title="Systemdaten - Makrotexte">Darstellung von Makrotexten in der Zeichnung (Systemdaten)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

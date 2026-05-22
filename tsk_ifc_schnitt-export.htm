@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Schnitt exportieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="IFC Section Tool,IFC Section Tool Schnitt exportieren" />
+   <meta name="description" content="IFC Section Tool Menüleiste &#8594; Schnitt exportieren &nbsp;Export aller eingeblendeten Schnitte nach ISBCAD. Vor dem Export können Sie in den Export-Einstellungen die Darstellung der" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a> &gt; <a href="con_ifc-import.htm">IFC Section Tool</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_ifc_schnitt.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_ifc-import.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_schnittdef_import.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Schnitt exportieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_Aufruf"> <a href="con_ifc-import.htm" class="topiclink" title="IFC-Geometriedaten importieren"><img alt="IFC-Geometriedaten importieren" title="IFC-Geometriedaten importieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_ifcimp.png"/></a></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">IFC Section Tool Men&uuml;leiste &#8594; Schnitt exportieren</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Export aller eingeblendeten Schnitte nach ISBCAD. Vor dem Export k&ouml;nnen Sie in den <a href="tsk_ifc_einstellungen.htm" class="topiclink" title="Darstellung von Kanten, Texten und Schnittpfeilen anpassen">Export-Einstellungen</a> die Darstellung der Kanten, Schnittpfeile und Texte festlegen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Nach dem Export k&ouml;nnen Sie weitere Schnitte erstellen und in die Zeichnung einf&uuml;gen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Export</span><span class="f_Step">.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_ifc_export_button" style="margin:0;width:7.8854in;height:0.6771in;border:none" src="scr_ifc_export_button.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Falls mehrere ISBCAD-Instanzen ge&ouml;ffnet sind, klicken Sie in der Windows-Taskleiste die Instanz an, in der das IFC Section Tool gestartet wurde.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die entsprechende Instanz wird hervorgehoben.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_ifc_anzeigen" style="margin:0;width:5.0938in;height:1.8333in;border:none" src="scr_ifc_anzeigen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verwenden Sie in ISBCAD die Optionen im Funktionsbereich. [</span><span class="f__Abfrage">Schnitte in Zeichnung platzieren</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.4167in;"><p class="p_R_Tabellenzeile"><img alt="B_Folie-beibeh-Einfueg" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b_folie-beibeh-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6667in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Foliennummern und alte Folien beibehalten</span><span class="f_R_Tabellenzeile">: Folien der hinzugef&uuml;gten Zeichnung werden beibehalten (Voreinstellung). Siehe auch: <a href="tsk_ifc_schnitt-export.htm#_ifcanpassen" class="topiclink">Folienbelegung nach Export</a></span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Folgende Abl&auml;ufe sind m&ouml;glich:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die Folien sind vorhanden und identisch. Die neuen Folien werden in die vorhandenen integriert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die Foliennummern existieren, die Namen sind unterschiedlich. Die neuen Folien werden in die Folien mit gleicher Nummer eingef&uuml;gt. Der alte Name bleibt erhalten.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die Folien sind nicht vorhanden. Die neuen Folien werden angelegt.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.4167in;"><p class="p_R_Tabellenzeile"><img alt="B_Neue-Folie-Einfueg" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b_neue-folie-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6667in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Tabellenzeile">: &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Tabellenzeile"> zur Auswahl einer vorhandenen oder Angabe einer neuen Folie.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die verschiedenen IFC-Kantentypen, Schnittpfeile und Texte werden in die Zielfolie gelegt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4271in; padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Neue-Folie-Datei" style="margin:0;width:3.2292in;height:2.2292in;border:none" src="d_neue-folie-datei.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:4.0729in; padding:0.0208in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Folienliste</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">W&auml;hlen Sie in der Liste die Zielfolie aus.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Foliennr.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie die Foliennummer der Zielfolie ein. Wenn die Folie existiert, wird der Folienname automatisch &uuml;bernommen. Wenn die Nummer noch nicht vergeben ist, k&ouml;nnen Sie diese direkt in das Eingabefeld eintragen, um eine neue Folie anzulegen.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Folienname</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie einen Namen f&uuml;r die neue Folie an.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">OK</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernimmt die Eingaben.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abbrechen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bricht die Bearbeitung ab.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.4167in;"><p class="p_R_Tabellenzeile"><img alt="B_Folien-trenn-Einfueg" style="margin:0;width:2.2083in;height:0.2500in;border:none" src="b_folien-trenn-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6667in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Folien mit gleichen Nummern trennen</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Wenn in der aktuellen und in der hinzuzuf&uuml;genden Zeichnung Folien mit gleicher Nummer vorkommen, k&ouml;nnen Sie entscheiden, wie weiter verfahren wird. &Ouml;ffnet nach dem Absetzen der Zeichnung den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="rd_welche-folie-trennen.htm" class="topiclink">Welche Folien trennen?</a></span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Die Folien der aktuellen Zeichnung werden nicht ver&auml;ndert!</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">&Uuml;berlagerungskontrolle ein- oder ausschalten</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_UelaAus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_uelaaus.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn eine eingef&uuml;gte Linie eine vorhandene Linie &uuml;berlagert, bleibt die urspr&uuml;ngliche Linie erhalten. Im Ausdruck wird eine d&uuml;nnere Linie unter Umst&auml;nden nicht sichtbar.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_UelaAn" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_uelaan.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linien, die auf vorhandene Linien gelegt werden, werden getauscht. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beim Einf&uuml;gen haben Sie drei M&ouml;glichkeiten:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die eingef&uuml;gte Linie wird an einem Ort abgelegt, an dem sich keine andere Linie befindet.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die eingef&uuml;gte Linie unterscheidet sich entweder in der Stiftnummer und/oder dem Strichtyp. Wird die Linie auf eine bereits vorhandene Linie gelegt, wird die vorhandene Linie in diesem Bereich unterbrochen und nur die neue Linie wird gezeichnet. </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Die eingef&uuml;gte Linie ist sowohl in der Stiftnummer als auch im Strichtyp identisch zur vorhandenen Linie. In diesem Fall wird die vorhandene Linie in diesem Bereich unterbrochen.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Platzierungsmethode w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verwenden Sie die Optionen im Funktionsbereich:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Setzen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_setzen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Genaues Platzieren mittels Referenzpunkt. </span><br>
+<span class="f_R_Tabellenzeile">Ausrichtung und Platzierung der einzuf&uuml;genden Inhalte werden nacheinander abgefragt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Versch_ (Detail)" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="hmfile_hash_f9ee8376.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beliebiges Platzieren des umschlie&szlig;enden Rahmens. </span><br>
+<span class="f_R_Tabellenzeile">Die Ausrichtung der einzuf&uuml;genden Inhalte wird nacheinander abgefragt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Schieb" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_schieb.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Freies Verschieben, Zeichnung ist sichtbar.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Frei" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_frei.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Freies Platzieren; die Zeichnung wird per Mausklick sofort endg&uuml;ltig abgesetzt. </span><br>
+<span class="f_R_Tabellenzeile">Die Ausrichtung wird beibehalten, es erfolgt keine weitere Abfrage. &nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie die Schnitte zun&auml;chst an einer beliebigen Stelle in der Zeichnung mit einem Linksklick. [</span><span class="f__Abfrage">Schnitte in Zeichnung platzieren</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Folgen Sie der Abfrage: </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_R_Tabelle_Kopf"><span class="f__Abfrage">Drehwinkel </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie einen Winkel (gegen den Uhrzeigersinn positiv) ein und best&auml;tigen Sie mit der Eingabetaste oder klicken Sie einen der Vorschl&auml;ge an:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">0&deg;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">, </span><span class="f__Software_Element_deskriptiv">90&deg;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">, </span><span class="f__Software_Element_deskriptiv">180&deg;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">, </span><span class="f__Software_Element_deskriptiv">270&deg;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Das Ergebnis ist sofort sichtbar.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">,  </span><span class="f__Software_Element_deskriptiv">O...</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Klicken Sie ein Bezugselement an, das die gew&uuml;nschte Neigung hat. Die Drehung ist sofort sichtbar.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">PP..</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">, </span><span class="f__Software_Element_deskriptiv">OP..</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_R_Tabellenzeile">Klicken Sie ein Bezugselement an, das zu dem zweiten angeklickten Element parallel oder senkrecht gedreht werden soll. Unter </span><span class="f__Abfrage">Drehen</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie um +0&deg;&nbsp;oder +180&deg; weiterdrehen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_R_Tabelle_Kopf"><span class="f__Abfrage">Spiegelwinkel</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie den Winkel an, um den gespiegelt werden soll und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">0&deg;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Tabellenzeile">spiegelt um die X&#8209;Achse. Wollen Sie nicht spiegeln, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Ohne</span><span class="f_R_Tabellenzeile"> oder best&auml;tigen Sie die leere Eingabe mit der Eingabetaste oder Rechtsklick..</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Schnitte platzieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Die ben&ouml;tigten Angaben sind abh&auml;ngig von der gew&auml;hlten Platzierungsmethode (s. oben).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Folgen Sie der Abfrage:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Setzen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_setzen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie zun&auml;chst eine senkrechte und eine waagerechte Linie der hinzugef&uuml;gten Teilzeichnung an [</span><span class="f__Abfrage">X-Refpu.Obj</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">Y-Refpu.Obj</span><span class="f_R_Tabellenzeile">]; dann die entsprechenden Referenzpunkte in der Zeichnung. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie die Zeichnung an einem zu bestimmenden Schnittpunkt zweier Linien platzieren m&ouml;chten, k&ouml;nnen Sie die Hilfsfunktion </span><span class="f__Software_Element_deskriptiv">S</span><span class="f_R_Tabellenzeile"> [</span><span class="f__Software_Element_deskriptiv">Schnitt</span><span class="f_R_Tabellenzeile">] verwenden. Tippen Sie ein </span><span class="f__Software_Element_deskriptiv">s</span><span class="f_R_Tabellenzeile"> in die Eingabe und klicken Sie die Bezugslinie an. Achten Sie darauf, die Hilfsfunktion auch bei dem Y-Parameter zu verwenden. Soll der Referenzpunkt mit Abstand abgesetzt werden, benutzen Sie die Funktion </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_R_Tabellenzeile">. Die eingef&uuml;gte Zeichnung wird an den Referenzpunkten platziert. Sie k&ouml;nnen sofort eine weitere Zeichnung hinzuf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Versch_ (Detail)" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="hmfile_hash_f9ee8376.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Platzieren Sie den Rahmen per Mausklick an der gew&uuml;nschten Stelle. [</span><span class="f__Abfrage">Lage</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die hinzugef&uuml;gte Zeichnung wird an der angeklickten Stelle platziert und angezeigt. Sie k&ouml;nnen sofort eine weitere Zeichnung hinzuf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Schieb" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_schieb.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Platzieren Sie die sichtbare Teilzeichnung per Mausklick an der gew&uuml;nschten Stelle. [</span><span class="f__Abfrage">Lage</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die hinzugef&uuml;gte Zeichnung wird an der angeklickten Stelle platziert und angezeigt. Sie k&ouml;nnen sofort eine weitere Zeichnung hinzuf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3542in;"><p class="p_R_Tabellenzeile"><img alt="B_Frei" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_frei.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Platzieren Sie den Rahmen per Mausklick an der gew&uuml;nschten Stelle. [</span><span class="f__Abfrage">Lage</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die hinzugef&uuml;gte Zeichnung wird an der angeklickten Stelle platziert und angezeigt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Schnitte werden mit den &Uuml;berschriften und Schnittpfeilen in der Zeichnung platziert.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_ifcanpassen" class="hmanchor"></a><span class="f_ToDo_Optional">Weitere Schnitte in die Zeichnung einf&uuml;gen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Nach dem Einf&uuml;gen der Schnitte in ISBCAD bleibt das IFC Section Tool ge&ouml;ffnet. </span><span class="f_Step_Anmerkung">Sie k&ouml;nnen es schlie&szlig;en, indem Sie in der rechten oberen Dialogecke auf <img alt="I_Schliessen" style="margin:0;width:0.1458in;height:0.1354in;border:none" src="i_schliessen.png"/> klicken, oder das Fenster minimieren.</span><span class="f_ToDo_Info"> Sie k&ouml;nnen es jederzeit mit den zuvor erzeugten Schnitten erneut &ouml;ffnen und Schnitte &auml;ndern, neue Schnitte erzeugen und diese in die bestehende Zeichnung einf&uuml;gen. Rufen Sie dazu das IFC Section Tool &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_ToDo_Info"> &#8594; </span><span class="f__Software_Element_deskriptiv">IFC-ST</span><span class="f_ToDo_Info">] auf.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Folienbelegung nach Export</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Das Ergebnis des IFC-Exports besteht aus Zeichenelementen (Linien, Kreise, B&ouml;gen und Texte), die standardm&auml;&szlig;ig in folgende Folien gelegt werden:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:2.9583in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Elemente</span></p>
+</th>
+<th class="Reference_Clean" style="width:0.5104in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Folie</span></p>
+</th>
+<th class="Reference_Clean" style="width:2.3438in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Folienname</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Schnittbezeichnungen</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">1</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Texte</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Schnittpfeile, Schnittpfeiltexte</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">8</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Schnpf</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Geschnittene Kanten</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">20</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">IFC: Geschnittene Kanten</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Sichbare Kanten</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">21</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">IFC: Sichbare Kanten</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Versteckte Kanten</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">22</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">IFC: Versteckte Kanten</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.9583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Schnittfl&auml;chen</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5104in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">23</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">IFC: Schnittfl&auml;chen</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_R_Dialog_Info">Siehe auch: <a href="tsk_ifc_einstellungen.htm" class="topiclink" title="Export-Einstellungen">Export-Einstellungen</a></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_ifc_schnitt.htm" class="topiclink">Schnitt erzeugen und bearbeiten</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

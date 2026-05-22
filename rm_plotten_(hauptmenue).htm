@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Plotten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Drucken,Drucken Steuersequenzen einstellen,Steuersequenzen - Drucken" />
+   <meta name="description" content="Windows-Startmenü &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmenü &#8594; Plotten." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_konfigurationsmodule.htm">Hauptmenü - Programmmodule</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="top_konfigurationsmodule.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_konfigurationsmodule.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_drucken_(hauptmenue).htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Plotten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Plotten-(Hauptmenü)" style="margin:0;width:0.3333in;height:0.3333in;border:none" src="hmfile_hash_0d2e0751.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Windows-Startmen&uuml; &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmen&uuml; &#8594; Plotten.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Drucken einer oder mehrerer Zeichnungen. Konfiguration der Druck-/Plot-Ausgabe. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Plotter-Konfiguration</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Plotter-Konfiguration&quot;</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Einstellungen f&uuml;r die Ausgabe einzelner oder mehrerer (Teil-)Zeichnungen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Plotter-Konfiguration_Haupt" style="margin:0;width:7.4375in;height:4.8958in;border:none" src="d_plotter-konfiguration_haupt.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Drucker</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Wenn Sie auf Ihrem Betriebssystem einen Drucker eingerichtet haben, k&ouml;nnen Sie hier den Druckertreiber ausw&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines auf Ihrem System verf&uuml;gbaren Drucker- oder Plottertreibers. Klicken Sie auf <img alt="I_pfeil-nach-unten_AutBew" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_pfeil-nach-unten_autbew.png"/>, um die Dropdown-Liste mit allen eingerichteten Treibern zu &ouml;ffnen. Klicken Sie anschlie&szlig;end den entsprechenden Treiber an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Einstellungen" style="margin:0;width:0.9271in;height:0.2604in;border:none" src="b_einstellungen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ruft den Einstellungsdialog des Ger&auml;tetreibers auf.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ausgabeprofil</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Stellen Sie hier f&uuml;r jeden Bedarf speziell definierte Ausgabeprofile ein. Sie k&ouml;nnen z. B. ein Profil erstellen, in dem alle Linien, Kreise und Texte in Schwarz ausgegeben werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines Ausgabeprofils. Mit Rechtsklick auf das Listenfeld &ouml;ffnen Sie ein Kontextmen&uuml; mit Bearbeitungsoptionen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0;"><img alt="SCR_Plotter" style="margin:0;width:4.0833in;height:1.6042in;border:none" src="scr_plotter.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Profil kopieren und einf&uuml;gen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.6146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.3125in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.3125in;margin-left:-0.3125in">1.</span><span class="f_R_Tabellenzeile">&Ouml;ffnen Sie mit Rechtsklick auf das Listenfeld das Kontextmen&uuml;.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.3125in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.3125in;margin-left:-0.3125in">2.</span><span class="f_R_Tabellenzeile">Klicken Sie mit der linken Maustaste auf </span><span class="f__Software_Element_deskriptiv">Profil kopieren</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.3125in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.3125in;margin-left:-0.3125in">3.</span><span class="f_R_Tabellenzeile">Benennen Sie das Ausgabeprofil um und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.3125in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.3125in;margin-left:-0.3125in">4.</span><span class="f_R_Tabellenzeile">&Ouml;ffnen Sie erneut das Kontextmen&uuml; und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Profil einf&uuml;gen</span><span class="f_R_Tabellenzeile">. </span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3125in;"><span class="f_R_Tabellenzeile">Die Kopie wird oberhalb des angezeigten Profils eingef&uuml;gt. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Profil l&ouml;schen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&ouml;scht das markierte Profil ohne R&uuml;ckfrage.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Profilassistent</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Profilassistenten zum Einrichten der Profileigenschaften.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Bezeichnung des aktuell markierten Profils kann direkt ge&auml;ndert werden. W&auml;hlen Sie das entsprechende Profil aus, benennen Sie es um und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Neu_01" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_neu_01.png"/><span class="f_ImageCaption"> </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es erscheint eine Meldung in der Sie entscheiden k&ouml;nnen, ob Sie den Assistenten zum Einrichten eines neuen Ausgabeprofils benutzen m&ouml;chten oder nicht. Wenn Sie </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Option_Beschreibung"> klicken, wird der Dialog </span><span class="f__Software_Element_deskriptiv">Profilassistent</span><span class="f_R_Option_Beschreibung"> ge&ouml;ffnet (<a href="des_profilassistent.htm" class="topiclink" title="Anleitung zum Erstellen eines Ausgabeprofils">&raquo;&nbsp;Profilassistent</a>). W&auml;hlen Sie im Dialog die entsprechenden Optionen. Nach der Fertigstellung wird das Ausgabeprofil in der Liste aufgef&uuml;hrt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Voransicht</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Darstellung der zu erwartenden Ausgabe. Verwenden Sie ggf. <a href="des_bildausschnitt-zoomen-und-verschieben.htm" class="topiclink" title="Zoomfunktionen">Zoomfunktionen</a> (Zoom per Mausbewegung oder durch Dr&uuml;cken des Mausrads), um Bildausschnitte in der Voransicht zu vergr&ouml;&szlig;ern oder zu verkleinern.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; font-weight: bold;">Plotfl&auml;che</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Zeichnung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gr&ouml;&szlig;e der aktuellen Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Papier</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Erforderliche bzw. maximal m&ouml;gliche Papiergr&ouml;&szlig;e.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">Faktor</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Faktor mit dem die Zeichnung verkleinert wird. Wird z. B. ein DIN&nbsp;A2 Plan auf ein DIN&nbsp;A3 gedruckt, ist der Faktor 0.5.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9167in;"><p class="p_R_Tabellenzeile"><img alt="I_Fragezeichen" style="margin:0;width:0.2188in;height:0.2188in;border:none" src="i_fragezeichen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung des Druckbildes und Anzahl der auszugebenden Exemplare. </span><br>
+<span class="f_R_Tabellenzeile">Ruft den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="rd_-isb-cad-druckoptionen.htm" class="topiclink" title="ISBCAD Druckoptionen">ISBCAD Druckoptionen</a></span><span class="f_R_Tabellenzeile"> auf.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; font-weight: bold;">Vorschau</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option">immer aktualisieren</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Auml;nderungen, z.&nbsp;B. Wechsel in der Dateiliste, &Auml;nderung der Stifteinstellung oder Wechsel des Ausgabeprofils, werden in der Voransicht sofort angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile"><img alt="B_Aktualisieren" style="margin:0;width:1.3229in;height:0.2604in;border:none" src="b_aktualisieren.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8333in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aktualisiert die Darstellung der Voransicht.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe schwarz ausgeben</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Farbeinstellung werden ignoriert, alle Zeichnungselemente inklusive F&uuml;llungen werden in Schwarz ausgegeben. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit Rand drucken</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Zeichnung wird mit dem auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Blattrand</span><span class="f_R_Option_Beschreibung"> eingestellten Blattrand ausgegeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="stifte_plotter-konfiguration" class="hmanchor"></a><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Stifte</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnr.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der auszugebenden Stifte. Aktivierte Stifte (Haken in Checkbox) werden ausgegeben. </span><br>
+<span class="f_R_Option_Beschreibung">&Uuml;ber die Checkbox in der Spalten&uuml;berschrift k&ouml;nnen alle Stifte aktiviert bzw. deaktiviert werden. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breite/Stift | Breite&nbsp;CAD</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Stiftbreite auf dem Drucker/Plotter.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Auswahl unter </span><span class="f__Software_Element_deskriptiv">Breite/Stift </span><span class="f_R_Option_Beschreibung">ist nur m&ouml;glich und wird nur ber&uuml;cksichtigt, wenn </span><span class="f__Software_Element_deskriptiv">Breite&nbsp;CAD</span><span class="f_R_Option_Beschreibung"> f&uuml;r diesen Stift deaktiviert ist. </span><br>
+<span class="f_R_Option_Beschreibung">Wenn </span><span class="f__Software_Element_deskriptiv">Breite&nbsp;CAD </span><span class="f_R_Option_Beschreibung">aktiviert ist, wird der Stift in der Breite der Bildschirmdarstellung ausgegeben. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnen Sie die Auswahl durch Klick auf </span><img alt="I_Pfeil_Korrektur-Auswahl" style="margin:0;width:0.2188in;height:0.2500in;border:none" src="i_pfeil_korrektur-auswahl.png"/><span class="f_A_Allgemein"> </span><span class="f_R_Option_Beschreibung">und klicken Sie einen der vorgeschlagenen Werte an. Sie k&ouml;nnen die Breite auch direkt eingeben, dazu m&uuml;ssen Sie auf den Wert klicken. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Farbausgabe auf dem Drucker/Plotter. </span><br>
+<span class="f_R_Option_Beschreibung">Voraussetzungen: </span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Option_Beschreibung">Option </span><span class="f__Software_Element_deskriptiv">Farbe&nbsp;CAD</span><span class="f_R_Option_Beschreibung"> ist f&uuml;r diesen Stift deaktiviert.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Option_Beschreibung">Option </span><span class="f__Software_Element_deskriptiv">Farbe&nbsp;schwarz&nbsp;ausgeben</span><span class="f_R_Option_Beschreibung"> (unter </span><span class="f__Software_Element_deskriptiv">Voransicht</span><span class="f_R_Option_Beschreibung">) ist deaktiviert.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Option_Beschreibung">Folienfarben auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Folien</span><span class="f_R_Option_Beschreibung"> sind deaktiviert. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Auswahl unter </span><span class="f__Software_Element_deskriptiv">Farbe</span><span class="f_R_Option_Beschreibung"> ist nur m&ouml;glich und wird nur ber&uuml;cksichtigt, wenn </span><span class="f__Software_Element_deskriptiv">Farbe&nbsp;CAD</span><span class="f_R_Option_Beschreibung"> f&uuml;r diesen Stift deaktiviert ist. </span><br>
+<span class="f_R_Option_Beschreibung">Wenn </span><span class="f__Software_Element_deskriptiv">Farbe&nbsp;CAD </span><span class="f_R_Option_Beschreibung">aktiviert ist, wird der Stift in der Farbe der Bildschirmdarstellung ausgegeben. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe&nbsp;CAD</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stift wird in der Farbe der Bildschirmdarstellung ausgegeben. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="folien_plotter-konfiguration" class="hmanchor"></a><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Folien</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Sie k&ouml;nnen einzelnen Folien Farben zuweisen. Die Farbe der Folie hat Vorrang vor der Farbe des Stiftes. Die Stiftbreite bleibt erhalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Foliennr.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox mit der Foliennummer die in der gew&auml;hlten Farbe ausgegeben werden soll. Damit werden alle in dieser Folie benutzten Stifte in der Folienfarbe ausgegeben, nicht in der Stiftfarbe. Die unterschiedlichen Linienbreiten bleiben dabei erhalten.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie in das K&auml;stchen der Spalten&uuml;berschrift ein H&auml;kchen, so bekommen alle Folien ebenfalls ein H&auml;kchen und werden in der gew&auml;hlten Farbe ausgegeben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen erst dann eine Farbe ausw&auml;hlen, wenn die Folie einen Haken hat.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Farbe f&uuml;r jede Folie.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe Registerkarte </span><span class="f__Software_Element_deskriptiv">Stifte</span><span class="f_R_Option_Beschreibung"> f&uuml;r Farbauswahl.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Quadrate sind mit beliebigen F&uuml;llfarben versehen. Die F&uuml;llungen wurden in daf&uuml;r angelegte Folien transformiert.</span></p>
+<p class="p_ImageCaption" style="margin: 0.0625in 0 0.0625in 0.2917in;"><img alt="clip0016" style="margin:0;width:9.1042in;height:2.0104in;border:none" src="clip0016.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="blattrand_plotter-konfiguration" class="hmanchor"></a><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Blattrand</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Analog zum Blattrand im Konstruktionsprogramm [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">Blattr</span><span class="f_R_Dialog_Info">] k&ouml;nnen Sie hier Einstellungen f&uuml;r R&auml;nder vornehmen, die auch auf Zeichnungsausschnitten einen entsprechenden Blattrand erzeugen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Bei Ausgabe der gesamten Zeichnung [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Alles</span><span class="f_Hinweis_in_Tabelle">] oder [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Plotten</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Alles</span><span class="f_Hinweis_in_Tabelle">] wird die Einstellung des Blattrandes aus dem Konstruktionsprogramm [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Blattr</span><span class="f_Hinweis_in_Tabelle">] &uuml;bernommen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Vorgabe f&uuml;r Blattrand </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl des Blattrand-Typs und der verwendeten Stifte.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Abst&auml;nde Blattr&auml;nder [mm]</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; font-weight: bold;">R</span><span class="f_R_Option">andbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Breite f&uuml;r die R&auml;nder oben, unten und rechts an. Dieses Ma&szlig; wird auch f&uuml;r das Raster benutzt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Heftrand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Heftrand befindet sich immer auf der linken Seite. Hier k&ouml;nnen Sie die Breite bestimmen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie eine Breite f&uuml;r die Rastereinteilung ein.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Vorgaben f&uuml;r Raster</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterursprung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus den vier M&ouml;glichkeiten eine aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schriftart</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Schriftart f&uuml;r die Beschriftung der Rasterfelder.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schriftgr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie eine Schriftgr&ouml;&szlig;e an, die in die Randbreite passt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ursprungsverschiebung [mm]:</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Hiermit k&ouml;nnen Sie den Blattrand und damit die ganze Zeichnung vom Ursprungspunkt des Plotters verschieben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">l&auml;ngs; quer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie entsprechende Ma&szlig;e ein.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Faltung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ 1 (Quetschfalte links); Typ 2 (Quetschfalte rechts):</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des Faltungstyps (Lage der Quetschfalte).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texte am Blattrand:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Blattgr&ouml;&szlig;e; Datum </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Texte werden unten links, vertikal zwischen dem inneren und &auml;u&szlig;eren Rand geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dateiname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Am unteren linken Rand kann der Dateiname geschrieben werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kommentar</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Texte werden am unteren rechten Rand geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">horizontal; vertikal</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schreiben Sie f&uuml;r einen oder beide F&auml;lle Texte in die Eingabefelder.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="dateiliste_plotter-konfiguration" class="hmanchor"></a><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Dateiliste</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Auswahl der Dateien, die ausgegeben werden sollen. Wenn Sie den Dialog aus dem Konstruktions- und Bewehrungsprogramm aufrufen, ist die Liste zun&auml;chst leer. Wenn Sie im Bereich Vorschau die Schaltfl&auml;che </span><img alt="B_Aktualisieren" style="margin:0;width:1.1875in;height:0.2292in;border:none" src="b_aktualisieren.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Dialog_Info">anklicken oder einen Haken bei </span><span class="f__Software_Element_deskriptiv">immer aktualisieren</span><span class="f_R_Dialog_Info"> setzen, wird in der Voransicht der aktuelle Plan angezeigt. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Dateiliste</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dateiname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige der Datei mit Pfadangabe.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ausgabeprofil</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen f&uuml;r jede Zeichnung ein anderes Ausgabeprofil w&auml;hlen. Klicken Sie dazu auf </span><img alt="I_Pfeil_Korrektur-Auswahl" style="margin:0;width:0.2188in;height:0.2500in;border:none" src="i_pfeil_korrektur-auswahl.png"/><span class="f_R_Option_Beschreibung"> und w&auml;hlen aus der Liste das gew&uuml;nschte Profil aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Drehung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die vorgeschlagene Drehung wird angezeigt. Zum &Auml;ndern &ouml;ffnen Sie die Liste mit </span><img alt="I_Pfeil_Korrektur-Auswahl" style="margin:0;width:0.2188in;height:0.2500in;border:none" src="i_pfeil_korrektur-auswahl.png"/><span class="f_R_Option_Beschreibung"> und w&auml;hlen einen anderen Winkel aus. Zur Kontrolle sollten Sie die Druckoptionen aufrufen.&nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Exemplare</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie an, wie viele Exemplare von jeder Datei ausgegeben werden sollen. Tippen Sie die Anzahl direkt ein; mit </span><img alt="T_ENTER" style="margin:0;width:0.1979in;height:0.1979in;border:none" src="t_enter.png"/><span class="f_R_Option_Beschreibung"> best&auml;tigen; oder schlagen Sie die Liste auf und w&auml;hlen eine Anzahl mit der linken Maustaste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der automatisch berechnete oder manuell eingegebene Faktor wird angezeigt. Siehe Registerkarte </span><span class="f__Software_Element_deskriptiv">Treiber</span><span class="f_R_Option_Beschreibung">. Manuelle Faktoren k&ouml;nnen ge&auml;ndert werden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Bereich"><span class="f_R_Bereich">&Uuml;ber das Kontextmen&uuml; (Rechtsklick in die Dateilistentabelle): </span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Kontext_Dateiliste" style="margin:0;width:4.4167in;height:1.3542in;border:none" src="scr_kontext_dateiliste.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Alle Dateien aus der Liste entfernen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht ohne R&uuml;ckfrage alle Dateien, die in der Liste enthalten sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Markierte Dateien aus der Liste entfernen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht ohne R&uuml;ckfrage alle markierten Dateien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Exemplare f&uuml;r markierte Dateien setzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Allen markierten Dateien kann dieselbe Anzahl an Exemplaren zugewiesen werden. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Anzahl Exemplare</span><span class="f_R_Option_Beschreibung">. Tragen Sie im Dialog die gew&uuml;nschte Anzahl in die Eingabe und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung">. </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Alle Zeichnungen in eine Datei </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">(Option ist nur sichtbar, wenn der </span><span class="f__Eigenname">eDocPrinter&nbsp;PDF&nbsp;Pro&nbsp;GLASER</span><span class="f_R_Option_Beschreibung"> als Druckertreiber gew&auml;hlt wurde.)</span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4375in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle Zeichnungen, die in der Dateiliste enthalten sind, werden in einer PDF-Datei ausgegeben. Die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">plotten</span><span class="f_R_Tabellenzeile"> ist deaktiviert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">Klicken Sie auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Alle Plotten</span><span class="f_R_Option_Beschreibung">, um die Ausgabe zu starten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_ImageCaption_zentriert"><img alt="I_Checkbox-nein" style="margin:0 auto 0 auto;width:0.1979in;height:0.1563in;border:none" src="i_checkbox-nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeichnungen, die in der Dateiliste enthalten sind, werden jeweils in einer PDF-Datei ausgegeben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">Klicken Sie auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">plotten</span><span class="f_R_Option_Beschreibung">, um die in der Dateiliste markierte Zeichnung auszugeben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">oder:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">Klicken Sie auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Alle Plotten</span><span class="f_R_Option_Beschreibung">, um alle Zeichnungen, </span><span class="f_R_Tabellenzeile">die in der Dateiliste enthalten sind, nacheinander in jeweils einer PDF-Datei auszugeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4271in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn Sie auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Treiber</span><span class="f_Hinweis_in_Tabelle"> im Bereich </span><span class="f__Software_Element_deskriptiv">PDF-Datei</span><span class="f_Hinweis_in_Tabelle"> bei der Option </span><span class="f__Software_Element_deskriptiv">Pfad/Name von Zeichnungsdatei</span><span class="f_Hinweis_in_Tabelle"> einen Haken setzen, dann wird der Speicherort vorgeschlagen, in dem sich die in der Dateiliste gew&auml;hlten Zeichnungen befinden. Als Dateiname wird der Name der Zeichnung vorgeschlagen, die in der Dateiliste in der ersten Zeile steht.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Siehe Registerkarte </span><span class="f__Software_Element_deskriptiv">Treiber</span><span class="f_Hinweis_in_Tabelle"> f&uuml;r weitere PDF-Ausgabe-Optionen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.4063in;"><span class="f_R_Option_Beschreibung">Falls Sie Schwierigkeiten bei der Dateiausgabe haben, vergewissern Sie sich, dass der </span><span class="f_R_Option_Beschreibung" style="font-style: italic;">eDocPrinter&nbsp;PDF&nbsp;Pro&nbsp;GLASER</span><span class="f_R_Option_Beschreibung">-Druckertreiber richtig konfiguriert ist. Im Bereich </span><span class="f__Software_Element_deskriptiv">Drucker</span><span class="f_R_Option_Beschreibung"> k&ouml;nnen Sie &uuml;ber die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Option_Beschreibung"> den Konfigurationsdialog f&uuml;r den </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_R_Option_Beschreibung"> aufrufen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.4063in;"><span class="f_R_Option_Beschreibung">Siehe auch: <a href="des_edoc-printer-pro.htm" class="topiclink" title="Einrichten des Gerätedruckertreibers">eDocPrinter PDF Pro GLASER-Treiber einrichten</a></span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schaltfl&auml;chen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_ImageCaption"><img alt="B_lesen_(klein)" style="margin:0;width:0.8542in;height:0.2917in;border:none" src="b_lesen_(klein).png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die Liste leer ist, k&ouml;nnen Sie Dateien in die Liste aufnehmen. Der Dialog </span><span class="f__Software_Element_deskriptiv">Datei lesen</span><span class="f_R_Tabellenzeile"> wird ge&ouml;ffnet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn sich schon Dateien in der Liste befinden, werden diese gel&ouml;scht!</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_ImageCaption"><img alt="B_hinzufuegen_(klein)" style="margin:0;width:0.8542in;height:0.2917in;border:none" src="b_hinzufuegen_(klein).png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Befinden sich schon Zeichnungen in der Tabelle, k&ouml;nnen Sie aus anderen Ordnern weitere hinzuf&uuml;gen.</span><br>
+<span class="f_R_Tabellenzeile">Mehrfachauswahl durch Mausklick bei gedr&uuml;ckter </span><span class="f__Tastatur">Strg–Taste</span><span class="f_R_Tabellenzeile">, bzw. Markierung aller Dateien zwischen dem ersten und zweiten Mausklick bei gedr&uuml;ckter Umschalttaste. Alle Dateien des ge&ouml;ffneten Ordners lassen sich mit </span><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile"> + </span><span class="f__Tastatur">A</span><span class="f_R_Tabellenzeile"> markieren.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_ImageCaption"><img alt="B_entfernen_(klein)" style="margin:0;width:0.8542in;height:0.2917in;border:none" src="b_entfernen_(klein).png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt die markierte Datei aus der Dateiliste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_ImageCaption"><img alt="B_plotten_(klein)" style="margin:0;width:0.9479in;height:0.2917in;border:none" src="b_plotten_(klein).png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es wird nur die markierte Datei ausgegeben.</span><br>
+<span class="f_R_Tabellenzeile">Nachdem die Daten an das Ausgabeger&auml;t &uuml;bermittelt worden sind, wird der Eintrag aus der Liste entfernt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1458in;"><p class="p_ImageCaption"><img alt="B_alle-plotten" style="margin:0;width:0.9479in;height:0.2917in;border:none" src="b_alle-plotten.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden alle in der Liste aufgef&uuml;hrten Dateien nacheinander ausgegeben. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie bei der Option </span><span class="f__Software_Element_deskriptiv">Alle Zeichnungen in eine Datei</span><span class="f_R_Tabellenzeile"> einen Haken gesetzt haben, werden die Zeichnungen in einer PDF-Datei ausgegeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="treiber_plotter-konfiguration" class="hmanchor"></a><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Treiber</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Eingaben betreffen das hier ausgew&auml;hlte Ger&auml;t. Die Einstellungen des Druckers haben direkte Auswirkungen auf die hier m&ouml;glichen Einstellungen. So hat z. B. die Auswahl von Hoch- oder Querformat Einfluss auf die Ma&szlig;e f&uuml;r Breite und H&ouml;he.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Papierquelle von Drucker</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur aktiv bei WINDOWS&reg; GDI. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breite x H&ouml;he: </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Maximal m&ouml;gliche Abmessungen (nicht editierbar).</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Auswahlbox erscheinen die vom Ger&auml;tetreiber aktivierten Papierformate. Diese setzen die Breite und H&ouml;he f&uuml;r den festen Ausschnitt auf die maximalen Werte. Beim Plotten spielt die eingestellte Papierquelle eine untergeordnete Rolle, das eingestellte Papierformat kann kleiner als die erforderliche Plotfl&auml;che sein.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Gr&ouml;&szlig;e f&uuml;r festen Ausschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Druckmethode <a href="dat_drucken_fester_ausschnitt.htm" class="topiclink" title="Drucken eines Zeichenbereiches mit einer definierten Rahmengröße">Fest</a> stellen Sie die Ausgangsgr&ouml;&szlig;e ein. Zum Beispiel k&ouml;nnen mit entsprechenden Angaben f&uuml;r DIN&nbsp;A4 die Zeichnungsausschnitte im richtigen Ma&szlig;stab ausgegeben werden. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breite, H&ouml;he</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Treffen Sie in den Auswahlboxen f&uuml;r Breite und H&ouml;he durch Anklicken der vorgeschlagenen Ma&szlig;e (DIN-Formate) Ihre Vorauswahl. Vom Programm werden diese Werte, je nach gew&auml;hltem Drucker, automatisch auf die Maximalwerte gesetzt. Sie k&ouml;nnen f&uuml;r die Ausgabe auf Plottern auch freie Breiten und H&ouml;hen direkt eingeben. Die Ausgabegr&ouml;&szlig;e sollte den verf&uuml;gbaren Druckbereich nicht &uuml;berschreiten.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Steuerung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">WINDOWS GDI:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Zeichnung </span><span class="f_Step">WINDOWS&reg;</span><span class="f_R_Option_Beschreibung"> True&#8209;Type Fonts, Dokumente und/oder Pixelbilder enth&auml;lt, muss diese Einstellung gew&auml;hlt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ISBCAD Direktmodus:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Plottern m&ouml;glich, wenn keine </span><span class="f_Step">WINDOWS&reg;</span><span class="f_R_Option_Beschreibung">-Schriften bzw. Bitmaps auf der Zeichnung vorhanden sind. Ist das trotzdem der Fall, werden die </span><span class="f_Step">WINDOWS&reg;</span><span class="f_R_Option_Beschreibung">-Fonts in ISBCAD Vektorfonts umgewandelt und statt der Bilddatei wird nur ein ausgekreuzter Rahmen mit dem Bilddateinamen geplottet. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Ausklappliste kann ein auf Ihrem System verf&uuml;gbarer Ger&auml;tetreiber gew&auml;hlt werden. Bei der Einrichtung des Plotters in den WINDOWS&reg;-Systemeinstellungen sollte </span><span class="f__Software_Element_deskriptiv">Universal – nur Text</span><span class="f_R_Option_Beschreibung"> ausgew&auml;hlt werden. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Ausklappliste_PostScript-Adobe-V2-0" style="margin:0;width:1.7396in;height:0.2188in;border:none" src="b_ausklappliste_postscript-adobe-v2-0.png"/><span class="f_R_Tabelle_Kopf"> </span><br>
+<span class="f_R_Tabellenzeile">(Ausklappliste) </span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl des Ger&auml;tetreibers anhand des gew&uuml;nschten Druckers/Plotters.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Steuersequenzen" style="margin:0;width:1.2500in;height:0.2604in;border:none" src="b_steuersequenzen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.1354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Angaben zu den Steuersequenzen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Steuersequenzen</span><span class="f_R_Tabellenzeile">. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Steuersequenzen (Dialogbeschreibung)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:10.0938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_R_Tabellenzeile"> <a href="dat_drucken.htm" class="topiclink" title="Zeichnung drucken"><img alt="Zeichnung drucken" title="Zeichnung drucken" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_drucke-datei.png"/></a> <img alt="B-akt_Einst-Drucke" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_einst-drucke.png"/> Registerkarte &#8594; Treiber </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:10.0938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alternativ (aus dem ISBCAD Hauptmen&uuml;): </span></p>
+<p class="p_R_Tabellenzeile"><img alt="I_Plotten-(Hauptmenü)" style="margin:0;width:0.3333in;height:0.3333in;border:none" src="hmfile_hash_0d2e0751.png"/><span class="f_R_Tabelle_Kopf"> </span><span class="f__Software_Element_deskriptiv">Plotten</span><span class="f_Aufruf"> ; </span><img alt="I_Drucken-(Hauptmenue)" style="margin:0;width:0.3333in;height:0.3333in;border:none" src="i_drucken-(hauptmenue).gif"/><span class="f_ImageCaption"> </span><span class="f__Software_Element_deskriptiv">Drucken</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0625in 0.2917in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Steuersequenzen" style="margin:0;width:5.7500in;height:3.0417in;border:none" src="d_steuersequenzen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Eingabe f&uuml;r Steuersequenzen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Start; Ende</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Verwendung von Laserdruckern erforderlich. Die n&ouml;tige Zahlenkombination entnehmen Sie dem Druckerhandbuch.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Anpassen" style="margin:0;width:1.0521in;height:0.2604in;border:none" src="b_anpassen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Steuersequenzen f&uuml;r bestimmte Ger&auml;te bekannt sind, werden diese wiederhergestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Optionen f&uuml;r HP&#8209;Sprache</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Plotursprung HP-GL/2</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Muss gesetzt werden, um bei Rollenmedien den Koordinatenursprung in die linke untere Ecke zu setzen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">HP-GL/2 Umschaltung aktivieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Bedarf erforderlich. Die Wahl der Plottersprache ist am Plotter und programmseitig identisch einzustellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Softwarepalette </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Muss gew&auml;hlt werden, wenn die Steuerung der Strichbreite und Farbe von der Software kommen soll. Die Plottereinstellung muss identisch sein!</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bin&auml;rcode generieren</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beschleunigt in Form von 8Bit oder 7Bit die Daten&uuml;bertragung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Reset von Stiftbreite (WU) </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wird gesetzt, um bei hintereinander ausgef&uuml;hrten Plotausgaben unterschiedliche Stiftbreiten zu benutzen. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Transparenz aus (TR)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wird gew&auml;hlt, wenn keine Graustufen gew&uuml;nscht sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linienattribute</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen normalem, eckigem oder rundem Linienende bzw. geradem Abschluss mit halbem &Uuml;berstand.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Auswahl von Steuersequenzen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Vom Programm werden die n&ouml;tigen Steuersequenzen vorgew&auml;hlt. Falls weitere n&ouml;tig sind, m&uuml;ssen Sie die erforderlichen Haken in die Checkboxen setzen.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Informieren Sie sich im Handbuch Ihres Ger&auml;tes, falls die Benutzung von bestimmten Einstellungen erforderlich ist.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Plotdatei</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Wenn Sie Plotdateien an einen Plotservice zum Ausdrucken schicken, m&uuml;ssen Sie den Treiber des dortigen Plotters verwenden! Sollte das Ergebnis nicht zufrieden stellend sein, kann die Ausgabe &uuml;ber den Kopierbefehl in der MS&#8209;DOS Eingabeaufforderung f&uuml;r Abhilfe sorgen. Alternativ kann die Zeichnung als PDF&#8209;Datei [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Bereich_Info_Rahmen"> | </span><span class="f__Software_Element_deskriptiv">PDF</span><span class="f_R_Bereich_Info_Rahmen">] ausgegeben werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Plotdatei erzeugen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Damit die Datei als Plotdatei geschrieben wird, m&uuml;ssen Sie einen Haken in die Checkbox setzen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfad/Name von Zeichnungsdatei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ohne weitere Abfragen wird die Plotdatei mit dem gleichen Namen (*.plt) im selben Ordner gespeichert wie die Zeichnung.</span><br>
+<span class="f_R_Option_Beschreibung">Existiert die Plotdatei bereits, wird derselbe Name und Ordner vorgeschlagen. Best&auml;tigen Sie den Vorschlag, dann wird die Plotdatei &uuml;berschrieben, oder geben einen anderen Namen und ein anderes Ziel an. F&uuml;r HP-Plotter d&uuml;rfen keine Sonderzeichen im gesamten Pfad vorkommen!</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eingabe f&uuml;r Dateiname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie werden immer aufgefordert, einen Namen und Speicherort anzugeben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eingabe f&uuml;r Dateipfad\[Name] (konstant)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen konstanten Pfad f&uuml;r die Plotdatei an. Endet die Vorgabe mit Backslash (\), werden Sie nach dem Dateinamen gefragt. Wenn Sie auch diesen schon vorgeben, wird die Datei immer &uuml;berschrieben.</span><br>
+<span class="f_R_Option_Beschreibung">Beispiele: &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">D:\Zeichnungen\ &nbsp; &nbsp; &nbsp; &nbsp;</span><br>
+<span class="f_R_Option_Beschreibung">D:\Zeichnungen\pltDatei.plt</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="pdfdrucken" class="hmanchor"></a><span class="f_R_Bereich">PDF-Datei</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Einstellung ist nur verf&uuml;gbar, wenn der Treiber </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_R_Bereich_Info_Rahmen"> ausgew&auml;hlt wurde. Im Abschnitt </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Bereich_Info_Rahmen"> (s. weiter unten) k&ouml;nnen Sie mit der Option [</span><span class="f__Software_Element_deskriptiv">Folienstruktur f&uuml;r PDF erstellen</span><span class="f_R_Bereich_Info_Rahmen">] einstellen, ob die Folienstruktur der Zeichnung in die PDF-Datei &uuml;bernommen wird. Dadurch k&ouml;nnen Sie in der PDF-Datei Folien ein- oder ausblenden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfad/Name von Zeichnungsdatei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Zeichnung wird mit dem gleichen Dateinamen (Dateiname.pdf) und im selben Ordner gespeichert wie die Zeichnung.</span><br>
+<span class="f_R_Option_Beschreibung">Existiert die PDF-Datei bereits, wird derselbe Name und Ordner vorgeschlagen. Wenn Sie das &Uuml;berschreiben des Dateinamens und des Speicherorts mit </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Option_Beschreibung"> best&auml;tigen, wird die urspr&uuml;ngliche Datei &uuml;berschrieben. Um einen neuen Dateinamen und/oder Zielpfad einzugeben, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Option_Beschreibung">. Anschlie&szlig;end wird ein Dialog zum Speichern der PDF-Datei ge&ouml;ffnet. Nach dem Speichern wird die Datei im standardm&auml;&szlig;ig eingestellten PDF-Reader ge&ouml;ffnet.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung" style="font-weight: bold;">Bei mehreren Zeichnungen:</span><span class="f_R_Option_Beschreibung"> Wenn Sie mehrere Zeichnungen in der Dateiliste ausgew&auml;hlt haben und auf </span><span class="f__Software_Element_deskriptiv">Alle Plotten</span><span class="f_R_Option_Beschreibung"> klicken, wird f&uuml;r jede bereits vorhandene PDF-Datei nacheinander abgefragt, ob diese &uuml;berschrieben werden soll. Geben Sie anderenfalls einen neuen Dateinamen oder Zielpfad ein.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Skalierung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Automatisch berechnen/anpassen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einstellung f&uuml;r Drucker. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Gr&ouml;&szlig;e der Zeichnung bzw. des Zeichnungsausschnitts [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">alles, fester Ausschnitt bzw. beliebiger Ausschnitt</span><span class="f_R_Option_Beschreibung">] wird immer auf die Gr&ouml;&szlig;e f&uuml;r festen Ausschnitt skaliert.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur wenn der Faktor 1.0 betr&auml;gt, wird der Ausschnitt bzw. die Zeichnung in dem Ma&szlig;stab ausgegeben, in dem sie im Konstruktionsprogramm gezeichnet wurde.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ist der Faktor &lt;1.0 wird die Zeichnung verkleinert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Manuell eingeben / ma&szlig;st&auml;blich</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einstellung f&uuml;r Plotter. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Tragen Sie in das darunterliegende Eingabefeld den Faktor f&uuml;r die Zeichnungsgr&ouml;&szlig;e ein. Im Normalfall ist der Faktor 1!</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Aufl&ouml;sung f&uuml;r gef&uuml;llte Fl&auml;chen:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Druckaufl&ouml;sung f&uuml;r gef&uuml;llte Fl&auml;chen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Einstellungen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Strichbreite skalieren bei Faktor &lt;&gt;1</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wird der Plan bei der Ausgabe vergr&ouml;&szlig;ert oder verkleinert, werden die Strichbreiten mit dem gleichen Faktor ver&auml;ndert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftsortierung r&uuml;ckw&auml;rts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei der Ausgabe werden die Stifte von hinten nach vorne aufgenommen. Damit werden die Linien der Geometrie und Schraffur, die &uuml;blicherweise mit niedrigen Stiftnummern gezeichnet werden, &uuml;ber den F&uuml;llungen sichtbar.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne Sortierung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Ausgabe erfolgt in der Reihenfolge, in der die Zeichnung erstellt wurde. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne Diagonalpunkte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Standardm&auml;&szlig;ig werden unten links und oben rechts kleine Markierungen gesetzt. Damit stellen Sie sicher, dass der Plan in voller Gr&ouml;&szlig;e geplottet wird, wenn kein Rand eingestellt ist. Einige Plotter verschieben sonst die Zeichnung an den Rand.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Papierquelle automatisch</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird das g&uuml;nstigste Papierformat aus der zur Verf&uuml;gung stehenden Liste gew&auml;hlt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">90&deg; Drehung vorschlagen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Soll immer eine Drehung um 90&deg; vorgeschlagen werden, setzen Sie ein H&auml;kchen in das K&auml;stchen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">0&deg; Drehung vorschlagen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Drehung um 0&deg; wird immer vorgeschlagen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Elemente nicht &uuml;berpr&uuml;fen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vor der Ausgabe werden alle Elemente &uuml;berpr&uuml;ft, ob sie ausgegeben werden oder nicht. Wenn z. B. Linien mit Stift&nbsp;8 (keine Darstellung (Stifte/Farben)) gezeichnet wurden, werden Sie vor der Ausgabe darauf hingewiesen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Exemplare vom Treiber ignorieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gibt es im Ger&auml;tetreiber [</span><span class="f__Software_Element_deskriptiv">Drucker</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Option_Beschreibung">] eine Vorgabe f&uuml;r die Exemplare, wird diese hiermit au&szlig;er Kraft gesetzt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ausgabe Bitmaps</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Behandlung der Grafikobjekte wird optimiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">[Folienstruktur f&uuml;r PDF erstellen]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Auswahlm&ouml;glichkeit erscheint nur, wenn Sie als Drucker </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_R_Option_Beschreibung"> gew&auml;hlt haben. Damit kann jeder, der die PDF-Datei &ouml;ffnet, Folien aus- und einschalten. Das kann hilfreich sein, wenn die Folien mit Schraffuren ausgeblendet werden k&ouml;nnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Linienattribute" style="margin:0;width:1.3229in;height:0.2604in;border:none" src="b_linienattribute.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angaben zur Darstellung der Linienenden. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Linienattribute (Caps)</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand am Linienende</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Voreinstellung: rund. Bei sehr starker Vergr&ouml;&szlig;erung k&ouml;nnen Sie die Unterschiede im Ausdruck erkennen. Die gew&auml;hlte Art wird in der Skizze angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linienattribute &uuml;bernehmen:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Soll der Ausdruck mit diesen Attributen erfolgen, setzen Sie einen Haken in das K&auml;stchen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="optionen" class="hmanchor"></a><img id="toggle0186a6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a6','toggle0186a6_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a6" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Einstiftplotter</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auf der Seite f&uuml;r die Treiber m&uuml;ssen Sie den ISBCAD&nbsp;Direktmodus und als Ger&auml;tetreiber einen Stiftplotter w&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">als Einstiftplotter verwenden:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Statt mit mehreren verschiedenen Stiften zu arbeiten, k&ouml;nnen auch mit nur einem Stift verschieden breite Linien gezeichnet werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abr&uuml;ckma&szlig;:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Damit unterschiedlich breite Linien gezeichnet werden, muss der Stift mehrfach die Linie mit seitlichem Versatz zeichnen. </span><br>
+<span class="f_R_Option_Beschreibung">Geben Sie das Ma&szlig; in 1/100 mm an.</span></p>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="clip0024" style="margin:0;width:13.1354in;height:2.6875in;border:none" src="clip0024.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schnittstelle f&uuml;r Ausgabe</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anschluss von Drucker:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Standardeinstellung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lokale Schnittstelle:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In &auml;u&szlig;erst seltenen F&auml;llen ist der Plotter an eine lokale, serielle Schnittstelle (z. B.&nbsp;Com1) angeschlossen. Diese kann &uuml;ber das Auswahlfeld gew&auml;hlt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Konfigurieren" style="margin:0;width:1.3125in;height:0.2604in;border:none" src="b_konfigurieren.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie &uuml;ber die lokale Schnittstelle (Com1 / Com2) ausgeben, muss diese konfiguriert werden. Lesen Sie dazu im Handbuch Ihres Plotters nach.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Exemplare</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Anzahl der Exemplare.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a6\',\'toggle0186a6_ICON\')');
+HMInitToggle('toggle0186a6','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

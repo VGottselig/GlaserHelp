@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Automatisch bewehren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="AutBew,AutBew Grundriss definieren und bewehren" />
+   <meta name="description" content="Flächige Bewehrungen für Platten und Scheiben mit unregelmäßig geformten Umrissen, die mit FEM-Programmen (Finite-Elemente-Methoden) berechnet wurden. ISBCAD generiert einen" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="konst3_flaechenbew_autbew.htm">Automatische Bewehrung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst3_flaechenbew_autbew.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst3_flaechenbew_autbew.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_einstellungen-fuer-die-verlegung.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Automatisch bewehren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="konst3_flaechenbew_autbew.htm" class="topiclink" title="Automatische Bewehrung (Funktionsübersicht)"><img alt="Automatische Bewehrung (Funktionsübersicht)" title="Automatische Bewehrung (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_autbew.png"/></a> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Fl&auml;chige Bewehrungen f&uuml;r Platten und Scheiben mit unregelm&auml;&szlig;ig geformten Umrissen, die mit FEM-Programmen (Finite-Elemente-Methoden) berechnet wurden. ISBCAD generiert einen Bewehrungsvorschlag mit optimaler Ausnutzung, der im Folgenden manuell nachbearbeitet werden kann.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Software f&uuml;hrt Sie automatisch durch die ben&ouml;tigten Arbeitsschritte. Je nachdem, ob Sie die as-Werte aus der FEM-Berechnung &uuml;bernehmen oder manuell angeben wollen.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><a name="aswerte" class="hmanchor"></a><span class="f_R_Dialog">a</span><span class="f_R_Dialog" style="vertical-align: sub;">s</span><span class="f_R_Dialog">-Werte (Dialog)</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Abfrage, ob die a</span><span class="f_R_Dialog_Info" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Dialog_Info">-Werte aus der FEM-Berechnung &uuml;bernommen werden sollen.</span></p>
+<p class="p_R_Dialog_Info"><img alt="D_as_Werte" style="margin:0;width:2.3854in;height:2.0000in;border:none" src="d_as_werte.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte werden aus dem angeklickten FEM-Datensatz &uuml;bernommen. [</span><span class="f__Abfrage">Welche FE-Werte? (anklicken)</span><span class="f_R_Option_Beschreibung">]. Falls kein FEM-Datensatz vorhanden ist, werden Sie dazu aufgefordert, eine Ergebnisdatei einzulesen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird nur die Grundbewehrung erzeugt. Zus&auml;tzlich k&ouml;nnen mit Bereichen ge&auml;nderter Bewehrungsgehalte Gebiete mit erh&ouml;hten as-Werten definiert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterabstand (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe des Abstandes f&uuml;r das Punktraster.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die Eingaben und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab und schlie&szlig;t den Dialog.</span></p>
+<p class="p_A_Allgemein"><span class="f_Task_Info">Wenn Sie die Option </span><span class="f__Software_Element_deskriptiv">ohne &Uuml;bernahme aus FEM</span><span class="f_Task_Info"> gew&auml;hlt haben, k&ouml;nnen Sie sofort die Umrissgeometrie definieren.</span><br>
+<span class="f_Task_Info">(s. unten: <a href="tsk_automatisch_bewehren.htm#umrissgeometriedesverlegebereichesdefinieren" class="topiclink">Umrissgeometrie des Verlegebereiches definieren</a>)</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><a name="fem" class="hmanchor"></a><span class="f_ToDo">FEM Ergebnisdatei &ouml;ffnen oder anklicken</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Auswahl der FEM-Ergebnisdatei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Wenn kein FEM-Datensatz auf der Zeichnung vorhanden ist:</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">W&auml;hlen Sie in der Dateiauswahl die zu dem Grundriss geh&ouml;rende FEM-Ergebnisdatei </span><span class="f_Step_Info">(*.fem)</span><span class="f_Step_Anmerkung"> aus und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nach dem Einlesen der Ergebnisdatei k&ouml;nnen Sie den Datensatz platzieren (s. </span><span class="f_Hervorhebung_Text">FEM-Ergebnisdatei platzieren</span><span class="f_Step_Anmerkung">).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Wenn bereits ein FEM-Datensatz auf der Zeichnung vorhanden ist:</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Klicken Sie den Datensatz an. [</span><span class="f__Abfrage">Welche FE-Werte? (anklicken)</span><span class="f_Step_Anmerkung">]. ISBCAD wechselt zur Definition der Umrissgeometrie (s. <a href="tsk_automatisch_bewehren.htm#umrissgeometriedesverlegebereichesdefinieren" class="topiclink">Umrissgeometrie definieren</a>).</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">FEM-Ergebnisdatei platzieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus, um den Drehwinkel anzugeben. [</span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Geben Sie den Drehwinkel (Winkel zur Horizontalen) an oder best&auml;tigen Sie den Vorschlagswert mit Rechtsklick. Mit negativem Wert wird im Uhrzeigersinn gedreht. Bereits abgelegte FEM-Datens&auml;tze werden vor&uuml;bergehend ausgeblendet.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Mit den Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_Step_Anmerkung"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie die FE-Werte parallel oder orthogonal zu einem Bezugselement ausrichten. Klicken Sie die entsprechende Ausrichtungsoption an und klicken Sie anschlie&szlig;end das Bezugselement an, dessen Neigung &uuml;bernommen werden soll.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Step_Anmerkung">Klicken Sie einen der Vorschlagswerte ein: 0&deg;, 90&deg;, 180&deg;, 270&deg;: Das Ergebnis ist sofort sichtbar.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Gr&ouml;&szlig;enfaktor ein und best&auml;tigen Sie mit der Eingabetaste. 1 = Originalgr&ouml;&szlig;e. [</span><span class="f__Abfrage">Faktor</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Standardm&auml;&szlig;ig wird der Faktor &quot;2&quot; vorgeschlagen. Den Gr&ouml;&szlig;enfaktor k&ouml;nnen Sie auch nachtr&auml;glich mit der Funktion [GroFak] im Funktionsbereich &auml;ndern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie den FEM-Datensatz mit einem Linksklick auf der Zeichenfl&auml;che ab. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/><a name="grofak" class="hmanchor"></a></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um den Gr&ouml;&szlig;enfaktor zu &auml;ndern [GroFak]</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_GroFak_AutBew" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_grofak_autbew.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Damit die Anzeige der as-Werte zu der Grundrissdefinition passt, m&uuml;ssen Sie gegebenenfalls den Gr&ouml;&szlig;enfaktor &auml;ndern.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Hervorhebung_Text">Beispiel</span><span class="f_Task_Info">: Wenn im FEM-Programm die Datenpunkte im Ma&szlig;stab 1:100 gespeichert wurden und Sie den Bewehrungsplan im Ma&szlig;stab 1:50 zeichnen, m&uuml;ssen Sie den Datenbereich mit dem Faktor 2 anpassen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den geeigneten Faktor ein und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um mit der automatischen Bewehrung fortzufahren, klicken Sie im Funktionsbereich auf </span><img alt="B_UmrGeo" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_umrgeo.png"/><span class="f_Step">. </span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><a name="umrissgeometriedesverlegebereichesdefinieren" class="hmanchor"></a><span class="f_ToDo">Umrissgeometrie des Verlegebereiches definieren [UmrGeo]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Der Verlegebereich stellt die Begrenzung der Bewehrung dar. Das Programm schneidet an diesen Grenzen die St&auml;be ab. Eventuell m&uuml;ssen Sie durch geeignete Ma&szlig;nahmen z. B. f&uuml;r die Einspannbewehrung sorgen. Das kann durch die zus&auml;tzliche Anordnung von Winkeleisen geschehen.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Der Verlegebereich ist nicht zwingend identisch mit dem Grundrisspolygon. Es wird die gesamte Decke in einer FEM-Berechnung erfasst, aber die Bewehrung wird in mehrere Bauabschnitte aufgeteilt. </span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Falls Sie &Auml;nderungen an dem Verlegebereich vornehmen wollen, m&uuml;ssen Sie diesen zuvor l&ouml;schen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Funktionsbereich die Art der Definition aus. Sie k&ouml;nnen die Umrissgeometrie &uuml;ber das Anklicken von Eckpunkten [</span><span class="f__Software_Element_deskriptiv">Punkte</span><span class="f_Step">] oder Elementen [</span><span class="f__Software_Element_deskriptiv">Elemen</span><span class="f_Step">] definieren.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">2.1 &nbsp;&Auml;u&szlig;ere Umrissgeometrie definieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Abstand in der eingestellten Einheit ein oder &uuml;bernehmen Sie den in der Eingabe stehenden Wert mit Rechtsklick. [</span><span class="f__Abfrage" style="text-decoration: underline;">Abstand</span><span class="f__Abfrage"> o. Eckpunkt w&auml;hlen</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Punkte_BAMTEC" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte_bamtec.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Eckpunkte des Verlegebereiches in Reihenfolge an. [</span><span class="f__Abfrage">n. Eckpunkt (Umrissgeometrie)</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">Mit Rechtsklick gelangen Sie wieder zur Abstandsangabe und k&ouml;nnen einen neuen Abstand angeben. Die Eingabe wird am zuletzt angeklickten Punkt wieder aufgenommen. Der neue Abstand gilt demnach f&uuml;r die Parallele vom letzten zum folgenden Punkt.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4063in;"><span class="f_Step_Anmerkung">Das Polygon wird automatisch geschlossen, wenn der erste Punkt ein zweites Mal angeklickt wird. Sie k&ouml;nnen nun mit der Angabe der inneren Umrissgeometrie fortfahren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.3958in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wer positiv und Sie klicken die Punkte gegen den Uhrzeigersinn an, wird der Abstand nach innen gezeichnet. Ist der Wert negativ und Sie klicken die Punkte im Uhrzeigersinn an, wird der Abstand ebenfalls nach innen gezeichnet.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0;"><img alt="Z_AutBew_01" style="margin:0;width:3.1979in;height:1.7708in;border:none" src="z_autbew_01.png"/><img alt="Z_AutBew_02" style="margin:0;width:2.8438in;height:1.7917in;border:none" src="z_autbew_02.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht dem Abstand von der Au&szlig;enkante.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.3958in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0;"><img alt="Z_AutBew_03" style="margin:0;width:3.1667in;height:1.7604in;border:none" src="z_autbew_03.png"/><span class="f_ImageCaption">  <img alt="Z_AutBew_04" style="margin:0;width:2.7292in;height:1.7708in;border:none" src="z_autbew_04.png"/></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wert negativ und Sie klicken die Punkte gegen den Uhrzeigersinn an bzw. positiv und im Uhrzeigersinn, wird der Abstand rechts der angeklickten Punkte gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Elemen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Elemente f&uuml;r die Umrandung des Verlegebereiches in Reihenfolge an. [</span><span class="f__Abfrage">Elemente w&auml;hlen (Umrissgeometrie)</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">Achten Sie darauf, die Elemente auf der Seite anzuklicken, zu der der Abstand angetragen werden soll. Sie k&ouml;nnen sowohl Linien als auch Kreise anklicken. Das erste und letzte Element sollte eine Linie sein, um eindeutige Schnittpunkte zu erzeugen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schlie&szlig;en Sie das Polygon mit </span><img alt="B_Polygon-schliessen-mit-icon" style="margin:0;width:1.4688in;height:0.1979in;border:none" src="b_polygon-schliessen-mit-icon.png"/>.</p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2292in; margin: 0.0104in 0 0.0833in 0.6250in;"><span class="f_Step_Anmerkung">Das Polygon wird nur geschlossen, wenn es auch tats&auml;chlich geschlossen ist. Ist es lediglich optisch geschlossen, z. B. bei Durchbr&uuml;chen mit dem Abstand 0, wird das Polygon nicht aufgenommen. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2292in; margin: 0.0104in 0 0.0833in 0.6250in;"><span class="f_Step_Anmerkung">Sie k&ouml;nnen nun mit der Angabe der inneren Umrissgeometrie fortfahren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">2.2 &nbsp;Umrisse der Durchbr&uuml;che definieren</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Punkte_BAMTEC" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte_bamtec.png"/></p>
+<p class="p_R_Tabellenzeile"><img alt="B_Elemen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Abstand in der eingestellten Einheit ein oder &uuml;bernehmen Sie den in der Eingabe stehenden Wert mit Rechtsklick. [</span><span class="f__Abfrage">Abstand o. Eckpunkt w&auml;hlen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Eckpunkte/Elemente der Durchbr&uuml;che wie bei der Angabe der &auml;u&szlig;eren Umrissgeometrie an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie den Verlegebereich definiert haben, klicken Sie auf </span><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/><span class="f_Step">, um mit der Bearbeitung fortzufahren.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4375in;"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Bewehrungsparameter</span><span class="f_Step_Anmerkung">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um in einer vorhandenen Geometrie fortzufahren</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Polygonhilfspunkt an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6146in;"><span class="f_Step_Anmerkung">Sie gelangen wieder zur Abstandsangabe. [</span><span class="f__Abfrage">Abstand o. </span><span class="f__Abfrage" style="text-decoration: underline;">Eckpunkt w&auml;hlen</span><span class="f_Step_Anmerkung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um die definierte Geometrie zu bearbeiten</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step_Info" style="margin: 0.0625in 0 0.0313in 0;"><span class="f_Step_Info">Wenn Sie die Bewehrung einer Lage beendet haben, oder im Dialog </span><span class="f__Software_Element_deskriptiv">Bewehrungsparameter</span><span class="f_Step_Info"> auf </span><span class="f__Software_Element_deskriptiv">Abbruch</span><span class="f_Step_Info"> klicken, erscheint die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Letztes Polygon</span><span class="f_Step_Info">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Letztes Polygon</span><span class="f_Step">, um die Bearbeitung der zuvor beschriebenen Umrissgeometrie mit den zugeh&ouml;rigen Durchbr&uuml;chen wieder aufzunehmen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie den Verlegebereich definiert haben, klicken Sie auf </span><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/><span class="f_Step">, um mit der Bearbeitung fortzufahren.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Bewehrungsparameter</span><span class="f_Step_Anmerkung">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Bewehrungsparameter angeben (Dialog)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5313in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Bewehrungsparameter" style="margin:0;width:2.9688in;height:2.9792in;border:none" src="d_bewehrungsparameter.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bewehrungswinkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie einen der Werte in der Auswahlbox an. Sie k&ouml;nnen den Winkel auch direkt eintippen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird der Winkel angegeben, in dem die Bewehrung liegt. 0&deg; geht von unten nach oben, 180&deg; von oben nach unten. 90&deg; von rechts nach links und 270&deg; von links nach rechts.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungslage</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Obere Lage, Untere Lage</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie entweder die obere oder die untere Lage.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungsausrichtung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;ngs (X), Quer (Y)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hiermit legen Sie fest, mit welchen Ergebnissen aus der FEM-Datei gearbeitet werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf diese Schaltfl&auml;che, um mit der Bearbeitung fortzufahren. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Automatische Bewehrung</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie diese Schaltfl&auml;che anklicken, gelangen Sie wieder zur Angabe der Umrissgeometrie.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ToDo">Bewehrung bearbeiten</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn Sie die Umrissgeometrie festgelegt haben und im Dialog </span><span class="f__Software_Element_deskriptiv">Bewehrungsparameter</span><span class="f_Step_Info"> auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Info"> geklickt haben, wird der Dialog </span><span class="f__Software_Element_deskriptiv">Automatische Bewehrung</span><span class="f_Step_Info"> ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Auml;ndern Sie die gew&uuml;nschten Eigenschaften auf der entsprechenden Registerkarte.</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.5000in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie alle St&auml;be bearbeitet haben, klicken Sie im Dialog auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Fertig</span><span class="f_Step">, um die Bewehrungszeichnung auf den Plan zu &uuml;bertragen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><a name="abewdialog" class="hmanchor"></a><span class="f_R_Dialog">Optionen im Dialog &quot;Automatische Bewehrung&quot;</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Verwenden Sie die Schaltfl&auml;chen im unteren Dialogbereich, um &Auml;nderungen zu &uuml;bernehmen oder die vorherigen Parameter wiederherzustellen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2917in;"><p class="p_R_Tabellenzeile"><img alt="I_Korrektur_Autbew" style="margin:0;width:0.5313in;height:0.3021in;border:none" src="i_korrektur_autbew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Setzt die zuletzt ge&auml;nderten Parameter schrittweise zur&uuml;ck.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2917in;"><p class="p_R_Tabellenzeile"><img alt="I_Korrektur_Vor_AutBew" style="margin:0;width:0.5313in;height:0.3021in;border:none" src="i_korrektur_vor_autbew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stellt zur&uuml;ckgesetzte &Auml;nderungen schrittweise wieder her.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2917in;"><p class="p_R_Tabellenzeile"><img alt="B_Fertig_AutBew" style="margin:0;width:1.1771in;height:0.3021in;border:none" src="b_fertig_autbew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beendet die Bearbeitung und legt die Bewehrung oberhalb der vorhandenen Zeichnung ab. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die eingestellten Parameter werden im Polygon gespeichert und der Dialog wird geschlossen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2917in;"><p class="p_R_Tabellenzeile"><img alt="B_Rechnen_Autbew" style="margin:0;width:1.1771in;height:0.3021in;border:none" src="b_rechnen_autbew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet die Bewehrung und aktualisiert die Zeichnungsdarstellung. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie nach dem Bearbeiten von St&auml;ben nochmals rechnen lassen, wird der Ursprungszustand wiederhergestellt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2917in;"><p class="p_R_Tabellenzeile"><img alt="B_Abbrechen_Autbew" style="margin:0;width:1.1771in;height:0.3021in;border:none" src="b_abbrechen_autbew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bewehrungsdarstellung wird gel&ouml;scht und der Dialog wird geschlossen. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ver&auml;nderte Parameter werden nicht gespeichert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="Konfiguration der allgemeinen Einstellungen" title="Konfiguration der allgemeinen Einstellungen" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Konfiguration der allgemeinen Einstellungen" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Allgemeines</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Option" style="page-break-after: avoid; margin: 0.1250in 0 0.0104in 0.3125in;"><img alt="D_Automatische-Bewehrung" style="margin:0;width:6.6146in;height:4.9688in;border:none" src="d_automatische-bewehrung.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Landesnormen</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Norm f&uuml;r die Berechnung der Verankerungs- und &Uuml;bergreifungsl&auml;ngen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Verbundbedingungen</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Verbundbedingungen f&uuml;r die Berechnung der Verankerungs- und &Uuml;bergreifungsl&auml;ngen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungsparameter</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Eingabe der Bewehrungsparameter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stahlg&uuml;te (MN/m&sup2;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die benutzte Stahlg&uuml;te in der Auswahlbox aus oder geben Sie die Streckgrenze (f</span><span class="f_R_Option_Beschreibung" style="font-size: 9pt; vertical-align: sub;">yk</span><span class="f_R_Option_Beschreibung">) ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betong&uuml;te (MN/m&sup2;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie die n&ouml;tige Betong&uuml;te ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stahloberfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die vorhandene Stahloberfl&auml;che aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Versatzma&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Versatzma&szlig;es (a</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">1</span><span class="f_R_Option_Beschreibung">).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Das Versatzma&szlig; k&ouml;nnen Sie z. B. mit dem separat erh&auml;ltlichen GLASER Programm DesiCon EC&nbsp;2 ermitteln. &nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Berechnungsparameter</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Eingabe der Berechnungsparameter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;ngenstaffelung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Stabl&auml;ngen werden auf das eingestellte Ma&szlig; aufgerundet, sofern sie nicht an die Umrissgeometrie sto&szlig;en. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&uuml;ckensto&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">St&auml;be, deren Anfang und Ende sich um weniger als das eingestellte Ma&szlig; n&auml;hern, werden zu einem Stab verschmolzen. Bei unterschiedlichen Durchmessern kann zus&auml;tzlich das Verh&auml;ltnis der Durchmesser ber&uuml;cksichtigt werden (s. </span><span class="f__Software_Element_deskriptiv">Verh&auml;ltnis Durchm. [%]</span><span class="f_R_Option_Beschreibung"> weiter unten). Werden unterschiedliche Durchmesser zusammengefasst, wird immer der gr&ouml;&szlig;ere genommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnittserh&ouml;hung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hiermit k&ouml;nnen Sie die as-Werte erh&ouml;hen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Randabstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verschiebung der St&auml;be in Richtung rechtwinklig zum Bewehrungswinkel.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verh&auml;ltnis Durchm. [%]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim L&uuml;ckensto&szlig; kann zus&auml;tzlich der Unterschied der Durchmesser beachtet werden. Damit k&ouml;nnen Sie vermeiden, dass ein sehr d&uuml;nner Stab mit einem dicken Stab verschmolzen wird.</span><br>
+<span class="f_R_Option_Beschreibung">St&auml;be, deren Durchmesserverh&auml;ltnis gr&ouml;&szlig;er ist als der eingestellte Wert, werden zusammengefasst.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:1.9583in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&oslash;20 und &oslash;14 - v = 14/20 = &nbsp;0,7 -</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">70</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.4479in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">St&auml;be werden nicht zusammengefasst.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">71</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.4479in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">St&auml;be werden zusammengefasst.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.4479in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">St&auml;be werden nie zusammengefasst.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">100</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.4479in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">St&auml;be werden immer zusammengefasst.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Stabl&auml;nge f&uuml;r Rundstahl [m]</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="SCR_Stablaenge" style="margin:0;width:6.3542in;height:0.7396in;border:none" src="scr_stablaenge.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden alle Stabdurchmesser aus der Rundstahltabelle in der oberen Zeile aufgelistet. Zum &Auml;ndern der Stabl&auml;nge klicken Sie <img alt="I_pfeil-nach-unten_AutBew2" style="margin:0;width:0.1667in;height:0.1979in;border:none" src="i_pfeil-nach-unten_autbew2.png"/>, um eine Liste mit allen verf&uuml;gbaren Stabl&auml;ngen aufzuklappen. W&auml;hlen Sie anschlie&szlig;end aus der Liste die entsprechende Stabl&auml;nge aus.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">&Uuml;bergreifungssto&szlig;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;anteil</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines Sto&szlig;anteils. </span><span class="f__Software_Element_deskriptiv">Keine</span><span class="f_R_Option_Beschreibung">: Zus&auml;tzliche Einstellungen f&uuml;r die Sto&szlig;anordnung sind nicht freigeschaltet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;l&auml;nge [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe einer individuellen Sto&szlig;l&auml;nge in Meter. Nur verf&uuml;gbar, wenn im Dialog </span><span class="f__Software_Element_deskriptiv"><a href="tsk_automatisch_bewehren.htm#aswerte" class="topiclink" title="as-Werte Dialog">as-Werte</a></span><span class="f_R_Option_Beschreibung"> die Option </span><span class="f__Software_Element_deskriptiv">ohne &Uuml;bernahme aus FEM</span><span class="f_R_Option_Beschreibung"> gew&auml;hlt worden ist.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um eine Sto&szlig;l&auml;nge einzugeben, setzen Sie bei </span><span class="f__Software_Element_deskriptiv">manuell</span><span class="f_R_Option_Beschreibung"> einen Haken in die Checkbox (<img alt="I_Checkbox-ja" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ja.png"/>) und geben Sie die gew&uuml;nschte Sto&szlig;l&auml;nge ein. Die Eingabe einer negativen Sto&szlig;l&auml;nge ist nicht m&ouml;glich.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4375in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn Sie eine individuelle Sto&szlig;l&auml;nge eingeben, werden die Angaben im Bereich </span><span class="f__Software_Element_deskriptiv">Berechnungsparameter</span><span class="f_Hinweis_in_Tabelle"> bei der Berechnung nicht ber&uuml;cksichtigt.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Solange ein Haken bei </span><span class="f__Software_Element_deskriptiv">manuell</span><span class="f_Hinweis_in_Tabelle"> gesetzt ist, wird mit der eingetragenen L&auml;nge gerechnet. Entfernen Sie den Haken aus der Checkbox, wenn der eingetragene Wert f&uuml;r die Berechnung nicht verwendet werden soll.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Aktualisieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie nach jeder Ver&auml;nderung der Parameter auf diese Schaltfl&auml;che, um die Verteilung der St&ouml;&szlig;e der Grundbewehrung der neuen Situation anzupassen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4375in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Eventuell schon ge&auml;nderte Zulagebewehrungen werden nicht ver&auml;ndert!</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aufgrund der Komplexit&auml;t der Situationen kann es erforderlich sein, mehrere M&ouml;glichkeiten durchzuspielen. Bei der Bearbeitung der Grundbewehrung ist es sinnvoll, die Zulagen auszublenden (s. Registerkarte [</span><span class="f__Software_Element_deskriptiv">Anzeige</span><span class="f_R_Option_Beschreibung">]).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ A - seitlich</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verlegung basiert auf der Verschiebung der Sto&szlig;mitten:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel 50% Sto&szlig;: In der ersten Reihe wird n*L + R</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">1</span><span class="f_R_Option_Beschreibung"> verlegt. In der zweiten Reihe wird der Sto&szlig; um 1,3*F*l</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung"> verschoben und anschlie&szlig;end mit n*L + R</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">2</span><span class="f_R_Option_Beschreibung"> ausgelegt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim 33% Sto&szlig; wird eine und beim 25% Sto&szlig; eine weitere Reihe hinzugelegt, deren St&ouml;&szlig;e um 1,3*F*l</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung"> versetzt angeordnet sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erh&ouml;hung des Sto&szlig;versatzes. Im Ursprung wird mit dem Faktor „1“ gerechnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.6354in;"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0;"><img alt="Z_AutBew_Fl" style="margin:0;width:4.4792in;height:1.2292in;border:none" src="z_autbew_fl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.6146in;"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0;"><img alt="Z_AutBew_Faktor_01_02" style="margin:0;width:4.4479in;height:1.2396in;border:none" src="z_autbew_faktor_01_02.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:3.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zu sehen ist die automatische Anordnung der St&ouml;&szlig;e. Das Erh&ouml;hen des Faktors verschiebt die St&ouml;&szlig;e.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L = maximale Stabl&auml;nge (Lieferl&auml;nge), A = Anfangsl&auml;nge, R = Restl&auml;nge in Reihe, F = Faktor</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ B - mittig</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verlegung basiert auf der Variation der Stabl&auml;ngen:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel 50% Sto&szlig;: In der ersten Reihe wird n*L + R1 verlegt. In die zweite Reihe kommen &frac12;*L + n*L + R2.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim 33% Sto&szlig; werden in die erste Reihe n*L + R1, in der zweiten Reihe 2/3*L + n*L + R2 und in der dritten Reihe 1/3*L + n*L + R3 verlegt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die Verteilung der St&ouml;&szlig;e weiter zu ver&auml;ndern, k&ouml;nnen Sie die folgenden Optionen hinzunehmen und kombinieren. Mit welcher Kombination das beste Ergebnis erzielt wird, kann nicht vorhergesagt werden und ist durch wechselnde Kombinationen herauszufinden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Seitenwechsel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in der ersten Reihe von links nach rechts verlegt wird, beginnt die zweite Reihe auf der rechten Seite. Abwechselnd folgt Reihe auf Reihe.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Restl&auml;nge verwenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die anfallenden Reste werden mit verbraucht. Die Restl&auml;nge mit der h&ouml;chsten Zahl wird bevorzugt verwendet.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Reste werden nicht zwingend unmittelbar in der folgenden Reihe eingebaut.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rest zuerst</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur in Verbindung mit Restl&auml;nge verwenden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Reste werden an den Anfang der Reihen gelegt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.2083in;"><p class="p_R_Option" style="text-indent: -0.2604in; page-break-after: avoid; margin: 0.1250in 0 0.0104in 0.2604in;"><img alt="Z_AutBew_Fl_02" style="margin:0;width:4.4583in;height:1.0104in;border:none" src="z_autbew_fl_02.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.1875in;"><p class="p_R_Option" style="text-indent: -0.2604in; page-break-after: avoid; margin: 0.1250in 0 0.0104in 0.2604in;"><img alt="Z_AutBew_Faktor_02_2" style="margin:0;width:4.4583in;height:1.0208in;border:none" src="z_autbew_faktor_02_2.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgangssituation: oben 33% Sto&szlig;, unten 50% Sto&szlig;.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.1875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">100% Sto&szlig;, Restl&auml;nge verwenden und Rest zuerst.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="Konfiguration der Grund-und Mattenbewehrung" title="Konfiguration der Grund-und Mattenbewehrung" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Konfiguration der Grund-und Mattenbewehrung" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Bewehrung</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein"><img alt="D_Automatische-Bewehrung_Bewehrung" style="margin:0;width:6.6146in;height:4.9167in;border:none" src="d_automatische-bewehrung_bewehrung.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Grundbewehrung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Entscheiden Sie, ob ohne oder mit Grundbewehrung aus Stabstahl oder Matten gearbeitet werden soll. </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Geben Sie immer einen Abstand ein, darauf beziehen sich die Abst&auml;nde der Zulagen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Mattenbewehrung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Eingaben werden aktiviert, wenn Grundbewehrung aus Matten gew&auml;hlt wurde. Die Mattenverlegung entspricht der Methode [</span><span class="f__Software_Element_deskriptiv">Matten</span><span class="f_R_Bereich_Info_Rahmen"> |</span><span class="f__Software_Element_deskriptiv"> VerPol</span><span class="f_R_Bereich_Info_Rahmen">].</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Matten werden in Bewehrungsrichtung verlegt.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Bei Q-Matten m&uuml;ssen Sie die Matten in beiden Richtungen angeben, damit die as-Werte in X- und Y-Richtung abgezogen werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Grundbewehrung aus Stabstahl</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Sie k&ouml;nnen einen oder mehrere Durchmesser w&auml;hlen. Klicken Sie dazu in das Feld unterhalb des Durchmessers.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ab. [cm&sup2;/m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abdeckung: Querschnitt des gr&ouml;&szlig;ten gew&auml;hlten Durchmessers. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ab. [%]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abdeckung des maximalen as-Wertes durch den gr&ouml;&szlig;ten gew&auml;hlten Durchmesser. Beachten Sie, dass es sich dabei um eine „Singularit&auml;t“ handeln kann.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Zulagebewehrung aus Stabstahl</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Zulagen werden zwischen die Grundbewehrung gelegt. Wenn Sie die Bewehrung ohne Grundbewehrung ausf&uuml;hren, werden die Zulagen in gleicher Weise verlegt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie einen Wert in der Ausklappliste an oder tippen Sie den Abstand ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hinzuf&uuml;gen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf diese Schaltfl&auml;che, damit der Abstand in die Tabelle aufgenommen wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Entfernen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entfernt die markierte Zeile.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tabelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie in der Zeile der gew&uuml;nschten Zulage auf ein oder mehrere Felder unter den Durchmessern.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1667in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abst. [m]</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Zeilen werden in der Reihenfolge, wie Sie sie eingegeben haben, untereinander geschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1667in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ab. [cm&sup2;/m]</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Querschnitte der gr&ouml;&szlig;ten gew&auml;hlten Durchmesser werden Zeile f&uuml;r Zeile aufaddiert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1667in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ab. [%]</span></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abdeckung des maximalen as-Wertes durch die Summe der gr&ouml;&szlig;ten gew&auml;hlten Durchmesser.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0.0625in 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Darstellung einer m&ouml;glichen Einteilung der Zulagen. Die Abst&auml;nde werden immer von der Grundbewehrung gemessen. Beachten Sie die Einhaltung von R&uuml;ttell&uuml;cken.</span></p>
+<p class="p_ImageCaption"><img alt="Z_Zulagenbeispiel" style="margin:0;width:5.0625in;height:2.5104in;border:none" src="z_zulagenbeispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="Konfiguration der Maße" title="Konfiguration der Maße" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Konfiguration der Maße" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Bearbeiten</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein"><img alt="D_Automatische-Bewehrung_Bearbeiten" style="margin:0;width:6.6146in;height:4.9167in;border:none" src="d_automatische-bewehrung_bearbeiten.png"/></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Funktionen auf dieser Seite sind erst dann sinnvoll, wenn die Bewehrung durch </span><span class="f__Software_Element_deskriptiv">RECHNEN</span><span class="f_R_Dialog_Info"> generiert wurde. Bevor Sie die Aktionen ausf&uuml;hren k&ouml;nnen, m&uuml;ssen St&auml;be markiert sein. Die Selektion kann nur von dieser Seite aus erfolgen. Damit der Cursor auf der Zeichnung aktiviert wird, klicken Sie am besten auf die Titelleiste der Zeichnung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2917in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">W&auml;hrend der Bearbeitung ist der Folienmanager gesperrt! [untere Men&uuml;leiste &#8594; </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Hinweis_in_Tabelle">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Stab&auml;nderung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich"><span class="f_R_Bereich">L&auml;nge</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Welche Seite soll gew&auml;hlt werden? </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Je nachdem, in welcher Richtung die St&auml;be liegen, wird ein Stabsymbol in Richtung der Stabachse abgebildet. Die &Auml;nderungen beziehen sich auf die markierte(n) Seite(n).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">St&auml;be b&uuml;ndig</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die markierten St&auml;be werden auf den Seiten, an denen Haken gesetzt sind, verl&auml;ngert. Es werden die kleinsten und gr&ouml;&szlig;ten Koordinaten aller markierter St&auml;be gesucht. Bis zu diesen Koordinaten werden die St&auml;be verl&auml;ngert. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">St&auml;be gleiche L&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die St&auml;be werden auf den Seiten der Haken verl&auml;ngert. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mindestl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird die L&auml;nge angezeigt, die sich aus den Koordinaten der markierten St&auml;be in Verbindung mit den Kontrollk&auml;stchen ergibt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie hier eine bestimmte L&auml;nge eingeben, m&uuml;ssen Sie auch den Haken f&uuml;r </span><span class="f__Software_Element_deskriptiv">Mindestl&auml;nge anwenden</span><span class="f_R_Option_Beschreibung"> setzen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mindestl&auml;nge anwenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie diesen Haken, damit kein Stab k&uuml;rzer wird als gew&uuml;nscht. Ausnahmen treten an Stellen mit geometrischen Zwangspunkten auf.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;ngenstaffelung anwenden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geometrisch bedingt k&ouml;nnen sich Stabl&auml;ngen ergeben, die im Millimeterbereich liegen. Um auf die eingestellte L&auml;ngenstaffelung aufzurunden, setzen Sie diesen Haken.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich"><span class="f_R_Bereich">Durchmesser</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen"> Informationen &uuml;ber alle markierten St&auml;be.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl St&auml;be</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt an, wie viele St&auml;be Sie markiert haben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verlegebreite [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Abstand zwischen dem ersten und letzten Stab an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnitt [cm&sup2;]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Summe der Stabquerschnitte an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">[cm&sup2;/m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den auf einen Meter Breite bezogenen Querschnitt an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neuer Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Programm schl&auml;gt einen Durchmesser vor, mit dem der vorhandene Stahlquerschnitt erreicht bzw. &uuml;berschritten wird. Sie k&ouml;nnen den Durchmesser &auml;ndern, indem Sie einen anderen Durchmesser aus der Auswahlbox anklicken. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnitt [cm&sup2;/m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den neuen Querschnitt an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser &uuml;bernehmen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dr&uuml;cken Sie auf diese Schaltfl&auml;che, um die markierten St&auml;be auf den neuen Durchmesser zu &auml;ndern.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Markierte St&auml;be l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht die markierten St&auml;be.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Markierung aufheben</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellt die markierten St&auml;be wieder normal dar. Alternativ k&ouml;nnen Sie im rechten Men&uuml; auf [</span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_R_Option_Beschreibung">] klicken, um St&auml;be aus der Selektion zu entfernen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Textgr&ouml;&szlig;e</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen"> Informationen &uuml;ber alle markierten St&auml;be.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">a</span><span class="f_R_Option" style="vertical-align: sub;">s</span><span class="f_R_Option">-Werte; Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Anzeige der as-Werte und der Durchmesser ausgew&auml;hlt wird, k&ouml;nnen Sie hier die Textgr&ouml;&szlig;e einstellen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie die Gr&ouml;&szlig;e der Texte so ein, dass sie gut lesbar aber nicht zu gro&szlig; erscheinen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schreiben Sie einen Wert direkt in die Auswahlbox oder w&auml;hlen eine der vorgeschlagenen Gr&ouml;&szlig;en aus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungsgehalt</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Sie k&ouml;nnen die a</span><span class="f_R_Bereich_Info_Rahmen" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Bereich_Info_Rahmen">-Werte manipulieren. F&uuml;hren Sie diese Aktion aus, bevor Sie St&auml;be &auml;ndern!</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mindestquerschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erh&ouml;hen Sie die as-Werte auf den zu w&auml;hlenden Querschnitt. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Maximalquerschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Reduzieren Sie die a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte auf den zu w&auml;hlenden Querschnitt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Durchmesser f&uuml;r den Kreis an, in dem die a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte ge&auml;ndert werden sollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den as-Wert f&uuml;r den Kreis an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bernehmen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wechseln Sie hiermit zur&uuml;ck in die Zeichnung und legen den Kreis an die gew&uuml;nschte Stelle. Alle Werte, deren a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Punkte innerhalb des Kreises liegen, werden angepasst.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;henlinien berechnen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Programm bietet zwei Arten von H&ouml;henlinien an.</span><br>
+<span class="f_R_Option_Beschreibung">Automatisch wird eine H&ouml;henlinie angezeigt, die die Bereiche markiert, die noch nicht abgedeckt sind. Je mehr Bewehrung eingelegt wird (Anzeige. </span><span class="f__Software_Element_deskriptiv">Ab.&nbsp;[%]</span><span class="f_R_Option_Beschreibung">), desto kleiner werden die Fl&auml;chen.</span><br>
+<span class="f_R_Option_Beschreibung">Manuell k&ouml;nnen as-H&ouml;henschichtlinien erzeugt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie auf dem Plan die zugeh&ouml;rigen H&ouml;henlinien darstellen wollen, m&uuml;ssen Sie diese erzeugen. Das Programm teilt den Bereich von </span><span class="f__Software_Element_deskriptiv">0 - max as</span><span class="f_R_Option_Beschreibung"> in zehn gleiche Abschnitte. F&uuml;r jeden Abschnitt k&ouml;nnen Sie eine andere Farbe w&auml;hlen. Diese wird nur am Bildschirm benutzt. Wenn die Zeichnung generiert wird, wird Stift 1 benutzt. Sie k&ouml;nnen die Werte auch durch eigene Werte ersetzen. Wenn Sie nicht alle Bereiche benutzen m&ouml;chten, setzen Sie den Wert auf 0 (Null). Die Genauigkeit teilt die Isolinien in entsprechend kleine Teillinien.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="D_Hoehenlinien" style="margin:0;width:4.6458in;height:3.4688in;border:none" src="d_hoehenlinien.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="Konfiguration der Anzeige" title="Konfiguration der Anzeige" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" title="Konfiguration der Anzeige" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Anzeige</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0.2396in;"><img alt="D_Automatische-Bewehrung_Anzeige" style="margin:0;width:6.6146in;height:4.9167in;border:none" src="d_automatische-bewehrung_anzeige.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Anzeige</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Hier steuern Sie die Anzeige f&uuml;r die Bearbeitung. Schalten Sie nur die Elemente ein, die zurzeit bearbeitet werden. Die Anzeige wird sofort aktualisiert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.3438in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung: Dr&uuml;cken Sie nicht auf die Schaltfl&auml;che &quot;Rechnen&quot;!</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Damit w&uuml;rden schon durchgef&uuml;hrte Anpassungen verloren gehen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">(Liste)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abh&auml;ngig von der Anzahl der gew&auml;hlten Zulagen, k&ouml;nnen Sie diese, neben der Grundbewehrung, ein- und ausblenden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Matten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sofern Sie Matten als Grundbewehrung gew&auml;hlt haben, k&ouml;nnen Sie diese ein- bzw. ausschalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Dicke wird in der Stabmitte angezeigt. Die Einstellung der Textgr&ouml;&szlig;e finden Sie auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Bearbeiten</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">As-Werte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die aktuellen a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte werden angezeigt. Sie werden nicht in die Zeichnung &uuml;bernommen!</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">As-Punkte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Lage der Punkte kann angezeigt werden. Das ist f&uuml;r die Lage der Kreise ge&auml;nderter Bewehrungsgehalte hilfreich.</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;henlinien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die H&ouml;henlinien nicht abgedeckter Bereiche und die a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-H&ouml;henlinien k&ouml;nnen ein- und ausgeschaltet werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">&Uuml;bernahme H&ouml;henlinien</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Restbereich</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie in die Checkbox einen Haken setzen, werden die Bereiche, die nicht abgedeckt sind, auch auf der Zeichnung dargestellt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Benutzerdefiniert</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die manuell erzeugten a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-H&ouml;henlinien werden in die Zeichnung &uuml;bernommen. Hier wird f&uuml;r alle Linien Stift 1 benutzt. Zus&auml;tzlich wird an verschiedenen Stellen der H&ouml;henwert in die Linien geschrieben.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Gewicht</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Anzeige der aktuellen Gewichte f&uuml;r den Rundstahl und ggf. der Matten.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Positionsliste</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">In der Positionsliste werden alle Positionen angezeigt, sortiert nach Durchmesser und L&auml;nge. </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">In der Liste markierte Positionen werden am Bildschirm ebenfalls markiert (sofern sie nicht auf ausgeblendeten Folien liegen).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.3438in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Verwenden Sie die </span><span class="f__Tastatur">Strg</span><span class="f_Hinweis_in_Tabelle"> oder </span><span class="f__Tastatur">Umschalt-Taste (Shift)</span><span class="f_Hinweis_in_Tabelle">, um einzelne oder mehrere Positionen in der Liste zu markieren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list"><span class="f__seealso_list"><a href="tsk_automatische_bewehrung_bearbei.htm" class="topiclink">Automatische Bewehrung (allgemeiner Ablauf)</a></span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

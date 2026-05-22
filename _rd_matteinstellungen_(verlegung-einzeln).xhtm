@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Matteneinstellungen (Verlegung einzeln)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Angaben zu den zu verlegenden Lager- oder Listenmatten. Alle Angaben in Eingabeeinheiten (vgl. Untere Menüleiste &#8594; Eingabe: z. B. &quot;m&quot;)." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__RD_Matteinstellungen_(Verlegung-einzeln)"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     &raquo;Keine übergeordneten Inhalte gefunden&laquo;
+     </p>
+
+     <div id="headernav">
+     <img class="nav" src="btn_prev_d.png" 
+        ><a href="rm_support.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><img class="nav" src="btn_next_d.png">
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Matteneinstellungen (Verlegung einzeln)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Normal">Angaben zu den zu verlegenden Lager- oder Listenmatten. Alle Angaben in Eingabeeinheiten <span class="f_R_Option_Beschreibung">(vgl.&nbsp;Untere&nbsp;Men&uuml;leiste&nbsp;&#8594; Eingabe: z.&nbsp;B. &quot;m&quot;).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Matteneinstellungen_lagmat" style="margin:0;width:5.1979in;height:2.4271in;border:none" src="d_matteneinstellungen_lagmat.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mattentyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verf&uuml;gbare Lager- oder Listenmatten. Die Auswahl ist abh&auml;ngig vom Aufruf des Dialoges (Funktion </span><span class="f__Software_Element_deskriptiv">LagMat</span><span class="f_R_Option_Beschreibung"> oder </span><span class="f__Software_Element_deskriptiv">LisMat</span><span class="f_R_Option_Beschreibung">).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mattenl&auml;nge; Mattenbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl oder Eingabe der Mattenl&auml;nge.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verlegewinkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des Verlegewinkels.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6458in;"><p class="p_R_Tabellenzeile"><img alt="B_parallel-zur-Linie_Text" style="margin:0;width:1.3229in;height:0.2292in;border:none" src="b_parallel-zur-linie_text.png"/></p>
+</td>
+<td class="Optionen_Palette" rowspan="2"  style="width:9.1563in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verlegung parallel oder senkrecht zu einer vorhandenen Linie oder einem Text ausrichten.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie das Element an, dessen Winkel Sie &uuml;bernehmen m&ouml;chten. [</span><span class="f__Abfrage">Linie oder Text f&uuml;r Winkel anklicken</span><span class="f_R_Tabellenzeile">]. Der Verlegewinkel wird nach Anklicken einer Linie oder eines Texts im Auswahlfeld </span><span class="f__Software_Element_deskriptiv">Verlegewinkel</span><span class="f_R_Tabellenzeile"> angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6458in;"><p class="p_R_Tabellenzeile"><img alt="B_senkrecht-zur-Linie_Text" style="margin:0;width:1.3229in;height:0.2292in;border:none" src="b_senkrecht-zur-linie_text.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berd. L&auml;ngs; &Uuml;berd. Quer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl oder Eingabe der Sto&szlig;&uuml;berdeckung in L&auml;ngs- und Querrichtung. (Angaben in Eingabeeinheiten).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Eurocode-2" style="margin:0;width:0.8229in;height:0.2292in;border:none" src="b_eurocode-2.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur bei Lagermatten: Ermittlung der Sto&szlig;&uuml;berdeckung nach Eurocode&nbsp;2. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">&Uuml;berdeckung nach Eurocode&nbsp;2</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">&Uuml;berdeckung nach Eurocode&nbsp;2 (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mattenabh&auml;ngige Berechnung der Sto&szlig;&uuml;berdeckung nach Eurocode&nbsp;2 f&uuml;r den ausgew&auml;hlten Mattentyp. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Ueberdeckung-nach-Eurocode-2" style="margin:0;width:4.6146in;height:2.2604in;border:none" src="d_ueberdeckung-nach-eurocode-2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Verbund</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der Verbundart.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Guter Verbund I; M&auml;&szlig;iger Verbund II</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen gutem und m&auml;&szlig;igem Verbund.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Quersto&szlig; bei R&#8209;Matten</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl des Quersto&szlig;-Typs (nur m&ouml;glich bei R&#8209;Matten).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tragsto&szlig;; Verteilersto&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie an, ob es sich um einen Trag- oder Verteilersto&szlig; handelt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betong&uuml;te</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Betong&uuml;te.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;&uuml;berdeckung L&auml;ngs; Sto&szlig;&uuml;berdeckung Quer </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In Abh&auml;ngigkeit von der Betong&uuml;te und den Verbundbedingungen wird die erforderliche &Uuml;bergreifungsl&auml;nge ls im Zwei-Ebenen-Sto&szlig; angezeigt. Das Verh&auml;ltnis von [</span><span class="f__Software_Element_deskriptiv">erf as</span><span class="f_R_Option_Beschreibung">] zu [</span><span class="f__Software_Element_deskriptiv">vorh as</span><span class="f_R_Option_Beschreibung">] betr&auml;gt 1,0.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Werte wurden dem Faltblatt des Institutes f&uuml;r Stahlbetonbewehrung entnommen. <a href="https://www.isb-ev.de" target="_blank" class="weblink" title="Institut für Stahlbetonbewehrung e.V. (ISB)">https://www.isb-ev.de</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Ueberdeckung" style="margin:0;width:0.8438in;height:0.2396in;border:none" src="b_ueberdeckung.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bersicht notwendiger &Uuml;bergreifungsl&auml;ngen bei verschiedenen Mattentypen bei guten und m&auml;&szlig;igen Verbundbedingungen. &Ouml;ffnet die Datei </span><span class="f__Eigenname">Vorratsmatten.pdf</span><span class="f_R_Option_Beschreibung">. </span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

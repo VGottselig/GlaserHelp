@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahlliste - [StlLis]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".STL,Stahlliste,Stahlliste *Funktionen und Optionen" />
+   <meta name="description" content="Erzeugen von Stahllisten (Einzellisten oder Gesamtliste) für eine oder mehrere Bewehrungszeichnungen. (Abfrage [Bitte rechts auswählen])." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_stueckli-tab-exportieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="optionen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_stahllisten-erzeugen-und_ausgeben.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Stahlliste</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_StlLis" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stllis.png"/><span class="f_Aufruf"> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erzeugen von Stahllisten (Einzellisten oder Gesamtliste) f&uuml;r eine oder mehrere Bewehrungszeichnungen. (Abfrage [</span><span class="f__Abfrage">Bitte rechts ausw&auml;hlen</span><span class="f_R_Dialog_Info">]).</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Gesamtstahlliste beinhaltet eine Gewichtsliste, eine Gesamtliste sowie die Einzellisten f&uuml;r Rundstahl, Matten, U-K&ouml;rbe und mechanische Verbindungen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Pr&uuml;fung auf Datenkonsistenz</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei Aufruf der Stahlliste wird gepr&uuml;ft, ob die Teill&auml;ngeninformationen an den Auszugsformen auf dem Plan mit den wahren Teill&auml;ngen &uuml;bereinstimmen. Wenn Teill&auml;ngentexte nachtr&auml;glich bearbeitet worden sind, ist das nicht der Fall, und Sie erhalten eine Meldung mit einem Hinweis auf die entsprechenden Positionen. Korrigieren Sie die Informationen auf dem Plan, bevor Sie die Stahlliste erzeugen. Nutzen Sie f&uuml;r weitere Hinweise den Dialog f&uuml;r Bewehrungsinformationen [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_R_Tabellenzeile">/</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">BiForm</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Info</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_ImageCaption"><img alt="ML_inkonsistente_daten_stahlliste" style="margin:0;width:3.9688in;height:1.8542in;border:none" src="ml_inkonsistente_daten_stahlliste.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:12.5104in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahllisten-erzeugen-und_ausgeben.htm" class="topiclink" title="Stahllisten erzeugen"><img alt="Stahllisten erzeugen" title="Stahllisten erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_neu-erzeugen.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Erzeugen einer Stahlliste aus einer oder mehreren Zeichnungen. Die Stahlliste kann gedruckt oder auf der Zeichenfl&auml;che abgelegt werden.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste_teil-erzeugen.htm" class="topiclink" title="Stahllistenauszug erzeugen"><img alt="Stahllistenauszug erzeugen" title="Stahllistenauszug erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_teil-erzeugen.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Erzeugen einer Stahlliste f&uuml;r ausgew&auml;hlte Positionen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste_ausgeben.htm" class="topiclink" title="Stahlliste ausgeben"><img alt="Stahlliste ausgeben" title="Stahlliste ausgeben" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_ausgeben_(stahlliste).png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ausgeben der auf der Zeichnung vorhanden Stahlliste. Die Stahlliste kann ausgedruckt oder im PDF-Format gespeichert werden. F&uuml;r das Ablegen der Stahlliste auf der Zeichnung, siehe Funktion</span><span class="f__Software_Element_deskriptiv"> Neu erzeugen</span><span class="f_R_Tabellenzeile_Menue">.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste_vorlage-erzeuge.htm" class="topiclink" title="Stahllistenvorlage erzeugen"><img alt="Stahllistenvorlage erzeugen" title="Stahllistenvorlage erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_vorlage.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Gestalten einer Vorlage f&uuml;r die Ausgabe.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste_stzahl-kontroll.htm" class="topiclink" title="Stückzahl kontrollieren"><img alt="Stückzahl kontrollieren" title="Stückzahl kontrollieren" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_stkkontrolle.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Kontrollieren der St&uuml;ckzahl.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste_plotflaeche.htm" class="topiclink" title="Plotfläche anpassen"><img alt="Plotfläche anpassen" title="Plotfläche anpassen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_plotflaeche.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Anpassen der Plotfl&auml;che beim Ablegen der Stahlliste auf der Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_stahlliste-direkt-ausgeben.htm" class="topiclink" title="Stahlliste direkt ausgeben"><img alt="Stahlliste direkt ausgeben" title="Stahlliste direkt ausgeben" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b_direktausgabe.png"/></a></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&nbsp;</span></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Direktausgabe der Stahlliste:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0208in 0.0208in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.8646in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_PDF_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_pdf_stl.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.6979in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">als PDF (nur mit <a href="des_edoc-printer-pro.htm" class="topiclink">eDocPrinter PDF Pro</a> verf&uuml;gbar)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8646in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_Drucker_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_drucker_stl.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.6979in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">auf einem beliebigen Drucker</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8646in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_aktZeichnung_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_aktzeichnung_stl.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.6979in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">auf der Zeichnung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8646in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="I_abs_Stl" style="margin:0;width:0.6354in;height:0.2500in;border:none" src="i_abs_stl.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.6979in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">als ABS-Datei im BVBS 3.1-Format (nur Biegeliste)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"> Auswahl des Stahllistenprofils:</span></p>
+<p class="p_R_Tabellenzeile_Menue"><img alt="SCR_Stahlliste_Profilauswahl" style="margin:0;width:2.3125in;height:0.4792in;border:none" src="scr_stahlliste_profilauswahl.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stahllistenprofile k&ouml;nnen unter [</span><span class="f__Software_Element_deskriptiv">Neu erzeugen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_R_Tabellenzeile"> (Unterdialog)] angelegt werden.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:12.5104in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_selekt" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_selekt.png"/><img alt="B_Eingab" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_eingab.png"/></p>
+<p class="p_R_Tabellenzeile_Menue"><img alt="B_Verleg_Stl" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_verleg_stl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Nur bei [<a href="tsk_stahlliste_teil-erzeugen.htm" class="topiclink" title="Stahllistenauszug erzeugen">Teilliste</a>] verf&uuml;gbar.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Selekt</span><span class="f_R_Tabellenzeile_Menue">: Auswahl von Positionen &uuml;ber Einzel- oder Rahmenauswahl.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Eingab</span><span class="f_R_Tabellenzeile_Menue">: Auswahl von Positionen &uuml;ber die Eingabe der Positionsnummer. Die Eingaben unterscheiden Rundstahl- und Mattenpositionen.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Verleg</span><span class="f_R_Tabellenzeile_Menue">: Auswahl von Positionen &uuml;ber Einzel- oder Rahmenauswahl von Verlegungen oder Positionierungen. </span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Hinzuf" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_hinzuf.png"/><img alt="B_Entfer_Elementauswahl" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_entfer_elementauswahl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Elemente hinzuf&uuml;gen / entfernen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Elemente-im-Rechteck" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck.png"/><img alt="I_Elemente-im-Polygon" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-polygon.png"/><img alt="I_Einzelelemente" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_einzelelemente.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahlrahmen rechteckig / polygonal / einzelne Elemente ausw&auml;hlen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_letzte-Markierung-aufnehmen" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_letzte-markierung-aufnehmen.png"/><img alt="I_Elemente-im-Rechteck-und-E-Element" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck-und-e-element.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Zuletzt markiertes erneut markieren / automatische Elementauswahl.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list"><span class="f__seealso_list"><a href="ref_stahlliste.htm" class="topiclink" title="Dialogbeschreibung">Stahlliste (Referenz)</a></span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

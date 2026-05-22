@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mit Richtungslogik zeichnen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Linien,Linien zeichnen mit Richtungslogik (mRiL),mit Richtungslogik zeichnen,mRiL,Richtungslogik,Richtungslogik zeichnen,Zeichnen" />
+   <meta name="description" content="Die Richtungslogik unterstützt Sie beim exakten Platzieren der Zeichnungsmarke und bei diversen Zeichenfunktionen, z. B. beim Zeichnen einer Linie in eine exakt definierte R" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_linien.htm">Linien</a> &gt; <a href="linien_linien_zeichnen.htm">Linie zeichnen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="linien_linien_zeichnen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="linien_linien_zeichnen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="linien_linien_ohne_richtungslogik_zei.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Mit Richtungslogik zeichnen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_linien.htm" class="topiclink" title="Linienfunktionen (Übersicht)"><img alt="Linienfunktionen (Übersicht)" title="Linienfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_linien.png"/></a> <a href="linien_linien_zeichnen.htm" class="topiclink" title="Linien zeichnen"><img alt="Linien zeichnen" title="Linien zeichnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_zeichn_linien.png"/></a> <img alt="B-akt_mRiL" style="margin:0;width:0.7708in;height:0.2500in;border:none" src="b-akt_mril.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Richtungslogik unterst&uuml;tzt Sie beim exakten Platzieren der Zeichnungsmarke und bei diversen Zeichenfunktionen, z.&nbsp;B. beim Zeichnen einer Linie in eine exakt definierte Richtung. Sie m&uuml;ssen lediglich per Mausklick oder durch Eingabe einer Richtungsnummer eine grobe Richtung vorgeben. Die Eingabe eines Vorzeichens ist nicht notwendig. Je nach Richtungsangabe gen&uuml;gt dann die Entfernungsangabe in X-Richtung oder Y-Richtung.</span></p>
+<p class="p_Normal"><a name="richtung" class="hmanchor"></a></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Optionen_Palette" >
+<thead>
+<tr class="Optionen_Palette">
+<th class="Optionen_Palette" style="width:3.8021in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Richtungsangaben</span></p>
+</th>
+<th class="Optionen_Palette" style="width:6.6979in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.8021in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Richtungslogik" style="margin:0 auto 0 auto;width:3.7083in;height:2.7813in;border:none" src="z_richtungslogik.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.6979in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 1: schr&auml;g nach links - (0 &lt; &#945; &lt; 90&deg;)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 2: senkrecht nach unten</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 3: schr&auml;g nach rechts unten - (0 &lt; &#945; &lt; 90&deg;)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 4: horizontal nach links</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 5: aktuelle Position der Zeichenmarke</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 6: horizontal nach rechts</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 7: schr&auml;g nach links oben - (0 &lt; &#945; &lt; 90&deg;)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 8: senkrecht nach oben</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ziffer 9: schr&auml;g nach rechts oben - (0 &lt; &#945; &lt; 90&deg;)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hier k&ouml;nnen Winkel gr&ouml;&szlig;er als 0&deg; und kleiner als 90&deg; eingegeben werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Position der Zeichenmarke entspricht immer dem Koordinatenursprung [</span><span class="f__Abfrage">Ziffer 5</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie mit der Richtungslogik arbeiten, werden Sie in der Abfragezeile zun&auml;chst zur Angabe der gew&uuml;nschten Richtung aufgefordert [</span><span class="f__Abfrage">Richtung</span><span class="f_Task_Info">]. Bezugspunkt f&uuml;r die Richtungsangabe ist in jedem Fall die aktuelle Position der Zeichenmarke; entsprechend der Ziffer </span><span class="f_Hinweis_in_Tabelle_Achtung">5</span><span class="f_Task_Info"> auf der Ziffernanordnung. Die Richtungsangabe kann aus der Anordnung der Ziffern auf dem Tastatur-Ziffernblock abgeleitet werden.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn im Eingabefeld schon die richtige Richtungsnummer steht, k&ouml;nnen Sie diese mit Rechtsklick oder der Eingabetaste best&auml;tigen.</span></p>
+<h3 class="p_Heading3"><span class="f_Heading3">Zeichenmarke bewegen oder Linie zeichnen</span></h3>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Im Funktionsbereich k&ouml;nnen Sie mit den Schaltfl&auml;chen [</span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Task_Info">] oder [</span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Task_Info">] die Zeichenmarke an eine bestimmte Position bewegen oder direkt Linien zeichnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5729in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_Bewege_Bewegemodus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_bewege_bewegemodus.png"/><span class="f_ImageCaption"> <img alt="B_Zeichn_Zeichenmodus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_zeichn_zeichenmodus.png"/></span></p>
+</td>
+<td style="vertical-align:top; width:11.8333in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">[</span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_R_Tabellenzeile">] verschiebt die Zeichenmarke.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">[</span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_R_Tabellenzeile">] erzeugt Linien, wobei die Zeichenmarke an den Endpunkt der Linie gesetzt wird.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp</span><span class="f_R_Tabellenzeile">: Zwischen </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_R_Tabellenzeile"> und </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie mit der TAB-Taste umschalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Linie zeichnen</span></h4>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Es gibt drei M&ouml;glichkeiten, Linien zu zeichnen oder die Zeichenmarke zu bewegen:</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Freies Zeichnen oder Bewegen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Linien oder Zeichenmarke ohne Eingabe von Differenzen frei zeichnen bzw. bewegen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie </span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step"> ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Step">-Modus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie mit der linken Maustaste zweimal auf die Stelle auf der Zeichenfl&auml;che, an der die Linie beginnen soll. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schalten Sie auf </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step"> um und doppelklicken Sie an die Stelle (siehe Bild: <a href="linien_linien_mit_richtungslogik_zeic.htm#richtung" class="topiclink">Richtungsangaben</a>), wo die Linie enden soll. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Beachten Sie, dass Punkte gefangen werden, wenn sich diese im Fangbereich des Cursors befinden.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1; 3; 7; 9</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">unbestimmt</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">unbestimmt</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Schr&auml;ge mit unbestimmter Neigung und L&auml;nge.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4; 6</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">unbestimmt</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Horizontale mit unbestimmter L&auml;nge.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2; 8</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">unbestimmt</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Senkrechte mit unbestimmter L&auml;nge.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Genaues Zeichnen oder Bewegen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Linien oder Zeichenmarke ohne Eingabe von Differenzen genau zeichnen bzw. bewegen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie </span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step"> ein. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in einen Bereich (siehe Bild: <a href="linien_linien_mit_richtungslogik_zeic.htm#richtung" class="topiclink">Richtungsangaben</a>). Die Richtung wird in das Eingabefeld geschrieben. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die wahre L&auml;nge mit positiven Werten f&uuml;r X und Y in der eingestellten Eingabeeinheit ein und best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Durch den Ma&szlig;stab wird die Linie &quot;richtig&quot; auf dem Blatt gezeichnet.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ:</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Klicken Sie mit der linken Maustaste Linien (Anfang, Mitte, Ende), Kreise (Mittelpunkt), Teilkreise (Anfang, Mitte, Ende), Schnittpunkte von Linien und/oder Kreisen oder Hilfspunkte an, um den Linienendpunkt oder die Lage der Zeichenmarke zu bestimmen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1; 3; 7; 9</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">w33.3</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2.5</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Schr&auml;ge unter 33.3 Grad mit einer L&auml;nge von 2,50m.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4; 6</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3.885</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Horizontale mit einer L&auml;nge von 3,885m. Es wird lediglich der erforderliche X-Wert abgefragt. Der Y-Wert wird &uuml;bersprungen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2; 8</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">A16 (anklicken)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Senkrechte, deren Ende auf dem Niveau des Anfangspunktes der Linie Nr. 16 liegt. Es wird lediglich der erforderliche Y-Wert abgefragt. Der X-Wert wird &uuml;bersprungen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Bezogenes Zeichnen oder Bewegen mit Differenzeingabe</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Linien und Zeichenmarke mit Eingabe von Differenzen exakt zeichnen bzw. bewegen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step"> ein. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in einen Bereich (siehe Bild: <a href="linien_linien_mit_richtungslogik_zeic.htm#richtung" class="topiclink">Richtungsangaben</a>). Die Richtung wird in das Eingabefeld geschrieben. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Punkt einer Linie oder eines Kreises mit Linksklick an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Elementkennung wird in die Eingabe geschrieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nach der Elementkennung die Differenz ein und best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Verwenden Sie bei der Eingabe der L&auml;nge keine Leerzeichen!</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3 </span></p>
+<p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(1; 7; 9)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">A16+1.5</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">E10-.5</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Schr&auml;ge deren Endpunkt 1,50m horizontal (rechts) vom Anfangspunkt der Linie Nr. 16 und vertikal (unten) 0,50m vom Endpunkt der Linie Nr. 10 entfernt ist.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1</span></p>
+<p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(3; 7; 9)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6875in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">p16+1.5</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7083in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">p10-.5</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:3.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ergibt eine Schr&auml;ge, deren Endpunkt im Schnittpunkt einer Parallelen mit 1,50m Abstand von Linie Nr. 16 und einer weiteren Parallelen mit 0,50m Abstand von der Linie Nr. 10 liegt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><span class="f_Heading3">Zeichenfunktionen</span></h3>
+<p class="p_Normal">Unter der Abfrageleiste, im oberen linken Bereich der Programmoberfl&auml;che, finden Sie zus&auml;tzliche Optionen zum Zeichnen von Elementen. Mit den Zeichenfunktionen k&ouml;nnen Sie unterschiedliche Planelemente erstellen, die Ihnen als Grundlage f&uuml;r weitere Bearbeitungen dienen. Erstellen Sie z. B. St&uuml;tzen, Durchbr&uuml;che und andere geometrische Elemente, um schnell das gew&uuml;nschte Ergebnis zu erreichen. </p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:2.7292in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_RechEc" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_rechec.png"/><img alt="B_RechMi" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_rechmi.png"/><img alt="B_Durchb" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_durchb.png"/><img alt="B_Tangen_Konstruktionshilfe" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_tangen_konstruktionshilfe.png"/><img alt="B_LotLin" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_lotlin.png"/><img alt="B_LotKre" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_lotkre.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Rechteck &uuml;ber Diagonalpunkte konstruieren</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: R</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_RechEc" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_rechec.png"/></p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">&nbsp;</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0.0313in;"><img alt="SCR_RechEc" style="margin:0;width:3.2813in;height:1.4479in;border:none" src="scr_rechec.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie einen X- und Y-Wert f&uuml;r die Seitenl&auml;ngen ein. Best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">R</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1.23</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">.5</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Rechteck von einem Mittelpunkt aus konstruieren</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: M</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="B_RechMi" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_rechmi.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid; margin: 0.0417in 0 0.0521in 0;"><img alt="SCR_RechMi" style="margin:0;width:3.3333in;height:1.4375in;border:none" src="scr_rechmi.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Befindet sich die Zeichenmarke (ZM) z. B. auf einem Achsenschnittpunkt, k&ouml;nnen Sie auf diese Weise rechteckige St&uuml;tzen durch die Angabe der X- und Y Abmessungen zeichnen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie einen X- und Y-Wert f&uuml;r die Seitenl&auml;ngen ein. Best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">M</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">.25</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">.25</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Durchbruch zeichnen</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: D</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="B_Durchb" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_durchb.png"/></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="SCR_DurchBru" style="margin:0;width:3.2813in;height:1.4063in;border:none" src="scr_durchbru.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Durch die Eingabe der Werte f&uuml;r X und Y wird ein Rechteck und gleichzeitig ein &quot;Schatten&quot; angelegt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie einen X- und Y-Wert f&uuml;r die Seitenl&auml;ngen ein. Best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">D</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1.23</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-.5</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Linie tangential zu einem Kreis zeichnen</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: T</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_Tangen_Konstruktionshilfe" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_tangen_konstruktionshilfe.png"/></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="SCR_Tangen" style="margin:0;width:3.2813in;height:2.0313in;border:none" src="scr_tangen.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Lage der Tangente ist abh&auml;ngig von der gew&auml;hlten Seite des Kreises.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Setzen Sie die Zeichenmarke im Bewege-Modus an eine beliebige Stelle. Wechseln Sie in den Zeichnen-Modus und klicken Sie den Kreis auf der gew&uuml;nschten Seite an.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">X-Wert</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">T</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Kreis anklicken</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0625in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Lot auf/von Linie zeichnen</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: L</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_LotLin" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_lotlin.png"/></p>
+<p class="p_R_Tabellenzeile" style="text-indent: -0.0104in; margin: 0.0521in 0 0.0625in 0.0104in;"><img alt="SCR_LotLin" style="margin:0;width:3.1458in;height:2.0729in;border:none" src="scr_lotlin.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Lot auf Linie</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von der Zeichenmarke aus wird das Lot auf die angeklickte Linie gef&auml;llt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.3958in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">zu/von welcher Linie</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">L</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.3958in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Linie anklicken</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4375in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Lot von Linie</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Zeichenmarke befindet sich auf einer Linie. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Achten Sie beim Anklicken der Linie darauf, auf welcher Seite sich der Cursor befindet. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Daraus ergibt sich die Richtung. Geben Sie danach die L&auml;nge der lotrechten Linie an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4063in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">zu/von welcher Linie</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Y-Wert</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8854in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">L</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4063in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Linie anklicken</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4271in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1.35</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading4">Lot auf/von Kreis zeichnen</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Tastenk&uuml;rzel: K</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_LotKre" style="margin:0;width:1.1771in;height:0.2396in;border:none" src="b_lotkre.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="SCR_LotKre" style="margin:0;width:2.6458in;height:2.3958in;border:none" src="scr_lotkre.png"/></p>
+</td>
+<td style="vertical-align:top; width:10.7604in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von der Zeichenmarke aus wird das Lot auf den angeklickten Kreis gef&auml;llt. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Befindet sich die Zeichenmarke innerhalb des Kreises, sind zwei Lotlinien m&ouml;glich. Klicken Sie auf den Kreisabschnitt, auf den das Lot gef&auml;llt werden soll.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Lot auf Kreis</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.6250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">zu/von welcher Linie</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">L&auml;nge(&lt;0: Richtung Mittelp)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.6250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">K</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Kreis anklicken</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Lot von Kreis</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Zeichenmarke befindet sich auf dem Kreis.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wird die L&auml;nge mit einem negativen Vorzeichen angegebenen, wird die Lotlinie Richtung Mittelpunkt gezeichnet. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mit positivem Vorzeichen wird die Lotlinie vom Mittelpunkt weg gezeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.6250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">Richtung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">zu/von welcher Linie</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5729in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f__Abfrage">L&auml;nge(&lt;0: Richtung Mittelp)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.6250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">K</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.4896in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Kreis anklicken</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5729in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-.2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><a name="mitril" class="hmanchor"></a><span class="f_Heading3">Zeichnen eines Grundrisses mit Richtungslogik (Beispiel)</span></h3>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Damit alle Eingaben nachvollziehbar sind, ist es empfehlenswert, eine neue Zeichnung anzulegen. Als Eingabeeinheit wird f&uuml;r die Beispielzeichnung m (Meter) eingestellt. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Software_Element_deskriptiv">Optionen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Eingabeeinheit</span><span class="f_R_Tabellenzeile">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:7.0104in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_mitR_Beispiel" style="margin:0;width:6.6563in;height:4.8854in;border:none" src="z_mitr_beispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1042in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_01" style="margin:0;width:3.7083in;height:2.7813in;border:none" src="z_mitr_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4063in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.0625in;"><span class="f_R_Tabellenzeile">Im</span><span class="f_A_Allgemein"> unteren Funktionsbereich finden Sie die Schaltfl&auml;chen </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_A_Allgemein"> und </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_A_Allgemein">. Hier entscheiden Sie, ob Sie die Zeichenmarke bewegen oder etwas zeichnen m&ouml;chten. Da in der Regel zun&auml;chst die Zeichenmarke positioniert werden muss, ist die Funktion </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_A_Allgemein"> vorausgew&auml;hlt. </span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.0625in;"><span class="f_R_Tabellenzeile">Bevor Sie mit dem eigentlichen Zeichen beginnen, m&uuml;ssen Sie zun&auml;chst die Zeichenmarke an den Startpunkt setzen.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor an eine geeignete Stelle auf der Zeichnung und platzieren Sie die Zeichenmarke mit einem doppelten Linksklick.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den Zeichenmodus </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Zwischen </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie mit der Tab-Taste wechseln.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor neben die Zeichenmarke, innerhalb des Sektors Nr. 6, und klicken Sie die linke Maustaste. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Eingabe wird die Richtungsnummer 6 angezeigt. Alternativ k&ouml;nnen Sie die Richtungsnummer auch eintippen und mit der Eingabetaste best&auml;tigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie als L&auml;nge </span><span class="f__Abfrage_Resultat">5.5</span><span class="f_Step"> (Meter) ein und best&auml;tigen Sie mit der Eingabetaste. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">1</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt. Da eine horizontale Linie gezeichnet wurde, wird die Y-Eingabe &uuml;bersprungen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.0833in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_02" style="margin:0;width:3.8021in;height:2.7500in;border:none" src="z_mitr_02.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.4896in; padding:0; border:none"><p class="p_Normal">Zeichnen der Linie Nr. 2 und der Linie Nr. 3. </p>
+<p class="p_Normal">Der Endpunkt der ersten Linie ist der Startpunkt der zweiten Linie.</p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor oberhalb der Zeichenmarke (Sektor Nr. 8) und klicken Sie die linke Maustaste. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Eingabe wird die Richtungsnummer 8 angezeigt. Da eine vertikale Linie gezeichnet wird, wird die X-Eingabe &uuml;bersprungen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie als L&auml;nge </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein und best&auml;tigen Sie mit der Eingabetaste. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">2</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die dritte Linie zu zeichnen, klicken Sie in den Sektor Nr. 6. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie als L&auml;nge </span><span class="f__Abfrage_Resultat">6.865</span><span class="f_Step"> ein und best&auml;tigen Sie mit der Eingabetaste. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">3</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1250in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_03" style="margin:0;width:3.6458in;height:2.8229in;border:none" src="z_mitr_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.3646in; padding:0; border:none"><p class="p_Normal">Die Linie Nr. 4 soll nun etwas von der Senkrechten abweichen. Als Richtungsnummer muss daher die Richtungsnummer 3 angegeben werden.</p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor rechts unterhalb der Zeichenmarke (Sektor Nr. 3) auf einer gedachten Linie von 45&deg; und klicken Sie die linke Maustaste. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Eingabe wird die Richtungsnummer 3 angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie f&uuml;r X </span><span class="f__Abfrage_Resultat">.1 (=0.10m)</span><span class="f_Step"> und f&uuml;r Y </span><span class="f__Abfrage_Resultat">3.5 (=3.50m) </span><span class="f_Step">ein. Best&auml;tigen Sie die Eingaben jeweils mit der Eingabetaste. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Auf die Eingabe von Vorzeichen k&ouml;nnen Sie verzichten, da diese bereits in der Richtungsangabe ber&uuml;cksichtigt werden. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">4</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1458in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_04" style="margin:0;width:3.6875in;height:2.8125in;border:none" src="z_mitr_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.3438in; padding:0; border:none"><p class="p_Normal">Zeichnen der Linie Nr. 5 und der Linie Nr. 6. </p>
+<p class="p_Normal">Die f&uuml;nfte Linie wird in die gleiche Richtung wie die dritte Linie gezeichnet. Sie k&ouml;nnen zum Best&auml;tigen einer bereits in der Eingabe stehenden Angabe die rechte Maustaste (Rechtsklick) nutzen. Au&szlig;erdem wird f&uuml;r das Konstruieren der f&uuml;nften Linie die Hilfsfunktion <span class="f__Software_Element_deskriptiv">W</span> [<span class="f__Software_Element_deskriptiv">Winkel</span>] f&uuml;r eine Winkelangabe verwendet.</p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Uuml;bernehmen Sie die Richtungsangabe 3 mit einem Klick auf die rechte Maustaste. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie in die X-Eingabe zun&auml;chst ein </span><span class="f__Abfrage_Resultat">w</span><span class="f_Step"> und direkt dahinter den Winkel </span><span class="f__Abfrage_Resultat">45</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">w45</span><span class="f_Step"> mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben in die Y-Eingabe f&uuml;r die L&auml;nge </span><span class="f__Abfrage_Resultat">2.2</span><span class="f_Step"> ein und best&auml;tigen Sie. [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">5</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die sechste Linie zu zeichnen, klicken Sie in den Sektor Nr. 2. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die X-Eingabe wird &uuml;bersprungen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Uuml;bernehmen Sie den Wert </span><span class="f__Abfrage_Resultat">2.2</span><span class="f_Step"> in der Y-Eingabe mit Rechtsklick. [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">6</span><span class="f_Step_Anmerkung">) wird senkrecht mit 2.20m L&auml;nge gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1458in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_05" style="margin:0;width:3.5521in;height:2.9583in;border:none" src="z_mitr_05.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.3438in; padding:0; border:none"><p class="p_Normal">Die Linie Nr. 7 endet in der Verl&auml;ngerung der Linie Nr. 4. F&uuml;r das schnelle Konstruieren der siebten Linie wird die Hilfsfunktion <span class="f__Software_Element_deskriptiv">S</span> [<span class="f__Software_Element_deskriptiv">Schnitt</span>] verwendet.</p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die siebte Linie zu zeichnen, klicken Sie in den Sektor Nr. 1. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Uuml;bernehmen Sie die X-Eingabe </span><span class="f__Abfrage_Resultat">w45</span><span class="f_Step"> mit Rechtsklick. [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Normal">Nun soll die Linie gezeichnet werden, indem sie mit der vierten Linie, die gezeichnet worden ist, zum Schnitt gebracht wird.</p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie in die Y-Eingabe ein </span><span class="f__Abfrage_Resultat">s</span><span class="f_Step"> und klicken Sie die Linie Nr. 4 an. [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">7</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1458in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_06" style="margin:0;width:3.6771in;height:4.9896in;border:none" src="z_mitr_06.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.3438in; padding:0; border:none"><p class="p_Normal">Die Linie Nr. 8 hat die gleiche Neigung wie die Linie Nr. 4. Die L&auml;nge ergibt sich aus der maximalen Tiefe des Geb&auml;udes von 12.00m. F&uuml;r das schnelle Konstruieren der achten Linie wird die Hilfsfunktion <span class="f__Software_Element_deskriptiv">S</span> [<span class="f__Software_Element_deskriptiv">Schnitt</span>] und die Differenzangabe [<span class="f__Software_Element_deskriptiv">Retan</span>] verwendet.</p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die achte Linie zu zeichnen, klicken Sie in den Sektor Nr. 3. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step"><span class="f_Step">Nun soll der Winkel der Linie Nr. 4 &uuml;bernommen werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie in die X-Eingabe ein </span><span class="f__Abfrage_Resultat">p</span><span class="f_Step"> und klicken Sie die Linie Nr. 4 an. [</span><span class="f__Abfrage">X-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schalten Sie im Funktionsbereich auf die Funktion </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step"> um. [</span><span class="f__Abfrage">Y-Wert</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie in die Y-Eingabe ein </span><span class="f__Abfrage_Resultat">s</span><span class="f_Step"> ein und klicken Sie die Linie Nr. 3 an. Geben Sie anschlie&szlig;end einen Abstand von 12.00m mit einem negativen Vorzeichen ein. Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">s3-12</span><span class="f_Step"> mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">8</span><span class="f_Step_Anmerkung">) wird gezeichnet und die Zeichenmarke an das Linienende gesetzt. Sie k&ouml;nnen den Differenzmodus jetzt wieder ausschalten. [</span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step_Anmerkung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.1667in; padding:0; border:none"><p class="p_Normal"><img alt="Z_mitR_07" style="margin:0;width:3.6146in;height:3.7396in;border:none" src="z_mitr_07.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.3229in; padding:0; border:none"><p class="p_Normal">Zeichnen der Linie Nr. 9 und der Linie Nr.10. </p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die neunte Linie zu zeichnen, klicken Sie in den Sektor Nr. 4. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie, anstatt einen X-Wert einzugeben, die erste Linie in der N&auml;he des Anfangspunktes (A1) an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Da die Differenzeingabe ausgeschaltet ist [</span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step_Anmerkung">], wird die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">9</span><span class="f_Step_Anmerkung">) sofort gezeichnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die zehnte Linie zu zeichnen, klicken Sie in den Sektor Nr. 8. [</span><span class="f__Abfrage">Richtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie zum Abschluss den Anfangspunkt der Linie Nr. 1 (A1) an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linie (</span><span class="f_Step_Anmerkung" style="font-weight: bold;">10</span><span class="f_Step_Anmerkung">) wird gezeichnet und der Grundriss fertiggestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_linien.htm" class="topiclink" title="Linienfunktionen (Übersicht)">Linienfunktionen (&Uuml;bersicht)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_linien_ohne_richtungslogik_zei.htm" class="topiclink">Ohne Richtungslogik zeichnen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_differenzmodus.htm" class="topiclink">Differenzmodus (Retan)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm" class="topiclink" title="Hilfsfunktionen">Hilfsfunktionen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

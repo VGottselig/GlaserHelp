@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bewehrung dehnen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="DehBew,Elemente,Elemente dehnen (Bewehrung)" />
+   <meta name="description" content="Geometrieelemente zusammen mit der Bewehrung dehnen (ausgenommen Kreise) und Bewehrungsformen (Stabstahl) gleichzeitig ändern. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="rm_bewehrung-dehnen.htm">Bewehrung dehnen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_bewehrung-dehnen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_bewehrung-dehnen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst3_flaechenbew_autbew.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Bewehrung dehnen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><a href="rm_bewehrung-dehnen.htm" class="topiclink"><img alt="B-akt_BewDeh" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_bewdeh.png"/></a><span class="f_Aufruf"> <img alt="B-akt_DehBew" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_dehbew.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Geometrieelemente zusammen mit der Bewehrung dehnen (ausgenommen Kreise) und Bewehrungsformen (Stabstahl) gleichzeitig &auml;ndern. </span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">F&uuml;hren Sie die Aktion in zwei Schritten, jeweils f&uuml;r X- und Y- getrennt durch, wenn nicht nur in eine Richtung gedehnt werden soll.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Elemente selektieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um den zu ver&auml;ndernden Bereich und best&auml;tigen Sie die Auswahl mit Rechtsklick. [</span><span class="f__Abfrage">1. Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn die Elemente, die Sie markiert haben, nicht mit dem aktuell eingestellten Ma&szlig;stab (s. untere Men&uuml;leiste) &uuml;bereinstimmen, werden Sie in einer Meldung darauf hingewiesen. Nehmen Sie in diesem Fall eine Ma&szlig;stabskorrektur vor:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Ma&szlig;stabsinformationen zu einzelnen Zeichenelementen erhalten Sie &uuml;ber die <a href="konst1_elementeigenschaften_anzeigen.htm" class="topiclink" title="Elementeigenschaften anzeigen">Elementabfrage</a> in der unteren Men&uuml;leiste.</span><br>
+<span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">Untere Men&uuml;leiste</span><span class="f_Step_Anmerkung"> | [</span><span class="f__Software_Element_deskriptiv">?</span><span class="f_Step_Anmerkung">]].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Mit der Funktion <a href="massstab_einstellen.htm" class="topiclink" title="Maßstab einstellen">Ma&szlig;stab</a> k&ouml;nnen Sie den Ma&szlig;stab eingeben, in dem die Elemente gezeichnet sind.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Die Ma&szlig;st&auml;be einzelner Zeichenelemente k&ouml;nnen Sie mit der </span><span class="f_Step"><a href="konst2_massstab_aendern.htm" class="topiclink" title="Maßstäbe ändern">Ma&szlig;stabskorrektur</a> </span><span class="f_Step_Anmerkung">korrigieren.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Referenzpunkte angeben</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Punkt der zu dehnenden Bewehrung als Referenzpunkt an. [</span><span class="f__Abfrage">Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie keinen Punkt anklicken, wird die Lage der Zeichenmarke als Referenzpunkt genommen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_R_Tabellenzeile">Geben Sie die Verschiebung des Punktes als absoluten Wert ein und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_R_Tabellenzeile">Mit Differenzeingabe: Aktivieren Sie </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_R_Tabellenzeile"> und geben Sie das Ziel relativ durch Anklicken einer Bezugslinie und Eingabe der Differenz ein. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_R_Tabellenzeile">Ohne Differenzeingabe: Aktivieren Sie </span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_R_Tabellenzeile"> und klicken Sie den neuen Referenzpunkt an.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bewehrungsausz&uuml;ge werden automatisch angepasst. Sind durch die &Auml;nderung auch Staffelverlegungen betroffen, werden vier M&ouml;glichkeiten geboten, wie die &Auml;nderung vorgenommen werden soll. [</span><span class="f__Abfrage">Enter-Taste = n&auml;chstm&ouml;gliche Verlegung anzeigen; Null = &Auml;nderung akzeptieren</span><span class="f_Step_Anmerkung">]</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Optionen unter der Abfrage</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit den folgenden Optionen (1 bis 4) k&ouml;nnen Sie die Darstellung der L&auml;ngen&auml;nderung anpassen. [</span><span class="f__Abfrage">Enter-Taste = n&auml;chstm&ouml;gliche Verlegung anzeigen; Null = &Auml;nderung akzeptieren</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nutzen Sie die rechte Maustaste oder die Eingabetaste, um zwischen den Darstellungsoptionen zu wechseln, und die Vorschau an der Verlegung anzeigen zu lassen. Klicken Sie alternativ eine der Schaltfl&auml;chen an. Die Verlegung wird auf der Zeichnung mit der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Markieren</span><span class="f_Step_Anmerkung"> hervorgehoben; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Anmerkung</span><span class="f_Step_Anmerkung">: Bei den Optionen 1 und 2 kann die Verlegung je nach Verlegeparameter jeweils in die eine oder in die andere Richtung verschoben werden. Die Markierungskreuze <img alt="I_Hoehenkote_Zwei" style="margin:0;width:0.1354in;height:0.1146in;border:none" src="i_hoehenkote_zwei.png"/> an der Verlegung zeigen an, in welche Richtung die L&auml;ngen&auml;nderung vorgenommen wird.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="I_Verlegung am Ende dehnen" style="margin:0;width:0.9688in;height:0.2813in;border:none" src="hmfile_hash_d939ec7e.png"/></p>
+</td>
+<td class="Optionen_Palette" style="vertical-align:middle;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option 1: Verlegung am Ende dehnen</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="I_Verlegung am Anfang dehnen" style="margin:0;width:0.9688in;height:0.2813in;border:none" src="hmfile_hash_a5b2ed7b.png"/></p>
+</td>
+<td class="Optionen_Palette" style="vertical-align:middle;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option 2: Verlegung am Anfang dehnen</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="I_Verlegung zu beiden Seiten gleich ausdehnen" style="margin:0;width:0.9688in;height:0.2813in;border:none" src="hmfile_hash_c53f6fdb.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option 3: Verlegung um die halbe L&auml;ngen&auml;nderung zu beiden Seiten gleich verschieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="I_Verlegung nicht aendern" style="margin:0;width:0.9688in;height:0.2813in;border:none" src="hmfile_hash_8473aa55.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option 4: Verlegung nicht &auml;ndern. Es wird die urspr&uuml;ngliche L&auml;nge gezeichnet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="B_naechste-Verlegung" style="margin:0;width:2.2500in;height:0.2604in;border:none" src="b_naechste-verlegung.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei mehreren Verlegungen, die mit derselben Biegeform verlegt worden sind, wird Ihnen angezeigt, welche Verlegung von wie vielen Verlegungen (z. B. 1 von 2) gerade ge&auml;ndert wird. Die entsprechende Verlegung wird in der Zeichnung markiert. Klicken Sie auf diese Schaltfl&auml;che, um die aktuelle Verlegung zu &auml;ndern und die n&auml;chste anzupassen. Geben Sie alternativ &quot;0&quot; in die Eingabe ein und best&auml;tigen Sie mit der Eingabetaste. Die zuletzt gew&auml;hlte Darstellungsoption wird f&uuml;r die n&auml;chste Verlegung &uuml;bernommen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="B_Fertig_AendTlg" style="margin:0;width:2.2500in;height:0.2604in;border:none" src="b_fertig_aendtlg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nach dem &Auml;ndern der letzten Verlegung klicken Sie auf diese Schaltfl&auml;che, um alle &Auml;nderungen zu best&auml;tigen. Geben Sie alternativ &quot;0&quot; in die Eingabe ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.2813in;"><p class="p_R_Tabellenzeile"><img alt="B_Auto-Zoom-an" style="margin:0;width:1.1250in;height:0.2604in;border:none" src="b_auto-zoom-an.png"/><img alt="B_Auto-Zoom-aus" style="margin:0;width:1.1250in;height:0.2604in;border:none" src="b_auto-zoom-aus.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8958in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Auto-Zoom an</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Wenn Sie zur n&auml;chsten Verlegung wechseln, wird diese automatisch herangezoomt. Sie k&ouml;nnen nachdem Sie den Zoom-Ausschnitt manuell ver&auml;ndert haben, wieder zur markierten Verlegung heranzoomen, indem Sie die Schaltfl&auml;che anklicken.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Auto-Zoom aus</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Deaktiviert den automatischen Zoom. Sie k&ouml;nnen zur markierten Verlegung heranzoomen, indem Sie Auto-Zoom anklicken.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Falls die Auswahl der Teill&auml;nge nicht eindeutig ist</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Wenn bei der Auswahl auch auf dem Plan nicht sichtbare Teill&auml;ngen mit ausgew&auml;hlt wurden, k&ouml;nnen Sie entscheiden, welche Teill&auml;ngen der Biegeform gedehnt werden sollen. ISBCAD zoomt zur Biegeform und markiert nacheinander die entsprechenden Teill&auml;ngen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step">W&auml;hlen Sie die Teill&auml;ngen der Biegeform, die gedehnt werden sollen. [</span><span class="f__Abfrage">Soll diese Teill&auml;nge gedehnt werden?</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step">Geben Sie 0 f&uuml;r Nein (nicht dehnen) oder 1 f&uuml;r Ja (Teill&auml;nge dehnen). [</span><span class="f__Abfrage">0 = Nein; 1 = Ja</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn n&ouml;tig wird nach der Eingabe die n&auml;chste Teill&auml;nge abgefragt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Bewehrung-dehnen" style="margin:0;width:7.1250in;height:2.9896in;border:none" src="z_bewehrung-dehnen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

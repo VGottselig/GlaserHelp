@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Trassierung</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Trassierung (Variantenprogramm),Variantenprogramme,Variantenprogramme Trassierung" />
+   <meta name="description" content="Erstellen eines Verkehrsweges (Trasse). Öffnet das Programm Eingabe für Straßenachsen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_modules.htm">Zusatzprogramme</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_edoc-folienstruktur.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_modules.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_eigenschaften-fuer-achse.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Trassierung</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erstellen eines Verkehrsweges (Trasse). &Ouml;ffnet das Programm </span><span class="f__Software_Element_deskriptiv">Eingabe f&uuml;r Stra&szlig;enachsen</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mit Hilfe des Trassierungs- und Absteckprogramms lassen sich Absteckdaten im Allgemeinen Konstruktionsprogramm umsetzen. Neben Daten aus CARD/1 k&ouml;nnen auch Daten aus alternativen Programmen verarbeitet werden. Dieses Zusatzprogramm generiert Geraden, Kreisb&ouml;gen, Klothoiden, Blosskurven, Polynomialen sowie deren Parallelen. Im Allgemeinen Konstruktionsprogramm werden Kilometrierungsbezeichnungen inkl. tabellarischer Darstellung ausgegeben.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Normal"><img alt="D_Eingabe-fuer-Strassenachsen" style="margin:0;width:8.7083in;height:3.4167in;border:none" src="d_eingabe-fuer-strassenachsen.png"/></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Achse</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Erzeugen und Bearbeiten einer Hauptachse.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dropdown-Liste (z. B.: Achse 1)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Falls Sie bereits Achsen erzeugt haben, k&ouml;nnen Sie aus der Liste die zu bearbeitende Achse ausw&auml;hlen. Wurde noch keine Achse erstellt, ist die Schaltfl&auml;che ausgegraut.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neu</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erzeugt eine neue Achse. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eigenschaften f&uuml;r Achse (Startparameter)</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung"><a href="rd_eigenschaften-fuer-achse.htm" class="topiclink" title="Dialogbeschreibung">&raquo; Eigenschaften f&uuml;r Achse</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bearbeiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Achsabschnitt bearbeiten. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eigenschaften f&uuml;r Achse (Startparameter)</span><span class="f_R_Option_Beschreibung">. (s. oben).</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus der Dropdown-Liste den entsprechenden Achsabschnitt und klicken Sie auf diese Schaltfl&auml;che, um den Abschnitt zu bearbeiten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Parallelen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Parallelen und Stationstexte bearbeiten</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Abschnitt</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Erzeugen und Bearbeiten eines Achsabschnittes.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neu</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erzeugt einen neuen Achsabschnitt. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Stationsabschnitt f&uuml;r...</span><span class="f_R_Option_Beschreibung"> W&auml;hlen Sie im Dialog das entsprechende Trassierungselement und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung"><a href="rd_stationsabschnitt.htm" class="topiclink" title="Dialogbeschreibung">&raquo; Stationsabschnitt f&uuml;r ...</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bearbeiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Achsabschnitt bearbeiten</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung"><a href="rd_achsabschnitt-bearbeiten.htm" class="topiclink" title="Dialogbeschreibung">&raquo; Achsabschnitt bearbeiten</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht den in der Tabelle markierten Achsabschnitt.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Allgemein</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bearbeiten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Allgemeine Grundwerte</span><span class="f_R_Option_Beschreibung">. Im Dialog k&ouml;nnen Sie Grundeinstellungen f&uuml;r die Darstellung und Eingabeeinheiten vornehmen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung"><a href="rd_allgemeine-grundwerte.htm" class="topiclink" title="Dialogbeschreibung">&raquo; Allgemeine Grundwerte</a></span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Projekt</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neu</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t das aktuelle Projekt ohne R&uuml;ckfrage zum Speichern und &ouml;ffnet ein leeres Projekt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Import</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;gt bereits vorhandene Dateien dem aktuellen Projekt hinzu. Die folgenden Formate werden unterst&uuml;tzt:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5938in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Dateien</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf"> Formate</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Daten</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">*.d50; *.d40; *.040</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Karten</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">*.k40</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5938in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Achsen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"> *.axn</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Export</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Speichert die aktuellen Daten oder Karten. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lesen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Liest eine Projektdatei [</span><span class="f_R_Tabellenzeile">*.axn</span><span class="f_R_Option_Beschreibung">] ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Speichern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Speichert das aktuelle Projekt in einer Achsen-Datei [</span><span class="f_R_Tabellenzeile">*.axn</span><span class="f_R_Option_Beschreibung">]. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="ansicht" class="hmanchor"></a><span class="f_R_Option">Ansicht</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.4792in;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet ein Fenster und zeigt eine Vorschau der definierten Haupt- und Abschnittsachsen. In einer Tabelle werden die vorhanden Hauptachsen mit den entsprechenden Stationen angezeigt. Passen Sie ggf. den Ma&szlig;stab an, in dem die Trassierungselemente angezeigt werden, falls nach dem &Ouml;ffnen des Fensters die Zeichnung zu gro&szlig; oder zu klein dargestellt wird. (s. <a href="rd_allgemeine-grundwerte.htm#massstab" class="topiclink">Allgemeine Grundwerte &#8594; Ma&szlig;stab</a>).</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><a class="imagetogglelink" style="margin:0;width:0.9688in;height:0.7708in" href="d_ansicht-trasse.png"><img id="toggle0186a1" class="image-toggle" alt="Anklicken zum Vergrößern" title="Anklicken zum Vergrößern" style="width:0.9688in;height:0.7708in;border:none" src="d_ansicht-trasse_zoom25.png"/><svg xmlns="http://www.w3.org/2000/svg" class="image-toggle-magnifier" viewBox="-1 -1 25 25"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ablegen der erstellten Trasse auf der ISBCAD Zeichenfl&auml;che. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Speichen</span><span class="f_R_Option_Beschreibung">. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Dateinamen f&uuml;r die einzuf&uuml;gende Zeichnung ein und speichern Sie diese im *.akt.-Format ab, indem Sie auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_R_Option_Beschreibung"> klicken. Der Dialog wird geschlossen und das Trassierungsprogramm wird wieder hervorgehoben. Klicken Sie im Programm auf </span><span class="f__Software_Element_deskriptiv">Ende</span><span class="f_R_Option_Beschreibung">, um dieses zu schlie&szlig;en und die Zeichnung ablegen zu k&ouml;nnen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie werden nach dem Schlie&szlig;en des Trassierungsprogramms einen Rahmen mit den maximalen Abmessungen auf dem Bildschirm sehen, den Sie an die gew&uuml;nschte Stelle schieben und mit der linken Maustaste ablegen k&ouml;nnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ende</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t das Trassierungsprogramm ohne R&uuml;ckfrage. Speichern bzw. exportieren Sie die aktuellen Daten, bevor Sie das Programm schlie&szlig;en.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1','hm.type','picture','hm.state','0','hm.src0','d_ansicht-trasse_zoom25.png','hm.src1','d_ansicht-trasse.png','hm.title0','Anklicken zum Vergrößern','hm.title1','Anklicken zum Vergrößern');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

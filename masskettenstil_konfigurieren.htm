@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Maßkettenstil konfigurieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bemaßung,Höhenkote,Höhenkote konfigurieren,Maßketten,Maßketten Maßketteneinstellungen - Referenz" />
+   <meta name="description" content="Stil-Konfiguration für die Darstellung von Bemaßungen. Öffnet den Dialog Maßketten Einstellungen zur Bearbeitung von Maßkettenstilen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_massketten.htm">Maßketten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="massketten_loeschen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_massketten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="masskettenpunkte_modifizieren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Ma&szlig;kettenstil konfigurieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_massketten.htm" class="topiclink" title="Maßketten-Funktionen (Übersicht)"><img alt="Maßketten-Funktionen (Übersicht)" title="Maßketten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massket.png"/></a> <img alt="B-akt_DefMass_Massket" style="margin:0;width:1.1563in;height:0.2396in;border:none" src="b-akt_defmass_massket.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Stil-Konfiguration f&uuml;r die Darstellung von Bema&szlig;ungen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ketten Einstellungen</span><span class="f_R_Dialog_Info"> zur Bearbeitung von Ma&szlig;kettenstilen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Der Dialog enth&auml;lt 20 Ma&szlig;kettenstile, die &uuml;ber die Ma&szlig;ketten-ID ausgew&auml;hlt, auf den Registerkarten bearbeitet und mit individueller Bezeichnung gespeichert werden k&ouml;nnen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Einstellungen auf den einzelnen Registerkarten (Ma&szlig;ketten, H&ouml;henkoten, Absolutma&szlig;ketten, Winkel- und Radiusverma&szlig;ung, H&ouml;henkote im Grundriss) werden pro ID gespeichert. Wenn z. B. ID-Nummer 2 aktiviert ist, werden Ihnen beim Umschalten der Registerkarten die Einstellungen der ID-Nummer 2 angezeigt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">F&uuml;r die Umfang- und Bogenverma&szlig;ung [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ket</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Umfang</span><span class="f_L_Listeneintrag">/</span><span class="f__Software_Element_deskriptiv">Bogen</span><span class="f_L_Listeneintrag">] gelten die Einstellungen auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ketten</span><span class="f_L_Listeneintrag">.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Nach &Auml;nderung der Einstellungen einer Ma&szlig;ketten-ID k&ouml;nnen Sie die Darstellung aller Bema&szlig;ungen in der Zeichnung, die diese ID verwenden, mit der Funktion <a href="massketten_generieren.htm" class="topiclink">Ma&szlig;kette generieren</a> aktualisieren.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1146in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Alle Angaben von Abst&auml;nden, L&auml;ngen, H&ouml;hen und Radien werden in 1/10 mm angegeben. So entspricht z. B. die Angabe &quot;200 1/10 mm&quot; 2 cm auf der Zeichnung.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Ma&szlig;ketten Einstellungen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Maßkettenstil konfigurieren Menü" style="margin:0;width:5.6563in;height:5.5729in;border:none" src="hmfile_hash_52e28ebd.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ID:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der zu bearbeitenden Ma&szlig;ketten-ID.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie die Dropdown-Liste an, um diese aufzuklappen und w&auml;hlen Sie die ID aus, die Sie bearbeiten m&ouml;chten. Im Dialog werden die Einstellungen der aktuell gew&auml;hlten ID angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_DefMas_ID-Auswahl" style="margin:0;width:2.4583in;height:1.7292in;border:none" src="scr_defmas_id-auswahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4063in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipps:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Sie k&ouml;nnen die IDs mit dem Mausrad durchscrollen, indem Sie den Cursor &uuml;ber die Dropdown-Liste bewegen und das Mausrad drehen. Dadurch k&ouml;nnen Sie schnell zwischen den IDs wechseln. Diese Funktionalit&auml;t wird in allen Dropdown-Listen unterst&uuml;tzt.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn Sie Ma&szlig;kettenstile aus ISBCAD Versionen vor ISBCAD 2023 nutzen, kann es sein, dass IDs zwei Bezeichnungen aufweisen (z. B. 4 Schalplan/Schalpl.). Das liegt an unterschiedlichen ID-Bezeichnungen derselben ID f&uuml;r Ma&szlig;ketten und H&ouml;henkoten in der fr&uuml;heren ISBCAD Version. Sie k&ouml;nnen diese IDs umbenennen.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ID umbenennen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Im Auslieferungszustand werden alle IDs mit &quot;Standard&quot; benannt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um eine ID umzubenennen, w&auml;hlen Sie die ID aus und klicken Sie auf <img alt="B_DefMas_ID-umbenennen" style="margin:0;width:0.3333in;height:0.2292in;border:none" src="b_defmas_id-umbenennen.png"/>. Tippen Sie im Eingabefeld die neue ID-Bezeichnung ein und best&auml;tigen Sie mit der Eingabetaste. Nach der Best&auml;tigung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> (unterer Dialogbereich) wird die ge&auml;nderte ID-Bezeichnung in der Stil-Auswahl (im Funktionsbereich f&uuml;r Ma&szlig;ketten) aktualisiert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_DefMas_ID-Auswahl_Menue" style="margin:0;width:2.0729in;height:3.6979in;border:none" src="scr_defmas_id-auswahl_menue.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vorschau</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Einstellungen f&uuml;r die gew&auml;hlte Ma&szlig;ketten-ID als Vorschau an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Einstellungen werden &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vorgenommene &Auml;nderungen an den Einstellungen werden verworfen. Die vorher eingestellten Parameter werden wieder aktiv.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Registerkarten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Nutzen Sie die Optionen auf den verschiedenen Registerkarten, um die Darstellung von Bema&szlig;ungen zu definieren.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="_maskomma" class="hmanchor"></a><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Ma&szlig;ketten</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><h5 class="p_Heading5"><span class="f_Heading5">Ma&szlig;ketten-Elemente</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="SCR_Massketten_Konfig" style="margin:0;width:7.6458in;height:2.5521in;border:none" src="scr_massketten_konfig.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Gesamtma&szlig; / Einzelma&szlig;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Textgr&ouml;&szlig;e aus der Auswahl oder geben Sie die gew&uuml;nschte Gr&ouml;&szlig;e ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer f&uuml;r die Ma&szlig;zahlen. Die Stiftbreiten f&uuml;r die Druckausgabe k&ouml;nnen Sie in [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucke/Plotte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung">] einstellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Ma&szlig;e geeignete Breitenfaktoren.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Einzelma&szlig;e ist es sinnvoll, Breitenfaktoren unter 1.0 zu w&auml;hlen. Zum Beispiel 0.7. Dadurch passen die Ma&szlig;zahlen eher zwischen die Ma&szlig;hilfslinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Schriftart aus der Liste aus. Es stehen nur die Schriftarten zur Verf&uuml;gung, die in den Systemdaten eingestellt sind. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nachkommastellen (Genauigkeit f. Fu&szlig;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wir empfehlen vier Nachkommastellen. Damit lassen sich alle Ma&szlig;e genau anzeigen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden nur die Nachkommastellen geschrieben, die &#8800; 0 sind. 1.5100 wird somit 1.51 geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hochzahl ab Nachkommastelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Verma&szlig;ung im allgemeinen Hochbau werden die Millimeter als hochgestellte Zahlen geschrieben. Stellen Sie hier also eine „3“ ein. Bezugsma&szlig; ist generell der Meter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="massketten_einstellungen-texte" class="hmanchor"></a><span class="f_R_Option">Anzahl Nullen nach dem Komma</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie den Wert auf „2“. Damit wird ein Ma&szlig; von z. B. einem Meter nicht als „1“, sondern als „1.00“ geschrieben.</span><br>
+<span class="f_R_Option_Beschreibung">0 = Anzeige ohne Nachkommastellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dezimaltrennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen einem Punkt oder einem Komma als Dezimaltrennzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;linie (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ist der Wert zu klein gew&auml;hlt, wird die Ma&szlig;linie bei freigestelltem Text angeschnitten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_masket_textfrei" class="hmanchor"></a><span class="f_R_Option">Texte freistellen (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox, wenn Ma&szlig;zahlen automatisch freigestellt werden sollen. Damit wird verhindert, dass die Texte nicht von Schraffuren o. &auml;. verdeckt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein, um die Gr&ouml;&szlig;e des Freistellungsbereiches zu definieren. Wenn der Wert gleich oder gr&ouml;&szlig;er der Eingabe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Abstand Texte/Ma&szlig;linie </span><span class="f_R_Option_Beschreibung">ist, wird die Ma&szlig;linie von der Freistellung &uuml;berdeckt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auf 5mm runden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Einstellung werden die Ma&szlig;zahlen auf 5 mm auf- oder abgerundet. Der tats&auml;chliche geometrische Abstand von z. B. 5.4 cm wird als 5.5 cm verma&szlig;t. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD rundet an den Grenzen x.25 cm und x.75 cm.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiele:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.24 cm -&gt; 3.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die kleiner x.25 cm sind, werden auf x.0 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.40 cm -&gt; 3.5 cm</span></p>
+</td>
+<td class="Reference_Clean" rowspan="2"  style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_L_Listenunterpunkt">Werte, die gr&ouml;&szlig;er oder gleich x.25 cm und kleiner x.75 cm sind, werden auf x.5 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.72 cm -&gt; 3.5 cm</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.75 cm -&gt; 4.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die gr&ouml;&szlig;er oder gleich x.75 cm sind, werden auf (x + 1).0 cm gerundet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ger&uuml;st</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Stiftnummer f&uuml;r die Ma&szlig;linien und die Ma&szlig;hilfslinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand zur Zeichnung (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Voreinstellung des Abstands zwischen Geometrielinien und den Ma&szlig;linien. Dieser Abstand bezieht sich auf einen Fangpunkt, der beim Absetzen der Ma&szlig;kette gew&auml;hlt werden kann.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: Absetzen einer Ma&szlig;kette</span></p>
+<p class="p_ImageCaption"><img alt="SCR_Abstand-zur-Zeichnung" style="margin:0;width:2.9375in;height:1.5208in;border:none" src="scr_abstand-zur-zeichnung.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Cursor oberhalb der Linie; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Fangpunkt;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">C.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Cursor unterhalb der Linie;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">D.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Abstand zur Zeichnung (1/10mm)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand der Ma&szlig;kettenlinien (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Voreinstellung des Abstands zu einer vorhandenen Ma&szlig;linie. Wird auch bei Gesamtma&szlig; benutzt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Abstand ein, mit dem neu erzeugte Ma&szlig;ketten abgesetzt werden sollen, wenn Sie eine Ma&szlig;linie als Referenzelement anklicken. Achten Sie beim Absetzen der Ma&szlig;kette auf die Fangmarke und die Lage des Cursors.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand links/rechts (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r die &Uuml;berst&auml;nde der Ma&szlig;linie an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand oben (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r den oberen &Uuml;berstand der Ma&szlig;hilfslinie an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand unten (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r den unteren &Uuml;berstand der Ma&szlig;hilfslinie an.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Begrenzung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Strich, einen Pfeil oder einen Kreis als Ma&szlig;begrenzung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Stift f&uuml;r die Ma&szlig;begrenzung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;he (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier geben Sie die halbe H&ouml;he des Pfeils an.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="SCR_Pfeil_Mass01" style="margin:0;width:0.2813in;height:0.3958in;border:none" src="scr_pfeil_mass01.png"/><span class="f_ImageCaption"> &nbsp; <img alt="SCR_Pfeil_Mass02" style="margin:0;width:0.2083in;height:0.3854in;border:none" src="scr_pfeil_mass02.png"/> </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge/Radius (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die horizontale L&auml;nge des Pfeils, des Striches oder den Kreisradius an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">H&ouml;henkoten</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Texte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e [cm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Textgr&ouml;&szlig;e aus der Auswahl oder geben die gew&uuml;nschte Gr&ouml;&szlig;e ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer f&uuml;r die Ma&szlig;zahlen. Die Stiftbreiten f&uuml;r die Druckausgabe k&ouml;nnen Sie in [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucke/Plotte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung">] einstellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Ma&szlig;e geeignete Breitenfaktoren </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Schriftart aus der Liste aus. Es stehen nur die Schriftarten zur Verf&uuml;gung, die in den Systemdaten eingestellt sind. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Linien</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Stiftnummer f&uuml;r die Linien der H&ouml;henkote.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge der H&ouml;henkote (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier geben Sie das Ma&szlig; f&uuml;r die halbe Breite des Dreiecks an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;he der H&ouml;henkote (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die H&ouml;he des Dreiecks an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand der H&ouml;henkote (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie das Ma&szlig; f&uuml;r den &Uuml;berstand &uuml;ber das Dreieck hinaus an.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0.4063in;"><img alt="Z_Massketten_Hoehenkoten-Darstellung" style="margin:0;width:4.3750in;height:1.8542in;border:none" src="z_massketten_hoehenkoten-darstellung_zoom80.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nachkommastellen (Genauigkeit f. Fu&szlig;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wir empfehlen vier Nachkommastellen. Damit lassen sich alle Ma&szlig;e genau anzeigen. Es werden nur die Nachkommastellen geschrieben, wenn sie &#8800; 0 sind. 1.5100 wird 1.51 geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hochzahl ab Nachkommastelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Verma&szlig;ung im allgemeinen Hochbau werden die Millimeter als hochgestellte Zahlen geschrieben. Stellen Sie hier also eine „3“ ein. Bezugsma&szlig; ist generell der Meter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nullen nach dem Komma</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie den Wert auf „2“. Damit wird ein Ma&szlig; von z. B. einem Meter nicht als „1“, sondern als „1.00“ geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dezimaltrennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen einem Punkt oder einem Komma als Dezimaltrennzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;linie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen positiven Wert f&uuml;r den Abstand zwischen der oberen, horizontalen H&ouml;henkotenlinie und dem Ma&szlig;text ein. Ist der Wert zu klein gew&auml;hlt, wird die H&ouml;henkote bei freigestelltem Text angeschnitten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Texte freistellen (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox, wenn H&ouml;henkotentexte automatisch freigestellt werden sollen. Damit wird verhindert, dass die Texte nicht von Schraffuren o. &auml;. verdeckt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein, um die Gr&ouml;&szlig;e des Freistellungsbereiches zu definieren. Wenn der Wert gleich oder gr&ouml;&szlig;er der Eingabe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Abstand Texte/Ma&szlig;linie </span><span class="f_R_Option_Beschreibung">ist, wird die H&ouml;henkote von der Freistellung &uuml;berdeckt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auf 5mm runden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Einstellung werden die Ma&szlig;zahlen auf 5 mm auf- oder abgerundet. Der tats&auml;chliche geometrische Abstand von z. B. 5.4 cm wird als 5.5 cm verma&szlig;t. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD rundet an den Grenzen x.25 cm und x.75 cm.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiele:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.24 cm -&gt; 3.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die kleiner x.25 cm sind, werden auf x.0 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.40 cm -&gt; 3.5 cm</span></p>
+</td>
+<td class="Reference_Clean" rowspan="2"  style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_L_Listenunterpunkt">Werte, die gr&ouml;&szlig;er oder gleich x.25 cm und kleiner x.75 cm sind, werden auf x.5 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.72 cm -&gt; 3.5 cm</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.75 cm -&gt; 4.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die gr&ouml;&szlig;er oder gleich x.75 cm sind, werden auf (x + 1).0 cm gerundet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Absolutma&szlig;ketten</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Einzelma&szlig;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Textgr&ouml;&szlig;e aus der Auswahl oder geben Sie die gew&uuml;nschte Gr&ouml;&szlig;e ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer f&uuml;r die Ma&szlig;zahlen. Die Stiftbreiten f&uuml;r die Druckausgabe k&ouml;nnen Sie in [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucke/Plotte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung">] einstellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Ma&szlig;e geeignete Breitenfaktoren.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Einzelma&szlig;e ist es sinnvoll, Breitenfaktoren unter 1.0 zu w&auml;hlen. Zum Beispiel 0.7. Dadurch passen die Ma&szlig;zahlen eher zwischen die Ma&szlig;hilfslinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Schriftart aus der Liste aus. Es stehen nur die Schriftarten zur Verf&uuml;gung, die in den Systemdaten eingestellt sind. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nachkommastellen (Genauigkeit f. Fu&szlig;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wir empfehlen vier Nachkommastellen. Damit lassen sich alle Ma&szlig;e genau anzeigen. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden nur die Nachkommastellen geschrieben, die &#8800; 0 sind. 1.5100 wird somit 1.51 geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hochzahl ab Nachkommastelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Verma&szlig;ung im allgemeinen Hochbau werden die Millimeter als hochgestellte Zahlen geschrieben. Stellen Sie hier also eine „3“ ein. Bezugsma&szlig; ist generell der Meter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nullen nach dem Komma</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie den Wert auf „2“. Damit wird ein Ma&szlig; von z. B. einem Meter nicht als „1“, sondern als „1.00“ geschrieben.</span><br>
+<span class="f_R_Option_Beschreibung">0 = Anzeige ohne Nachkommastellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dezimaltrennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen einem Punkt oder einem Komma als Dezimaltrennzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;linie (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vertikale Verschiebung der Ma&szlig;texte. Geben Sie einen positiven oder negativen Wert ein, um die Ma&szlig;texte vertikal in Bezug auf die Ma&szlig;linie zu verschieben. Ist der Wert zu klein gew&auml;hlt, wird die Ma&szlig;hilfslinie oder auch die Ma&szlig;linie bei freigestelltem Text angeschnitten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;hilfslinie (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Horizontale Verschiebung der Ma&szlig;texte. Geben Sie einen positiven oder negativen Wert ein, um die Ma&szlig;texte horizontal in Bezug auf die Ma&szlig;hilfslinien zu verschieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Texte freistellen (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox, wenn Ma&szlig;zahlen automatisch freigestellt werden sollen. Damit wird verhindert, dass die Texte nicht von Schraffuren o. &auml;. verdeckt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein, um die Gr&ouml;&szlig;e des Freistellungsbereiches zu definieren. Beachten Sie dabei den Wert f&uuml;r </span><span class="f__Software_Element_deskriptiv">Abstand Texte/Ma&szlig;linie</span><span class="f_R_Option_Beschreibung">, um eine &Uuml;berdeckung der Ma&szlig;hilfslinien durch die Freistellung zu vermeiden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auf 5mm runden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Einstellung werden die Ma&szlig;zahlen auf 5 mm auf- oder abgerundet. Der tats&auml;chliche geometrische Abstand von z. B. 5.4 cm wird als 5.5 cm verma&szlig;t. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD rundet an den Grenzen x.25 cm und x.75 cm.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiele:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.24 cm -&gt; 3.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die kleiner x.25 cm sind, werden auf x.0 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.40 cm -&gt; 3.5 cm</span></p>
+</td>
+<td class="Reference_Clean" rowspan="2"  style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_L_Listenunterpunkt">Werte, die gr&ouml;&szlig;er oder gleich x.25 cm und kleiner x.75 cm sind, werden auf x.5 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.72 cm -&gt; 3.5 cm</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.75 cm -&gt; 4.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die gr&ouml;&szlig;er oder gleich x.75 cm sind, werden auf (x + 1).0 cm gerundet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ger&uuml;st</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Stiftnummer f&uuml;r die Ma&szlig;linien und die Ma&szlig;hilfslinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand zur Zeichnung (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Voreinstellung des Abstands zwischen Geometrielinien und den Ma&szlig;linien. Dieser Abstand bezieht sich auf einen Fangpunkt, der beim Absetzen der Ma&szlig;kette gew&auml;hlt werden kann.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5313in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: Absetzen einer Absolutma&szlig;kette</span></p>
+<p class="p_ImageCaption"><img alt="SCR_Abstand-zur-Zeichnung_AbsMas" style="margin:0;width:3.2292in;height:2.3333in;border:none" src="scr_abstand-zur-zeichnung_absmas.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Cursor oberhalb der Linie; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Fangpunkt;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">C.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Cursor unterhalb der Linie;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">D.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Abstand zur Zeichnung (1/10mm)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand der Ma&szlig;kettenlinien (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Voreinstellung des Abstands zu einer vorhandenen Ma&szlig;linie. Geben Sie einen Abstand ein, mit dem neu erzeugte Ma&szlig;ketten abgesetzt werden sollen, wenn Sie eine Ma&szlig;linie als Referenzelement anklicken. Achten Sie beim Absetzen der Ma&szlig;kette auf die Fangmarke und die Lage des Cursors.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;ketten&uuml;berstand links/rechts (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r die &Uuml;berst&auml;nde der Ma&szlig;linie an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;ketten&uuml;berstand oben (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r den oberen &Uuml;berstand der Ma&szlig;hilfslinie an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;ketten&uuml;berstand unten (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert f&uuml;r den unteren &Uuml;berstand der Ma&szlig;hilfslinie an.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Begrenzung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Strich, einen Pfeil oder einen Kreis als Ma&szlig;begrenzung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Stift f&uuml;r die Ma&szlig;begrenzung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die horizontale L&auml;nge des Pfeils bzw. des Striches an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;he (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier geben Sie die halbe H&ouml;he des Pfeils an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Radius (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Kreisradius ein.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Winkelverma&szlig;ung/Radiusverma&szlig;ung</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Einzelma&szlig;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Textgr&ouml;&szlig;e aus der Auswahl oder geben Sie die gew&uuml;nschte Gr&ouml;&szlig;e ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer f&uuml;r die Ma&szlig;zahlen. Die Stiftbreiten f&uuml;r die Druckausgabe k&ouml;nnen Sie in [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucke/Plotte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung">] einstellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Ma&szlig;e geeignete Breitenfaktoren.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Einzelma&szlig;e ist es sinnvoll, Breitenfaktoren unter 1.0 zu w&auml;hlen. Zum Beispiel 0.7. Dadurch passen die Ma&szlig;zahlen eher zwischen die Ma&szlig;hilfslinien.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Schriftart aus der Liste aus. Es stehen nur die Schriftarten zur Verf&uuml;gung, die in den Systemdaten eingestellt sind. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nachkommastellen (Genauigkeit f. Fu&szlig;)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden nur die Nachkommastellen geschrieben, die &#8800; 0 sind. 1.5100 wird somit 1.51 geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hochzahl ab Nachkommastelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Optionale Darstellung des Winkels, z. B. 175.3</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: super;">5 </span><span class="f_R_Option_Beschreibung">(Hochzahl ab Nachkommastelle = 2).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nullen nach dem Komma</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Damit wird ein Winkel von z. B. 90&deg; bei der Eingabe 2 als 90.00&deg; geschrieben.</span><br>
+<span class="f_R_Option_Beschreibung">0 = Anzeige ohne Nachkommastellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dezimaltrennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen einem Punkt oder einem Komma als Dezimaltrennzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;linie (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vertikale Verschiebung der Ma&szlig;texte. Geben Sie einen positiven oder negativen Wert ein, um die Ma&szlig;texte vertikal in Bezug auf die Ma&szlig;linie zu verschieben. Ist der Wert zu klein gew&auml;hlt, wird die Ma&szlig;linie bei freigestelltem Text angeschnitten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Texte/Ma&szlig;hilfslinie (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Horizontale Verschiebung der Ma&szlig;texte. Geben Sie einen positiven oder negativen Wert ein, um die Ma&szlig;texte horizontal in Bezug auf die Ma&szlig;hilfslinien zu verschieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Texte freistellen (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox, wenn Ma&szlig;zahlen automatisch freigestellt werden sollen. Damit wird verhindert, dass die Texte nicht von Schraffuren o. &auml;. verdeckt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein, um die Gr&ouml;&szlig;e des Freistellungsbereiches zu definieren. Ist der Wert zu gro&szlig;, wird die Ma&szlig;linie von der Freistellung &uuml;berdeckt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auf 5mm runden (nur bei Radiusverma&szlig;ung)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Einstellung werden die Ma&szlig;zahlen auf 5 mm auf- oder abgerundet. Der tats&auml;chliche geometrische Abstand von z. B. 5.4 cm wird als 5.5 cm verma&szlig;t. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD rundet an den Grenzen x.25 cm und x.75 cm.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiele:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.24 cm -&gt; 3.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die kleiner x.25 cm sind, werden auf x.0 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.40 cm -&gt; 3.5 cm</span></p>
+</td>
+<td class="Reference_Clean" rowspan="2"  style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_L_Listenunterpunkt">Werte, die gr&ouml;&szlig;er oder gleich x.25 cm und kleiner x.75 cm sind, werden auf x.5 cm gerundet.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.72 cm -&gt; 3.5 cm</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.3438in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.75 cm -&gt; 4.0 cm</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:6.2708in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Werte, die gr&ouml;&szlig;er oder gleich x.75 cm sind, werden auf (x + 1).0 cm gerundet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ger&uuml;st</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Stiftnummer f&uuml;r die Ma&szlig;linie.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Begrenzung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Ma&szlig;begrenzung wird der Typ &quot;Pfeil&quot; verwendet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Stift f&uuml;r die Ma&szlig;begrenzung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;he (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier geben Sie die halbe H&ouml;he des Pfeils an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die horizontale L&auml;nge des Pfeils an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">H&ouml;henkote im Grundriss</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Bereich"><span class="f_R_Bereich">Texte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Textgr&ouml;&szlig;e aus der Auswahl oder geben Sie die gew&uuml;nschte Gr&ouml;&szlig;e ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer f&uuml;r die Ma&szlig;zahlen. Die Stiftbreiten f&uuml;r die Druckausgabe k&ouml;nnen Sie in [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucke/Plotte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung">] einstellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Ma&szlig;e einen geeigneten Breitenfaktor.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils eine Schriftart aus der Liste aus. Es stehen nur die Schriftarten zur Verf&uuml;gung, die in den Systemdaten eingestellt sind. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Linien</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Stiftnummer f&uuml;r die Linien der H&ouml;henkote.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Dezimaltrennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen einem Punkt oder einem Komma als Dezimaltrennzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Texte freistellen (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie einen Haken in die Checkbox, wenn Ma&szlig;zahlen automatisch freigestellt werden sollen. Damit wird verhindert, dass die Texte nicht von Schraffuren o. &auml;. verdeckt werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein, um die Gr&ouml;&szlig;e des Freistellungsbereiches zu definieren. Ist der Wert zu gro&szlig;, wird das H&ouml;hensymbol von der Freistellung &uuml;berdeckt.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Optionen Kreis</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Radius des Kreises (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen oder geben Sie den Kreisradius des H&ouml;hensymbols ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lage Text</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Lage des Textes bezogen auf das H&ouml;hensymbol.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Hoehenkote_oben-links" style="margin:0 auto 0 auto;width:0.8750in;height:1.2396in;border:none" src="scr_hoehenkote_oben-links.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5729in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Hoehenkote_oben-mittig" style="margin:0 auto 0 auto;width:0.7292in;height:1.2500in;border:none" src="scr_hoehenkote_oben-mittig.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Hoehenkote_rechts-oben" style="margin:0 auto 0 auto;width:1.2604in;height:1.3333in;border:none" src="scr_hoehenkote_rechts-oben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6250in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Hoehenkote_rechts-mittig" style="margin:0 auto 0 auto;width:1.3125in;height:1.3333in;border:none" src="scr_hoehenkote_rechts-mittig.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(Text) oben links</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5729in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(Text) oben mittig</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6146in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(Text) rechts oben</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(Text) rechts mittig</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Text Symbol (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen oder geben Sie den horizontalen Abstand (Lage Text = rechts oben, rechts mittig) bzw. den vertikalen Abstand (Lage Text = oben links, oben mittig) zwischen dem Text und dem H&ouml;hensymbol ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand rechts (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen &Uuml;berstand der nach rechts verlaufenden horizontalen Linie am H&ouml;hensymbol. Die Option </span><span class="f__Software_Element_deskriptiv">automatisch / max</span><span class="f_R_Option_Beschreibung"> passt die Linienl&auml;nge an den l&auml;ngsten H&ouml;hentext an.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="SCR_Hoehenkote_Ueberstand-rechts" style="margin:0;width:1.3125in;height:0.9375in;border:none" src="scr_hoehenkote_ueberstand-rechts.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand oben / unten / links (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den &Uuml;berstand der nach oben, unten und links verlaufenden Linie.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Optionen Dreieck</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfeilbreite (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen oder geben Sie das Ma&szlig; f&uuml;r die Breite des Dreiecks an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pfeill&auml;nge (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen oder geben Sie das Ma&szlig; f&uuml;r die H&ouml;he des Dreiecks an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lage Text</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Lage des Textes bezogen auf das H&ouml;hensymbol.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Text Symbol (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen oder geben Sie den horizontalen Abstand (Lage Text = rechts oben, rechts mittig) bzw. den vertikalen Abstand (Lage Text = oben links, oben mittig) zwischen dem Text und dem H&ouml;hensymbol ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand rechts (1/10mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen &Uuml;berstand der nach rechts verlaufenden horizontalen Linie am H&ouml;hensymbol. Die Option </span><span class="f__Software_Element_deskriptiv">automatisch / max</span><span class="f_R_Option_Beschreibung"> passt die Linienl&auml;nge an den l&auml;ngsten H&ouml;hentext an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_massketten.htm" class="topiclink">Ma&szlig;ketten (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Teilzeichnung frei verschieben und drehen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="DreVer,Verschieben,Verschieben Teilzeichnung" />
+   <meta name="description" content="Verschieben von Zeichenelementen. Zusätzlich kann der Ausschnitt gedreht werden." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_verschieben_(konst1).htm">Verschieben</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst1_teilzeichnung_schieben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_verschieben_(konst1).htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="konst1_elemente_dehnen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Teilzeichnung frei verschieben und drehen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_verschieben_(konst1).htm" class="topiclink" title="Konstruktionen verschieben (Übersicht)"><img alt="Konstruktionen verschieben (Übersicht)" title="Konstruktionen verschieben (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_versch.png"/></a> <img alt="B-akt_DreVer_Versch" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_drever_versch.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verschieben von Zeichenelementen. Zus&auml;tzlich kann der Ausschnitt gedreht werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Ma&szlig;kettenelemente in der Auswahl enthalten sind, ist die Aktion nach Eingabe des Drehwinkels beendet.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Notizen in der Auswahl enthalten sind, werden diese mitverschoben. Wenn Notizen nicht selektiert werden sollen, blenden Sie diese im Notizprogramm mit der Funktion [</span><span class="f__Software_Element_deskriptiv">AllAus</span><span class="f_L_Listeneintrag">] aus.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Ma&szlig;stabsbereiche oder FE-Datens&auml;tze bei der Selektion vollst&auml;ndig im Auswahlrahmen liegen, oder mit einem Rahmen von rechts nach links angeschnitten werden, werden Sie mitverschoben. Ausgeblendete Elemente werden nicht selektiert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Teilzeichnung markieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die zu verschiebenden Zeichenelemente oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Teilzeichnung wird markiert.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Um Elemente wieder abzuw&auml;hlen, klicken Sie im unteren Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">. Ziehen Sie einen Rahmen um die entsprechenden Elemente oder klicken Sie einzelne Elemente an. Bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) wird automatisch der </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung">-Modus aktiviert – am Cursor wird ein Minuszeichen eingeblendet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die zu verschiebenden Elemente werden an den Cursor geh&auml;ngt.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Teilzeichnung verschieben und drehen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie die Teilzeichnung an die gew&uuml;nschte Stelle und legen Sie die Zeichnung mit Linksklick ab. [</span><span class="f__Abfrage">Verschieben</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Der Cursor befindet sich w&auml;hrend des Verschiebens im geometrischen Zentrum.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Orthogonalmodus mit gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) aktivieren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus. [</span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Geben Sie einen Wert f&uuml;r die Drehung ein und best&auml;tigen mit der Eingabetaste. Die urspr&uuml;ngliche Lage der Teilzeichnung wird um den eingegebenen Wert gedreht.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Drehen Sie die Teilzeichnung frei um das Zentrum und klicken Sie die linke Maustaste, wenn die gew&uuml;nschte Ausrichtung erreicht worden ist.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit einem weiteren Klick k&ouml;nnen Sie die Teilzeichnung erneut verschieben und neu ausrichten.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um das Verschieben abzuschlie&szlig;en, klicken Sie auf </span><img alt="B_Beenden" style="margin:0;width:1.0833in;height:0.2188in;border:none" src="b_beenden.png"/><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Teilzeichnung wird platziert.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.3542in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="Z_verschieben_01" style="margin:0;width:1.3229in;height:1.2604in;border:none" src="z_verschieben_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.7083in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="Z_verschieben_02" style="margin:0;width:1.6354in;height:1.3333in;border:none" src="z_verschieben_02.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.3750in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="Z_verschieben_03" style="margin:0;width:1.2604in;height:1.2813in;border:none" src="z_verschieben_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.0417in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="Z_verschieben_04" style="margin:0;width:1.9271in;height:1.3333in;border:none" src="z_verschieben_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:1.3646in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;"><img alt="Z_verschieben_05" style="margin:0;width:1.3125in;height:1.0521in;border:none" src="z_verschieben_05.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.3542in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Ausgangslage</span></p>
+<p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">(1) - Zentrum</span></p>
+</td>
+<td style="vertical-align:top; width:1.7083in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1. Verschieben</span></p>
+</td>
+<td style="vertical-align:top; width:1.3750in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1. Drehen</span></p>
+</td>
+<td style="vertical-align:top; width:2.0417in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2. Verschieben</span></p>
+</td>
+<td style="vertical-align:top; width:1.3646in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2. Drehen</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_verschieben_(konst1).htm" class="topiclink" title="Verschiebefunktionen">Verschieben (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

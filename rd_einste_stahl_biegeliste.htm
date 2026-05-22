@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Einstellungen Stahlliste (Biegeliste)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeliste,Biegeliste Ausgabe konfigurieren" />
+   <meta name="description" content="/ &nbsp; Passen Sie in diesem Dialog die tabellarische Darstellung verschiedener Biegelisten-Elemente an. In der Biegeliste werden den einzelnen Positionen alle für den Biegebetri" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a> &gt; <a href="ref_stahlliste.htm">Stahlliste (Referenz)</a> &gt; <a href="ref_stlmain.htm">Stahlliste (Dialog)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_stahlliste-grundwerte-gesamtliste.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="ref_stlmain.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_stahlliste-grundwerte-biegeliste.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Einstellungen Stahlliste (Biegeliste)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_stahlliste.htm" class="topiclink" title="Stahlliste (Funktionsübersicht)"><img alt="Stahlliste (Funktionsübersicht)" title="Stahlliste (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stllis.png"/></a> <img alt="B-akt_Neu-erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_neu-erzeugen.png"/> / <img alt="B-akt_Teil-erzeugen" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_teil-erzeugen.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Passen Sie in diesem Dialog die tabellarische Darstellung verschiedener Biegelisten-Elemente an.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In der Biegeliste werden den einzelnen Positionen alle f&uuml;r den Biegebetrieb notwendigen Hinweise zugeordnet: Biegeanweisungen f&uuml;r 3D-Formen, Verma&szlig;ungen, Biegerollendurchmesser, Biegelistentexte sowie weitere, spezifische Tabellen und Vermerke.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Jede Tabellenzeile enth&auml;lt Informationen zur Position: eine Positionsnummer, eine Skizze, die Anzahl, den Stabdurchmesser, den Zuschnitt und das Positionsgewicht in [kg]. Au&szlig;er bei Matten ist auch die Gesamtschnittl&auml;nge enthalten.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Positionen werden nach Bewehrungstyp (Rundstahl, Matten, Gewindest&auml;be) und Stahlg&uuml;te sortiert den jeweiligen Tabellen zugeordnet. Die Stahlg&uuml;te wird standardm&auml;&szlig;ig mit &quot;B 500 A&quot; angegeben, sofern keine Stahlg&uuml;te zugeordnet ist. </span><span class="f_R_Option_Beschreibung">Siehe auch: <a href="formst_biform_guetumr.htm" class="topiclink">Stahlg&uuml;te &auml;ndern</a>.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die hier zur Auswahl stehenden </span><span class="f_Hervorhebung_Text">Stiftnummern</span><span class="f_L_Listeneintrag"> werden aus dem Dialog <a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a> &uuml;bernommen und k&ouml;nnen dort editiert werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Ma&szlig;einheit f&uuml;r die Angabe der L&auml;ngen in der Biegeliste [mm, m, feet, inch] kann im Dialog </span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_L_Listeneintrag"> eingestellt werden. F&uuml;r die Einheiten [feet] und [inch] kann zus&auml;tzlich die Genauigkeit (1/2, 1/4, 1/8 Fu&szlig; (ft) usw.) eingestellt werden. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Vertikale Verma&szlig;ungen werden automatisch erzeugt, und nicht aus der Zeichnung &uuml;bernommen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Bei Bogenteill&auml;ngen wird der Au&szlig;enradius, der Biegewinkel und die Bogenma&szlig;l&auml;nge angegeben. Au&szlig;enradien werden mit einem Pfeil und einem &quot;R&quot; auf der Au&szlig;enseite des Bogens dargestellt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Positionen, die nicht verlegt sind und in der Form </span><span class="f__Abfrage">? &Oslash; ?</span><span class="f_L_Listeneintrag"> vorliegen (Durchmesser/Typ/Anzahl sind nicht definiert), werden nicht in die Biegeliste aufgenommen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4063in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis: Darstellungsfehler nach der Ausgabe</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn Sie zu gro&szlig;e Textgr&ouml;&szlig;en f&uuml;r &Uuml;berschriften oder z. B. eine zu gro&szlig;e Beschriftungsgr&ouml;&szlig;e f&uuml;r Teill&auml;ngen w&auml;hlen, k&ouml;nnen bei der Ausgabe &uuml;ber den Dialog <a href="ref_stahlliste_ansicht.htm" class="topiclink">Ansicht</a> Darstellungsfehler in der Biegeliste auftreten. Sie erhalten beim Aufruf des Ansichts-Dialogs eine entsprechende Meldung. </span><span class="f_R_Dialog_Info">Passen Sie in diesem Fall die notwendigen Parameter in diesem Dialog [</span><span class="f__Software_Element_deskriptiv">Einstellungen Stahlliste</span><span class="f_R_Dialog_Info">] an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Einstellungen Stahlliste&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Einstellung-Stahlliste" style="margin:0;width:7.8750in;height:5.2708in;border:none" src="d_einstellung-stahlliste.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Eigenschaftenauswahl:</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In dieser Zeile k&ouml;nnen Sie die Text- und Liniendarstellung des jeweiligen Biegelisten-Elements anpassen. Klicken Sie einen Text oder ein Icon an (A - D), um den Dialog </span><span class="f__Software_Element_deskriptiv">Text Eigenschaften</span><span class="f_A_Allgemein"> zu &ouml;ffnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" colspan="2"  style="width:12.5104in;"><p class="p_ImageCaption"><img alt="SCR_Biegeliste_Attribute" style="margin:0;width:5.5833in;height:1.3333in;border:none" src="scr_biegeliste_attribute.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A</span><span class="f__Bild_Legende_normal">. Gew&auml;hlter Font und Vorschau mit Textattributen; </span><br>
+<span class="f__Bild_Legende_fett">B</span><span class="f__Bild_Legende_normal">. Textgr&ouml;&szlig;e (cm); </span><br>
+<span class="f__Bild_Legende_fett">C</span><span class="f__Bild_Legende_normal">. Textbreite; </span><br>
+<span class="f__Bild_Legende_fett">D</span><span class="f__Bild_Legende_normal">. Stiftnummer; </span><br>
+<span class="f__Bild_Legende_fett">E</span><span class="f__Bild_Legende_normal">. Dropdown-Liste zum Aufklappen</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.8438in;"><p class="p_ImageCaption"><img alt="D_Texteigenschaften" style="margin:0;width:2.6458in;height:2.3125in;border:none" src="d_texteigenschaften.png"/><span class="f_ImageCaption"> </span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:15.9896in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">W&auml;hlen Sie aus den Dropdown-Listen die entsprechenden Eigenschaften.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Bei der Textgr&ouml;&szlig;e und dem Breitenfaktor k&ouml;nnen Sie auch einen Wert per Tastatur eingeben. Best&auml;tigen Sie die Eingabe mit der Eingabetaste. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Die freie Textgr&ouml;&szlig;e Nr. 8 steht hier nicht zur Auswahl.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Die Attribute fett, kursiv, unterstrichen und durchgestrichen k&ouml;nnen nur bei Windows&reg; TrueType Fonts (z. B. Arial) verwendet werden. Wenn Sie eine ISBCAD Schriftart (z. B. ISO) gew&auml;hlt haben, werden die Schaltfl&auml;chen f&uuml;r Textattribute ausgeblendet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Best&auml;tigen Sie abschlie&szlig;end mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Tabelle // Zusatzinformationen zu Position</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">In diesem Bereich gestalten Sie die Tabelle und die Tabellentexte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tabellenelemente</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Elemente_Tabelle" style="margin:0;width:5.8854in;height:2.0000in;border:none" src="scr_biegeliste_elemente_tabelle.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A</span><span class="f__Bild_Legende_normal">. Stiftnummer Tabellenlinien; </span><br>
+<span class="f__Bild_Legende_fett">B</span><span class="f__Bild_Legende_normal">. &Uuml;berschriftentext; </span><br>
+<span class="f__Bild_Legende_fett">C</span><span class="f__Bild_Legende_normal">. Positionstext; </span><br>
+<span class="f__Bild_Legende_fett">D</span><span class="f__Bild_Legende_normal">. Biegelistentext; </span><br>
+<span class="f__Bild_Legende_fett">E</span><span class="f__Bild_Legende_normal">. Tabellentext und Stiftnummer der Tabellenlinien f&uuml;r Zusatzinformationen; </span><br>
+<span class="f__Bild_Legende_fett">F</span><span class="f__Bild_Legende_normal">. Tabellentext</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breite der Tabellenspalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Spaltenbreiten ergeben sich aus der Gr&ouml;&szlig;e des &Uuml;berschriftentextes und des im Dialog </span><span class="f__Software_Element_deskriptiv">Text Eigenschaften</span><span class="f_R_Option_Beschreibung"> gew&auml;hlten Breitenfaktors. Die Teill&auml;ngen der Bewehrungsskizze werden dementsprechend skaliert:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e &Uuml;berschriftentext = 2.5, Breitenfaktor = 1:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Spaltenbreite_25" style="margin:0;width:5.4896in;height:0.8958in;border:none" src="scr_biegeliste_spaltenbreite_25.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e &Uuml;berschriftentext = 3.5, Breitenfaktor = 1:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Spaltenbreite_35" style="margin:0;width:5.4688in;height:0.8333in;border:none" src="scr_biegeliste_spaltenbreite_35.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tabelleneinr&uuml;ckung oben cm:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie hier den Abstand zwischen dem Kopfbereich und der Tabelle in cm ein. Standardm&auml;&szlig;ig ist 1 cm eingestellt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Eingabe wirkt sich nur auf die Darstellung der Biegeliste aus.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Tabellenabstand" style="margin:0;width:5.4896in;height:2.6458in;border:none" src="scr_biegeliste_tabellenabstand.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Positionen am Seitenende umbrechen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Menue_Palette" style="width:100%;">
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.5521in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:16.9583in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option ist aktiviert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die Informationen zu einer Position am Seitenende nicht vollst&auml;ndig dargestellt werden k&ouml;nnen, findet ein Seitenumbruch statt. Dies wird durch ein Dreieck unter der Position symbolisiert. Auf der Folgeseite wird die entsprechende Position mit den zugeh&ouml;rigen Informationen nochmals gelistet.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_ohne_Su" style="margin:0;width:4.5313in;height:2.1875in;border:none" src="scr_biegeliste_ohne_su.png"/></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:0.5521in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Menue_Palette" style="width:16.9583in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Option ist deaktiviert.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Positionen, die am Seitenende nicht vollst&auml;ndig dargestellt werden k&ouml;nnen, werden auf der Folgeseite gelistet. Ein Seitenumbruch findet nur statt, wenn die Informationen zu einer Position nicht komplett auf eine Seite passen.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_mit_SU" style="margin:0;width:4.5208in;height:3.2604in;border:none" src="scr_biegeliste_mit_su.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bewehrungsskizze</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Passen Sie hier die Darstellung der Bewehrungsskizze an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Skizze" style="margin:0;width:2.0104in;height:0.8958in;border:none" src="scr_biegeliste_skizze.png"/><span class="f_ImageCaption">  <img alt="SCR_Biegeliste_Bogenkennung" style="margin:0;width:1.3542in;height:0.8958in;border:none" src="scr_biegeliste_bogenkennung.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A</span><span class="f__Bild_Legende_normal">. Verma&szlig;ungstext (Radius, Biegewinkel bei Bogenteill&auml;ngen), Stiftnummer und L&auml;nge der Ma&szlig;hilfslinie. Die Pfeilspitzen-Einstellungen beziehen sich auf Bogenteill&auml;ngen; </span><br>
+<span class="f__Bild_Legende_fett">B</span><span class="f__Bild_Legende_normal">. Teill&auml;ngenma&szlig;; </span><br>
+<span class="f__Bild_Legende_fett">C</span><span class="f__Bild_Legende_normal">. Winkelangabe</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Symbole</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie hier die Texteigenschaften und die Stiftnummer der Symbollinien an. Die Texteigenschaften des Biegerollendurchmessers k&ouml;nnen im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Verma&szlig;ung</span><span class="f_R_Tabellenzeile"> eingestellt werden.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Biegeform_Symbole" style="margin:0;width:1.1875in;height:1.3854in;border:none" src="scr_biegeform_symbole.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_fett">A</span><span class="f__Bild_Legende_normal">. Symbollinien; </span><br>
+<span class="f__Bild_Legende_fett">B</span><span class="f__Bild_Legende_normal">. Symboltexte </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Trennlinie an Bogenteill&auml;nge</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie hier die L&auml;nge und Stiftnummer der Trennlinie an Bogenteill&auml;ngen an.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_bogenteil" style="margin:0;width:1.2604in;height:1.1979in;border:none" src="scr_biegeliste_bogenteil.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L = Variable Teill&auml;nge, W = Biegewinkel, R = Au&szlig;enradius.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Hinweistext</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie hier die Textattribute f&uuml;r den Hinweistext an. Diese Texterg&auml;nzung wird bei vereinfachten Biegeform-Darstellungen verwendet, z. B. bei 3D-Formen, laufenden Metern [LFDM] oder auch Wendeln.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Biegeliste_Hinweistext" style="margin:0;width:3.4688in;height:1.1875in;border:none" src="scr_biegeliste_hinweistext.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Skizze in m/cm verma&szlig;en</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Diese Einstellung ist nur verf&uuml;gbar, wenn im Unterdialog </span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_R_Tabellenzeile"> die Ma&szlig;einheit f&uuml;r die Stahlliste auf [m] eingestellt ist.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aktivieren Sie diese Einstellung, um Teill&auml;ngen &lt; 1 in cm und L&auml;ngen &#8805; 1 in m/cm zu verma&szlig;en.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Aktivieren oder deaktivieren der alten Biegeliste</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Im unteren Dialogbereich k&ouml;nnen Sie zur Darstellung der &quot;alten&quot; Biegeliste wechseln, indem Sie einen Haken bei </span><span class="f__Software_Element_deskriptiv">alte Biegeliste aktivieren</span><span class="f_A_Allgemein"> setzen und anschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">alten Einstellungsdialog &ouml;ffnen</span><span class="f_A_Allgemein"> klicken. Dadurch wird der Dialog <a href="rd_stahlliste-grundwerte-biegeliste.htm" class="topiclink">Grundwerte Biegeliste</a> mit den entsprechenden Einstellungsm&ouml;glichkeiten f&uuml;r die Ausgabe der Biegeliste ge&ouml;ffnet. Die im Dialog </span><span class="f__Software_Element_deskriptiv">Einstellungen Stahlliste</span><span class="f_A_Allgemein"> gew&auml;hlten Einstellungen sind dann nicht mehr wirksam.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Biegeliste_alt" style="margin:0;width:3.5729in;height:0.3958in;border:none" src="scr_biegeliste_alt.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_A_Allgemein">Um die &quot;alte&quot; Biegeliste zu deaktivieren, klicken Sie im </span><span class="f__Software_Element_deskriptiv">Stahllisten</span><span class="f_A_Allgemein">-Dialog im Bereich </span><span class="f__Software_Element_deskriptiv">Grundwerte</span><span class="f_A_Allgemein"> auf </span><span class="f__Software_Element_deskriptiv">Biegeliste</span><span class="f_A_Allgemein"> und entfernen Sie den Haken bei </span><span class="f__Software_Element_deskriptiv">alte Biegeliste aktivieren</span><span class="f_A_Allgemein">.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Zur&uuml;ck</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">&Uuml;bernimmt die Einstellungen und schlie&szlig;t den Dialog.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stlmain.htm" class="topiclink">Stahlliste (Dialog)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stahlliste_ansicht.htm" class="topiclink">Stahlliste Ansicht (Dialog): Stahlliste ausgeben/Vorschau generieren</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Unterstreichungen und Zeigerlinien hinzufügen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Texte,Texte Zeigerlinien hinzufügen" />
+   <meta name="description" content="Einzeltexte oder Textfelder umranden, unterstreichen oder mit Zeigerlinien versehen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_texte.htm">Texte</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="text_schreiben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_texte.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="texte_text_verschieben.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Unterstreichungen und Zeigerlinien hinzuf&uuml;gen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_texte.htm" class="topiclink" title="Textfunktionen (Übersicht)"><img alt="Textfunktionen (Übersicht)" title="Textfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_texte.png"/></a> <img alt="B-akt_Zeilin_Texte" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_zeilin_texte.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Einzeltexte oder Textfelder umranden, unterstreichen oder mit Zeigerlinien versehen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Mit dieser Funktion kann nur ein kompletter Einzeltext oder ein komplettes Textfeld bearbeitet werden. Zum Unterstreichen von Textpassagen (einzelne Zeichen, W&ouml;rter oder mehrere Zeilen innerhalb eines Textfelds) siehe <a href="rm_blocktext.htm" class="topiclink">Textfeld einf&uuml;gen</a>.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sollen die Unterstreichungslinien oder die Zeigerlinien verl&auml;ngert oder verk&uuml;rzt werden, k&ouml;nnen Sie den Befehl [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Puvers</span><span class="f_L_Listeneintrag">] verwenden. <a href="linien_punkt_verschieben.htm" class="topiclink">&raquo; Linienpunkt verschieben</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Unterstreichungen und Umrandungen werden immer eine Ebene h&ouml;her angelegt (bis Ebene 16) als der angeklickte Text. Dadurch werden Elemente nicht durch <a href="texte_text_freistellen.htm" class="topiclink" title="Text freistellen">Freistellungen</a> &uuml;berdeckt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><a name="texttypundartderauszeichnungwhlen" class="hmanchor"></a><span class="f_ToDo">Art der Auszeichnung w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verwenden Sie die Optionen unterhalb der Abfrage, um Auswahlmethode und Art der Auszeichnung zu w&auml;hlen:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_einzeln" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_einzeln.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auszeichnung einer einzelnen Textzeile (in Textfeldern nicht m&ouml;glich).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Rahmen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_rahmen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auszeichnung mehrerer Textzeilen. Voraussetzung ist, dass die Textzeilen b&uuml;ndig ausgerichtet sind.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Zeilin_Linie" style="margin:0;width:1.7292in;height:0.2500in;border:none" src="b_zeilin_linie.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Unterstreichung mit einer einfachen Linie.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Rech. einf." style="margin:0;width:1.7292in;height:0.2500in;border:none" src="hmfile_hash_9d811217.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Umrandung mit einer einfachen Linie.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Rech. dopp." style="margin:0;width:1.7292in;height:0.2500in;border:none" src="hmfile_hash_53181429.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Umrandung mit einer doppelten Linie.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Farbe-Text" style="margin:0;width:1.7396in;height:0.2500in;border:none" src="b_farbe-text.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linienfarbe entsprechend der Farbe des Textes.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Farbe-Linie" style="margin:0;width:1.7396in;height:0.2500in;border:none" src="b_farbe-linie.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linienfarbe entsprechend der Stiftauswahl (s. Funktionsbereich).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Textelement w&auml;hlen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">W&auml;hlen Sie [</span><span class="f__Software_Element_deskriptiv">einzeln</span><span class="f_Step">] und klicken Sie eine Textzeile an. [</span><span class="f__Abfrage">Welcher Text</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">W&auml;hlen Sie [</span><span class="f__Software_Element_deskriptiv">Rahmen</span><span class="f_Step">] und ziehen Sie einen Rahmen um die Textzeilen. [</span><span class="f__Abfrage">1.Punkt</span><span class="f_Step">; </span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><a name="umrandungundoderzeigerlinieanlegen" class="hmanchor"></a><span class="f_ToDo">Umrandung und/oder Zeigerlinie anlegen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Je nachdem, ob Sie eine Unterstreichung oder eine Umrandung gew&auml;hlt haben, werden Ihnen die f&uuml;r die Auswahl g&uuml;ltigen Optionen angezeigt. Wenn Sie den Text lediglich unterstreichen oder umranden wollen, k&ouml;nnen Sie die Darstellung durch Rechtsklick best&auml;tigen [</span><span class="f__Abfrage">Linie</span><span class="f_ToDo_Info">]. Die Darstellung wird &uuml;bernommen und Sie k&ouml;nnen sofort ein weiteres Textelement mit Zeigerlinie oder Umrandung versehen.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Um an dem gew&auml;hlten Text eine oder mehrere Zeigerlinien anzuordnen: </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Linie</span><span class="f_Step"> die Anordnung der Zeigerlinie an der Umrandung/Unterstreichung und den Linienendtyp (ohne/Pfeil/Kreis).</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Der Ansatzpunkt der Zeigerlinie wird in der Zeichnung durch die Zeichenmarke angezeigt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Solange Sie sich im Text-Men&uuml; befinden, bleiben der zuletzt gew&auml;hlte Ansatzpunkt am Text sowie der Linienendtyp der Zeigerlinie erhalten. Wenn Sie das Men&uuml; verlassen, werden die Optionen wieder zur&uuml;ckgesetzt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="Text_Zeigerlinien" style="margin:0;width:2.4896in;height:0.7396in;border:none" src="text_zeigerlinien.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_Beispiel">Beispiel:</span><span class="f_R_Tabellenzeile"> <img alt="B-akt_Zeigerlinie-links-unten-anordnen" style="margin:0;width:0.5417in;height:0.2188in;border:none" src="b-akt_zeigerlinie-links-unten-anordnen.png"/> f&uuml;r links unten an der Umrandung/Unterstreichung und <img alt="B-akt_Zeigerlinie-mit-Pfeil" style="margin:0;width:0.7500in;height:0.2188in;border:none" src="b-akt_zeigerlinie-mit-pfeil.png"/> f&uuml;r eine Zeigerlinie mit Pfeilspitze.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+<p class="p_R_Tabellenzeile"><img alt="Texte_Zeigerlinien-Beispiel" style="margin:0;width:3.7813in;height:1.6146in;border:none" src="texte_zeigerlinien-beispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><a name="_zeilin_einstellungen" class="hmanchor"></a><span class="f_Step">Die Gr&ouml;&szlig;e der Symbole f&uuml;r die Enden der Zeigerlinien k&ouml;nnen Sie vorab f&uuml;r jede Zeigerlinie unter <img alt="B_Einstellungen_Zeilin_text" style="margin:0;width:2.1667in;height:0.2188in;border:none" src="b_einstellungen_zeilin_text.png"/> im Funktionsbereich einstellen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Im Dialog k&ouml;nnen Sie die L&auml;nge und Breite der Pfeilspitze sowie den Durchmesser des Kreisendsymbols anpassen. Best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="D_Einstellungen-fuer-Zeigerlinien" style="margin:0;width:3.7396in;height:2.0938in;border:none" src="d_einstellungen-fuer-zeigerlinien.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung einen beliebigen Endpunkt f&uuml;r die Zeigerlinie an. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Um die Linie orthogonal zum <a href="des_systemwinkel.htm" class="topiclink" title="Systemwinkel einstellen">Systemwinkel</a> oder zum Drehwinkel des angeklickten Textes zu zeichnen, klicken Sie bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) in die gew&uuml;nschte Richtung. Der Winkel wird durch die Lage des Cursors bestimmt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Zeigerlinie wird von der Umrandung/Unterstreichung bis zum Endpunkt gezeichnet. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen an dem gew&auml;hlten Text weitere Zeigerlinien (mit verschiedenen Startpunkten und Pfeilspitzen) anordnen [</span><span class="f__Abfrage">Linie</span><span class="f_Step_Anmerkung">]. Wenn Startpunkt und Pfeilspitzen f&uuml;r alle Zeigerlinien gleich sein sollen, k&ouml;nnen Sie die Endpunkte jeweils mit Linksklick anklicken.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um eine abgewinkelte Zeigerlinie anzulegen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Abgewinkelte Zeigerlinien k&ouml;nnen durch Aneinanderreihen beliebig vieler Zeigerlinien erzeugt werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie zun&auml;chst eine Zeigerlinie ohne Pfeilspitze </span><img alt="I_ohne-Pfeilspitze" style="margin:0;width:0.7292in;height:0.2292in;border:none" src="i_ohne-pfeilspitze.png"/><span class="f_Step"> von der Umrandung/Unterstreichung bis zur gew&uuml;nschten Abwinklung an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_zeilin_abg_1" style="margin:0;width:1.9479in;height:0.9896in;border:none" src="scr_zeilin_abg_1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><img alt="B_beliebig" style="margin:0;width:1.1250in;height:0.2292in;border:none" src="b_beliebig.png"/><span class="f_ImageCaption"> bzw.</span><span class="f_Step"> </span><img alt="B_bel" style="margin:0;width:0.3854in;height:0.2292in;border:none" src="b_bel.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Zeigerlinie ohne Pfeilspitze in der N&auml;he des Endpunktes (gew&uuml;nschten Abwinklung) an. </span><span class="f_ImageCaption">[</span><span class="f__Abfrage">Startpunkt anklicken</span><span class="f_ImageCaption">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Punkt f&uuml;r die Abwinklung wird in der Zeichnung durch die Zeichenmarke angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_zeilin_abg_2" style="margin:0;width:2.0104in;height:1.1875in;border:none" src="scr_zeilin_abg_2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Linie</span><span class="f_Step"> die gew&uuml;nschte Pfeilspitze.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung einen beliebigen Endpunkt f&uuml;r die Zeigerlinie an. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeigerlinie wird gezeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_zeilin_abg_3" style="margin:0;width:2.3958in;height:1.0521in;border:none" src="scr_zeilin_abg_3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_texte.htm" class="topiclink">Texte (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

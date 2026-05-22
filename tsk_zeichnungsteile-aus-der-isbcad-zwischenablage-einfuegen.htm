@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Zeichnungsteile aus der ISBCAD Zwischenablage einfügen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Zeichnungsteil aus der ISBCAD Zwischenablage in eine geöffnete ISBCAD Zeichnung einfügen. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a> &gt; <a href="dat_drucken_zwischenablage.htm">Zwischenablage von Zeichnungen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_zeichnungsteile-in-die-isbcad-zwischenablage-kopieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="dat_drucken_zwischenablage.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_ende.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Zeichnungsteile aus der ISBCAD Zwischenablage einf&uuml;gen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_ImageCaption"> </span><a href="dat_drucken_zwischenablage.htm" class="topiclink" title="Zwischenablage"><img alt="Zwischenablage" title="Zwischenablage" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_zwiabl-datei.png"/></a><span class="f_ImageCaption"> </span><img alt="B-akt_Einfueg-ZwiAbl" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_einfueg-zwiabl.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Zeichnungsteil aus der ISBCAD Zwischenablage in eine ge&ouml;ffnete ISBCAD Zeichnung einf&uuml;gen. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die in der Zwischenablage enthaltenen Zeichnungsteile werden im Funktionsbereich angezeigt und stehen in allen zur gleichen Zeit ge&ouml;ffneten ISBCAD Instanzen zur Verf&uuml;gung.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Um eine eingef&uuml;gte Teilzeichnung nachtr&auml;glich genau zu platzieren, k&ouml;nnen Sie die Funktion [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Setzen</span><span class="f_L_Listeneintrag">] verwenden. Alternativ k&ouml;nnen Sie eine Teilzeichnung mit [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Auslag</span><span class="f_L_Listeneintrag">] auslagern und anschlie&szlig;end mit [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Einf&uuml;g</span><span class="f_L_Listeneintrag">] exakt platzieren.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in die ISBCAD Instanz, in die der zwischengespeicherte Zeichnungsteil eingef&uuml;gt werden soll.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Zeichnungsteil auch in die aktuell ge&ouml;ffnete Zeichnung einf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Funktionsbereich die Art der Folienverwendung. Die Methodik ist unter [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Step"> | <a href="dat_datei_einfuegen.htm#artderfolienbelegungwhlen" class="topiclink">Einf&uuml;g</a>] beschrieben.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3333in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Folie-beibeh-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_folie-beibeh-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Vorhandene Folien bleiben erhalten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3333in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Neue-Folie-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_neue-folie-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Inhalt der Zwischenablage in eine bestimmte Folie transformieren. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.3333in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Folien-trenn-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_folien-trenn-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4063in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Doppelt vorkommende Folien werden getrennt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Siehe: <a href="rd_welche-folie-trennen.htm" class="topiclink">Folienbelegung w&auml;hlen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie mit den Nummern-Schaltfl&auml;chen unter der Vorschau der ISBCAD Zwischenablage (im Funktionsbereich) den einzuf&uuml;genden Zeichnungsteil.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die ISBCAD Instanz gewechselt haben und der einzuf&uuml;gende Zeichnungsteil nicht angezeigt wird, aktualisieren Sie die Vorschau. Klicken Sie hierzu im Funktionsbereich &uuml;ber dem Vorschaufenster auf [</span><span class="f__Software_Element_deskriptiv">Akt</span><span class="f_Step_Anmerkung">] (aktualisieren).</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.4479in;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Lloe-ZwiAbl" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="b_lloe-zwiabl.png"/><img alt="B_Aloe-ZwiAbl" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="b_aloe-zwiabl.png"/><img alt="B_Akt-ZwiAbl" style="margin:0;width:0.7500in;height:0.2500in;border:none" src="b_akt-zwiabl.png"/></p>
+<p class="p_ImageCaption"><img alt="OP_Zwischenablage" style="margin:0;width:2.2396in;height:1.4375in;border:none" src="op_zwischenablage.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die enthaltenen Elemente werden im Vorschaufenster angezeigt und an den Cursor geh&auml;ngt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie die Zeichnungsteile per Mausklick in der aktuellen Zeichnung. [</span><span class="f__Abfrage">Lage&nbsp;der&nbsp;Zeichnung</span><span class="f_Step">]</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen den gew&auml;hlten Zeichnungsteil per Mausklick sofort ein weiteres Mal einf&uuml;gen, einen anderen Zeichnungsteil w&auml;hlen und einf&uuml;gen (Auswahl im Funktionsbereich) oder eine andere Funktion w&auml;hlen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Konflikte bei Makrotexten aufl&ouml;sen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn in der eingef&uuml;gten Zeichnung bereits <a href="con_makrotexte.htm" class="topiclink" title="Verwenden von Makrotexten">Makrotexte</a> mit derselben Bezeichnung definiert sind, k&ouml;nnen Sie die kollidierenden Makros anpassen. In der Spalte </span><span class="f__Software_Element_deskriptiv">Aktueller Inhalt</span><span class="f_A_Allgemein"> werden Ihnen die Textinhalte der Zeichnung angezeigt, in die Sie Makrotexte einf&uuml;gen m&ouml;chten. Unter </span><span class="f__Software_Element_deskriptiv">Neuer Inhalt</span><span class="f_A_Allgemein"> werden Ihnen die Textinhalte der einzuf&uuml;genden Makrotexte angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, ob die aktuellen Inhalte beibehalten werden sollen, oder ob sie durch die neuen Inhalte ersetzt werden sollen. Aktivieren Sie dazu im unteren Dialogbereich die entsprechende Option.</span></p>
+<p class="p_Step_Anmerkung"><img alt="D_Makrotexte_Konflikte" style="margin:0;width:3.9688in;height:3.4583in;border:none" src="d_makrotexte_konflikte.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_Step">, um den Import fortzusetzen, oder klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Abbrechen</span><span class="f_Step">, um ihn abzubrechen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Textinhalte werden &uuml;bernommen und in der Zeichnung aktualisiert, falls die neuen Inhalte &uuml;bernommen wurden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="dat_drucken_zwischenablage.htm" class="topiclink" title="Zwischenablage von Zeichnungen">Zwischenablage von Zeichnungen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch: </span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="dat_teilzeichnung_auslagern.htm" class="topiclink" title="Auslagern von Teilzeichnungen">Auslagern von Teilzeichnungen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

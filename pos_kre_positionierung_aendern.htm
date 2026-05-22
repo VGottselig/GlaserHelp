@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Positionskreis ändern</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Positionskreise,Positionskreise ändern" />
+   <meta name="description" content="Ändern der Lage, der Textangaben sowie der Spann- und Richtungslinien von statischen Positionen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="positionskreise.htm">Statische Positionskreise</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="poskre_positionierung_erzeugen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="positionskreise.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="poskre_positionierung_loeschen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Positionskreis &auml;ndern</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="positionskreise.htm" class="topiclink" title="Positionskreise (Funktionsübersicht)"><img alt="Positionskreise (Funktionsübersicht)" title="Positionskreise (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_poskre.png"/></a> <img alt="B-akt_aendern_PosKre" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_aendern_poskre.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">&Auml;ndern der Lage, der Textangaben sowie der Spann- und Richtungslinien von statischen Positionen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Nach Auswahl des gew&uuml;nschten Positionskreises wechselt ISBCAD automatisch in die Funktion [</span><span class="f__Software_Element_deskriptiv">PosKre</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">zeichn</span><span class="f_L_Listeneintrag">]; Positionsnummer und Erg&auml;nzungstext werden dabei als Vorschlagswerte &uuml;bernommen, alle anderen Werte (Linien, Platzierung, Ausrichtung) k&ouml;nnen neu angegeben werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Das &Auml;ndern mehrerer Positionen in einer &Uuml;bersichtstabelle ist mit der Funktion <img alt="B_Alle_PosKre" style="margin:0;width:0.6875in;height:0.2292in;border:none" src="b_alle_poskre.png"/> unterhalb der Abfrage m&ouml;glich.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung: Bereits abgelegte Positionstabellen werden nicht automatisch aktualisiert.</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn die Zeichnung eine Positionstabelle enth&auml;lt und Sie die Positionsnummer &auml;ndern, m&uuml;ssen Sie abschlie&szlig;end auch die Positionstabelle aktualisieren.</span><br>
+<span class="f_Hinweis_in_Tabelle"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">&raquo;&nbsp;Positionstabelle anlegen oder aktualisieren</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Position w&auml;hlen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Normal" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Klicken Sie die Positionsnummer oder den Erg&auml;nzungstext des Positionskreises an, den Sie &auml;ndern m&ouml;chten. [</span><span class="f__Abfrage">Welcher Pos.Kreis</span>].</p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Positionskreis wird komplett mit allen dazugeh&ouml;rigen Texten und Linien aus der Zeichnung entfernt. ISBCAD springt auf die Funktion [</span><span class="f__Software_Element_deskriptiv">zeichn</span><span class="f_Step_Anmerkung">] um.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.7708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipps:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Best&auml;tigen Sie die g&uuml;ltigen Angaben mit Rechtsklick.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">W&auml;hrend Sie Angaben &auml;ndern oder best&auml;tigen, k&ouml;nnen Sie im Funktionsbereich den Darstellungsstil der Positionierung &auml;ndern, indem Sie eine andere Positions ID-Nr. ausw&auml;hlen. Die Vorschau wird bei jedem Wechsel angepasst. <a href="poskre_positionskreisstile_definieren.htm" class="topiclink" title="Dialogbeschreibung [DefPos]">&raquo;&nbsp;Stile f&uuml;r statische Positionen definieren</a></span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Normal" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Klicken Sie unter der Abfrage auf die Schaltfl&auml;che <img alt="B_Alle_PosKre" style="margin:0;width:0.6875in;height:0.2292in;border:none" src="b_alle_poskre.png"/>, um mehrere Positionen zu &auml;ndern.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="pos_kre_positionierung_aendern.htm#statposaendern" class="topiclink">Statische Positionierung &auml;ndern/umbenennen</a> </span><span class="f_Step_Anmerkung">zur weiteren Bearbeitung.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Positionsbereich und -bezeichnung angeben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Eingabefelder in der Abfrage enthalten die Angaben f&uuml;r den bisherigen Positionskreis. Falls Sie einen Positionskreis &auml;ndern m&ouml;chten, der mit einer Diagonalen erstellt worden ist, werden die Koordinaten der Diagonalen, bezogen auf den Zeichnungsursprung, in die Eingabe geschrieben. Sie k&ouml;nnen die Position der Diagonalen beibehalten, indem Sie die Abfragen mit Rechtsklick best&auml;tigen oder Sie klicken zwei neue Punkte an. Falls keine Diagonale gezeichnet werden soll, geben Sie in die Eingabe &quot;-&quot; ein und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">1. Diagonalpunkt (Wenn nicht, &quot;-&quot; eingeben</span><span class="f_ToDo_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie zwei Punkte an, mit denen der Positionsbereich abgedeckt wird. [</span><span class="f__Abfrage">1.Diagonalpunkt</span><span class="f_Step_Anmerkung">, </span><span class="f__Abfrage">2.Diagonalpunkt</span>]<span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Pos.Text </span><span class="f_Step">den neuen Positionstext ggf. mit <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink" title="Konst1 - Texte - Sonderzeichen einfügen">Sonderzeichen</a> ein und best&auml;tigen Sie mit der Eingabetaste</span>.</p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen auch einen vorhandenen Positionstext oder einen beliebig anderen Text anklicken, um diesen in die Eingabe zu &uuml;bernehmen. Die Positionsnummer k&ouml;nnen Sie mit den Schaltfl&auml;chen + oder - unter der Abfrage erh&ouml;hen oder verringern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Winkel</span><span class="f_Step"> die horizontale Ausrichtung des Positionstextes (in Grad) an und best&auml;tigen Sie mit der Eingabetaste</span>.<span class="f_Step"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Siehe auch: <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm#ausrichten" class="topiclink" title="Konstruktionshilfen; Ausrichtungsoptionen">Ausrichtungsoptionen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Symbol platzieren und Spannrichtungs- oder Zeigerlinien &auml;ndern oder entfernen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Stelle an, an der das Symbol platziert werden soll. [</span><span class="f__Abfrage">Lage</span>]</p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenmarke markiert die bisherige Lage des Positionskreises. Nutzen Sie unter der Abfrage die Funktionen [</span><span class="f__Software_Element_deskriptiv">Endpunkte festhalten</span><span class="f_Step_Anmerkung">] oder [</span><span class="f__Software_Element_deskriptiv">frei verschieben</span><span class="f_Step_Anmerkung">], um zuvor angegebene Spann- und Richtungslinien zu verschieben. Sie k&ouml;nnen zwischen den Funktionen wechseln. Die Vorschau wird bei jedem Wechsel angepasst. <a href="poskre_positionskreis_verschieben.htm" class="topiclink" title="Positionskreis verschieben">&raquo;&nbsp;Positionskreis verschieben</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verwenden Sie die Optionen im Funktionsbereich, um Ausrichtung und Darstellung einzelner Linien einzustellen. [</span><span class="f__Abfrage">Linie</span><span class="f_Step">]</span></p>
+<p class="p_R_Option" style="page-break-after: avoid; margin: 0.1250in 0 0.0104in 0.7813in;"><span class="f_R_Option">Ausrichtungs- und Darstellungsoptionen</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_ImageCaption"><img alt="B_Or-an" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-an.png"/><img alt="B_Or-aus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-aus.png"/></p>
+<p class="p_ImageCaption"><img alt="B_Or-Win" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_or-win.png"/><img alt="_Blinder-Platzhalter_Kor" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="_blinder-platzhalter_kor.gif"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ausrichtung der Spannrichtungs- und Zeigerlinien:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Or an</span><span class="f_R_Tabellenzeile">: orthogonal zu gedrehten Achsen. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Or aus</span>: <span class="f_R_Tabellenzeile">unabh&auml;ngig vom Winkel.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Or Win</span>: <span class="f_R_Tabellenzeile">orthogonal zur Ausrichtung des Positionstextes.</span><br>
+<span class="f_R_Tabellenzeile">Alternativ: Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_R_Tabellenzeile"> (Shift) gedr&uuml;ckt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie die Spann- und Richtungslinien mit der Funktion [</span><span class="f__Software_Element_deskriptiv">Or Win</span><span class="f_R_Tabellenzeile">] &quot;Orthogonal zu Text&quot; gezeichnet haben [</span><span class="f__Software_Element_deskriptiv">PosKre</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">zeichn</span><span class="f_R_Tabellenzeile">], behalten die Linien bei der Angabe eines neuen Positionstextwinkels ihre orthogonale Lage zum Positionstext bei.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_ImageCaption"><img alt="B_o-Pfei" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_o-pfei.png"/><img alt="B_Pfei-o" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-o.png"/></p>
+<p class="p_ImageCaption"><img alt="B_Pfei-u" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-u.png"/><img alt="B_Pfei-b" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pfei-b.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Darstellung der Spannrichtungs- und Zeigerlinien:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">o.Pfei</span><span class="f_R_Tabellenzeile">: ohne Pfeilspitze. </span><span class="f__Software_Element_deskriptiv">Pfei.o: </span><span class="f_R_Tabellenzeile">Pfeilspitze einseitig oben</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Pfei.u</span><span class="f_R_Tabellenzeile">: Pfeilspitze einseitig unten. </span><span class="f__Software_Element_deskriptiv">Pfei.b</span><span class="f_R_Tabellenzeile">: mit Pfeilspitzen nach oben und unten.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.6042in;"><p class="p_ImageCaption"><img alt="B_LgBel" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_lgbel.png"/><img alt="B_LgFest" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_lgfest.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.2500in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">LgBel</span><span class="f_R_Tabellenzeile">: beliebig lang.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">LgFest</span><span class="f_R_Tabellenzeile">: mit konstanter L&auml;nge. Ma&szlig;gebend ist die L&auml;nge der ersten Linie.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid; margin: 0.1250in 0 0.0104in 0.7813in;"><span class="f_R_Option">Linien entfernen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.7708in;"><table class="Optionen_Palette"  role="presentation">
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:8.9896in; height:0.8125in;"><p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0104in 0 0.0833in 0;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Um vorhandene Linien zu entfernen, klicken Sie auf <img alt="B_Bst" style="margin:0;width:0.5313in;height:0.2292in;border:none" src="b_bst.png"/>. Die Linien werden nacheinander entfernt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0104in 0 0.0833in 0;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Um alle Zeigerlinien (au&szlig;er der Diagonalen) zu l&ouml;schen, klicken Sie auf <img alt="B_Alle-loeschen" style="margin:0;width:0.8542in;height:0.2188in;border:none" src="b_alle-loeschen.png"/> unterhalb der Abfrage.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung einen beliebigen Endpunkt (Spannrichtung/Bereich) oder Zuordnungspunkt (Zeigerlinie) an. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Weisen Sie weitere Spannrichtungs- oder Zeigerlinien hinzu. Verwenden Sie ggf. vorab die Ausrichtungs- und Darstellungsoptionen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Beenden Sie die Linienangabe durch Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen jetzt einen neuen Erg&auml;nzungstext eingeben [</span><span class="f__Abfrage">Erg.Text</span><span class="f_Step_Anmerkung">] oder den Positionskreis durch Rechtsklick abschlie&szlig;end anlegen.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ToDo">Erg&auml;nzungstext &auml;ndern</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Der Erg&auml;nzungstext kann als einzelne Textzeile oder als mehrzeiliger Text bearbeitet werden, je nachdem wie er erzeugt worden ist. [</span><span class="f__Abfrage">Erg.Text (auch anklicken)</span><span class="f_ToDo_Info">].</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Eine Kombination </span><span class="f_Step_Anmerkung">von freien Texten, <a href="rd_systemdaten_favoritentexte.htm" class="topiclink" title="Definieren von Favoritentexten (Systemdaten)">Favoriten-</a> und <a href="con_makrotexte.htm" class="topiclink" title="Verwenden von Makrotexten">Makrotexten</a> sowie den 10 zuletzt eingetragenen Texten ist in beiden Eingaben m&ouml;glich. Die zuletzt eingetragenen Texte werden in der Auswahlliste </span><span class="f__Software_Element_deskriptiv">Favoriten</span><span class="f_Step_Anmerkung"> nach den definierten Favoritentexten angezeigt.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="SCR_ErgText_PosKre_aendern_einzeltext" style="margin:0;width:2.7604in;height:1.7708in;border:none" src="scr_ergtext_poskre_aendern_einzeltext.jpg"/><br>
+<span class="f_ImageCaption">&nbsp;</span></p>
+<p class="p_Step"><span class="f_Hervorhebung_Text">Einzelne Textzeile:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Bearbeiten Sie den Erg&auml;nzungstext, indem Sie Zeichen hinzuf&uuml;gen oder entfernen. Sie k&ouml;nnen einen Text markieren und durch Eintippen eines neuen Textes, oder Anklicken eines Favoriten- oder Makrotextes, ersetzen. Best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<p class="p_Step"><span class="f_Hervorhebung_Text">Text&uuml;bernahme:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Nur bei einzelner Textzeile: Klicken Sie einen Text in der Zeichnung an, um diesen in die Eingabe zu &uuml;bernehmen. Nach dem Anklicken des Textes gelangen Sie direkt zur Ausrichtung des Textes (Winkeleingabe). Mehrzeilige Texte k&ouml;nnen nicht &uuml;bernommen werden.</span></p>
+<p class="p_Step"><span class="f_Hervorhebung_Text">Mehrzeiliger Text:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Bearbeiten Sie unter </span><span class="f__Software_Element_deskriptiv">aktueller Text zu Position...</span><span class="f_Step_Anmerkung"> den Text. Mit der Eingabetaste f&uuml;gen Sie einen Zeilenumbruch ein.</span><br>
+<span class="f_Step_Anmerkung">Um einen vorhandenen Text aus der linken Spalte an die Cursorposition zu setzen, doppelklicken Sie den Text an. Sie k&ouml;nnen den Text auch markieren und auf <img alt="I_--ganz-nach-rechts" style="margin:0;width:0.4271in;height:0.2604in;border:none" src="i_--ganz-nach-rechts.png"/> klicken.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Geben Sie den Erg&auml;nzungstext ggf. mit <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink" title="Konst1 - Texte - Sonderzeichen einfügen">Sonderzeichen</a> </span><img alt="I_Sonderzeichen" style="margin:0;width:0.2708in;height:0.1979in;border:none" src="i_sonderzeichen.png"/><span class="f_ImageCaption"> </span><span class="f_Step_Anmerkung">ein.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><img alt="D_Texteingabe" style="margin:0;width:3.9375in;height:2.0417in;border:none" src="d_texteingabe.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Winkel</span><span class="f_Step"> die horizontale Ausrichtung des Erg&auml;nzungstextes an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie den Erg&auml;nzungstext per Mausklick an der gew&uuml;nschten Stelle. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bearbeitung des Positionskreises ist abgeschlossen. Sie k&ouml;nnen sofort einen weiteren Positionskreis anlegen. [</span><span class="f__Abfrage">1.Diagonalpunkt (Wenn nicht, ENTER dr&uuml;cken</span><span class="f_Step_Anmerkung">)].</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="statposaendern" class="hmanchor"></a><span class="f_ToDo">Statische Positionen einzeln oder gruppenweise bearbeiten (Alle)</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung: Bereits abgelegte Positionstabellen werden nicht automatisch aktualisiert.</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn die Zeichnung eine Positionstabelle enth&auml;lt und Sie die Positionsnummer &auml;ndern, m&uuml;ssen Sie abschlie&szlig;end auch die Positionstabelle aktualisieren.</span><br>
+<span class="f_Hinweis_in_Tabelle"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">&raquo;&nbsp;Positionstabelle anlegen oder aktualisieren</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Passen Sie in tabellarischer Form die Texterg&auml;nzungen und Darstellung statischer Positionen an. &Auml;nderungen sind auf der Zeichenfl&auml;che sofort sichtbar. Die Spannrichtungslinien werden automatisch angepasst. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unter der Abfrage </span>auf die Schaltfl&auml;che <span class="f__Software_Element_deskriptiv">Alle</span>. [<span class="f__Abfrage">Welcher Pos.Kreis</span>].</p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Statische Positionierung &auml;ndern/umbenennen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><img alt="D_Statische-Positionen-aendern" style="margin:0;width:5.9688in;height:3.4271in;border:none" src="d_statische-positionen-aendern.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Auml;ndern Sie im Dialog die entsprechenden Angaben, indem Sie in ein Eingabefeld klicken und dieses bearbeiten und/oder aus einer Liste die gew&uuml;nschte Eigenschaft w&auml;hlen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die aktuell markierte Position wird auf der Zeichenfl&auml;che in ihren Originalfarben angezeigt. Alle anderen Zeichenelemente werden in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Nicht editierbare Positionen werden grau hinterlegt. Das ist der Fall, wenn Positionen in ausgeblendeten Folien liegen oder gesperrt sind.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Erg&auml;nzungstexte k&ouml;nnen nur editiert werden, wenn sie beim Erzeugen der Position angelegt wurden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um eine Zeile einzuf&uuml;gen, dr&uuml;cken Sie die </span><span class="f__Tastatur">Umschalttaste + Eingabetaste</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie Texteingaben mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Rechtsklick auf einen markierten Text (Positions-, Erg&auml;nzungs- oder Tabellentext) &ouml;ffnet das Kontextmen&uuml;. Sie k&ouml;nnen Texte ausschneiden, kopieren, einf&uuml;gen und l&ouml;schen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Positions- und Erg&auml;nzungstexte werden nach dem Ausschneiden/L&ouml;schen und dem Wechsel in eine andere Tabellenzelle wiederhergestellt.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Das Verwenden der Mehrfachauswahl sowie der Tastenkombinationen </span><span class="f__Tastatur">Strg+C</span><span class="f_Step_Anmerkung"> (Kopieren) und </span><span class="f__Tastatur">Strg+V</span><span class="f_Step_Anmerkung"> (Einf&uuml;gen) ist m&ouml;glich.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Mit </span><span class="f__Tastatur">Strg+X</span><span class="f_Step_Anmerkung"> kann der Inhalt einer Zelle ausgeschnitten und in eine andere oder mehrere Zellen eingef&uuml;gt werden.</span></p>
+<p class="p_Step_Anmerkung"><img alt="SCR_Kontext_PosKre" style="margin:0;width:1.8958in;height:1.9583in;border:none" src="scr_kontext_poskre.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um Tabellentexte zu entfernen, markieren Sie die entsprechenden Zellen (s. &quot;Ausw&auml;hlen von Tabelleninhalten&quot; weiter unten). Dr&uuml;cken Sie entweder die </span><span class="f__Tastatur">Entf</span><span class="f_Step">-Taste oder rufen Sie das Kontextmen&uuml; auf und w&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">L&ouml;schen</span><span class="f_Step"> bzw. </span><span class="f__Software_Element_deskriptiv">Leeren</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die &Auml;nderungen abschlie&szlig;end mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Ausw&auml;hlen von Tabelleninhalten</span></h5>
+<p style="text-indent: -0.0521in; line-height: 1.20; margin: 0 0 0 0.2708in;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Tabelle</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.6563in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Klicken Sie auf eine Zelle, um sie auszuw&auml;hlen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Zellen und Tabellenbereiche auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Klicken Sie eine Zelle mit der linken Maustaste an und halten Sie die Maustaste gedr&uuml;ckt. Ziehen Sie dann die Markierung &uuml;ber die anderen Zellen.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Zellen und Tabellenbereiche auszuw&auml;hlen, halten Sie die </span><span class="f__Tastatur">Strg-Taste</span><span class="f_R_Tabellenzeile"> gedr&uuml;ckt, und w&auml;hlen Sie die Zellen aus.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7917in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zeichnung</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.6563in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie in der Zeichnung den Positionstext der Position an, die Sie in der Tabelle markieren wollen. Nutzen Sie das Mausrad, um den Zeichenbereich, in dem die statische Position liegt, zu vergr&ouml;&szlig;ern oder zu verkleinern.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Kopieren von Tabelleninhalten</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen einzelne Tabellenzellen, Zeilen oder Spalten ganz oder teilweise kopieren und in andere Zellen einf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die Tabellenzelle(n) oder den Tabellenbereich aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie zum Kopieren von Inhalten </span><span class="f__Tastatur">Strg+C</span><span class="f_Step">, oder nutzen Sie das Kontextmen&uuml; und w&auml;hlen den Eintrag </span><span class="f__Software_Element_deskriptiv">Kopieren</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Tabelle werden kopierte Zellen farbig hinterlegt (nur bei mehreren Zellen).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Zelle an, in die der Inhalt eingef&uuml;gt werden soll. Sie k&ouml;nnen auch einen Tabellenbereich ausw&auml;hlen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie zum Einf&uuml;gen </span><span class="f__Tastatur">Strg+V</span><span class="f_Step">, oder nutzen Sie das Kontextmen&uuml; und w&auml;hlen den Eintrag </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_Step">, um den Inhalt in die Zelle oder den Tabellenbereich einzuf&uuml;gen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um eine &Auml;nderung r&uuml;ckg&auml;ngig zu machen, dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+Z</span><span class="f_Step">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.3958in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: Zellen kopieren und einf&uuml;gen</span></p>
+</td>
+<td style="vertical-align:top; width:4.3125in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:4.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.3958in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_PosKre-aendern_nb-Zellen" style="margin:0;width:3.9792in;height:1.4479in;border:none" src="scr_poskre-aendern_nb-zellen.png"/></p>
+</td>
+<td style="vertical-align:top; width:4.3125in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_PosKre-aendern_nb-Zellen_einf01" style="margin:0;width:3.9792in;height:1.4479in;border:none" src="scr_poskre-aendern_nb-zellen_einf01.png"/></p>
+</td>
+<td style="vertical-align:top; width:4.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_PosKre-aendern_nb-Zellen_einf02" style="margin:0;width:3.9792in;height:1.4479in;border:none" src="scr_poskre-aendern_nb-zellen_einf02.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.3958in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die kopierten Inhalte sollen in die Zellen rechts daneben in die Spalte </span><span class="f__Software_Element_deskriptiv">Tabellentext</span><span class="f_R_Tabellenzeile"> eingef&uuml;gt werden. Klicken Sie dazu die Tabellentextzelle an, ab der die kopierten Zellen eingef&uuml;gt werden sollen.</span></p>
+</td>
+<td style="vertical-align:top; width:4.3125in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mit </span><span class="f__Tastatur">Strg+V</span><span class="f_R_Tabellenzeile"> werden die kopierten Inhalte in die benachbarten Zellen eingef&uuml;gt.</span></p>
+</td>
+<td style="vertical-align:top; width:4.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es ist auch m&ouml;glich, die kopierten Inhalte in bestimmte Zielzellen oder einen Zellenbereich einzuf&uuml;gen. Hier wurden die Zielzellen in der Spalte </span><span class="f__Software_Element_deskriptiv">Tabellentext</span><span class="f_R_Tabellenzeile"> mit gedr&uuml;ckter </span><span class="f__Tastatur">Strg</span><span class="f_R_Tabellenzeile">-Taste vor dem Einf&uuml;gen ausgew&auml;hlt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">&Auml;ndern der ID-Bezeichnung oder Umrandung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen die ID-Bezeichnung oder Umrandung einzelner Positionen &auml;ndern oder per Mehrfachselektion mit gedr&uuml;ckter Strg- oder Umschalttaste mehrere gelichzeitig &auml;ndern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeile der Position auf <img alt="I_pfeil-nach-unten_PosKre" style="margin:0;width:0.2188in;height:0.2083in;border:none" src="i_pfeil-nach-unten_poskre.png"/>, um eine Auswahlliste mit den ID-Bezeichnungen oder Umrandungen zu &ouml;ffnen. W&auml;hlen Sie durch Anklicken eine neue Einstellung aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bei einer Mehrfachselektion klicken Sie auf <img alt="I_pfeil-nach-unten_PosKre" style="margin:0;width:0.2188in;height:0.2083in;border:none" src="i_pfeil-nach-unten_poskre.png"/> des zuletzt markierten Eintrages. W&auml;hlen Sie anschlie&szlig;end durch Anklicken eine neue Einstellung aus, um sie auf die markierten Eintr&auml;ge anzuwenden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_PosKre-aendern_ID" style="margin:0;width:1.6042in;height:1.1458in;border:none" src="scr_poskre-aendern_id.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Verhalten bei &Auml;nderung des Positionstextes</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie in der Spalte </span><span class="f__Software_Element_deskriptiv">Position</span><span class="f_A_Allgemein"> einen l&auml;ngeren Positionstext eingeben, wird die Positionsumrandung vergr&ouml;&szlig;ert und der zugeh&ouml;rige Erg&auml;nzungstext verschoben, damit es zu keiner &Uuml;berlagerung kommt. Geben Sie anschlie&szlig;end einen k&uuml;rzeren Text ein, r&uuml;ckt der Erg&auml;nzungstext bis zu seiner urspr&uuml;nglichen Lage wieder an die Positionsumrandung heran. Wird die Positionsumrandung weiter verkleinert, beh&auml;lt der Erg&auml;nzungstext seine urspr&uuml;ngliche Lage bei. Ebenso verh&auml;lt sich der Erg&auml;nzungstext beim &Auml;ndern der Umrandung und der ID-Bezeichnung (Positionsstil-ID).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.2396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgangssituation</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:5.5521in;"><p class="p_ImageCaption"><img alt="SCR_Pos01" style="margin:0;width:2.4375in;height:0.7292in;border:none" src="scr_pos01.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.2396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Positionstext verl&auml;ngert. Der Erg&auml;nzungstext wird verschoben.</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:5.5521in;"><p class="p_ImageCaption"><img alt="SCR_Pos02" style="margin:0;width:2.6146in;height:1.1875in;border:none" src="scr_pos02.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.2396in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Positionstext verk&uuml;rzt. Der Erg&auml;nzungstext beh&auml;lt seine urspr&uuml;ngliche Lage (Ausgangssituation) bei.</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:5.5521in;"><p class="p_ImageCaption"><img alt="SCR_Pos03" style="margin:0;width:2.3542in;height:0.7292in;border:none" src="scr_pos03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Verhalten bei Trenn- und Leerzeichen im Positionstext</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie ein Leerzeichen in einem Eingabefeld der Spalte </span><span class="f__Software_Element_deskriptiv">Position</span><span class="f_Task_Info"> verwenden, wird der nach dem Leerzeichen eingegebene Text au&szlig;erhalb des Positionssymbols geschrieben oder kann dieses &uuml;berdecken. Nutzen Sie daher bei der Eingabe Trennzeichen oder andere Zeichen zwischen den Angaben, damit diese innerhalb des Positionssymbols geschrieben werden, und die Lesbarkeit gew&auml;hrleistet wird.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Optionen im Dialog &quot;Statische Positionierung &auml;ndern/umbenennen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Statische-Positionen-aendern" style="margin:0;width:5.9688in;height:3.4271in;border:none" src="d_statische-positionen-aendern.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn eine oder mehrere statische Positionen einer bestimmten ID nicht zugewiesen werden k&ouml;nnen, werden die Positionen mit ID-Nr. 1 gezeichnet. Dies kann zum Beispiel auftreten, wenn &auml;ltere Zeichnungen ge&ouml;ffnet werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Dialogbeschreibung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Position</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Liste aller statischen Positionen. Um die Positionsbezeichnung zu bearbeiten, klicken Sie die entsprechende Position an. W&auml;hrend Sie tippen, werden die &Auml;nderungen sofort auf der Zeichenfl&auml;che angezeigt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen die Positionen, die Erg&auml;nzungstexte und Tabellentexte entweder absteigend [</span><img alt="I_arrow-pos_down" style="margin:0;width:0.1667in;height:0.1563in;border:none" src="i_arrow-pos_down.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> oder aufsteigend [</span><img alt="I_arrow-pos_up" style="margin:0;width:0.1667in;height:0.1250in;border:none" src="i_arrow-pos_up.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> sortieren. Klicken Sie auf den Pfeil, um die Sortierreihenfolge zu &auml;ndern.</span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Posfilter" style="margin:0;width:3.9792in;height:0.9063in;border:none" src="scr_posfilter.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Erg&auml;nzungstext</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den zur statischen Position zugeh&ouml;rigen Erg&auml;nzungstext an. Klicken Sie in das Eingabefeld, um den Erg&auml;nzungstext zu bearbeiten. Der neue Text ist sofort in der Zeichenfl&auml;che sichtbar.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tabellentext</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den zur statischen Position zugeh&ouml;rigen Tabellentext an. Klicken Sie in das Eingabefeld, um den Tabellentext zu bearbeiten. Aktualisieren Sie nach dem Schlie&szlig;en des Dialogs mit der Funktion [</span><span class="f__Software_Element_deskriptiv">TabAkt</span><span class="f_R_Option_Beschreibung">] die Tabelle mit den Tabellentexten, damit die &Auml;nderungen sichtbar werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ID-Bezeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die im Dialog </span><span class="f__Software_Element_deskriptiv">Einstellungen f&uuml;r statische Positionen </span><span class="f_R_Option_Beschreibung">[</span><span class="f__Software_Element_deskriptiv">DefPos</span><span class="f_R_Option_Beschreibung">] zugewiesene Positions-ID-Nr.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit <img alt="I_Liste-ausklappen" style="margin:0;width:0.1354in;height:0.1667in;border:none" src="i_liste-ausklappen.png"/> k&ouml;nnen Sie die Positionskreis-ID aus einer Liste w&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Umrandung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die aktuelle Umrandungsform an.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit <img alt="I_Liste-ausklappen" style="margin:0;width:0.1354in;height:0.1667in;border:none" src="i_liste-ausklappen.png"/> k&ouml;nnen Sie die Umrandungsform aus einer Liste w&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Positionsfilter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Suche nach bestimmten Positionen. Hier k&ouml;nnen Sie den vollst&auml;ndigen oder partiellen Positionstext angeben.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dem folgenden Platzhalterzeichen k&ouml;nnen Sie Ihre Suche erweitern:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">* (Sternchen): Steht f&uuml;r eine beliebige Zeichenfolge und kann an jeder Stelle der Suchzeichenfolge verwendet werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_Beispiel">Beispiel:</span><span class="f_R_Option_Beschreibung"> Die Eingabe A*C k&ouml;nnte zu diesen Suchergebnissen f&uuml;hren: A1C, A4C, A5C2 usw.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">zu Position(en) zoomen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vergr&ouml;&szlig;ert den Zeichenbereich, in dem die in der Tabelle markierte Position oder die markierten Positionen liegen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_OK" style="margin:0;width:0.7708in;height:0.2396in;border:none" src="b_ok.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt alle &Auml;nderungen und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab. Falls &Auml;nderungen vorgenommen wurden, erscheint ein Dialog mit einer R&uuml;ckfrage zum Speichern der &Auml;nderungen. Wurden keine &Auml;nderungen vorgenommen, wird die Tabelle geschlossen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie &Auml;nderungen vorgenommen haben und den Dialog in der oberen rechten Ecke &uuml;ber das &quot;X&quot; schlie&szlig;en, erscheint ebenfalls ein Dialog mit einer R&uuml;ckfrage zum Speichern der &Auml;nderungen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ja</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernimmt die &Auml;nderungen und schlie&szlig;t die Meldung sowie den Dialog.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nein</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verwirft alle &Auml;nderungen und schlie&szlig;t die Meldung sowie den Dialog.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abbrechen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:9.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Kehrt zum Dialog </span><span class="f__Software_Element_deskriptiv">Statische Positionierung &auml;ndern/umbenennen</span><span class="f_R_Tabellenzeile"> zur&uuml;ck. Der letzte Bearbeitungsstand wird wieder aufgenommen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">Positionstabelle anlegen oder aktualisieren</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="positionskreise.htm" class="topiclink" title="Funktionsübersicht">Statische Positionskreise (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

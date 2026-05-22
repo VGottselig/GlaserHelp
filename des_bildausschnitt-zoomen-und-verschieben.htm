@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bildausschnitt - zoomen und verschieben</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bildausschnitt,Bildausschnitt verschieben,Bildausschnitt zoomen,ZAb,ZAl,Zoomfunktionen,ZPf,ZSe,ZSp,ZVe,ZVo" />
+   <meta name="description" content="Zum Vergrößern, Verkleinern und Verschieben des Bildausschnitts stehen folgende Funktionen zur Verfügung." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_anzeige-auswahl-und-filterfunktionen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_bneu.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Bildausschnitt - zoomen und verschieben</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">Zum Vergr&ouml;&szlig;ern, Verkleinern und Verschieben des Bildausschnitts stehen folgende Funktionen zur Verf&uuml;gung.</span></p>
+<h3 class="p_Heading3"><a name="zoominum" class="hmanchor"></a><span class="f_Heading3">Zoom- und Verschiebefunktionen in der unteren Men&uuml;leiste</span></h3>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:1.0000in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Funktion</span></p>
+</th>
+<th class="Reference_Clean" style="width:3.4792in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beschreibung</span></p>
+</th>
+<th class="Reference_Clean" style="width:9.2292in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">So f&uuml;hren Sie die Funktion aus</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZSe" style="margin:0 auto 0 auto;width:0.8646in;height:0.2500in;border:none" src="b_zse.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom setzen (Fenster)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Skaliert die Ansicht auf den per Mausklick zu w&auml;hlenden Bereich. [</span><span class="f__Abfrage">1.Zoompunkt</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">2.Zoompunkt</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p>
+<p class="p_SA_Tabelle"><span class="f_Hervorhebung_Text">Alternativ</span><span class="f_SA_Tabelle">: Dr&uuml;cken Sie die Funktionstaste </span><span class="f__Tastatur">F1</span><span class="f_SA_Tabelle"> auf Ihrer Tastatur (Standardhotkey).</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Eckpunkt des Ausschnitts, den Sie vergr&ouml;&szlig;ern m&ouml;chten, mit der linken Maustaste an.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Lassen Sie die linke Maustaste los und bewegen Sie den Cursor zum gegen&uuml;berliegenden Eckpunkt, um einen Rahmen aufzuziehen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Wenn der Rahmen den gew&uuml;nschten Ausschnitt umfasst, klicken Sie die linke Maustaste an.</span><br>
+<span class="f_R_Tabellenzeile">Der Bildausschnitt wird vergr&ouml;&szlig;ert.</span></p></td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZVo" style="margin:0 auto 0 auto;width:0.8750in;height:0.2500in;border:none" src="b_zvo.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom vorher</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verwendet die zuletzt eingestellte Ansichtsvergr&ouml;&szlig;erung. Ist mehrfach, bis zur maximalen Gr&ouml;&szlig;e, m&ouml;glich.</span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p></td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZVe" style="margin:0 auto 0 auto;width:0.8646in;height:0.2500in;border:none" src="b_zve.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom verschieben</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ansicht fokussieren oder gezielt verschieben. Der Zoomfaktor bleibt erhalten. </span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p>
+<p class="p_SA_Tabelle"><span class="f_Hervorhebung_Text">Alternativ</span><span class="f_SA_Tabelle">: Dr&uuml;cken Sie die Funktionstaste </span><span class="f__Tastatur">F3</span><span class="f_SA_Tabelle"> auf Ihrer Tastatur (Standardhotkey).</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Um die Ansicht auf einen beliebigen Punkt zu fokussieren, klicken Sie die Position des neuen Mittelpunktes an. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile"> </span><span class="f__Abfrage">oder</span><span class="f_R_Tabellenzeile"> </span><span class="f__Abfrage">Neuer Mittelpunkt</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Um die Ansicht um einen bestimmten Wert zu verschieben, geben Sie die X-/Y-Werte ein (Eingabe in Meter, unabh&auml;ngig von der Eingabeeinheit). Best&auml;tigen Sie jeweils mit der Eingabetaste. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile"> </span><span class="f__Abfrage">oder</span><span class="f_R_Tabellenzeile"> </span><span class="f__Abfrage">Neuer Mittelpunkt</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p></td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZZu" style="margin:0 auto 0 auto;width:0.8646in;height:0.2500in;border:none" src="b_zzu.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom Plotfl&auml;che</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Setzt die Ansicht auf die Gr&ouml;&szlig;e der Plotfl&auml;che zur&uuml;ck. Au&szlig;erhalb der Plotfl&auml;che befindliche Elemente bleiben unber&uuml;cksichtigt.</span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p>
+<p class="p_SA_Tabelle"><span class="f_Hervorhebung_Text">Alternativ</span><span class="f_SA_Tabelle">: Dr&uuml;cken Sie die Funktionstaste </span><span class="f__Tastatur">F2</span><span class="f_SA_Tabelle"> auf Ihrer Tastatur (Standardhotkey).</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZAl" style="margin:0 auto 0 auto;width:0.8750in;height:0.2500in;border:none" src="b_zal.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom Alles</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt alle Zeichenelemente, die sich auf der gesamten Zeichnung befinden. Auch Elemente au&szlig;erhalb der Plotfl&auml;che werden angezeigt.</span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p></td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZSp" style="margin:0 auto 0 auto;width:0.8646in;height:0.2500in;border:none" src="b_zsp.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><a name="_zsp_zoom" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Zoom speichern</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aktuellen Zoom-Ausschnitt speichern. Gespeicherte Zoom-Ausschnitte k&ouml;nnen mit [</span><span class="f__Software_Element_deskriptiv">ZAb</span><span class="f_R_Tabellenzeile">] wieder aufgerufen werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Diese Ausschnitte werden mit der Zeichnung gespeichert.</span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che. Ein kurzes Aufblinken eines Rahmens um die Zeichenfl&auml;che signalisiert, dass der Zoom-Ausschnitt gespeichert wurde.</span></p></td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_ZAb" style="margin:0 auto 0 auto;width:0.8646in;height:0.2500in;border:none" src="b_zab.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:3.4792in;"><p class="p_R_Tabelle_Kopf"><a name="_zab_zoom" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Zoom abrufen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abruf eines gespeicherten Zoom-Ausschnitts. </span></p>
+</td>
+<td class="Reference_Clean" style="width:9.2292in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf die Schaltfl&auml;che.</span></p>
+<p class="p_SA_Tabelle"><span class="f_SA_Tabelle">Im Programmfenster werden die gespeicherten Zoom-Ausschnitte in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Markieren</span><span class="f_SA_Tabelle"> umrandet; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_SA_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_SA_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_SA_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_SA_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Markieren</span><span class="f_SA_Tabelle">]. Die aktuell sichtbare Zeichenfl&auml;che wird mit einem schwarzen Rahmen gekennzeichnet, wenn Sie den Cursor in das Fenster bewegen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie den Zoom-Ausschnitt an, der in der Zeichenfl&auml;che angezeigt werden soll. Die Ansicht in der Zeichenfl&auml;che wird aktualisiert und das Programmfenster geschlossen.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Zoom-abrufen" style="margin:0;width:7.2708in;height:3.9063in;border:none" src="scr_zoom-abrufen.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das </span><span class="f_Hervorhebung_Text">L&ouml;schen</span><span class="f_R_Tabellenzeile"> nicht mehr ben&ouml;tigter Ausschnitte ist im <a href="des_uebersicht.htm#_uebersichtsfenster_erweitert" class="topiclink">erweiterten &Uuml;bersichtsfenster</a> m&ouml;glich. Im Dialog k&ouml;nnen Zoom-Ausschnitte ebenfalls gespeichert und mit dieser Funktion abgerufen werden.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 class="p_Heading3"><a name="idfreihandsymbol" class="hmanchor"></a><a name="mausbewegung" class="hmanchor"></a><span class="f_Heading3">Schnellzoom (Mausgesten)</span></h3>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen mit einer einfachen Mausbewegung die gew&uuml;nschte Zoom- oder Verschiebefunktion aufrufen. F&uuml;hren Sie z. B. auf der Zeichenfl&auml;che eine Mausbewegung in Form eines &quot;Z&quot; aus, um alle Elemente anzuzeigen, die sich innerhalb und au&szlig;erhalb der Plotfl&auml;che befinden.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So f&uuml;hren Sie eine Mausgeste aus</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken und halten Sie die linke Maustaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor vom Anfangspunkt bis zum Endpunkt und lassen Sie anschlie&szlig;end die Maustaste wieder los.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Funktion wird ausgef&uuml;hrt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:1.2500in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Funktion</span></p>
+</th>
+<th class="Reference_Clean" style="width:3.2813in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Anmerkung</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.7500in;" scope="col"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Mausgeste</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom setzen</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">[ZSe] </span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die L&auml;nge der Linie entspricht der Diagonalen des Rechtecks. [</span><span class="f__Abfrage">1.Zoompunkt</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">2.Zoompunkt</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-setzen" style="margin:0 auto 0 auto;width:1.2500in;height:1.0417in;border:none" src="scr_maus_zom-setzen.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom vorher</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">[ZVo] </span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen die Funktion entweder durch eine Mausbewegung von links nach rechts oder umgekehrt ausf&uuml;hren.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-vorher" style="margin:0 auto 0 auto;width:1.2500in;height:1.0729in;border:none" src="scr_maus_zom-vorher.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom Plotfl&auml;che</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">[ZPf] </span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen die Funktion entweder durch eine Mausbewegung von links nach rechts oder umgekehrt ausf&uuml;hren.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-zurueck" style="margin:0 auto 0 auto;width:1.2500in;height:1.0729in;border:none" src="scr_maus_zom-zurueck.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Zoom Alles</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">[ZAl] </span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Diese Funktion kann nur durch eine Mausbewegung von links nach rechts ausgef&uuml;hrt werden.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-All" style="margin:0 auto 0 auto;width:1.6667in;height:1.1875in;border:none" src="scr_maus_zom-all.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Horizontales Verschieben</span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bildausschnitt horizontal verschieben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von links nach rechts: Verschiebung nach rechts.</span><br>
+<span class="f_R_Tabellenzeile">Von rechts nach links: Verschiebung nach links.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-horizontal" style="margin:0 auto 0 auto;width:1.2500in;height:0.9792in;border:none" src="scr_maus_zom-horizontal.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Vertikales Verschieben</span></p>
+</td>
+<td class="Reference_Clean" style="width:3.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bildausschnitt vertikal verschieben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Von unten nach oben: Verschiebung nach oben.</span><br>
+<span class="f_R_Tabellenzeile">Von oben nach unten: Verschiebung nach unten.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.7500in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Maus_Zom-vertikal" style="margin:0 auto 0 auto;width:1.2500in;height:1.0521in;border:none" src="scr_maus_zom-vertikal.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Der Mindestabstand der Punkte ist in den Systemdaten definiert. Mit der Standardeinstellung (30 Pixel) muss die Maus mindestens 31 Pixel weit bewegt werden. </span><br>
+<span class="f_Hinweis_in_Tabelle"><a href="rd_systemdatem_konstruktionsprogramm.htm" class="topiclink">&raquo;&nbsp;Systemdaten – Konstruktionsprogramm</a>; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">Anzahl Pixel f&uuml;r Schnellzoom</span><span class="f_Hinweis_in_Tabelle">]. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><span class="f_Heading3">Zoomen und Verschieben mittels Mausrad</span></h3>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Heading5">Drehen</span><span class="f_A_Allgemein">: Der Bildausschnitt wird vergr&ouml;&szlig;ert oder verkleinert (Zentrum ist der Cursor).</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Heading5">Gedr&uuml;ckt halten und Maus bewegen (Pan):</span><span class="f_A_Allgemein"> Der Bildausschnitt wird mittels gedr&uuml;ckter mittlerer Maustaste (Scrollrad) verschoben. Halten Sie das Scrollrad gedr&uuml;ckt w&auml;hrend Sie die Maus bewegen. Der Bildausschnitt wird in Echtzeit verschoben. Die Lage des Pansymbols </span><img alt="I_Pan" style="margin:0;width:0.1771in;height:0.2188in;border:none" src="i_pan.png"/><span class="f_A_Allgemein"> ist an der Stelle fixiert, an der Sie das Scrollrad gedr&uuml;ckt haben. Die Zeichnung wird unter dem Zoomausschnitt verschoben. Um das Verschieben zu beenden, lassen Sie das Scrollrad wieder los.</span><br>
+<span class="f_A_Allgemein"><a href="mausfunktionen.htm" class="topiclink">&raquo; Mausfunktionen</a></span></p>
+<h3 class="p_Heading3"><a name="zoomtast" class="hmanchor"></a><span class="f_Heading3">Zoom mittels Tastatur</span></h3>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2708in;"><p class="p_R_Tabellenzeile"><img alt="T_Bild-auf" style="margin:0;width:0.3021in;height:0.2708in;border:none" src="t_bild-auf.png"/><span class="f_ImageCaption"> <img alt="T_Bild-ab" style="margin:0;width:0.3021in;height:0.2708in;border:none" src="t_bild-ab.png"/></span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schrittweise vergr&ouml;&szlig;ern/verkleinern</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2708in;"><p class="p_R_Tabellenzeile"><img alt="T_Strg_klein" style="margin:0;width:0.2708in;height:0.2188in;border:none" src="t_strg_klein.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> + </span><img alt="T_Pfeil-nach-oben" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-oben.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="T_Pfeil-nach-unten" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-unten.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="T_Pfeil-nach-links" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-links.png"/><span class="f_R_Tabellenzeile"> <img alt="T_Pfeil-nach-rechts" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-rechts.png"/></span></p>
+<p class="p_R_Tabellenzeile"><img alt="T_Strg_klein" style="margin:0;width:0.2708in;height:0.2188in;border:none" src="t_strg_klein.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> + </span><img alt="T_Shift" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_shift.png"/><span class="f_ImageCaption"> + </span><img alt="T_Pfeil-nach-oben" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-oben.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="T_Pfeil-nach-unten" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-unten.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="T_Pfeil-nach-links" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-links.png"/><span class="f_R_Tabellenzeile"> <img alt="T_Pfeil-nach-rechts" style="margin:0;width:0.2500in;height:0.2188in;border:none" src="t_pfeil-nach-rechts.png"/></span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schrittweise verschieben</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schrittweise verschieben mit gr&ouml;&szlig;erer Schrittweite</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><a name="zoomueber" class="hmanchor"></a><span class="f_Heading3">Verschiebefunktionen</span></h3>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.9479in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Verschiebefunktionen" style="margin:0;width:1.7813in;height:0.2292in;border:none" src="scr_verschiebefunktionen.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.9792in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nutzen Sie unter dem <a href="des_uebersicht.htm" class="topiclink" title="Übersichtsfenster">&Uuml;bersichtsfenster</a> die Pfeiltasten, um den Bildausschnitt schrittweise in Pfeilrichtung zu verschieben. Durch Klick auf die Schaltfl&auml;che 1 oder 10 legen Sie fest, ob Sie den Ausschnitt um eine ganze Bildschirmabmessung oder um ein Zehntel verschieben m&ouml;chten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><a name="zoomcontroll" class="hmanchor"></a><span class="f_Heading3">Zoomcontrol</span></h3>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.3958in; padding:0.0313in; border:none"><p class="p_ImageCaption"><img alt="clip0028" style="margin:0;width:0.3438in;height:0.3438in;border:none" src="clip0028.png"/></p>
+</td>
+<td style="vertical-align:top; width:12.0521in; padding:0.0313in; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Zoomcontrol l&auml;sst sich an jede beliebige Stelle der Zeichenfl&auml;che verschieben. Solange Sie die linke Maustaste auf einem der Richtungspfeile gedr&uuml;ckt halten, wird der Bildausschnitt kontinuierlich in diese Richtung verschoben. Dr&uuml;cken Sie in der Mitte </span><img alt="I_Zoomcontrol_Plus" style="margin:0;width:0.1354in;height:0.1354in;border:none" src="i_zoomcontrol_plus.png"/><span class="f_ImageCaption"> </span><span class="f_R_Tabellenzeile">die linke Maustaste, wird vergr&ouml;&szlig;ert, mit der rechten Maustaste wird verkleinert. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie mit dem Zoomcontrol arbeiten m&ouml;chten, k&ouml;nnen Sie dies in [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Zoomcontrol auf der Zeichenfl&auml;che</span><span class="f_A_Allgemein">] einstellen.</span></p>
+<h3 class="p_Heading3"><span class="f_Heading3">Zoomfunktionen in der Men&uuml;leiste</span></h3>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Klicken Sie in der ISBCAD Men&uuml;leiste das Dropdown-Men&uuml; </span><span class="f__Software_Element_deskriptiv">Anzeige</span><span class="f_A_Allgemein"> an und w&auml;hlen Sie eine Zoomfunktion.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Siehe: <a href="des_bildausschnitt-zoomen-und-verschieben.htm#zoominum" class="topiclink">Zoom- und Verschiebefunktionen in der unteren Men&uuml;leiste</a>.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Anzeige" style="margin:0;width:4.0000in;height:2.2604in;border:none" src="scr_anzeige.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

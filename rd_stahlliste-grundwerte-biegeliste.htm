@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahlliste Grundwerte Biegeliste (Dialog) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Angaben zu der Gestaltung der Biegeliste. Optionen im Dialog &quot;Grundwerte Biegeliste&quot; &nbsp;3D-Formen &nbsp; Wenn eine 3D-Form verlegt worden ist, dann wird der Position automatisch ein" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a> &gt; <a href="ref_stahlliste.htm">Stahlliste (Referenz)</a> &gt; <a href="ref_stlmain.htm">Stahlliste (Dialog)</a> &gt; <a href="rd_einste_stahl_biegeliste.htm">Einstellungen Stahlliste (Biegeliste)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_einste_stahl_biegeliste.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rd_einste_stahl_biegeliste.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_stahlliste-grundwerte-schneideskizze.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Stahlliste Grundwerte Biegeliste (Dialog) </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Angaben zu der Gestaltung der Biegeliste.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Grundwerte Biegeliste&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="RK_Biegeliste" style="margin:0;width:5.3021in;height:4.5000in;border:none" src="rk_biegeliste.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel"><span class="f_Beispiel">3D-Formen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="SCR_3D-Form" style="margin:0;width:3.4896in;height:1.4896in;border:none" src="scr_3d-form.png"/></p>
+<p class="p_A_Allgemein"><img alt="SCR_3D-Form-note" style="margin:0;width:3.6458in;height:0.4792in;border:none" src="scr_3d-form-note.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn eine 3D-Form verlegt worden ist, dann wird der Position automatisch ein Vermerk (***) hinzugef&uuml;gt, dass es sich bei dieser Position um eine 3D-Form handelt. Der Vermerk wird ebenfalls in die Fu&szlig;note geschrieben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Biegeliste</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen" >
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen" style="width:5.9375in;"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge f&uuml;r Text (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dieses Ma&szlig; wird f&uuml;r den Text reserviert. Siehe Bild: Elemente der Biegeliste „</span><span class="f_A_fett">T</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge f&uuml;r Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die Darstellung der Biegeform bereitgestellter Raum. „</span><span class="f_A_fett">L</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">H&ouml;he f&uuml;r Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">H&ouml;he f&uuml;r die Darstellung der Biegeform. „</span><span class="f_A_fett">H</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">X-Abstand Biegeform</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand zwischen den Positionen. Siehe Skizze „</span><span class="f_A_fett">a</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Y-Abstand Biegeform</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vertikaler Abstand zwischen den Zeichnungsbereichen. „</span><span class="f_A_fett">b</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">B = n*(T+L)+(n-1)*a; B = Breite des inneren Rahmens, n = Anzahl der Spalten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeilenabstand Texte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand der Ober- zur Unterkante Text f&uuml;r L&auml;nge/Breite. „</span><span class="f_A_fett">c</span><span class="f_R_Option_Beschreibung">“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e Position (mm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Gr&ouml;&szlig;e des Positionstextes an.</span></p>
+</td>
+<td class="R_Bereich_Rahmen" style="width:8.0104in;"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bild: Elemente der Biegeliste</span></p>
+<p class="p_ImageCaption" style="margin: 0.0625in 0 0.0625in 0.4063in;"><img alt="clip0146" style="margin:0;width:4.5625in;height:4.1354in;border:none" src="clip0146.png"/></p>
+</td>
+</tr>
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen" colspan="2"  style="width:8.0104in; background-color:#FFFFFF;"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Position</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe der Stiftnummer aus dem Dialog </span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein </span><span class="f_R_Option_Beschreibung">„Farbe und Breite f&uuml;r Druckausgabe“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zugeh&ouml;riger Breitenfaktor.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname Position</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des Schrifttyps.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Positionskreis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r den Kreis einen Stift aus. </span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_R_Option_Beschreibung">: „Farbe und Breite f&uuml;r Druckausgabe“.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texteinstellung Bema&szlig;ung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Wenn die automatische Bema&szlig;ung gew&auml;hlt ist, stellen Sie die folgenden Parameter ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Gr&ouml;&szlig;e der Ma&szlig;zahlen in mm ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Nummer des Stiftes an, der die gew&uuml;nschte Breite aufweist. [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Einst</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Stifte</span><span class="f_R_Option_Beschreibung">/</span><span class="f__Software_Element_deskriptiv">Farben</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie eine Breite f&uuml;r die Ma&szlig;zahlen an. Mit &lt;1 werden die Buchstaben schmaler.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname Bema&szlig;ung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie eine der Schriftarten aus der Auswahlbox an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung Bema&szlig;ung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">F&uuml;r die automatische Bema&szlig;ung:</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Bema&szlig;ung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Stiftnummer f&uuml;r das Ma&szlig;kettenger&uuml;st an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand Bema&szlig;ung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dies ist der Abstand der Ma&szlig;kette von der Teill&auml;nge und der Abstand von Ma&szlig;ketten untereinander.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Teill&auml;ngentexte der Biegeform</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e Eisenl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gr&ouml;&szlig;e der Texte an den Teill&auml;ngen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Eisenl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stiftnummer f&uuml;r die Teill&auml;ngentexte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zugeh&ouml;riger Breitenfaktor.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname Eisenl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus der Tabelle die gew&uuml;nschte Schriftart aus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Geometrische Darstellung der Biegeform</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Eisenl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Strichbreite f&uuml;r die Darstellung der Form.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer Gewinde</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Stiftnummer f&uuml;r die Darstellung der Gewinde an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texteinstellung Anzahl, Durchmesser usw.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e L&auml;nge/Breite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bestimmen Sie die Gr&ouml;&szlig;e der Texte f&uuml;r die Angaben „Anzahl“, „&oslash;“ und „L&auml;nge“.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer L&auml;nge/Breite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Stiftnummer an, mit der „Anzahl“ usw. geschrieben werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zugeh&ouml;riger Breitenfaktor.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname L&auml;nge/Breite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die gew&uuml;nschte Schriftart aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Biegeform verzerrt darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die Form deutlich zu machen, k&ouml;nnen Biegeformen verzerrt dargestellt werden. Das ist z. B. bei gekr&ouml;pften St&auml;ben der Fall. Dann wird die H&ouml;he &uuml;berproportional zur L&auml;nge, oder umgekehrt dargestellt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Verzerrt dargestellte Stabformen werden am Positionskreis durch ein „+“ gekennzeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Biegeform_verzerrt" style="margin:0;width:0.4479in;height:0.4271in;border:none" src="scr_biegeform_verzerrt.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Automatische Ma&szlig;kette</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie den Haken, um die Biegeformen automatisch zu verma&szlig;en. Dann werden an die Teill&auml;ngen Ma&szlig;e geschrieben, die Winkel &#8800; 0&deg; und 90&deg; sind. An Teilkreise wird der Radius geschrieben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die automatische Verma&szlig;ung wird nur dann ausgef&uuml;hrt, wenn Sie die Biegeform nicht selbst verma&szlig;t haben!</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_posumr" class="hmanchor"></a><span class="f_R_Option">Positionstext mit neuen Umrandungssymbolen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie den Haken, wenn Sie Positionen mit einer anderen Stahlg&uuml;te und Positionsumrandung in der Stahlliste kenntlich machen und gesondert ausgeben wollen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe: <a href="formst_biform_guetumr.htm" class="topiclink">Stahlg&uuml;te oder Umrandung &auml;ndern</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stlmain.htm" class="topiclink">Stahlliste (Dialog)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink" title="Gestaltung von Stahllisten, Auswahl der Textvariablen und weitere allgemeine Einstellungen">Grundwerte Allgemein</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-gesamtliste.htm" class="topiclink" title="Angabe der Überschriften und weitere Zusatzinformationen, wie z. B. die Planbeschreibung">Grundwerte Gesamtliste</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-schneideskizze.htm" class="topiclink" title="Darstellung auf der Schneideskizze und Konfiguration des Tabellenrahmens">Grundwerte Schneideskizze</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-listenmatten.htm" class="topiclink" title="Darstellung der Listenmatten und deren Beschriftung">Grundwerte Listenmatten</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_einste_stahl_biegeliste.htm" class="topiclink">Einstellungen Stahlliste (neue Biegeliste)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

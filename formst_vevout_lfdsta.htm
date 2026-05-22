@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>lfdm aus Staffel generieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Generieren,Laufende Meter,Laufende Meter aus Staffel generieren,lfdm" />
+   <meta name="description" content="Ermittlung der Stahlmenge (laufenden Meter) für Staffelverlegungen. Der berechnete Wert wird als Auszugstext (lfdm) bereitgestellt." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_30" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="_FOptionen"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_vestaf.htm">Verlegung als Staffel (Bügelstaffel)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_vevout_schwen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_vestaf.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_veform.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">lfdm aus Staffel generieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_vestaf.htm" class="topiclink" title="Verlegen einer Biegeform als Staffel (Funktionsübersicht)"><img alt="Verlegen einer Biegeform als Staffel (Funktionsübersicht)" title="Verlegen einer Biegeform als Staffel (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_vestaf.png"/></a> <img alt="B-akt_lfdSta" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_lfdsta.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Ermittlung der Stahlmenge (laufenden Meter) f&uuml;r Staffelverlegungen. Der berechnete Wert wird als Auszugstext (lfdm) bereitgestellt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Einmal ermittelte Stahlmengen werden bei &Auml;nderungen, Abstand und Anzahl, an der Staffel nicht automatisch neu berechnet. F&uuml;hren Sie den Vorgang an ge&auml;nderten Staffeln erneut durch.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">erf.As(cm&sup2;)/erf.as(cm&sup2;/m)</span><span class="f_Step">]</span><br>
+<span class="f_ToDo_Info">Eisen-Abstand bzw. Anzahl der Eisen k&ouml;nnen automatisch anhand des erforderlichen Stahlquerschnittes </span><span class="f_R_Tabellenzeile">(</span><span class="f__Abfrage">erf.as(cm&sup2;/m </span><span class="f_R_Tabellenzeile">bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) </span><span class="f_ToDo_Info">und der gew&auml;hlten Eisendurchmesser ermittelt werden. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte Berechnungsart (Schaltfl&auml;chen unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step">):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption_zentriert"><img alt="B_Abstand" style="margin:0 auto 0 auto;width:0.9792in;height:0.2292in;border:none" src="b_abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch den Eisen-Abstand f&uuml;r den pro Meter erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.as(cm&sup2;/m</span><span class="f_R_Tabellenzeile">). Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe des erforderlichen Stahlquerschnittes ist optional. Wird kein Wert oder 0 angegeben, muss der Abstand der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;</span><span class="f_R_Tabellenzeile">)] den gew&uuml;nschten Wert hat. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption_zentriert"><img alt="B_Anzahl" style="margin:0 auto 0 auto;width:0.9896in;height:0.2292in;border:none" src="b_anzahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch die f&uuml;r den erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) ben&ouml;tigte Mindestanzahl der Eisen. Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe von </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile"> ist optional. Wird kein Wert oder 0 angegeben, muss die Anzahl der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">] den gew&uuml;nschten Wert hat.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der Positionierung wird auch der nominelle Abstand angeschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_sowie_bew" style="margin:0 auto 0 auto;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Durchmessers, Abstands bzw. der Anzahl aus einer vorhandenen Verlegung. [</span><span class="f__Abfrage">So wie welche Verlegung?</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Je nach Berechnungsart wird </span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Anzahl</span><span class="f_R_Tabellenzeile"> aktiviert. Die Abfrage wechselt zu [</span><span class="f__Abfrage">KOR?</span><span class="f_R_Tabellenzeile">] (s. weiter unten).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Eine Verlegung in Form von z. B. &quot;0 &#8960; 12&quot; kann nicht angeklickt werden. Die Verlegung muss eine Verlegeanzahl enthalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den erforderlichen Stahlquerschnitt ein und best&auml;tigen Sie die Angabe [</span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&oslash;</span><span class="f_Step"> per Mausklick den Eisendurchmesser.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn der erforderliche Stahlquerschnitt eingegeben wurde, berechnet ISBCAD automatisch den bestm&ouml;glichen Wert f&uuml;r den Abstand bzw. die Eisenzahl und schl&auml;gt diesen unter </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung">) vor. Der resultierende Stahlquerschnitt wird unter </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn der resultierende Stahlquerschnitt</span><span class="f_Step_Anmerkung"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step"> gr&ouml;&szlig;er/gleich dem erforderlichen Stahlquerschnitt </span><span class="f__Abfrage">erf.As(cm&sup2;/m) </span><span class="f_Step">ist, k&ouml;nnen Sie den Wert f&uuml;r </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> </span><span class="f_Step">best&auml;tigen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie einen anderen Wert angeben (und best&auml;tigen) und den resultierenden Stahlquerschnitt </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> pr&uuml;fen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Pr&uuml;fen Sie, ob das Resultat Ihren Anforderungen entspricht. </span><br>
+<span class="f_Step">Wollen Sie die Angaben &auml;ndern</span><span class="f_ImageCaption"> </span><span class="f_Step">[</span><span class="f__Abfrage">KOR</span><span class="f_Step">]?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Ja_Klein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5729in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Korrigieren Sie Ihre Angaben beginnend mit </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_R_Tabellenzeile"> (erforderlicher Stahlquerschnitt) oder verwenden Sie <img alt="B_--Bst" style="margin:0;width:0.6354in;height:0.1979in;border:none" src="b_--bst.png"/> (&#8594; Untere Men&uuml;leiste).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B-akt_Nein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5729in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der resultierende Stahlquerschnitt wird beibehalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">1. Kante</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;r die &Uuml;bernahme der voreingestellten Betondeckung [</span><span class="f__Software_Element_deskriptiv">nom c</span><span class="f_ToDo_Info">] klicken Sie zun&auml;chst die Bezugslinie auf der Linienseite an, auf der die Betondeckung ber&uuml;cksichtigt werden soll, und best&auml;tigen anschlie&szlig;end mit Rechtsklick. F&uuml;r einen individuellen Abstand klicken Sie zun&auml;chst die Bezugslinie auf der Linienseite an, auf der die Betondeckung ber&uuml;cksichtigt werden soll, und geben den Wert mit dem entsprechenden Vorzeichen ein. Best&auml;tigen Sie mit der Eingabetaste. Wenn kein Abstand angegeben werden soll, geben Sie als Differenz 0 (Null) ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die erste Begrenzungslinie oder den ersten Begrenzungskreis an. Hieraus ergibt sich die Lage und die vorl&auml;ufige L&auml;nge.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Voute_Stahlmenge-berechnen_01" style="margin:0;width:4.1146in;height:1.9271in;border:none" src="z_voute_stahlmenge-berechnen_01.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">2. Kante</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Anmerkungen zu [1. Kante] gelten auch f&uuml;r die aktuelle Abfrage. Die Staffel wird auf der angeklickten Linienseite verlegt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die zweite Begrenzungslinie an oder geben Sie die absolute Breite der Staffel an. Hieraus ergibt sich die Verlegebreite.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Voute_Stahlmenge-berechnen_02" style="margin:0;width:4.1250in;height:1.8958in;border:none" src="z_voute_stahlmenge-berechnen_02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bezugslinie ist markiert und die aktuelle Ecke durch ein Kreuz gekennzeichnet.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Eckabstand&nbsp;1</span><span class="f_Step">; </span><span class="f__Abfrage">Eckabstand&nbsp;2</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Wert an, um den die Stabenden von der Kante abgesetzt werden sollen. Der vorgeschlagene Wert ist die Grund&#8209;Beton&uuml;berdeckung. Best&auml;tigen Sie die Angabe mit der Eingabetaste oder Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Positive Werte weisen nach „innen“, negative nach „au&szlig;en“. Positive Werte werden beim Anklicken immer in Richtung des Cursors ber&uuml;cksichtigt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ: Klicken Sie eine Linie als Begrenzung an und f&uuml;gen Sie die Betondeckung mit Rechtsklick hinzu.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Voute_Stahlmenge-berechnen_03" style="margin:0;width:4.1146in;height:2.0313in;border:none" src="z_voute_stahlmenge-berechnen_03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Auswahl</span><span class="f_Step">]</span><br>
+<span class="f_Step">Optionen: </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9063in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B-akt_naechster-Bereich" style="margin:0 auto 0 auto;width:1.7083in;height:0.2500in;border:none" src="b-akt_naechster-bereich.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Abfrage beginnt wieder bei </span><span class="f__Abfrage">1.Kante</span><span class="f_R_Tabellenzeile">. Die folgende Staffel beh&auml;lt den Durchmesser, Abstand und die Anzahl.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9063in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_neuer-Du-Abstand" style="margin:0 auto 0 auto;width:1.7083in;height:0.2500in;border:none" src="b_neuer-du-abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Abfrage beginnt wieder bei </span><span class="f__Abfrage">erf.As/erf.as</span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9063in;"><p class="p_R_Tabelle_Kopf" style="text-align: center;"><img alt="B_Auszuege" style="margin:0 auto 0 auto;width:1.6771in;height:0.2188in;border:none" src="b_auszuege.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.5521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Durchmesser und L&auml;ngen f&uuml;r LFDM [m]</span><span class="f_R_Tabellenzeile">. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:12.5521in;"><p class="p_R_Tabelle_Kopf"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f__Software_Element_deskriptiv"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Durchmesser und L&auml;ngen f&uuml;r LDFM&nbsp;[m] (Dialog)</a></span></p>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Ermittlung der Gesamtl&auml;nge laufender Meter unter Ber&uuml;cksichtigung der Betong&uuml;te, des Verbundbereiches und weiterer Parameter. F&uuml;r jeden Durchmesser steht eine Zeile zur Verf&uuml;gung. Bei mehr als drei Zeilen k&ouml;nnen Sie den Ausschnitt mit dem Scrollbalken verschieben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p___Einschuebe_linksbuendigausrichten"><img alt="D_Durchmesse-und-Laengen-fuer-LFDM" style="margin:0;width:6.8646in;height:2.5313in;border:none" src="d_durchmesse-und-laengen-fuer-lfdm.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betong&uuml;te</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnen Sie die Auswahlbox und klicken Sie die f&uuml;r das Bauteil g&uuml;ltige Betong&uuml;te an. Die &Uuml;bergreifung wird sofort neu ermittelt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verbundbereich</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie zwischen gutem und m&auml;&szlig;igem Verbundbereich. Die &Uuml;bergreifung wird sofort neu ermittelt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Durchmesser der angeklickten Ausz&uuml;ge wird angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Max. Stabl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus der Auswahlbox eine der vorgeschlagenen Standardl&auml;ngen aus, oder geben Sie einen abweichenden Wert ein. Daraus ergibt sich die Anzahl der St&ouml;&szlig;e und St&auml;be. Durch Dr&uuml;cken der Eingabetaste wird die Gesamtl&auml;nge neu berechnet. Mit der Tabulatortaste </span><span class="f_R_Option_Beschreibung" style="font-size: 16pt;">&#8633;</span><span class="f_R_Option_Beschreibung"> k&ouml;nnen Sie in die n&auml;chste Eingabe springen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bergreifung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die &Uuml;bergreifungsl&auml;nge wird aus der gew&auml;hlten Betong&uuml;te und dem Verbundbereich ermittelt. Wenn Sie einen anderen Wert ber&uuml;cksichtigen wollen, geben Sie diesen manuell ein und best&auml;tigen mit der Eingabetaste. Die Gesamtl&auml;nge wird neu berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gesamtl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die mindestens erforderliche Gesamtl&auml;nge wird angeschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">laufende Meter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">In der Auswahlbox wird der aufgerundete Wert angezeigt, der sich aus einer ganzzahligen Stabanzahl mit der maximalen Stabl&auml;nge ergibt. Die Eingabe eines beliebigen Wertes ist m&ouml;glich.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;ber die Ausklappliste stehen folgende Werte zur Auswahl:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<thead>
+<tr class="Optionen_Palette">
+<th class="Optionen_Palette" style="width:0.3750in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Pos.</span></p>
+</th>
+<th class="Optionen_Palette" style="width:7.6250in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Wert</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3750in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nettol&auml;nge: Summe der Gesamtl&auml;ngen der einzelnen Positionen ohne &Uuml;bergreifung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3750in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bruttol&auml;nge: Summe der Gesamtl&auml;ngen zuz&uuml;glich der erforderlichen &Uuml;bergreifungsl&auml;ngen. (= Gesamtl&auml;nge)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3750in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aufgerundete Bruttol&auml;nge als vielfaches der Maximall&auml;nge.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3750in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">4.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Aufgerundete Bruttol&auml;nge plus ein zus&auml;tzlicher Stab als Reserve.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3750in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">5 ff.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Jeweils ein Stab zus&auml;tzlich.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Alles-neu-berechnen" style="margin:0;width:1.1979in;height:0.2604in;border:none" src="b_alles-neu-berechnen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie im Feld &Uuml;bergreifung einen beliebigen Wert eingegeben haben, wird dieser wieder auf das Mindestma&szlig; nach EC2 zur&uuml;ckgestellt, und die Gesamtl&auml;nge und die Angabe der laufenden Meter neu berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt den unter </span><span class="f__Software_Element_deskriptiv">laufende Meter</span><span class="f_R_Option_Beschreibung"> angezeigten Wert in die aktuelle Abfrage und setzt diese fort. </span><br>
+<span class="f_R_Option_Beschreibung">Der Dialog wird geschlossen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab und schlie&szlig;t den Dialog.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Position</span><span class="f_Step">]</span><br>
+<span class="f_Step">W&auml;hlen Sie aus den Vorschl&auml;gen die gew&uuml;nschte Nummer aus, oder geben eine beliebige freie Startnummer ein. Wenn in der Verlegung mehrere Durchmesser vorkommen, werden diese mit den Folgenummern positioniert.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">] </span><br>
+<span class="f_Step">Geben Sie den Winkel an, in dem der Auszug auf der Zeichnung abgelegt werden soll.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Lage Auszug</span><span class="f_Step">] </span><br>
+<span class="f_Step">Setzen Sie den Auszug mit den Auszugstexten per Mausklick an der gew&uuml;nschten Stelle ab. </span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Lage Text</span><span class="f_Step">] </span><br>
+<span class="f_Step">Schieben Sie den/die Text/e nacheinander an die gew&uuml;nschte Stelle und schlie&szlig;en mit der linken Maustaste ab oder &uuml;bernehmen Sie die vorgeschlagene Lage per Rechtsklick.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_30.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

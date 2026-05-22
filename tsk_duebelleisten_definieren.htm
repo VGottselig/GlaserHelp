@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Dübelleistentyp definieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Dübelleisten,Dübelleisten definieren,Dübelleisten Halfen HDB,Dübelleisten Halfen HDB-S,Dübelleisten Schöck Bole,Halfen HDB,Halfen HDB-S,Schöck Bole" />
+   <meta name="description" content="Definition der Art, Anzahl und Anordnung der Dübelleisten. Öffnet den Dialog Eigenschaften Dübelleisten." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="kont3_dublei.htm">Dübelleisten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="kont3_dublei.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="kont3_dublei.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_duebelleisten-verlegen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">D&uuml;belleistentyp definieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="kont3_dublei.htm" class="topiclink" title="Dübelleisten (Funktionsübersicht)"><img alt="Dübelleisten (Funktionsübersicht)" title="Dübelleisten (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_c7c7ff85.png"/></a> <img alt="B-akt_Defini_DübLei" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_8734e0f9.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Definition der Art, Anzahl und Anordnung der D&uuml;belleisten. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eigenschaften D&uuml;belleisten</span><span class="f_Task_Info">.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verwenden Sie die Optionen auf den herstellerbezogenen Registerkarten. Art, Anzahl und Anordnung der einzelnen D&uuml;belleisten m&uuml;ssen mit externen Hilfsmitteln und nach g&uuml;ltigen Vorschriften ermittelt werden, z. B. mithilfe der Sch&ouml;ck Bole&reg; bzw. Halfen HDB Bemessungsprogramme. Verwenden Sie stets die aktuellen Versionen.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Best&auml;tigen Sie nach der Definition den Dialog auf der Registerkarte mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Task_Info">, auf der Sie die D&uuml;belleiste definiert oder ausgew&auml;hlt haben, und f&uuml;r die Verlegung verwenden m&ouml;chten.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der verwendete D&uuml;belleisten-Typ wird Ihnen beim Verlegen im rechten Bereich der Abfragezeile angezeigt:</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="SCR_Dübelleisten_Def" style="margin:0;width:10.6250in;height:0.8958in;border:none" src="hmfile_hash_27e5b852.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Sch&ouml;ck BOLE</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Eingabeparameter f&uuml;r die Sch&ouml;ck Bole&reg; Durchstanzbewehrung.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Tragen Sie die ermittelten Werte aus der Bemessung in die entsprechenden Eingabefelder ein.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Eigenschaften-Duebel-Schoeck" style="margin:0;width:4.8229in;height:5.0417in;border:none" src="d_eigenschaften-duebel-schoeck.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bolzenh&ouml;he [mm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus der Liste die erforderliche Bolzenh&ouml;he aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bolzendurchmesser [mm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Durchmesser der Bolzen an. In Abh&auml;ngigkeit von der Bolzenh&ouml;he werden die Durchmesser vorgeschlagen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mit Sonderdurchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es k&ouml;nnen auch andere als die Standarddurchmesser gew&auml;hlt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Bolzen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die erforderliche Anzahl ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterschema</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es gibt f&uuml;nf unterschiedliche Abstandsregeln f&uuml;r Flachdecken (A) und Fundamente (B-E).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Leistenl&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Tragen Sie hier die erforderliche L&auml;nge ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Typ</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Standard, O, U oder F</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Betondeckung unten [mm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Betondeckung unter den Bolzen aus.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Aus diesen Eingaben wird der D&uuml;belleistentext generiert. Es wird auf jeden Fall ein korrekter Text zusammengestellt und eine Sch&ouml;ck Bole&reg;-konforme D&uuml;belleiste erzeugt.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Sollte die D&uuml;belleiste nicht herstellbar sein, erhalten Sie einen entsprechenden Hinweis </span><img alt="I_PlanBe_Makro" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_planbe_makro.png"/><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">BOLE-Leiste aus Text</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text auswerten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie einen Text eintippen oder per </span><span class="f__Tastatur">Strg+V</span><span class="f_R_Option_Beschreibung"> einf&uuml;gen, der die typischen Leisteneigenschaften enth&auml;lt (z. B. F 10/180-4/A520), generiert das Programm einen D&uuml;belleistentext. Enth&auml;lt der Text auch die Angabe der Betondeckung &quot;CV&quot; (z. B. F 10/180-4/A520-CV20) wird diese unter </span><span class="f__Software_Element_deskriptiv">Betondeckung unten [mm]</span><span class="f_R_Option_Beschreibung"> eingetragen. Das Einf&uuml;gen der kompletten Produktbezeichnung (z. B. Sch&ouml;ck Bole U 12-260-4/A 720) ist ebenfalls m&ouml;glich. Beim Auswerten werden die Texte &quot;Sch&ouml;ck&quot; und /oder &quot;Bole&quot; automatisch entfernt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf die Schaltfl&auml;che, um den eingegebenen Text zu &uuml;berpr&uuml;fen. Wird der Text erkannt, dann werden die Parameter im Dialog &uuml;bernommen. Sollte der eingegebene Text keiner BOLE-Leiste entsprechen, erscheint ein Hinweiszeichen <img alt="I_Hinweis_Eingabefehler" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_hinweis_eingabefehler.png"/>.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid; margin: 0.1250in 3.6771in 0.0104in 0.4063in;"><span class="f_R_Option">aus Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen Linien oder Kreise von vorhandenen D&uuml;belleisten (nur Sch&ouml;ck), nicht die Bezeichnung, in der Zeichnung anklicken. Wenn es sich dabei um korrekte Daten handelt, wird ein D&uuml;belleistentext generiert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Halfen HDB / HDB-S</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Eingabeparameter f&uuml;r Halfen HDB-Elemente und Halfen HDB-S-Elemente.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Anmerkung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die folgende Dialogbeschreibung gilt f&uuml;r die Registerkarte </span><span class="f__Software_Element_deskriptiv">Halfen HDB</span><span class="f_Hinweis_in_Tabelle">. Die Registerkarte </span><span class="f__Software_Element_deskriptiv">Halfen HDB-S</span><span class="f_Hinweis_in_Tabelle"> f&uuml;r die Querkraftbewehrung enth&auml;lt identische Funktionen, und wird daher nicht gesondert beschrieben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Eigenschaften-Duebel-Halfen" style="margin:0;width:4.8229in;height:5.0417in;border:none" src="d_eigenschaften-duebel-halfen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">selbsterstellte HDB Komplettelemente verwenden</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9792in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Angaben f&uuml;r die HDB Systemelemente (Standardeinstellung)</span><br>
+<span class="f_R_Tabellenzeile"><a href="tsk_duebelleisten_definieren.htm#hdbsystemelemente" class="topiclink" title="HDB Systemelemente">(s. HDB Systemelemente)</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9792in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Angaben f&uuml;r individuelle D&uuml;belleisten. Blendet den Bearbeitungsbereich HDB Komplettelemente mit weiteren Optionen ein (Rechtsklick im Bearbeitungsbereich).</span><br>
+<span class="f_R_Tabellenzeile"><a href="tsk_duebelleisten_definieren.htm#hdbkomplettelemente" class="topiclink" title="HDB Komplettelemente">(s. HDB Komplettelemente)</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bauteilfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie an, wie oft die komplette Durchstanzbewehrung in die Liste aufgenommen werden soll.</span></p>
+<p class="p_R_Bereich"><a name="hdbsystemelemente" class="hmanchor"></a><span class="f_R_Bereich">HDB Systemelemente</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Nur wenn die Option </span><span class="f__Software_Element_deskriptiv">selbsterstellte HDB Komplettelemente verwenden</span><span class="f_R_Bereich_Info_Rahmen"> deaktiviert ist (Standardeinstellung).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nur Standardelemente</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9792in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt sowohl Systemelemente in der Standardausf&uuml;hrung (Standardelemente) als auch Bestellelemente mit fester Elementl&auml;nge an.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9792in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt nur Systemelemente in der Standardausf&uuml;hrung an.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ankerh&ouml;he [mm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie aus der Tabelle die erforderliche H&ouml;he aus. Diese Tabelle enth&auml;lt alle Ma&szlig;e der vorhandenen Elemente.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ankerdurchmesser [mm]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Durchmesser aus der Liste aus. Es stehen nur die zur Ankerh&ouml;he passenden Durchmesser zur Verf&uuml;gung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Anker</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die erforderliche Anzahl der Anker an. In der Liste stehen nur Werte, die durch die Elementzusammenstellung vorgegeben sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Gesamtl&auml;nge ergibt sich aus der Elementzusammenstellung.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Elementzusammenstellung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Elementkombination.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Automatisch</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zweier- und Dreier-Elemente werden kombiniert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nur Zweier-Elemente / nur Dreier-Elemente</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden entweder nur Zweier- oder nur Dreier-Elemente gew&auml;hlt. Gegebenenfalls wird die Anzahl der erforderlichen Anker erh&ouml;ht.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><a name="hdbkomplettelemente" class="hmanchor"></a><span class="f_R_Bereich">HDB Komplettelemente</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Nur wenn die Option </span><span class="f__Software_Element_deskriptiv">selbsterstellte HDB Komplettelemente verwenden</span><span class="f_R_Bereich_Info_Rahmen"> aktiviert ist (Standardeinstellung).</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Option_Beschreibung">Liste der individuellen HDB Komplettelemente. </span><span class="f_R_Bereich_Info_Rahmen">Wenn Sie noch keine HDB Komplettelemente erstellt haben, ist der Bearbeitungsbereich zun&auml;chst leer.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Eigenschaften-Duebel-Komplett" style="margin:0;width:5.3646in;height:5.0417in;border:none" src="d_eigenschaften-duebel-komplett.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um ein HDB Komplettelement zu erstellen oder zu bearbeiten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie gegebenenfalls den gew&uuml;nschten Eintrag in der Liste aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Option_Beschreibung">Rufen Sie das Kontextmen&uuml; auf (Rechtsklick im Bearbeitungsbereich).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.7708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:2.3750in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Funktion</span></p>
+</th>
+<th class="Reference_Clean" style="width:6.8021in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Neu</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Konfiguration einer individuellen D&uuml;belleiste. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Editor f&uuml;r HDB-Komplettelemente</span><span class="f_R_Tabellenzeile">. </span><br>
+<span class="f_R_Tabellenzeile"><a href="tsk_duebelleisten_definieren.htm#editorfrhdbkomplettelementedialog" class="topiclink">(s. Editor f&uuml;r HDB Komplettelemente)</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Kopieren</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der markierte Eintrag wird kopiert und in der folgenden Zeile hinzugef&uuml;gt. Die Werte k&ouml;nnen durch </span><span class="f__Software_Element_deskriptiv">&Auml;ndern</span><span class="f_R_Tabellenzeile"> angepasst werden.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&Auml;ndern</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bearbeitung des in der Liste markierten HDB-Komplettelementes. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Editor f&uuml;r HDB-Komplettelemente</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile"><a href="tsk_duebelleisten_definieren.htm#editorfrhdbkomplettelementedialog" class="topiclink">(s. Editor f&uuml;r HDB Komplettelemente)</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">L&ouml;schen</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&ouml;scht den markierten Eintrag aus der Liste.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">aus Zeichnung</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Dialog wird vor&uuml;bergehend ausgeblendet, damit Sie die Linie oder den Kreis eines HDB-Komplettelementes (nicht die Zeigerlinien) anklicken k&ouml;nnen. Wenn die Bezeichnung in das aktuelle Schema passt, wird sie in die Tabelle &uuml;bernommen. Sie ist damit ausgew&auml;hlt und kann direkt verlegt werden.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Sortieren nach</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sortiert die Liste nach dem gew&auml;hlten Kriterium.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Durchmesser:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die D&uuml;belleisten werden, nach Durchmesser sortiert, aufgelistet. Die nachfolgenden Sortierkriterien sind H&ouml;he, Anzahl, L&auml;nge und Oberfl&auml;che.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">H&ouml;he; Anzahl; L&auml;nge; Oberfl&auml;che:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Reihenfolge der Sortierkriterien ist immer gleich. Das ausgew&auml;hlte steht jeweils an erster Stelle.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Durch wiederholten Aufruf eines Kriteriums wird die Sortierreihenfolge umgekehrt (Aufw&auml;rts/Abw&auml;rts-Sortierung)</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">R&uuml;ckg&auml;ngig</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die zuvor ausgef&uuml;hrte Aktion wird r&uuml;ckg&auml;ngig gemacht.</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.3750in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Wiederherstellen</span></p>
+</td>
+<td class="Reference_Clean" style="width:6.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das eben r&uuml;ckg&auml;ngig gemachte wird wiederhergestellt.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><a name="editorfrhdbkomplettelementedialog" class="hmanchor"></a><span class="f_R_Dialog">Editor f&uuml;r HDB Komplettelemente (Dialog)</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konfiguration individueller D&uuml;belleisten.</span></p>
+<p class="p_R_Dialog_Info"><img alt="D_Duebelleisten_Def_Halfen_Editor" style="margin:0;width:6.1875in;height:2.8750in;border:none" src="d_duebelleisten_def_halfen_editor.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Oberfl&auml;che</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der D&uuml;belleisten-Oberfl&auml;che - glatt oder gerippt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den gew&uuml;nschten Durchmesser aus der Liste aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ankerh&ouml;he</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die H&ouml;he der Anker in Millimeter ein. Die kleinste H&ouml;he betr&auml;gt 105mm. Weitere folgen im Raster von 10mm. Wenn Sie Werte au&szlig;erhalb des Rasters eingeben, rundet das Programm auf die n&auml;chst kleinere Rasterh&ouml;he. Um in die n&auml;chste Eingabe zu gelangen, dr&uuml;cken Sie die Tabulatortaste </span><span class="f_R_Option_Beschreibung" style="font-family: 'Wingdings 3';">F</span><span class="f_R_Option_Beschreibung"> oder klicken Sie das gew&uuml;nschte Eingabefeld an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Anker</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r die HDB Komplettelemente sind 2 bis 10 Anker m&ouml;glich.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Tabelle f&uuml;r die Abst&auml;nde</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie bei </span><span class="f__Software_Element_deskriptiv">Anzahl Anker</span><span class="f_R_Option_Beschreibung"> den Wert &auml;ndern, werden die Abst&auml;nde neu ermittelt und vorgeschlagen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die erforderlichen Abst&auml;nde in die entsprechenden Zeilen ein. Klicken Sie dazu einen Wert an (dieser wird blau hinterlegt) und geben Sie den neuen Wert ein. Best&auml;tigen Sie mit der Eingabetaste. Um direkt zu Best&auml;tigen und zum n&auml;chsten Wert zu wechseln, dr&uuml;cken Sie die Tabulatortaste </span><span class="f_R_Option_Beschreibung" style="font-family: 'Wingdings 3';">F</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie, dass die Abst&auml;nde ge&auml;ndert werden, wenn Sie die Anzahl der Anker &auml;ndern.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">D&uuml;belleistentext</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier wird der generierte Text immer aktuell angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK,</span><span class="f_R_Option_Beschreibung"> um die neu definierte D&uuml;belleiste in die Tabelle aufzunehmen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Eingabedialog wird geschlossen. Alle Eingaben gehen verloren.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bauteilfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Faktor f&uuml;r die Ermittlung der Gesamtanzahl ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dr&uuml;cken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung">, um die Eingaben zu &uuml;bernehmen. Beim Schlie&szlig;en des Dialogs werden doppelte Eintr&auml;ge aus der Tabelle f&uuml;r selbsterstellte HDB- und HDB-S Komplettelemente entfernt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen&nbsp; </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Abbrechen</span><span class="f_R_Option_Beschreibung">, um die Eingaben zu verwerfen und mit den alten Einstellungen fortzufahren.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_duebelleisten-verlegen.htm" class="topiclink" title="Dübelleiste an einem Bauteil verlegen">D&uuml;belleiste an einem Bauteil verlegen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_dublei_rand.htm" class="topiclink" title="Dübelleiste am Rand verlegen">D&uuml;belleiste am Rand verlegen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_dublei_kreis.htm" class="topiclink" title="Dübelleiste am Kreisbogen verlegen">D&uuml;belleiste am Kreisbogen verlegen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_dublei_ecke.htm" class="topiclink" title="Dübelleiste an einer Ecke verlegen">D&uuml;belleiste an einer Ecke verlegen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_dublei_konfig.htm" class="topiclink" title="Darstellung Dübelleisten (Referenz)">Darstellung D&uuml;belleisten</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

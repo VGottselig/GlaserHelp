@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Betonstahltabellen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".DAT,Betonstahltabellen,Bewehrung verwalten,Formmatten,Formmatten Betonstahltabellen,Formstahl,Formstahl Betonstahltabellen,Gewindestahl,Gewindestahl Betonstahltabellen,Gewindestahlliste,Gewindestahlliste verfügbare Elemente bearbeiten,Liste mit verfügbaren Bewehrungselementen,Matten,Matten hinzufügen,Mattentenliste,Mattentenliste verfügbare Elemente bearbeiten,Rundstahlliste,Rundstahlliste verfügbare Elemente bearbeiten,Stablänge ändern,Stahlelemente verwalten,U-Korbliste,U-Korbliste verfügbare Elemente bearbeiten" />
+   <meta name="description" content="Windows-Startmenü &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmenü &#8594; Betonstahl Tabellen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_konfigurationsmodule.htm">Hauptmenü - Programmmodule</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="optionen_sysdat.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_konfigurationsmodule.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_dxf-dwg-export_(hauptmenue).htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Betonstahl Tabellen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Betonstahl-Tabellen" style="margin:0;width:0.3333in;height:0.3333in;border:none" src="i_betonstahl-tabellen.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Windows-Startmen&uuml; &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmen&uuml; &#8594; Betonstahl Tabellen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Verwaltung der in ISBCAD verf&uuml;gbaren Stahlelemente (Matten, Rundst&auml;hle, U-K&ouml;rbe, Gewindest&auml;hle). &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Betonstahl Tabellen</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Tabelle enth&auml;lt eine Auflistung der Bewehrungselemente, die in der Liste enthalten sind, die unter </span><span class="f__Software_Element_deskriptiv">Auswahl der Liste</span><span class="f_L_Listeneintrag"> eingestellt ist. Die Listeneintr&auml;ge k&ouml;nnen bearbeitet werden, es k&ouml;nnen neue Eintr&auml;ge angelegt oder Eintr&auml;ge durch Einlesen einer DAT-Datei hinzugef&uuml;gt werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die vorgenommenen &Auml;nderungen werden in separaten Konfigurationsdateien im aktiven <a href="top_konfigurationsmodule.htm" class="topiclink" title="Profil im Hauptmenü aktivieren">Profil</a> gespeichert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die in den Tabellen angegebenen Werte, z. B. die &Uuml;bergreifungsl&auml;ngen von Matten oder die Gewichte der Unterst&uuml;tzungsk&ouml;rbe sind einschl&auml;gigen Tabellen entnommen. Regional kann es bei den Herstellerwerken zu abweichenden Angaben kommen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Optionen im Dialog &quot;Betonstahl Tabellen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p___Einschuebe_linksbuendigausrichten"><img alt="D_Matten-und-Rundstahlliste (2)" style="margin:0;width:7.2083in;height:3.7917in;border:none" src="hmfile_hash_323a2826.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Auswahl der Liste</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der Stahlliste, die in der Tabelle angezeigt und/oder bearbeitet werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mattenliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die in ISBCAD verf&uuml;gbaren Mattentypen an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rundstahlliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die in ISBCAD verf&uuml;gbaren Rundst&auml;hle (St&auml;be) an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">U-Korbliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die in ISBCAD verf&uuml;gbaren U-K&ouml;rbe an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gewindestahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die in ISBCAD verf&uuml;gbaren Gewindest&auml;hle an.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Sortieren der Tabelle</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelne Tabellenzeile</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Halten Sie auf einer Tabellenzelle die linke Maustaste gedr&uuml;ckt, und ziehen Sie den Inhalt nach oben oder unten. </span><span class="f_SA_Tabelle">Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeile verschoben wird.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Lassen Sie die Maustaste an der Position los, an die der Inhalt verschoben werden soll.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrere Tabellenzeilen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Tabellenzeilen im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Tabellenzeilen auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt, und w&auml;hlen Sie die Makrotexte nacheinander aus. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um die Tabellenzeilen zu verschieben:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Klicken Sie eine markierte Zelle an und halten Sie die linke Maustaste gedr&uuml;ckt. Ziehen Sie die Inhalte nach oben oder unten. Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeilen verschoben werden. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die Maustaste an der Position los, an die die Inhalte verschoben werden sollen.</span><br>
+<span class="f_R_Tabellenzeile">Die Tabellenzeilen werden hintereinander abgesetzt.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bearbeiten</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Bearbeitung der aktuell gew&auml;hlten Liste.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Verwenden Sie bei der Eingabe von Werten keine Leerzeichen. </span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Als Dezimaltrennzeichen muss ein Punkt verwendet werden.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Aendern" style="margin:0;width:0.9271in;height:0.2604in;border:none" src="b_aendern.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndern des markierten Listeneintrages. &Ouml;ffnet den &Auml;nderungsdialog f&uuml;r die aktuelle Liste mit den Werten des in der Tabelle markierten Eintrages. Der &Auml;nderungsdialog kann auch durch Doppelklick in der Tabelle aufgeschlagen werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Werte k&ouml;nnen in den Eingabefeldern des &Auml;nderungsdialoges &uuml;berschrieben und mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> in die Tabelle &uuml;bernommen werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Betonstahltabellen_Rundstahl" style="margin:0;width:6.0625in;height:4.1250in;border:none" src="scr_betonstahltabellen_rundstahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Loeschen" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_loeschen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht die markierten Eintr&auml;ge ohne R&uuml;ckfrage.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Achtung" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn Sie den Betonstahl-Tabellen-Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Hinweis_in_Tabelle"> schlie&szlig;en und somit die &Auml;nderungen best&auml;tigen, werden die gel&ouml;schten Eintr&auml;ge endg&uuml;ltig aus der entsprechenden Listen-Datei gel&ouml;scht.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Um versehentlich gel&ouml;schte Eintr&auml;ge wiederherzustellen, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Abbruch</span><span class="f_Hinweis_in_Tabelle">. Es wird ein Dialog zum Speichern der &Auml;nderungen ge&ouml;ffnet. Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_Hinweis_in_Tabelle"> (&Auml;nderungen nicht speichern). Der Dialog wird geschlossen und die &Auml;nderungen an der gew&auml;hlten Liste verworfen. Endg&uuml;ltig gel&ouml;schte Eintr&auml;ge k&ouml;nnen als neuer Eintrag wieder zur Liste hinzugef&uuml;gt werden. Daf&uuml;r m&uuml;ssen die entsprechenden Werte bekannt sein. </span><br>
+<span class="f_Hinweis_in_Tabelle">(Siehe Optionen: </span><span class="f__Software_Element_deskriptiv">Hinzuf&uuml;gen</span><span class="f_Hinweis_in_Tabelle">,</span><span class="f__Software_Element_deskriptiv"> externe Daten hinzuf&uuml;gen</span><span class="f_Hinweis_in_Tabelle">).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Listeneintrag an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrfachauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Listeneintr&auml;ge im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Listeneintr&auml;ge auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt und w&auml;hlen Sie die Listeneintr&auml;ge aus.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um alle Listeneintr&auml;ge auszuw&auml;hlen, dr&uuml;cken Sie die Tastenkombination </span><span class="f__Tastatur">Strg+A</span><span class="f_R_Tabellenzeile">.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_btstl_durchmesser" class="hmanchor"></a><img alt="B_Hinzufuegen" style="margin:0;width:0.9271in;height:0.2604in;border:none" src="b_hinzufuegen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hinzuf&uuml;gen eines Listeneintrags. &Ouml;ffnet den Eingabedialog f&uuml;r die aktuell gew&auml;hlte Liste.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Vorgabewerte entsprechen dem aktuell gew&auml;hlten Eintrag und k&ouml;nnen &uuml;berschrieben werden. Bei der Bezeichnung (Stabdurchmesser) d&uuml;rfen keine Leerzeichen verwendet werden! Geben Sie als Dezimaltrennzeichen „Punkt“ ein. Nach Best&auml;tigung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> wird der neue Eintrag in der Tabelle angezeigt. Bei der Auswahl eines Durchmessers, z. B. bei der Fl&auml;chenbewehrung, werden Ihnen die in der Tabelle angezeigten Durchmesser zur Auswahl angeboten.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die hinzugef&uuml;gten Eintr&auml;ge endg&uuml;ltig in die Konfigurationsdatei zu &uuml;bernehmen, muss der Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> best&auml;tigt werden. Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Abbruch</span><span class="f_R_Option_Beschreibung"> klicken, werden die hinzugef&uuml;gten Eintr&auml;ge nicht gespeichert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_beton_config" class="hmanchor"></a><img alt="B_externe-Daten-hinzufuegen" style="margin:0;width:2.5104in;height:0.2604in;border:none" src="b_externe-daten-hinzufuegen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernahme von Werten aus anderen Konfigurationsdateien (*.DAT). Dies beschr&auml;nkt sich auf folgende Listen: MATTEN.DAT, RUNDST.DAT, UKORB.DAT und GewindeStahl.DAT.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Sie k&ouml;nnen Ihre Mattenliste erweitern, indem Sie eine der folgenden Dateien einlesen: &nbsp;</span></p>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Matten_Austria.dat</span><span class="f_L_Einleitung">: Enth&auml;lt Standardmatten f&uuml;r &Ouml;sterreich wie A/AQ-Mattentypen.</span></p>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">MATTEN.DAT</span><span class="f_L_Einleitung">: Enth&auml;lt eine Auswahl hochduktiler Mattentypen wie Q188-B, R257-B und B335-B.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die Mattendateien befinden sich im ISBCAD-Installationsverzeichnis im Unterordner cfg: </span></p>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Einleitung">C:\Programme\GLASER Programmsysteme\-isb cad-\cfg</span></p>
+<p class="p_R_Tabellenzeile"><img alt="D_Oeffnen_Betonstahl" style="margin:0;width:6.1563in;height:3.3542in;border:none" src="d_oeffnen_betonstahl.png"/></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hervorhebung_Text">Beachten Sie</span><span class="f_Hinweis_in_Tabelle">: Die Daten in den Betonstahltabellen sind profilabh&auml;ngig. Sollen sie in mehreren Profilen zur Verf&uuml;gung stehen, m&uuml;ssen sie mit dem jeweiligen <a href="des_anwenderprofile.htm" class="topiclink" title="Profilmanager (Dialog)">aktiven Profil</a> eingelesen werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Daten hinzuf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Ouml;ffnen Sie die Konfigurationsdatei (*.DAT), aus der Sie einen oder mehrere Eintr&auml;ge &uuml;bernehmen wollen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog, welche Listenelemente zur aktuellen Liste hinzugef&uuml;gt werden sollen. Nutzen Sie hierf&uuml;r die Einzel- oder Mehrfachauswahl (s. oben).</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In der Tabelle werden nur die Listenelemente angezeigt, die noch nicht in der aktuellen Liste enthalten sind.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Daten-hinzufuegen" style="margin:0;width:8.0313in;height:2.9792in;border:none" src="d_daten-hinzufuegen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ausgew&auml;hlte Eintr&auml;ge hinzuf&uuml;gen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">F&uuml;gt den in der Liste gew&auml;hlten Eintrag zur aktuellen Liste hinzu.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um das Hinzuf&uuml;gen einzelner Listenelemente zu beenden, schlie&szlig;en Sie den Dialog, indem Sie das X oben rechts anklicken.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.5833in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Alle Eintr&auml;ge hinzuf&uuml;gen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">F&uuml;gt alle in der Liste angezeigten Eintr&auml;ge zur aktuellen Liste hinzu und schlie&szlig;t den Dialog.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen die &Auml;nderungen anschlie&szlig;end mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_hauptmenu_a.htm" class="topiclink" title="ISBCAD Hauptmenü">ISBCAD Hauptmen&uuml;</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

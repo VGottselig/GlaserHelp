@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahlgüte oder Umrandung ändern</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeform bearbeiten,Biegeform bearbeiten Formstahl,GütUmr,Positionsumrandung,Stahlgüte/Umrandung ändern" />
+   <meta name="description" content="Um Stäbe verschiedener Stahlsorten unterscheiden zu können oder Stäbe mit mechanischen Verbindungselementen erkennen zu können, ist es möglich, die unterschiedlichen Arten m" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_biform_bearbeiten.htm">Biegeform</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_biform_bilitx.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_biform_bearbeiten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_formst_oertbie.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlg&uuml;te oder Umrandung &auml;ndern</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_biform_bearbeiten.htm" class="topiclink" title="Biegeform (Funktionsübersicht)"><img alt="Biegeform (Funktionsübersicht)" title="Biegeform (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_biform.png"/></a> <img alt="B-akt_GuetUmr" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_guetumr.png"/> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Um St&auml;be verschiedener Stahlsorten unterscheiden zu k&ouml;nnen oder St&auml;be mit mechanischen Verbindungselementen erkennen zu k&ouml;nnen, ist es m&ouml;glich, die unterschiedlichen Arten mit verschiedenen Positionsumrandungen zu versehen. Die &Auml;nderungen werden am Auszugstext vorgenommen!</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In der Biegeliste, die ab ISBCAD 2022 zur Verf&uuml;gung steht, werden diese Biegeformen nach Stahlg&uuml;te sortiert und automatisch gesondert ausgegeben. Die Positionsumrandung wird in der Biegeliste nicht dargestellt.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info"><a href="rd_einste_stahl_biegeliste.htm" class="topiclink" title="Einstellungen Stahlliste (Biegeliste)">&raquo; Einstellungen Stahlliste (Biegeliste)</a></span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In den Stahllisteneinstellungen der alternativen Biegeliste k&ouml;nnen Sie angeben, ob in der Umrandung ge&auml;nderte Positionen in der Stahlliste kenntlich gemacht und gesondert ausgegeben werden sollen.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info"><a href="rd_stahlliste-grundwerte-biegeliste.htm#_posumr" class="topiclink" title="Grundwerte Biegeliste (Dialog)">&raquo; Grundwerte Biegeliste (Dialog)</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_Konfiguration" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_konfiguration.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Grundeinstellungen f&uuml;r die Positionsumrandung &auml;ndern. &Ouml;ffnet den Dialog <a href="_rd_standard-fuer-umrandung.xhtm" class="topiclink" title="Standard für Umrandung">Standard f&uuml;r Umrandung</a>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die Standardparameter f&uuml;r die Darstellung der Umrandung.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">, um die Einstellungen zu &uuml;bernehmen.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_Stahlguete" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_stahlguete.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Stahlg&uuml;te einer Position &auml;ndern.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn einzelne Bewehrungsst&auml;be in unterschiedlichen Stahlg&uuml;ten eingebaut werden sollen, geben Sie die Bezeichnung hier an. F&uuml;r jede Stahlg&uuml;te wird eine extra Stahlliste erzeugt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Auszugstext an. [</span><span class="f__Abfrage">Welcher Auszugstext</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen der Eintr&auml;ge in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">Stahlg&uuml;te</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls noch keine Liste vorhanden ist, geben Sie eine eigene Bezeichnung ein und best&auml;tigen Sie mit der Eingabetaste. Sonderzeichen und Schr&auml;gstriche sind nicht erlaubt. Der Eintrag wird in Ihrem Anwenderprofil gespeichert.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><img alt="B_Umrandung" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_umrandung.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Einzelne Umrandung &auml;ndern.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie die Stahlg&uuml;te ge&auml;ndert haben oder Bewehrungsformen aus einem anderen Grund von den normalen Stabstahlpositionen (Kreis) unterscheiden m&ouml;chten, stehen Ihnen zehn Symbole zur Verf&uuml;gung. Wenn Sie das Symbol am Stahlauszug ge&auml;ndert haben, werden automatisch die Symbole an den Verlegungen angepasst.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Auszugstext an. [</span><span class="f__Abfrage">Welcher Auszugstext</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie das gew&uuml;nschte Symbol in der Liste an. [</span><span class="f__Abfrage">Umrandungssymbol</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:1.1354in; padding:0.0208in;" scope="col"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Symbol</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.2292in; padding:0.0208in;" scope="col"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Bezeichnung</span></p>
+</th>
+<th class="Reference_Clean" style="width:0.7813in; padding:0.0208in;" scope="col"><br>
+</th>
+<th class="Reference_Clean" style="width:1.4792in; padding:0.0208in;" scope="col"><br>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.1354in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_kreis_umr" style="margin:0 auto 0 auto;width:0.3542in;height:0.3542in;border:none" src="scr_kreis_umr.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.2292in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Kreis</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:0.7813in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_4l-eck" style="margin:0 auto 0 auto;width:0.3438in;height:0.3438in;border:none" src="scr_4l-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.4792in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4l-Eck</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.1354in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_oval_umr" style="margin:0 auto 0 auto;width:0.4375in;height:0.1979in;border:none" src="scr_oval_umr.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.2292in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Oval</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:0.7813in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_6s-eck" style="margin:0 auto 0 auto;width:0.3438in;height:0.3958in;border:none" src="scr_6s-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.4792in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">6s-Eck</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.1354in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_3s-eck" style="margin:0 auto 0 auto;width:0.5938in;height:0.5208in;border:none" src="scr_3s-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.2292in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3l-Eck</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:0.7813in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_6l-eck" style="margin:0 auto 0 auto;width:0.3958in;height:0.3438in;border:none" src="scr_6l-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.4792in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">6l-Eck</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.1354in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_3l-eck" style="margin:0 auto 0 auto;width:0.5938in;height:0.5104in;border:none" src="scr_3l-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.2292in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3s-Eck</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:0.7813in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_8s-eck" style="margin:0 auto 0 auto;width:0.3750in;height:0.3750in;border:none" src="scr_8s-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.4792in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">8s-Eck</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="vertical-align:middle; width:1.1354in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_4s-eck" style="margin:0 auto 0 auto;width:0.4792in;height:0.4792in;border:none" src="scr_4s-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.2292in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4s-Eck</span></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:0.7813in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_8l-eck" style="margin:0 auto 0 auto;width:0.3438in;height:0.3438in;border:none" src="scr_8l-eck.png"/></p>
+</td>
+<td class="Reference_Clean" style="vertical-align:middle; width:1.4792in; padding:0.0208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">8l-Eck</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Das Symbol wird ge&auml;ndert.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Positionsumrandung" style="margin:0;width:4.1667in;height:1.8229in;border:none" src="z_positionsumrandung.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="_rd_standard-fuer-umrandung.xhtm" class="topiclink" title="Standard für Umrandung (Dialog)">Standard f&uuml;r Umrandung (Dialog)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_biform_bearbeiten.htm" class="topiclink" title="Biegeformen erstellen und bearbeiten">Biegeform (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

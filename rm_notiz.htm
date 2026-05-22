@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Notiz</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Notiz,Notiz ändern,Notiz ein- und ausblenden,Notiz erzeugen,Notiz Farbe ändern,Notiz löschen,Notiz verschieben,Zeichnung,Zeichnung kommentieren" />
+   <meta name="description" content="Alternativ: Mittlere Maustaste auf Notiz-Icon. &nbsp;Mit dieser Funktion können Sie Notizen in die Zeichnung einfügen. Verwendung Mit der Notizfunktion in ISBCAD können Sie inner" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst1_zeichnungsprotokoll.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="optionen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="option_einstellungen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Notiz</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_Notiz" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_notiz.png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativ: Mittlere Maustaste auf Notiz-Icon.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mit dieser Funktion k&ouml;nnen Sie Notizen in die Zeichnung einf&uuml;gen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verwendung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der Notizfunktion in ISBCAD k&ouml;nnen Sie innerhalb einer Zeichnung Informationen hinterlegen. So lassen sich beispielsweise Feedback zu Teilzeichnungen geben, bestimmte Bereiche hervorheben oder k&uuml;rzlich ge&auml;nderte Stellen kennzeichnen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Notizen stehen allen Bearbeitern der Zeichnung zur Verf&uuml;gung und k&ouml;nnen jederzeit bearbeitet oder erg&auml;nzt werden. Zu jedem Notizeintrag werden relevante Informationen wie Datum, Uhrzeit und Benutzername gespeichert. Dadurch ist der vollst&auml;ndige &Auml;nderungsverlauf eines Eintrags jederzeit nachvollziehbar.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Ist ISBCAD auf Ihrem Rechner nicht installiert, k&ouml;nnen Sie Notizen in einer AKT-Zeichnung auch mit dem Programm </span><span class="f_R_Dialog_Info"><a href="top_der-isbcad-viewer.htm" class="topiclink" title="ISBVIEW">ISBVIEW</a></span><span class="f_A_Allgemein"> anzeigen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><img alt="SCR_Notiz_neu_2017" style="margin:0;width:3.3438in;height:2.3854in;border:none" src="scr_notiz_neu_2017.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Bearbeitung von Notizen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Notizen k&ouml;nnen im Wesentlichen nur mit den Funktionen im Notizprogramm bearbeitet werden. Daher k&ouml;nnen Notizen u. a. nicht:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">ausgedruckt, geplottet oder in einer PDF-Datei ausgegeben werden,</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">in die Zwischenablage kopiert oder ausgelagert werden,</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">im DWG-, DXF- oder PDF-Format exportiert werden</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">oder anderweitig bearbeitet werden.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Ausgenommen sind die Funktionen [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_A_Allgemein">] und [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Drehen</span><span class="f_A_Allgemein">/</span><span class="f__Software_Element_deskriptiv">Spiege</span><span class="f_A_Allgemein">]. Mit diesen Funktionen k&ouml;nnen eingeblendete Notiz-Icons zusammen mit den zugeh&ouml;rigen Zeichenelementen selektiert und neu positioniert werden. Notizen lassen sich nur &uuml;ber die Auswahl mit Rahmen ausw&auml;hlen und k&ouml;nnen nicht einzeln selektiert werden. Wenn Notizen nicht selektiert werden sollen, blenden Sie diese mit [</span><span class="f__Software_Element_deskriptiv">AllAus</span><span class="f_A_Allgemein">] aus.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="rm_notiz.htm#notizerzeugen" class="topiclink"><img alt="B-akt_Neu-Notiz" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_neu-notiz.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Erzeugt eine neue Notiz.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Allan" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_allan.png"/><img alt="B_AllAus" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_allaus.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">AllAn</span><span class="f_R_Tabellenzeile_Menue">: Blendet alle Notiz-Icons ein.</span><br>
+<span class="f__Software_Element_deskriptiv">AllAus</span><span class="f_R_Tabellenzeile_Menue">: Blendet alle Notizen (Icons + Notiz-Fenster) aus.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Notiz" style="margin:0;width:2.3229in;height:0.4792in;border:none" src="p_notiz.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl der Farbe f&uuml;r die Notiz.</span><br>
+<span class="f_R_Tabellenzeile_Menue">Die Farbe der Notiz wird mit der Zeichnung gespeichert.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizerzeugen" class="hmanchor"></a><span class="f_ToDo">Notiz erzeugen</span></p>
+<p class="p_Step"><img alt="B-akt_Neu-Notiz" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_neu-notiz.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um eine Notiz zu erzeugen, klicken Sie einen beliebigen Punkt auf der Zeichenfl&auml;che an. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Das Notiz-Fenster wird eingeblendet und die Notiz-Nummer wird automatisch hochgez&auml;hlt. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schreiben oder kopieren Sie Text mit beliebigen Zeichen in das Eingabefeld.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit der Eingabetaste f&uuml;gen Sie einen Zeilenumbruch ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Notiz zu erstellen, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Erstellen</span><span class="f_Step">.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Notiz &auml;ndern oder erg&auml;nzen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie einen Notiz-Eintrag bearbeiten m&ouml;chten, klicken Sie den entsprechenden Eintrag an. Das Eingabefeld wird eingeblendet und Sie k&ouml;nnen den Eintrag bearbeiten. Um die &Auml;nderung zu &uuml;bernehmen, klicken Sie abschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Erstellen</span><span class="f_Task_Info">.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Texte &uuml;ber das Kontextmen&uuml; oder Tastenkombinationen bearbeiten</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen Texte &uuml;ber das Kontextmen&uuml; oder &uuml;ber Tastenkombinationen in eine Notiz hineinkopieren, aus dieser ausschneiden oder aus anderen Quellen einf&uuml;gen. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><h5 class="p_Heading5"><span class="f_Heading5">Tastenkombinationen nutzen</span></h5>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle_Kopfzeile">Strg+X</span><span class="f_A_Allgemein"> - Text ausschneiden</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle_Kopfzeile">Strg+C</span><span class="f_A_Allgemein"> - Text kopieren</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle_Kopfzeile">Strg+V</span><span class="f_A_Allgemein"> - Text einf&uuml;gen</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Solange das Eingabefeld der Notiz den Fokus hat, k&ouml;nnen Sie die Tastenkombinationen in ISBCAD unabh&auml;ngig von den in den Systemdaten eingestellten Hotkeys verwenden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><h5 class="p_Heading5"><span class="f_Heading5">Kontextmen&uuml; aufrufen</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Das Kontextmen&uuml; rufen Sie mit einem Rechtsklick im Eingabefeld auf. Wenn Sie einen Text markieren und das Kontextmen&uuml; &ouml;ffnen, stehen Ihnen alle Funktionen zur Verf&uuml;gung, ansonsten ist nur die Einf&uuml;ge-Funktion verf&uuml;gbar.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Notiz_Texte" style="margin:0;width:4.5729in;height:1.3438in;border:none" src="scr_notiz_texte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizversch" class="hmanchor"></a><span class="f_ToDo">Notiz verschieben</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie mit dem Cursor &uuml;ber das Notiz-Icon, das Notiz-Fenster oder die Notiz-Zeigerlinie fahren, &auml;ndert sich die Form des Cursors. Ziehen Sie mit gedr&uuml;ckter linker Maustaste das Notiz-Icon oder das Notiz-Fenster an eine andere Stelle. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.7604in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Notiz_Icon-verschieben" style="margin:0;width:0.7188in;height:0.5104in;border:none" src="scr_notiz_icon-verschieben.png"/></p>
+</td>
+<td style="vertical-align:top; width:13.6146in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um die Zeigerlinie des Notiz-Icons auszurichten: </span><br>
+<span class="f_R_Tabellenzeile">Fahren Sie mit dem Cursor &uuml;ber das Ende der Linie (s. Abbildung) und ziehen Sie mit gedr&uuml;ckter linker Maustaste die Zeigerlinie um das Icon.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Bei einem zu gro&szlig;en Zoomausschnitt wird die Zeigerlinie nicht mehr gefangen. Zoomen Sie in diesem Fall n&auml;her an das Notiz-Icon heran.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie das Notiz-Fenster &uuml;ber den Bildschirmrand geschoben und ausgeblendet haben, wird dieses bei erneutem &Ouml;ffnen wieder neben dem Notiz-Icon platziert. &nbsp;</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizeinaus" class="hmanchor"></a><span class="f_ToDo">Notiz ein- oder ausblenden</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Fahren Sie mit dem Cursor &uuml;ber ein Notiz-Icon und klicken Sie dieses an. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn das Notiz-Fenster sichtbar ist, wird es ausgeblendet oder eingeblendet, wenn zuvor nur das Notiz-Icon sichtbar war.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Um alle Notizen, die sich auf der Zeichnung befinden, ein- oder auszublenden, nutzen Sie die Funktionen im Funktionsbereich.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.2292in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_Allan" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_allan.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.1146in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">- Blendet alle Notiz-Icons ein.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.2292in; padding:0; border:none"><p class="p_ImageCaption"><img alt="B_AllAus" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_allaus.png"/></p>
+</td>
+<td style="vertical-align:top; width:9.1146in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">- Blendet alle Notizen (Icons + Notiz-Fenster) aus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizquick" class="hmanchor"></a><span class="f_ToDo">Quickinfo anzeigen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn das Eingabefenster geschlossen ist und Sie mit der Maus &uuml;ber einem Notiz-Icon verharren, wird eine Quickinfo eingeblendet. In dieser wird der Benutzername der Person angezeigt, die die Notiz erstellt hat sowie der erste Eintrag und die Gesamtzahl der Antworten bzw. Kommentare.</span></p>
+<p class="p_R_Dialog_Info" style="margin: 0.0313in 0 0.0833in 0.2813in;"><img alt="SCR_Notiz_Tooltip" style="margin:0;width:2.6354in;height:1.6771in;border:none" src="scr_notiz_tooltip.png"/></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizfarbe" class="hmanchor"></a><span class="f_ToDo">Farbschema &auml;ndern</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Im Funktionsbereich k&ouml;nnen Sie eine Farbe f&uuml;r neue Notizen ausw&auml;hlen. Klicken Sie mit der linken Maustaste auf das Auswahlfeld und anschlie&szlig;end die gew&uuml;nschte Farbe an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2917in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:2.5208in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Notiz-Farbauswahl" style="margin:0;width:2.3333in;height:2.0417in;border:none" src="scr_notiz-farbauswahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Farbe des Notiz-Fensters &auml;ndern</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen jeder einzelnen Notiz nach dem Erzeugen eine andere Farbe zuweisen. Um die Farbauswahl zu &ouml;ffnen, klicken Sie auf die 3-Punkte-Schaltfl&auml;che <img alt="SCR_Notiz-Farbauswahl_Punkte" style="margin:0;width:0.2917in;height:0.1979in;border:none" src="scr_notiz-farbauswahl_punkte.png"/> im unteren Bereich des Notiz-Fensters und w&auml;hlen Sie eine andere Farbe aus.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:2.5208in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Notiz-Farbauswahl_Fenster" style="margin:0;width:3.4167in;height:0.7292in;border:none" src="scr_notiz-farbauswahl_fenster.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="notizloesch" class="hmanchor"></a><span class="f_ToDo">Notiz l&ouml;schen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Beachten Sie: Die Notiz wird ohne R&uuml;ckfrage komplett mit allen eingetragenen Anmerkungen aus der Zeichnung entfernt. Das Wiederherstellen der Notiz mit einer Korrekturfunktion ist nicht m&ouml;glich.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie eine Notiz versehentlich gel&ouml;scht haben, k&ouml;nnen Sie versuchen, einen vorherigen Speicherstand zu laden. Siehe: <a href="des_isbsich.htm" class="topiclink">Sicherungdateien</a>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Notiz zu l&ouml;schen, klicken Sie im Notiz-Fenster auf <img alt="I_Notiz-löschen" style="margin:0;width:0.2396in;height:0.2708in;border:none" src="hmfile_hash_cb8de326.png"/>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Notiz wird ohne R&uuml;ckfrage aus der Zeichnung entfernt.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

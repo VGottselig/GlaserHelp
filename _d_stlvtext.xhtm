@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahllisten Vorlage für die Texte (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Optionen im Dialog &quot;Stahllisten Vorlage für die Texte&quot;" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__D_StlVText"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a> &gt; <a href="tsk_stahlliste_vorlage-erzeuge.htm">Stahllistenvorlage erzeugen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="_d_stlvrahmen.xhtm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="tsk_stahlliste_vorlage-erzeuge.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_stahlliste_stzahl-kontroll.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Stahllisten Vorlage f&uuml;r die Texte (Dialog)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Optionen im Dialog &quot;Stahllisten Vorlage f&uuml;r die Texte&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.8646in;"><p class="p_ImageCaption"><img alt="D_Stahllisten-Vorlage-fuer-Texte" style="margin:0;width:4.7708in;height:3.7083in;border:none" src="d_stahllisten-vorlage-fuer-texte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Definition der Textvariablen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie Textvariablen in die Vorlage &uuml;bernehmen, werden diese Inhalte aus verschiedenen Quellen verwendet:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus den Systemdaten: B&uuml;roname, B&uuml;robezeichnung usw. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Anschrift-Schriftfeld</span><span class="f_L_Listeneintrag">].</span><br>
+<span class="f_L_Listeneintrag"><a href="rd_systemdaten_anschrift-schriftfeld.htm" class="topiclink">Systemdaten - Anschrift-Schriftfeld</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus dem Dialog </span><span class="f__Software_Element_deskriptiv">Anschriften</span><span class="f_L_Listeneintrag">: Falls im Unterdialog [</span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Anschriften</span><span class="f_L_Listeneintrag">] mehrere Anschriften angelegt wurden, wird die markierte Anschrift f&uuml;r die Ausgabe verwendet.</span><br>
+<span class="f_L_Listeneintrag"><a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus der Planbeschreibung: Projekt, Bauwerk usw. [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">PlanBe</span><span class="f_L_Listeneintrag">].</span><br>
+<span class="f_L_Listeneintrag"><a href="konst3_planbe.htm" class="topiclink">Planbeschreibung</a></span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Liste der variablen Texte</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In der Liste w&auml;hlen Sie aus, welche Texte anhand der vorgenommenen Angaben generiert werden sollen, z. B. Texte aus der Planbeschreibung. Sie k&ouml;nnen die Texte durch Anklicken ausw&auml;hlen. Wenn Sie die B&uuml;rodaten als feste Texte in die Vorlage eintragen m&ouml;chten, &uuml;berspringen Sie die entsprechenden Angaben.</span></p>
+<h5 class="p_Heading5"><a name="_stllis_textvariablen" class="hmanchor"></a><span class="f_Heading5">Textvariablen</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.3958in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.0938in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!1.0!B&uuml;roname</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!2.0!B&uuml;robezeichnung</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!3.0!Stra&szlig;e</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!4.0!PLZ/Ort</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!5.0!Telefon</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!6.0!Fax</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!7.0!email</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!8.0!Webseite</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!9.0!Projekt</span></p></td>
+<td style="vertical-align:top; width:3.0729in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!10.0!Bauwerk</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!11.0!Bauteil</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!12.0!Plannr.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!13.0!Datum</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!14.0!&Uuml;berschrift (nicht &auml;nderbar)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!15.0!Kommentar (nicht &auml;nderbar)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!16.0!Seiteoben (nicht &auml;nderbar)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!17.0!Seiteunten (nicht &auml;nderbar)</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">!18.0!Dateiname</span></p></td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Diese Textvariablen k&ouml;nnen nicht ver&auml;ndert werden:</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">&Uuml;berschrift</span><span class="f_L_Listeneintrag">: wird je nach Art der Liste automatisch erstellt: Rundstahl-St&uuml;ckliste, Gewindestahl-St&uuml;ckliste, Biegeliste, Schneideskizze etc.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Kommentar</span><span class="f_L_Listeneintrag">: (Alle Angaben gerundet!)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Seite oben</span><span class="f_L_Listeneintrag">: aktuelle Seite</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Seite unten</span><span class="f_L_Listeneintrag">: Fortsetzung Seite x</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Attribute</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname, Textgr&ouml;&szlig;e, Breitenfaktor, Stiftnummer:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie jeweils f&uuml;r den links markierten Text das gew&uuml;nschte Attribut.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie bitte, dass die Textvariablen nicht die gleiche L&auml;nge wie der tats&auml;chlich im Ausdruck verwendete Text haben. Z. B. B&uuml;roname: GLASER Programmsysteme GmbH. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Stiftnummer ist nur dann von Bedeutung, wenn der Ausdruck farbig erfolgen soll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Einf&uuml;gepunkt</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Alle variablen Texte k&ouml;nnen &uuml;ber einen von neun Einf&uuml;gepunkten auf dem Formular platziert werden. Z. B. werden „Projekt“, „Bauwerk“ und „Bauteil“ linksb&uuml;ndig geschrieben, die „Plannr“ oder „Datum“ von rechts nach links geschrieben am Rand abgesetzt. Dann ragen sie nicht &uuml;ber den Rand hinaus. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="clip0181" style="margin:0;width:5.3333in;height:1.0000in;border:none" src="clip0181.png"/></p>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif;">Nummern der Einf&uuml;gepunkte.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mit Beschreibung:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei den Texten f&uuml;r „Projekt“ … „Datum“ k&ouml;nnen Sie w&auml;hlen, ob vor der Variablen die Beschreibung gesetzt werden soll oder nicht. Z. B. wird beim Datum mit Beschreibung folgender Text vom Programm in die Stahlliste geschrieben: „Datum: &nbsp;1.1.2007“, ohne Beschreibung nur: „1.1.2007“.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der markierte Text h&auml;ngt am Cursor und kann mit Linksklick an beliebiger Stelle abgelegt werden. Wenn der Text an die Position der Zeichenmarke gesetzt werden soll, dr&uuml;cken Sie die rechte Maustaste. Beachten Sie die Lage des Einf&uuml;gepunktes.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Programm geht zum n&auml;chsten Variablentext weiter. F&uuml;hren Sie diese Aktion f&uuml;r die Texte aus, die Sie auf der Stahlliste angeben wollen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Fertig" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_fertig.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beendet die Eingaben f&uuml;r eine Seite.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p style="line-height: 1.20; margin: 0.1042in 0 0 0.2917in;"><img alt="clip0182" style="margin:0;width:11.2604in;height:3.0729in;border:none" src="clip0182.png"/></p>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.1042in 0 0 0.3333in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.1042in 0 0 0;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:5.8333in;"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="clip0183" style="margin:0;width:5.5833in;height:2.7917in;border:none" src="clip0183.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.5417in;"><p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0;"><span class="f_R_Bereich_Info_Rahmen">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:10.6979in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Die Textvariablen setzen sich aus folgenden Komponenten zusammen:</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">!12.2!Plannr</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Variabler Text ohne Beschreibung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">! &nbsp; &nbsp; &nbsp;!</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zwischen den Ausrufezeichen steht die Nummer der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">12.2</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Position der Variable in der Dialogliste mit Einf&uuml;gepunkt. Hier: „PlanNr“, 2 = unten rechts.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">PlanNr.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Name der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Plannummer wird von rechts nach links geschrieben. Da sie im Normalfall aus wenigen Zeichen besteht, ragt sie nicht in den festen Text „Seite:“ hinein, der in einer kleineren Schriftgr&ouml;&szlig;e geschrieben ist.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:11.2292in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">!16.0!Seiteoben</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">! &nbsp; &nbsp; &nbsp;!</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zwischen den Ausrufezeichen steht die Nummer der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">16.0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Position der Variable in der Dialogliste mit Einf&uuml;gepunkt. Hier: „Seiteoben“, 0 = unten links.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Seiteoben</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Name der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Variablentext besteht aus mehr Zeichen als die eigentliche Seitenzahl, und ragt deshalb &uuml;ber den Rahmen hinaus.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:11.2292in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">!13.8:!Datum</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">! &nbsp; &nbsp; &nbsp;!</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zwischen den Ausrufezeichen steht die Nummer der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">13.8</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Position der Variable in der Dialogliste mit Einf&uuml;gepunkt. Hier: „Datum“, 8 = oben rechts.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">:</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Beschreibung wird mit der Variablen ausgegeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1146in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Datum</span></p>
+</td>
+<td class="Optionen_Palette" style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Name der Variablen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:11.2292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Beschreibung &quot;Datum:&quot; wird mit denselben Einstellungen wie die Variable geschrieben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stahlliste_vorlage-erzeuge.htm" class="topiclink" title="Stahllistenvorlage erzeugen">Stahllistenvorlage erzeugen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

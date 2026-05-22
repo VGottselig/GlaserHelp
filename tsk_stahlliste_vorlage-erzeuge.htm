@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahllistenvorlage erzeugen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Stahllistenvorlage,Stahllistenvorlage erzeugen,Vorlage für Stahlliste erzeugen" />
+   <meta name="description" content="Gestalten von Vorlagen für die Ausgabe der Stahlliste. Öffnet den Dialog Stahllisten Vorlage für den Rahmen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_stahlliste-direkt-ausgeben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_stahlliste.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="_d_stlvrahmen.xhtm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahllistenvorlage erzeugen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_stahlliste.htm" class="topiclink" title="Stahlliste (Funktionsübersicht)"><img alt="Stahlliste (Funktionsübersicht)" title="Stahlliste (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stllis.png"/></a> <img alt="B-akt_Vorlage" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_vorlage.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Gestalten von Vorlagen f&uuml;r die Ausgabe der Stahlliste. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Stahllisten Vorlage f&uuml;r den Rahmen</span><span class="f_Task_Info">.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Vorbemerkungen</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Jede Listenart (z.&#8239;B. Rundstahl-St&uuml;ckliste oder Biegeliste) beginnt mit einer Startseite (Erste Seite). F&uuml;r die Fortsetzung k&ouml;nnen optional Folgeseiten generiert werden. Ist kein Layout f&uuml;r Folgeseiten definiert, wird jede Seite im Layout der Startseite ausgegeben. Die Darstellung der Startseite und der Folgeseiten wird innerhalb derselben AKT-Zeichnung festgelegt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die AKT-Vorlage wird im Unterdialog </span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_L_Listeneintrag"> im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Dateiname f&uuml;r Schablone</span><span class="f_L_Listeneintrag"> ausgew&auml;hlt. Im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_L_Listeneintrag"> k&ouml;nnen Sie festlegen, welche Seiten und Textvariablen ausgegeben werden sollen. Siehe: <a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a>.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen die erstellte Vorlage &ouml;ffnen und weiterbearbeiten, um individuelle Texte, Grafiken und Linien etc. hinzuzuf&uuml;gen. Mit [Konst 1 | Texte | zeichn] k&ouml;nnen Sie Textvariablen nachtr&auml;glich &auml;ndern oder einf&uuml;gen, indem Sie die <a href="_d_stlvtext.xhtm#_stllis_textvariablen" class="topiclink">Syntax</a> einhalten. Wenn Sie den Listenbereich nachtr&auml;glich vergr&ouml;&szlig;ern oder verkleinern m&ouml;chten, dann nutzen Sie die Funktion [Konst 1 | Dehnen].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipps:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Im ISBCAD <a href="rd_services.htm#konfigdateien" class="topiclink" title="Services (Dialog)">Konfigurationsordner (Config)</a> befindet sich die AKT-Datei </span><span class="f__Eigenname">Template_STL.AKT</span><span class="f_Hinweis_in_Tabelle">, die standardm&auml;&szlig;ig als Vorlage f&uuml;r die Ausgabe der Stahlliste verwendet wird. Diese AKT-Datei kann als Ausgangspunkt f&uuml;r eigene Vorlagen dienen: Bearbeiten Sie die Datei nach Ihren Anforderungen und speichern Sie die angepasste Vorlage unter einem neuen Dateinamen an einem geeigneten Speicherort.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Drucken Sie die Stahlliste nach der Vorlagenerstellung zur Probe mit einer ausreichend gro&szlig;en Anzahl an Stabstahl- und Mattenpositionen aus. So erkennen Sie, ob &Auml;nderungen an der Lage der Texte, an Breitenfaktoren oder anderen Parametern f&uuml;r die endg&uuml;ltige Gestaltung vorgenommen werden m&uuml;ssen.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Seitenformat w&auml;hlen und Listenbereich anpassen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie im Dialog die Abmessungen f&uuml;r die erste Seite der Stahllistenvorlage (H&ouml;he, Breite) in Zentimetern an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Achten Sie darauf, dass unter </span><span class="f__Software_Element_deskriptiv">Seitentyp</span><span class="f_Step_Anmerkung"> die richtige Option gew&auml;hlt ist - Erste Seite. Das Layout f&uuml;r Folgeseiten k&ouml;nnen Sie im Anschluss definieren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.8646in;"><p class="p_ImageCaption"><img alt="D_Stahllisten-Vorlage-fuer-Rahmen" style="margin:0;width:4.7708in;height:3.7708in;border:none" src="d_stahllisten-vorlage-fuer-rahmen.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="_d_stlvrahmen.xhtm" class="topiclink" title="Dialogbeschreibung">&raquo; Stahllisten Vorlage f&uuml;r den Rahmen (Dialog)</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Definieren Sie die Randabst&auml;nde der Seite und schlie&szlig;en Sie mit </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_Step"> ab.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog wird geschlossen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie die Vorlage auf der Zeichnung mit einem Linksklick ab. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Stahllisten Vorlage f&uuml;r die Texte</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Textvariablen hinzuf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie einzelne Textvariablen und klicken Sie jeweils auf </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_Step">, um die Variablen abzulegen. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Diese Texte werden automatisch mit den entsprechenden Angaben generiert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.9479in;"><p class="p_ImageCaption"><img alt="D_Stahllisten-Vorlage-fuer-Texte" style="margin:0;width:4.7708in;height:3.7083in;border:none" src="d_stahllisten-vorlage-fuer-texte.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile"><a href="_d_stlvtext.xhtm" class="topiclink" title="Dialogbeschreibung">&raquo; Stahllisten Vorlage f&uuml;r die Texte (Dialog)</a></span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:7.3750in;"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Was sind Textvariablen?</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Textvariablen sind Platzhalter, die bei der Ausgabe der Stahlliste mit Echtdaten gef&uuml;llt werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beispiel: Der Textvariable &quot;Datum&quot; ist der Text &quot;12.10.2024&quot; zugeordnet. Wenn Sie die Textvariable &quot;Datum&quot; in der Vorlage platzieren, wird die Textvariable bei der Ausgabe durch &quot;12.10.2024&quot; ersetzt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um Seiten fortlaufend zu nummerieren, nutzen Sie die Textvariable &quot;Seiteoben&quot;. Mit &quot;Seiteunten&quot; wird Listen, die sich &uuml;ber mehrere Seiten erstrecken, ein Vermerk angeschrieben, dass weitere Seiten folgen &quot;</span><span class="f_L_Listeneintrag">Fortsetzung Seite x&quot;.</span></p>
+<h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Definition der Textvariablen</span></h5>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Wenn Sie Textvariablen &uuml;bernehmen, werden bei der Ausf&uuml;hrung die Inhalte aus verschiedenen Quellen verwendet:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus den Systemdaten: B&uuml;roname, B&uuml;robezeichnung usw. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Anschrift-Schriftfeld</span><span class="f_L_Listeneintrag">].</span><br>
+<span class="f_L_Listeneintrag"><a href="rd_systemdaten_anschrift-schriftfeld.htm" class="topiclink">Systemdaten - Anschrift-Schriftfeld</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus dem Dialog </span><span class="f__Software_Element_deskriptiv">Anschriften</span><span class="f_L_Listeneintrag">: Falls im Unterdialog [</span><span class="f__Software_Element_deskriptiv">Grundwerte Allgemein</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Anschriften</span><span class="f_L_Listeneintrag">] mehrere Anschriften angelegt wurden, wird die markierte Anschrift f&uuml;r die Ausgabe verwendet.</span><br>
+<span class="f_L_Listeneintrag"><a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a></span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Aus der Planbeschreibung: Projekt, Bauwerk, Datum usw. [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">PlanBe</span><span class="f_L_Listeneintrag">].</span><br>
+<span class="f_L_Listeneintrag"><a href="konst3_planbe.htm" class="topiclink">Planbeschreibung</a></span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Aktion abzuschlie&szlig;en, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Fertig</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Speichern Sie die Vorlage unter Angabe eines Dateinamens. Am besten in einem gesonderten Ordner f&uuml;r Stahllisten. [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_Step">].</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um ein Layout f&uuml;r Folgeseiten zu erstellen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Soll nach der ersten Seite die Folgeseite mit einem anderen Layout generiert werden, klicken Sie erneut auf die Schaltfl&auml;che [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">StlLis</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">Vorlage</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Software_Element_deskriptiv">Seitentyp</span><span class="f_Step"> die Option </span><span class="f__Software_Element_deskriptiv">Folgeseiten</span><span class="f_Step">, um auch diese in derselben Vorlagendatei zu gestalten.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Gehen Sie wie bei der Erstellung der ersten Seite vor. Siehe oben &quot;Schritt 1&quot;.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In einer AKT-Vorlage d&uuml;rfen </span><span class="f_Hervorhebung_Text">maximal zwei Layouts</span><span class="f_Step_Anmerkung"> definiert sein (Erste Seite und Folgeseite)!</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:1.9896in;"><p class="p_ImageCaption"><img alt="SCR_StlLis_Vorlage_def" style="margin:0;width:1.9167in;height:2.6875in;border:none" src="scr_stllis_vorlage_def.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:1.9479in;"><p class="p_ImageCaption"><img alt="SCR_StlLis_Vorlage_def_F" style="margin:0;width:1.9167in;height:2.6875in;border:none" src="scr_stllis_vorlage_def_f.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:1.9896in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Layout: Erste Seite</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:1.9479in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Layout: Folgeseite</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="width:60%;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Individuell gestaltete Vorlage &quot;Erste Seite&quot;:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_StlLis_Vorlage_stl" style="margin:0;width:5.7292in;height:6.8333in;border:none" src="scr_stllis_vorlage_stl.png"/></p>
+</td>
+<td class="B_Bild_Tabelle"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">PDF-Ausgabe:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_StlLis_Vorlage_pdf" style="margin:0;width:4.8229in;height:6.8021in;border:none" src="scr_stllis_vorlage_pdf.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p__Bild_Legende_normal"><img alt="A" style="float:left;margin:0;width:0.2188in;height:0.2188in;border:none" src="a.png"/><span class="f__Bild_Legende_normal"> &nbsp;Textvariablen</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p__Bild_Legende_normal"><img alt="B" style="float:left;margin:0;width:0.2188in;height:0.2188in;border:none" src="b.png"/><span class="f__Bild_Legende_normal"> &nbsp;freie Texte mit [Konst 1 | Texte | zeichn] eingef&uuml;gt</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p__Bild_Legende_normal"><img alt="C" style="float:left;margin:0;width:0.2188in;height:0.2188in;border:none" src="c.png"/><span class="f__Bild_Legende_normal"> &nbsp;Grafiken eingef&uuml;gt</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p__Bild_Legende_normal"><img alt="D" style="float:left;margin:0;width:0.2188in;height:0.2188in;border:none" src="d.png"/><span class="f__Bild_Legende_normal"> &nbsp;Rahmen f&uuml;r Stahlliste</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p__Bild_Legende_normal"><img alt="E" style="float:left;margin:0;width:0.2188in;height:0.2188in;border:none" src="e.png"/><span class="f__Bild_Legende_normal"> &nbsp;Listenbereich</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="vertical-align:middle;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Ausgabe der Stahllistenvorlage konfigurieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-allgemein.htm#_stltemplatefile" class="topiclink" title="Stahllistenvorlage auswählen">Stahllistenvorlage ausw&auml;hlen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-allgemein.htm#_stlprofanl" class="topiclink" title="Ausgabeprofil erstellen">Ausgabeprofil erstellen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stahllisten-erzeugen-und_ausgeben.htm" class="topiclink" title="Stahllisten erzeugen">Stahllisten erzeugen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stahlliste.htm" class="topiclink" title="Stahlliste - Dialogbeschreibung">Stahlliste (Referenz)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Definierte Querschnitt-Bewehrungen - Detail</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bewehrungsdetails,Bewehrungsdetails Details im Querschnitt bewehren,Detail,Detail Details im Querschnitt bewehren,Querschnitt-Darstellungen - Detail" />
+   <meta name="description" content="Vordefinierte Querschnitt-Konstruktionen für automatisierte Bewehrung (Streifenfundamente, U-Schalen, Wandanschlüsse etc.). Öffnet den Dialog Querschnitt zur Auswahl einer Qu" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_bewehrungsdetails.htm">Detail</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_runde_dbr.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_bewehrungsdetails.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_querschnittseingabe_(allgemein).htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">..Mehr (Definierte Querschnitt-Bewehrungen)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_bewehrungsdetails.htm" class="topiclink" title="Bewehren von Standardkonstruktionen (Detail)"><img alt="Bewehren von Standardkonstruktionen (Detail)" title="Bewehren von Standardkonstruktionen (Detail)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_detail.png"/></a></span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="B-akt_Mehr" style="margin:0;width:2.3438in;height:0.2500in;border:none" src="b-akt_mehr.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Vordefinierte Querschnitt-Konstruktionen f&uuml;r automatisierte Bewehrung (Streifenfundamente, U-Schalen, Wandanschl&uuml;sse etc.). &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Querschnitt</span><span class="f_R_Dialog_Info"> zur Auswahl einer Querschnittsdarstellung.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verwendung</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Automatische Erzeugung kompletter Detaildarstellungen (Konstruktion und/oder Bewehrung).</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Automatische Bewehrung vorhandener Querschnitt-Konstruktionen. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Comment"><span class="f_Comment">Betr&auml;gt die Bauteiltiefe weniger als die max. Stabl&auml;nge, wird ein entsprechender Eisenauszug gezeichnet. Wird die max. Stabl&auml;nge &uuml;berschritten, wird die L&auml;ngsbewehrung als lfdm unter Ber&uuml;cksichtigung der &Uuml;bergreifungsl&auml;ngen erzeugt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Vorgehensweise</span></h5>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Nach Auswahl der gew&uuml;nschten Querschnitt-Konstruktion kann die Bewehrung konfiguriert und als Voransicht in die Zeichnung eingef&uuml;gt werden (Dialog </span><span class="f__Software_Element_deskriptiv">Querschnittseingabe</span><span class="f_R_Dialog_Info">). Die exakte Platzierung erfolgt durch Koordinateneingabe oder per Mausklick in der Zeichnung.</span></p>
+<p class="p_Normal"><span class="f__Software_Element_deskriptiv"><a href="rd_querschnittseingabe_(allgemein).htm" class="topiclink" title="Dialogbeschreibung">&raquo; Querschnittseingabe (Dialog)</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Querschnitt w&auml;hlen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Verf&uuml;gbare Querschnitte werden im Dialog </span><span class="f__Software_Element_deskriptiv">Querschnitt</span><span class="f_ToDo_Info"> angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die gew&uuml;nschte Querschnitt-Konstruktion.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Streifenfundament" style="margin:0;width:1.3646in;height:1.0417in;border:none" src="d_querschnitt_streifenfundament.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="rechteckquerschnitt" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Rechteckquerschnitt</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Dieses Detail eignet sich f&uuml;r die Bearbeitung von einfachen Balken wie Streifenfundamente etc.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die B&uuml;gel k&ouml;nnen aus Stabstahl oder Matten bestehen.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Querschnitt-Streifenfundament" style="margin:0;width:1.6771in;height:1.5208in;border:none" src="querschnitt-streifenfundament.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Drempel-niedrig" style="margin:0;width:1.3854in;height:1.0521in;border:none" src="d_querschnitt_drempel-niedrig.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="drempel-niedrig" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Drempel niedrig</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hier ist es von Vorteil, wenn die Geometrie vorhanden ist. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Ma&szlig; </span><span class="f_R_Tabellenzeile" style="font-weight: bold;">b</span><span class="f_R_Tabellenzeile" style="font-size: 12pt; font-weight: bold; vertical-align: sub;">1</span><span class="f_R_Tabellenzeile"> l&auml;sst sich am einfachsten &uuml;ber den Abstand von Punkt zu Linie ermitteln.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Querschnitt_Drempel" style="margin:0;width:1.9479in;height:1.4375in;border:none" src="querschnitt_drempel.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Drempel" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_drempel.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="drempel" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Drempel</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Geometrie sollte vorhanden sein.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Ma&szlig; </span><span class="f_R_Tabellenzeile" style="font-weight: bold;">b</span><span class="f_R_Tabellenzeile" style="font-size: 12pt; font-weight: bold; vertical-align: sub;">1</span><span class="f_R_Tabellenzeile"> und </span><span class="f_R_Tabellenzeile" style="font-weight: bold;">h</span><span class="f_R_Tabellenzeile" style="font-size: 12pt; font-weight: bold; vertical-align: sub;">2</span><span class="f_R_Tabellenzeile"> kann am besten &uuml;ber den Abstand mit Punkt/Linie ermittelt werden.</span><br>
+<span class="f_R_Tabellenzeile">F&uuml;r </span><span class="f_R_Tabellenzeile" style="font-weight: bold;">h</span><span class="f_R_Tabellenzeile" style="font-size: 12pt; font-weight: bold; vertical-align: sub;">1</span><span class="f_R_Tabellenzeile"> k&ouml;nnen Sie den Abstand zweier Punkte benutzen.</span><br>
+<span class="f_R_Tabellenzeile">Mit L&auml;nge aus Linie l&auml;sst sich die L&auml;nge der schr&auml;gen Kante ermitteln.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Drempel" style="margin:0;width:1.9271in;height:1.9271in;border:none" src="z_querschnitt_drempel.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Balken-mit-Aufkantung" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_balken-mit-aufkantung.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="balken-mit-aufkantung" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Balken mit Aufkantung</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beachten Sie, dass die Breite der Aufkantung und die Breite des Restes angegeben werden. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der untere B&uuml;gel kann aus Stabsstahl oder Matten bestehen.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Balken-mit-Aufkantung" style="margin:0;width:1.8646in;height:1.6979in;border:none" src="z_querschnitt_balken-mit-aufkantung.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Ringbalken-in-U-Schale" style="margin:0;width:1.3750in;height:1.0313in;border:none" src="d_querschnitt_ringbalken-in-u-schale.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="ringbalken-in-u-schale" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Ringbalken in U&#8209;Schale</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hier k&ouml;nnen Sie die Geometrie mit zeichnen lassen. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zuschl&auml;ge f&uuml;r die rahmenartige Ausbildung der Ecken sind vom Anwender zu ber&uuml;cksichtigen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei sehr kleinen Abmessungen sollten Sie die Voransicht benutzen, damit ggfs. zu lange Teill&auml;ngen korrigiert werden k&ouml;nnen.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Ringblaken-in-U-Schale" style="margin:0;width:1.7917in;height:1.2604in;border:none" src="z_querschnitt_ringblaken-in-u-schale.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Rinnne" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_rinnne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="rinne" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Rinne</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">U-f&ouml;rmiges Bauteil.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Sohle wird mit U-f&ouml;rmigen Eisen bewehrt. Die Innenseiten der W&auml;nde werden mit Z-f&ouml;rmigen St&auml;ben bewehrt.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Rinne" style="margin:0;width:1.8542in;height:1.7917in;border:none" src="z_querschnitt_rinne.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Rinne-mit-Aussparung" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_rinne-mit-aussparung.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="rinne-mit-aussparung" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Rinne mit Aussparung</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">U-f&ouml;rmiges Bauteil mit Aussparungen f&uuml;r eine Abdeckung.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Sohle und die Seiten werden mit B&uuml;geln bewehrt.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Rinne-mit-Aussparung" style="margin:0;width:1.9583in;height:1.9167in;border:none" src="z_querschnitt_rinne-mit-aussparung.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Fugenband-innenliegend" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_fugenband-innenliegend.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="auswechselung-fuer-iinnenliegendes-fugenband" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Auswechselung f&uuml;r innenliegendes Fugenband</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Fugenband wird immer gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bewehrung wird f&uuml;r beide Seiten herausgezogen.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Fugenband-innenliegend" style="margin:0;width:1.9688in;height:1.6250in;border:none" src="z_querschnitt_fugenband-innenliegend.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Freier-Rand" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_freier-rand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="freier-rand" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Freier Rand</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der B&uuml;gel kann aus Stabstahl oder Matten bestehen.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Freier-Rand" style="margin:0;width:1.6146in;height:0.8542in;border:none" src="z_querschnitt_freier-rand.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Deckenanschluss-mit-Steckbuegeln" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_deckenanschluss-mit-steckbuegeln.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="deckenanschluss-mit-steckbuegeln" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Deckenanschluss mit Steckb&uuml;geln</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Betondeckung links wird nicht verwendet.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Deckenanschluss-mit-Steckbuegelen" style="margin:0;width:1.9479in;height:1.0729in;border:none" src="z_querschnitt_deckenanschluss-mit-steckbuegelen.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Wandanschluss-mit-Steckbuegeln" style="margin:0;width:1.3854in;height:1.0104in;border:none" src="d_querschnitt_wandanschluss-mit-steckbuegeln.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="wandanschluss-mit-steckbuegeln" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Wandanschluss mit Steckb&uuml;geln</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Betondeckung links wird nicht verwendet</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Wandanschluss-mit-Steckbuegeln" style="margin:0;width:1.9583in;height:1.7292in;border:none" src="z_querschnitt_wandanschluss-mit-steckbuegeln.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3646in;"><p class="p_ImageCaption"><img alt="D_Querschnitt_Deckenanschluss-mit-Winkeleisen" style="margin:0;width:1.3854in;height:1.0417in;border:none" src="d_querschnitt_deckenanschluss-mit-winkeleisen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_R_Tabelle_Kopf"><a name="deckenanschluss-mit-winkeleisen" class="hmanchor"></a><span class="f_R_Tabelle_Kopf">Deckenanschluss mit Winkeleisen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Winkeleisen werden als B&uuml;gel eingegeben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Betondeckung unten und links wird nicht verwendet.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0729in;"><p class="p_ImageCaption"><img alt="Z_Querschnitt_Deckenanschluss-mit-Winkeleisen" style="margin:0;width:1.9271in;height:1.3750in;border:none" src="z_querschnitt_deckenanschluss-mit-winkeleisen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv"><a href="rd_querschnittseingabe_(allgemein).htm" class="topiclink" title="Dialogbeschreibung">Querschnittseingabe</a></span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet. Die Optionen auf den Registerkarten </span><span class="f__Software_Element_deskriptiv">Geometrie</span><span class="f_Step_Anmerkung">, </span><span class="f__Software_Element_deskriptiv">B&uuml;gel</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">L&auml;ngseisen</span><span class="f_Step_Anmerkung"> sind abh&auml;ngig vom gew&auml;hltem Querschnitt.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Ma&szlig;e angeben oder &uuml;bernehmen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">F&uuml;hren Sie einen der folgenden Schritte durch:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Geben Sie die ben&ouml;tigten Daten ein und best&auml;tigen Sie jeweils mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">&Uuml;bernehmen Sie die Ma&szlig;e direkt aus der Zeichnung (Auswahl der Methode unter </span><span class="f__Software_Element_deskriptiv">Ma&szlig;e</span><span class="f_Step">):</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in das gew&uuml;nschte Eingabefeld, (z.&nbsp;B. b= Breite).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Software_Element_deskriptiv">Ma&szlig;e</span><span class="f_Step"> (unterhalb der Skizze) die gew&uuml;nschte Methode.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; width:1.8646in; padding:0; border:none"><div class="p_R_Tabellenzeile"><div style="margin:0;width:1.5417in"><figure style="margin:0;padding:0"><img alt="Länge aus Linie" title="Länge aus Linie" style="width:1.5417in;height:1.2292in;border:none" src="z_querschnittseingabe_masse_laenge-aus-linie.png"/><figcaption><p style="text-align:center"><span class="f_R_Tabellenzeile">Länge aus Linie</span></p></figcaption></figure></div></div>
+</td>
+<td style="vertical-align:bottom; width:1.8958in; padding:0; border:none"><div class="p_R_Tabellenzeile"><div style="margin:0;width:1.5833in"><figure style="margin:0;padding:0"><img alt="Abstand Punkt/Linie" title="Abstand Punkt/Linie" style="width:1.5833in;height:1.1771in;border:none" src="z_querschnittseingabe_masse_abstand-punkt-linie.png"/><figcaption><p style="text-align:center"><span class="f_R_Tabellenzeile">Abstand Punkt/Linie</span></p></figcaption></figure></div></div>
+</td>
+<td style="vertical-align:bottom; width:1.8854in; padding:0; border:none"><div class="p_R_Tabellenzeile"><div style="margin:0;width:1.5208in"><figure style="margin:0;padding:0"><img alt="Länge aus Punkten" title="Länge aus Punkten" style="width:1.5208in;height:1.1354in;border:none" src="z_querschnittseingabe_masse_laenge-aus-punkten.png"/><figcaption><p style="text-align:center"><span class="f_R_Tabellenzeile">Länge aus Punkten</span></p></figcaption></figure></div></div>
+</td>
+<td style="vertical-align:bottom; width:1.9688in; padding:0; border:none"><div class="p_R_Tabellenzeile"><div style="margin:0;width:1.5938in"><figure style="margin:0;padding:0"><img alt="Winkel aus Linie" title="Winkel aus Linie" style="width:1.5938in;height:1.1771in;border:none" src="z_querschnittseingabe_masse_winkel-aus-linie.png"/><figcaption><p style="text-align:center"><span class="f_R_Tabellenzeile">Winkel aus Linie</span></p></figcaption></figure></div></div>
+</td>
+<td style="vertical-align:bottom; width:11.8958in; padding:0; border:none"><div class="p_R_Tabellenzeile"><div style="margin:0;width:1.5625in"><figure style="margin:0;padding:0"><img alt="Winkel aus Punkten" title="Winkel aus Punkten" style="width:1.5625in;height:1.2604in;border:none" src="z_querschnittseingabe_masse_winkel-aus-punkten.png"/><figcaption><p style="text-align:center"><span class="f_R_Tabellenzeile">Winkel aus Punkten</span></p></figcaption></figure></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Zeichnung die entsprechenden Elemente an. Der aus der Zeichnung ermittelte Wert wird in das Eingabefeld &uuml;bernommen. ISBCAD wechselt automatisch in das n&auml;chste Eingabefeld.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Hinweis</span><span class="f_Step_Anmerkung">: Achten Sie beim Fangen von Punkten auf die Darstellung der Fangmarke und darauf, die Anfangs- und Endpunkte von Linien zu fangen, und nicht etwa die Eckpunkte von F&uuml;llungen. Andernfalls kann das Ma&szlig; nicht ermittelt werden. Siehe auch: <a href="des_elementfang.htm" class="topiclink" title="Fangen von Elementen">Elementfang</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Details_Fangen_ok" style="margin:0;width:1.6042in;height:0.7500in;border:none" src="scr_details_fangen_ok.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Details_Fangen_n-ok" style="margin:0;width:1.6042in;height:0.7500in;border:none" src="scr_details_fangen_n-ok.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert"> Linienpunkt gefangen</span></p>
+</td>
+<td style="vertical-align:top; width:2.5938in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Eckpunkt der F&uuml;llung gefangen</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Darstellung einrichten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Geometrie zu zeichnen: </span><br>
+<span class="f_Step">Aktivieren Sie die Option </span><span class="f__Software_Element_deskriptiv">Schalkante erzeugen</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Ausz&uuml;ge verschieben zu k&ouml;nnen: </span><br>
+<span class="f_Step">Aktivieren Sie die Option </span><span class="f__Software_Element_deskriptiv">Ausz&uuml;ge verschieben</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Ma&szlig;stab f&uuml;r die Detailzeichnung/-bewehrung ein. </span><br>
+<span class="f_Step">Der vorgeschlagene Wert entspricht dem &uuml;bergeordneten Zeichnungsma&szlig;stab. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Querschnittszeichnung vor der endg&uuml;ltigen Platzierung zu pr&uuml;fen: </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step">Klicken Sie auf <img alt="B_Voransicht" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_voransicht.png"/>.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: -0.0104in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Der Dialog wird ausgeblendet, die Voransicht wird als Rahmen an den Cursor geh&auml;ngt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step">Platzieren Sie den Rahmen f&uuml;r die Voransicht per Mausklick in der Zeichnung. </span><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog wird wieder eingeblendet. Sie k&ouml;nnen die Angaben noch editieren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><a name="_detail-absetzen" class="hmanchor"></a><span class="f_ToDo">Detail in der Zeichnung platzieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf <img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog wird geschlossen, die Detailzeichnung wird als Rahmen an den Cursor geh&auml;ngt. &Uuml;ber die Optionen im Funktionsbereich k&ouml;nnen Sie die Art der Platzierung w&auml;hlen:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7083in; padding:0.0313in; border:solid thin #e1e1e1; border-bottom:none;"><p class="p_ImageCaption_zentriert"><img alt="B_Folie-beibeh-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_folie-beibeh-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die geometrischen Elemente werden in Folie&nbsp;0, die Ausz&uuml;ge in Folie&nbsp;17 und die Verlegungen und Positionierungen in Folie&nbsp;4 abgelegt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7083in; padding:0.0313in; border:solid thin #e1e1e1; border-top:none;"><p class="p_ImageCaption_zentriert"><img alt="B_Neue-Folie-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_neue-folie-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Platzierung auf einer anderen, vorhandenen oder neu anzulegenden, Folie. (&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Tabellenzeile">).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7083in; padding:0.0313in;"><p class="p_ImageCaption_zentriert"><img alt="B_Setzen" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_setzen.png"/><img alt="B_Versch_ (Detail)" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="hmfile_hash_f9ee8376.png"/></p>
+</td>
+<td class="Optionen_Palette" style="padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Setzen</span><span class="f_R_Tabellenzeile">: Genaue Platzierung, z.&nbsp;B. um die Bewehrung exakt in einer vorhandenen Geometrie zu platzieren. An der unteren linken Ecke auf der Position der Schalkanten wird ein Hilfspunkt gesetzt. Die Detailzeichnung kann im Folgenden an der Geometrie ausgerichtet werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_R_Tabellenzeile">: Beliebige Platzierung. Die Querschnittzeichnung kann an beliebiger Stelle platziert, aber nicht weiter ausgerichtet werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7083in; padding:0.0313in;"><p class="p_ImageCaption_zentriert"><img alt="B_Retaus" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_retaus.png"/><img alt="B_Retan" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_retan.png"/></p>
+</td>
+<td class="Optionen_Palette" style="padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ein- und Ausschalten des Differenzmodus. Der aktuelle Modus ist durch die aktive Schaltfl&auml;che gekennzeichnet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7083in; padding:0.0313in;"><p class="p_ImageCaption_zentriert"><img alt="B_Plotflaeche" style="margin:0 auto 0 auto;width:2.3229in;height:0.2500in;border:none" src="b_plotflaeche.png"/></p>
+</td>
+<td class="Optionen_Palette" style="padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Plotfl&auml;che einstellen (wenn f&uuml;r die Querschnitt-Zeichnung zus&auml;tzlicher Platz ben&ouml;tigt wird). &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Plotfl&auml;che</span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie die Detailzeichnung per Mausklick in der Zeichnung. [</span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_Step">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Bei beliebiger Platzierung [Versch]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die korrekte Platzierung mit <img alt="B-akt_Nein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/> oder Rechtsklick</span>. [<span class="f__Abfrage">Korrektur</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bearbeitung ist abgeschlossen. ISBCAD wechselt in das Formstahlmen&uuml;.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Bei genauer Platzierung [Setzen]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">An der unteren linken Ecke, auf der Position der Schalkanten, wird ein Hilfspunkt gesetzt. Die Detailzeichnung kann im Folgenden an der Geometrie ausgerichtet werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Folgen Sie den Abfragen:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f__Abfrage">Drehwinkel</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Angabe in Grad (relativ zur Horizontalen); </span><br>
+<span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: parallel zu einer anderen Linie; </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: orthogonal zu einer anderen Linie; </span><span class="f__Software_Element_deskriptiv">PP</span><span class="f_R_Tabellenzeile">...; </span><span class="f__Software_Element_deskriptiv">OP</span><span class="f_R_Tabellenzeile">...: &#8594; </span><span class="f__Abfrage">Drehen</span><span class="f_Step">.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f__Abfrage">Drehen</span><span class="f_R_Tabellenzeile">:</span><br>
+<span class="f_R_Tabellenzeile">Nur wenn </span><span class="f__Abfrage">Drehwinkel</span><span class="f_R_Tabellenzeile">: </span><span class="f__Software_Element_deskriptiv">PP...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">OP...</span><span class="f_R_Tabellenzeile">; Angabe in Grad (relativ zur gew&auml;hlten Linie).</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f__Abfrage">Spiegelwinkel</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Geben Sie den Winkel direkt ein und best&auml;tigen Sie mit der Eingabetaste. Verwenden Sie ggf. die Schaltfl&auml;chen und Linienauswahl.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f__Abfrage">X-Refpu.Obj</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">Y-Refpu.Obj</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie jeweils einen Punkt an, der f&uuml;r die Lage des Referenzpunktes geeignet ist.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="font-family: 'Arial';display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_R_Tabellenzeile">; </span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_R_Tabellenzeile">: </span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie jeweils einen Punkt an, der f&uuml;r die neue Lage geeignet ist. Ist die Eingabe einer Differenz n&ouml;tig, aktivieren Sie </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_R_Tabellenzeile"> (im Funktionsbereich).</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die korrekte Platzierung mit <img alt="B-akt_Nein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/>oder Rechtsklick</span>. [<span class="f__Abfrage">Korrektur</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bearbeitung ist abgeschlossen. ISBCAD wechselt in das Formstahl-Men</span><span class="f_Step">&uuml;.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_bewehrungsdetails.htm" class="topiclink">Detail (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

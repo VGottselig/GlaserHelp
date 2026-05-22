@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gruppenmanager (Dialog)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Die Elemente der markierten Gruppe werden im Vorschaubereich des Dialogs und in der Zeichnung angezeigt. Alle Elemente, die nicht zur markierten Gruppe gehören, werden auf" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="rm_gruppe.htm">Gruppe</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_gruppenmanager.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_gruppe.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="kont3_dublei.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Optionen im Dialog &quot;Gruppenmanager&quot;</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="rm_gruppe.htm" class="topiclink" title="Gruppe"><img alt="Gruppe" title="Gruppe" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_gruppe_(konst3).png"/></a></span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="B-akt_GrpMng" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_grpmng.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Gruppenmanager_KM" style="margin:0;width:7.5313in;height:3.8438in;border:none" src="d_gruppenmanager_km.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Elemente der markierten Gruppe werden im Vorschaubereich des Dialogs und in der Zeichnung angezeigt. Alle Elemente, die nicht zur markierten Gruppe geh&ouml;ren, werden auf der Zeichnung in der Farbe f&uuml;r &quot;Elemente im Hintergrund&quot; dargestellt. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellung</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_L_Listeneintrag">].</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Elemente auf ausgeblendeten Folien werden in der Vorschau nicht angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gruppenfunktionen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Neue-Gruppe-erzeugen" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_neue-gruppe-erzeugen.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Erzeugt eine neue Gruppe.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Element-hinzufuegen" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_element-hinzufuegen.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">F&uuml;gt Zeichenelemente &uuml;ber Rahmen oder Anklicken in der Zeichnung der markierten Gruppe hinzu.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Element-entfernen" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_element-entfernen.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt Zeichenelemente &uuml;ber Rahmen oder Anklicken in der Zeichnung aus der markierten Gruppe.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Gruppe-loeschen" style="margin:0;width:0.1771in;height:0.1875in;border:none" src="i_gruppe-loeschen.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&ouml;st Gruppen optional mit allen Untergruppen auf.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Gruppe-umbenennen" style="margin:0;width:0.1979in;height:0.1875in;border:none" src="i_gruppe-umbenennen.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Benennt die Gruppe um.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Gruppe-ohne Elemente" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="hmfile_hash_2ec52ab7.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt alle Gruppen, die keine Elemente enthalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Korrekturfunktionen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit den Korrekturfunktionen k&ouml;nnen Sie einzelne Schritte zur&uuml;cksetzen und Aktionen wiederherstellen. Wenn Sie mit dem Cursor &uuml;ber einer der Schaltfl&auml;chen verharren, wird ein Tooltip mit der Aktion angezeigt, die korrigiert bzw. wiederhergestellt wird.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_Grp_Kor" style="margin:0;width:0.1771in;height:0.1250in;border:none" src="i_grp_kor.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zur&uuml;ck: Setzt schrittweise die vorher abgeschlossenen Aktionen zur&uuml;ck. Die Schaltfl&auml;che [Zur&uuml;ck] wird erst angezeigt, wenn Sie eine &Auml;nderung vorgenommen haben.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.3646in;"><p class="p_R_Tabellenzeile"><img alt="I_GrpKorW" style="margin:0;width:0.1771in;height:0.1250in;border:none" src="i_grpkorw.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:11.5313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wiederherstellen: Stellt schrittweise die letzten Korrekturaktionen wieder her. Die Schaltfl&auml;che [Wiederherstellen] wird erst angezeigt, wenn Sie eine Aktion r&uuml;ckg&auml;ngig gemacht haben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beachten Sie: Mit der Schaltfl&auml;che [</span><span class="f__Software_Element_deskriptiv">Schlie&szlig;en</span><span class="f_R_Option_Beschreibung">] oder mit einem Klick auf [</span><span class="f__Software_Element_deskriptiv">X</span><span class="f_R_Option_Beschreibung">] best&auml;tigen Sie alle &Auml;nderungen. Eine anschlie&szlig;ende Korrektur der vorgenommenen &Auml;nderungen ist nach dem Schlie&szlig;en des Gruppenmanagers nicht mehr m&ouml;glich.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kontextmen&uuml;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit einem Rechtsklick auf eine markierte Gruppe k&ouml;nnen Sie alle verf&uuml;gbaren Funktionen &uuml;ber das Kontextmen&uuml; abrufen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="SCR_Gruppe_Kontext" style="margin:0;width:1.9479in;height:1.1875in;border:none" src="scr_gruppe_kontext.png"/><span class="f_ImageCaption"> <img alt="SCR_Gruppe_Kontext_Untermenue" style="margin:0;width:2.9583in;height:0.5000in;border:none" src="scr_gruppe_kontext_untermenue.png"/> </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zur Auswahl zoomen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Option_Beschreibung"> Die markierte Gruppe wird auf der Zeichenoberfl&auml;che herangezoomt. Wenn Sie den Haken entfernen, wird der vorherige Bildausschnitt angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vorschau</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Elemente der aktuell markierten Gruppe an. Die Gruppe kann entweder direkt in der Baumstruktur markiert werden oder durch Anklicken eines Gruppenelements in der Zeichnung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Beschreibung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe und Anzeige eines erg&auml;nzenden Textes zur aktuell markierten Gruppe. </span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Um die Beschreibung zu bearbeiten, klicken Sie in das Eingabefeld und geben Sie den Text ein. Sie k&ouml;nnen auch einen Text &uuml;ber die Zwischenablage (</span><span class="f__Tastatur">Strg</span><span class="f_R_Option_Beschreibung"> + </span><span class="f__Tastatur">C </span><span class="f_Step">/ </span><span class="f__Tastatur">Strg</span><span class="f_Step"> + </span><span class="f__Tastatur">V</span><span class="f_R_Option_Beschreibung">) aus einem anderen Dokument hineinkopieren.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Um eine neue Zeile einzuf&uuml;gen, verwenden Sie die Tastenkombination </span><span class="f__Tastatur">Strg</span><span class="f_R_Option_Beschreibung"> + </span><span class="f__Tastatur">Eingabetaste</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Um die Beschreibung zu erg&auml;nzen, setzen Sie den Cursor per Mausklick oder mit den Pfeiltasten an die entsprechende Textstelle und geben Sie den neuen Text ein.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Um eine Beschreibung zu &auml;ndern, markieren Sie durch das Ziehen der Maus die Textstelle und geben Sie einen neuen Text ein.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option_Beschreibung">Um den Text oder eine Textstelle zu l&ouml;schen, markieren Sie den Text und dr&uuml;cken Sie die L&ouml;schtaste auf der Tastatur.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wechseln Sie anschlie&szlig;end die Gruppe, damit der Text &uuml;bernommen wird, oder best&auml;tigen Sie mit der Eingabetaste (der Dialog wird geschlossen).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Schliessen" style="margin:0;width:0.7813in;height:0.2604in;border:none" src="b_schliessen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die &Auml;nderungen und schlie&szlig;t den Dialog. Wurde die Option </span><span class="f__Software_Element_deskriptiv">Zur Auswahl zoomen</span><span class="f_R_Option_Beschreibung"> aktiviert, wird wieder der urspr&uuml;ngliche Bildausschnitt angezeigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_gruppenmanager.htm" class="topiclink" title="Gruppen erzeugen und verwalten">Gruppen erzeugen und verwalten</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

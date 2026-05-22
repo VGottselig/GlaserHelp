@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Schraffur importieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Schraffur,Schraffur importieren" />
+   <meta name="description" content="oder &nbsp; Sie können die Konfigurationsdatei für Schraffuren (SCHRAFF.DAT) um weitere Schraffuren ergänzen. Nach der Dateiauswahl werden in einer Liste die Schraffurtypen aufgefü" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_schraffur.htm">Schraffur</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="schraffur_definieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_schraffur.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="schraffuren_loeschen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Schraffur importieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_schraffur.htm" class="topiclink" title="Schraffur-Funktionen (Übersicht)"><img alt="Schraffur-Funktionen (Übersicht)" title="Schraffur-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_schraf.png"/></a> <img alt="B-akt_W= " style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_2c06a5c8.png"/> oder <img alt="B-akt_F= " style="margin:0;width:1.1771in;height:0.2500in;border:none" src="hmfile_hash_475144f9.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen die Konfigurationsdatei f&uuml;r Schraffuren (SCHRAFF.DAT) um weitere Schraffuren erg&auml;nzen. Nach der Dateiauswahl werden in einer Liste die Schraffurtypen aufgef&uuml;hrt, die sich in mindestens einem Detail von den vorhandenen Schraffuren unterscheiden. Der Schraffurname wird beim Import nicht ber&uuml;cksichtigt. Wenn demnach in der Auswahl der zu &uuml;bernehmenden Schraffuren ein bereits vorhandener Schraffurname aufgef&uuml;hrt wird, dann besteht ein Unterschied in der Definition zwischen vorhandener und neuer Schraffur.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Ihre aktuelle Schraffurdatei (SCHRAFF.DAT) wird im aktiven Profil gespeichert. Die Datei befindet sich im Konfigurationsordner (Config) und dort im Unterordner des jeweiligen Profils (BaseProfile) oder (Profiles </span><span class="f_L_Listeneintrag">&#8594; Profilname</span><span class="f_A_Allgemein">). Sie k&ouml;nnen sich den Config-Ordner &uuml;ber den Dialog <a href="rd_services.htm#konfigdateien" class="topiclink" title="Konfigurationsdateien anzeigen">Services</a> anzeigen lassen und die SCHRAFF.DAT bei Bedarf weitergeben. &Uuml;ber den <a href="rd_profilmanager_einstellungen.htm" class="topiclink" title="Profileinstellungen übertragen">Profilmanager</a> besteht die M&ouml;glichkeit, die Schraffurdatei sowie weitere Konfigurationsdateien auf Profile zu &uuml;bertragen, die im Profilmanager angelegt sind. Die Profile lassen sich exportieren und an anderen Rechnern einlesen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die SCHRAFF.DAT wird nicht durch die Installation von Updates oder Upgrades &uuml;berschrieben.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Datei verbleibt auch nach der Deinstallation von ISBCAD auf dem Rechner.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Ihnen stehen vielleicht nicht alle Schraffuren in Ihrer aktuellen ISBCAD Version zur Verf&uuml;gung, da Ihre SCHRAFF.DAT nicht durch Updates oder Upgrades &uuml;berschrieben wird. Sie k&ouml;nnen Ihre Schraffurtyp-Sammlung vielleicht erweitern, indem Sie die SCHRAFF.DAT aus dem ISBCAD Installationsverzeichnis importieren, die bei der Erstinstallation von ISBCAD verwendet wird: </span><br>
+<span class="f_Hervorhebung_Text">C:\Programme\GLASER Programmsysteme\-isb cad-\cfg:</span></p>
+<p class="p_ImageCaption"><img alt="D_oeffnen_schraffurimport" style="margin:0;width:5.6042in;height:3.1771in;border:none" src="d_oeffnen_schraffurimport.png"/></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Alle Schraffuren, die in der SCHRAFF.DAT enthalten sind, finden Sie <a href="des_schraffuren-din.htm" class="topiclink" title="Verfügbare Schraffurtypen">hier</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">W=... </span><span class="f_Step">oder </span><span class="f__Software_Element_deskriptiv">F=...</span><span class="f_Step">, um den Dialog </span><span class="f__Software_Element_deskriptiv">Schraffur</span><span class="f_Step"> zu &ouml;ffnen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_Step">.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Schraffur_Import" style="margin:0;width:3.6979in;height:3.3958in;border:none" src="d_schraffur_import.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den Pfad, in dem die zu importierende Schraffurdatei gespeichert ist.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie die entsprechende Schraffurdatei im .DAT-Format und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Schraffur-Dialog wird unten um einen Bereich erweitert, in dem alle Schraffuren aufgelistet werden, die noch nicht in Ihrem Programm enthalten sind. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Sie k&ouml;nnen die zu &uuml;bernehmenden Schraffuren ausw&auml;hlen, indem Sie einen Haken in die entsprechende Checkbox setzen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit den Schaltfl&auml;chen </span><span class="f__Software_Element_deskriptiv">Alle</span><span class="f_Step_Anmerkung"> oder </span><span class="f__Software_Element_deskriptiv">Alle abw&auml;hlen</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie &uuml;berall den Haken setzen bzw. entfernen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie abschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">&Uuml;bernehmen</span><span class="f_Step">. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die ausgew&auml;hlten Schraffuren werden an das Ende der bestehenden Schraffurdatei angeh&auml;ngt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Schraff-Import_02" style="margin:0;width:3.6979in;height:5.8125in;border:none" src="scr_schraff-import_02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Schraffurauswahl im Funktionsbereich zu sortieren, nutzen Sie die Funktion <a href="schraffur_definieren.htm#reihenfolgeschraffur" class="topiclink" title="Schraffuren sortieren">Reihenfolge</a>.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffurtypen_definieren.htm" class="topiclink">Schraffurtypen erzeugen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_schraffur.htm" class="topiclink" title="Schraffurfunktionen">Schraffur (Men&uuml;)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_schraffuren-din.htm" class="topiclink" title="Übersicht der in ISBCAD verfügbaren Schraffurtypen">Verf&uuml;gbare Schraffurtypen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch: </span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_profilmanager_einstellungen.htm" class="topiclink">Profileinstellungen &uuml;bertragen (Profilmanager)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

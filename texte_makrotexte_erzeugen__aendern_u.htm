@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Text in Makrotext konvertieren oder Zuweisung auflösen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Makrotext,Makrotext Text in Makrotext konvertieren,MkrTxt,Texte,Texte Text in Makrotext konvertieren" />
+   <meta name="description" content="Mit dieser Funktion können Sie einem beliebigen Text einen Makrotext zuweisen und Zuweisungen auflösen. In der Zeichnung werden alle Texte, die mindestens einen Makrotext ent" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_texte.htm">Texte</a> &gt; <a href="con_makrotexte.htm">Verwenden von Makrotexten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="con_makrotexte.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_makrotexte.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="texte_makrotexttabelle.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Text in Makrotext konvertieren oder Zuweisung aufl&ouml;sen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_texte.htm" class="topiclink" title="Textfunktionen (Übersicht)"><img alt="Textfunktionen (Übersicht)" title="Textfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_texte.png"/></a> <img alt="B-akt_MkrTxt_Texte" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_mkrtxt_texte.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Mit dieser Funktion k&ouml;nnen Sie einem beliebigen Text einen Makrotext zuweisen und Zuweisungen aufl&ouml;sen. In der Zeichnung werden alle Texte, die mindestens einen Makrotext enthalten, in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Markieren</span><span class="f_Task_Info"> hervorgehoben.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Alle Makrotexte, die Sie erzeugen, k&ouml;nnen Sie im <a href="texte_makrotexttabelle.htm" class="topiclink">Makrotext-Editor</a> einsehen, bearbeiten und l&ouml;schen. Im Editor k&ouml;nnen Sie auch neue Makrotexte erzeugen, auf die Sie in Texteingaben zugreifen k&ouml;nnen.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Siehe auch: <a href="con_makrotexte.htm" class="topiclink">Verwenden von Makrotexten</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Makrotext erzeugen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Text an, der variabel sein soll. [</span><span class="f__Abfrage">Welchen Text konvertieren?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls im Makrotext-Editor Makrotexte definiert sind, werden sie in einer Liste unter der Abfrage angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus: </span><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Unter welchem Makro speichern?</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Klicken Sie in der Liste einen Makrotext an, dem im Makrotext-Editor </span><span class="f_Hervorhebung_Text">kein Textinhalt</span><span class="f_Step_Anmerkung"> zugewiesen ist. Sie erhalten eine Meldung mit der Information, dass der unter [</span><span class="f__Abfrage">Welchen Text konvertieren?</span><span class="f_Step_Anmerkung">] angeklickte Text dem Makrotext zugewiesen wird. Best&auml;tigen Sie die Meldung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Makro-konvertieren-Liste" style="margin:0;width:1.7083in;height:1.3021in;border:none" src="scr_makro-konvertieren-liste.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Geben Sie die Bezeichnung f&uuml;r den Makrotext ein, dem der zuvor angeklickte Text zugeordnet werden soll, und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Step_Anmerkung">Klicken Sie einen Text in der Zeichnung an, um ihn in die Eingabe zu &uuml;bernehmen. Sie k&ouml;nnen den Text bearbeiten, indem Sie zus&auml;tzliche Inhalte hinzuf&uuml;gen. Beim Anklicken eines weiteren Textes wird die aktuelle Eingabe durch den neuen Text ersetzt. Best&auml;tigen Sie die Eingabe mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Definition ist abgeschlossen. Der Makrotext und dessen Textinhalt k&ouml;nnen im Makrotext-Editor bearbeitet werden.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Texte, denen bereits ein Makrotext zugewiesen ist, k&ouml;nnen nicht ausgew&auml;hlt werden. Sie erhalten in diesem Fall eine Meldung mit weiteren Informationen. Best&auml;tigen Sie die Meldung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. Sie k&ouml;nnen die Zuweisung aufl&ouml;sen (siehe weiter unten) und anschlie&szlig;end einen neuen Makrotext vergeben.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Makrotext aufl&ouml;sen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Durch das Aufl&ouml;sen werden der Makrotext und dessen Textinhalt nicht aus dem </span><span class="f__Software_Element_deskriptiv">Makrotext-Editor</span><span class="f_ToDo_Info"> gel&ouml;scht. Es wird nur die Zuweisung auf der Zeichnung entfernt, wobei der Textinhalt in einen normalen Text umgewandelt wird. Ist der Makrotext mehrfach auf der Zeichnung vorhanden, wird nur der angeklickte Text aufgel&ouml;st.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unter der Abfrage auf </span><span class="f__Software_Element_deskriptiv">aufl&ouml;sen</span><span class="f_Step">. [</span><span class="f__Abfrage">Welchen Text konvertieren?</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Text an, der aufgel&ouml;st werden soll. [</span><span class="f__Abfrage">Welchen Text aufl&ouml;sen?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Text wird aufgel&ouml;st und in der Farbe f&uuml;r Elemente im Hintergrund angezeigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Beispiel"><span class="f_Beispiel">Beispiel: Text in Makrotext konvertieren</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Im Plankopf sollen die Angaben f&uuml;r das Bauteil in Makrotexte umgewandelt werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Makrotext-Beispiel" style="margin:0;width:5.5625in;height:4.0000in;border:none" src="z_makrotext-beispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Text </span><span class="f_Hervorhebung_Text">Bewehrungsplan</span><span class="f_Step"> an. [</span><span class="f__Abfrage">Welcher Text?</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Text </span><span class="f_Hervorhebung_Text">Stempel - Bauteil 1. Zeile</span><span class="f_Step"> in die Eingabe ein und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">Unter welchem Makro speichern?</span><span class="f_Step">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Makrotext-Beispiel_Makro" style="margin:0;width:7.2083in;height:3.6250in;border:none" src="z_makrotext-beispiel_makro.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wiederholen Sie den Vorgang f&uuml;r den Text </span><span class="f_Hervorhebung_Text">Kellerdecke: hier Haus B.l.a, Achse 11-13</span><span class="f_Step"> und geben Sie </span><span class="f_Hervorhebung_Text">Stempel - Bauteil 2. Zeile</span><span class="f_Step"> ein. [</span><span class="f__Abfrage">Welcher Text?</span><span class="f_Step">]; [</span><span class="f__Abfrage">Unter welchem Makro speichern?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie haben nun zwei Makrotexte erstellt &quot;Stempel - Bauteil 1. Zeile&quot; und &quot;Stempel - Bauteil 2. Zeile&quot; und diesen die Texte &quot;Bewehrungsplan&quot; und &quot;Kellerdecke: hier Haus B.l.a, Achse 11-13&quot; zugeordnet. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie jetzt im <a href="texte_makrotexttabelle.htm" class="topiclink">Makrotext-Editor</a> den Text </span><span class="f_Hervorhebung_Text">Bewehrungsplan</span><span class="f_Step"> in z. B. </span><span class="f_Hervorhebung_Text">Schalplan</span><span class="f_Step"> &auml;ndern und mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step"> best&auml;tigen, wirkt sich diese &Auml;nderung im gesamten Plan aus.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Makrotext-Beispiel_Schalplan" style="margin:0;width:9.4375in;height:3.8438in;border:none" src="z_makrotext-beispiel_schalplan.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile">Im <span class="f__Software_Element_deskriptiv">Makrotext-Editor</span> wird der Text &quot;Bewehrungsplan&quot; in &quot;Schalplan&quot; ge&auml;ndert.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Makrotext-Beispiel_final" style="margin:0;width:4.2396in;height:2.9896in;border:none" src="z_makrotext-beispiel_final.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:4.6875in; padding:0; border:none"><p class="p_R_Tabellenzeile">Der Makrotext &quot;Stempel - Bauteil 1. Zeile&quot; wird auf der gesamten Zeichnung durch den neuen Textinhalt &quot;Schalplan&quot; ersetzt.</p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;">
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

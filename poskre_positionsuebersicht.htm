@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Positionsübersicht anzeigen und ausgeben</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Info - Statische Positionen,Positionskreise,Positionskreise Positionsübersicht anzeigen,Positionskreise Positionsübersicht ausgeben,Positionskreise Positionsübersicht in Zwischenablage legen,Positionsübersicht (stat. Positionen)" />
+   <meta name="description" content="Liste der statischen Positionen mit Positionsnummern, Ergänzungs- und Tabellentexten." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="positionskreise.htm">Statische Positionskreise</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="poskre_tabelle_erzeugen_und_aktualisi.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="positionskreise.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="poskre_positionskreisstile_definieren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Positions&uuml;bersicht f&uuml;r statische Positionen anzeigen und ausgeben</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="positionskreise.htm" class="topiclink" title="Positionskreise (Funktionsübersicht)"><img alt="Positionskreise (Funktionsübersicht)" title="Positionskreise (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_poskre.png"/></a> <img alt="B-akt_info_PosKre" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_info_poskre.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Liste der statischen Positionen mit Positionsnummern, Erg&auml;nzungs- und Tabellentexten.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Positions&uuml;bersicht</span><span class="f_Task_Info"> mit einer Zusammenstellung aller in der Zeichnung enthaltenen statischen Positionen und diesen zugeordneten Erg&auml;nzungs- und Tabellentexten.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die in der Liste markierte Position wird in der Zeichnung mit den definierten Eigenschaften dargestellt, alle anderen Zeichenelemente werden entsprechend der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_L_Listeneintrag"> angezeigt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Positions&uuml;bersicht kann vor der Ausgabe auf Positionsnummern gefiltert und zusammengefasst werden. Die Ausgabe erfolgt in die Windows&reg;-Zwischenablage.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Positions&uuml;bersicht&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Positionsübersicht" style="margin:0;width:6.8021in;height:4.0938in;border:none" src="hmfile_hash_55837a43.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Positionen</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.3646in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Positionsfilter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Suche nach bestimmten Positionen. Hier k&ouml;nnen Sie den vollst&auml;ndigen oder partiellen Positionstext angeben.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dem folgenden Platzhalterzeichen k&ouml;nnen Sie Ihre Suche erweitern:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">* (Sternchen): Steht f&uuml;r eine beliebige Zeichenfolge und kann an jeder Stelle der Suchzeichenfolge verwendet werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_Beispiel">Beispiel:</span><span class="f_R_Option_Beschreibung"> Die Eingabe A*C k&ouml;nnte zu diesen Suchergebnissen f&uuml;hren - A1C, A4C, A5C2 usw.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">zusammenfassen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0 0 0.0417in 0.3958in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3958in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">Positionen mit identischen Positionsnummern werden zu einer Position zusammengefasst. Sind Erg&auml;nzungstexte und/oder Tabellentexte unterschiedlich, wird &quot;variiert&quot; angezeigt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nur sichtbare Pos.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0 0 0.0417in 0.3958in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3958in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Option_Beschreibung">Angezeigt werden ausschlie&szlig;lich die Positionen auf den eingeblendeten Folien. Positionen auf ausgeblendeten Folien werden aus der Positions&uuml;bersicht entfernt. </span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Sortierreihenfolge</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.3646in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_Posfilter" style="margin:0;width:3.9792in;height:0.9063in;border:none" src="scr_posfilter.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen die Positionen entweder absteigend [</span><img alt="I_arrow-pos_down" style="margin:0;width:0.1667in;height:0.1563in;border:none" src="i_arrow-pos_down.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> oder aufsteigend [</span><img alt="I_arrow-pos_up" style="margin:0;width:0.1667in;height:0.1250in;border:none" src="i_arrow-pos_up.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> sortieren. Klicken Sie auf den Pfeil, um die Sortierreihenfolge zu &auml;ndern.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">alphanumerisch</span><span class="f_R_Option_Beschreibung"> </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei der alphanumerischen Sortierung gilt folgende Sortierreihenfolge:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1.</span><span class="f_R_Option_Beschreibung">Satzzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2.</span><span class="f_R_Option_Beschreibung">Ziffern</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option_Beschreibung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">3.</span><span class="f_R_Option_Beschreibung">Buchstaben (Gro&szlig;buchstaben vor Kleinbuchstaben bei absteigender [</span><img alt="I_arrow-pos_down" style="margin:0;width:0.1667in;height:0.1563in;border:none" src="i_arrow-pos_down.png"/><span class="f_ImageCaption">] </span><span class="f_R_Option_Beschreibung">Sortierung)</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nach Erzeugung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Positionen werden nach dem Erstellungszeitpunkt sortiert (von der &auml;ltesten [</span><img alt="I_arrow-pos_down" style="margin:0;width:0.1667in;height:0.1563in;border:none" src="i_arrow-pos_down.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> zur aktuellsten oder der aktuellsten [</span><img alt="I_arrow-pos_up" style="margin:0;width:0.1667in;height:0.1250in;border:none" src="i_arrow-pos_up.png"/><span class="f_ImageCaption">]</span><span class="f_R_Option_Beschreibung"> zur &auml;ltesten).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ausgabe</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.3646in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nur Position</span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3958in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Positions&uuml;bersicht enth&auml;lt bei der Ausgabe in die Zwischenablage alle Positionsnummern, Erg&auml;nzungs- und Tabellentexte.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3958in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.4167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Positions&uuml;bersicht enth&auml;lt bei der Ausgabe in die Zwischenablage nur die Positionsnummern (Spalte Pos.).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zwischenablage</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Positions&uuml;bersicht wird in die Windows&reg;-Zwischenablage kopiert. Sie k&ouml;nnen die Positions&uuml;bersicht in ein anderes Programm &uuml;bernehmen (z. B. Word, Excel).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schlie&szlig;en</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t die Positions&uuml;bersicht. Alle &Auml;nderungen, Filter- und Sortierkriterien werden zur&uuml;ckgesetzt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">Positionstabelle anlegen oder aktualisieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="pos_kre_positionierung_aendern.htm" class="topiclink">Positionskreis &auml;ndern</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="positionskreise.htm" class="topiclink" title="Funktionsübersicht">Statische Positionskreise (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

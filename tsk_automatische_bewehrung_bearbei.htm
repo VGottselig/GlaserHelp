@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Automatische Bewehrung (allgemeiner Ablauf)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="AutBew,AutBew Grundriss aufbereiten" />
+   <meta name="description" content="Bereiten Sie vor der automatischen Bewehrung den Grundriss soweit auf, dass dieser nur die wichtigsten geometrischen Elemente enthält." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="konst3_flaechenbew_autbew.htm">Automatische Bewehrung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_einstellungen-fuer-die-verlegung.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst3_flaechenbew_autbew.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rm_polygon-loeschen_(autbew).htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Automatische Bewehrung (allgemeiner Ablauf)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Bereiten Sie vor der automatischen Bewehrung den Grundriss soweit auf, dass dieser nur die wichtigsten geometrischen Elemente enth&auml;lt.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Automatische Bewehrung vorbereiten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Blenden Sie &uuml;berfl&uuml;ssige Elemente (Texte, Ma&szlig;ketten, F&uuml;llungen usw.) aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie ein Anwenderprofil f&uuml;r Zeichnungen mit automatischer Bewehrung an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Darin k&ouml;nnen Sie z. B. f&uuml;r die Darstellung der St&auml;be einen Stift w&auml;hlen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Erzeugen Sie zus&auml;tzliche Folien.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Je eine f&uuml;r jede einzelne Lage und Richtung. Evtl. weitere zus&auml;tzliche Folien f&uuml;r die Vermassung der Staffeln oder f&uuml;r Zusatztexte.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Kopieren Sie entsprechend oft den Grundriss f&uuml;r die untere und obere Lage, f&uuml;r die Grundmatten usw.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Nehmen Sie in einem Grundriss die Polygonalabsteckung vor.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Reduzieren Sie an Stellen mit &quot;Singularit&auml;ten&quot; die as-Werte mit der Funktion </span><span class="f__Software_Element_deskriptiv">AsAbzh</span><span class="f_Step"> [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">FEM</span><span class="f_Step">] oder setzen Sie den Maximalquerschnitt als Bereich ge&auml;nderter Bewehrungsgehalte herab.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Automatische Bewehrung bearbeiten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bearbeiten Sie die Bewehrungslagen (unten X, unten Y, oben X, oben Y).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Grundbewehrung an und dr&uuml;cken auf </span><span class="f__Software_Element_deskriptiv">RECHNEN</span><span class="f_Step">. Kontrollieren Sie die H&ouml;henlinie f&uuml;r die noch nicht abgedeckten Bereiche. Jetzt k&ouml;nnen Sie die erste Zulage w&auml;hlen und wieder auf </span><span class="f__Software_Element_deskriptiv">RECHNEN</span><span class="f_Step"> klicken. Der nicht abgedeckte Bereich ist jetzt kleiner geworden. Erh&ouml;hen Sie den Durchmesser der Grundbewehrung und/oder der Zulage bzw. legen Sie eine weitere Zulage fest. Klicken Sie wieder auf </span><span class="f__Software_Element_deskriptiv">RECHNEN</span><span class="f_Step">. F&uuml;hren Sie die beschriebenen Aktionen so lange durch, bis es keine Bereiche ohne Abdeckung mehr gibt. </span><br>
+<span class="f_Step">Bearbeiten Sie die einzelnen Zulagen. Schalten Sie dazu die Grundbewehrung und die anderen Zulagen aus.</span><br>
+<span class="f_Step">Am Ende jeder Bearbeitung werden die Verlegungen oberhalb der vorhandenen Zeichnung platziert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Nehmen Sie mit der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Letztes Polygon</span><span class="f_Step"> die abgesteckte Geometrie wieder auf.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Speichern Sie die Zeichnung, um die Informationen, die in den Polygonen stecken, mit zu speichern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Transformieren Sie die Lagen in die daf&uuml;r vorgesehenen Folien.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie die Lagen in die vorbereiteten Grundrisse. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">An der Stelle, wo Sie mit dem Abstecken der Polygone begonnen haben, legt das Programm einen Hilfspunkt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Generieren Sie die Staffeln von </span><span class="f__Software_Element_deskriptiv">alle St&auml;be darstellen</span><span class="f_Step"> auf eine Darstellung mit weniger gezeigten St&auml;ben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie die Positionstexte an geeignete Stellen n&auml;her an die Staffeln.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Kontrollieren Sie die L&auml;ngenma&szlig;e und gleichen L&auml;ngenunterschiede von wenigen Zentimetern aus, sofern es nicht durch die L&auml;ngenstaffelung m&ouml;glich wurde. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Z. B. 4,215 auf 4,20 oder 5,38 auf 5,40.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Fassen Sie St&auml;be gleichen Durchmessers und gleicher L&auml;nge zusammen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie n&ouml;tigenfalls Teilrahmen (Planschnitte) an.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Ausschnitt einer Deckenbewehrung. Obere Lage, X-Richtung.</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0313in 0.3125in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.8958in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_01" style="margin:0;width:5.3958in;height:4.3021in;border:none" src="z_einstellung_autbew_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:5.1979in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">An der Stelle des ersten/letzten Punktes der Umrissgeometrie befindet sich ein Hilfspunkt, damit &uuml;ber diesen die Bewehrungsdarstellung mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Versch</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Setzen</span><span class="f_A_Allgemein"> (</span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_A_Allgemein">)] an den Startpunkt verschoben werden kann.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Die Bewehrung ist als Staffel dargestellt, sofern sie aus mehr als zwei St&auml;ben besteht. Sie k&ouml;nnen &uuml;ber den Befehl [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">generi</span><span class="f_A_Allgemein">] die zeichnerische Darstellung &auml;ndern. Es bietet sich an, die Darstellung „6“ zu w&auml;hlen, damit nur der erste und der letzte Stab gezeichnet werden.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Das Programm zieht die Positionierungen grunds&auml;tzlich nach au&szlig;en. Wenn Sie diese Beschriftung &auml;ndern m&ouml;chten, k&ouml;nnen Sie mit [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">versch</span><span class="f_A_Allgemein">] bzw. [&#8594; </span><span class="f__Software_Element_deskriptiv">l&ouml;schen</span><span class="f_A_Allgemein">] und [&#8594; </span><span class="f__Software_Element_deskriptiv">Harfe</span><span class="f_A_Allgemein">] oder [&#8594; </span><span class="f__Software_Element_deskriptiv">Pfeil</span><span class="f_A_Allgemein">] &Auml;nderungen vornehmen.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Siehe auch: <a href="rm_einstellungen-fuer-die-verlegung.htm" class="topiclink">Ausz&uuml;ge in Flucht zur Verlegerichtung platzieren</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.20; margin: 0 0 0.0833in 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.9063in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0 0 0 0;"><img alt="Z_Einstellung_AutBew_03" style="margin:0;width:4.3646in;height:2.0417in;border:none" src="z_einstellung_autbew_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:5.1875in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Ziel der Bearbeitung ist es, m&ouml;glichst viele Staffeln aus gleichen Positionen zu erzeugen. St&auml;be mit gleicher L&auml;nge werden zwar zu einer Position zusammengefasst, aber sie bilden noch keine Staffel. Erst wenn die St&auml;be senkrecht an einer Geraden liegen, werden sie vom Programm zu einer Staffel zusammengefasst. Daraus ergibt sich auch eine einzelne Positionierung.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Beispiel f&uuml;r die Bearbeitung der automatischen Bewehrung</span></h5>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Bearbeitungsschritte werden an einem Ausschnitt aus einem Deckengrundriss beschrieben.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die notwendigen Bearbeitungsm&ouml;glichkeiten sind von Fall zu Fall unterschiedlich. Sie entscheiden wie die endg&uuml;ltige Bewehrung am Ende aussieht. Eine „feine“ L&auml;ngenabstufung spart zwar Gewicht, erh&ouml;ht aber die Anzahl der Positionen und ist schlechter auf der Baustelle zu verlegen. Daher kann es sinnvoll sein, mehr St&auml;be durch </span><span class="f__Software_Element_deskriptiv">b&uuml;ndig machen</span><span class="f_R_Dialog_Info"> zu einheitlichen Staffeln zusammenzufassen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="width:6.9896in; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_04" style="margin:0;width:4.3854in;height:2.1667in;border:none" src="z_einstellung_autbew_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_05" style="margin:0;width:4.3646in;height:2.1354in;border:none" src="z_einstellung_autbew_05.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Die Berechnungsparameter sind auf null gesetzt.</span></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Durch die L&auml;ngenstaffelung von 1,00 m ergeben sich zwar St&auml;be gleicher L&auml;nge, doch liegen die Anfangs- und Endpunkte nicht auf einer Geraden.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_06" style="margin:0;width:4.2813in;height:2.3229in;border:none" src="z_einstellung_autbew_06.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_07" style="margin:0;width:4.3021in;height:2.1250in;border:none" src="z_einstellung_autbew_07.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Hier sehen Sie, wie St&auml;be markiert werden k&ouml;nnen.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Nur die Zulage1 ist eingeschaltet.</span></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Die auf volle Meter verl&auml;ngerten St&auml;be sind b&uuml;ndig gemacht worden. Dadurch entstehen z.B. L&auml;ngen von 3,015m. </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_08" style="margin:0;width:4.3646in;height:2.1146in;border:none" src="z_einstellung_autbew_08.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p style="line-height: 1.20; margin: 0.0833in 0 0.0833in 0;"><img alt="Z_Einstellung_AutBew_09" style="margin:0;width:4.4167in;height:2.1458in;border:none" src="z_einstellung_autbew_09.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.2813in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Zur Kontrolle sind die as-Werte eingeschaltet.</span><br>
+<span class="f_A_Allgemein">Hier sollen die Durchmesser erh&ouml;ht werden, um die kurzen St&auml;be l&ouml;schen zu k&ouml;nnen, wenn der Querschnitt ausreichend ist.</span></p>
+</td>
+<td style="vertical-align:top; width:3.4271in; padding:0.0417in; border:none"><p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0;"><span class="f_A_Allgemein">Wenn St&auml;be etwa gleicher L&auml;nge dicht nebeneinander liegen, kann es sinnvoll sein, sie zu einem Stab mit entsprechend gr&ouml;&szlig;erem Durchmesser zu vereinigen.</span><br>
+<span class="f_A_Allgemein">Vergr&ouml;&szlig;ern Sie die 1. Zulage und l&ouml;schen die 2.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

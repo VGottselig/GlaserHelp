@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Übernahme von Hüllflächen aus DXF/DWG-Dateien</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="DWG/DXF-Dateien,DWG/DXF-Dateien Hüllflächen übernehmen,Hüllflächen,Hüllflächen aus DWG/DXF übernehmen" />
+   <meta name="description" content="Da vor allem in DXF&#8209;Dateien viele überflüssige Linien enthalten sind, ist es ratsam, die Flächen so aufzubereiten, dass das Abgreifen der Eckpunkte möglichst einfach ist. So i" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_74" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="Huellflaechen"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_huellflaechen.htm">Hüllflächen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_zone-loeschen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_huellflaechen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="optionen_sysdat.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Header"><span class="f_Header">&Uuml;bernahme von H&uuml;llfl&auml;chen aus DXF/DWG-Dateien</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_huellflaechen.htm" class="topiclink"><img alt="B-akt_HuellFl" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_huellfl.png"/></a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Da vor allem in DXF&#8209;Dateien viele &uuml;berfl&uuml;ssige Linien enthalten sind, ist es ratsam, die Fl&auml;chen so aufzubereiten, dass das Abgreifen der Eckpunkte m&ouml;glichst einfach ist. So ist es n&ouml;tig, die Au&szlig;enfl&auml;che bis zu der H&ouml;he der Dachd&auml;mmung &uuml;ber die Traufkante hochzuziehen, um die korrekte Fl&auml;che zu erhalten. Ebenso m&uuml;ssen verdeckte Fl&auml;chen separat herausgezogen werden, damit sie erfasst und auch der richtigen Himmelsrichtung zugeordnet werden k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Huellflaechen aus DWG-DXF" style="margin:0;width:7.9479in;height:2.1667in;border:none" src="hmfile_hash_5f1fe628.png"/></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Original enth&auml;lt sehr viele Linien; Fl&auml;chenkonturen wurden nachgezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Da die Layer der DXF/DWG&#8209;Dateien automatisch hinter die Standardfolien (0 … 19) von ISBCAD angef&uuml;gt werden, k&ouml;nnen Sie problemlos die Konturen mit Linien und Kreisen nachzeichnen, wenn die automatische Folienbelegung eingeschaltet ist. Linien und Kreise kommen in die Folie 0. Danach werden die Folien der DXF/DWG-Datei einfach gel&ouml;scht. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Huellflaechen aus DWG-DXF_Folie-geloescht" style="margin:0;width:7.9375in;height:2.1771in;border:none" src="hmfile_hash_06ce5b9a.png"/></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">DXF-Folien ausgeblendet bzw. gel&ouml;scht; H&uuml;llfl&auml;chen sind markiert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_74.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

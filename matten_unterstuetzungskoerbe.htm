@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Unterstützungskörbe erstellen - [U-Korb]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="DBV - Unterstützungskörbe,Matten,Matten Unterstützungskörbe erstellen,U-Körbe erstellen,Unterstützungskörbe" />
+   <meta name="description" content="Ermitteln der für die Lagesicherung der oberen Bewehrung erforderliche Menge an Unterstützungskörben. Die Anzahl wird auf die Zeichnung geschrieben und in der Schneideskizze" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_matten.htm">Matten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="mattenreste_loeschen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_matten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="mattenverlegungen_aendern.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Unterst&uuml;tzungsk&ouml;rbe erstellen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_matten.htm" class="topiclink" title="Matten-Funktionen (Übersicht)"><img alt="Matten-Funktionen (Übersicht)" title="Matten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_matten.png"/></a><span class="f_Aufruf"> <img alt="B-akt_U-Korb_Matten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_u-korb_matten.png"/> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Ermitteln der f&uuml;r die Lagesicherung der oberen Bewehrung erforderliche Menge an Unterst&uuml;tzungsk&ouml;rben. Die Anzahl wird auf die Zeichnung geschrieben und in der <a href="rd_stahlliste_(zusammenstellung-der-inhalte).htm" class="topiclink">Schneideskizze</a> verwaltet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Die Unterst&uuml;tzungsk&ouml;rbe sind in der Datei </span><span class="f__Eigenname">Ukorb.dat</span><span class="f_Hinweis_in_Tabelle"> gespeichert. Sie k&ouml;nnen die Datei im ISBCAD Hauptmen&uuml; in der <a href="rm_betonstahltabelle.htm" class="topiclink">Matten- und Rundstahlliste</a> bearbeiten. Die in der Datei enthaltenen Unterst&uuml;tzungsk&ouml;rbe entsprechen den standardisierten Elementen der Baustahlgewebe GmbH (<a href="https://www.baustahlgewebe.com/" target="_blank" class="weblink">www.baustahlgewebe.com</a>). Diese Unterst&uuml;tzungselemente sind gem&auml;&szlig; DBV Merkblatt zertifiziert und erf&uuml;llen somit die Anforderungen des Eurocode 2. Weitere Information: <a href="https://www.isb-ev.de/" target="_blank" class="weblink">www.isb-ev.de</a> (Institut f&uuml;r Stahlbetonbewehrung&nbsp;e.V.).</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Hinweis_in_Tabelle"> (untere Men&uuml;leiste) eingestellt ist, werden die Texte der Unterst&uuml;tzungselemente in der Folie&nbsp;3 abgelegt.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Sie k&ouml;nnen vorgefertigte Beispiele f&uuml;r Stempel und Skizzen der Bibliothek </span><span class="f__Eigenname">Plank&ouml;pfe nach EC2</span><span class="f_Hinweis_in_Tabelle"> verwenden. Diese Bibliothek wird mit ISBCAD installiert. Siehe: <a href="des_plankoepfe-nach-ec2.htm" class="topiclink">Plank&ouml;pfe nach EC2</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">ISBCAD unterscheidet linienf&ouml;rmige und punktf&ouml;rmige Unterst&uuml;tzungselemente. Bei den punktf&ouml;rmigen betr&auml;gt die L&auml;nge Null.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie Eckpunkte an, die die zu ermittelnde Fl&auml;che umschreiben und beenden Sie mit Rechtsklick.</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> [</span><span class="f__Abfrage">Punkte anklicken n Punkte gefunden</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">].</span><br>
+<span class="f_Step_Anmerkung">F&uuml;gen Sie gegebenenfalls Hilfspunkte ein </span><span class="f__Software_Element_deskriptiv">[Untere Men&uuml;leiste</span><span class="f_Step_Anmerkung"> &#8594; </span><span class="f__Software_Element_deskriptiv">HiP</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Um Punkte hinzuzuf&uuml;gen oder zu entfernen, nutzen Sie im unteren Funktionsbereich die Funktionen: </span></p>
+<p class="p_Step_Anmerkung"><img alt="I_Punkte-hinzufuegen" style="margin:0;width:0.4896in;height:0.1563in;border:none" src="i_punkte-hinzufuegen.png"/><span class="f_Step_Anmerkung"> [</span><span class="f__Software_Element_deskriptiv">Punkte hinzuf&uuml;gen</span><span class="f_Step_Anmerkung">];</span></p>
+<p class="p_Step_Anmerkung"><img alt="I_Punkte-entfernen" style="margin:0;width:0.4896in;height:0.1563in;border:none" src="i_punkte-entfernen.png"/><span class="f_Step_Anmerkung"> [</span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_Step_Anmerkung">]; </span></p>
+<p class="p_Step_Anmerkung"><img alt="I_Alle-Punkte-enfernen" style="margin:0;width:0.5000in;height:0.1563in;border:none" src="i_alle-punkte-enfernen.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">Alle Punkte entfernen</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Typ</span><span class="f_Step"> den gew&uuml;nschten U-Korb-Typ. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Umrechnungsfaktor f&uuml;r Unterst&uuml;tzungselemente an:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Bei linienf&ouml;rmigen Typen: [Faktor (m/m&sup2;)]. W&auml;hlen Sie aus der Dropdown-Liste den Umrechnungsfaktor f&uuml;r die Ermittlung der laufenden Meter.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Bei punktf&ouml;rmigen Typen: [Faktor (St./m&sup2;)]. W&auml;hlen Sie aus der Dropdown-Liste als Faktor die Anzahl pro Quadratmeter.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7813in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" colspan="6"  style="width:6.9792in; padding:0.0313in;" scope="colgroup"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Faktor f&uuml;r Unterst&uuml;tzungselemente</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" rowspan="3"  style="width:1.0000in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Typ</span></p>
+</td>
+<td class="Reference_Clean" rowspan="2"  style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Stabdurchmesser der oberen Bewehrung</span></p>
+</td>
+<td class="Reference_Clean" colspan="2"  style="width:1.9271in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Abstand</span></p>
+</td>
+<td class="Reference_Clean" colspan="2"  style="width:1.8229in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Faktor</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">s1</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">s2</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">m / m&sup2;</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">St&uuml;ck / m&sup2;</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">mm</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">m</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">m</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">/</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" rowspan="3"  style="width:1.0000in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">linienf&ouml;rmig</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &#8804; 6,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">6,5 &lt; </span><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &#8804; 12,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,7</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,4</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.0729in; height:0.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &gt; 12,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; height:0.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,71</span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">1)</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; height:0.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; height:0.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,4</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; height:0.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" rowspan="3"  style="width:1.0000in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">punktf&ouml;rmig</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &#8804; 6,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">6,5 &lt; </span><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &#8804; 12,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,7</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,7</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.0729in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_R_Tabellenzeile_zentriert"> &gt; 12,0</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.9167in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,71</span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">1)</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">0,71</span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">1)</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8750in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">-</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.8021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">1) </span><span class="f_Step_Anmerkung">Berechnung des Verlegeabstandes: </span><br>
+<span class="f_Step_Anmerkung">Sind die zu unterst&uuml;tzenden St&auml;be </span><span class="f_R_Tabellenzeile">&Oslash;</span><span class="f_Step_Anmerkung"> &gt; 12mm kann ein rechnerischer Nachweis des Verlegeabstandes durchgef&uuml;hrt werden.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Setzen Sie den Text per Mausklick in der Zeichnung ab. [</span><span class="f__Abfrage">Textlage</span><span class="f_Step">]</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Danach werden entweder die Texte in die n&auml;chste Zeile geschrieben oder ein vorhandener Text ge&auml;ndert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn die Angaben ge&auml;ndert oder gel&ouml;scht werden sollen, m&uuml;ssen Sie in diesem Fall das Men&uuml; [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_Hinweis_in_Tabelle"> bzw. </span><span class="f__Software_Element_deskriptiv">l&ouml;schen</span><span class="f_Hinweis_in_Tabelle">] benutzen. Achten Sie darauf, dass die Struktur des Textes erhalten bleibt. Dr&uuml;cken Sie nach dem &Auml;ndern der Zahlen die Ende-Taste, damit beim Dr&uuml;cken der Eingabetaste kein Text abgeschnitten wird.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: 31.08 lfdm DBV-BT-20-B-L / 30.00 lfdm DBV-BT-20-B-L</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" colspan="4"  style="width:10.2188in; padding:0.0313in;" scope="colgroup"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Unterst&uuml;tzungselemente</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="3"  style="width:7.6667in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">linienf&ouml;rmig</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4479in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">punktf&ouml;rmig</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="2"  style="width:5.0625in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Unterst&uuml;tzungsk&ouml;rbe</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4688in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Unterst&uuml;tzungsschlangen</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4479in; padding:0.0313in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Unterst&uuml;tzungsb&ouml;cke</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.4583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">auf der Schalung </span><br>
+<span class="f_R_Tabellenzeile_zentriert">stehend</span></p>
+</td>
+<td class="Reference_Clean" colspan="2"  style="width:5.1146in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">auf der Bewehrung liegend</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4479in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">auf der Schalung </span><br>
+<span class="f_R_Tabellenzeile_zentriert">stehend</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.4583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">DBV-BK-h-S-L</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4688in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">DBV-BT-h-B-L</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4688in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">DBV-BS-h-B-L</span></p>
+</td>
+<td class="Reference_Clean" style="width:2.4479in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">DBV-h-S-P</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.4583in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_U01" style="margin:0 auto 0 auto;width:2.2917in;height:1.3542in;border:none" src="z_u01.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:2.4688in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_U03" style="margin:0 auto 0 auto;width:2.2813in;height:1.3542in;border:none" src="z_u03.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:2.4688in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_U02" style="margin:0 auto 0 auto;width:2.2813in;height:1.3542in;border:none" src="z_u02.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:2.4479in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="Z_U04" style="margin:0 auto 0 auto;width:2.2813in;height:1.3542in;border:none" src="z_u04.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_matten.htm" class="topiclink">Matten (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

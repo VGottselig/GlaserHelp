@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Kreis und Teilkreis bemaßen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bemaßung,Bogenvermaßung,Kreise,Kreise Bogenlänge angeben,Kreise Radius angeben,Kreise Umfang angeben,Maßketten,Maßketten Bogenlänge angeben,Maßketten Radius angeben,Maßketten Umfang angeben,Radiusvermaßung,Umfangvermaßung" />
+   <meta name="description" content="Die Darstellung der Umfang- und Bogenvermaßung kann im Dialog DefMaß auf der Registerkarte Maßketten konfiguriert werden. Für die Maßtexte gelten die Einstellungen für Einzel" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_massketten.htm">Maßketten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="masketten_winkelangaben_erstellen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_massketten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="massketten_verschieben_2.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Kreis und Teilkreis bema&szlig;en</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_massketten.htm" class="topiclink" title="Maßketten-Funktionen (Übersicht)"><img alt="Maßketten-Funktionen (Übersicht)" title="Maßketten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massket.png"/></a> </span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Darstellung der Umfang- und Bogenverma&szlig;ung kann im Dialog <a href="masskettenstil_konfigurieren.htm" class="topiclink" title="Maßkettenstil konfigurieren">DefMa&szlig;</a> auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ketten</span><span class="f_L_Listeneintrag"> konfiguriert werden. F&uuml;r die Ma&szlig;texte gelten die Einstellungen f&uuml;r </span><span class="f__Software_Element_deskriptiv">Einzelma&szlig;</span><span class="f_L_Listeneintrag">. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">F&uuml;r die Darstellung der Radiusverma&szlig;ung nutzen Sie in </span><span class="f__Software_Element_deskriptiv">DefMa&szlig;</span><span class="f_L_Listeneintrag"> die Einstellungen auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Radiusverma&szlig;ung</span><span class="f_L_Listeneintrag">.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_Umfang_Massket" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_umfang_massket.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verma&szlig;ung der Umfangsl&auml;nge von Teilkreisen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Teilkreis mit der linken Maustaste an. [</span><span class="f__Abfrage">Welcher Kreis</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Bei Mausbewegung wird die Vorschau angezeigt. Es werden auch Punkte gefangen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor, um die gew&uuml;nschte Gr&ouml;&szlig;e und den Ablageort zu bestimmen, und legen Sie die Angabe der Bogenl&auml;nge mit Linksklick ab. [</span><span class="f__Abfrage">Kreislage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Angabe der Bogenl&auml;nge wird platziert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_Radius_Massket" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_radius_massket.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Angabe der Radien von Voll- und Teilkreisen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Kreis mit der linken Maustaste an. [</span><span class="f__Abfrage">Welcher Kreis</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Winkel an, unter dem die Ma&szlig;kette gezeichnet werden soll und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">Winkel oder Klick</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen das Ma&szlig; auch mit Linksklick absetzen, ohne einen bestimmten Winkel anzugeben. Die Lage des Cursors entscheidet dar&uuml;ber, ob das Ma&szlig; innen oder au&szlig;en gezeichnet wird.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_Bogen_Massket" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_bogen_massket.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verma&szlig;t Punkte auf einem Kreisbogen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die zu verma&szlig;enden Punkte des Kreisbogens gegen den Uhrzeigersinn an. [</span><span class="f__Abfrage">Welche Linien 0 Punkte gefunden</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die gefundenen Punkte werden durch Kreuze markiert. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Beenden Sie die Auswahl der Punkte mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alle zu verma&szlig;enden Punkte werden markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Kreis an, auf dem die Punkte liegen. [</span><span class="f__Abfrage">Auf welchem Bogen</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Liegt ein oder mehrere Punkte nicht auf dem Kreis, erscheint eine Meldung. Entfernen Sie die falsch angeklickten Punkte. Um falsch angeklickte Punkte zu entfernen, aktivieren Sie im unteren Funktionsbereich die Schaltfl&auml;che </span><img alt="I_Punkte-entfernen" style="margin:0;width:0.4896in;height:0.1563in;border:none" src="i_punkte-entfernen.png"/><span class="f_Step_Anmerkung"> [</span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_Step_Anmerkung">] und klicken die zu l&ouml;schenden Punkte an. Um alle Punkte zu l&ouml;schen, klicken Sie </span><img alt="I_Alle-Punkte-enfernen" style="margin:0;width:0.5000in;height:0.1563in;border:none" src="i_alle-punkte-enfernen.png"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_Step_Anmerkung">[</span><span class="f__Software_Element_deskriptiv">Alle</span><span class="f__Software_Element_deskriptiv" style="font-size: 9pt;"> </span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_Step_Anmerkung">] an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor, um die gew&uuml;nschte Gr&ouml;&szlig;e und den Ablageort zu bestimmen, und legen Sie die Ma&szlig;kette mit Linksklick ab. [</span><span class="f__Abfrage">Lage des Ma&szlig;kette</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Bei Mausbewegung wird die Vorschau angezeigt. Es werden auch Punkte gefangen.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Bogen_vermaßen" style="margin:0;width:5.0521in;height:2.5104in;border:none" src="hmfile_hash_b14721de.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="masskettenstil_konfigurieren.htm" class="topiclink">Ma&szlig;kettenstil konfigurieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_massketten.htm" class="topiclink">Ma&szlig;ketten (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

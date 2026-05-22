@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Auszugsform und Verlegungen erzeugen (Beispiele)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="In einer Stahlbetonwand sollen zusätzlich zur Biegebewehrung (senkrecht; hier nicht dargestellt) horizontale R-Matten eingebaut werden. Die Zeichnung wird komplett mit Ansicht,..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid__TSK_FormmattenBeispiel"></object>
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="matten_main.htm">Formmatten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formma_aendpos_umpos.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="matten_main.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="optionen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Auszugsform und Verlegungen erzeugen (Beispiele)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">In einer Stahlbetonwand sollen zus&auml;tzlich zur Biegebewehrung (senkrecht; hier nicht dargestellt) horizontale R-Matten eingebaut werden. Die Zeichnung wird komplett mit Ansicht, L&auml;ngs- und Querschnitt gezeichnet.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Das zu erzielende Ergebnis sollte Ihnen bereits bei der Wahl der Auszugsform bekannt sein. Zum besseren Verst&auml;ndnis sei die Darstellung hier vorab gezeigt.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="SCR_Formmatte_Beispiel" style="margin:0;width:7.6667in;height:3.7604in;border:none" src="scr_formmatte_beispiel.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Zeichnen Sie die Ansicht und die Schnitte mit den Funktionen des Konstruktionsprogramms. Wechseln Sie anschlie&szlig;end in das Formmatten-Men&uuml; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Task_Info">].</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Auszugsform erzeugen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Zun&auml;chst muss die Auszugsform erzeugt werden. Rufen Sie hierzu die Funktion &quot;Biegeform aus der Formtyptabelle erzeugen&quot; auf; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">BiForm</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">ForTyp</span><span class="f_Task_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Step">W&auml;hlen Sie eine R-Matte aus. [</span><span class="f__Abfrage">Mattentyp</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">W&auml;hlen Sie als Biegerichtung [</span><span class="f__Software_Element_deskriptiv">2 = quer</span><span class="f_Step">] &quot;Matte &uuml;ber die Querst&auml;be biegen&quot; durch Anklicken der Schaltfl&auml;che. [</span><span class="f__Abfrage">Biegerichtung</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Best&auml;tigen Sie den Ma&szlig;stab mit Rechtsklick. [</span><span class="f__Abfrage">Ma&szlig;stab</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Formtyptabelle wird ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">W&auml;hlen Sie aus der Formtyptabelle die Form Nr. 1.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Form wird an den Cursor geh&auml;ngt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Auswahl-FormtypBeispiel" style="margin:0;width:4.4167in;height:4.2083in;border:none" src="d_auswahl-formtypbeispiel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">Setzen Sie die Form an einer beliebigen Stelle auf der Zeichnung mit einem Linksklick ab. [</span><span class="f__Abfrage">setzen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">6.</span><span class="f_Step">Geben Sie f&uuml;r die L&auml;nge </span><span class="f__Abfrage_Resultat">1.075</span><span class="f_Step"> ein und best&auml;tigen Sie mit der Eingabetaste. [</span><span class="f__Abfrage">LX1</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">7.</span><span class="f_Step">Setzen Sie die Form an einer beliebigen Stelle auf der Zeichnung ab. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">8.</span><span class="f_Step">Klicken Sie auf [</span><span class="f__Software_Element_deskriptiv">drehen/spiegeln</span><span class="f_Step">] und klicken Sie auf den Wert</span><span class="f__Abfrage_Resultat"> </span><span class="f__Software_Element_deskriptiv">90&ordm;</span><span class="f_Step">, um den Auszug um </span><span class="f__Software_Element_deskriptiv">90&ordm;</span><span class="f_Step"> zu drehen. Legen Sie die Auszugsform anschlie&szlig;end auf der Zeichenfl&auml;che ab. [</span><span class="f__Abfrage">Lage Auszugsform</span><span class="f_Step">]. </span><span class="f_Step_Anmerkung">Die </span><span class="f__Abfrage">Winkel Spiegelachse [- = keine Angabe]</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie mit Rechtsklick best&auml;tigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">9.</span><span class="f_Step">Best&auml;tigen Sie die Positionsnummer </span><span class="f__Abfrage">Pos.</span><span class="f_Step">. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">10.</span><span class="f_Step">Klicken Sie f&uuml;r die </span><span class="f__Abfrage">Textrichtung</span><span class="f_Step"> auf den Wert</span><span class="f__Abfrage_Resultat"> </span><span class="f__Software_Element_deskriptiv">90&ordm;</span><span class="f_Step"> und legen Sie den Auszugstext ab. Mit Linksklick legen Sie den Text an einer beliebigen Stelle ab, mit Rechtsklick wird die aktuelle Lage best&auml;tigt. [</span><span class="f__Abfrage">Lage Auszugstext</span><span class="f_Step">].</span></p>
+<p class="p_Step"><span class="f_Step">&nbsp;</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie haben die Auszugsform nun erzeugt. Mit der Wahl der Darstellung des Querstabes haben Sie im Folgenden bei den Verlegungen nur noch die M&ouml;glichkeit, die Verlegebreite bis zur maximalen Mattenl&auml;nge einzugeben. </span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Nach dem Erstellen der Auszugsform steht es Ihnen frei, mit welcher Verlegeroutine Sie beginnen m&ouml;chten. Die Reihenfolge der n&auml;chsten drei Schritte ist beliebig.</span></p>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Heading4"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #4b4b4b; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Verlegung als Staffel [VeStaf]</a></span></h4>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In diesem Abschnitt wird die Verlegung als Formmattenstaffel gezeichnet.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Auszugsform w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Task_Info">Rufen Sie die Funktion &quot;Verlegung Matten als Staffel&quot; auf; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_Task_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Task_Info">Schalten Sie den Verkn&uuml;pfungsmodus aus [</span><span class="f__Software_Element_deskriptiv">Vkn aus</span><span class="f_Task_Info">], da noch keine Verlegung vorhanden ist, auf die Bezug genommen werden kann.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Klicken Sie entweder die Auszugsform oder den Auszugstext an [</span><span class="f__Abfrage">Welche Form</span><span class="f_Step">] und setzen Sie diese an einer beliebigen Stelle ab [</span><span class="f__Abfrage">Form setzen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">&Uuml;bernehmen Sie die Vorschl&auml;ge f&uuml;r</span><span class="f__Abfrage"> Dreh-Winkel</span><span class="f_Step">, </span><span class="f__Abfrage">Winkel Spiegelachse</span><span class="f_Step"> und </span><span class="f__Abfrage">Winkel Projektionsachse</span><span class="f_Step"> jeweils mit Rechtsklick.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte R-Matte aus. [</span><span class="f__Abfrage">Mattentyp</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">6.</span><span class="f_Step">Geben Sie als </span><span class="f__Abfrage">max. Breite je Matte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">5.00</span><span class="f_Step"> und als </span><span class="f__Abfrage">Abstand</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">-0.38</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingaben jeweils mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Da hier eine Matten&uuml;berdeckung von mindestens 38 cm vorgenommen werden muss, ist der Wert f&uuml;r den Abstand mit negativem Zeichen versehen.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Matten verlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Step">W&auml;hlen Sie die Verlegeroutine [</span><span class="f__Software_Element_deskriptiv">gezielt</span><span class="f_Step">] (links neben dem Funktionsbereich) aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">Klicken Sie die Wandlinien mit der linken Maustaste an, und geben Sie, abweichend von der eingestellten Betondeckung, die nachstehenden Werte ein.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abfrage</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Eingabe</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">XBer-Anf</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM+0.1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">YBer-Anf</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM+0</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">XBer-Ende</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM-0.1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">YBer-Ende</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM+0</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2292in;"><img alt="SCR_Formmatte_Beispiel02" style="margin:0;width:7.5417in;height:3.6875in;border:none" src="scr_formmatte_beispiel02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Geben Sie als </span><span class="f__Abfrage">Breite der Restmatte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein und best&auml;tigen Sie als </span><span class="f__Abfrage">Abstandsaufteilung</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">1</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">Als </span><span class="f__Abfrage">Verlegefaktor</span><span class="f_Step"> geben Sie den Wert </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verlegung wird innen und au&szlig;en vorgenommen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid; margin: 0.0521in 0 0.1042in 0;"><img alt="SCR_Formmatte_Beispiel03" style="margin:0;width:7.7917in;height:3.8021in;border:none" src="scr_formmatte_beispiel03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Heading4"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #4b4b4b; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Verlegung als Form [VeForm]</a></span></h4>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In diesem Abschnitt wird die Verlegung im Querschnitt eingezeichnet.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Auszugsform w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Task_Info">Rufen Sie die Funktion &quot;Verlegung als Form&quot; auf; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">VeForm</span><span class="f_Task_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">Klicken Sie entweder die Auszugsform oder den Auszugstext an [</span><span class="f__Abfrage">Welche Form</span><span class="f_Step">] und setzen Sie diese an einer beliebigen Stelle ab [</span><span class="f__Abfrage">Form setzen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Klicken Sie die Option </span><span class="f__Software_Element_deskriptiv">1 Teillg.</span><span class="f_Step"> an und best&auml;tigen Sie mit Rechtsklick. [</span><span class="f__Abfrage">Teill&auml;nge(n)</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">&Uuml;bernehmen Sie die Vorschl&auml;ge f&uuml;r</span><span class="f__Abfrage"> Dreh-Winkel</span><span class="f_Step">, </span><span class="f__Abfrage">Winkel Spiegelachse</span><span class="f_Step"> und </span><span class="f__Abfrage">Winkel Projektionsachse</span><span class="f_Step"> jeweils mit Rechtsklick.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte R-Matte aus. [</span><span class="f__Abfrage">Mattentyp</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">6.</span><span class="f_Step">Geben Sie als </span><span class="f__Abfrage">max. Breite je Matte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">5.00</span><span class="f_Step"> und als </span><span class="f__Abfrage">Abstand</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">-0.38</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingaben jeweils mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Hier ist die entscheidende Stelle, wo die fehlende Angabe des Auszugstextes (?) eingegeben werden muss. Da hier eine Matten&uuml;berdeckung von mindestens 38 cm vorgenommen werden muss, ist der Wert f&uuml;r den Abstand mit negativem Zeichen versehen.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Matten verlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Step">W&auml;hlen Sie die Verlegeroutine [</span><span class="f__Software_Element_deskriptiv">gezielt</span><span class="f_Step">] (links neben dem Funktionsbereich) aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">Klicken Sie f&uuml;r den </span><span class="f__Abfrage">Bezugspunkt</span><span class="f_Step"> das untere Ende der Form an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Klicken Sie die Linien mit der linken Maustaste an, und geben Sie, abweichend von der eingestellten Betondeckung, die nachstehenden Werte ein.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abfrage</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Eingabe</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">X-Neu</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM+0.05</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0833in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Y-Neu</span></p>
+</td>
+<td style="vertical-align:top; width:1.8438in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">LM+0</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="SCR_Formmatte_Beispiel04" style="margin:0;width:7.8438in;height:3.8333in;border:none" src="scr_formmatte_beispiel04.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">Geben Sie als </span><span class="f__Abfrage">Verlegetiefe</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">6.60</span><span class="f_Step">, als </span><span class="f__Abfrage">Breite der Restmatte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein und best&auml;tigen Sie als </span><span class="f__Abfrage">Abstandsaufteilung</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">1</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">Als </span><span class="f__Abfrage">Verlegefaktor</span><span class="f_Step"> geben Sie den Wert </span><span class="f__Abfrage_Resultat">0</span><span class="f_Step"> ein und best&auml;tigen Sie. Da bei der Verlegung in der Ansicht schon gez&auml;hlt wurde, ist die Aufnahme in die Stahlliste hier nicht erforderlich.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verlegung wird gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Heading4"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #4b4b4b; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Verlegung in Schnittdarstellung [VeMaSn]</a></span></h4>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">In diesem Abschnitt wird die Verlegung im horizontalen Schnitt gezeichnet.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Auszugsform w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Task_Info">Rufen Sie die Funktion &quot;Verlegung von Matten im Schnitt&quot; auf; [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">VeMaSn</span><span class="f_Task_Info">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Task_Info">Schalten Sie den Verkn&uuml;pfungsmodus ein [</span><span class="f__Software_Element_deskriptiv">Vkn an</span><span class="f_Task_Info">], um die Verlegungen des Schnitts zu &uuml;bernehmen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Task_Info" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Klicken Sie die linke Form im Schnitt an. [</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alle bekannten Parameter werden &uuml;bernommen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2813in;"><img alt="SCR_Formmatte_Beispiel05" style="margin:0;width:7.7708in;height:3.4271in;border:none" src="scr_formmatte_beispiel05.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Matten verlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">1.</span><span class="f_Step">W&auml;hlen Sie die in dieser Situation g&uuml;nstigste Verlegeroutine aus; [</span><span class="f__Software_Element_deskriptiv">am Rand</span><span class="f_Step">] (links neben dem Funktionsbereich).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">2.</span><span class="f_Step">Klicken Sie den Rand, wie in der Beispielzeichnung angezeigt (Cursor welcher Rand) angezeigt, an. [</span><span class="f__Abfrage">Welcher Rand</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Den </span><span class="f__Abfrage">Randabstand</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie mit Rechtsklick best&auml;tigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">3.</span><span class="f_Step">Geben Sie f&uuml;r</span><span class="f__Abfrage"> Eckab1</span><span class="f_Step"> und </span><span class="f__Abfrage">Eckab2</span><span class="f_Step"> jeweils den Wert </span><span class="f__Abfrage_Resultat">0.10</span><span class="f_Step"> ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">4.</span><span class="f_Step">Best&auml;tigen Sie als </span><span class="f__Abfrage">Breite der Restmatte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein und best&auml;tigen Sie als </span><span class="f__Abfrage">Abstandsaufteilung</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">1</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wiederholen Sie die Verlegung auf der gegen&uuml;berliegenden Seite.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">5.</span><span class="f_Step">Klicken Sie die rechte Form im Schnitt an. [</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alle bekannten Parameter werden &uuml;bernommen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">6.</span><span class="f_Step">Klicken Sie den gegen&uuml;berliegenden Rand an. [</span><span class="f__Abfrage">Welcher Rand</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Den </span><span class="f__Abfrage">Randabstand</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie mit Rechtsklick best&auml;tigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">7.</span><span class="f_Step">Geben Sie f&uuml;r</span><span class="f__Abfrage"> Eckab1</span><span class="f_Step"> und </span><span class="f__Abfrage">Eckab2</span><span class="f_Step"> jeweils den Wert </span><span class="f__Abfrage_Resultat">0.06</span><span class="f_Step"> ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn sich unterschiedliche Verh&auml;ltnisse ergeben, erscheint der Dialog </span><span class="f__Software_Element_deskriptiv">Verkn&uuml;pfung beachten!</span><span class="f_Step_Anmerkung"> Im Dialog haben Sie die M&ouml;glichkeit, die geltende Verteilerl&auml;nge (-breite) auszuw&auml;hlen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="D_Verknuepfung-beachtenMatten" style="margin:0;width:3.2604in;height:1.6354in;border:none" src="d_verknuepfung-beachtenmatten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">8.</span><span class="f_Step">W&auml;hlen Sie im Dialog die Option</span><span class="f__Software_Element_deskriptiv"> aus alter Verlegung &uuml;bernehmen</span><span class="f_Step"> und best&auml;tigen Sie abschlie&szlig;end mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog wird geschlossen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">9.</span><span class="f_Step">Klicken sie auf </span><span class="f__Software_Element_deskriptiv">Tausche</span><span class="f_Step">, um das Restst&uuml;ck auf die andere Seite zu verlegen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">10.</span><span class="f_Step">Best&auml;tigen Sie als </span><span class="f__Abfrage">Breite der Restmatte</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">2</span><span class="f_Step"> ein und best&auml;tigen Sie als </span><span class="f__Abfrage">Abstandsaufteilung</span><span class="f_Step"> den Wert </span><span class="f__Abfrage_Resultat">1</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verlegung wird gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Nach dem Zeichnen der Verlegungen sollten Sie die einzelnen Matten noch positionieren. Siehe hierzu: <a href="formmatten_bipos.htm" class="topiclink">Erzeugen einer Positionierung (Formmatten)</a></span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

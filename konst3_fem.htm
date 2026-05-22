@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>as-Werte aus FEM einlesen - [FEM]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="FEM - Finite Elemente,FEM - Finite Elemente as-Werte einlesen,FEM - Funktion,FEM - Funktion *Funktionen und Optionen,Konstruktion 3,Konstruktion 3 Funktionen" />
+   <meta name="description" content="Sie können einzelne oder auch mehrere FEM-Datensätze in Form von aS-Werten in die Zeichnung einlesen und bearbeiten. Die FEM-Datensätze werden mit der Zeichnung gespeichert." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="con_fem.htm">Finite Elemente</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_einstellungen_(fem-definition).htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="con_fem.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="fem-datei_einlesen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">a</span><span class="f_R_Menues_und_Funktionen" style="font-size: 8pt; vertical-align: sub;">S</span><span class="f_R_Menues_und_Funktionen">-Werte aus FEM-Programmen einlesen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <img alt="B-akt_FEM" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_fem.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Sie k&ouml;nnen einzelne oder auch mehrere FEM-Datens&auml;tze in Form von a</span><span class="f_R_Dialog_Info" style="font-size: 7pt; vertical-align: sub;">S</span><span class="f_R_Dialog_Info">-Werten in die Zeichnung einlesen und bearbeiten. Die FEM-Datens&auml;tze werden mit der Zeichnung gespeichert.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Bevor Sie die Ergebnisse der FEM-Berechnung einlesen, sollten Sie den Grundriss f&uuml;r die Bewehrung aufbereitet haben. Gegebenenfalls ist eine zweite Grundrissdarstellung f&uuml;r die obere Bewehrungslage erforderlich. Die Ergebnisse werden vektoriell dargestellt. Die L&auml;ngen der Vektoren in X- und Y-Richtung geben qualitativ die Gr&ouml;&szlig;e des jeweiligen a</span><span class="f_R_Dialog_Info" style="font-size: 7pt; vertical-align: sub;">S</span><span class="f_R_Dialog_Info">-Wertes an. Dar&uuml;ber hinaus werden die Linien in den Farben der Stifte angezeigt. H&ouml;here Stiftnummer bedeutet mehr a</span><span class="f_R_Dialog_Info" style="font-size: 7pt; vertical-align: sub;">S</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die mit der Funktion [</span><span class="f__Software_Element_deskriptiv">DatLes</span><span class="f_A_Allgemein">] eingef&uuml;gten FEM-Daten k&ouml;nnen f&uuml;r die automatische Bewehrung [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">AutBew</span><span class="f_A_Allgemein">] sowie f&uuml;r die Bewehrung mit BAMTEC-Teppichen [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BAMTEC</span><span class="f_A_Allgemein">] verwendet werden. Wenn es Bereiche mit unterschiedlicher Grundbewehrung gibt, k&ouml;nnen Sie diese Differenzen mit der Funktion [</span><span class="f__Software_Element_deskriptiv">asAbzh</span><span class="f_A_Allgemein">] (a</span><span class="f_A_Allgemein" style="font-size: 9pt; vertical-align: sub;">s</span><span class="f_A_Allgemein">-Werte abziehen) unterschiedlich vornehmen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:12.5104in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="fem-datei_einlesen.htm" class="topiclink" title="FEM-Datei einlesen"><img alt="FEM-Datei einlesen" title="FEM-Datei einlesen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_datles.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">FEM-Datei einlesen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-linien_verschieben.htm" class="topiclink" title="as-Linien verschieben"><img alt="as-Linien verschieben" title="as-Linien verschieben" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aslive.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Linien verschieben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-texte_ein-_und_ausschalten.htm" class="topiclink" title="as-Texte einschalten"><img alt="as-Texte einschalten" title="as-Texte einschalten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_astean.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Texte einschalten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-texte_ein-_und_ausschalten.htm" class="topiclink" title="as-Texte ausschalten"><img alt="as-Texte ausschalten" title="as-Texte ausschalten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_asteau.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Texte ausschalten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-linien_ein-_und_ausschalten.htm" class="topiclink" title="as-Linien einschalten"><img alt="as-Linien einschalten" title="as-Linien einschalten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aslian.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Linien einschalten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-linien_ein-_und_ausschalten.htm" class="topiclink" title="as-Linien ausschalten"><img alt="as-Linien ausschalten" title="as-Linien ausschalten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_asliau.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Linien ausschalten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="faktor_fuer_as-linien.htm" class="topiclink" title="Darstellung der as-Vektoren ändern"><img alt="Darstellung der as-Vektoren ändern" title="Darstellung der as-Vektoren ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aslifa.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Darstellung der as-Vektoren &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="groessenfaktor_fuer_darstellun.htm" class="topiclink" title="Größenfaktor für Darstellung einstellen"><img alt="Größenfaktor für Darstellung einstellen" title="Größenfaktor für Darstellung einstellen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_groefa.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Gr&ouml;&szlig;enfaktor f&uuml;r Darstellung einstellen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-werte_abziehen.htm" class="topiclink" title="as-Werte abziehen"><img alt="as-Werte abziehen" title="as-Werte abziehen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_asabzh-femdef.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Werte abziehen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="as-werte_addieren.htm" class="topiclink" title="as-Werte addieren"><img alt="as-Werte addieren" title="as-Werte addieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_asadd.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Werte addieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_as-loeschen.htm" class="topiclink" title="as-Werte löschen"><img alt="as-Werte löschen" title="as-Werte löschen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_asloes.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Werte l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="urspruengliche_werte_anzeigen.htm" class="topiclink" title="Ursprüngliche Werte anzeigen"><img alt="Ursprüngliche Werte anzeigen" title="Ursprüngliche Werte anzeigen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_urspru.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Urspr&uuml;ngliche Werte anzeigen.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:12.5104in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Unt-Lg" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_unt-lg.png"/><img alt="B_Obe-Lg" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_obe-lg.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">a</span><span class="f_R_Tabellenzeile_Menue" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Tabellenzeile_Menue">-Werte der unteren / oberen Lage. Diese Optionen beziehen sich auf alle eingef&uuml;gten FEM-Daten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_asxy" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="b_asxy.png"/><img alt="B_asx" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="b_asx.png"/><img alt="B_asy" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="b_asy.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Filter zur Anzeige der Bewehrungsrichtung: XY-, X- oder Y je nach Bewehrungslage. Diese Optionen beziehen sich auf alle eingef&uuml;gten FEM-Daten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Elemente-im-Rechteck" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck.png"/><img alt="I_Elemente-im-Polygon" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-polygon.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahlrahmen rechteckig / polygonal.</span><br>
+<span class="f_R_Tabellenzeile_Menue"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink" title="Funktionen zur Auswahl von Zeichenelementen">&raquo; Auswahlfunktionen</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_fem.htm" class="topiclink" title="Finite Elemente">Finite Elemente</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_flaechenbew_autbew.htm" class="topiclink">Automatische Bewehrung</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_bewehrungsteppiche_bamtec.htm" class="topiclink">BAMTEC (Bewehrungsteppiche)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

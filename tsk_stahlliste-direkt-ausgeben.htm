@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stahlliste direkt ausgeben</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Direktausgabe (Stahlliste),Stahlliste,Stahlliste Direktausgabe" />
+   <meta name="description" content="Direkte Ausgabe der aktuellen Stahlliste mit dem gewählten Stahllistenprofil. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stahlliste.htm">Stahlliste</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_stahlliste_ausgeben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_stahlliste.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_stahlliste_vorlage-erzeuge.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlliste direkt ausgeben</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_stahlliste.htm" class="topiclink" title="Stahlliste (Funktionsübersicht)"><img alt="Stahlliste (Funktionsübersicht)" title="Stahlliste (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stllis.png"/></a> <img alt="B-akt_Direktausgabe" style="margin:0;width:2.3229in;height:0.2500in;border:none" src="b-akt_direktausgabe.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Normal">Direkte Ausgabe der aktuellen Stahlliste mit dem gew&auml;hlten Stahllistenprofil. </p>
+<p class="p_Normal">Sie k&ouml;nnen die Stahlliste mit dem PDF-Drucker eDocPrinter PDF Pro (GLASER) im PDF-Format speichern, die Stahlliste auf einem beliebigen Drucker ausgeben oder in der Zeichnung ablegen.</p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Ausgabefunktionen</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_PDF_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_pdf_stl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgabe als PDF (nur mit <a href="des_edoc-printer-pro.htm" class="topiclink">eDocPrinter PDF Pro</a> verf&uuml;gbar).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Drucker_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_drucker_stl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgabe auf einem beliebigen zu w&auml;hlenden Drucker.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_aktZeichnung_Stl" style="margin:0;width:0.6458in;height:0.2500in;border:none" src="i_aktzeichnung_stl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgabe auf der Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_abs_Stl" style="margin:0;width:0.6354in;height:0.2500in;border:none" src="i_abs_stl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausgabe als ABS-Datei im BVBS 3.1-Format (nur Biegeliste).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Auswahl eines Stahllistenprofils</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In der Profilauswahl stehen die Profile zur Verf&uuml;gung, die im Stahllisten-Dialog im Unterdialog </span><span class="f__Software_Element_deskriptiv">Grundwerte</span><span class="f_A_Allgemein"> </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_A_Allgemein"> definiert sind; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Neu erzeugen</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_A_Allgemein"> </span>&#8594; <span class="f__Software_Element_deskriptiv">Profil</span><span class="f_A_Allgemein">]. Siehe: <a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a>. Sie k&ouml;nnen f&uuml;r jede Ausgabefunktion ein gesondertes Stahllistenprofil ausw&auml;hlen. </span>Das zuletzt gew&auml;hlte Profil wird sich f&uuml;r die Direktausgabe gemerkt.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_Profilauswahl" style="margin:0;width:1.9583in;height:0.5208in;border:none" src="scr_profilauswahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Durch einen Klick auf den Profilnamen </span><img alt="SCR_Profilauswahl_pdf" style="margin:0;width:1.0104in;height:0.1875in;border:none" src="scr_profilauswahl_pdf.png"/><span class="f_L_Listeneintrag"> wird eine Auswahlliste ge&ouml;ffnet, in der Sie ein Profil durch Anklicken ausw&auml;hlen k&ouml;nnen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Mit den Schaltfl&auml;chen <img alt="B_tag_l" style="margin:0;width:0.1667in;height:0.1875in;border:none" src="b_tag_l.png"/> <img alt="B_tag_r" style="margin:0;width:0.2083in;height:0.1875in;border:none" src="b_tag_r.png"/> k&ouml;nnen Sie die vorhandenen Profile durchbl&auml;ttern.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Jedem Profil ist eine Ziffer zugeordnet. Klicken Sie eine Ziffer an, wird der entsprechende Profilname angezeigt.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlliste mit dem PDF-Drucker eDocPrinter PDF Pro GLASER ausgeben</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der PDF-Drucker </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_Task_Info"> muss f&uuml;r diese Funktion eingerichtet sein. Die PDF-Datei wird anhand der Voreinstellungen im Dialog <a href="des_pdf-parameter.htm" class="topiclink">PDF-Parameter</a> erzeugt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die Schaltfl&auml;che </span><img alt="I_PDF_Stl" style="margin:0;width:0.5208in;height:0.1979in;border:none" src="i_pdf_stl.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie das Stahllistenprofil f&uuml;r die Ausgabe aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Direktausgabe</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Je nachdem, welche Einstellungen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Druckparameter</span><span class="f_Step"> vorgenommen haben, wird die PDF-Datei direkt erzeugt oder es werden der Speicherort und der Dateiname abgefragt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Software_Element_deskriptiv">Speichern in:</span><span class="f_Step"> den Speicherort an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bearbeiten Sie bei Bedarf den vorgeschlagenen Dateinamen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie abschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_Step">, um die PDF-Datei zu erstellen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Falls der PDF-Drucker </span><span class="f__Eigenname">eDocPrinter PDF Pro GLASER</span><span class="f_Hinweis_in_Tabelle"> nicht eingerichtet ist, wird der </span><span class="f__Eigenname">eDocPrinter PDF Pro</span><span class="f_Hinweis_in_Tabelle"> verwendet. Ist dieser nicht installiert, dann ist die PDF-Ausgabe nicht verf&uuml;gbar.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlliste auf einem beliebigen Drucker ausgeben</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die Schaltfl&auml;che </span><img alt="I_Drucker_Stl" style="margin:0;width:0.5208in;height:0.1979in;border:none" src="i_drucker_stl.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie das Stahllistenprofil f&uuml;r die Ausgabe aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Direktausgabe</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Druckerparameter</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Druckparameter" style="margin:0;width:5.8438in;height:4.4896in;border:none" src="d_druckparameter.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Drucker</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Name</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines Druckers oder eines Druckertreibers f&uuml;r die Ausgabe. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Exemplare</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Exemplare</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie die Anzahl ein. Sie k&ouml;nnen die Zahl direkt eintippen oder durch die Pfeiltasten herauf- bzw. herabsetzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ausgabe in Datei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird eine Plotdatei (*.PLT) geschrieben. Im Dialog </span><span class="f__Software_Element_deskriptiv">Datei speichern</span><span class="f_R_Option_Beschreibung"> k&ouml;nnen Sie einen Ordner w&auml;hlen und den Dateinamen eingeben. Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_R_Option_Beschreibung"> klicken, wird die Datei geschrieben und der Dialog geschlossen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eigenschaften</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet die Druckereinstellungen des gew&auml;hlten Druckers.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Stahlliste wird mit den gew&auml;hlten Parametern gedruckt oder es folgt der Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_R_Option_Beschreibung"> zur Angabe des Speicherorts und des Dateinamens f&uuml;r die PDF-Ausgabe.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Aktion ab und schlie&szlig;t den Dialog.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Stahlliste in der Zeichnung ablegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die Schaltfl&auml;che </span><img alt="I_aktZeichnung_Stl" style="margin:0;width:0.5208in;height:0.1979in;border:none" src="i_aktzeichnung_stl.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie das Stahllistenprofil f&uuml;r die Ausgabe aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Direktausgabe</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Wenn eine Stahlliste bereits in der Zeichnung enthalten, k&ouml;nnen Sie sie ersetzen, beibehalten oder den Vorgang abbrechen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_Step_Anmerkung">: Die in der Zeichnung abgelegte Stahlliste wird ersetzt. Mit einem Linksklick k&ouml;nnen Sie die Stahlliste an eine neue Position setzen. Mit einem Rechtsklick wird der Einf&uuml;gepunkt (links unten) der aktuell abgesetzten Stahlliste &uuml;bernommen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_Step_Anmerkung">: Um die in der Zeichnung abgelegte Stahlliste beizubehalten, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_Step_Anmerkung">. Legen Sie die neue Stahlliste mit einem Linksklick auf der Zeichnung ab.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f__Software_Element_deskriptiv">Abbrechen</span><span class="f_Step_Anmerkung">: Der Vorgang wird abgebrochen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Platzieren Sie die Stahlliste auf der Zeichenoberfl&auml;che mit einem Linksklick. [</span><span class="f__Abfrage">Lage der Zeichnung</span><span class="f_Step">].</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Biegeliste als ABS-Datei ausgeben</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die Schaltfl&auml;che </span><img alt="I_abs_Stl" style="margin:0;width:0.5104in;height:0.1979in;border:none" src="i_abs_stl.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Direktausgabe</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Speichern unter</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie das Verzeichnis, in dem die Datei gespeichert werden soll.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bearbeiten Sie bei Bedarf den vorgeschlagenen Dateinamen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie abschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Speichern</span><span class="f_Step">, um die ABS-Datei zu erstellen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_stahlliste-grundwerte-allgemein.htm" class="topiclink">Grundwerte Allgemein</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_stahlliste.htm" class="topiclink" title="Stahlliste - Dialogbeschreibung">Stahlliste (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

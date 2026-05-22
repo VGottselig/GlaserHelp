@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Folienautomatik</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Folienautomatik" />
+   <meta name="description" content="Mittels der automatischen Folienbelegung werden Zeichenelemente beim Konstruieren und beim Bewehren automatisch auf den für die jeweilige Funktion vorgesehenen Folien abgelegt...." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_elementfang.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="ref_tastaturbelegungen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Folienautomatik</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">Mittels der automatischen Folienbelegung werden Zeichenelemente beim Konstruieren und beim Bewehren automatisch auf den f&uuml;r die jeweilige Funktion vorgesehenen Folien abgelegt. So lassen sich Zeichenelemente, die gerade nicht ben&ouml;tigt werden, &uuml;ber die Folienfunktion ausblenden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Folien 0 bis 19 sind f&uuml;r die automatische Folienbelegung </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_L_Listeneintrag"> vordefiniert. Diese Folien k&ouml;nnen weder umbenannt noch gel&ouml;scht werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen die Folienautomatik ein- oder ausschalten. <a href="folienmanager.htm#folieaktuell" class="topiclink" title="Folienmanager (Dialog)">&raquo; Folienmanager (Dialog)</a></span></p>
+<h3 class="p_Heading3"><span class="f_Heading3">Liste der automatischen Folienbelegung</span></h3>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0313in 0.3021in;"><table class="Referenztabelle" >
+<thead>
+<tr class="Referenztabelle">
+<th class="Referenztabelle" style="width:1.3125in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Foliennummer</span></p>
+</th>
+<th class="Referenztabelle" style="width:1.3125in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Bezeichnung</span></p>
+</th>
+<th class="Referenztabelle" style="width:12.6250in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Inhalt</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">0</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">GEOMETRIE</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linien, Freihandlinien, Kreise, Bruchkanten, Fasen</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">TEXTE</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">S&auml;mtliche mit der Textfunktion erstellten Texte, Schwei&szlig;n&auml;hte, Texte der Durchbruch-Funktion</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">MAKET</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ma&szlig;ketten, H&ouml;henkoten, H&ouml;henkoten im Grundriss, Biegerollendurchmesser</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">MATTEN</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mattenverlegungen, Mattentexte, Kommentartexte</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">4</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">FORMST</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Formstahl-Verlegungen, Positionierungen, Erg&auml;nzungs- und Kommentartexte, Echtdarstellungen</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">5</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">SCHRAFF</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schraffuren, F&uuml;llungen</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">6</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">STPOS</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">S&auml;mtliche Elemente der statischen Positionen</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">7</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">HILFPU</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hilfspunkte</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">8</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">SCHNPF</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnittpfeile</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">9</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">HOLZBAU</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Holzbauelemente</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">10</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">KOORDI</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Koordinatensysteme</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">11</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">MASSEN</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Massensymbole und -beschriftungen</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">12</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">ACHSRA</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Achsraster</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">13</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">D&Uuml;BELLEISTEN</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">D&uuml;belleisten und D&uuml;belleistentexte</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">14</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">WOLKE</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wolken</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">15</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">BAMVERL</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">BAMTEC - Teppichumrisse und Verlegesymbole</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">16</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">BAMSYM</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">BAMTEC - Hilfstexte und Symbole f&uuml;r die Herstellungsdatei (TEC-Datei)</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">17</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">BEWAUS</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bewehrungsausz&uuml;ge, Tabellen, &nbsp;Summandentexte, Biegelistentexte</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">18</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">MATAUS</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mattenausz&uuml;ge</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">19</span></p>
+</td>
+<td class="Referenztabelle" style="width:1.3125in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">PIXBIL</span></p>
+</td>
+<td class="Referenztabelle" style="width:12.6250in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Grafiken, Dokumente</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bewehrungsteppiche verlegen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Automatische Bewehrung mit BAMTEC®Teppichen. Öffnet den Dialog as-Werte." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst3_bewehrungsteppiche_bamtec.htm">BAMTEC (Bewehrungsteppiche)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst3_bewehrungsteppiche_bamtec.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst3_bewehrungsteppiche_bamtec.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_bamtec_loesch.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Bewehrungsteppiche verlegen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> </span><img alt="B-akt_BAMTEC" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_bamtec.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Automatische Bewehrung mit BAMTEC&reg;Teppichen. &Ouml;ffnet den Dialog</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f__Software_Element_deskriptiv">a</span><span class="f__Software_Element_deskriptiv" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f__Software_Element_deskriptiv">-Werte.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">as-Werte (Dialog)</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Abfrage, ob die a</span><span class="f_R_Dialog_Info" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Dialog_Info">-Werte aus der FEM-Berechnung &uuml;bernommen werden sollen.</span></p>
+<p class="p_R_Dialog_Info"><img alt="D_as_Werte" style="margin:0;width:2.3854in;height:2.0000in;border:none" src="d_as_werte.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">a</span><span class="f_R_Option_Beschreibung" style="font-size: 12pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung">-Werte werden aus dem angeklickten FEM-Datensatz &uuml;bernommen. [</span><span class="f__Abfrage">Welche FE-Werte? (anklicken)</span><span class="f_R_Option_Beschreibung">]. Falls kein FEM-Datensatz vorhanden ist, werden Sie dazu aufgefordert, eine Ergebnisdatei einzulesen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ohne &Uuml;bernahme aus FEM</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird nur die Grundbewehrung erzeugt. Zus&auml;tzlich k&ouml;nnen mit Bereichen ge&auml;nderter Bewehrungsgehalte Gebiete mit erh&ouml;hten as-Werten definiert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rasterabstand (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe des Abstandes f&uuml;r das Punktraster.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernimmt die Eingaben und schlie&szlig;t den Dialog.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Bearbeitung ab und schlie&szlig;t den Dialog.</span></p>
+<p class="p_A_Allgemein"><span class="f_Task_Info">Wenn Sie die Option </span><span class="f__Software_Element_deskriptiv">ohne &Uuml;bernahme aus FEM</span><span class="f_Task_Info"> gew&auml;hlt haben, k&ouml;nnen Sie sofort die Umrissgeometrie definieren.</span><br>
+<span class="f_Task_Info">(s. unten: <a href="rm_bamtec.htm" class="topiclink">Umrissgeometrie des Verlegebereiches definieren</a>)</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><a name="_bamtec_fem" class="hmanchor"></a><span class="f_ToDo">FEM Ergebnisdatei &ouml;ffnen oder anklicken</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Auswahl der FEM-Ergebnisdatei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Wenn kein FEM-Datensatz auf der Zeichnung vorhanden ist:</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">W&auml;hlen Sie in der Dateiauswahl die zu dem Grundriss geh&ouml;rende FEM-Ergebnisdatei </span><span class="f_Step_Info">(*.fem)</span><span class="f_Step_Anmerkung"> aus und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">&Ouml;ffnen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nach dem Einlesen der Ergebnisdatei k&ouml;nnen Sie den Datensatz platzieren (s. </span><span class="f_Hervorhebung_Text">FEM-Ergebnisdatei platzieren</span><span class="f_Step_Anmerkung">).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Wenn bereits ein FEM-Datensatz auf der Zeichnung vorhanden ist:</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Klicken Sie den Datensatz an. [</span><span class="f__Abfrage">Welche FE-Werte? (anklicken)</span><span class="f_Step_Anmerkung">]. ISBCAD wechselt zur Definition der Umrissgeometrie.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">FEM-Ergebnisdatei platzieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus, um den Drehwinkel anzugeben. [</span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Geben Sie den Drehwinkel (Winkel zur Horizontalen) an oder best&auml;tigen Sie den Vorschlagswert mit Rechtsklick. Mit negativem Wert wird im Uhrzeigersinn gedreht. Bereits abgelegte FEM-Datens&auml;tze werden vor&uuml;bergehend ausgeblendet.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Mit den Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_Step_Anmerkung"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie die FE-Werte parallel oder orthogonal zu einem Bezugselement ausrichten. Klicken Sie die entsprechende Ausrichtungsoption an und klicken Sie anschlie&szlig;end das Bezugselement an, dessen Neigung &uuml;bernommen werden soll.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Step_Anmerkung">Klicken Sie einen der Vorschlagswerte ein: 0&deg;, 90&deg;, 180&deg;, 270&deg;: Das Ergebnis ist sofort sichtbar.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Gr&ouml;&szlig;enfaktor ein und best&auml;tigen Sie mit der Eingabetaste. 1 = Originalgr&ouml;&szlig;e. [</span><span class="f__Abfrage">Faktor</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Standardm&auml;&szlig;ig wird der Faktor &quot;2&quot; vorgeschlagen. Den Gr&ouml;&szlig;enfaktor k&ouml;nnen Sie auch nachtr&auml;glich mit der Funktion [</span><span class="f__Software_Element_deskriptiv">GroFak</span><span class="f_Step_Anmerkung">] im Funktionsbereich &auml;ndern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Legen Sie den FEM-Datensatz mit einem Linksklick auf der Zeichenfl&auml;che ab. [</span><span class="f__Abfrage">Lage</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nach dem Platzieren der Ergebnisdatei wechselt ISBCAD zur Definition der Umrissgeometrie.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><a name="_grofakbamtec" class="hmanchor"></a><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um den Gr&ouml;&szlig;enfaktor zu &auml;ndern [GroFak]</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_GroFak_AutBew" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_grofak_autbew.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Darstellung der FEM-Ergebnisdaten an den Ma&szlig;stab der aktuellen Zeichnung anpassen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Faktor f&uuml;r as-Linien</span><span class="f_Task_Info">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den geeigneten Faktor ein und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Beispiel">Beispiel</span><span class="f_Step_Anmerkung">: Wenn im FEM-Programm die Datenpunkte im Ma&szlig;stab 1:100 gespeichert wurden und Sie den Bewehrungsplan im Ma&szlig;stab 1:50 zeichnen, m&uuml;ssen Sie den Datenbereich mit dem Faktor 2 anpassen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Darstellung der FEM-Ergebnisdaten wird um den gew&auml;hlten Faktor vergr&ouml;&szlig;ert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um mit der automatischen Bewehrung fortzufahren, klicken Sie im Funktionsbereich auf <img alt="B_TepGeo_Bamtec" style="margin:0;width:1.1875in;height:0.2500in;border:none" src="b_tepgeo_bamtec.png"/>.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><a name="_tepgeo" class="hmanchor"></a><span class="f_ToDo">Teppichgeometrie des Verlegebereiches definieren [TepGeo]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Es ist empfehlenswert, die geplanten Teppiche im Linienprogramm vorzuzeichnen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Funktionsbereich die Art der Definition aus. Sie k&ouml;nnen die Umrissgeometrie &uuml;ber das Anklicken von Eckpunkten [</span><span class="f__Software_Element_deskriptiv">Punkte</span><span class="f_Step">] oder Elementen [</span><span class="f__Software_Element_deskriptiv">Elemen</span><span class="f_Step">] definieren.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">2.1 &Auml;u&szlig;ere Umrissgeometrie definieren</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="B_Punkte_BAMTEC" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte_bamtec.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Abstand in der eingestellten Einheit ein oder &uuml;bernehmen Sie den in der Eingabe stehenden Wert mit Rechtsklick. [</span><span class="f__Abfrage" style="text-decoration: underline;">Abstand</span><span class="f__Abfrage"> o. Polygon w&auml;hlen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Eckpunkte des Verlegebereiches in Reihenfolge an. [</span><span class="f__Abfrage">n. Eckpunkt (Teppichgeometrie)</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">Mit Rechtsklick gelangen Sie wieder zur Abstandsangabe und k&ouml;nnen einen neuen Abstand angeben. Die Eingabe wird am zuletzt angeklickten Punkt wieder aufgenommen. Der neue Abstand gilt demnach f&uuml;r die Parallele vom letzten zum folgenden Punkt.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4063in;"><span class="f_Step_Anmerkung">Das Polygon wird automatisch geschlossen, wenn der erste Punkt ein zweites Mal angeklickt wird. Sie k&ouml;nnen nun mit der Angabe der inneren Umrissgeometrie fortfahren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.3958in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wer positiv und Sie klicken die Punkte gegen den Uhrzeigersinn an, wird der Abstand nach innen gezeichnet. Ist der Wert negativ und Sie klicken die Punkte im Uhrzeigersinn an, wird der Abstand ebenfalls nach innen gezeichnet.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0;"><img alt="Z_AutBew_01" style="margin:0;width:3.1979in;height:1.7708in;border:none" src="z_autbew_01.png"/><img alt="Z_AutBew_02" style="margin:0;width:2.8438in;height:1.7917in;border:none" src="z_autbew_02.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht dem Abstand von der Au&szlig;enkante.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.3958in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0;"><img alt="Z_AutBew_03" style="margin:0;width:3.1667in;height:1.7604in;border:none" src="z_autbew_03.png"/><span class="f_ImageCaption">  <img alt="Z_AutBew_04" style="margin:0;width:2.7292in;height:1.7708in;border:none" src="z_autbew_04.png"/></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wert negativ und Sie klicken die Punkte gegen den Uhrzeigersinn an bzw. positiv und im Uhrzeigersinn, wird der Abstand rechts der angeklickten Punkte gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="B_Elemen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemen.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Elemente f&uuml;r die Umrandung des Verlegebereiches in Reihenfolge an. [</span><span class="f__Abfrage">Element w&auml;hlen (Teppichgeometrie)</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">Achten Sie darauf, die Elemente auf der Seite anzuklicken, zu der der Abstand angetragen werden soll. Sie k&ouml;nnen sowohl Linien als auch Kreise anklicken. Das erste und letzte Element sollte eine Linie sein, um eindeutige Schnittpunkte zu erzeugen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schlie&szlig;en Sie das Polygon mit </span><img alt="B_Polygon-schliessen-mit-icon" style="margin:0;width:1.4688in;height:0.1979in;border:none" src="b_polygon-schliessen-mit-icon.png"/>.</p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2292in; margin: 0.0104in 0 0.0833in 0.6250in;"><span class="f_Step_Anmerkung">Das Polygon wird nur geschlossen, wenn es auch tats&auml;chlich geschlossen ist. Ist es lediglich optisch geschlossen, z. B. bei Durchbr&uuml;chen mit dem Abstand 0, wird das Polygon nicht aufgenommen. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2292in; margin: 0.0104in 0 0.0833in 0.6250in;"><span class="f_Step_Anmerkung">Sie k&ouml;nnen nun mit der Angabe der inneren Umrissgeometrie fortfahren.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">2.2 Durchbr&uuml;che definieren</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="margin: 0.0625in 0 0.0208in 0.2188in;"><img alt="B_Punkte_BAMTEC" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte_bamtec.png"/><span class="f_Step"> <img alt="B_Elemen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemen.png"/></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Abstand in der eingestellten Einheit ein oder &uuml;bernehmen Sie den in der Eingabe stehenden Wert mit Rechtsklick. [</span><span class="f__Abfrage">Abstand o. Polygon w&auml;hlen</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Eckpunkte/Elemente des Verlegebereiches wie bei der Angabe der &auml;u&szlig;eren Umrissgeometrie an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.2083in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie den Verlegebereich definiert haben, klicken Sie auf </span><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/><span class="f_Step">, um mit der Bearbeitung fortzufahren.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.4375in;"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Teppichparameter</span><span class="f_Step_Anmerkung">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um in einer vorhandenen Geometrie fortzufahren</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Polygonhilfspunkt an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: -0.2188in; margin: 0.0104in 0 0.0833in 0.6146in;"><span class="f_Step_Anmerkung">Sie gelangen wieder zur Abstandsangabe. [</span><span class="f__Abfrage">Abstand o. </span><span class="f__Abfrage" style="text-decoration: underline;">Polygon w&auml;hlen</span><span class="f_Step_Anmerkung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um die definierte Geometrie zu bearbeiten</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Step_Info" style="margin: 0.0625in 0 0.0313in 0;"><span class="f_Step_Info">Wenn Sie die Bewehrung einer Lage beendet haben, oder im Dialog </span><span class="f__Software_Element_deskriptiv">Teppichparameter</span><span class="f_Step_Info"> auf </span><span class="f__Software_Element_deskriptiv">Abbruch</span><span class="f_Step_Info"> klicken, erscheint die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Letztes Polygon</span><span class="f_Step_Info">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Letztes Polygon</span><span class="f_Step">, um die Bearbeitung der zuvor beschriebenen Umrissgeometrie mit den zugeh&ouml;rigen Durchbr&uuml;chen wieder aufzunehmen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1771in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie den Verlegebereich definiert haben, klicken Sie auf </span><img alt="B_Weiter" style="margin:0;width:0.7708in;height:0.2188in;border:none" src="b_weiter.png"/><span class="f_Step">, um mit der Bearbeitung fortzufahren.</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3958in;"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Teppichparameter</span><span class="f_Step_Anmerkung">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Teppichparameter angeben (Dialog)</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Nach Auswahl der Teppichgeometrie wird der Dialog </span><span class="f__Software_Element_deskriptiv">Teppichparameter</span><span class="f_Step_Info"> ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog unter anderem die Bewehrungslage und Bewehrungsrichtung.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step">Siehe: </span><span class="f_Step_Anmerkung"><a href="rd_teppichgeometrie.htm" class="topiclink">Teppichparameter (Dialog)</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ToDo">Bewehrung bearbeiten</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn Sie die Teppichgeometrie festgelegt haben und im Dialog </span><span class="f__Software_Element_deskriptiv">Teppichparameter</span><span class="f_Step_Info"> auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Info"> geklickt haben, wird der Dialog </span><span class="f__Software_Element_deskriptiv">BAMTEC</span><span class="f_Step_Info"> ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">&Auml;ndern Sie die gew&uuml;nschten Eigenschaften auf der entsprechenden Registerkarte.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie im Dialog auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Fertig</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Siehe: <a href="bewehrung_bearbeiten_bamtec.htm" class="topiclink">BAMTEC (Dialog)</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_bamtec_ablauf.htm" class="topiclink">Bewehrung mit BAMTEC-Teppichen (allgemeiner Ablauf)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

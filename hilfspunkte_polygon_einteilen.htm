@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Polygon einteilen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Hilfspunkte,Hilfspunkte Polygone einteilen" />
+   <meta name="description" content="Setzen von Hilfspunkten an einem aus Linien und Teilkreisen zusammengesetzten Linien-/Polygonzug. Die Hilfspunkte können mit oder ohne gleichen Abstand (Differenz) zum Bezugs" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="hilfspunkte_rechtes_menue.htm">Hilfspunkte</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="hilfspunkte_loeschen_r.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="hilfspunkte_rechtes_menue.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="hilfspunkte_untere_menueleiste.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Polygon einteilen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="hilfspunkte_rechtes_menue.htm" class="topiclink" title="Hilfspunkte-Funktionen (Übersicht)"><img alt="Hilfspunkte-Funktionen (Übersicht)" title="Hilfspunkte-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_hilfpu.png"/></a> <img alt="B-akt_PolEin_HilfPu" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_polein_hilfpu.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Setzen von Hilfspunkten an einem aus Linien und Teilkreisen zusammengesetzten Linien-/Polygonzug. Die Hilfspunkte k&ouml;nnen mit oder ohne gleichen Abstand (Differenz) zum Bezugspolygon gesetzt werden.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den seitlichen Versatz zum Bezugselement an und best&auml;tigen Sie die Eingabe mit der Eingabetaste. [</span><span class="f__Abfrage">Abstand</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, ob Sie einzelne Zeichenelemente anklicken m&ouml;chten oder ein geschlossenes Polygon automatisch ausgew&auml;hlt werden soll.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in;"><p class="p_R_Tabellenzeile"><img alt="B_manuell_Schraffur" style="margin:0;width:1.3333in;height:0.2500in;border:none" src="b_manuell_schraffur.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.6458in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Manuelle Auswahl der Zeichenelemente. [</span><span class="f__Abfrage">Elemente w&auml;hlen (Umrissgeometrie</span><span class="f_R_Tabellenzeile">)].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Elemente nacheinander auf der Seite an, zu der die Abstandsangabe ber&uuml;cksichtigt werden soll. </span><br>
+<span class="f_R_Tabellenzeile">Wenn Sie den Abstand f&uuml;r das n&auml;chste Element &auml;ndern wollen, klicken Sie die rechte Maustaste, um den Abstand erneut einzugeben. Die angeklickten Elemente m&uuml;ssen sich nicht ber&uuml;hren. Der Schnittpunkt von Kreisen und Linien muss existieren.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4167in;"><p class="p_R_Tabellenzeile"><img alt="B_automatisch_Schraffur" style="margin:0;width:1.3333in;height:0.2500in;border:none" src="b_automatisch_schraffur.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.6458in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Automatische Auswahl der Zeichenelemente. [</span><span class="f__Abfrage">Startpunkt (Umrissgeometrie)</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Vom angeklickten Startpunkt in Richtung Elementende werden alle direkt anschlie&szlig;enden Linien oder B&ouml;gen dem Polygon hinzugef&uuml;gt.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie den Startpunkt auf der Seite an, zu der die Abstandsangabe ber&uuml;cksichtigt werden soll. </span><br>
+<span class="f_R_Tabellenzeile">Der Anfangspunkt muss durch eine Fangmarke gekennzeichnet sein. Sie k&ouml;nnen den Vorgang mehrfach wiederholen und ggf. andere Startpunkte anklicken, bis das gew&uuml;nschte Ergebnis dargestellt wird.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Polygoneingabe abzuschlie&szlig;en, klicken Sie auf <img alt="B_Weiter-mit-Haken" style="margin:0;width:1.0208in;height:0.1979in;border:none" src="b_weiter-mit-haken.png"/>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog</span><span class="f__Software_Element_deskriptiv"> Polygon einteilen</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet. Wenn Sie die Polygoneingabe mit Rechtsklick abschlie&szlig;en, wird der Dialog </span><span class="f__Software_Element_deskriptiv">Polygon einteilen</span><span class="f_Step_Anmerkung"> &uuml;bersprungen und Abfrage [</span><span class="f__Abfrage">Abstand</span><span class="f_Step_Anmerkung">] wieder aktiv.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie im Dialog an, wie das Polygon durch Hilfspunkte eingeteilt werden soll.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Polygon einteilen (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0.1771in 0 0.0625in 0.8229in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Einstellungen f&uuml;r die Polygoneinteilung und -darstellung.</span></p>
+<p class="p_A_Allgemein" style="margin: 0.1042in 0 0.1458in 0.3229in;"><img alt="D_Polygon-einteilen" style="margin:0;width:3.8646in;height:3.3229in;border:none" src="d_polygon-einteilen.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Anzahl der Abschnitte auf dem Polygon ein. Wenn Sie die Eingabe best&auml;tigen, wird der Abstand angezeigt. Es ergibt sich kein Rest.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Abstand zwischen den Hilfspunkten in Metern ein. Die Anzahl wird in der Eingabe angezeigt. Der Rest wird berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Rest</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige f&uuml;r den Rest.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Absteckbedingungen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Bogenma&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird die tats&auml;chliche Strecke auf dem Polygon abgefahren. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sehnenma&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es werden Kreisb&ouml;gen mit dem Abstand um die Punkte geschlagen. Im Schnittpunkt mit einem der n&auml;chsten Elemente wird der n&auml;chste Hilfspunkt angetragen. Wenn es bei der Angabe der Anzahl zu mehrdeutigen L&ouml;sungen kommen kann, wird im Eingabefeld f&uuml;r den Abstand „nicht m&ouml;glich“ angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Anhand der Punktma&szlig;e kann nicht erkannt werden, ob die Punkte im Bogenma&szlig; oder mit der Sehnenl&auml;nge eingegeben wurden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hilfspunkte darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entscheiden Sie, ob die Hilfspunkte erzeugt werden sollen oder nicht.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es ist nur dann sinnvoll, die Hilfspunkte nicht darzustellen, wenn die Punkte als Kreise aktiviert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Punkte sichtbar darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Punkte werden als Kreise gezeichnet, damit sie auf der Zeichnung zu sehen sind. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Parameter f&uuml;r die Darstellung definieren Sie in den </span><span class="f__Software_Element_deskriptiv">Einstellungen </span><span class="f_R_Option_Beschreibung">(s. weiter unten).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Polygon zeichnen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Polygon wird auch gezeichnet, wenn Sie als Abstand </span><span class="f__Abfrage_Resultat">0</span><span class="f_R_Option_Beschreibung"> eingeben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Beschriftung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Punkte beschriften</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beschriftet die Punkte mit fortlaufenden Zahlen (P1, P2, P3 usw.).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Beschriftung mit Ma&szlig;zahlen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Legen Sie fest, dass die fortlaufende Verma&szlig;ung angeschrieben wird.</span><br>
+<span class="f_R_Option_Beschreibung">Beide M&ouml;glichkeiten k&ouml;nnen beliebig kombiniert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Z&auml;hlbeginn</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Nummer des ersten Punktes an, von dem aus aufsteigend weiter gez&auml;hlt wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anfangsma&szlig;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie ein Ma&szlig; an, von dem aus die n&auml;chsten Punkte beschriftet werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">In Ausnahmef&auml;llen kann es zu mehrdeutigen Ergebnissen kommen, sodass die Einteilung nicht ausgef&uuml;hrt werden kann.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.20; margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_ImageCaption" style="text-indent: -0.0104in; margin: 0.0625in 0 0.0625in 0.3750in;"><img alt="Z_Polygon-beschriften" style="margin:0;width:3.1667in;height:1.2604in;border:none" src="z_polygon-beschriften.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Einstellungen" style="margin:0;width:0.9271in;height:0.2604in;border:none" src="b_einstellungen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog</span><span class="f__Software_Element_deskriptiv"> Einstellungen Polygon einteilen</span><span class="f_R_Option_Beschreibung">.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Einstellungen Polygon einteilen (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0.1771in 0 0.0625in 0.8229in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konfiguration der Polygondarstellung.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid; margin: 0 0 0.0625in 0.3125in;"><img alt="D_einstellungen-polygon-einteilen" style="margin:0;width:2.6354in;height:4.4688in;border:none" src="d_einstellungen-polygon-einteilen.png"/></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Polygondarstellung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer aus, mit der das Polygon gezeichnet werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linientyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Linientyp aus, mit dem das Polygon gezeichnet werden soll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Punktdarstellung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Radius [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Radius ein, mit dem die Hilfspunkte gezeichnet werden sollen. Der Ma&szlig;stab wird aus der ersten angeklickten Linie &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer aus, mit der die Kreise gezeichnet werden sollen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Textdarstellung</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fontname, Textgr&ouml;&szlig;e, Stiftnummer, Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Textattribute an. Durch einen Breitenfaktor (&lt;1) l&auml;sst sich der Platzbedarf f&uuml;r die Beschriftung reduzieren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Pr&auml;fix</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Pr&auml;fix wird vor die Punktnummer geschrieben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Da Sie an den Punkten keinen eindeutigen Hinweis darauf erhalten, ob die Abst&auml;nde &uuml;ber die Sehnen- oder Bogenl&auml;nge ermittelt wurden, ist es empfehlenswert ein &quot;S&quot; f&uuml;r Sehne und ein &quot;B&quot; f&uuml;r Bogen zu verwenden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Trennzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie f&uuml;r die Trennung zwischen der Punktnummer und der Stationierung beliebige Zeichen, auch Leerzeichen, die im Textfeld nicht sichtbar sind. Das Trennzeichen wird nur geschrieben, wenn </span><span class="f__Software_Element_deskriptiv">Punkte beschriften</span><span class="f_R_Option_Beschreibung"> </span><span class="f__Hervorhebung">und </span><span class="f__Software_Element_deskriptiv">Beschriftung mit Ma&szlig;zahlen</span><span class="f_R_Option_Beschreibung"> aktiv ist.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. Alle &Auml;nderungen werden verworfen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Speichern" style="margin:0;width:0.7813in;height:0.2604in;border:none" src="b_speichern.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;nderungen werden gespeichert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&nbsp;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="B_OK" style="margin:0;width:0.7708in;height:0.2396in;border:none" src="b_ok.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. Alle &Auml;nderungen werden &uuml;bernommen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. Alle &Auml;nderungen werden verworfen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die Einstellungen im Dialog mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung"> best&auml;tigen, wird das Polygon den Angaben entsprechend gezeichnet.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel: Manuelle/Automatische Auswahl</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2604in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5833in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Manuelle Auswahl</span></p>
+<p class="p_ImageCaption_zentriert"><img alt="Z_Hilfspunkte_Polygon_03" style="margin:0 auto 0 auto;width:2.1563in;height:1.4271in;border:none" src="z_hilfspunkte_polygon_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.9479in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0;">&nbsp;</p>
+<p class="p_ImageCaption_zentriert"><img alt="Z_Hilfspunkte_Polygon_04" style="margin:0 auto 0 auto;width:2.9271in;height:1.6042in;border:none" src="z_hilfspunkte_polygon_04.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.5833in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Automatische Auswahl</span></p>
+<p class="p_ImageCaption_zentriert"><img alt="Z_Hilfspunkte_Polygon_01" style="margin:0 auto 0 auto;width:1.6563in;height:1.3958in;border:none" src="z_hilfspunkte_polygon_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.5833in; padding:0; border:none"><p class="p_ImageCaption_zentriert"><img alt="Z_Hilfspunkte_Polygon_02" style="margin:0 auto 0 auto;width:1.9688in;height:1.3854in;border:none" src="z_hilfspunkte_polygon_02.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; width:5.7917in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Elemente 1 - 4 werden mit unterschiedlichen Abst&auml;nden zum Bezugspolygon angeklickt. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beachten Sie beim 1. Element die Lage des Cursors auf der Innenseite des Polygons.</span></p>
+</td>
+<td colspan="2"  style="vertical-align:top; width:2.8958in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die obere Linie des Polygons wird an der Innenseite angeklickt (s. Cursor). Die Hilfspunkte werden im Uhrzeigersinn mit gleichem Abstand gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel: Manuelle/Automatische Auswahl</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen die Beispielzeichnung mit [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_Task_Info">] nachzeichnen. F&uuml;r den Bogen k&ouml;nnen Sie die Funktion [</span><span class="f__Software_Element_deskriptiv">ausrun</span><span class="f_Task_Info">] (Elemente ausrunden) nutzen.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wenn Sie eine Zeichnung vorbereitet haben, gehen Sie wie folgt vor:</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Einteilung &uuml;ber Sehnenl&auml;nge</span></p>
+<div style="text-align: left; text-indent: 0.2604in; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2500in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.0729in;"><p class="p_ImageCaption"><img alt="Z_Sehnenlänge" style="margin:0;width:3.7917in;height:1.7396in;border:none" src="hmfile_hash_70b0a588.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.4375in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eingabeeinheit: m (Meter). Best&auml;tigen Sie alle Eingaben mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie als Abstand der 1. Linie den Wert </span><span class="f__Abfrage_Resultat">0.1</span><span class="f_R_Tabellenzeile"> ein. [</span><span class="f__Abfrage">Abstand</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">W&auml;hlen Sie den Auswahlmodus </span><span class="f__Software_Element_deskriptiv">Automatisch</span><span class="f_R_Tabellenzeile">. [</span><span class="f__Abfrage">Startpunkt (Umrissgeometrie)</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die schr&auml;ge Linie links unten auf der Innenseite an (s. Cursor).</span><br>
+<span class="f_R_Tabellenzeile">Wenn Sie die Linie im Bereich der oberen Linienseite anklicken, wird eine Parallele in Richtung unten links gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf <img alt="B_Weiter-mit-Haken" style="margin:0;width:1.0208in;height:0.1979in;border:none" src="b_weiter-mit-haken.png"/>.</span><br>
+<span class="f_R_Tabellenzeile">Der Dialog </span><span class="f__Software_Element_deskriptiv">Polygon einteilen</span><span class="f_R_Tabellenzeile"> wird ge&ouml;ffnet.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie im Dialog den Abstand der Hilfspunkte ein: </span><span class="f__Abfrage_Resultat">0.75</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">W&auml;hlen Sie als Absteckbedingung die Option </span><span class="f__Software_Element_deskriptiv">Sehnenma&szlig;</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">ISBCAD berechnet die Anzahl und den Rest. Die &uuml;brigen Einstellungen, wie Hilfspunkte darstellen oder Z&auml;hlbeginn, k&ouml;nnen Sie beliebig anpassen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Um die Einteilung vorzunehmen und den Dialog zu schlie&szlig;en, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">Die Hilfspunkte werden den Angaben entsprechend gezeichnet.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Beispiel"><span class="f_Beispiel">Einteilung &uuml;ber Bogenl&auml;nge</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.1771in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.1354in;"><p class="p_ImageCaption"><img alt="Z_Bogenlänge" style="margin:0;width:3.4479in;height:1.5521in;border:none" src="hmfile_hash_e9439dd0.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.3646in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eingabeeinheit: m (Meter).</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.1771in 0 0 0.1875in;"><span class="f_ToDo">1. Linie Nr. 1 zeichnen</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie als Abstand der 1. Linie den Wert </span><span class="f__Abfrage_Resultat">0.05</span><span class="f_R_Tabellenzeile"> ein. [</span><span class="f__Abfrage">Abstand</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">W&auml;hlen Sie den Auswahlmodus </span><span class="f__Abfrage">Manuell</span><span class="f_R_Tabellenzeile">. [</span><span class="f__Abfrage">Elemente w&auml;hlen (Umrissgeometrie)</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die 1. Linie auf der &quot;rechten&quot; Seite (Innenseite) an.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die rechte Maustaste, um einen anderen Abstand einzugeben.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.1771in 0 0 0.1875in;"><span class="f_ToDo">2. Linie Nr. 2 zeichnen</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie als Abstand der 2. Linie den Wert </span><span class="f__Abfrage_Resultat">0.175</span><span class="f_R_Tabellenzeile"> ein.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie mit dem Cursor in den Bereich unterhalb der 2. Linie.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die rechte Maustaste, um einen anderen Abstand einzugeben.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.1771in 0 0 0.1875in;"><span class="f_ToDo">3. Linien 3 - 6 zeichnen</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie als Abstand der 3. Linie den Wert </span><span class="f__Abfrage_Resultat">0.1</span><span class="f_R_Tabellenzeile"> ein.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die 3. Linie auf der &quot;rechten&quot; Seite an.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie mit demselben Abstand die 4., 5. und 6. Linie an. Achten Sie beim Anklicken auf die Lage des Cursors.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie auf <img alt="B_Weiter-mit-Haken" style="margin:0;width:1.0208in;height:0.1979in;border:none" src="b_weiter-mit-haken.png"/>.</span><br>
+<span class="f_R_Tabellenzeile">Der Dialog </span><span class="f__Software_Element_deskriptiv">Polygon einteilen</span><span class="f_R_Tabellenzeile"> wird ge&ouml;ffnet.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.1771in 0 0 0.1875in;"><span class="f_ToDo">4. Polygon einteilen</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">W&auml;hlen Sie als Absteckbedingung die Option </span><span class="f__Software_Element_deskriptiv">Bogenma&szlig;</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">ISBCAD berechnet die Anzahl und den Rest. Die &uuml;brigen Einstellungen k&ouml;nnen Sie beliebig anpassen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Um die Einteilung vorzunehmen und den Dialog zu schlie&szlig;en, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile">Die Hilfspunkte werden den Angaben entsprechend gezeichnet.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="hilfspunkte_rechtes_menue.htm" class="topiclink">Hilfspunkte (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

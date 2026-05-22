@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Voutenverlegung erzeugen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Abtreppung,VeVout,Voutenverlegung,Voutenverlegung erzeugen" />
+   <meta name="description" content="Alternativer Aufruf: Mittlere Maustaste auf eine Stablinie." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_31" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="Voute"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_vevout.htm">Verlegung im gevouteten Bereich</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_vevout.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_vevout.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_vevout_loesche.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Voutenverlegung erzeugen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_vevout.htm" class="topiclink" title="Vouten-Verlegung (Funktionsübersicht)"><img alt="Vouten-Verlegung (Funktionsübersicht)" title="Vouten-Verlegung (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_vevout.png"/></a> <img alt="B-akt_nTlgVe" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_ntlgve.png"/></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativer Aufruf: Mittlere Maustaste auf eine Stablinie.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Biegeformen k&ouml;nnen mehrdimensional variabel erzeugt werden. Ein B&uuml;gel kann z. B. sowohl in der Breite als auch in der H&ouml;he ver&auml;nderlich verlegt werden. Jeder variablen Teill&auml;nge wird ein eigenes Polygon zugeordnet. Es besteht die M&ouml;glichkeit, je Biegeform bis zu zehn ver&auml;nderliche Teill&auml;ngen zu definieren. Am Auszug werden die jeweiligen Teill&auml;ngen mit L1, L2 etc. gekennzeichnet. Die zugeh&ouml;rigen Einzell&auml;ngen werden in der automatisch generierten Voutentabelle angegeben.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Beachten Sie, dass diese Funktion sich eher f&uuml;r kleine Fl&auml;chen eignet und die <a href="rm_betonstahltabelle.htm" class="topiclink" title="Betonstahl Tabellen - Verwaltung der in ISBCAD verfügbaren Stahlelemente">maximale Stabl&auml;nge</a> bei dieser Funktion nicht ber&uuml;cksichtigt wird. Teilen Sie ggf. die Fl&auml;che in mehrere Teilfl&auml;chen auf oder nutzen Sie die <a href="formst_vevout_schwen.htm" class="topiclink" title="Flächen automatisch bewehren">Fl&auml;chenbewehrung</a>.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Voraussetzung f&uuml;r die Verlegung</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Auszugstext muss in einer der folgenden Formen vorliegen, um ihn ausw&auml;hlen zu k&ouml;nnen:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">…&nbsp;?&nbsp;&oslash;&nbsp;? (…)</span><span class="f_L_Listeneintrag">.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Die Form ist nicht verlegt.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Entspricht beim Erstellen der Biegeform der Option </span><span class="f__Software_Element_deskriptiv">1 = Verlegung nicht darstellen</span><span class="f_L_Listenunterpunkt">.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">0 &oslash; Durchmesser (...)</span><span class="f_L_Listeneintrag">, z. B. 0 &oslash; 12.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Die Form ist verlegt. Sie muss mit einem Verlegefaktor = 0 und nur einem Durchmesser verlegt sein.</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listenunterpunkt">Entspricht beim Erstellen der Biegeform der Option </span><span class="f__Software_Element_deskriptiv">2 = St&uuml;ckzahl jetzt eingeben </span><span class="f_L_Listenunterpunkt">(Verlegung mit [</span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_L_Listenunterpunkt">]), Option </span><span class="f__Software_Element_deskriptiv">3 = St&uuml;ckzahl sp&auml;ter eingeben </span><span class="f_L_Listenunterpunkt">oder [</span><span class="f__Software_Element_deskriptiv">VeForm</span><span class="f_L_Listenunterpunkt"> | </span><span class="f__Software_Element_deskriptiv">verleg</span><span class="f_L_Listenunterpunkt">].</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Grundeinstellungen</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Grundeinstellungen f&uuml;r die Voutenverlegung wie Mindestl&auml;nge der St&auml;be, Anzahl der Nachkommastellen oder die Positionierung der einzelnen St&auml;be, k&ouml;nnen Sie vorab oder w&auml;hrend der Voutenverlegung im Dialog <a href="rd_konfiguration-voute.htm" class="topiclink" title="Grundeinstellungen">Konfiguration Voute</a> angeben.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Biegeform und Anzahl der St&auml;be oder Stababstand w&auml;hlen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Anzahl der St&auml;be bzw. die Stababst&auml;nde werden automatisch anhand des erforderlichen Stahlquerschnittes und des gew&auml;hlten Stabdurchmessers ermittelt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Biegeform, den Auszug oder einen Teill&auml;ngentext an. [</span><span class="f__Abfrage">Welche Form?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls die Biegeform nicht akzeptiert wird, wurde sie vermutlich schon in einer anderen Verlegung verwendet. Legen Sie ggf. eine weitere Biegeform dieses Typs in Ihrer Konstruktionszeichnung an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte Berechnungsart oder &uuml;bernehmen Sie die Werte aus einer vorhandenen Verlegung (Schaltfl&auml;chen unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step">):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Abstand" style="margin:0 auto 0 auto;width:0.9792in;height:0.2292in;border:none" src="b_abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch den Stababstand f&uuml;r den pro Meter erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.as(cm&sup2;/m</span><span class="f_R_Tabellenzeile">). Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe des erforderlichen Stahlquerschnittes ist optional. Wird kein Wert oder 0 angegeben, muss der Abstand der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;</span><span class="f_R_Tabellenzeile">)] den gew&uuml;nschten Wert hat.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Anzahl" style="margin:0 auto 0 auto;width:0.9896in;height:0.2292in;border:none" src="b_anzahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch die f&uuml;r den erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) ben&ouml;tigte Mindestanzahl der St&auml;be. Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe von </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile"> ist optional. Wird kein Wert oder 0 angegeben, muss die Anzahl der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">] den gew&uuml;nschten Wert hat.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der Positionierung wird auch der nominelle Abstand angeschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_sowie_bew" style="margin:0 auto 0 auto;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Durchmessers, Abstands bzw. der Anzahl aus einer vorhandenen Verlegung. [</span><span class="f__Abfrage">So wie welche Verlegung?</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Je nach Berechnungsart wird </span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Anzahl</span><span class="f_R_Tabellenzeile"> aktiviert. Die Abfrage wechselt zu [</span><span class="f__Abfrage">KOR?</span><span class="f_R_Tabellenzeile">] (s. weiter unten).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den erforderlichen Stahlquerschnitt unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_Step"> ein und best&auml;tigen Sie die Angabe. &nbsp;</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&oslash;</span><span class="f_Step"> per Mausklick den Stabdurchmesser.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn der erforderliche Stahlquerschnitt eingegeben wurde, berechnet ISBCAD automatisch den bestm&ouml;glichen Wert f&uuml;r den Abstand bzw. die Stabanzahl und schl&auml;gt diesen unter </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> vor. Der resultierende Stahlquerschnitt wird unter</span><span class="f_Step_Anmerkung" style="font-size: 9pt;"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Weicht der an dieser Stelle angegebene Durchmesser von dem urspr&uuml;nglich gew&auml;hlten ab, k&ouml;nnen die Hakenl&auml;ngen der Auszugsform nach dem Best&auml;tigen des Verlegefaktors an den neuen Durchmesser angepasst werden. Sie erhalten in diesem Fall eine Meldung. Siehe: <a href="des_endhaken.htm" class="topiclink" title="Hakenlängen an den Stabdurchmesser anpassen">Hakenl&auml;ngen an den Stabdurchmesser anpassen</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn der resultierende Stahlquerschnitt</span><span class="f_Step_Anmerkung"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step"> gr&ouml;&szlig;er/gleich dem erforderlichen Stahlquerschnitt </span><span class="f__Abfrage">erf.As(cm&sup2;/m) </span><span class="f_Step">ist, k&ouml;nnen Sie den Wert f&uuml;r </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> </span><span class="f_Step">best&auml;tigen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie einen anderen Wert angeben (und best&auml;tigen) und den resultierenden Stahlquerschnitt </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> pr&uuml;fen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Pr&uuml;fen Sie, ob das Resultat Ihren Anforderungen entspricht. </span><br>
+<span class="f_Step_Anmerkung">Wollen Sie die Angaben &auml;ndern?</span><span class="f_ImageCaption"> </span><span class="f_Step">[</span><span class="f__Abfrage">KOR</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Ja_Klein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.6875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Korrigieren Sie Ihre Angaben beginnend mit erf.As(cm&sup2;/m) (erforderlicher Stahlquerschnitt) oder verwenden Sie <img alt="B_Bst" style="margin:0;width:0.4792in;height:0.1979in;border:none" src="b_bst.png"/> in der unteren Men&uuml;leiste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B-akt_Nein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.6875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der resultierende Stahlquerschnitt wird beibehalten. Sie k&ouml;nnen jetzt die ver&auml;nderlichen Teill&auml;ngen w&auml;hlen und den Verlegebereichen zuordnen. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Teill&auml;ngen definieren und verlegen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">a)</span><a name="veraenderliche-teillaenge-waehlen" class="hmanchor"></a><span class="f_ToDo">Ver&auml;nderliche Teill&auml;ngen w&auml;hlen und den Verlegebereichen zuordnen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Jede Teill&auml;nge einer Biegeform kann als ver&auml;nderliche Teill&auml;nge gew&auml;hlt und einem Verlegebereich zugeordnet werden. Nicht zugewiesene Teill&auml;ngen behalten die in den Eigenschaften der zugrundeliegenden Biegeform definierte L&auml;nge bei.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im Biegeform-Auszug eine ver&auml;nderliche Teill&auml;nge an [</span><span class="f__Abfrage">ver&auml;nderliche Teill&auml;nge(n)</span><span class="f_Step">] und best&auml;tigen Sie die Auswahl.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Die Reihenfolge bei der Auswahl der ver&auml;nderlichen Teill&auml;nge spielt keine Rolle, wichtig ist die korrekte Zuordnung des Verlegebereiches.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_Step_Anmerkung">Die Teill&auml;ngen erhalten die Bezeichnung &quot;L&quot; (=L&auml;nge).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um den Verlegebereich f&uuml;r die aktuell markierte, ver&auml;nderliche Teill&auml;nge anzugeben, w&auml;hlen Sie ein Polygon. [</span><span class="f__Abfrage">zugeh&ouml;riges Polygon</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Hinweis</span><span class="f_Step_Anmerkung">: </span><span class="f_Hervorhebung_Text">Unterschiedliche Ma&szlig;st&auml;be</span><span class="f_Step_Anmerkung">. Falls die Kontur eines Polygons aus unterschiedlichen Ma&szlig;st&auml;ben besteht, werden Sie nach dem Best&auml;tigen des Polygons in einer Meldung darauf hingewiesen. Ihnen werden alle gefundenen Ma&szlig;st&auml;be angezeigt, sodass Sie den korrekten Ma&szlig;stab ausw&auml;hlen k&ouml;nnen. W&auml;hlen Sie aus der Dropdown-Liste den gew&uuml;nschten Ma&szlig;stab und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. </span><span class="f_Hinweis_in_Tabelle_Achtung">Achtung</span><span class="f_Step_Anmerkung">! Der im Dialog gew&auml;hlte Ma&szlig;stab wird nur f&uuml;r die Berechnung verwendet. Die urspr&uuml;nglichen Ma&szlig;st&auml;be der Elemente werden nicht ge&auml;ndert!</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Einzel_Polgon-waehlen" style="margin:0;width:1.3958in;height:0.2396in;border:none" src="b_einzel_polgon-waehlen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen den Verlegebereich durch das Anklicken von Punkten definieren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn das Polygon des zu bewehrenden Bereichs durch angrenzende Elemente (Linien, Kreise oder Teilkreise) beschrieben werden kann, sollte diese Vorwahl verwendet werden. Beim Anklicken der einzelnen Elemente muss der Umlaufsinn beibehalten werden. Benachbarte Elemente m&uuml;ssen sich nicht in einem gemeinsamen Punkt ber&uuml;hren, d. h. sie d&uuml;rfen sich &uuml;berschneiden oder eine L&uuml;cke aufweisen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist das Polygon noch offen, wird es mit rechter Maustaste automatisch geschlossen. Als Endpunkt wird der Schnittpunkt zwischen dem ersten und dem letzten Element genommen. Bei allem wird immer vorausgesetzt, dass eine eindeutige Schnittpunktermittlung erfolgt ist.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Falsch angeklickte Elemente k&ouml;nnen mit <img alt="B_Bst" style="margin:0;width:0.5938in;height:0.2500in;border:none" src="b_bst.png"/> Schritt f&uuml;r Schritt r&uuml;ckw&auml;rts abgew&auml;hlt werden. Sie werden durch eine Meldung darauf hingewiesen, wenn das Polygon nicht gebildet werden kann.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auch sehr kleine L&uuml;cken f&uuml;hren dazu, dass das Polygon nicht erkannt wird. Um Schnittpunkte zu erzeugen und das Polygon zu schlie&szlig;en, siehe: [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Schnip</span><span class="f_R_Tabellenzeile">].</span></p>
+<p style="text-indent: -0.7083in; line-height: 1.20; margin: 0.1042in 0 0 0.7083in;"><img alt="Z_Polygon-waehlen-ueber-Einzelelemente" style="margin:0;width:4.1563in;height:1.9896in;border:none" src="z_polygon-waehlen-ueber-einzelelemente.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Polygon_Automatisch-aus-Elementen" style="margin:0;width:1.3958in;height:0.2396in;border:none" src="b_polygon_automatisch-aus-elementen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen den Verlegebereich durch das Anklicken eines Elements einer polygonalen Begrenzung definieren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie ein Element auf dem Polygon an. Die aneinander anschlie&szlig;enden Elemente m&uuml;ssen einen gemeinsamen Punkt haben. </span></p>
+<p class="p_ImageCaption"><img alt="Z_Polygon-waehlen_Polygonzug" style="margin:0;width:3.9896in;height:1.7813in;border:none" src="z_polygon-waehlen_polygonzug.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_automat_Polygon-waehlen" style="margin:0;width:1.3958in;height:0.2396in;border:none" src="b_automat_polygon-waehlen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen den Verlegebereich automatisch ausw&auml;hlen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie in eine aus Linien und Kreisen begrenzte Fl&auml;che. Die Elemente m&uuml;ssen sich ber&uuml;hren oder &uuml;berschneiden.</span></p>
+<p style="text-indent: -0.8021in; line-height: 1.20; margin: 0 0 0 0.8021in;"><img alt="Z_Polygon-waehlen_begrenzte-Flaeche" style="margin:0;width:4.1563in;height:1.8854in;border:none" src="z_polygon-waehlen_begrenzte-flaeche.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile"><img alt="B_Letztes_Polygon-waehlen" style="margin:0;width:1.3958in;height:0.2396in;border:none" src="b_letztes_polygon-waehlen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen den zuletzt abgesteckten Verlegebereich wieder &uuml;bernehmen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn in demselben Bereich eine weitere Verlegung vorgenommen werden soll, k&ouml;nnen Sie das zuletzt markierte Polygon erneut benutzen, z. B. f&uuml;r orthogonale Bewehrung. Dabei wird der zuletzt angewandte Ma&szlig;stab &uuml;bernommen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f__Abfrage">Neigung des Polygons</span><span class="f_Step">: In dieser Eingabe geben Sie einen Winkel an, um den die St&auml;be im abgesteckten Bereich orthogonal zur Verlegerichtung geneigt werden. 0</span><span class="f_Step">&deg;</span><span class="f_Step"> oder keine Eingabe bedeutet keine Neigung. Eine Eingabe ungleich Null entspricht dem Winkel zwischen der XY-Ebene und der in die geneigte Ebene gerichteten Teill&auml;ngen. Beachten Sie, dass hier die wahre L&auml;nge berechnet wird und sich in der Voutentabelle l&auml;ngere Teill&auml;ngen ergeben als in der projizierten Darstellung auf der Zeichnung.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.4167in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel:</span></p>
+<p class="p_ImageCaption"><img alt="SCR_Voute_Neigungswinkel_iso" style="margin:0;width:3.1354in;height:1.7604in;border:none" src="scr_voute_neigungswinkel_iso.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Verlegerichtung</span><span class="f_Step"> den Winkel f&uuml;r die Anordnung der ver&auml;nderlichen Teill&auml;nge zur Staffelrichtung an. 0&nbsp;=&nbsp;senkrecht zur Staffelrichtung.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Bei der Verlegung werden die St&auml;be parallel angeordnet. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die folgende Meldung erhalten, m&uuml;ssen Sie in der <a href="rd_konfiguration-voute.htm" class="topiclink" title="Grundeinstellungen">Voutenkonfiguration</a> den Wert f&uuml;r </span><span class="f__Software_Element_deskriptiv">min. Stabl&auml;nge</span><span class="f_Step_Anmerkung"> &auml;ndern. Geben Sie einen Wert ein, der kleiner ist als die minimale variable Teill&auml;nge. Best&auml;tigen Sie die Eingabe mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. Sie gelangen wieder zur Angabe der Verlegerichtung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="M_Voute" style="margin:0;width:4.0729in;height:1.5208in;border:none" src="m_voute.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">b)</span><a name="_voutefaecher" class="hmanchor"></a><span class="f_ToDo">F&auml;cherf&ouml;rmige Verlegung?</span></p>
+<p class="p_ToDo_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0.5313in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&auml;cher?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B-akt_Nein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Elemente der ver&auml;nderlichen Teill&auml;nge werden parallel verlegt.</span><br>
+<span class="f_R_Tabellenzeile">Sie k&ouml;nnen sofort die Kantenabst&auml;nde angeben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_R_Tabellenzeile"><img alt="B_Ja_Klein" style="margin:0;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Elemente der ver&auml;nderlichen Teill&auml;nge werden f&auml;cherf&ouml;rmig verlegt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Grundlinie bzw. den Bezugsbogen f&uuml;r die f&auml;cherf&ouml;rmige Verlegung an. [</span><span class="f__Abfrage">Grundlinie (-bogen)</span><span class="f_Step">]. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Grundlinie ist die Linie, auf der die Abst&auml;nde abgesteckt werden sollen. Von diesen Punkten werden die St&auml;be f&auml;cherf&ouml;rmig angeordnet. Die Winkel ergeben sich aus den benachbarten Linien, die nicht parallel verlaufen d&uuml;rfen. Sollte die Verlegung nicht m&ouml;glich sein, werden Sie durch eine Meldung darauf hingewiesen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit </span><span class="f__Software_Element_deskriptiv">&#8592;Bst</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie einen Schritt zur&uuml;ckgehen und eine neue Grundlinie w&auml;hlen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="SCR_Voute_Grundlinie" style="margin:0;width:6.8021in;height:1.9792in;border:none" src="scr_voute_grundlinie.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">c)</span><a name="kantenabstaende" class="hmanchor"></a><span class="f_ToDo">Kantenabst&auml;nde angeben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die verschiedenen Abst&auml;nde zu den Kanten werden nacheinander abgefragt. F&uuml;r jede Abfrage stehen folgende Optionen zur Verf&uuml;gung:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.7604in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9583in;"><p class="p_R_Tabellenzeile"><img alt="B_alle-gleich" style="margin:0;width:1.6771in;height:0.2396in;border:none" src="b_alle-gleich.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der abgefragte Abstand wird an allen Kanten gleich ausgef&uuml;hrt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9583in;"><p class="p_R_Tabellenzeile"><img alt="B_unterschied" style="margin:0;width:1.6771in;height:0.2396in;border:none" src="b_unterschied.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der abgefragte Abstand muss f&uuml;r jede Kante explizit angegeben werden. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9583in;"><p class="p_R_Tabellenzeile"><img alt="B_Lg-minus" style="margin:0;width:0.6146in;height:0.2396in;border:none" src="b_lg-minus.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht der </span><span class="f_Hervorhebung_Text">Betondeckung</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand zum Element nach innen. Die St&auml;be werden bis zu einer Parallelen zur Kante verk&uuml;rzt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9583in;"><p class="p_R_Tabellenzeile"><img alt="B_Lg-plus" style="margin:0;width:0.6146in;height:0.2396in;border:none" src="b_lg-plus.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht der </span><span class="f_Hervorhebung_Text">Auflagertiefe</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand zum Element nach au&szlig;en. Die St&auml;be werden &uuml;ber die Kante mit dem angegebenen Ma&szlig; verl&auml;ngert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Kantenabst&auml;nde entsprechend der Abfrage an. Die aktuell abgefragte Kante ist in der Zeichnung markiert.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9479in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Abstand </span><span class="f__Abfrage" style="font-style: italic;">n</span><span class="f__Abfrage">. Kante</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abst&auml;nde zu den Elementen (Kanten), auf die die St&auml;be zulaufen. Als Vorschlagswert wird die eingestellte Beton&uuml;berdeckung in die Eingabe geschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9479in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Randabstand Anfang</span><span class="f_R_Tabellenzeile"> </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Abfrage">Randabstand Ende</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie den Abstand zum Anfang bzw. Ende an. Damit wird die Lage des ersten und letzten Stabes festgelegt. W&auml;hlen Sie einen der vorgeschlagenen Werte aus der Auswahlbox und best&auml;tigen Sie mit der rechten Maustaste.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">d)</span><span class="f_ToDo">Abtreppung definieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Neben der M&ouml;glichkeit, die Bewehrungsst&auml;be kontinuierlich den R&auml;ndern anzupassen, k&ouml;nnen Sie Abstufungen vornehmen. Wenn Bereiche durch zwei schr&auml;ge Kanten begrenzt werden, ist das Abtreppma&szlig; die Summe der beiden Differenzen bzw. die L&auml;ngen&auml;nderung der einzelnen St&auml;be.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn die St&auml;be </span><span class="f_Hervorhebung_Text">ohne Abtreppung</span><span class="f_Step"> verlegt werden sollen (jeder Stab hat eine andere L&auml;nge):</span><br>
+<span class="f_Step_Anmerkung">Geben Sie unter </span><span class="f__Abfrage">Abtreppung</span><span class="f_Step_Anmerkung"> den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Anmerkung"> (Null) ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen unter </span><span class="f__Abfrage">Auswahl</span><span class="f_Step_Anmerkung"> sofort angeben, ob eine weitere ver&auml;nderliche Teill&auml;nge verlegt werden soll.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Um eine Abtreppung zu definieren:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Abtreppung</span><span class="f_Step"> die Art der Abtreppung:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9271in;"><p class="p_R_Tabellenzeile"><img alt="B_Stabanfang" style="margin:0;width:0.9792in;height:0.2500in;border:none" src="b_stabanfang.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Stufen werden in Verlegerichtung und parallel zur gegen&uuml;berliegenden Kante gezeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5104in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_VeVoute_stabanfang" style="margin:0;width:2.2813in;height:2.6563in;border:none" src="scr_vevoute_stabanfang.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2500in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Verlegerichtung = 0&deg;</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Anzahl = 20</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Betondeckung (Lg -) = 0.03 m</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Abtreppung (b1) = 0.5 m</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9271in;"><p class="p_R_Tabellenzeile"><img alt="B_Stabende" style="margin:0;width:0.9792in;height:0.2500in;border:none" src="b_stabende.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Stufen werden in Verlegerichtung und parallel zur gegen&uuml;berliegenden Kante gezeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5104in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_VeVoute_stabende" style="margin:0;width:2.2917in;height:2.6771in;border:none" src="scr_vevoute_stabende.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2500in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Verlegerichtung = 0&deg;</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Anzahl = 20</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Betondeckung (Lg -) = 0.03 m</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Abtreppung (b1) = 0.5 m</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9271in;"><p class="p_R_Tabellenzeile"><img alt="B_zentriert" style="margin:0;width:0.9896in;height:0.2500in;border:none" src="b_zentriert.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Stufen verlaufen unter einem Winkel. Die St&auml;be werden mittig zwischen der Ober- und Unterkante verlegt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5104in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_VeVoute_zen" style="margin:0;width:2.2917in;height:2.6771in;border:none" src="scr_vevoute_zen.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2500in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Verlegerichtung = 0&deg;</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Anzahl = 20</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Betondeckung (Lg -) = 0.03 m</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Abtreppung (b1/b2) = 0.5 m</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9271in;"><p class="p_R_Tabellenzeile"><img alt="B_orthogonal" style="margin:0;width:1.0104in;height:0.2500in;border:none" src="b_orthogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Stufen werden orthogonal zu den Bewehrungsst&auml;ben gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.5104in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_VeVoute_rand" style="margin:0;width:2.2813in;height:2.6875in;border:none" src="scr_vevoute_rand.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2500in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Verlegerichtung = 0&deg;</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Anzahl = 20</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Betondeckung (Lg -) = 0.03 m</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Abtreppung (b1/b2) = 0.5 m</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.7708in; margin-left: 0;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Geben Sie </span><span class="f_Step">unter </span><span class="f__Abfrage">Abtreppung </span><span class="f_R_Tabellenzeile">die gew&uuml;nschte Differenz der Stabl&auml;ngen (=&nbsp;Abtreppung) in Metern ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">e)</span><span class="f_ToDo">Weitere ver&auml;nderliche Teill&auml;ngen verlegen?</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Auswahl</span><span class="f_Step"> an, ob alle ver&auml;nderlichen Teill&auml;ngen verlegt wurden:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6771in;"><p class="p_ImageCaption_zentriert"><img alt="B_naechste-Teillaenge" style="margin:0 auto 0 auto;width:1.3750in;height:0.2396in;border:none" src="b_naechste-teillaenge.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die n&auml;chste ver&auml;nderliche Teill&auml;nge wird abgefragt. [</span><span class="f__Abfrage">ver&auml;nderliche Teill&auml;nge(n)</span><span class="f_R_Tabellenzeile">].</span><br>
+<span class="f_R_Tabellenzeile"><a href="tsk_voute-mehrdirektional-verlegen.htm#veraenderliche-teillaenge-waehlen" class="topiclink" title="Abfrage: veränderliche Teillänge(n)">&raquo;&nbsp;Ver&auml;nderliche Teill&auml;ngen w&auml;hlen und den Verlegebereichen zuordnen</a></span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Verlegung wird mit der zuvor verlegten Anzahl an St&auml;ben generiert. Der erforderliche Abstand wird mit einer Genauigkeit von 5 mm berechnet. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Falls im Verlegebereich die eingestellte Mindestl&auml;nge der St&auml;be unterschritten wird, erhalten Sie eine Meldung:</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_R_Tabellenzeile">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_R_Tabellenzeile">, um die Verlegung trotzdem auszuf&uuml;hren.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_R_Tabellenzeile">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_R_Tabellenzeile">, um zur vorherigen Abfrage zur&uuml;ckzukehren. Sie k&ouml;nnen in der <a href="rd_konfiguration-voute.htm" class="topiclink" title="Grundeinstellungen">Voutenkonfiguration</a> den Wert f&uuml;r die </span><span class="f__Software_Element_deskriptiv">min. Stabl&auml;nge</span><span class="f_R_Tabellenzeile"> &auml;ndern. </span><span class="f_Step_Anmerkung">Best&auml;tigen Sie die Eingabe mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">. Sie gelangen wieder zur Eingabe der Abst&auml;nde.</span></p>
+<p class="p_ImageCaption"><img alt="D_Voute-verlegen" style="margin:0;width:4.1979in;height:1.8333in;border:none" src="d_voute-verlegen.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6771in;"><p class="p_ImageCaption_zentriert"><img alt="B_Fertig_und-weiter" style="margin:0 auto 0 auto;width:1.3750in;height:0.2396in;border:none" src="b_fertig_und-weiter.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.7813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Zuordnung der ver&auml;nderlichen Teill&auml;ngen zu den Verlegebereichen ist abgeschlossen.</span><br>
+<span class="f_R_Tabellenzeile">Fahren Sie mit der Positionierung fort.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Positionierung</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den n&ouml;tigen Verlegefaktor ein und best&auml;tigen Sie die Angabe. [</span><span class="f__Abfrage">Verlegefaktor</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Soll eine Tabelle hinzugef&uuml;gt werden?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_ImageCaption_zentriert"><img alt="B-akt_Nein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Voutenverlegung ist abgeschlossen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_ImageCaption_zentriert"><img alt="B_Ja_Klein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.3958in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Geben Sie die Anzahl der Spalten an und setzen Sie die Tabelle an der gew&uuml;nschten Stelle ab, um die Voutenverlegung abzuschlie&szlig;en. F&uuml;r die Angabe der Spaltenanzahl k&ouml;nnen Sie die Schaltfl&auml;chen unterhalb der Abfrage verwenden. Best&auml;tigen Sie abschlie&szlig;end mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile"> oder Rechtsklick.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Auswahl-mit-OK" style="margin:0;width:1.6250in;height:0.2292in;border:none" src="scr_auswahl-mit-ok.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Wenn der Faktor &gt;1 ist oder St&auml;be mit verschiedenen Anzahlen geschnitten werden m&uuml;ssen, wird in der Tabelle eine zus&auml;tzliche Spalte f&uuml;r die </span><span class="f_Hervorhebung_Text">Anzahl&nbsp;(n)</span><span class="f_R_Tabellenzeile"> erzeugt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.6042in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Voutenverlegung_Tabellen" style="margin:0;width:2.5313in;height:2.6146in;border:none" src="z_voutenverlegung_tabellen.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.5313in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Voutenverlegung_Tabellen-ohne" style="margin:0;width:2.5000in;height:2.5938in;border:none" src="z_voutenverlegung_tabellen-ohne.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.2188in; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_Voutenverlegung_Tabellen-keine" style="margin:0;width:2.6146in;height:2.5938in;border:none" src="z_voutenverlegung_tabellen-keine.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.6042in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">mit Unterposition</span></p>
+</td>
+<td style="vertical-align:top; width:2.5313in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">ohne Unterposition</span></p>
+</td>
+<td style="vertical-align:top; width:3.2188in; padding:0; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">keine Position erforderlich</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:5.7500in; padding:0; border:none"><h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">&nbsp;</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table class="Reference_Clean" >
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="2"  style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abk&uuml;rzungen</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Pos.</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Position</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">L</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&auml;nge der Teill&auml;nge</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">GESL</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Gesamtl&auml;nge</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">minLg</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mindestl&auml;nge</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">mittl. Lg</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">mittlere L&auml;nge</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:0.9479in; padding:0.0208in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">maxLg</span></p>
+</td>
+<td class="Reference_Clean" style="width:7.4063in; padding:0.0208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">maximale L&auml;nge</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen nach Abschluss der Voutenverlegung sofort eine weitere mehrdimensionale Voute verlegen. [</span><span class="f__Abfrage">Welche Form?</span><span class="f_Step_Anmerkung">].</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_31.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

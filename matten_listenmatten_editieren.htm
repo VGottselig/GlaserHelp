@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Listenmatteneditor</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="LiMaEd,Listenmatten,Listenmatten bearbeiten,Matten,Matten Listenmatteneditor" />
+   <meta name="description" content="Aufbau bereits verlegter Listenmatten festlegen. Öffnet den Dialog Listenmatten-Editor." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_matten.htm">Matten</a> &gt; <a href="matten.htm">Mattenverlegung im Rechteck</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="mattengruppe_frei_verlegen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="matten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="matten_verlegebereich_aendern.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Listenmatteneditor</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_matten.htm" class="topiclink" title="Matten-Funktionen (Übersicht)"><img alt="Matten-Funktionen (Übersicht)" title="Matten-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_matten.png"/></a><span class="f_Aufruf"> <a href="matten.htm" class="topiclink" title="Mattenverlegung im Rechteck (Funktionsübersicht)"><img alt="Mattenverlegung im Rechteck (Funktionsübersicht)" title="Mattenverlegung im Rechteck (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_verrec_matten.png"/></a> </span><img alt="B-akt_LiMaEd" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b-akt_limaed.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Aufbau bereits verlegter Listenmatten festlegen. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Listenmatten-Editor</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Bearbeiten Sie zun&auml;chst die Angaben in der Tabelle, bevor Sie einzelne St&auml;be oder Bereiche mit den Funktionen in der Men&uuml;leiste editieren. Die tabellarische Bearbeitung ist dann nicht mehr m&ouml;glich.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Listenmatten-Editor&quot;</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Position</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie die Nummer an, die Sie bearbeiten wollen. Es werden nur die Listenmattenpositionen angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl; Mattenbezeichnung; Mattenl&auml;nge (L) / Breite (B)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Diese Werte werden nur angezeigt und k&ouml;nnen nicht editiert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stahlsorte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl aus der Liste.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser der L&auml;ngsst&auml;be (&oslash;L)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Eintrag aus der Liste der m&ouml;glichen Stabdurchmesser aus. Es sind Einfach- und Doppelst&auml;be m&ouml;glich. Sie k&ouml;nnen den Wert auch eingeben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand der L&auml;ngsst&auml;be (aL)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den gew&uuml;nschten Abstand ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser der Randst&auml;be (&oslash;R)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen Durchmesser aus der Auswahlliste aus oder geben ihn direkt ein. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl der Randst&auml;be links / rechts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die gew&uuml;nschte Anzahl ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser der Querst&auml;be (&oslash;Q)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie einen der Durchmesser aus der Liste aus oder geben Sie diesen direkt ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand der Querst&auml;be (aQ)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Tragen Sie den Abstand ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;berstand der L&auml;ngsst&auml;be oben (&Uuml;1) / unten (&Uuml;2); &Uuml;berstand der Querst&auml;be links (&Uuml;3) / rechts (&Uuml;4)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Abstand des ersten / letzten Querstabes vom Mattenrand.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand der kurzen L&auml;ngsst&auml;be</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Jeder zweite Stab kann mit einem Abstand vom Beginn der Matte versehen werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge der kurzen L&auml;ngsst&auml;be</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen kleineren Wert als den vorgeschlagenen ein um die St&auml;be auch auf der anderen Seite zu verk&uuml;rzen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">dz Matte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zurzeit nicht m&ouml;glich.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnitt der L&auml;ngsst&auml;be</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Querschnitt wird aus dem Querschnitt aller L&auml;ngsst&auml;be, verteilt &uuml;ber die gesamte Mattenbreite, berechnet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Querschnitt der Querst&auml;be</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Querschnitt aller Querst&auml;be wird &uuml;ber die Gesamtl&auml;nge verteilt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Gewicht der Matte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Das Gesamtgewicht der Matte wird angezeigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="funktionenindermenleiste" class="hmanchor"></a><span class="f_Heading5">Funktionen in der Men&uuml;leiste</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="I_isb" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="i_isb.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Daten an das Zeichenprogramm &uuml;bergeben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Ende</span><span class="f_R_Tabellenzeile">]. Damit werden die Informationen &uuml;ber den Mattenaufbau in der Zeichnung gespeichert. Wenn Sie die Zeichnung weitergeben, kann die Matte auch dort editiert werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-19_Matten_VerlegenRechteck_LiMaEd-Messen" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-19_matten_verlegenrechteck_limaed-messen.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Messen in der &Uuml;bersicht.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie Stabenden an. Der Stab und das angeklickte Ende werden markiert. In der Statuszeile werden die Abst&auml;nde in X- und Y-Richtung sowie der Diagonalabstand angezeigt. Ende mit der rechten Maustaste oder mit der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-20_Matten_VerlegenRechteck_LiMaEd-Drucken" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-20_matten_verlegenrechteck_limaed-drucken.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drucken</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Ausdruck erfolgt &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">StlLis</span><span class="f_R_Tabellenzeile">]. Um Listenmatten auszudrucken, setzen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Stahlliste</span><span class="f_R_Tabellenzeile"> einen Haken bei [</span><span class="f__Software_Element_deskriptiv">Ausgabe</span><span class="f_R_Tabellenzeile"> (</span><span class="f__Software_Element_deskriptiv">Drucker</span><span class="f_R_Tabellenzeile">) &#8594; </span><span class="f__Software_Element_deskriptiv">Listenmatten</span><span class="f_R_Tabellenzeile">]. <a href="rd_stahlliste_(zusammenstellung-der-inhalte).htm" class="topiclink">&raquo; Stahllisten</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-21_Matten_VerlegenRechteck_LiMaEd-Zoom_setzen" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-21_matten_verlegenrechteck_limaed-zoom_setzen.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zoom Fenster</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">1. Zoompunkt anklicken / 2. Zoompunkt anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie mit der linken Maustaste den ersten und zweiten Diagonalpunkt des Vergr&ouml;&szlig;erungsbereiches an. Sie k&ouml;nnen auch den Schnellzoom verwenden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-22_Matten_VerlegenRechteck_LiMaEd-Zoom_vorher" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-22_matten_verlegenrechteck_limaed-zoom_vorher.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zoom vorher</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schrittweise wieder zur&uuml;ck auf die gesamte &Uuml;bersicht.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-23_Matten_VerlegenRechteck_LiMaEd-Zoom_alles" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-23_matten_verlegenrechteck_limaed-zoom_alles.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zoom alles</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeigt wieder die gesamte Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-24_Matten_VerlegenRechteck_LiMaEd-Korrektur" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-24_matten_verlegenrechteck_limaed-korrektur.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">R&uuml;ckg&auml;ngig</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Macht den ersten der letzten f&uuml;nf Schritte r&uuml;ckg&auml;ngig.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-25_Matten_VerlegenRechteck_LiMaEd-Wiederherstellen" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-25_matten_verlegenrechteck_limaed-wiederherstellen.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wiederherstellen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stellt den Zustand wieder her, der vor </span><span class="f__Software_Element_deskriptiv">R&uuml;ckg&auml;ngig</span><span class="f_R_Tabellenzeile"> galt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-26_Matten_VerlegenRechteck_LiMaEd-Längsstäbe_markieren" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="hmfile_hash_f5c34356.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&auml;ngsst&auml;be markieren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">1. Punkt zum Markieren anklicken / 2. Punkt zum Markieren anklicken</span><br>
+<span class="f_R_Tabellenzeile">Ziehen Sie ein Rechteck zum Markieren auf. Die St&auml;be m&uuml;ssen nicht vollst&auml;ndig eingeschlossen werden, es gen&uuml;gt, sie „anzuschneiden“. Wenn Sie diese Funktion mehrfach ausf&uuml;hren, werden nur die zuletzt ber&uuml;hrten St&auml;be markiert. Die vorhergehende Markierung wird wieder aufgehoben. Sie k&ouml;nnen auch einzelne St&auml;be anklicken. Dabei wird jeweils markiert bzw. demarkiert. Am Ende die rechte Maustaste oder die Eingabetaste dr&uuml;cken.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-27_Matten_VerlegenRechteck_LiMaEd-Querstäbe_markieren" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="hmfile_hash_7350012d.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Querst&auml;be markieren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">1. Punkt zum Markieren anklicken / 2. Punkt zum Markieren anklicken</span><br>
+<span class="f_R_Tabellenzeile">Wie bei den L&auml;ngsst&auml;ben beschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-28_Matten_VerlegenRechteck_LiMaEd-Durchmesser_ändern" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="hmfile_hash_7e2ae6a1.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Durchmesser &auml;ndern.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stab zum &Auml;ndern des Durchmessers anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie die St&auml;be an, deren Durchmesser ge&auml;ndert werden soll. Ende mit der rechten Maustaste oder der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Wert eingeben, Ende mit Return</span><br>
+<span class="f_R_Tabellenzeile">W&auml;hlen Sie den neuen Durchmesser aus der Auswahlbox aus. Sie k&ouml;nnen den Durchmesser auch direkt eingeben. Dr&uuml;cken Sie am Ende die Eingabetaste oder die rechte Maustaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-29_Matten_VerlegenRechteck_LiMaEd-Stabende_verschieben" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-29_matten_verlegenrechteck_limaed-stabende_verschieben.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stabende(n) verschieben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stabende(n) zum Verschieben anklicken bzw. welches Ende verschieben</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie die Stabenden an, die ver&auml;ndert werden sollen. Weiter mit der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Wert eingeben / Linie anklicken</span><br>
+<span class="f_R_Tabellenzeile">Geben Sie das Ma&szlig; der Verschiebung mit + oder - ein. Best&auml;tigen Sie mit der rechten Maustaste oder der Eingabetaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Wert eingeben / Linie anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie einen Stab oder eine der Begrenzungslinien als Bezugslinie an.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Wert eingeben</span><br>
+<span class="f_R_Tabellenzeile">Geben Sie die Differenz mit + oder - an und best&auml;tigen mit der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-30_Matten_VerlegenRechteck_LiMaEd-Stab_verschieben" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-30_matten_verlegenrechteck_limaed-stab_verschieben.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stab verschieben.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stab zum Verschieben anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie die St&auml;be an, die verschoben werden sollen. Weiter mit der rechten Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Von Punkt</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie einen Bezugspunkt an, auf den die Differenz bezogen werden soll. Weiter mit rechter Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Nach Punkt X / nach Punkt Y</span><br>
+<span class="f_R_Tabellenzeile">Geben Sie den Verschiebebetrag direkt ein oder klicken Sie einen Punkt an. Zu diesem Punkt kann eine Differenz mit + oder - angegeben werden. Das gilt sowohl f&uuml;r die X- als auch f&uuml;r die Y-Richtung. F&uuml;r den Fall, dass zwei oder mehr St&auml;be &uuml;bereinanderliegen, meldet sich das Programm mit einem Hinweis.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="k_2.1.1-31_matten_verlegenrechteck_limaed-stab_kopieren" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-31_matten_verlegenrechteck_limaed-stab_kopieren.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stab kopieren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stab zum Kopieren anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie die St&auml;be an, die kopiert werden sollen. Weiter mit der rechten Maustaste.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Von Punkt</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie einen Bezugspunkt f&uuml;r die Verschiebungen an.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Nach Punkt X / Nach Punkt Y</span><br>
+<span class="f_R_Tabellenzeile">Geben Sie den Verschiebebetrag in X- bzw. Y-Richtung an. Sie k&ouml;nnen auch einen Referenzpunkt mit Differenz eingeben. Ende mit der rechten Maustaste oder der Eingabetaste.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-32_Matten_VerlegenRechteck_LiMaEd-Stab_löschen" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="hmfile_hash_34f5f612.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stab l&ouml;schen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stab zum L&ouml;schen anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie jeweils einen Stab an, der sofort aus der Zeichnung gel&ouml;scht wird.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5000in;"><p style="line-height: 1.20; margin: 0.0833in 0 0 0;"><img alt="K_2.1.1-33_Matten_VerlegenRechteck_LiMaEd-Stab_Info" style="margin:0;width:0.2813in;height:0.2708in;border:none" src="k_2.1.1-33_matten_verlegenrechteck_limaed-stab_info.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Informationen &uuml;ber einen Stab.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Option">Stab anklicken</span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie einen Stab an. In der Statuszeile wird die X- und Y-Position, die L&auml;nge und der Durchmesser angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle &Auml;nderungen werden sofort gespeichert, sodass es m&ouml;glich ist, zwischen verschiedenen Mattenpositionen zu wechseln.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_matten-einzeln-verlegen.htm" class="topiclink" title="Lager-, Listen- und Vorratsmatten verlegen">Lager-, Listen- und Vorratsmatten verlegen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="matten.htm" class="topiclink">Mattenverlegung im Rechteck (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

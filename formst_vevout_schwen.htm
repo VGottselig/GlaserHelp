@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Flächen automatisch bewehren - [FläBew]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatische Bewehrung - FläBew,Bewehrung automatisch verlegen,Bewehrung verlegen,Bewehrung verlegen Formstahl,Flächenbewehrung" />
+   <meta name="description" content="In rechteckigen oder polygonalen Verlegebereichen werden Stabstahlstaffeln mit versetzt angeordneten Stößen ohne Finite Elemente verlegt. Die erforderlichen Stahlauszüge werd" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_29" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="_FOptionen"><param name="Item3" value="FStBiPos"><param name="Item4" value="AutBew"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_vestaf.htm">Verlegung als Staffel (Bügelstaffel)</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_vestaf_beldar.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_vestaf.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_vevout_lfdsta.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Fl&auml;chen automatisch bewehren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_vestaf.htm" class="topiclink" title="Verlegen einer Biegeform als Staffel (Funktionsübersicht)"><img alt="Verlegen einer Biegeform als Staffel (Funktionsübersicht)" title="Verlegen einer Biegeform als Staffel (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_vestaf.png"/></a> <img alt="B-akt_Schwen_Voute" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_schwen_voute.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">In rechteckigen oder polygonalen Verlegebereichen werden Stabstahlstaffeln mit versetzt angeordneten St&ouml;&szlig;en </span><span class="f_A_Allgemein">ohne Finite Elemente </span><span class="f_Task_Info">verlegt. Die erforderlichen Stahlausz&uuml;ge werden automatisch erstellt.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verwendung</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit der Fl&auml;chenbewehrungsfunktion [</span><span class="f__Software_Element_deskriptiv">Fl&auml;Bew</span><span class="f_A_Allgemein">] k&ouml;nnen Sie eine Umrissgeometrie definieren und die Bewehrung mit gleichem Durchmesser und Stababstand generieren. Die Eingabe von Durchbr&uuml;chen ist ebenfalls m&ouml;glich. F&uuml;r einen schnelleren Arbeitsablauf k&ouml;nnen Sie die bereits definierte Geometrie wieder &uuml;bernehmen, um eine weitere Verlegung mit anderen Parametern zu generieren. Mittels einer Vorschau k&ouml;nnen Sie das Ergebnis vorab pr&uuml;fen und ggf. weitere Anpassungen vornehmen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Den Wert f&uuml;r die &Uuml;bergreifungsl&auml;nge k&ouml;nnen Sie automatisch ermitteln lassen oder manuell eingeben. Ebenso k&ouml;nnen Sie einstellen, ob der Sto&szlig;versatz „mittig“, „normal“ oder „verschwenkt“ ausgef&uuml;hrt werden soll.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Bei der Fl&auml;chenbewehrung wird die Verlegung innerhalb der definierten Umrissgeometrie erzeugt und die Ausz&uuml;ge werden in Flucht zur Verlegerichtung platziert. Die mit der Fl&auml;chenbewehrung erzeugte Verlegung wird dabei als Staffel erkannt, sofern die Stabl&auml;nge und der Stababstand gleich sind. Die Staffel l&auml;sst sich mit dem Positionierungsprogramm [</span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_A_Allgemein">] positionieren.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">F&uuml;r ein bestm&ouml;gliches Ergebnis empfehlen wir Ihnen, die Fl&auml;chenbewehrung in rechtwinkligen Geometrien anzuwenden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="Flächenbewehrung_2018" style="margin:0;width:7.3021in;height:5.2083in;border:none" src="hmfile_hash_d047f508.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Falls die Kontur eines Polygons aus unterschiedlichen Ma&szlig;st&auml;ben besteht, werden Sie nach dem Best&auml;tigen des Polygons in einer Meldung darauf hingewiesen. Ihnen werden alle gefundenen Ma&szlig;st&auml;be angezeigt, sodass Sie den korrekten Ma&szlig;stab ausw&auml;hlen k&ouml;nnen. W&auml;hlen Sie aus der Dropdown-Liste den gew&uuml;nschten Ma&szlig;stab und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Hinweis_in_Tabelle">.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.0521in 0 0.0417in 0.1354in;"><span class="f_Hinweis_in_Tabelle_Achtung">Achtung!</span><span class="f_Hinweis_in_Tabelle"> Der im Dialog gew&auml;hlte Ma&szlig;stab wird nur f&uuml;r die Berechnung verwendet. Die urspr&uuml;nglichen Ma&szlig;st&auml;be der Elemente werden nicht ge&auml;ndert!</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; margin: 0.0521in 0 0.0417in 0.1250in;"><img alt="D_Unterschiedliche-Massstaebe" style="margin:0;width:3.2396in;height:1.6250in;border:none" src="d_unterschiedliche-massstaebe.png"/></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Beim Abstecken von &Ouml;ffnungen wird immer der Ma&szlig;stab der Umrissgeometrie &uuml;bernommen.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Umrissgeometrie und &Ouml;ffnungen definieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Der Verlegebereich stellt die Begrenzung der Bewehrung dar. Das Programm schneidet an diesen Grenzen die St&auml;be ab. Eventuell m&uuml;ssen Sie durch geeignete Ma&szlig;nahmen z. B. f&uuml;r die Einspannbewehrung sorgen. Das kann durch die zus&auml;tzliche Anordnung von Winkeleisen geschehen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Abstand von der Au&szlig;en- bzw. Innenkante ein und best&auml;tigen Sie mit der Eingabetaste. </span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Abstand</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.5208in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand Au&szlig;enkante</span></p>
+</td>
+<td style="vertical-align:top; width:11.8333in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">= Positiver Wert</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5208in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Abstand Innenkante</span></p>
+</td>
+<td style="vertical-align:top; width:11.8333in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">= Negativer Wert</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter der Abfrage eine der folgenden Selektionsm&ouml;glichkeiten aus:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption"><img alt="B_Punkte-Massen" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_punkte-massen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Definition eines Polygons durch Anklicken von Punkten.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Punkte nacheinander an. Wenn Sie den ersten Punkt wieder anklicken, wird die Fl&auml;che geschlossen. [</span><span class="f__Abfrage">Punkt w&auml;hlen</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.0625in 0.0938in;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Das Polygon wird automatisch geschlossen, wenn der erste Punkt ein zweites Mal angeklickt wird.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.0625in 0.0938in;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Bei den Funktionen [Punkte] und [Elemente] k&ouml;nnen Sie w&auml;hrend des Absteckens den Abstand &auml;ndern: </span><br>
+<span class="f_R_Tabellenzeile">Klicken Sie hierzu die rechte Maustaste und geben Sie einen neuen Abstand.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0.0625in 0.0938in;"><span class="f_R_Tabellenzeile" style="display:inline-block;width:0.1354in;margin-left:-0.1354in">&#8211;</span><span class="f_R_Tabellenzeile">Wenn Sie auf <img alt="B_Weiter-mit-Haken" style="margin:0;width:1.0208in;height:0.1979in;border:none" src="b_weiter-mit-haken.png"/> klicken, wird der erste Punkt mit dem letzten Punkt verbunden.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: Abstecken eines Polygons</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wer positiv und Sie klicken die Punkte gegen den Uhrzeigersinn an, wird der Abstand nach innen gezeichnet. Ist der Wert negativ und Sie klicken die Punkte im Uhrzeigersinn an, wird der Abstand ebenfalls nach innen gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="Z_AutBew_01" style="margin:0;width:3.1979in;height:1.7708in;border:none" src="z_autbew_01.png"/><img alt="Z_AutBew_02" style="margin:0;width:2.8438in;height:1.7917in;border:none" src="z_autbew_02.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entspricht dem Abstand von der Au&szlig;enkante.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="Z_AutBew_03" style="margin:0;width:3.1667in;height:1.7604in;border:none" src="z_autbew_03.png"/><span class="f_R_Tabellenzeile">  <img alt="Z_AutBew_04" style="margin:0;width:2.7292in;height:1.7708in;border:none" src="z_autbew_04.png"/></span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ist der Wert negativ und Sie klicken die Punkte gegen den Uhrzeigersinn an bzw. positiv und im Uhrzeigersinn, wird der Abstand rechts der angeklickten Punkte gezeichnet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption"><img alt="B_Elemente" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_elemente.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bestimmung eines Polygons oder Auswahl eines Kreises durch Anklicken von Elementen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Kanten nacheinander auf der Seite an, zu welcher der Abstand angetragen werden soll. [</span><span class="f__Abfrage">Elemente w&auml;hlen</span><span class="f_R_Tabellenzeile">]. Sie k&ouml;nnen sowohl Linien als auch Kreise anklicken. Das erste und letzte Element sollte eine Linie sein, um eindeutige Schnittpunkte zu erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption"><img alt="B_Auto_112x24px" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_auto_112x24px.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl einer in der Zeichnung vorhandenen, geschlossenen Form (aus Linien und/oder Kreisen). Das Polygon muss auf der Zeichenfl&auml;che vollst&auml;ndig sichtbar sein, ansonsten wird es nicht erkannt. Zoomen Sie ggf. aus der Zeichnung heraus oder verschieben Sie den Bildausschnitt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn Sie einen negativen Abstand eingeben, wird der Umriss innerhalb der Form gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Um das Polygon auszuw&auml;hlen, klicken Sie in die geschlossene Form. [</span><span class="f__Abfrage">In Polygon klicken</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption"><img alt="B_Uebernahme_112x24px" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_uebernahme_112x24px.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Umrisses einer bereits bewehrten Form.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie einen Polygonpunkt der Form an. [</span><span class="f__Abfrage">Polygonpunkt anklicken</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Polygon wird markiert und Sie gelangen direkt zur Angabe der Bewehrungsparameter (Dialog).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nun die &Ouml;ffnungen innerhalb der Umrissgeometrie an. [</span><span class="f__Abfrage">&Ouml;ffnungen n</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Verfahren Sie bei den &Ouml;ffnungen, wie bei der Definition der Umrissgeometrie, indem Sie zun&auml;chst den Abstand angeben und anschlie&szlig;end die Polygone definieren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um den Verlegebereich (Umrissgeometrie + &Ouml;ffnungen) zu best&auml;tigen und mit der Bearbeitung fortzufahren, best&auml;tigen Sie den </span><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Abstand</span><span class="f_Step_Anmerkung">]</span><span class="f_Step"> und klicken Sie auf <img alt="B_Fertig-mit-Haken" style="margin:0;width:1.1458in;height:0.2083in;border:none" src="b_fertig-mit-haken.png"/>.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Bewehrungsparameter</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><a name="_flaebewpara" class="hmanchor"></a><span class="f_ToDo">Bewehrungsparameter anpassen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Im Dialog k&ouml;nnen Sie die gew&uuml;nschten Angaben zur Ermittlung der Stabdurchmesser, des Stababstands oder der Anzahl der St&auml;be eingeben. </span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Wenn alle Angaben vollst&auml;ndig sind, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Berechnen</span><span class="f_ToDo_Info"> und dann auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_ToDo_Info">, um die Bewehrung zu generieren. Mit <img alt="B_Korrektur_zurueck" style="margin:0;width:0.6042in;height:0.2396in;border:none" src="b_korrektur_zurueck.png"/> k&ouml;nnen Sie die generierte Bewehrung r&uuml;ckg&auml;ngig machen und Ihre Angaben im Dialog anpassen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0313in 0.5729in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Bewehrungsparameter_FlaeBew" style="margin:0;width:4.5313in;height:4.1667in;border:none" src="d_bewehrungsparameter_flaebew.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Bewehrungsgrad</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Angabe von </span><span class="f_R_Option">erf. as</span><span class="f_R_Bereich_Info_Rahmen"> ist optional, </span><span class="f_R_Option">vorh. as</span><span class="f_R_Bereich_Info_Rahmen"> wird immer ermittelt und angeschrieben. Wenn Sie </span><span class="f_R_Option">erf. as</span><span class="f_R_Bereich_Info_Rahmen"> eingeben, k&ouml;nnen Sie durch Anklicken der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Berechnen</span><span class="f_R_Bereich_Info_Rahmen"> die Ermittlung der Anzahl oder des Abstands sowie des </span><span class="f_R_Option">vorh. as</span><span class="f_R_Bereich_Info_Rahmen"> ausl&ouml;sen. Wenn die &Uuml;bergreifung nach Eurocode 2 berechnet werden soll, setzen Sie im Dialogbereich </span><span class="f__Software_Element_deskriptiv">&Uuml;bergreifungsparameter</span><span class="f_R_Bereich_Info_Rahmen"> den entsprechenden Haken. Die nach </span><span class="f_R_Option">Betong&uuml;te</span><span class="f_R_Bereich_Info_Rahmen"> und </span><span class="f_R_Option">Verbundbereich</span><span class="f_R_Bereich_Info_Rahmen"> unterschiedlichen Werte f&uuml;r die </span><span class="f_R_Option">&Uuml;bergreifungsl&auml;ngen</span><span class="f_R_Bereich_Info_Rahmen"> und den </span><span class="f_R_Option">Sto&szlig;versatz</span><span class="f_R_Bereich_Info_Rahmen"> k&ouml;nnen Sie manuell &auml;ndern.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">erf.&nbsp;as [cm</span><span class="f_R_Option" style="font-size: 8pt; vertical-align: super;">2</span><span class="f_R_Option">/m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der erforderlichen Gesamt-Querschnittsfl&auml;che (optional).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Berechnen" style="margin:0;width:1.8750in;height:0.2396in;border:none" src="b_berechnen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Berechnet die ben&ouml;tigte Anzahl der St&auml;be bzw. den Abstand der St&auml;be.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">vorh.&nbsp;as [cm</span><span class="f_R_Option" style="font-size: 8pt; vertical-align: super;">2</span><span class="f_R_Option">/m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vorhandene Gesamt-Querschnittsfl&auml;che. Klicken Sie nach Eingabe von </span><span class="f_R_Option">erf. as</span><span class="f_R_Option_Beschreibung"> auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Berechnen</span><span class="f_R_Option_Beschreibung">, um </span><span class="f_R_Option">vorh. as</span><span class="f_R_Option_Beschreibung"> zu ermitteln.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des Stabdurchmessers. Klicken Sie auf <img alt="I_pfeil-nach-unten_AutBew" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_pfeil-nach-unten_autbew.png"/> und w&auml;hlen Sie aus der Dropdown-Liste einen Durchmesser aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl oder Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Berechnungsart. Nach Ausl&ouml;sen der Berechnung &uuml;ber die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Berechnen</span><span class="f_R_Option_Beschreibung"> wird das Ergebnis im zugeh&ouml;rigen Eingabefeld angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7396in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Anzahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnungsergebnis mit Anzahl der ben&ouml;tigten St&auml;be.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7396in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Abstand</span></p>
+</td>
+<td class="Optionen_Palette" style="width:5.2708in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnungsergebnis mit Abstand der St&auml;be.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_sowie_bew" style="margin:0;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernahme des Durchmessers, des Abstands oder der Anzahl aus einer vorhandenen Verlegung. Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Klicken Sie anschlie&szlig;end auf </span><span class="f__Software_Element_deskriptiv">Berechnen</span><span class="f_R_Option_Beschreibung">, um die Bewehrungsparameter anzupassen. Die &Uuml;bergreifungsl&auml;nge wird automatisch angepasst.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">Bewehrungswinkel</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Hier k&ouml;nnen Sie angeben, in welchem Winkel die Verlegung gezeichnet werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Verlegeanfang festlegen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Verlegeanfang legt fest, von welchem Punkt der erste Stab verlegt werden soll. Dabei stellt die Position der Zeichenmarke den Verlegeanfang dar.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen aus vier verschiedenen Startpunkten w&auml;hlen, sofern der Drehwinkel des Verlegebereiches mit dem unter </span><span class="f__Software_Element_deskriptiv">Winkel [&deg;]</span><span class="f_R_Option_Beschreibung"> angegebenen Wert identisch ist.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie den entsprechenden Startpunkt an:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_FlaeBew_VerLO" style="margin:0;width:0.3333in;height:0.2292in;border:none" src="i_flaebew_verlo.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">obere linke Ecke</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_FlaeBew_VerLU" style="margin:0;width:0.3333in;height:0.2292in;border:none" src="i_flaebew_verlu.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">untere linke Ecke</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_FlaeBew_VerOR" style="margin:0;width:0.3333in;height:0.2292in;border:none" src="i_flaebew_veror.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">obere rechte Ecke</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_R_Tabellenzeile"><img alt="I_FlaeBew_VerRU" style="margin:0;width:0.3333in;height:0.2188in;border:none" src="i_flaebew_verru.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">untere rechte Ecke</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um die Vorschau in der Zeichnung zu aktualisieren, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Vorschau erzeugen</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Winkel [&deg;]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Tippen Sie einen Winkel ein oder w&auml;hlen Sie aus der Dropdown-Liste </span><img alt="I_pfeil-nach-unten_AutBew" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_pfeil-nach-unten_autbew.png"/><span class="f_R_Option_Beschreibung"> einen Vorschlagswert aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Aus Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Option k&ouml;nnen Sie die Verlegerichtung durch Anklicken eines Elements in der Zeichnung bestimmen.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3854in;"><p class="p_R_Tabellenzeile"><img alt="B_P--parallel" style="margin:0;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2500in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Verlege-Grundlinie.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span><br>
+<span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nach dem Anklicken der Hilfsfunktion wird der Dialog vor&uuml;bergehend ausgeblendet.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an. Der Dialog wird wieder ge&ouml;ffnet und der </span><span class="f_R_Option_Beschreibung">ermittelte Winkel unter </span><span class="f__Software_Element_deskriptiv">Winkel [&deg;]</span><span class="f_R_Option_Beschreibung"> angezeigt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">&Uuml;bergreifungsparameter</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bergreifung nach Eurocode&nbsp;2 </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Keine automatische Berechnung nach Eurocode&nbsp;2. </span><br>
+<span class="f_R_Tabellenzeile">Die &Uuml;bergreifungsl&auml;nge muss manuell eingegeben werden.</span><br>
+<span class="f_R_Tabellenzeile">(s. unten: &Uuml;bergreifungsl&auml;nge [m]).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.2813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnung der &Uuml;bergreifungsl&auml;nge nach Eurocode&nbsp;2. Blendet die Optionen f&uuml;r die erforderlichen Angaben im Dialog ein.</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Betong&uuml;te (MN/m&sup2;)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Stellen Sie die n&ouml;tige Betong&uuml;te ein und w&auml;hlen Sie die Verbundbedingungen f&uuml;r die Berechnung der Verankerungs- und &Uuml;bergreifungsl&auml;ngen (I guter Verbund / II m&auml;&szlig;iger Verbund).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;anteil</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl eines Sto&szlig;anteils.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;bergreifungsl&auml;nge [m]:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn unter &Uuml;bergreifung nach Eurocode 2 ein Haken gesetzt ist, wird die &Uuml;bergreifung automatisch berechnet. Dabei wird bei einem Wert &lt; 0 in </span><span class="f_R_Option">erf. As</span><span class="f_R_Option_Beschreibung"> das Verh&auml;ltnis von </span><span class="f_R_Option">erf. As</span><span class="f_R_Option_Beschreibung"> zu </span><span class="f_R_Option">vorh. As</span><span class="f_R_Option_Beschreibung"> als Berechnungsgrundlage genommen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aus der Dropdown-Liste <img alt="I_pfeil-nach-unten_AutBew" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_pfeil-nach-unten_autbew.png"/> k&ouml;nnen Sie eine &Uuml;bergreifungsl&auml;nge ohne oder mit Abminderung f&uuml;r &#945;</span><span class="f_R_Option_Beschreibung" style="font-size: 8pt;">6</span><span class="f_R_Option_Beschreibung"> w&auml;hlen. Dabei entspricht der erste &quot;obere&quot; Wert in der Dropdown-Liste einer &Uuml;bergreifungsl&auml;nge ohne Abminderung und der zweite Wert einer &Uuml;bergreifungsl&auml;nge mit Abminderung. Wenn die &Uuml;bergreifungsl&auml;nge mit Abminderung nicht angezeigt wird, erh&ouml;hen Sie den Abstand zwischen den St&auml;ben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beiwert &#945;</span><span class="f_R_Tabelle_Kopf" style="font-size: 8pt;">6</span><span class="f_R_Tabelle_Kopf"> zur Ermittlung der &Uuml;bergreifungsl&auml;nge</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" rowspan="3"><br>
+</td>
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">4</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Sto&szlig;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Stabdurchmesser ds</span></p>
+</td>
+<td class="Optionen_Palette" colspan="2"  style="width:3.6563in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Sto&szlig;anteil einer Bewehrungslage</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:1.5208in;"><br>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&#8804; 33%</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&gt; 33%</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1</span></p>
+</td>
+<td class="Optionen_Palette" rowspan="2"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Zug</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&lt; 16 mm</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,2 </span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">a)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,4 </span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">a)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">&#8805; 16 mm</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,4 </span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">a)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">2,0 </span><span class="f_R_Tabellenzeile_zentriert" style="font-size: 7pt; vertical-align: super;">b)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.3542in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">3</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Druck</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5208in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">alle</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.6354in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.7396in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,0</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="5"  style="width:6.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wenn die lichten Stababst&auml;nde a &#8805; 8&middot;d</span><span class="f_R_Tabellenzeile" style="vertical-align: sub;">s</span><span class="f_R_Tabellenzeile"> und der Randabstand c1 &#8805; 4&middot;d</span><span class="f_R_Tabellenzeile" style="vertical-align: sub;">s</span><span class="f_R_Tabellenzeile"> eingehalten werden, darf der Beiwert &#945;</span><span class="f_R_Tabellenzeile" style="font-size: 8pt;">6</span><span class="f_R_Tabellenzeile"> reduziert werden auf:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: super;">a)</span><span class="f_R_Tabellenzeile"> &#945;</span><span class="f_R_Tabellenzeile" style="font-size: 8pt;">6</span><span class="f_R_Tabellenzeile"> = 1,0</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile" style="font-size: 7pt; vertical-align: super;">b)</span><span class="f_R_Tabellenzeile"> &#945;</span><span class="f_R_Tabellenzeile" style="font-size: 8pt;">6</span><span class="f_R_Tabellenzeile"> = 1,4</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um eine individuelle &Uuml;bergreifung einzugeben, entfernen Sie den Haken aus der Checkbox. In der Dropdown-Liste </span><img alt="I_pfeil-nach-unten_AutBew" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_pfeil-nach-unten_autbew.png"/><span class="f_R_Option_Beschreibung"> k&ouml;nnen Sie einen der 10 zuletzt eingegebenen Werte w&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sto&szlig;versatztyp:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">normal</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verlegung basiert auf der Verschiebung der Sto&szlig;mitten:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel 50% Sto&szlig;: In der ersten Reihe wird n*L + R</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">1</span><span class="f_R_Option_Beschreibung"> verlegt. In der zweiten Reihe wird der Sto&szlig; um 1,3*F*l</span><span class="f_R_Option_Beschreibung" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung"> verschoben und anschlie&szlig;end mit n*L + R</span><span class="f_R_Option_Beschreibung" style="font-size: 7pt; vertical-align: sub;">2</span><span class="f_R_Option_Beschreibung"> ausgelegt.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim 33% Sto&szlig; wird eine und beim 25% Sto&szlig; eine weitere Reihe hinzugelegt, deren St&ouml;&szlig;e um 1,3*F*l</span><span class="f_R_Option_Beschreibung" style="font-size: 10pt; vertical-align: sub;">s</span><span class="f_R_Option_Beschreibung"> versetzt angeordnet sind.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_AutBew_Faktor_01" style="margin:0;width:5.8958in;height:1.8229in;border:none" src="z_autbew_faktor_01.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zu sehen ist die automatische Anordnung der St&ouml;&szlig;e.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L = maximale Stabl&auml;nge (Lieferl&auml;nge), A = Anfangsl&auml;nge, R = Restl&auml;nge in Reihe</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mittig</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Verlegung basiert auf der Variation der Stabl&auml;ngen:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beispiel 50% Sto&szlig;: In der ersten Reihe wird n*L + R1 verlegt. In die zweite Reihe kommen &frac12;*L + n*L + R2.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beim 33% Sto&szlig; werden in die erste Reihe n*L + R1, in der zweiten Reihe 2/3*L + n*L + R2 und in der dritten Reihe 1/3*L + n*L + R3 verlegt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Im Ursprung wird mit dem Faktor „1“ gerechnet.</span></p>
+<p class="p_ImageCaption"><img alt="Z_AutBew_Faktor_02" style="margin:0;width:5.8958in;height:1.5417in;border:none" src="z_autbew_faktor_02.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zu sehen ist die automatische Anordnung der St&ouml;&szlig;e.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L = maximale Stabl&auml;nge (Lieferl&auml;nge), A = Anfangsl&auml;nge, R = Restl&auml;nge in Reihe</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">verschwenkt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit dieser Option wird die Verlegung wechselseitig vorgenommen. Dabei wird am Anfang des Verlegebereichs mit einem ganzen Stab begonnen und so lange mit einem ganzen Stab + &Uuml;bergreifung fortgesetzt, bis das Ende des Verlegebereichs erreicht ist. Wenn am Ende kein ganzer Stab mehr passt, wird der letzte Stab am Ende gek&uuml;rzt. Anschlie&szlig;end wird in der zweiten Reihe wieder von der gegen&uuml;berliegenden Seite mit einem ganzen Stab begonnen und bis zum Ende des Verlegebereichs hinzugelegt. Der letzte Stab wird eventuell geschnitten.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Anteil der gesto&szlig;enen St&auml;be betr&auml;gt 50%. Die Auswahl eines anderen Sto&szlig;anteils ist nicht m&ouml;glich.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_FlaeBew_verschwenkt_Beispiel01" style="margin:0;width:11.2083in;height:2.6667in;border:none" src="scr_flaebew_verschwenkt_beispiel01.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in der zweiten Reihe der Abstand zwischen den Sto&szlig;mitten kleiner 1,3 * l0 (&Uuml;bergreifungsl&auml;nge) ist, wird der Sto&szlig; in der zweiten Reihe soweit verschoben, bis die Sto&szlig;mitten den erforderlichen Abstand einhalten. Dadurch f&auml;ngt in diesem Fall die zweite Reihe mit einem gek&uuml;rzten Stab an und wird anschlie&szlig;end mit ganzen St&auml;ben fortgesetzt, bis am Ende wieder ein geschnittener gelegt wird.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_FlaeBew_verschwenkt_Beispiel02" style="margin:0;width:11.3125in;height:2.2708in;border:none" src="scr_flaebew_verschwenkt_beispiel02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Stabl&auml;ngen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">min. Stabl&auml;nge [m]:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Stab-Mindestl&auml;nge.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">max. Stabl&auml;nge [m]:</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der maximalen Stabl&auml;nge, z.&nbsp;B. wegen Anlieferung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Vorschau-erzeugen" style="margin:0;width:2.1354in;height:0.2396in;border:none" src="b_vorschau-erzeugen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Generiert die Bewehrung als Vorschau in der Zeichnung. Sie k&ouml;nnen weitere &Auml;nderungen vornehmen (z. B. den Sto&szlig;anteil &auml;ndern) oder mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> die Berechnung der Bewehrung starten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_OK" style="margin:0;width:0.7708in;height:0.2396in;border:none" src="b_ok.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Startet die Berechnung f&uuml;r die erforderlichen Durchmesser, den Abstand oder die Anzahl der St&auml;be. Die Verlegung wird ausgef&uuml;hrt und die zugeh&ouml;rigen Stahlausz&uuml;ge werden erstellt.</span><br>
+<span class="f_R_Option_Beschreibung">Wenn Sie den Dialog nochmals &ouml;ffnen, stehen ihnen wieder die zuletzt eingegebenen Angaben zur Verf&uuml;gung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.4167in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Wenn der erforderliche Mindestabstand nicht eingehalten wurde, werden Sie durch eine Meldung am unteren Bildschirmrand darauf hingewiesen. Sie k&ouml;nnen die Angaben korrigieren, oder die Arbeit mit den aktuellen Werten fortsetzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. Die vorgenommenen Einstellungen werden auf die zuletzt eingegebenen Werte zur&uuml;ckgesetzt.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-indent: -0.1771in; line-height: 1.20; margin: 0 0 0 0.4479in;"><img alt="Z_Staffel-verschwenken" style="margin:0;width:7.2813in;height:2.0417in;border:none" src="z_staffel-verschwenken.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Zeichnung wurde nachbearbeitet: Die Darstellung der Staffel ist mit [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Staffel</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">generie: 0+1+0</span><span class="f_A_Allgemein">] auf einen mittigen Stab reduziert und dann mit [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Harfe</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">Pfeil (Endsymbol)</span><span class="f_A_Allgemein">] positioniert worden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_29.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

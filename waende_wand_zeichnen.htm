@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wand zeichnen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Wand,Wand zeichnen" />
+   <meta name="description" content="Das Zeichnen von Wandpolygonen entspricht im Wesentlichen dem Zeichnen in [Konst1 | Linien]. Es kann mit oder ohne Richtungslogik gearbeitet werden. Die Maße der Wände bezieh" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="waende.htm">Zeichnen von Wänden</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="waende.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="waende.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="waende_wandaufbau_definieren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Wand zeichnen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="waende.htm" class="topiclink" title="Wände zeichnen (Funktionsübersicht)"><img alt="Wände zeichnen (Funktionsübersicht)" title="Wände zeichnen (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_wandze.png"/></a> <img alt="B-akt_zeichn_Wandze" style="margin:0;width:1.1667in;height:0.2396in;border:none" src="b-akt_zeichn_wandze.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Das Zeichnen von Wandpolygonen entspricht im Wesentlichen dem Zeichnen in [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">Linien</span><span class="f_Task_Info">]. Es kann mit oder ohne Richtungslogik gearbeitet werden. Die Ma&szlig;e der W&auml;nde beziehen sich stets auf die Linie, die zuerst im Dialog </span><span class="f__Software_Element_deskriptiv">Wanddefinition</span><span class="f_Task_Info"> aufgelistet wird.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Reihenfolge der Eingaben bei Au&szlig;enwandz&uuml;gen erfolgt &uuml;blicherweise im Uhrzeigersinn (rechts herum). Dabei werden bei positiven Abst&auml;nden die parallelen Linien nach innen gezeichnet. </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Bei eingeschalteter Richtungslogik platzieren Sie die Zeichenmarke w&auml;hrend des Zeichnens so, dass die parallele Wandlinie auf die &quot;richtige&quot; Seite kommt. Addieren Sie ggf. die Wandst&auml;rke zu einem Abstand hinzu <img alt="I_Rechner" style="margin:0;width:0.1146in;height:0.1979in;border:none" src="i_rechner.png"/> (<a href="des_abfrage-_und_eingabezeile.htm#rechnerfunktion" class="topiclink">Rechnerfunktion</a>).</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie f&uuml;r das Zeichnen von W&auml;nden Konstruktionshilfen nutzen m&ouml;chten, m&uuml;ssen Sie in den Systemdaten den Zeichenmodus &quot;ohne Richtungslogik&quot; [</span><span class="f__Software_Element_deskriptiv">oRiL</span><span class="f_L_Listeneintrag">] einstellen.</span><br>
+<span class="f_L_Listeneintrag">[</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Linien ohne Richtungslogik zeichnen</span><span class="f_L_Listeneintrag">].</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_L_Listeneintrag"> (untere Men&uuml;leiste) und Follgn (Funktionsbereich) eingestellt ist, werden die Elemente in Folie 0 abgelegt.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Nachfolgend werden Beispiele f&uuml;r das Zeichnen von Wandpolygonen aufgef&uuml;hrt. Damit alle Eingaben nachvollziehbar sind, ist es empfehlenswert, eine neue Zeichnung anzulegen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Wandaufbau definieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Bevor Sie einen Grundriss zeichnen k&ouml;nnen, m&uuml;ssen Sie zun&auml;chst, unabh&auml;ngig vom Zeichenmodus, einen Wandaufbau definieren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im Funktionsbereich auf </span><span class="f__Software_Element_deskriptiv">Defini</span><span class="f_Step">. Der Dialog </span><span class="f__Software_Element_deskriptiv">Wanddefinition</span><span class="f_Step"> wird ge&ouml;ffnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Wanddefinition" style="margin:0;width:9.2292in;height:3.1979in;border:none" src="d_wanddefinition.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Neu</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Neuer Wandaufbau</span><span class="f_Step"> die gew&uuml;nschten Schichtdicken durch Leerzeichen getrennt ein.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">&Uuml;blich ist die Eingabe positiver Werte, damit im Uhrzeigersinn gezeichnet, die Schichten nach innen abgetragen werden. Negative Werte k&ouml;nnen ebenfalls eingegeben werden, dann wird der Abstand aber in die andere Richtung abgetragen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die Werte eines Wandaufbaus k&ouml;nnen nach Erzeugung nicht mehr ge&auml;ndert werden.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">(Voreinstellung: </span><span class="f__Software_Element_deskriptiv">.115&nbsp;.12&nbsp;.24</span><span class="f_Step_Anmerkung">) f&uuml;r eine zweischalige Wand.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Software_Element_deskriptiv">Name</span><span class="f_Step"> einen eindeutigen Namen ein (z. B. AW-KS Au&szlig;enwand Kalksandstein). </span><br>
+<span class="f_Step">Der Name kann sp&auml;ter nicht mehr ge&auml;ndert werden. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span>. </p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der neue Wandaufbau wird am Ende der </span><span class="f__Software_Element_deskriptiv">Wandaufbau</span><span class="f_Step_Anmerkung">-Liste eingetragen. </span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um die Darstellung eines Wandaufbaus zu &auml;ndern</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der </span><span class="f__Software_Element_deskriptiv">Wandaufbau</span><span class="f_Step">-Liste den gew&uuml;nschten Wandaufbau.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Software_Element_deskriptiv">Attribute</span><span class="f_Step"> die gew&uuml;nschte Darstellung der einzelnen Wandlinien. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Vorschau unterst&uuml;tzt Sie bei der Auswahl der Linienattribute.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">W&auml;nde mit Richtungslogik zeichnen (Beispiel)</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Erzeugen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Wanddefinition</span><span class="f_Step"> den folgenden Wandaufbau.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" colspan="4"  style="width:3.9167in;" scope="colgroup"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Wandaufbau-Name: AW1</span></p>
+<p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Wandlinien:</span><span class="f_R_Option_Beschreibung" style="font-weight: bold;"> </span><span class="f_R_Tabellenzeile">0.115 0.14 0.175</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Linie</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.1250in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">StiftNr.</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Linientyp</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.5417in;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Folie</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_Normal">1. Linie</p>
+</td>
+<td class="Reference_Clean" style="width:1.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">6</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">DURCHG</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.5417in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">*128 Vormauer</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_Normal">2. Linie</p>
+</td>
+<td class="Reference_Clean" style="width:1.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">6</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">DURCHG</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.5417in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">*128 Vormauer</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_Normal">3. Linie</p>
+</td>
+<td class="Reference_Clean" style="width:1.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">3</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">GESTR1</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.5417in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">0 GEOMETRIE</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.0000in;"><p class="p_Normal">4. Linie</p>
+</td>
+<td class="Reference_Clean" style="width:1.1250in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">2</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2500in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">GESTR1</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.5417in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_rechts">0 GEOMETRIE</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="4"  style="width:3.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">* Die Folie &quot;128 Vormauer&quot; wurde mit dem Folienmanager neu erstellt!</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">&nbsp;</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Stellen Sie sicher, dass die folgenden Funktionen im Funktionsbereich aktiviert sind: </span><span class="f__Software_Element_deskriptiv">FolAkz</span><span class="f_ToDo_Info">, </span><span class="f__Software_Element_deskriptiv">Wa an</span><span class="f_ToDo_Info">, </span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_ToDo_Info"> und </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_ToDo_Info">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor an eine geeignete Stelle auf der Zeichnung und platzieren Sie die Zeichenmarke mit einem doppelten Linksklick. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den Zeichenmodus </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen auch mit der Tab-Taste von </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Step_Anmerkung"> auf </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step_Anmerkung"> umschalten.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.4271in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Wand_mitR_01" style="margin:0 auto 0 auto;width:3.9271in;height:3.3125in;border:none" src="z_wand_mitr_01.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.0729in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Zeichnen Sie den Grundriss anhand der Beispielzeichnung im Abschnitt &quot;Zeichnen mit Richtungslogik&quot;.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Beachten Sie bei der Linie Nr. 4 die Richtung 3 anzugeben, bei der Linie Nr. 7 den Schnittpunkt mit der &quot;&auml;u&szlig;ersten&quot; Linie Nr. 4 herzustellen und bei der Linie Nr. 8 die Funktion </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step_Anmerkung"> zu verwenden.</span></p>
+<p class="p_Step"><span class="f_Step"><a href="linien_linien_mit_richtungslogik_zeic.htm#mitril" class="topiclink">&raquo; Linien mit Richtungslogik zeichnen (Beispiel)</a></span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.4375in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Wand_mitR_02" style="margin:0 auto 0 auto;width:3.5313in;height:3.2813in;border:none" src="z_wand_mitr_02.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.0625in;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Zeichnen der ersten Innenwand.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">F&uuml;r die Eingabe der Innenw&auml;nde klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Defini</span><span class="f_Task_Info"> und erzeugen im Dialog </span><span class="f__Software_Element_deskriptiv">Wanddefinition</span><span class="f_Task_Info"> einen neuen Wandaufbau. Zum Beispiel &quot;IW2 0.24&quot;. Wenn Sie den Wandaufbau mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Task_Info"> best&auml;tigen, wird automatisch der Modus </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Task_Info"> aktiviert.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie den Modus </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Step"> ein und klicken Sie auf die Innenecke der 1. und 2. Wand, um die Zeichenmarke zu setzen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den Modus </span><span class="f__Software_Element_deskriptiv">Zeichn.</span><span class="f_Step"> </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in den Sektor Nr. 2 und klicken Sie anschlie&szlig;end die Wandlinie Nr. 9 an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die erste Innenwand wird gezeichnet. An der Start- und Ziellinie werden die Zwischenr&auml;ume entfernt, da </span><span class="f__Software_Element_deskriptiv">Wa an</span><span class="f_Step_Anmerkung"> (automatischer Wandanschluss) eingeschaltet ist.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.4375in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Wand_mitR_03" style="margin:0 auto 0 auto;width:3.5104in;height:3.1146in;border:none" src="z_wand_mitr_03.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.0625in;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Platzieren der Zeichenmarke und Zeichnen der zweiten Innenwand.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die Zeichenmarke, wie in der Beispielzeichnung dargestellt, zu platzieren, wechseln Sie in den Modus </span><span class="f__Software_Element_deskriptiv">Bewege</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in den Sektor Nr. 7. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Linie Nr. 10 in der N&auml;he ihres Anfangspunktes (A40) an. (Siehe &quot;Cursor X&quot; im Beispielbild). </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Stellen Sie den Differenzmodus </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step"> ein. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Y-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Linie Nr. 9 in der N&auml;he ihres Endpunktes (E44) an. (Siehe &quot;Cursor Y&quot; im Beispielbild).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nach der Linienkennung die Werte </span><span class="f__Abfrage_Resultat">+3.01+.24</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">E44+3.01+.24</span><span class="f_Step"> mit Enter.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenmarke wird an den neuen Punkt gesetzt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie in den Modus </span><span class="f__Software_Element_deskriptiv">Zeichn</span><span class="f_Step"> und stellen Sie </span><span class="f__Software_Element_deskriptiv">Retaus</span><span class="f_Step"> ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in den Sektor Nr. 6. </span><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">Richtung</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die erste Innenwand an. [</span><span class="f__Abfrage">X-Wert</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die zweite Innenwand wird gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">W&auml;nde ohne Richtungslogik zeichnen (Beispiel)</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">W&auml;hrend des Zeichnens ohne Richtungslogik werden die zu zeichnenden Linien an den Cursor geh&auml;ngt. Die Lage der Wand kann mit den Optionen </span><span class="f__Software_Element_deskriptiv">Links</span><span class="f_Task_Info">, </span><span class="f__Software_Element_deskriptiv">Mitte</span><span class="f_Task_Info">, </span><span class="f__Software_Element_deskriptiv">Rechts</span><span class="f_Task_Info"> angegeben werden.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Bevor Sie mit dem eigentlichen Zeichen beginnen, m&uuml;ssen Sie zun&auml;chst die Zeichenmarke an den Startpunkt setzen. Wenn auf die vorhandene Geometrie Bezug genommen werden soll, m&uuml;ssen Sie die Startpunkte der Innenw&auml;nde mit der Differenzfunktion </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Task_Info"> eingeben.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">In dem hier dargestellten Beispiel sind die Innenw&auml;nde 1 und 2 bereits vorhanden. Siehe Beispiel &quot;W&auml;nde mit Richtungslogik zeichnen&quot;. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:4.4375in;"><p class="p_ImageCaption_zentriert"><img alt="Z_Wand_ohneR_01" style="margin:0 auto 0 auto;width:3.5521in;height:3.1875in;border:none" src="z_wand_ohner_01.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:9.0625in;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Platzieren der Zeichenmarke und Zeichnen der ersten Innenwand.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Zeichnen Sie den Grundriss anhand der Beispielzeichnung im Abschnitt &quot;Zeichnen ohne Richtungslogik&quot;.</span></p>
+<p class="p_Step"><span class="f_Step"><a href="linien_linien_ohne_richtungslogik_zei.htm#ohneril" class="topiclink">&raquo; Linien ohne Richtungslogik zeichnen</a></span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">von Punkt X</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">von Punkt Y</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die erste Innenlinie der Wandlinie Nr. 10 in der N&auml;he des Anfangspunktes an. (Siehe &quot;Cursor von X&quot;).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die obere Linie der zweiten Innenwand ungef&auml;hr am Mittelpunkt an. (Siehe &quot;Cursor von Y&quot;).</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In die Eingabe wird </span><span class="f__Abfrage_Resultat" style="font-size: 9pt;">M45</span><span class="f_Step_Anmerkung"> geschrieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie nach der Linienkennung den Wert </span><span class="f__Abfrage_Resultat">+3.01</span><span class="f_Step"> ein. Best&auml;tigen Sie die Eingabe </span><span class="f__Abfrage_Resultat">M45+3.01</span><span class="f_Step"> mit Enter.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenmarke wird an den neuen Punkt gesetzt.</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.3021in;"><span class="f_R_Tabellenzeile">[</span><span class="f__Abfrage">nach Punkt X</span><span class="f_R_Tabellenzeile">]; [</span><span class="f__Abfrage">nach Punkt Y</span><span class="f_R_Tabellenzeile">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die gegen&uuml;ber der Zeichenmarke liegende Linie an und best&auml;tigen Sie mit Rechtsklick. (Siehe &quot;Cursor nach X&quot;).</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">In die Eingabe wird </span><span class="f__Abfrage_Resultat" style="font-size: 9pt;">M42</span><span class="f_Step_Anmerkung"> geschrieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen </span><span class="f_Step_Anmerkung">Sie in die Y-Eingabe </span><span class="f__Abfrage_Resultat">0</span><span class="f_Step_Anmerkung"> ein und best&auml;tigen Sie mit Enter.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Wand wird gezeichnet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_linien_mit_richtungslogik_zeic.htm" class="topiclink" title="Linien mit Richtungslogik zeichnen">Linien mit Richtungslogik zeichnen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_linien_ohne_richtungslogik_zei.htm" class="topiclink" title="Linien ohne Richtungslogik zeichnen">Linien ohne Richtungslogik zeichnen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm" class="topiclink" title="Konstruktionshilfen">Konstruktionshilfen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_differenzmodus.htm" class="topiclink" title="Differenzmodus">Differenzmodus</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="waende_wandaufbau_definieren.htm" class="topiclink" title="Wanddefinition (Referenz)">Wanddefinition (Referenz)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

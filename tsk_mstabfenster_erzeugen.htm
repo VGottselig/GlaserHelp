@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Maßstabsbereiche erstellen und bearbeiten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Maßstabsbereiche,Maßstabsbereiche erstellen" />
+   <meta name="description" content="(untere Menüleiste) &nbsp;In einem Maßstabsbereich definieren Sie auf der Zeichnung einen Bereich, in dem nur ein Maßstab gilt. Alle Elemente, die in einem Maßstabsbereich erzeugt w" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a> &gt; <a href="massstab_einstellen.htm">Maßstabseinstellungen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_mstab_einstellen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="massstab_einstellen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_massstab-referenz.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Ma&szlig;stabsbereiche erstellen und bearbeiten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B_M-Stab" style="margin:0;width:0.8542in;height:0.2396in;border:none" src="b_m-stab.png"/><br>
+<span class="f_Aufruf">(untere Men&uuml;leiste)</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">In einem Ma&szlig;stabsbereich definieren Sie auf der Zeichnung einen Bereich, in dem nur ein Ma&szlig;stab gilt. Alle Elemente, die in einem Ma&szlig;stabsbereich erzeugt werden, erhalten den f&uuml;r den Bereich angegebenen Ma&szlig;stab.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Durch Ma&szlig;stabsbereiche werden keine Teilzeichnungen ver&auml;ndert, die in einem anderen Ma&szlig;stab gezeichnet und dann in andere Ma&szlig;stabsbereiche verschoben werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie in einem Ma&szlig;stabsbereich mit [</span><span class="f__Software_Element_deskriptiv">Konst2</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;Kor</span><span class="f_L_Listeneintrag">] &quot;Ma&szlig;stabskorrektur&quot; den Ma&szlig;stab &auml;ndern, m&uuml;ssen Sie den ge&auml;nderten Ma&szlig;stabsbereich neu definieren.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Definieren Sie Ma&szlig;stabsbereiche nur f&uuml;r die Bereiche, die vom </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab au&szlig;erhalb der Ma&szlig;stabsbereiche</span><span class="f_L_Listeneintrag"> abweichen. Der </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab au&szlig;erhalb der Ma&szlig;stabsbereiche</span><span class="f_L_Listeneintrag"> gilt f&uuml;r alle Elemente, die au&szlig;erhalb der definierten Ma&szlig;stabsbereiche gezeichnet werden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Liegt der Endpunkt einer Linie in einem definierten oder in einem in den Vordergrund gesetzten Ma&szlig;stabsbereich, so wird sie mit dem darin g&uuml;ltigen Ma&szlig;stab gezeichnet.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ma&szlig;stabsbereiche k&ouml;nnen innerhalb anderer Ma&szlig;stabsbereiche erstellt werden und sie k&ouml;nnen sich &uuml;berschneiden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Ma&szlig;stabsbereiche erstellen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der unteren Men&uuml;leiste auf die Schaltfl&auml;che f&uuml;r den Ma&szlig;stab.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_unteres_Menue_mstab" style="margin:0;width:3.9792in;height:0.2813in;border:none" src="scr_unteres_menue_mstab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab einstellen</span><span class="f_Step_Anmerkung"> wird ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wechseln Sie zu </span><span class="f__Software_Element_deskriptiv">Arbeiten mit Ma&szlig;stabsbereichen</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">neu erzeugen</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog wird ausgeblendet.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Massstab-einstellen_op_auto_pf" style="margin:0;width:2.7188in;height:3.5417in;border:none" src="d_massstab-einstellen_op_auto_pf.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Drehwinkel des Ma&szlig;stabsbereiches ein und best&auml;tigen Sie. Wenn Sie keinen Wert eingeben und best&auml;tigen, wird der Winkel 0&ordm; genommen. [</span><span class="f__Abfrage">Winkel</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit <img alt="B_parallel-zu" style="margin:0;width:1.2188in;height:0.2188in;border:none" src="b_parallel-zu.png"/> neben der Eingabe k&ouml;nnen Sie den Winkel einer Linie &uuml;bernehmen. Klicken Sie dazu die Schaltfl&auml;che an und anschlie&szlig;end eine Linie.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie auf der Zeichenfl&auml;che einen Rahmen um den Bereich, indem Sie den ersten Diagonalpunkt und anschlie&szlig;end den zweiten Punkt anklicken. [</span><span class="f__Abfrage">1. Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nutzen Sie ggf. die <a href="des_bildausschnitt-zoomen-und-verschieben.htm" class="topiclink">Zoomfunktionen</a>, um den Rahmen pr&auml;ziser setzen zu k&ouml;nnen. Mit der </span><span class="f__Tastatur">ESC</span><span class="f_Step_Anmerkung">-Taste k&ouml;nnen Sie die Aktion abbrechen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_MassstabDef_Rahmen" style="margin:0;width:8.0625in;height:4.6458in;border:none" src="scr_massstabdef_rahmen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie im folgenden Dialog den Ma&szlig;stab an und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie den Ma&szlig;stab einer Linie oder eines Kreises &uuml;bernehmen. Klicken Sie dazu auf </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab aus Element</span><span class="f_Step_Anmerkung"> und klicken Sie anschlie&szlig;end das Element an.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Massstab_Mwahl" style="margin:0;width:1.9167in;height:3.0000in;border:none" src="d_massstab_mwahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Ma&szlig;stabsbereich wird erstellt. In der oberen linken Ecke des Ma&szlig;stabsbereiches wird der Ma&szlig;stab angeschrieben.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:2.7604in;"><p class="p_ImageCaption"><img alt="SCR_MassstabDef_Rahmen_Angabe" style="margin:0;width:2.5417in;height:2.0313in;border:none" src="scr_massstabdef_rahmen_angabe.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:14.2917in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_R_Tabellenzeile">Die Farbeinstellungen f&uuml;r die Ma&szlig;stabsangabe und den Ma&szlig;stabsrahmen k&ouml;nnen in den Systemdaten ge&auml;ndert werden:</span><br>
+<span class="f_R_Tabellenzeile">[</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_R_Tabellenzeile"> &#8594; </span><span class="f__Software_Element_deskriptiv">Bildschirmrahmen</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_R_Tabellenzeile">Wenn der Ma&szlig;stabsbereich nicht dargestellt werden soll, setzen Sie im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stabsbereich</span><span class="f_R_Tabellenzeile"> einen Haken bei </span><span class="f__Software_Element_deskriptiv">nicht darstellen</span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_R_Tabellenzeile">Die Ma&szlig;stabsangabe und der Ma&szlig;stabsrahmen werden beim Drucken nicht ausgegeben.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">[Optional] Erstellen Sie bei Bedarf weitere Ma&szlig;stabsbereiche. [</span><span class="f__Abfrage">Winkel</span><span class="f_Step">]; [</span><span class="f__Abfrage">1. Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_MassstabDef_Rahmen_def" style="margin:0;width:8.0625in;height:4.6458in;border:none" src="scr_massstabdef_rahmen_def.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Beenden Sie das Erstellen der Ma&szlig;stabsbereiche mit Rechtsklick oder der </span><span class="f__Tastatur">ESC</span><span class="f_Step">-Taste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Dialog </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab einstellen</span><span class="f_Step_Anmerkung"> wird wieder ge&ouml;ffnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab au&szlig;erhalb der Ma&szlig;stabsbereiche</span><span class="f_Step">, der gelten soll.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie den Ma&szlig;stab einer Linie oder eines Kreises &uuml;bernehmen. Klicken Sie dazu auf </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab aus Element</span><span class="f_Step_Anmerkung"> und klicken Sie anschlie&szlig;end das Element an.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_MassstabDef_grund" style="margin:0;width:2.8438in;height:0.5938in;border:none" src="scr_massstabdef_grund.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um die &Auml;nderungen zu &uuml;bernehmen, best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Ma&szlig;stabsbereich bearbeiten</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen Ma&szlig;stabsbereiche nacheinander bearbeiten. Die Funktion </span><span class="f__Software_Element_deskriptiv">verschieben</span><span class="f_Task_Info"> oder </span><span class="f__Software_Element_deskriptiv">l&ouml;schen</span><span class="f_Task_Info"> bleibt solange aktiv, bis Sie die Aktion mit Rechtsklick oder der </span><span class="f__Tastatur">ESC</span><span class="f_Task_Info">-Taste beenden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_mstab_verschieben" class="hmanchor"></a><span class="f_R_Option">verschieben</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">verschieben</span><span class="f_Step">. Klicken Sie anschlie&szlig;end in einen freien Bereich innerhalb des Ma&szlig;stabsbereiches oder klicken Sie eine Bereichskante an. [</span><span class="f__Abfrage">Ins Rechteck klicken</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Das Fenster wird an den Cursor geh&auml;ngt und Sie k&ouml;nnen es an einer neuen Position mit einem Mausklick absetzen. [</span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_Step">].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_mstab_loeschen" class="hmanchor"></a><span class="f_R_Option">l&ouml;schen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">l&ouml;schen</span><span class="f_Step">. Klicken Sie anschlie&szlig;end in einen freien Bereich innerhalb des Ma&szlig;stabsbereiches oder klicken Sie eine Bereichskante an. [</span><span class="f__Abfrage">Ins Rechteck klicken</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Ma&szlig;stabsbereich wird ohne R&uuml;ckfrage gel&ouml;scht. Wenn Sie alle Ma&szlig;stabsbereiche l&ouml;schen, wechselt ISBCAD automatisch zum </span><span class="f__Software_Element_deskriptiv">Ma&szlig;stab au&szlig;erhalb der Ma&szlig;stabsbereiche</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_mstab_in-vordergund" class="hmanchor"></a><span class="f_R_Option">in Vordergrund</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Grunds&auml;tzlich wird der Ma&szlig;stab einer Linie durch den Ma&szlig;stabsbereich bestimmt, in dem der Linien-Endpunkt liegt. Wenn sich Ma&szlig;stabsbereiche mit unterschiedlichen Ma&szlig;st&auml;ben &uuml;berschneiden, k&ouml;nnen Sie bestimmen, welcher Ma&szlig;stabsbereich in den Vordergrund gesetzt werden soll. Dadurch werden Linien, auch wenn sie in einem anderen Ma&szlig;stabsbereich enden, mit dem Ma&szlig;stab des Ma&szlig;stabsbereiches gezeichnet, der in den Vordergrund gesetzt wurde. Im Vordergrund liegende Ma&szlig;stabsbereiche werden mit durchgezogenen Rahmenlinien dargestellt und die dahinterliegenden Ma&szlig;stabsbereiche mit gestrichelten Rahmenlinien.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn ein Ma&szlig;stabsbereich vollst&auml;ndig innerhalb eines anderen Ma&szlig;stabsbereiches liegt, bleibt der innen liegende Ma&szlig;stabsbereich immer im Vordergrund.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel: M = 1 : 50 im Vordergrund</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Die Linien 1 - 3 beginnen oder enden in dem Ma&szlig;stabsbereich (M = 1 : 50), der in den Vordergrund gesetzt wurde, und werden in diesem Ma&szlig;stab gezeichnet.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Die Linien 4 und 6 enden au&szlig;erhalb des Ma&szlig;stabsbereiches (M = 1 : 50) und werden im entsprechenden Ma&szlig;stab gezeichnet. </span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Die Linie 5 endet in einem Bereich, der innerhalb des Ma&szlig;stabsbereiches (M = 1 : 50) erstellt worden ist oder in diesen verschoben wurde. Die Linie erh&auml;lt den Ma&szlig;stab 1 : 20. </span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_MassstabDef_Vordergrund" style="margin:0;width:6.3229in;height:3.6458in;border:none" src="scr_massstabdef_vordergrund.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A: </span><span class="f__Bild_Legende_normal">Anfangspunkt;</span><span class="f__Bild_Legende_fett"> B: </span><span class="f__Bild_Legende_normal">Endpunkt</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">in Vordergrund</span><span class="f_Step"> und klicken Sie anschlie&szlig;end den Ma&szlig;stabsbereich an. [</span><span class="f__Abfrage">Ins Rechteck klicken</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie den Ma&szlig;stabsbereich mit dem Cursor anfahren, wird dieser hervorgehoben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_mstab_nicht-darstellen" class="hmanchor"></a><span class="f_R_Option">nicht darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Ma&szlig;stabsbereiche werden auf der Zeichnung durch Rahmen angezeigt. Wenn diese nicht angezeigt werden sollen, setzen Sie einen Haken in die Checkbox. Die Einstellung wird nach dem Best&auml;tigen mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> wirksam.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ausgeblendete Ma&szlig;stabsbereiche werden beim Drehen, Spiegeln und Verschieben nicht ber&uuml;cksichtigt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="massstab_einstellen.htm" class="topiclink">Ma&szlig;stabseinstellungen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_massstab-referenz.htm" class="topiclink" title="Dialogbeschreibung">Ma&szlig;stab einstellen (Dialog)</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst2_massstab_aendern.htm" class="topiclink" title="Ändern des Maßstabs einzelner Elemente">Ma&szlig;stabskorrektur</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Biegeform aus Schalung ableiten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeform erzeugen/ableiten,Biegeform erzeugen/ableiten Formstahl,ForSch,ForSch Formstahl,Haken,Haken erzeugen" />
+   <meta name="description" content="Wenn AutFol aktiviert ist (untere Menüleiste), werden die Verlegungen in Folie 4 und die Bewehrungsauszüge in Folie 17 abgelegt." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_biform_bearbeiten.htm">Biegeform</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="formst_biform_forgeo.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_biform_bearbeiten.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="_rd_biegeform-erzeugen_an-schalkanten.xhtm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Biegeform aus Schalung ableiten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_biform_bearbeiten.htm" class="topiclink" title="Biegeform (Funktionsübersicht)"><img alt="Biegeform (Funktionsübersicht)" title="Biegeform (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_biform.png"/></a> <img alt="B-akt_ForSch" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_forsch.png"/></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> aktiviert ist (untere Men&uuml;leiste), werden die Verlegungen in Folie 4 und die Bewehrungsausz&uuml;ge in Folie 17 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Biegeform und Ma&szlig;e an vorhandene Schalkanten anpassen. Die Biegeform kann dazu aus einer Standardform abgeleitet oder als freie Form angelegt werden. Bei der Berechnung der Ma&szlig;e wird die voreingestellte Beton&uuml;berdeckung (</span><span class="f__Software_Element_deskriptiv">nom&nbsp;c=...</span><span class="f_Task_Info"> &#8594; Optionen im Funktionsbereich) ber&uuml;cksichtigt.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um die voreingestellte Betondeckung zu &auml;ndern</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im Funktionsbereich auf [</span><span class="f__Software_Element_deskriptiv">0.03</span><span class="f_Step">] (Voreingestellte Betondeckung).</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Betondeckung nach EC2</span><span class="f_Step"> unter </span><span class="f__Software_Element_deskriptiv">Betondeckung c </span><span class="f__Software_Element_deskriptiv" style="font-size: 7pt; vertical-align: sub;">v</span><span class="f__Software_Element_deskriptiv"> [m]</span><span class="f_Step"> die zu ber&uuml;cksichtigende Betondeckung ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ: Verwenden Sie die Optionen unter </span><span class="f__Software_Element_deskriptiv">Berechnung</span><span class="f_Step_Anmerkung"> und klicken Sie auf [</span><span class="f__Software_Element_deskriptiv">&Uuml;bernehmen</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die voreingestellte Betondeckung wird auf der Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">nom&nbsp;c=...</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Stabdurchmesser und Biegeform w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&Oslash;</span><span class="f_Step" style="font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_Step">einen Stabdurchmesser mit Linksklick oder &uuml;bernehmen Sie den vorgeschlagenen Wert mit Rechtsklick.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Auswahl des Dialoges </span><span class="f__Software_Element_deskriptiv">Biegeformen</span><span class="f_Step"> den Formtyp aus (1 - 15), der der zu entwickelnden Form am n&auml;chsten kommt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit </span><span class="f__Software_Element_deskriptiv">Freie Form</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie eine beliebige Biegeform erzeugen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Biegeformen" style="margin:0;width:3.0000in;height:2.4688in;border:none" src="d_biegeformen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1250in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Freie-Form" style="margin:0;width:0.5625in;height:0.4167in;border:none" src="b_freie-form.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Biegeform kann durch Anklicken von Schalkanten in der Zeichnung erzeugt und bedarfsweise &uuml;berarbeitet werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="_rd_biegeform-erzeugen_an-schalkanten.xhtm" class="topiclink">Biegeform erzeugen</a></span><span class="f_R_Tabellenzeile">.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1250in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Biegeformen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:12.7292in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Standardformen (1 - 15). Die gew&auml;hlte Standardform kann an den Schalkanten angepasst werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="_rd_biegeform-bearbeiten.xhtm" class="topiclink">Biegeform bearbeiten</a></span><span class="f_R_Tabellenzeile">.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Beim Formtyp 15 zeigen die Haken immer zur Kreismitte. Es k&ouml;nnen keine zus&auml;tzlichen Haken hinzugef&uuml;gt werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn die Biegeform Ihren Vorstellungen entspricht: Klicken Sie im jeweiligen Dialog auf <img alt="I_OK_Gruener-Haken" style="margin:0;width:0.2292in;height:0.2292in;border:none" src="i_ok_gruener-haken.png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Die Auszugsform wird an den Cursor geh&auml;ngt und kann in der Zeichnung abgesetzt werden.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><a name="auszugsformsetzenundausrichten" class="hmanchor"></a><span class="f_ToDo">Auszugsform ausrichten und setzen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Hervorhebung_Text">Auszugsform drehen/spiegeln (optional)</span><span class="f_Step">: Klicken Sie unter </span><span class="f__Abfrage">Lage Auszugsform</span><span class="f_Step"> auf <img alt="B_drehen-spiegeln" style="margin:0;width:1.8229in;height:0.2083in;border:none" src="b_drehen-spiegeln.png"/>. Geben Sie die Werte f&uuml;r Drehung und Spiegelung an und best&auml;tigen Sie jeweils mit der Eingabetaste.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4583in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Dreh-Winkel</span><span class="f_R_Tabellenzeile">: </span></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drehung der Biegeform entgegen dem Uhrzeigersinn. (Mit negativem Wert wird im Uhrzeigersinn gedreht.)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4583in;"><p class="p_R_Tabellenzeile"><span class="f__Abfrage">Winkel&nbsp;Spiegelachse</span><span class="f_R_Tabellenzeile">: </span></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Drehung der Spiegelachse entgegen dem Uhrzeigersinn. </span><br>
+<span class="f__Tastatur">-</span><span class="f_R_Tabellenzeile"> (Voreinstellung): Keine Spiegelung</span><br>
+<span class="f__Software_Element_deskriptiv">0&deg;</span><span class="f_R_Tabellenzeile">:&nbsp;Biegeform wird nach oben gespiegelt; </span><span class="f__Software_Element_deskriptiv">90&deg;</span><span class="f_R_Tabellenzeile">:&nbsp;Biegeform wird nach links gespiegelt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Setzen Sie die Biegeform per Mausklick an die gew&uuml;nschte Stelle. [</span><span class="f__Abfrage">Lage Auszugsform</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Auszugstext wird im eingestellten Systemwinkel platziert.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4583in;"><p class="p_ImageCaption"><img alt="B_Or-an_Biegeform" style="margin:0;width:1.0417in;height:0.2292in;border:none" src="b_or-an_biegeform.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Auszug wird orthogonal aus der Schalung in Bezug auf den Systemwinkel herausgezogen. Ob senkrecht oder waagerecht, richtet sich nach der Lage des Cursors. Bezugspunkt ist der Anfangspunkt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Liegt der Cursor in einem Sektor zwischen 315</span><span class="f_R_Tabellenzeile">&deg;</span><span class="f_R_Tabellenzeile"> und 45</span><span class="f_R_Tabellenzeile">&deg;</span><span class="f_R_Tabellenzeile">, wird horizontal nach rechts bewegt, zwischen 225</span><span class="f_R_Tabellenzeile">&deg;</span><span class="f_R_Tabellenzeile"> und 315</span><span class="f_R_Tabellenzeile">&deg;</span><span class="f_R_Tabellenzeile"> nach unten usw. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alternativ: Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_R_Tabellenzeile"> (Shift) beim Absetzen gedr&uuml;ckt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4583in;"><p class="p_ImageCaption"><img alt="B_Or-aus_Biegeform" style="margin:0;width:1.0417in;height:0.2292in;border:none" src="b_or-aus_biegeform.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:12.4271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Lage des Auszuges wird von der Cursorposition bestimmt. Bezugspunkt ist der Anfangspunkt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Auszugstext definieren und anlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Pos.</span><span class="f_Step"> eine Positionsnummer ein oder &uuml;bernehmen Sie die Vorauswahl und best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um den Auszugstext zu drehen: </span><br>
+<span class="f_Step">Verwenden Sie die Optionen unter </span><span class="f__Abfrage">Textrichtung</span><span class="f_Step"> oder geben Sie die Drehung in Grad (entgegen der Uhrzeigerrichtung) ein und best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0417in;"><p class="p_R_Tabellenzeile"><img alt="B_P--parallel" style="margin:0;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auszugstext parallel zu einem Bezugselement ausrichten.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Ausrichtungsoption an und klicken Sie anschlie&szlig;end das Bezugselement an. Best&auml;tigen Sie mit Rechtsklick. Der Auszugstext wird parallel zum angeklickten Zeichenelement ausgerichtet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0417in;"><p class="p_R_Tabellenzeile"><img alt="B_O--orhogonal" style="margin:0;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auszugstext orthogonal zu einem Bezugselement ausrichten.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Ausrichtungsoption an und klicken Sie anschlie&szlig;end das Bezugselement an. Best&auml;tigen Sie mit Rechtsklick. Der Auszugstext wird orthogonal zum angeklickten Zeichenelement ausgerichtet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0417in;"><p class="p_R_Tabellenzeile"><img alt="B_TextVe_Biegeform" style="margin:0;width:0.9375in;height:0.2292in;border:none" src="b_textve_biegeform.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.6250in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Teill&auml;ngentext neu positionieren.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Teill&auml;ngentext mit Linksklick an und positionieren Sie diesen an einer anderen Stelle. Der Auszugstext wird am Cursor als Vorschau angeh&auml;ngt.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Richten Sie den Auszugstext aus, indem Sie den gew&uuml;nschten Winkel eingeben und best&auml;tigen oder eine Konstruktionshilfe w&auml;hlen. Der Auszugstext wird am Cursor als Vorschau angeh&auml;ngt. Wenn Sie die Position des Auszugstextes aus der Abfrage </span><span class="f__Abfrage">Lage Auszugsform</span><span class="f_Step"> beibehalten m&ouml;chten, dr&uuml;cken Sie die Eingabetaste</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span>oder klicken Sie die rechte Maustaste. </p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ToDo">Verlegung f&uuml;r Biegeform erzeugen?</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">gew&auml;hlt</span><span class="f_Step">, ob mit der Biegeform eine Verlegung (Formdarstellung) gezeichnet werden soll: </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2500in;"><p class="p_R_Tabellenzeile"><img alt="B_1=Verlegung-nicht-darstellen" style="margin:0;width:2.2083in;height:0.2188in;border:none" src="b_1=verlegung-nicht-darstellen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Biegeform wird lediglich als Auszug (ohne Verlegung) gezeichnet. Sie kann als Vorlage f&uuml;r sp&auml;tere Verlegungen verwendet werden. (St&uuml;ckzahl und Durchmesser sind im Auszugstext mit </span><span class="f__Abfrage_Resultat">?</span><span class="f_R_Tabellenzeile"> belegt.)</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bearbeitung ist abgeschlossen; Sie k&ouml;nnen sofort die n&auml;chste Biegeform erzeugen. [</span><span class="f__Abfrage">&Oslash;</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2500in;"><p class="p_R_Tabellenzeile"><img alt="B_2=Stueckzahl-jetzt-angeben" style="margin:0;width:2.2083in;height:0.2188in;border:none" src="b_2=stueckzahl-jetzt-angeben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Biegeform wird mit Verlegung (Formdarstellung) angelegt; Durchmesser, Abstand oder Anzahl m&uuml;ssen im Folgenden definiert werden.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.2500in;"><p class="p_R_Tabellenzeile"><img alt="B_3=Stueckzahl-spaeter-angeben" style="margin:0;width:2.2083in;height:0.2188in;border:none" src="b_3=stueckzahl-spaeter-angeben.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Biegeform wird mit Verlegung angelegt (St&uuml;ckzahl&nbsp;= 0). Durchmesser, Abstand oder Anzahl k&ouml;nnen zu einem sp&auml;teren Zeitpunkt in VeForm mit der Funktion [<a href="formst_veform_aendere.htm" class="topiclink" title="Durchmesser, Abstand oder Anzahl ändern">&auml;ndere</a>] angegeben werden.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Bearbeitung ist abgeschlossen; Sie k&ouml;nnen sofort die n&auml;chste Biegeform erzeugen oder die <a href="con_formstahl.htm#_fverlegearten" class="topiclink" title="Mögliche Verlegearten">Form verlegen</a>. [</span><span class="f__Abfrage">&Oslash;</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ToDo">St&uuml;ckzahl und Querschnitt f&uuml;r Verlegung ermitteln</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Eisen-Abstand bzw. Anzahl der Eisen k&ouml;nnen automatisch anhand des erforderlichen Stahlquerschnittes </span><span class="f_R_Tabellenzeile">(</span><span class="f__Abfrage">erf.as(cm&sup2;/m </span><span class="f_R_Tabellenzeile">bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) </span><span class="f_ToDo_Info">und des gew&auml;hlten Stahldurchmessers ermittelt werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.5208in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Bei der Formstahlverlegung wird nach Eingabe der Verlegebereichsl&auml;nge der wahre Abstand zwischen den Eisen ermittelt. Wird dabei der zul&auml;ssige Mindestabstand unterschritten, werden Sie durch eine Meldung darauf hingewiesen. Erg&auml;nzende Hinweise unterst&uuml;tzen Sie bei der Probleml&ouml;sung. Wenn Sie die Meldung ignorieren, k&ouml;nnen Sie auch mit den gew&auml;hlten Einstellungen weiterarbeiten. </span><br>
+<span class="f_Hinweis_in_Tabelle">Um nicht fachgerechte Verlegungen zu vermeiden, empfehlen wir dringend, die Hinweise in der Meldung zu ber&uuml;cksichtigen. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte Berechnungsart (Schaltfl&auml;chen unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step">):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Abstand" style="margin:0 auto 0 auto;width:0.9792in;height:0.2292in;border:none" src="b_abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch den Eisen-Abstand f&uuml;r den pro Meter erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.as(cm&sup2;/m</span><span class="f_R_Tabellenzeile">). Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe des erforderlichen Stahlquerschnittes ist optional. Wird kein Wert oder 0 angegeben, muss der Abstand der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;</span><span class="f_R_Tabellenzeile">)] den gew&uuml;nschten Wert hat. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Anzahl" style="margin:0 auto 0 auto;width:0.9896in;height:0.2292in;border:none" src="b_anzahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch die f&uuml;r den erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) ben&ouml;tigte Mindestanzahl der Eisen. Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe von </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile"> ist optional. Wird kein Wert oder 0 angegeben, muss die Anzahl der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">] den gew&uuml;nschten Wert hat.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der Positionierung wird auch der nominelle Abstand angeschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_sowie_bew" style="margin:0 auto 0 auto;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Durchmessers, Abstands bzw. der Anzahl aus einer vorhandenen Verlegung. [</span><span class="f__Abfrage">So wie welche Verlegung?</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Je nach Berechnungsart wird </span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Anzahl</span><span class="f_R_Tabellenzeile"> aktiviert. Die Abfrage wechselt zu [</span><span class="f__Abfrage">KOR?</span><span class="f_R_Tabellenzeile">] (s. weiter unten).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den erforderlichen Stahlquerschnitt ein und best&auml;tigen Sie die Angabe [</span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&oslash;</span><span class="f_Step"> per Mausklick den Stahldurchmesser.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn der erforderliche Stahlquerschnitt eingegeben wurde, berechnet ISBCAD automatisch den bestm&ouml;glichen Wert f&uuml;r den Abstand bzw. die Eisenzahl und schl&auml;gt diesen unter </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung">) vor. Der resultierende Stahlquerschnitt wird unter </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Weicht der an dieser Stelle angegebene Durchmesser von dem unter Schritt 1 ab, k&ouml;nnen die Hakenl&auml;ngen der Biegeform nach dem Best&auml;tigen des Verlegefaktors an den neuen Durchmesser angepasst werden. Sie erhalten in diesem Fall eine Meldung.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn der resultierende Stahlquerschnitt</span><span class="f_Step_Anmerkung"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step"> gr&ouml;&szlig;er/gleich dem erforderlichen Stahlquerschnitt </span><span class="f__Abfrage">erf.As(cm&sup2;/m) </span><span class="f_Step">ist, k&ouml;nnen Sie den Wert f&uuml;r </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> </span><span class="f_Step">best&auml;tigen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie einen anderen Wert angeben (und best&auml;tigen) und den resultierenden Stahlquerschnitt </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> pr&uuml;fen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Pr&uuml;fen Sie, ob das Resultat Ihren Anforderungen entspricht. </span><br>
+<span class="f_Step">Wollen Sie die Angaben &auml;ndern.</span><span class="f_ImageCaption"> </span><span class="f_Step">[</span><span class="f__Abfrage">KOR</span><span class="f_Step">]?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Ja_Klein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Korrigieren Sie Ihre Angaben beginnend mit </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_R_Tabellenzeile"> (erforderlicher Stahlquerschnitt) oder verwenden Sie <img alt="B_--Bst" style="margin:0;width:0.6354in;height:0.1979in;border:none" src="b_--bst.png"/> (untere Men&uuml;leiste).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B-akt_Nein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der resultierende Stahlquerschnitt wird beibehalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ToDo">Verlegetiefe und -faktor angeben</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Verlegetiefe an und best&auml;tigen Sie mit der Eingabetaste. Beachten Sie die Eingabeeinheit (vgl. Untere Men&uuml;leiste &#8594; </span><span class="f__Software_Element_deskriptiv">Eingabe</span><span class="f_Step">). [</span><span class="f__Abfrage">Verlegetiefe</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step"> an, wie oft die Verlegung ben&ouml;tigt wird. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Verlegefaktor wird f&uuml;r die Mengenberechnung in der St&uuml;ckliste (</span><span class="f__Abfrage_Resultat">f&uuml;r Stahlliste</span><span class="f_Step_Anmerkung">) ben&ouml;tigt. Die absolute St&uuml;ckzahl f&uuml;r diese Verlegung wird im Auszugstext angezeigt. Um keinen Verlegefaktor anzugeben, geben Sie </span><span class="f__Abfrage_Resultat">0</span><span class="f_Step_Anmerkung"> ein.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Bearbeitung ist abgeschlossen; Sie k&ouml;nnen sofort die n&auml;chste Biegeform ableiten. [</span><span class="f__Abfrage">&Oslash;</span><span class="f_Step_Anmerkung">].</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_vestaf.htm" class="topiclink" title="Verlegung als Staffel (Bügelstaffel)">Verlegung als Staffel (B&uuml;gelstaffel)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_veform.htm" class="topiclink" title="Verlegung mit Formdarstellung">Verlegung mit Formdarstellung</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_vevout.htm" class="topiclink" title="Verlegung im gevouteten Bereich">Verlegung im gevouteten Bereich</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_verlegungen-im-schnitt.htm" class="topiclink" title="Verlegung mit Schnittdarstellungen">Verlegung mit Schnittdarstellungen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_formstahl.htm#_haken_runden" class="topiclink" title="Aufrunden von Hakenlängen (Systemdaten)">Aufrunden von Hakenl&auml;ngen (Systemdaten)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_biform_bearbeiten.htm" class="topiclink" title="Biegeformen erstellen und bearbeiten">Biegeform (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

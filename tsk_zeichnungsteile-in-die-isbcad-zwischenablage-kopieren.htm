@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Zeichnungsteile in die ISBCAD Zwischenablage kopieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Einen beliebigen Zeichnungsbereich in die ISBCAD-Zwischenablage kopieren." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="rm_datei.htm">Datei- und Ausgabefunktionen</a> &gt; <a href="dat_drucken_zwischenablage.htm">Zwischenablage von Zeichnungen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="dat_drucken_zwischenablage.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="dat_drucken_zwischenablage.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_zeichnungsteile-aus-der-isbcad-zwischenablage-einfuegen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Zeichnungsteile in die ISBCAD Zwischenablage kopieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_datei.htm" class="topiclink" title="Menü Datei - Übersicht"><img alt="Menü Datei - Übersicht" title="Menü Datei - Übersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></a><span class="f_ImageCaption"> </span><a href="dat_drucken_zwischenablage.htm" class="topiclink" title="Zwischenablage"><img alt="Zwischenablage" title="Zwischenablage" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_zwiabl-datei.png"/></a><span class="f_ImageCaption"> </span><img alt="B-akt_Kopier_ZwiAbl" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_kopier_zwiabl.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Einen beliebigen Zeichnungsbereich in die ISBCAD-Zwischenablage kopieren.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">In der ISBCAD-Zwischenablage k&ouml;nnen bis zu sechs Zeichnungsbereiche abgelegt und von dort in andere ISBCAD Zeichnungen eingef&uuml;gt werden. Die in der Zwischenablage enthaltenen Zeichnungsteile werden im Funktionsbereich angezeigt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Bei dem Zwischenspeichern von Verlegungen werden die zugeh&ouml;rigen Auszugsformen automatisch hinzugef&uuml;gt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Verkn&uuml;pfte Bewehrungsverlegungen bleiben erhalten, wenn die Hauptverlegung (Verlegefaktor &#8805; 1) zusammen mit mindestens einer oder allen verkn&uuml;pften Verlegungen (Verlegefaktor = 0) selektiert wird. Wird nur die Hauptverlegung oder mindestens eine der verkn&uuml;pften Verlegungen ausgew&auml;hlt, wird die Verkn&uuml;pfung beim Kopieren in die ISBCAD-Zwischenablage entfernt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn zu einer Auszugsform mehrere Positionen vorhanden sind und nicht der gr&ouml;&szlig;te Stabdurchmesser kopiert wird, k&ouml;nnen die Hakenl&auml;ngen an den neuen Durchmesser angepasst werden. Sie erhalten in diesem Fall eine Meldung. W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_L_Listeneintrag">, um die Hakenl&auml;ngen der Auszugsform in der zwischengelagerten Kopie an den neuen Durchmesser anzupassen. W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_L_Listeneintrag">, wenn die Hakenl&auml;nge nicht ge&auml;ndert werden soll. Die Vorschau im Funktionsbereich wird nach der &Auml;nderung angepasst. Siehe: <a href="des_endhaken.htm" class="topiclink" title="Hakenlängen an den Stabdurchmesser anpassen">Hakenl&auml;ngen an den Stabdurchmesser anpassen</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.5208in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Zwischenablage" style="margin:0;width:3.3958in;height:1.5417in;border:none" src="d_zwischenablage.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Die ISBCAD-Zwischenablage ist unabh&auml;ngig von der WINDOWS&reg;-Zwischenablage. Zum &Uuml;bertragen von Zeichnungsteilen in externe Programme (z.&nbsp;B. MS Word) kann die Funktion [</span><span class="f__Software_Element_deskriptiv">Datei</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Grafik</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Speich</span><span class="f_Hinweis_in_Tabelle">] verwendet werden. <a href="dat_grafik.htm" class="topiclink">&raquo; Grafik</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie eine Auswahlmethode (im Funktionsbereich)</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1979in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_o-Clip-ZwiAbl" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_o-clip-zwiabl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5313in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">o.Clip</span><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_R_Tabellenzeile">(nur ganze Elemente): Geschnittenen Linien und Kreise werden nicht &uuml;bernommen (Standardeinstellung).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1979in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_m-Clip-ZwiAbl" style="margin:0 auto 0 auto;width:1.1042in;height:0.2500in;border:none" src="b_m-clip-zwiabl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.5313in;"><p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">m.Clip</span><span class="f_R_Tabellenzeile"> (Bereich ausschneiden): Geschnittenen Linien und Kreise werden &uuml;bernommen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Definieren Sie den zu kopierenden Bereich.</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> [</span><span class="f__Abfrage">1.Punkt</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">];</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #ff0000;"> </span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">2.Punkt</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">].</span><br>
+<span class="f_Step">Optionen (im Funktionsbereich):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8646in;"><p class="p_ImageCaption"><img alt="I_Elemente-im-Rechteck" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl eines rechteckigen Bereiches. Klicken Sie den Punkt an, von dem aus der Auswahl-Rahmen um die entsprechenden Elemente aufgezogen werden soll, bewegen Sie den Cursor und klicken Sie erneut, um die Auswahl abzuschlie&szlig;en. (Standardeinstellung).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8646in;"><p class="p_ImageCaption"><img alt="I_Elemente-im-Polygon" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-polygon.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:9.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl eines polygonalen Bereiches durch Klicken von Polygon-Punkten. Best&auml;tigung der Auswahl durch Rechtsklick.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der gew&auml;hlte Zeichnungsbereich wird in die ISBCAD-Zwischenablage kopiert (s. Vorschau im Funktionsbereich). Sie k&ouml;nnen sofort einen weiteren Zeichnungsbereich definieren.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="dat_drucken_zwischenablage.htm" class="topiclink" title="Zwischenablage von Zeichnungen">Zwischenablage von Zeichnungen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch: </span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="dat_teilzeichnung_auslagern.htm" class="topiclink" title="Auslagern von Teilzeichnungen">Auslagern von Teilzeichnungen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

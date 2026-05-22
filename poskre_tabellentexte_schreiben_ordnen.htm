@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tabellentexte anlegen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Positionskreise,Positionskreise Tabellentexte anlegen,Positionskreise Tabellentexte löschen,Positionstabelle (stat. Positionen),Positionstabelle (stat. Positionen) anlegen,Positionstabelle (stat. Positionen) löschen,Tabellentexte (stat. Positionen),Tabellentexte (stat. Positionen) anlegen,Tabellentexte (stat. Positionen) löschen,TabTxt" />
+   <meta name="description" content="Tabellentexte für statische Positionen anlegen und zuweisen. Alle Positionierungen, für die es schon Tabellentexte gibt, werden in der Zeichnung markiert." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="positionskreise.htm">Statische Positionskreise</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="poskre_positionskreis_verschieben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="positionskreise.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_textbaustein_erstellen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Tabellentexte anlegen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="positionskreise.htm" class="topiclink" title="Positionskreise (Funktionsübersicht)"><img alt="Positionskreise (Funktionsübersicht)" title="Positionskreise (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_poskre.png"/></a> <img alt="B-akt_TabTxt_PosKre" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_tabtxt_poskre.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Tabellentexte f&uuml;r statische Positionen anlegen und zuweisen. Alle Positionierungen, f&uuml;r die es schon Tabellentexte gibt, werden in der Zeichnung markiert.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Tabellentexte bieten die M&ouml;glichkeit, einem statischen Positionskreis weitere Informationen zuzuordnen. Sie k&ouml;nnen als Legende f&uuml;r die statischen Positionen in Tabellenform zusammengefasst und in der Zeichnung abgelegt werden. Die Legende (Tabelle) kann f&uuml;r die Weiterverarbeitung in anderen Programmen in die Windows&reg;-Zwischenablage kopiert werden.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Tabellentexte k&ouml;nnen individuell erfasst und/oder aus vorhandenen Textmodulen zusammengestellt werden. Oft ben&ouml;tigte Textmodule, z.&nbsp;B. f&uuml;r die Betong&uuml;te, Montageanweisungen etc., sind im ISBCAD Lieferumfang bereits enthalten. Die vorhandenen Textmodule k&ouml;nnen bearbeitet und von Ihnen durch beliebige weitere Module erg&auml;nzt werden. Sie werden in der Zeichnung gespeichert und lassen sich &uuml;ber die Profileinstellungen in andere Zeichnungen &uuml;bertragen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Positionsuebersicht_Legende" style="margin:0;width:4.7708in;height:3.2813in;border:none" src="z_positionsuebersicht_legende.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Positionsnummer des Positionskreises an, zu dem Sie einen Tabellentext schreiben m&ouml;chten.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eingabe der Tabellentexte</span><span class="f_Step_Anmerkung">. &nbsp; </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie unter </span><span class="f__Software_Element_deskriptiv">aktueller Text zu Position...</span><span class="f_Step"> den gew&uuml;nschten Text ein. Mit der Eingabetaste f&uuml;gen Sie einen Zeilenumbruch ein.</span><br>
+<span class="f_Step">Um einen als Textmodul vorhandenen Text hinzuzuf&uuml;gen, markieren Sie diesen in der Liste unter </span><span class="f__Software_Element_deskriptiv">vorhandene Texte</span><span class="f_Step"> und klicken Sie auf </span><img alt="I_--ganz-nach-rechts" style="margin:0;width:0.4271in;height:0.2604in;border:none" src="i_--ganz-nach-rechts.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Textangaben mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Textangaben werden als Tabellentext &uuml;bernommen. Sie k&ouml;nnen sofort einen weiteren Positionskreis ausw&auml;hlen, um einen Tabellentext einzutragen oder mit </span><span class="f__Software_Element_deskriptiv">TabAkt</span><span class="f_Step_Anmerkung"> die Tabellentexte auf der Zeichenfl&auml;che platzieren. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls in der Zeichnung bereits eine Positionstabelle f&uuml;r die statischen Positionen vorhanden ist, m&uuml;ssen Sie diese explizit aktualisieren. </span><br>
+<span class="f_Step_Anmerkung"> <a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">&raquo;&nbsp;Positionstabelle anlegen oder aktualisieren</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Eingabe der Tabellentexte&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Eingabe_der_Tabellentexte" style="margin:0;width:6.4896in;height:3.4271in;border:none" src="d_eingabe_der_tabellentexte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">vorhandene Texte</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Liste der als Textmodul zur Verf&uuml;gung stehenden Texte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_--ganz-nach-rechts" style="margin:0;width:0.4271in;height:0.2604in;border:none" src="i_--ganz-nach-rechts.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Uuml;bernahme der Eintr&auml;ge aus der Liste </span><span class="f__Software_Element_deskriptiv">vorhandene Texte</span><span class="f_R_Option_Beschreibung"> in die Liste </span><span class="f__Software_Element_deskriptiv">aktueller Text zu Position.</span><span class="f_R_Option_Beschreibung"> Sie k&ouml;nnen die Eintr&auml;ge aus der linken Tabelle auch durch Doppelklick mit der linken Maustaste in die rechte Tabelle &uuml;bernehmen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">aktueller Text zu Position</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eintr&auml;ge der ausgew&auml;hlten Position. Mit der Eingabetaste f&uuml;gen Sie einen Zeilenumbruch ein. Die Eintr&auml;ge werden der Position erst nach der Best&auml;tigung mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Option_Beschreibung"> zugewiesen. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neuer Eintrag</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erstellen eines neuen Eintrages. Wird der Liste </span><span class="f__Software_Element_deskriptiv">vorhandene Texte</span><span class="f_R_Option_Beschreibung"> hinzugef&uuml;gt. </span><br>
+<span class="f_R_Option_Beschreibung"><a href="tsk_textbaustein_erstellen.htm" class="topiclink">&raquo;&nbsp;Textmodule f&uuml;r statische Positionen verwalten</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Eintrag l&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;schen des markierten Eintrages aus der Liste</span><span class="f__Software_Element_deskriptiv"> vorhandene Texte</span><span class="f_R_Option_Beschreibung">. </span><br>
+<span class="f_R_Option_Beschreibung"><a href="tsk_textbaustein_erstellen.htm" class="topiclink">&raquo;&nbsp;Textmodule f&uuml;r statische Positionen verwalten</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Sonderzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einf&uuml;gen von Zeichen und Symbolen im Eintrag </span><span class="f__Software_Element_deskriptiv">aktueller Text zu Position</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eintr&auml;ge werden in die Zwischenablage kopiert. Sie k&ouml;nnen eine weitere Positionierung anklicken oder mit </span><span class="f__Software_Element_deskriptiv">TabAkt</span><span class="f_R_Option_Beschreibung"> die Tabelle ausgeben.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="poskre_tabelle_erzeugen_und_aktualisi.htm" class="topiclink">Positionstabelle anlegen oder aktualisieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="poskre_positionsuebersicht.htm" class="topiclink">Positions&uuml;bersicht anzeigen und ausgeben</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="pos_kre_positionierung_aendern.htm#statposaendern" class="topiclink" title="Funktion [PosKre | ändern]">Tabellentexte &auml;ndern – [PosKre | &auml;ndern]</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="positionskreise.htm" class="topiclink" title="Funktionsübersicht">Statische Positionskreise (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Voutenstaffel konfigurieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Nachkommastellen,Nachkommastellen in Vouten-Tabelle,VeVout,Voutenverlegung,Voutenverlegung konfigurieren,Voutenverlegung Nachkommastellen einstellen,Voutenverlegung Stablänge einstellen" />
+   <meta name="description" content="Stablängen min. Stablänge [m] Geben Sie den Grenzwert für die variablen Teillängen an. Dieser Wert wird bei der Verlegung mit den sich ergebenden Teillängen verglichen. W" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+<object id="hhctrl_35" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Item1" value=""><param name="Item2" value="Voute"></object>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_vevout.htm">Verlegung im gevouteten Bereich</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_voute-generieren.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="formst_vevout.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_verlegungen-im-schnitt.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Konfiguration Voute </span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_vevout.htm" class="topiclink" title="Vouten-Verlegung (Funktionsübersicht)"><img alt="Vouten-Verlegung (Funktionsübersicht)" title="Vouten-Verlegung (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_vevout.png"/></a></span><span class="f_Aufruf" style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><img alt="B-akt_Konfig" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b-akt_konfig.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Konfiguration-Voute" style="margin:0;width:3.7604in;height:4.4271in;border:none" src="d_konfiguration-voute.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Stabl&auml;ngen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">min. Stabl&auml;nge [m]</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Grenzwert f&uuml;r die variablen Teill&auml;ngen an. Dieser Wert wird bei der Verlegung mit den sich ergebenden Teill&auml;ngen verglichen. Wenn die Stabl&auml;nge der Verlegung k&uuml;rzer ist, wird der entsprechende Stab nicht ausgef&uuml;hrt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl Nachkommastellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nachkommastellen in der Voutentabelle. W&auml;hlen Sie zwischen 1 … 3.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei der Ermittlung der Teill&auml;ngen wird mit der angegebenen Anzahl Nachkommastellen gerechnet. Daraus ergeben sich unterschiedliche variable Teill&auml;ngen. Siehe Tabelle.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">auf 5mm runden</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie mit drei Nachkommastellen arbeiten, k&ouml;nnen Sie die Angabe der variablen Teill&auml;ngen auf 5mm runden. Setzen Sie dazu einen Haken in die Checkbox.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Unabh&auml;ngig vom Ergebnis in der Tabelle werden die St&auml;be mit ihren geometrischen Ma&szlig;en gezeichnet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" rowspan="3"  style="width:1.7500in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Geometrisches Ma&szlig;</span></p>
+</th>
+<th class="Reference_Clean" colspan="4"  style="width:5.7396in; padding:0.0313in;" scope="colgroup"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Variable Teill&auml;nge(n) L bei Anzahl Nachkommastellen</span></p>
+</th>
+</tr>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:1.3021in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.2396in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">2</span></p>
+</th>
+<th class="Reference_Clean" colspan="2"  style="width:3.0938in; background-color:#FFFFFF; padding:0.0313in;" scope="colgroup"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">3</span></p>
+</th>
+</tr>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:1.3021in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.2396in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.4583in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/><span class="f_R_Tabellenzeile_zentriert"> auf 5mm gerund.</span></p>
+</th>
+<th class="Reference_Clean" style="width:1.4896in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/><span class="f_R_Tabellenzeile_zentriert"> auf 5mm gerund.</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.7500in; padding:0.0313in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile_zentriert">1.5539</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.3021in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile">1,6</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2396in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,55</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,554</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4896in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,555</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.7500in; padding:0.0313in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile_zentriert">1.4985</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.3021in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,5</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2396in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,50</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,499</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4896in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,500</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.7500in; padding:0.0313in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile_zentriert">1.4431</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.3021in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,4 *</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2396in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,44</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4583in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">1,443</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4896in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,445</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.7500in; padding:0.0313in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile_zentriert">1.3877</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.3021in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,4 *</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2396in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,39</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4583in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile">1,388</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4896in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,390</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:1.7500in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Dialog_Info">1.3322</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.3021in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,3</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.2396in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,33</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4583in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,332</span></p>
+</td>
+<td class="Reference_Clean" style="width:1.4896in; padding:0.0313in;"><p style="text-align: center; line-height: 1.20; margin: 0.1042in 0 0 0;"><span class="f_R_Tabellenzeile_zentriert">1,330</span></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" colspan="5"  style="width:7.5417in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">*) werden zusammengefasst (n = 2) </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Unterpositionen</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Falls w&auml;hrend der Verlegeroutine eine Voutentabelle generiert wird (Abfrage: </span><span class="f__Abfrage">Tabelle? (1=Ja, 0=Nein)</span><span class="f_R_Bereich_Info_Rahmen">), k&ouml;nnen die Angaben zur Positionierung nachfolgend angepasst werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Reference_Clean" >
+<thead>
+<tr class="Reference_Clean">
+<th class="Reference_Clean" style="width:2.7500in; height:0.2917in; padding:0.0313in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">M&ouml;gliche Kombinationen</span></p>
+</th>
+<th class="Reference_Clean" style="width:0.5417in; height:0.2917in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 1:</span></p>
+</th>
+<th class="Reference_Clean" style="width:0.5833in; height:0.2917in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 2:</span></p>
+</th>
+<th class="Reference_Clean" style="width:0.6667in; height:0.2917in; background-color:#FFFFFF; padding:0.0313in;" scope="col"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Fall 3:</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.7500in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">mit Positionsnummern</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5417in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:0.5833in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:0.6667in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+</tr>
+<tr class="Reference_Clean">
+<td class="Reference_Clean" style="width:2.7500in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">nur Tabelle</span></p>
+</td>
+<td class="Reference_Clean" style="width:0.5417in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:0.5833in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ohne" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ohne.png"/></p>
+</td>
+<td class="Reference_Clean" style="width:0.6667in; height:0.2917in; padding:0.0313in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="I_Checkbox-ja" style="margin:0 auto 0 auto;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Fall 1</span><span class="f_L_Listeneintrag">: Keine Positionsnummern in der Voutentabelle und an der Verlegung. Es werden nur die einzelnen Teill&auml;ngen (L1, L2, L3 usw.) mit der entsprechenden Gesamtl&auml;nge angegeben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.3958in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_Normal"><img alt="SCR_Voute_pos_tab_unchecked" style="margin:0;width:2.3125in;height:1.4479in;border:none" src="scr_voute_pos_tab_unchecked.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Fall 2</span><span class="f_L_Listeneintrag">: </span><span class="f_R_Option_Beschreibung">An die einzelnen St&auml;be wird die Position mit der Indexnummer (z. B. 7.1, 7.2, 7.3 usw.) angeschrieben. </span><span class="f_L_Listeneintrag">Die Positionsnummern werden auch in der Voutentabelle angegeben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.3958in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_Normal"><img alt="SCR_Voute_pos_checked" style="margin:0;width:3.7292in;height:0.7604in;border:none" src="scr_voute_pos_checked.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Option">Fall 3</span><span class="f_L_Listeneintrag">: Keine Positionsnummern an der Verlegung. Die Positionsnummern werden nur in der Voutentabelle angegeben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.3958in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_Normal"><img alt="SCR_Voute_pos_tab_checked" style="margin:0;width:2.9167in;height:1.4479in;border:none" src="scr_voute_pos_tab_checked.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Lage in %</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie den Abstand der Positionsnummer vom jeweiligen Stabanfang (unten) in % seiner L&auml;nge an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e (cm)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe der Textgr&ouml;&szlig;e f&uuml;r den Positionstext.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Stiftnummer.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Breitenfaktors. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Schriftart und -auszeichnung. Bei Windows&reg; True Type Schriften k&ouml;nnen zus&auml;tzlich die Attribute &quot;fett&quot;, &quot;kursiv&quot;, &quot;unterstrichen&quot; und &quot;durchgestrichen&quot; gew&auml;hlt werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Einstellungen werden &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vorgenommene &Auml;nderungen an den Einstellungen werden verworfen. Die vorher eingestellten Parameter werden wieder aktiv.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><a href="javascript:hhctrl_35.hhclick()"><img alt="_ALink_(siehe-auch-Liste" style="margin:0;width:1.1667in;height:0.2813in;border:none" src="_alink_(siehe-auch-liste.gif"/></a></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

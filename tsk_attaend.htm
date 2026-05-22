@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Attribute ändern</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Füllung,Füllung ändern,Schraffur,Schraffur ändern" />
+   <meta name="description" content="Sie können Schraffuren und Füllungen mit geänderten Eigenschaften neu generieren. Dabei haben Sie die Möglichkeit, Schraffuren in Füllungen oder Füllungen in Schraffuren umzu" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_schraffur.htm">Schraffur</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="schraffur_oder_fuellung_aender.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_schraffur.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="schraffur_definieren.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Attribute &auml;ndern</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_schraffur.htm" class="topiclink" title="Schraffur-Funktionen (Übersicht)"><img alt="Schraffur-Funktionen (Übersicht)" title="Schraffur-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_schraf.png"/></a> </span><img alt="B-akt_attaend" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_attaend.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Sie k&ouml;nnen Schraffuren und F&uuml;llungen mit ge&auml;nderten Eigenschaften neu generieren. Dabei haben Sie die M&ouml;glichkeit, Schraffuren in F&uuml;llungen oder F&uuml;llungen in Schraffuren umzuwandeln. Diese Funktion enth&auml;lt zudem die Funktionalit&auml;t aus [</span><span class="f__Software_Element_deskriptiv">Schraff</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">generi</span><span class="f_A_Allgemein">], sodass sich Schraffuren nach dem Ausf&uuml;hren der Aktion an eine ge&auml;nderte Geometrie anpassen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">&Auml;nderungsm&ouml;glichkeiten</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_attaend_beispiel" style="margin:0;width:4.1250in;height:1.9896in;border:none" src="scr_attaend_beispiel.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A1/A2. </span><span class="f__Bild_Legende_normal">F&uuml;lltyp (Schraffur und F&uuml;llung) bleibt erhalten;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">B.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">Schraffur in F&uuml;llung konvertieren;</span><span class="f_R_Tabellenzeile" style="font-size: 10pt;"> </span><span class="f__Bild_Legende_fett">C.</span><span class="f_R_Tabellenzeile" style="font-size: 10pt; font-weight: bold;"> </span><span class="f__Bild_Legende_normal">F&uuml;llung in Schraffur konvertieren</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Selektion von zusammenh&auml;ngenden Polygonen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In ISBCAD k&ouml;nnen mit den Funktionen [</span><span class="f__Software_Element_deskriptiv">Punkte</span><span class="f_A_Allgemein">/</span><span class="f__Software_Element_deskriptiv">Linie</span><span class="f_A_Allgemein"> &#8594; </span><span class="f__Software_Element_deskriptiv">n&auml;chstes Polygon</span><span class="f_A_Allgemein">] oder mit der Funktion [</span><span class="f__Software_Element_deskriptiv">Fenste</span><span class="f_A_Allgemein">] mehrere Polygone mit Schraffuren oder F&uuml;llungen versehen werden. Auf diese Weise erstellte Schraffuren/F&uuml;llungen werden beim &Auml;ndern oder L&ouml;schen als eine zusammenh&auml;ngende Schraffur/F&uuml;llung betrachtet und auch bearbeitet. Bei der </span><span class="f_Hervorhebung_Text">Selektion mittels Rahmen </span><span class="f_A_Allgemein">(von links &#8594; rechts) m&uuml;ssen alle Polygone in der Auswahl enthalten sein, die mit einer der genannten Methoden erstellt worden sind. Ansonsten ist das &Auml;ndern nicht m&ouml;glich.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Um zusammenh&auml;ngende Polygone auszuw&auml;hlen, klicken Sie diese mit dem Auswahlmodus [</span><span class="f__Software_Element_deskriptiv">Einzelelemente</span><span class="f_A_Allgemein"> <img alt="I_Einzelelemente" style="margin:0;width:0.5833in;height:0.1979in;border:none" src="i_einzelelemente.png"/>] oder [</span><span class="f__Software_Element_deskriptiv">Elemente im Rechteck und Einzelelemente</span><span class="f_A_Allgemein"> <img alt="I_Elemente-im-Rechteck-und-E-Element" style="margin:0;width:0.5833in;height:0.1979in;border:none" src="i_elemente-im-rechteck-und-e-element.png"/>] an. Alternativ ziehen Sie den Rahmen von rechts &#8594; links um eine Schraffur und/oder F&uuml;llung auf. Bei F&uuml;llungen erkennen Sie zusammenh&auml;ngende Polygone, indem Sie den Cursor &uuml;ber eine F&uuml;llung bewegen. Dabei werden die Umrandungen der entsprechenden F&uuml;llungen hervorgehoben.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die zu &auml;ndernden Elemente oder klicken Sie einzelne Elemente an. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step_Anmerkung">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_SA_Liste" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.9792in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Liste">Solange im Funktionsbereich der Modus </span><span class="f__Software_Element_deskriptiv">Hinzuf</span><span class="f_SA_Liste"> aktiviert ist, k&ouml;nnen Sie der Auswahl weitere Elemente hinzuf&uuml;gen.</span></p>
+<p class="p_SA_Liste" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.9792in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Liste">W&auml;hlen Sie den Modus </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_SA_Liste">, um einzelne oder mehrere Elemente aus der Auswahl zu entfernen. Bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Liste"> (Shift) wird automatisch der </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_SA_Liste">-Modus aktiviert - am Cursor wird ein Minuszeichen eingeblendet.</span></p>
+<p class="p_SA_Liste"><span class="f_SA_Liste">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">W&auml;hlen Sie alle Schraffuren und F&uuml;llungen auf der Zeichenfl&auml;che aus, indem Sie unter der Abfrage auf <img alt="B_alle" style="margin:0;width:0.8854in;height:0.1979in;border:none" src="b_alle.png"/> klicken.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die zu &auml;ndernden Eigenschaften.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Im Dialog werden die Einstellungen angezeigt, die beim letzten Ausf&uuml;hren der Funktion gew&auml;hlt wurden.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Die verf&uuml;gbaren Einstellungen sind von den selektierten Elementen abh&auml;ngig. Wurden z. B. ausschlie&szlig;lich F&uuml;llungen selektiert, sind nur </span><span class="f__Software_Element_deskriptiv">Schraffur/F&uuml;llung beibehalten</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">in Schraffur konvertieren</span><span class="f_Step_Anmerkung"> verf&uuml;gbar.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><img alt="I_Hinweis" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_hinweis.png"/><span class="f_Step_Anmerkung"> wird angezeigt, wenn in der Selektion auch Schraffuren enthalten, die mit der Funktion </span><span class="f__Software_Element_deskriptiv">1Reihe</span><span class="f_Step_Anmerkung"> erstellt wurden. Bewegen Sie den Cursor &uuml;ber das Symbol, um einen entsprechenden Tooltip zu erhalten.</span><br>
+<span class="f__Software_Element_deskriptiv">1Reihe</span><span class="f_Step_Anmerkung">-Schraffuren k&ouml;nnen nur mit einem kompatiblen Schraffurtyp neu erzeugt werden. Das &Auml;ndern des Winkels und die Konvertierung in F&uuml;llungen ist nicht m&ouml;glich. Wenn ausschlie&szlig;lich </span><span class="f__Software_Element_deskriptiv">1Reihe</span><span class="f_Step_Anmerkung">-Schraffuren ausgew&auml;hlt wurden, werden Ihnen bei der Schraffurauswahl nur kompatible Schraffurtypen angeboten.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Bis auf die Korrekturfunktionen k&ouml;nnen Sie auf alle Funktionen in der unteren Men&uuml;leiste zugreifen, w&auml;hrend der Dialog ge&ouml;ffnet ist. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Wenn Sie eine andere Funktion im rechten Men&uuml; anklicken, erhalten Sie eine Meldung: Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_Step_Anmerkung"> zum Fortsetzen der Bearbeitung oder auf </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_Step_Anmerkung"> zum Abbruch. Nach dem Abbrechen wechselt ISBCAD in die angeklickte Funktion.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Attribute-aendern" style="margin:0;width:2.2396in;height:3.6146in;border:none" src="d_attribute-aendern.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5313in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Bereich"><span class="f_R_Bereich">Typ</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Schraffur/F&uuml;llung beibehalten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Art des F&uuml;lltyps (Schraffur oder F&uuml;llung) bleibt erhalten. Sie k&ouml;nnen diesen F&uuml;lltypen in den Dialogbereichen </span><span class="f__Software_Element_deskriptiv">Schraffur</span><span class="f_R_Option_Beschreibung"> und </span><span class="f__Software_Element_deskriptiv">F&uuml;llung</span><span class="f_R_Option_Beschreibung"> neue Attribute zuweisen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">in Schraffur konvertieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndert im Auswahlbereich alle F&uuml;llungen in Schraffuren. W&auml;hlen Sie im Dialogbereich </span><span class="f__Software_Element_deskriptiv">Schraffur</span><span class="f_R_Option_Beschreibung"> die Schraffureigenschaften aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">in F&uuml;llung konvertieren</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Auml;ndert im Auswahlbereich alle Schraffuren in F&uuml;llungen. W&auml;hlen Sie im Dialogbereich </span><span class="f__Software_Element_deskriptiv">F&uuml;llung</span><span class="f_R_Option_Beschreibung"> den Stift und die Ebene f&uuml;r die F&uuml;llungen aus.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schraffur</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Wenn unter Typ &quot;Schraffur/F&uuml;llung beibehalten&quot; gew&auml;hlt ist...</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie bei den Eigenschaften einen Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/>, die ge&auml;ndert werden sollen. Klappen Sie anschlie&szlig;end mit einem Linksklick die zugeh&ouml;rige Dropdown-Liste <img alt="I_arrow_dropdown" style="margin:0;width:0.1771in;height:0.1458in;border:none" src="i_arrow_dropdown.png"/> auf und w&auml;hlen Sie eine neue Eigenschaft aus.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entfernen Sie den Haken aus der Checkbox, wenn die urspr&uuml;ngliche Eigenschaft beibehalten werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Wenn unter Typ &quot;in Schraffur konvertieren&quot; gew&auml;hlt ist...</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie hier an, welche Eigenschaften gelten sollen, wenn F&uuml;llungen in Schraffuren ge&auml;ndert werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/> der einzelnen Schraffurparameter sind gesetzt. Klappen Sie mit einem Linksklick die zugeh&ouml;rige Dropdown-Liste <img alt="I_arrow_dropdown" style="margin:0;width:0.1771in;height:0.1458in;border:none" src="i_arrow_dropdown.png"/> auf und w&auml;hlen Sie eine Eigenschaft aus.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_Hervorhebung_Text">Tipp</span><span class="f_R_Bereich_Info_Rahmen">: Wenn Ihre Maus &uuml;ber ein Mausrad verf&uuml;gt, k&ouml;nnen Sie dieses Rad auch zum Durchscrollen der Eintr&auml;ge verwenden, wenn Sie den Mauscursor &uuml;ber eine Dropdown-Liste bewegen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">F&uuml;llung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Wenn unter Typ &quot;Schraffur/F&uuml;llung beibehalten&quot; gew&auml;hlt ist...</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzen Sie bei den Eigenschaften einen Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/>, die ge&auml;ndert werden sollen. Klappen Sie anschlie&szlig;end mit einem Linksklick die zugeh&ouml;rige Dropdown-Liste <img alt="I_arrow_dropdown" style="margin:0;width:0.1771in;height:0.1458in;border:none" src="i_arrow_dropdown.png"/> auf und w&auml;hlen Sie eine neue Eigenschaft aus.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Entfernen Sie den Haken aus der Checkbox, wenn die urspr&uuml;ngliche Eigenschaft beibehalten werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Wenn unter Typ &quot;in F&uuml;llung konvertieren&quot; gew&auml;hlt ist...</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie hier an, welche Eigenschaften gelten sollen, wenn Schraffuren in F&uuml;llungen ge&auml;ndert werden.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Haken <img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/> bei </span><span class="f__Software_Element_deskriptiv">Stift</span><span class="f_R_Option_Beschreibung"> und </span><span class="f__Software_Element_deskriptiv">Ebene</span><span class="f_R_Option_Beschreibung"> sind gesetzt. Klappen Sie mit einem Linksklick die zugeh&ouml;rige Dropdown-Liste <img alt="I_arrow_dropdown" style="margin:0;width:0.1771in;height:0.1458in;border:none" src="i_arrow_dropdown.png"/> auf und w&auml;hlen Sie eine Eigenschaft aus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step">, um die Aktion auszuf&uuml;hren. Um den Vorgang bei Bedarf abzubrechen, bet&auml;tigen Sie die Leertaste auf der Tastatur. Beachten Sie, dass bereits ge&auml;nderte Elemente nicht wiederhergestellt werden. Nutzen Sie die Korrekturfunktion in der unteren Men&uuml;leiste, um den urspr&uuml;nglichen Zustand wiederherzustellen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">Um die Aktion abzubrechen, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Abbrechen</span><span class="f_Step">. Die vorgenommenen Einstellungen werden zur&uuml;ckgesetzt und der Dialog wird geschlossen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_oder_fuellung_aender.htm" class="topiclink" title="Die ursprünglich gewählten Parameter und die Methode werden vorgeschlagen (Punkte, Linien, Fenster, Rechteck oder 1Reihe)">Parameter anhand der urspr&uuml;nglichen Erstellmethode &auml;ndern</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_generieren.htm" class="topiclink" title="Schraffuren nach geometrischen Veränderungen neu erzeugen">Schraffur generieren</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_schraffur.htm" class="topiclink" title="Schraffurfunktionen">Schraffur (Men&uuml;)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_definieren.htm" class="topiclink" title="Schraffurtypen konfigurieren">Schraffurtypen konfigurieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink" title="Selektion von Zeichenelementen">Auswahlfunktionen (Selektion)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ISBVIEW Anwendungsoberfläche</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Anwendung zum Betrachten und Ausgeben von ISBCAD Zeichnungen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_modules.htm">Zusatzprogramme</a> &gt; <a href="top_der-isbcad-viewer.htm">ISBVIEW</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_betrachter-fuer-zeichnungsdateien_2.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_der-isbcad-viewer.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_edoc-printer-pro.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">ISBVIEW (ISBCAD Viewer)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">Anwendung zum Betrachten und Ausgeben von ISBCAD Zeichnungen.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Anwendungsoberfl&auml;che</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:8.4688in; padding:0; border:none"><p class="p_ImageCaption"><img alt="SCR_isbview" style="margin:0;width:7.3854in;height:3.8750in;border:none" src="scr_isbview.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:8.4688in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">ISBVIEW mit ge&ouml;ffneter ISBCAD Zeichnung und eingeblendeter Profil- und Folienliste.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><a name="diefunktionsleiste" class="hmanchor"></a><span class="f_Heading4">Die Funktionsleiste</span></h4>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Oeffnen_(Verzeichnis)" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_oeffnen_(verzeichnis).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Datei &ouml;ffnen/lesen</span><span class="f_R_Tabellenzeile">: Ruft die Dateiauswahl auf.</span><br>
+<span class="f_R_Tabellenzeile">Es kann immer nur eine Zeichnungsdatei ge&ouml;ffnet sein. Gegebenenfalls wird die aktuelle ge&ouml;ffnete Datei geschlossen. Einstellungen werden nicht gespeichert.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Messen_(isb-Viever)" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_messen_(isb-viever).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Messen</span><span class="f_R_Tabellenzeile">: Abfrage der X- und Y-Abst&auml;nde, Entfernung (L) und der Lagerichtung (Winkel, W) zwischen zwei beliebigen Elementpunkten.</span><br>
+<span class="f_R_Tabellenzeile">Blendet die Ergebnispalette ein. Die Werte f&uuml;r X, Y, L und W werden nach Anklicken der Elementpunkte angezeigt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Drucken" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_drucken.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Drucken</span><span class="f_R_Tabellenzeile">: </span>Ausgabe der gesamten Zeichnung, eines beliebigen Zeichnungsausschnittes oder eines Ausschnittes definierter Gr&ouml;&szlig;e als Zeichnung oder Plan. Die Druckeinstellungen k&ouml;nnen individuell konfiguriert werden.<br>
+<span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Drucken.</span><span class="f_R_Tabellenzeile"> <a href="rd_betrachter-fuer-zeichnungsdateien.htm#drucken" class="topiclink">(s. Drucken)</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Stiftbreite-1Pixel" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_stiftbreite-1pixel.png"/><span class="f_ImageCaption">  <img alt="I_Stiftbreite-in-Millimeter" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_stiftbreite-in-millimeter.png"/></span></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Darstellung der Linienbreiten auf dem Bildschirm:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">1px</span><span class="f_R_Tabellenzeile">: Linien werden, unabh&auml;ngig von der Zoomtiefe, mit einer Breite von einem Pixel angezeigt.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">mm</span><span class="f_R_Tabellenzeile">: Linien werden mit der im Anwenderprofil definierten Breite in Millimeter angezeigt (abh&auml;ngig von der Zoomtiefe).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_ImageCaption" style="margin: 0.0625in 0 0.0625in 0.0521in;"><img alt="I_Notiz_Viewer" style="margin:0;width:0.3542in;height:0.3542in;border:none" src="i_notiz_viewer.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ein- und Ausblenden von Notizen. (<a href="rm_notiz.htm" class="topiclink" title="Notizen einfügen">s. Notizen</a>)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.5625in;"><p class="p_R_Tabellenzeile"><img alt="I_Folienliste-ein-ausblenden_(isb-Viewer)" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_folienliste-ein-ausblenden_(isb-viewer).png"/><span class="f_R_Tabellenzeile"> </span><img alt="I_Profilliste-ein-ausblenden_(isb-Viewer)" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_profilliste-ein-ausblenden_(isb-viewer).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ein- und Ausblenden der Optionspaletten:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Folienliste...</span><span class="f_R_Tabellenzeile">: Blendet die Folienliste ein- oder aus. Anklicken des <img alt="I_Symbol-Folie-an" style="margin:0;width:0.1875in;height:0.1875in;border:none" src="i_symbol-folie-an.png"/>-Icons blendet die Folie aus- oder ein. Anklicken des <img alt="I_isbview_folienliste" style="margin:0;width:0.2396in;height:0.2396in;border:none" src="i_isbview_folienliste.png"/>-Icons zeigt in der Folienliste nur Folien mit Elementen bzw. auch leere Folien an.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Profilliste...</span><span class="f_R_Tabellenzeile">: &nbsp;Blendet die Profilliste ein- oder aus. In der Liste werden die Profile angezeigt, die im <a href="des_anwenderprofile.htm" class="topiclink" title="Profile verwalten">Profilmanager</a> definiert sind.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><a name="zeichnungsansicht" class="hmanchor"></a><span class="f_Heading4">Zeichnungsansicht</span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Darstellung der Zeichnung mit den in der Men&uuml;leiste und in den Optionspaletten gew&auml;hlten Einstellungen (Stiftbreite, Profil, Folien).</span><br>
+<span class="f_A_Allgemein">Sie k&ouml;nnen die Ansicht skalieren, verschieben oder auf die gesamte Zeichnung erweitern. Verwenden Sie folgende Mausgesten:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.1042in 0 0.0313in 0.3125in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Gezielt einzoomen</span><span class="f_R_Tabellenzeile">:</span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linke Maustaste halten und diagonal &uuml;ber den gew&uuml;nschten Bereich ziehen (ca. 45&deg;).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Schrittweise ein-/auszoomen</span><span class="f_R_Tabellenzeile">: </span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Mit Mausrad &uuml;ber dem gew&uuml;nschten Bereich scrollen.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Ansicht verschieben</span><span class="f_R_Tabellenzeile">: </span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linke Maustaste halten und horizontal oder vertikal ziehen.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Vorherige Ansicht wiederherstellen</span><span class="f_R_Tabellenzeile">:</span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linke Maustaste halten und V-f&ouml;rmig ziehen.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Auf Plotfl&auml;che zoomen</span><span class="f_R_Tabellenzeile">:</span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linke Maustaste halten und </span><span class="f_R_Tabellenzeile">&#581;</span><span class="f_R_Tabellenzeile">-f&ouml;rmig ziehen.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1042in; padding:0; border:none"><p class="p_R_Tabelle_Kopf" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#191919;text-decoration:none;">&#160;</span><span class="f_R_Tabelle_Kopf">Gesamte Zeichnung anzeigen</span><span class="f_R_Option_Beschreibung">: </span></p></td>
+<td style="vertical-align:top; width:6.0521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Linke Maustaste halten und Z-f&ouml;rmig ziehen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h4 class="p_Heading4" style="border-top: none; border-right: none; border-left: none;"><a name="drucken" class="hmanchor"></a><span class="f_Heading4">Drucken </span></h4>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Ausgabe der gesamten Zeichnung, eines beliebigen Zeichnungsausschnittes oder eines Ausschnittes definierter Gr&ouml;&szlig;e als Zeichnung oder Plan.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Men&uuml;leiste auf </span><img alt="I_Drucken" style="margin:0;width:0.3229in;height:0.3021in;border:none" src="i_drucken.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#333333;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im Dialog </span><span class="f__Software_Element_deskriptiv">Drucken</span><span class="f_Step"> den gew&uuml;nschten Bereich und/oder die Druckeinstellungen.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Drucken (Dialogbeschreibung)</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Ausgabe als Zeichnung oder Plan auf einem Drucker/Plotter oder in eine druckbare Druckdatei.</span><br>
+<span class="f_R_Dialog_Info">Sie k&ouml;nnen f&uuml;r die Ausgabe einen bestimmten Ausschnitt w&auml;hlen und den Drucker/Plotter den Anforderungen entsprechend konfigurieren.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Nach Auswahl des Druckbereiches/Zeichnungsausschnittes wird der Dialog </span><span class="f__Software_Element_deskriptiv">ISBCAD Druckoptionen</span><span class="f_R_Dialog_Info"> ge&ouml;ffnet.</span><br>
+<span class="f_R_Dialog_Info"><a href="rd_-isb-cad-druckoptionen.htm" class="topiclink" title="ISBCAD Druckoptionen (Dialog)">&raquo;&nbsp;ISBCAD Druckoptionen (Dialog)</a></span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_drucken" style="margin:0;width:2.3229in;height:1.2396in;border:none" src="d_drucken.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_R_Tabelle_Kopf"><img alt="I_Drucken" style="margin:0;width:0.4583in;height:0.4271in;border:none" src="i_drucken.png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Druckeinstellungen</span><span class="f_R_Tabellenzeile">: Konfiguration des Druckers/Plotters mit Stiftzuweisung, Folienauswahl, Blattrandeinstellungen, Dateilisten und weiteren Angaben. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Plotter-Konfiguration</span><span class="f_R_Tabellenzeile">.</span><br>
+<span class="f_R_Tabellenzeile"><a href="dat_drucken_einstellungen.htm" class="topiclink">&raquo; Plotter-Konfiguration (Dialog)</a> </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_R_Tabelle_Kopf" style="margin: 0.0521in 0 0.0313in 0.0104in;"><img alt="I_Alles-drucken_(Betrachter-fuer-Zeichnungsdateien_2016)" style="margin:0;width:0.2500in;height:0.1979in;border:none" src="i_alles-drucken_(betrachter-fuer-zeichnungsdateien_2016).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Alles drucken/plotten</span><span class="f_R_Tabellenzeile">: Auswahl der gesamten Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_R_Tabelle_Kopf" style="margin: 0.0521in 0 0.0313in 0.0104in;"><img alt="I_Beliebigen-Ausschnitt-drucken_(Betrachter-fuer-Zeichnungsdateien-2016)" style="margin:0;width:0.2708in;height:0.2188in;border:none" src="i_beliebigen-ausschnitt-drucken_(betrachter-fuer-zeichnungsdateien-2016).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Beliebigen Ausschnitt drucken/plotten</span><span class="f_R_Tabellenzeile">: Auswahl eines beliebigen Zeichnungsausschnittes.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken und ziehen Sie einen Rahmen um den Bereich, der gedruckt werden soll.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.5208in;"><p class="p_R_Tabelle_Kopf" style="margin: 0.0521in 0 0.0313in 0.0208in;"><img alt="I_Festen-Ausschnitt-drucken_(Betrachter-fuer-Zeichnungsdateien_2016)" style="margin:0;width:0.2604in;height:0.2188in;border:none" src="i_festen-ausschnitt-drucken_(betrachter-fuer-zeichnungsdateien_2016).png"/></p>
+</td>
+<td class="Optionen_Palette"><p class="p_R_Tabellenzeile"><span class="f_R_Tabelle_Kopf">Festen Ausschnitt drucken/plotten</span><span class="f_R_Tabellenzeile">: Platzierung eines in der Gr&ouml;&szlig;e fest definierten Zeichnungsausschnittes.</span><br>
+<span class="f_R_Tabellenzeile">Die Gr&ouml;&szlig;e kann mit der Option </span><span class="f__Software_Element_deskriptiv">Faktor f&uuml;r Ausschnitt</span><span class="f_R_Tabellenzeile"> oder &uuml;ber die Option </span><span class="f__Software_Element_deskriptiv">Druckeinstellungen</span><span class="f_R_Tabellenzeile"> ge&auml;ndert werden.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie den Rahmen per Mausklick &uuml;ber dem Bereich, der gedruckt werden soll.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Festen Ausschnitt drehen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur wenn die Option </span><span class="f__Software_Element_deskriptiv">Festen Ausschnitt drucken/plotten</span><span class="f_R_Option_Beschreibung"> gew&auml;hlt wurde. Dreht den definierten, festen Ausschnitt um 90&deg;.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor f&uuml;r Ausschnitt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Nur wenn die Option </span><span class="f__Software_Element_deskriptiv">Festen Ausschnitt drucken/plotten</span><span class="f_R_Option_Beschreibung"> gew&auml;hlt wurde. Skaliert den Rahmen in der Zeichnungsansicht um den angegebenen Wert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="top_der-isbcad-viewer.htm" class="topiclink">ISBVIEW (&Uuml;bersicht)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_betrachter-fuer-zeichnungsdateien_2.htm" class="topiclink">ISBVIEW &ouml;ffnen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_modules.htm" class="topiclink" title="Zusatzprogramme">Zusatzprogramme</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

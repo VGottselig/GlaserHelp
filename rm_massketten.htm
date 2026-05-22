@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Maßketten - [MaßKet]</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bemaßung,Konstruktion 1,Konstruktion 1 Funktionen,Maßketten,Maßketten *Funktionen und Optionen,Vermaßung" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf eine Maßlinie oder einen Maßtext." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="texte_zwischenablage_windows.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_konstruktion-1.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="masskette_manuell_zeichnen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Ma&szlig;ketten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <img alt="B-akt_Massket" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massket.png"/> </span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf eine Ma&szlig;linie oder einen Ma&szlig;text.</span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Folienbelegung: Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> aktiviert ist (untere Men&uuml;leiste), werden die Ma&szlig;kettenelemente in der Folie 2 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erzeugen, Bearbeiten und Konfigurieren von Bema&szlig;ungen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Vorbemerkungen</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Mit ISBCAD Versionen &lt; 2018 erstellte Zeichnungen k&ouml;nnen ggf. Ma&szlig;ketten enthalten, die nicht korrekt dargestellt werden. Generieren Sie in diesem Fall die Ma&szlig;ketten neu.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Beim Verma&szlig;en werden Ma&szlig;kettenpunkte erzeugt, die als Bezugspunkt f&uuml;r die Ma&szlig;ketten verwendet werden. Die Ma&szlig;kettenpunkte sind auf der Zeichenfl&auml;che sichtbar, werden aber nicht ausgedruckt.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sie k&ouml;nnen den <a href="des_systemwinkel.htm" class="topiclink" title="Kippwinkel für automatisch generierte Texte einstellen">Kippwinkel</a> f&uuml;r Ma&szlig;zahlen einstellen und somit die Leserichtung beeinflussen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masskette_manuell_zeichnen.htm" class="topiclink" title="Maßkette mit relativen Maßen zeichnen"><img alt="Maßkette mit relativen Maßen zeichnen" title="Maßkette mit relativen Maßen zeichnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_m-zeic.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette mit relativen Ma&szlig;en zeichnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_automatisch_erstell.htm" class="topiclink" title="Maßkette mit relativen Maßen automatisch zeichnen"><img alt="Maßkette mit relativen Maßen automatisch zeichnen" title="Maßkette mit relativen Maßen automatisch zeichnen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_a-zeic.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette mit relativen Ma&szlig;en automatisch zeichnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masketten_hoehenkote.htm" class="topiclink" title="Höhenkote setzen"><img alt="Höhenkote setzen" title="Höhenkote setzen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_hoekote.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">H&ouml;henkote setzen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_absmas.htm" class="topiclink" title="Maßkette mit absoluten Maßen zeichnen"><img alt="Maßkette mit absoluten Maßen zeichnen" title="Maßkette mit absoluten Maßen zeichnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_absmas.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette mit absoluten Ma&szlig;en zeichnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masketten_winkelangaben_erstellen.htm" class="topiclink" title="Winkel vermaßen"><img alt="Winkel vermaßen" title="Winkel vermaßen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_winkel.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Winkel verma&szlig;en.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masketten_kreise_teilkreise.htm" class="topiclink" title="Kreise und Teilkreise vermaßen"><img alt="Kreise und Teilkreise vermaßen" title="Kreise und Teilkreise vermaßen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_umfang.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Kreis und Teilkreis verma&szlig;en.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masketten_kreise_teilkreise.htm" class="topiclink" title="Angabe der Radien von Kreisen und Teilkreisen"><img alt="Angabe der Radien von Kreisen und Teilkreisen" title="Angabe der Radien von Kreisen und Teilkreisen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_radius.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Angabe der Radien von Kreisen und Teilkreisen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masketten_kreise_teilkreise.htm" class="topiclink" title="Punkte auf einem Kreisbogen vermaßen"><img alt="Punkte auf einem Kreisbogen vermaßen" title="Punkte auf einem Kreisbogen vermaßen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_bogen.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Punkte auf einem Kreisbogen verma&szlig;en.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_hoekogr_mket.htm" class="topiclink" title="Höhenkote im Grundriss setzen"><img alt="Höhenkote im Grundriss setzen" title="Höhenkote im Grundriss setzen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_hoekogr_konst1.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">H&ouml;henkote im Grundriss erstellen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_verschieben_2.htm" class="topiclink" title="Maßketten verschieben"><img alt="Maßketten verschieben" title="Maßketten verschieben" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="hmfile_hash_bdcf6df8.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette verschieben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masskettentext_verschieben.htm" class="topiclink" title="Maßkettentext verschieben"><img alt="Maßkettentext verschieben" title="Maßkettentext verschieben" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_textve.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kettentext verschieben.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_generieren.htm" class="topiclink" title="Maßketten aktualisieren"><img alt="Maßketten aktualisieren" title="Maßketten aktualisieren" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="hmfile_hash_b86d84ee.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;ketten aktualisieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_aendern.htm" class="topiclink" title="Maßketten ändern"><img alt="Maßketten ändern" title="Maßketten ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_685f15d8.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_loeschen.htm" class="topiclink" title="Maßketten löschen"><img alt="Maßketten löschen" title="Maßketten löschen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="hmfile_hash_ffa51a86.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masskettenstil_konfigurieren.htm" class="topiclink" title="Maßketten konfigurieren"><img alt="Maßketten konfigurieren" title="Maßketten konfigurieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="hmfile_hash_eb01cd3b.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;ketten konfigurieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="masskettenpunkte_modifizieren.htm" class="topiclink" title="Maßkettenpunkte modifizieren"><img alt="Maßkettenpunkte modifizieren" title="Maßkettenpunkte modifizieren" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_modpkt.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kettenpunkte modifizieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="massketten_durch_text_ergaenze.htm" class="topiclink" title="Maßketten durch einen Text ergänzen"><img alt="Maßketten durch einen Text ergänzen" title="Maßketten durch einen Text ergänzen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_ergtxt.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ma&szlig;kette durch einen Text erg&auml;nzen.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 class="p_Heading5"><a name="massketten_optionspalette" class="hmanchor"></a></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Vermassungsstil" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_vermassungsstil.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl des Verma&szlig;ungsstils.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_rund-nicht-gefuellt" style="margin:0;width:0.5521in;height:0.2500in;border:none" src="b_rund-nicht-gefuellt.png"/><img alt="B_rund-halb-gefuellt" style="margin:0;width:0.5521in;height:0.2500in;border:none" src="b_rund-halb-gefuellt.png"/><img alt="B_dreieck-nicht-gefuellt" style="margin:0;width:0.5521in;height:0.2500in;border:none" src="b_dreieck-nicht-gefuellt.png"/><img alt="B_dreieck-voll-gefuellt" style="margin:0;width:0.5417in;height:0.2500in;border:none" src="b_dreieck-voll-gefuellt.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Symbole f&uuml;r H&ouml;henkoten im Grundriss [</span><span class="f__Software_Element_deskriptiv">H&ouml;koGr</span><span class="f_R_Tabellenzeile_Menue">].</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Rund nicht gef&uuml;llt / gegen&uuml;berliegende Viertel gef&uuml;llt / Dreieck nicht gef&uuml;llt / gef&uuml;llt.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_ohne_Gesamtmass_Massket" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_ohne_gesamtmass_massket.png"/><img alt="I_Gesamtmass-unten-rechts_Massket" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_gesamtmass-unten-rechts_massket.png"/><img alt="I_Gesamtmass-oben-links_Massket" style="margin:0;width:0.7500in;height:0.2500in;border:none" src="i_gesamtmass-oben-links_massket.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Verma&szlig;ung mit oder ohne Gesamtma&szlig;; </span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Anordnung des Gesamtma&szlig;es entsprechend Neigung der Ma&szlig;kette: unten-rechts oder oben-links.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_so-wie" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_so-wie.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Uuml;bernimmt die Ma&szlig;ketten-ID aus einer vorhandenen Ma&szlig;kette sowie die Einheiten und die Einstellung mit/ohne Gesamtma&szlig;.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">(s. <a href="ref_die_so_wie_schaltflaeche.htm" class="topiclink">Die 'so wie'-Schaltfl&auml;che</a>); </span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">(s. <a href="masskettenstil_konfigurieren.htm" class="topiclink">Ma&szlig;kettenstil konfigurieren</a>)</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="P_Konstruktionseinheiten-Auswahl" style="margin:0;width:2.1979in;height:0.4896in;border:none" src="p_konstruktionseinheiten-auswahl.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auswahl der Ma&szlig;einheiten:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0208in 0.0208in;"><table class="Menue_Palette" >
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">50/1,0&nbsp;m/cm</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Gemischte Darstellung.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">500&nbsp; mm</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Millimeter.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">50&nbsp;cm</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Zentimeter.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">0,5&nbsp;m</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Meter.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">2'-1&frac12;&quot;</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Fu&szlig;.</span></p>
+</td>
+</tr>
+<tr class="Menue_Palette">
+<td class="Menue_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">56/16&quot;</span></p>
+</td>
+<td class="Menue_Palette" style="width:5.5833in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Zoll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Bei den H&ouml;henkoten merkt sich ISBCAD die zuletzt gew&auml;hlte Einstellung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Retaus" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_retaus.png"/><img alt="B_Retan" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_retan.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Aus-/Einschalten des Differenzmodus.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Wenn Sie Ma&szlig;ketten mit individuellem Abstand [</span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_R_Tabellenzeile_Menue">] platzieren m&ouml;chten, gilt folgendes: Minus hei&szlig;t unterhalb, Plus oberhalb der angeklickten Linie (des Kreises) in Bezug auf die Textrichtung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="I_Punkte-hinzufuegen" style="margin:0;width:0.6979in;height:0.2188in;border:none" src="i_punkte-hinzufuegen.png"/><img alt="I_Punkte-entfernen" style="margin:0;width:0.6979in;height:0.2188in;border:none" src="i_punkte-entfernen.png"/><img alt="I_Alle-Punkte-enfernen" style="margin:0;width:0.7188in;height:0.2188in;border:none" src="i_alle-punkte-enfernen.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Optionen zur Auswahl der Verma&szlig;ungspunkte.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">/+: </span><span class="f__Software_Element_deskriptiv">Punkte hinzuf&uuml;gen</span><span class="f_R_Tabellenzeile_Menue">; /-: </span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_R_Tabellenzeile_Menue">; /x: </span><span class="f__Software_Element_deskriptiv">Alle Punkte entfernen</span><span class="f_R_Tabellenzeile_Menue">.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Beim Erzeugen der Ma&szlig;ketten werden Punkte angeklickt und durch Kreuze markiert. Um falsch angeklickte Punkte zu entfernen, aktivieren Sie die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_R_Tabellenzeile_Menue"> und klicken die zu l&ouml;schenden Punkte an. Um alle Punkte zu l&ouml;schen, m&uuml;ssen Sie </span><span class="f__Software_Element_deskriptiv">Alle Punkte</span><span class="f_R_Tabellenzeile_Menue"> </span><span class="f__Software_Element_deskriptiv">entfernen</span><span class="f_R_Tabellenzeile_Menue"> anklicken.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Tastatur">Tab-Taste</span><span class="f_R_Tabellenzeile_Menue">: Wechselt zwischen </span><span class="f__Software_Element_deskriptiv">Punkte hinzuf&uuml;gen</span><span class="f_R_Tabellenzeile_Menue"> und </span><span class="f__Software_Element_deskriptiv">Punkte entfernen</span><span class="f_R_Tabellenzeile_Menue">.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

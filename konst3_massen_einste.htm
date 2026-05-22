@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Massen-Darstellung - Konfiguration</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Massenermittlung,Massenermittlung Darstellung konfigurieren,Massenermittlung Nachkommastellen einstellen" />
+   <meta name="description" content="Konfiguration der Inhalte und Darstellung einer frei platzierten Massenangabe, eines Raumstempels, einer Massentabelle oder eines Schwerpunktsymbols. Öffnet den Dialog Einste" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="konst3_massen.htm">Massenermittlung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst3_massen_wohnfl.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst3_massen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="con_fem.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Massen-Darstellung - Konfiguration</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-3.htm" class="topiclink" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 3 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst3.png"/></a><span class="f_Aufruf"> <a href="konst3_massen.htm" class="topiclink" title="Massenermittlung (Funktionsübersicht)"><img alt="Massenermittlung (Funktionsübersicht)" title="Massenermittlung (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_massen.png"/></a> </span><img alt="B-akt_Einstellung_Holzb" style="margin:0;width:2.3333in;height:0.2396in;border:none" src="b-akt_einstellung_holzb.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konfiguration der Inhalte und Darstellung einer frei platzierten Massenangabe, eines Raumstempels, einer Massentabelle oder eines Schwerpunktsymbols. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Einstellungen</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die gew&auml;hlten Einstellungen (au&szlig;er Stiftbreiten) werden sofort im Vorschaubereich angezeigt. Die Einstellungen k&ouml;nnen mit [</span><span class="f__Software_Element_deskriptiv">Konst3</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">Massen</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">Generi</span><span class="f_R_Dialog_Info">] auf alle in der Zeichnung enthalten Massenangaben (frei platzierte, Raumstempel, Massentabellen und Schwerpunktkreuze) &uuml;bertragen werden. <a href="rm_darstellung-der-masseangaben-vereinheitlichen.htm" class="topiclink">&raquo;&nbsp;Massen generieren</a></span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;Einstellungen&quot;</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><a name="_massen-text" class="hmanchor"></a><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Allgemein</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle" style="width:100%;" role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Einstellung_Massen_Allgemein" style="float:left;margin:0;width:9.4375in;height:5.5521in;border:none" src="d_einstellung_massen_allgemein.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Einstellungen zu Inhalten und Darstellung einer frei platzierten Massenangabe, eines Raumstempels und der Gestaltung eines Schwerpunktkreuzes. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bezeichnung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Konfiguration der Schriftdarstellung f&uuml;r die Bezeichnung.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei TrueType-Schriften (Arial, Calibri, Tahoma usw.) k&ouml;nnen Sie zus&auml;tzliche Textauszeichnungen w&auml;hlen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_ImageCaption_zentriert"><img alt="B_Fett" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_fett.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9896in;"><p class="p_ImageCaption_zentriert"><img alt="B_Kursiv" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_kursiv.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_ImageCaption_zentriert"><img alt="B_Unterstrichen" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_unterstrichen.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2604in;"><p class="p_ImageCaption_zentriert"><img alt="B_Durchgestrichen" style="margin:0 auto 0 auto;width:0.5313in;height:0.2500in;border:none" src="b_durchgestrichen.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.0521in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="font-weight: bold;">Fett</span><span class="f_R_Tabellenzeile"> </span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9896in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="font-style: italic;">Kursiv</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="text-decoration: underline;">Unterstrichen&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.2604in;"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile" style="text-decoration: line-through;">Durchgestrichen&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Ergebnis</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Konfiguration der Schriftdarstellung f&uuml;r die Berechnungsergebnisse.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_ImageCaption"> </span><span class="f_R_Option">Text freistellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie einen Haken in die Checkbox setzen, werden Texte m&ouml;glichst so dargestellt, dass sie nicht von anderen Zeichenelementen &uuml;berdeckt sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_ImageCaption"> </span><span class="f_R_Option">Wohnfl&auml;che Netto </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mindert den aus der Zeichnung ermittelten Fl&auml;chenwert um den unter </span><span class="f__Software_Element_deskriptiv">Abzug (%)</span><span class="f_R_Option_Beschreibung"> angegebenen Wert. Setzen Sie einen Haken in die Checkbox, um den Abzugswert in Prozent angeben zu k&ouml;nnen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">L&auml;nge; Fl&auml;che; Volumen; Gewicht</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Konfiguration der Wertangaben (Berechnungsergebnisse) f&uuml;r frei platzierbare Massenangaben und Massenangaben in einem Raumstempel. </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Massenangaben f&uuml;r die Tabellenausgabe k&ouml;nnen auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Tabelle</span><span class="f_R_Bereich_Info_Rahmen"> konfiguriert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dimensionsk&uuml;rzel oder beliebiger Text, der den Wertangaben in einer frei platzierten Massenangabe oder im Raumstempel vorangestellt wird (vgl. Vorschau).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><a name="_masstabkomma" class="hmanchor"></a><span class="f_R_Option">Anzahl Nachkommastellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Rundet den berechneten Wert auf die angegebenen Nachkommastellen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stellen nach dem Komma</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzahl der angezeigten Nachkommastellen. Bei ganzzahligen Massenangaben werden die gew&auml;hlten Stellen nach dem Komma durch Nullen dargestellt. </span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Schwerpunkt</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Angabe des Schwerpunktsymbols. Das hier gew&auml;hlte Symbol wird angezeigt, wenn mit der Funktion [</span><span class="f__Software_Element_deskriptiv">SchwPu</span><span class="f_R_Bereich_Info_Rahmen">] ein Schwerpunkt bestimmt wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Darstellung Kreuztyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl des Schwerpunktsymbols. W&auml;hlen Sie hier das Schwerpunktsymbol aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Darstellung Kreuzlinien</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gestaltung des Schwerpunktsymbols. W&auml;hlen Sie hier die Stiftnummer, den Linientyp und die L&auml;nge der Kreuzlinien. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Raumstempel</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="RK_Raumstempel_(RD_Einstellungen_(Massen))" style="margin:0;width:9.4375in;height:5.5521in;border:none" src="rk_raumstempel_(rd_einstellungen_(massen)).png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konfiguration des Raumstempels (enthaltene Angaben, Darstellung des Stempels und der Inhalte). Die hier gew&auml;hlten Optionen werden bei der Erstellung eines Raumstempels mit der Funktion </span><span class="f__Software_Element_deskriptiv">RaumSt</span><span class="f_R_Dialog_Info"> vorgenommen. Die gew&auml;hlten Einstellungen werden sofort im Vorschaubereich angezeigt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Dimensionsangaben, Rundung der berechneten Werte und angezeigte Nachkommastellen entsprechen den Angaben auf der Registerkarte </span><span class="f__Software_Element_deskriptiv">Allgemein</span><span class="f_Hinweis_in_Tabelle">. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Texte</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Auswahl der im Raumstempel aufgef&uuml;hrten Texte. Die Angaben werden bei der Erstellung eines Raumstempels abgefragt. Klicken Sie die entsprechenden Checkboxen an, die im Raumstempel angezeigt werden sollen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Darstellung Rahmen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Gestaltung des Raumstempel-Rahmens.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Checkbox-ohne" style="margin:0;width:0.1250in;height:0.1250in;border:none" src="i_checkbox-ohne.png"/><span class="f_R_Option"> mit Rahmen darstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie in diese Checkbox, wenn der Raumstempel mit einem Rahmen dargestellt werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Stiftnummer, Linientyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Stiftnummer und den Linientyp f&uuml;r die Umrandung.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Abmessungen</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Geben Sie hier durch Anklicken der entsprechenden Checkboxen an, welche Angaben der Raumstempel enthalten soll.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Raumnr.</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Gestaltung der </span><span class="f_R_Option_Beschreibung">Raumnummer. In der Vorschau sind die &Auml;nderungen nur sichtbar, wenn im Bereich </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_R_Option_Beschreibung"> die Option </span><span class="f__Software_Element_deskriptiv">Raumnr. anzeigen</span><span class="f_R_Option_Beschreibung"> aktiviert ist.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e, Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie hier die Text- bzw. Schriftgr&ouml;&szlig;e f&uuml;r den Text &quot;Raumnummer&quot;.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie hier ein, mit welchem Breitenfaktor die Raumnummer dargestellt werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Font bzw. die Schriftart f&uuml;r die Raumnummer.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Bezeichnung</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Gestaltung der zus&auml;tzlichen </span><span class="f_R_Option_Beschreibung">Raumbeschreibung.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e, Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie hier die Text- bzw. Schriftgr&ouml;&szlig;e f&uuml;r den Text &quot;Beschreibung&quot;.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie hier ein, mit welchem Breitenfaktor die Raumbeschreibung dargestellt werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Font bzw. die Schriftart f&uuml;r die Raumbeschreibung.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #e5e5e5; border-style: solid; border-width: thin; background: #e5e5e5; padding: 0.0313in 0.0313in 0.0313in 0.0313in; margin: 0.2500in 0 0.0833in 0.3333in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3542in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_folder1" style="margin:0;width:0.1667in;height:0.1354in;border:none" src="hmtoggle_folder1.gif"/></td><td style="border:none;padding:0"><span class="f_R_RegisterkarteOrdner"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Tabelle</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2604in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="RK_Tabellel_(RD_Einstellungen_(Massen))" style="margin:0;width:9.4375in;height:5.5521in;border:none" src="rk_tabellel_(rd_einstellungen_(massen)).png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Gestaltung der Massentabelle mit Angaben zur Verwendung der (gerundeten) Nachkommastellen. Mit der Funktion </span><span class="f__Software_Element_deskriptiv">Tabell</span><span class="f_R_Dialog_Info"> k&ouml;nnen Sie die Ergebnisse mit den hier gew&auml;hlten Einstellungen in einer Tabelle auf der Zeichenfl&auml;che ausgeben.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Tabellen&uuml;berschriften</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Option_Beschreibung"> </span><span class="f_R_Bereich_Info_Rahmen">Individuelle Beschriftung der Tabellen&uuml;berschriften. Tragen Sie in die Eingabefelder Ihre eigenen &Uuml;berschriften ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">mit Ma&szlig;einheiten</span></p>
+<div style="text-align: justify; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0.1250in 0 0.0104in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.2708in;"><p class="p_ImageCaption"><img alt="I_Checkbox-ja" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="i_checkbox-ja.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Ma&szlig;einheiten werden hinter die Tabellen&uuml;berschrift gesetzt. </span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&auml;nge (m)</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.2708in;"><p class="p_ImageCaption"><img alt="I_Checkbox-nein" style="margin:0;width:0.1979in;height:0.1563in;border:none" src="i_checkbox-nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.3125in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Tabellen&uuml;berschriften werden ohne Ma&szlig;einheiten dargestellt.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.9271in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">L&auml;nge</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Tabellen&uuml;berschrift</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Option_Beschreibung">Gestaltung der Tabellen&uuml;berschriften. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e, Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie hier die Text- bzw. Schriftgr&ouml;&szlig;e f&uuml;r die &Uuml;berschriften.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie hier ein, mit welchem Breitenfaktor die &Uuml;berschriften dargestellt werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Font bzw. die Schriftart f&uuml;r die &Uuml;berschriften.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Tabellentext</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Gestaltung der Tabellentexte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Textgr&ouml;&szlig;e, Stiftnummer</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie hier die Text- bzw. Schriftgr&ouml;&szlig;e f&uuml;r die </span><span class="f_R_Bereich_Info_Rahmen">Tabellentexte</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Breitenfaktor</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie hier ein, mit welchem Breitenfaktor die </span><span class="f_R_Bereich_Info_Rahmen">Tabellentexte</span><span class="f_R_Option_Beschreibung"> dargestellt werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie den Font bzw. die Schriftart f&uuml;r die </span><span class="f_R_Bereich_Info_Rahmen">Tabellentexte</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Nachkommastellen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzahl der angezeigten Nachkommastellen f&uuml;r die Angabe der Berechnungsergebnisse in der Tabellenausgabe.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_massen.htm" class="topiclink">Massenermittlung (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','1','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','1');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_folder0.gif','hm.src1','hmtoggle_folder1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

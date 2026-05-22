@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Datei - Menü</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Datei,Datei *Funktionen und Optionen" />
+   <meta name="description" content="Funktionen und Befehle zum Öffnen, Speichern, Drucken, Importieren und Versenden von Zeichnungsdateien." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     &raquo;Keine übergeordneten Inhalte gefunden&laquo;
+     </p>
+
+     <div id="headernav">
+     <a href="des_bkt.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_willkommen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="dat_neue_datei_erstellen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h1 class="p_Heading1"><span class="f_Heading1">Datei- und Ausgabefunktionen</span></h1>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="B-akt_Datei" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_datei.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Funktionen und Befehle zum &Ouml;ffnen, Speichern, Drucken, Importieren und Versenden von Zeichnungsdateien.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktion</span></p>
+</th>
+<th class="Reference_Menue" style="width:1.7396in;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">&nbsp;</span></p>
+</th>
+<th class="Reference_Menue" style="width:14.2083in;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_neue_datei_erstellen.htm" class="topiclink" title="Eine neue Zeichnung erstellen. Geöffnete Zeichnungen werden nach Rückfrage geschlossen"><img alt="Eine neue Zeichnung erstellen. Geöffnete Zeichnungen werden nach Rückfrage geschlossen" title="Eine neue Zeichnung erstellen. Geöffnete Zeichnungen werden nach Rückfrage geschlossen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_neu-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Neu</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Erstellen einer neuen Zeichnung. Ge&ouml;ffnete Zeichnungen werden nach R&uuml;ckfrage geschlossen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_datei_offnen.htm" class="topiclink" title="Vorhandene Zeichnung (*.AKT) oder Sicherungsdatei (*.BKT) öffnen"><img alt="Vorhandene Zeichnung (*.AKT) oder Sicherungsdatei (*.BKT) öffnen" title="Vorhandene Zeichnung (*.AKT) oder Sicherungsdatei (*.BKT) öffnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_lesen-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;ffnen</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;ffnen einer vorhandenen Zeichnung oder Sicherungsdatei.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_datei-sichern.htm" class="topiclink" title="Speichert den aktuellen Stand der Zeichnung"><img alt="Speichert den aktuellen Stand der Zeichnung" title="Speichert den aktuellen Stand der Zeichnung" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_sicher-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Speichern</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Speichert den aktuellen Stand der Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_datei_speichern.htm" class="topiclink" title="Zeichnung unter beliebigem Dateinamen abspeichern"><img alt="Zeichnung unter beliebigem Dateinamen abspeichern" title="Zeichnung unter beliebigem Dateinamen abspeichern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_speich-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Speichern unter...</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Speichern der aktuellen Zeichnung unter einem beliebigen Dateinamen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_drucken.htm" class="topiclink" title="Ausdrucken der ganzen Zeichnung oder eines Zeichnungsteils"><img alt="Ausdrucken der ganzen Zeichnung oder eines Zeichnungsteils" title="Ausdrucken der ganzen Zeichnung oder eines Zeichnungsteils" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_drucke-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Drucken</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Drucken der ganzen Zeichnung oder eines Zeichnungsteils.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_zeichnung_plotten.htm" class="topiclink" title="Plotten der ganzen Zeichnung oder eines Zeichnungsteils"><img alt="Plotten der ganzen Zeichnung oder eines Zeichnungsteils" title="Plotten der ganzen Zeichnung oder eines Zeichnungsteils" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_plotte-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Plotten</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Plotten der ganzen Zeichnung oder eines Zeichnungsteils.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_pdf_export.htm" class="topiclink" title="Zeichnung als PDF-Datei ausgeben"><img alt="Zeichnung als PDF-Datei ausgeben" title="Zeichnung als PDF-Datei ausgeben" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_pdf-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">PDF-Export</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ausgeben einer Zeichnung als PDF-Datei.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_pdf_import.htm" class="topiclink" title="PDF-Datei in Zeichnung importieren"><img alt="PDF-Datei in Zeichnung importieren" title="PDF-Datei in Zeichnung importieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_pdfimp-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">PDF-Import</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Importieren einer PDF-Datei in die Zeichnung.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_dwg_dxf_dateien_exportieren.htm" class="topiclink" title="ISBCAD Zeichnungen in Austauschformate konvertieren"><img alt="ISBCAD Zeichnungen in Austauschformate konvertieren" title="ISBCAD Zeichnungen in Austauschformate konvertieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_export-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">DXF-Export</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Konvertieren der aktuell ge&ouml;ffneten Zeichnung in das DWG- oder DXF-Dateiformat.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_dwg_dxf_dateien_importieren.htm" class="topiclink" title="Umwandlung von DXF- und DWG-Dateien in das ISBCAD AKT-Format"><img alt="Umwandlung von DXF- und DWG-Dateien in das ISBCAD AKT-Format" title="Umwandlung von DXF- und DWG-Dateien in das ISBCAD AKT-Format" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_import-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">DXF-Import</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Konvertieren von DXF- und DWG-Dateien in das GLASER AKT-Dateiformat.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="con_ifc-import.htm" class="topiclink" title="IFC-Geometriedaten importieren"><img alt="IFC-Geometriedaten importieren" title="IFC-Geometriedaten importieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_ifcimp.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">IFC Section Tool</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Generieren von Schnittzeichnungen aus einem IFC-Modell.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_datei_einfuegen.htm" class="topiclink" title="Einfügen einer vorhandenen Zeichnungsdatei in die aktuelle Zeichnung"><img alt="Einfügen einer vorhandenen Zeichnungsdatei in die aktuelle Zeichnung" title="Einfügen einer vorhandenen Zeichnungsdatei in die aktuelle Zeichnung" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_einfueg-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Einf&uuml;gen</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Einf&uuml;gen einer vorhandenen Zeichnungsdatei.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_teilzeichnung_auslagern.htm" class="topiclink" title="Teile einer Zeichnung unter anderem Namen speichern"><img alt="Teile einer Zeichnung unter anderem Namen speichern" title="Teile einer Zeichnung unter anderem Namen speichern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_auslag-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auslagern</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Speichern einer Teilzeichnung oder eines gesamten Folieninhalts unter einem anderen Dateinamen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_drucken_zwischenablage.htm" class="topiclink" title="Elemente in die ISBCAD Zwischenablage legen und verwalten"><img alt="Elemente in die ISBCAD Zwischenablage legen und verwalten" title="Elemente in die ISBCAD Zwischenablage legen und verwalten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_zwiabl-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Zwischenablage</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ablegen von Elementen in die ISBCAD Zwischenablage.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="dat_grafik.htm" class="topiclink" title="Zeichnung oder Zeichnungsausschnitt als Bilddatei speichern"><img alt="Zeichnung oder Zeichnungsausschnitt als Bilddatei speichern" title="Zeichnung oder Zeichnungsausschnitt als Bilddatei speichern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_grafik-datei.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Grafik</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Einf&uuml;gen einer Grafik und Speichern einer Teilzeichnung als Bilddatei.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:1.2917in; border:solid 0.0417in #ffffff; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="ISBCAD beenden" title="ISBCAD beenden" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_ende-datei.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:1.7396in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Ende</span></p>
+</td>
+<td class="Reference_Menue" style="width:14.2083in;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Beenden des Programms.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_isbstart.htm" class="topiclink">ISBCAD Startseite</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_allg_prog.htm" class="topiclink">Das Konstruktionsprogramm</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="con_bew_prog.htm" class="topiclink">Das Bewehrungsprogramm</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="optionen.htm" class="topiclink" title="Listen, Systemeinstellungen und weitere Konstruktionsfunktionen">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

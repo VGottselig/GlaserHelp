@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Treppe</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="3D-Treppe erzeugen,Gerader Treppenlauf,Gewendelte Treppe,Halbgewendelte Treppe,Treppe konstruieren,Treppe konstruieren 3D-Treppe,Treppe konstruieren Gerader Treppenlauf,Treppe konstruieren Gewendelte Treppe,Treppe konstruieren Halbgewendelte Treppe" />
+   <meta name="description" content="Konstruktion und Bewehrung einer Treppe mittels vordefiniertem Treppentyp. Öffnet den Dialog Treppenauswahl." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_profil-wechseln.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="optionen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_gerader-treppenlauf.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Treppe</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <img alt="B-akt_Treppe" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_treppe.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Konstruktion und Bewehrung einer Treppe mittels vordefiniertem Treppentyp. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Treppenauswahl</span><span class="f_R_Dialog_Info">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Treppenauswahl-mit_Bezeichnung" style="margin:0;width:3.1250in;height:1.6667in;border:none" src="d_treppenauswahl-mit_bezeichnung.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:3.9583in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1 - geradliniger Treppenlauf</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2 - &frac14;- gewendelter Treppenlauf</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">3 - &frac12; gewendelter Treppenlauf</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">4 - 3D-Treppenlauf</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span class="f_ToDo_Info">Nach Auswahl des Treppentyps (Dialog </span><span class="f__Software_Element_deskriptiv">Treppenauswahl</span><span class="f_ToDo_Info">) wird der entsprechende Konfigurationsdialog bzw. ein separates Anwendungsfenster f&uuml;r den gew&auml;hlten Treppentyp ge&ouml;ffnet.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Treppe konfigurieren und Daten &uuml;bernehmen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Konfigurieren Sie die Geometrie- und Bewehrungsdaten im Dialog und klicken Sie im Dialog auf die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Zeichenprogramm</span><span class="f_Step">, um die Daten nach ISBCAD zu &uuml;bernehmen.</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gerader-treppenlauf.htm" class="topiclink" title="Dialogbeschreibung">Gerader Treppenlauf (Dialog)</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_gewendelte-treppe.htm" class="topiclink" title="Dialogbeschreibung">Gewendelte Treppe (Dialog)</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_halbgewendelte-treppe.htm" class="topiclink" title="Dialogbeschreibung">Halbgewendelte Treppe (Dialog)</a></span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile"><a href="rd_3d-treppe.htm" class="topiclink" title="Dialogbeschreibung">3D Treppe (Dialog)</a></span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Treppengrundriss wird als Rahmen an den Cursor geh&auml;ngt.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Treppengrundriss platzieren und ausrichten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie gegebenenfalls die Folie aus, auf der die Treppe gezeichnet werden soll. </span><br>
+<span class="f_Step">Optionen (im Funktionsbereich):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.4688in;"><p class="p_ImageCaption_zentriert"><img alt="B_Folie-beibeh-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_folie-beibeh-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.3854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Zeichnet die Treppe auf der aktuellen Folie (s. Untere Men&uuml;leiste).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span><span class="f_R_Tabellenzeile"> Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_R_Tabellenzeile"> eingestellt ist, werden die Elemente in Folie 0 abgelegt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.4688in;"><p class="p_ImageCaption_zentriert"><img alt="B_Neue-Folie-Einfueg" style="margin:0 auto 0 auto;width:2.2083in;height:0.2500in;border:none" src="b_neue-folie-einfueg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:6.3854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auswahl einer vorhandenen Folie oder eine neue Folie anlegen und verwenden. </span><br>
+<span class="f_R_Tabellenzeile">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neue Folie</span><span class="f_R_Tabellenzeile">. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie, wie die Treppe in der Zeichnung abgesetzt werden soll. [</span><span class="f__Abfrage">Rechteck verschieben</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:9.9479in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Genau platzieren</span></p>
+<p class="p_R_Tabellenzeile"><img alt="B-akt_Setzen" style="margin:0;width:0.8854in;height:0.1979in;border:none" src="b-akt_setzen.png"/><span class="f_R_Tabellenzeile"> </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1458in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Richten Sie den Treppengrundriss gegebenenfalls aus oder best&auml;tigen Sie die Abfragen mit Rechtsklick. [</span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">; </span><span class="f__Abfrage">Drehwinkel</span><span class="f_Step">; </span><span class="f__Abfrage">Spiegelwinkel</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1458in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bestimmen Sie den Referenzpunkt der zu platzierenden Treppe durch Anklicken. [</span><span class="f__Abfrage">X-Refpu.Obj</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Refpu.Obj</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0104in 0 0.0833in 0.3646in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Wenn Sie zwei verschiedene Punkte anklicken, wird der X-Wert des ersten Elementes und der Y-Wert des zweiten Elementes genommen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin: 0.0104in 0 0.0833in 0.3750in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Soll der Referenzpunkt mit Abstand abgesetzt werden, benutzen Sie die Funktion </span><span class="f__Software_Element_deskriptiv">Retan</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin: 0.0104in 0 0.0833in 0.3750in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Ist der Bereich schr&auml;g angeordnet, ist es ratsam, das Arbeitskoordinatensystem zu drehen. Alternativ k&ouml;nnen Sie auch die Hilfsfunktion </span><span class="f__Software_Element_deskriptiv" style="font-size: 9pt;">S</span><span class="f_Step_Anmerkung"> [Schnitt] verwenden. Tippen Sie in das Eingabefeld ein </span><span class="f__Software_Element_deskriptiv">s</span><span class="f_Step_Anmerkung"> ein und klicken Sie anschlie&szlig;end zwei Schr&auml;gen an. Achten Sie darauf, bei beiden Parametern dieselbe Hilfsfunktion einzugeben!</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1458in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Koordinaten f&uuml;r die endg&uuml;ltige Lage an. [</span><span class="f__Abfrage">X-Refpu.Neu</span><span class="f_Step">]; [</span><span class="f__Abfrage">Y-Refpu.Neu</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung" style="margin: 0.0104in 0 0.0833in 0.3542in;"><span class="f_Step_Anmerkung">Die eingef&uuml;gte Zeichnung wird an den Referenzpunkten platziert. Sie k&ouml;nnen sofort eine weitere Zeichnung hinzuf&uuml;gen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:9.9479in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beliebig platzieren</span></p>
+<p class="p_R_Tabellenzeile"><img alt="B-akt_Versch_Versch" style="margin:0;width:0.8854in;height:0.1979in;border:none" src="b-akt_versch_versch.png"/><span class="f_R_Tabellenzeile"> </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin: 0.0625in 0 0.0208in 0.1458in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Platzieren Sie den Rahmen per Mausklick an der gew&uuml;nschten Stelle.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f__Abfrage">Korrektur</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">? </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_ImageCaption_zentriert"><img alt="B-akt_Nein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Treppenquerschnitt wird abgelegt. Sie k&ouml;nnen mit der Platzierung der Querschnittsdarstellung fortfahren.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bei der 3D-Treppe werden alle Ansichten entsprechend Ihren Angaben platziert; ISBCAD wechselt in das Men&uuml; Option.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.9375in;"><p class="p_ImageCaption_zentriert"><img alt="B_Ja_Klein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8854in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wiederholen Sie die Angaben zum Platzieren und Ausrichten des Treppenquerschnittes.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die ermittelte Bewehrung kann mit den Men&uuml;s des allgemeinen Bewehrungsprogrammes weiterbearbeitet werden. Das gilt insbesondere den Ausz&uuml;gen f&uuml;r die L&auml;ngsbewehrung. Sie k&ouml;nnen die Form der unteren und oberen Bewehrung mit [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">ForZus</span><span class="f_Step_Anmerkung"> &#8594; </span><span class="f__Software_Element_deskriptiv">zusamm</span><span class="f_Step_Anmerkung">] in eine einzige Auszugsform &uuml;berf&uuml;hren und &uuml;ber [</span><span class="f__Software_Element_deskriptiv">Konst1</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f__Software_Element_deskriptiv" style="font-size: 9pt;"> </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_Step_Anmerkung">] die Angabe der laufenden Meter auf einen sinnvollen Wert aufrunden. Diese &Auml;nderung wird in der Stahlliste folgerichtig weiterbehandelt.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

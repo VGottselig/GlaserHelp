@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gewendelte Treppe</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Konfiguration eines ¼-gewendelten Treppenverlaufes." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_treppen.htm">Treppe</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_gerader-treppenlauf.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_treppen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_halbgewendelte-treppe.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Gewendelte Treppe</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_treppen.htm" class="topiclink" title="Funktionsübersicht"><img alt="Funktionsübersicht" title="Funktionsübersicht" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_treppe.png"/></a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:0.7813in;"><p class="p_ImageCaption"><img alt="I_Treppe_gewendelt" style="margin:0;width:0.6458in;height:0.6354in;border:none" src="i_treppe_gewendelt.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:10.5208in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Konfiguration eines &frac14;-gewendelten Treppenverlaufes.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:5.6563in;"><p class="p_ImageCaption"><img alt="D_Gewendelte-Treppe_Geometrie" style="margin:0;width:5.6042in;height:4.1875in;border:none" src="d_gewendelte-treppe_geometrie.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.8229in;"><p class="p_ImageCaption"><img alt="D_Gewendelte-Treppe_Bewehrung" style="margin:0;width:5.6042in;height:4.1875in;border:none" src="d_gewendelte-treppe_bewehrung.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Registerkarte Geometrie</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die variablen Werte sind gegenseitig voneinander abh&auml;ngig. Wenn ein Wert ge&auml;ndert wird, passt sich die Geometrie der Treppe sofort diesen &Auml;nderungen an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Wangenl&auml;nge L1</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der L&auml;nge der ersten Wange. Der Wert muss gr&ouml;&szlig;er sein als die Summe von Laufbreite und Radius der Innenwange!</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Laufbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Breite des Treppenlaufs.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Auftrittsbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Breite des Auftritts.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Radius Innenwange</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Radius, mit dem die Innenwange ausgerundet werden soll.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Auftrittsbreite an Innenwange</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit diesem Wert wird die Verziehung variiert. Dies wirkt sich zusammen mit der Nummer der ersten geraden Stufe nach der Verziehung aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Erste gerade Stufenlinie nach Wendelung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Durch Ver&auml;nderung dieses Wertes wird die Verziehung optimiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl der Steigungen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Stufenanzahl.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Registerkarte Bewehrung</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Im Kreuzungsbereich der L&auml;ngsbewehrung wird keine Querbewehrung ber&uuml;cksichtigt.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die einzelnen Bewehrungsformen werden verschieden farbig dargestellt, damit Sie in der Querschnittsanzeige erkennen k&ouml;nnen, wo die Form liegt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Geschossh&ouml;he (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Geschossh&ouml;he.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Laufdicke&nbsp;(m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe der Dicke der Bodenplatte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Beton&shy;deckung&nbsp;(m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vorschlagswert aus den Systemdaten. [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Formstahl</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Positionierung</span><span class="f_R_Option_Beschreibung"> &#8594; </span><span class="f__Software_Element_deskriptiv">Vorschlag</span><span class="f_R_Option_Beschreibung"> </span><span class="f__Software_Element_deskriptiv">Betondeckung</span><span class="f_R_Option_Beschreibung"> </span><span class="f__Software_Element_deskriptiv">(cm)</span><span class="f_R_Option_Beschreibung">]</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Querbewehrung Form 1 / Querbewehrung oben &nbsp;/ Querbewehrung unten </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f__Software_Element_deskriptiv">Querbewehrung Form 1</span><span class="f_R_Bereich_Info_Rahmen"> kann alternativ zu den Formen </span><span class="f__Software_Element_deskriptiv">Querbewehrung unten</span><span class="f_R_Bereich_Info_Rahmen"> bzw. </span><span class="f__Software_Element_deskriptiv">Querbewehrung oben</span><span class="f_R_Bereich_Info_Rahmen"> verwendet werden. F&uuml;r die nicht gew&uuml;nschte Form w&auml;hlen Sie unter </span><span class="f__Software_Element_deskriptiv">Durchmesser &quot;ohne&quot;</span><span class="f_R_Bereich_Info_Rahmen"> oder geben Sie den Wert 0 ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Durchmessers.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Abstandes. Wenn Sie die Eingabe &uuml;ber die Tastatur vornehmen, geht es mit der Eingabe der Teill&auml;ngen weiter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie das Feld anklicken, wird die Anzahl dem Abstand angepasst. Sie k&ouml;nnen die Anzahl direkt angeben. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie die Teill&auml;ngen &auml;ndern m&ouml;chten, klicken Sie das Eingabefeld f&uuml;r die Teill&auml;nge an.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">L&auml;ngsbew. unten / L&auml;ngsbew. oben</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; font-weight: bold;"> </span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Angabe der L&auml;ngsbewehrungen. F&uuml;r die nicht gew&uuml;nschte Form w&auml;hlen Sie unter </span><span class="f__Software_Element_deskriptiv">Durchmesser</span><span class="f_R_Bereich_Info_Rahmen"> &quot;</span><span class="f__Software_Element_deskriptiv">ohne</span><span class="f_R_Bereich_Info_Rahmen">&quot; oder geben Sie den Wert </span><span class="f__Tastatur">0</span><span class="f_R_Bereich_Info_Rahmen"> ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe in Millimeter.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand (m)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Angabe des Abstandes. Wenn Sie die Eingabe &uuml;ber die Tastatur vornehmen, geht es mit der Eingabe der Teill&auml;ngen weiter.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Biegeform - [BiForm] Formstahl</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Biegeform,Biegeform Formstahl,BiForm,BiForm Formstahl,Formstahl,Formstahl Biegeform erzeugen" />
+   <meta name="description" content="Erzeugen, Ableiten und Bearbeiten einer Biegeform." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_querschnittseingabe_(allgemein).htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_formstahl.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_biform_forabl.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Biegeform</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <img alt="B-akt_BiForm" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_biform.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Erzeugen, Ableiten und Bearbeiten einer Biegeform.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">F&uuml;r &uuml;bliche Bewehrungsformen steht Ihnen die Formtyptabelle f&uuml;r Standardtypen [</span><span class="f__Software_Element_deskriptiv">ForTyp</span><span class="f_L_Listeneintrag">] zur Verf&uuml;gung.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn die Schalform so ausgebildet ist, dass kein Standardtyp verwendet werden kann, k&ouml;nnen Sie den Auszug mit der Funktion [</span><span class="f__Software_Element_deskriptiv">ForAbl</span><span class="f_L_Listeneintrag">] an einer Schalkante ableiten. Die Funktion [</span><span class="f__Software_Element_deskriptiv">ForSch</span><span class="f_L_Listeneintrag">] bietet Ihnen die meisten M&ouml;glichkeiten, um Biegeformen an Schalkanten zu entwickeln.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Eine weitere M&ouml;glichkeit besteht darin, die Form aus Linien und Teilkreisen vorzuzeichnen und dann in eine Auszugsform mit Verlegung zu &auml;ndern [</span><span class="f__Software_Element_deskriptiv">ForGeo</span><span class="f_L_Listeneintrag">]. Mit [</span><span class="f__Software_Element_deskriptiv">ForGeo</span><span class="f_L_Listeneintrag">] kann auch aus einer Stabstahlform eine Mattenform und umgekehrt gebildet werden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Vorbemerkungen:</span></h5>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Auszugsformen werden als Strichform gezeichnet. Jedes Ma&szlig; entspricht dem Au&szlig;enma&szlig;! Bei B&ouml;gen handelt es sich um den &auml;u&szlig;eren Umfang.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.5313in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="Z_Stahlauszug" style="margin:0;width:5.0313in;height:2.4583in;border:none" src="z_stahlauszug.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Im Normalfall werden alle Ma&szlig;e als Au&szlig;enma&szlig;e verstanden. Nur bei bestimmten Formen sollten Sie die Achsma&szlig;e verwenden.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Bei der Eingabe der Durchmesser (z. B. Formtyp&nbsp;12 [</span><span class="f__Software_Element_deskriptiv">ForTyp</span><span class="f_L_Listeneintrag">]) m&uuml;ssen Sie den Stabdurchmesser zweimal addieren.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Im Hinblick auf die (sp&auml;ter durchzuf&uuml;hrende) „Echtdarstellung“ m&uuml;ssen Sie die Ma&szlig;e auf die „richtige Seite“ bringen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Beim Erzeugen und Ver&auml;ndern von Biegeformen wird die Schnittl&auml;nge gepr&uuml;ft. Sollte die Lieferl&auml;nge &uuml;berschritten werden, erscheint eine entsprechende Meldung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.5208in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_Hinweis_Teillaengen" style="margin:0;width:2.6979in;height:1.6354in;border:none" src="d_hinweis_teillaengen.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Das Programm wird trotz der Meldung fortgesetzt. Je nachdem, in welchem Programmteil Sie sich befinden, k&ouml;nnen Sie mit <img alt="B_Bst" style="margin:0;width:0.5938in;height:0.2500in;border:none" src="b_bst.png"/> zur Eingabe der L&auml;nge zur&uuml;ckkehren oder, wenn die Aktion beendet ist, mit <img alt="B_Korrektur_zurueck" style="margin:0;width:0.6042in;height:0.2396in;border:none" src="b_korrektur_zurueck.png"/> die komplette Eingabe wiederholen. Als weitere M&ouml;glichkeiten k&ouml;nnen Sie die Funktionen [</span><span class="f__Software_Element_deskriptiv">DehFor</span><span class="f_R_Tabellenzeile">] (Form dehnen) oder [</span><span class="f__Software_Element_deskriptiv">&auml;ndTlg</span><span class="f_R_Tabellenzeile">] (Teill&auml;nge &auml;ndern) verwenden. Die Lieferl&auml;ngen werden in der Rundstahlliste eingetragen bzw. ge&auml;ndert. [</span><span class="f__Software_Element_deskriptiv">ISBCAD Hauptmen&uuml;</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Betonstahl</span><span class="f_R_Tabellenzeile"> </span><span class="f__Software_Element_deskriptiv">Tabellen</span><span class="f_R_Tabellenzeile">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Beim Verlegen wird nach Eingabe der Verlegebereichsl&auml;nge der wahre Abstand zwischen den Eisen ermittelt. Wird dabei der zul&auml;ssige Mindestabstand unterschritten, werden Sie durch eine Meldung darauf hingewiesen. Erg&auml;nzende Hinweise unterst&uuml;tzen Sie bei der Probleml&ouml;sung. Um nicht fachgerechte Verlegungen zu vermeiden, empfehlen wir dringend, die Hinweise in der Meldung zu ber&uuml;cksichtigen. Wenn Sie die Meldung ignorieren, k&ouml;nnen Sie auch mit den gew&auml;hlten Einstellungen weiterarbeiten.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Aufrunden von Hakenl&auml;ngen:</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In den Systemdaten k&ouml;nnen Sie angeben, ob Hakenl&auml;ngen an neu erzeugten Bewehrungsformen standardm&auml;&szlig;ig auf halbe oder ganze Zentimeter gerundet werden sollen. Voreingestellt ist das Runden auf halbe Zentimeter.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.4688in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auf </span><span class="f_Hervorhebung_Text">halbe</span><span class="f_R_Tabellenzeile"> Zentimeter gerundet</span></p>
+<p class="p_ImageCaption"><img alt="SCR_Haken_r_cm" style="margin:0;width:1.4792in;height:1.2396in;border:none" src="scr_haken_r_cm.png"/></p>
+</td>
+<td style="vertical-align:top; width:11.4271in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Auf </span><span class="f_Hervorhebung_Text">ganze</span><span class="f_R_Tabellenzeile"> Zentimeter gerundet</span></p>
+<p class="p_ImageCaption"><img alt="SCR_Haken_g_cm" style="margin:0;width:1.5313in;height:1.2188in;border:none" src="scr_haken_g_cm.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Biegebetriebe runden alle Teill&auml;ngen grunds&auml;tzlich auf ganze Zentimeter. Um sicherzustellen, dass Ihre Biegeform auch wie geplant auf die Baustelle geliefert wird, stellen Sie am besten die Option [</span><span class="f__Software_Element_deskriptiv">auf ganze cm aufrunden</span><span class="f_A_Allgemein">] ein.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info"><a href="rd_systemdaten_formstahl.htm#_haken_runden" class="topiclink" title="Systemdaten - Formstahl">&raquo; Systemdaten - Formstahl</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Funktionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_forabl.htm" class="topiclink" title="Biegeform an der Schalkante ableiten"><img alt="Biegeform an der Schalkante ableiten" title="Biegeform an der Schalkante ableiten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forabl.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform an der Schalkante ableiten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_fortyp.htm" class="topiclink" title="Biegeform aus einer Typentabelle erzeugen"><img alt="Biegeform aus einer Typentabelle erzeugen" title="Biegeform aus einer Typentabelle erzeugen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_fortyp.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform aus einer Typentabelle erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_forgeo.htm" class="topiclink" title="Biegeform aus Geometrie-Polygon erzeugen"><img alt="Biegeform aus Geometrie-Polygon erzeugen" title="Biegeform aus Geometrie-Polygon erzeugen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forgeo.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform aus Geometrie-Polygon erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_forsch.htm" class="topiclink" title="Formtyp an Schalung ableiten"><img alt="Formtyp an Schalung ableiten" title="Formtyp an Schalung ableiten" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_forsch.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeform an Schalung ableiten.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_lfdm.htm" class="topiclink" title="Gesamtlänge ermitteln"><img alt="Gesamtlänge ermitteln" title="Gesamtlänge ermitteln" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_lfdm.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Gesamtl&auml;nge ermitteln.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_loe_pos.htm" class="topiclink" title="Position löschen"><img alt="Position löschen" title="Position löschen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_loe-pos.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Position l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_durchm_aendern.htm" class="topiclink" title="Durchmesser ändern"><img alt="Durchmesser ändern" title="Durchmesser ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aend_biform.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Durchmesser &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_loe_form.htm" class="topiclink" title="Form löschen"><img alt="Form löschen" title="Form löschen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_loeform.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Form l&ouml;schen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_dehfor.htm" class="topiclink" title="Auszugsform dehnen"><img alt="Auszugsform dehnen" title="Auszugsform dehnen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_dehfor.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auszugsform dehnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_dehgeo.htm" class="topiclink" title="Geometrie dehnen"><img alt="Geometrie dehnen" title="Geometrie dehnen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_dehgeo.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Geometrie dehnen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; height:0.3125in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_aend_tlg.htm" class="topiclink" title="Teillänge ändern"><img alt="Teillänge ändern" title="Teillänge ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_aendtlg.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; height:0.3125in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Teill&auml;nge &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_add_tlg.htm" class="topiclink" title="Teillänge anfügen"><img alt="Teillänge anfügen" title="Teillänge anfügen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_addtlg.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Teill&auml;nge anf&uuml;gen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_forkop.htm" class="topiclink" title="Auszugsform kopieren"><img alt="Auszugsform kopieren" title="Auszugsform kopieren" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_forkop.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Auszugsform kopieren.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_info.htm" class="topiclink" title="Informationen zu Auszügen anzeigen"><img alt="Informationen zu Auszügen anzeigen" title="Informationen zu Auszügen anzeigen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_info_gruen.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Informationen zu Ausz&uuml;gen anzeigen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_addgew.htm" class="topiclink" title="Gewindestäbe erzeugen"><img alt="Gewindestäbe erzeugen" title="Gewindestäbe erzeugen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_addgew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Mechanische Verbindungen erzeugen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_subgew.htm" class="topiclink" title="Gewinde entfernen"><img alt="Gewinde entfernen" title="Gewinde entfernen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_subgew.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Mechanische Verbindungen entfernen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_summtx.htm" class="topiclink" title="Summandentext für Auszüge anlegen"><img alt="Summandentext für Auszüge anlegen" title="Summandentext für Auszüge anlegen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_summtx.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Summandentext f&uuml;r Ausz&uuml;ge anlegen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_bilitx.htm" class="topiclink" title="Biegeliste mit Zusatztext ergänzen"><img alt="Biegeliste mit Zusatztext ergänzen" title="Biegeliste mit Zusatztext ergänzen" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_bilitx.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegeliste mit Zusatztext erg&auml;nzen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_biedur.htm" class="topiclink" title="Biegerollendurchmesser anzeigen"><img alt="Biegerollendurchmesser anzeigen" title="Biegerollendurchmesser anzeigen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_biedur.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Biegerollendurchmesser anzeigen.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="formst_biform_guetumr.htm" class="topiclink" title="Positionsumrandung oder Stahlgüte ändern"><img alt="Positionsumrandung oder Stahlgüte ändern" title="Positionsumrandung oder Stahlgüte ändern" style="margin:0;width:1.1771in;height:0.2500in;border:none" src="b_guetumr.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Positionsumrandung oder Stahlg&uuml;te &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_formst_oertbie.htm" class="topiclink" title="Örtlich zu biegende Bewehrung erzeugen oder ändern"><img alt="Örtlich zu biegende Bewehrung erzeugen oder ändern" title="Örtlich zu biegende Bewehrung erzeugen oder ändern" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_oertbie.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;rtlich zu biegende Bewehrung erzeugen oder &auml;ndern.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><a href="tsk_formst_oertbie_loesche.htm" class="topiclink" title="Örtlich zu biegende Bewehrung entfernen"><img alt="Örtlich zu biegende Bewehrung entfernen" title="Örtlich zu biegende Bewehrung entfernen" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b_oertloes.png"/></a></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">&Ouml;rtlich zu biegende Bewehrung entfernen.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Reference_Menue" >
+<thead>
+<tr class="Reference_Menue">
+<th class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-left:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Optionen</span></p>
+</th>
+<th class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none;" scope="col"><p class="p_R_table_header"><span class="f_R_table_header">Beschreibung</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Gewählte Positionsnummer" title="Gewählte Positionsnummer" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_pos-x.png"/><img alt="Voreinstellung des Durchmessers" title="Voreinstellung des Durchmessers" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_d-10_115px.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">Pos.X</span><span class="f_R_Tabellenzeile_Menue">: Gew&auml;hlte Positionsnummer.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue"> </span><span class="f__Software_Element_deskriptiv">&Oslash;...</span><span class="f_R_Tabellenzeile_Menue">: Voreinstellung des Durchmessers; Anzeige ggf. mit aktueller Anzahl der Stahlelemente.</span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="Bauteilfaktor" title="Bauteilfaktor" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_nbautl_vedusn.png"/><img alt="Betondeckung. Ruft den Dialog Betondeckung nach EC 2 auf." title="Betondeckung. Ruft den Dialog Betondeckung nach EC 2 auf." style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_nom-c_vedusn.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">nBautl=...</span><span class="f_R_Tabellenzeile_Menue">: Voreingestellter Bauteilfaktor. [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_R_Tabellenzeile_Menue"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_R_Tabellenzeile_Menue"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_R_Tabellenzeile_Menue">].</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f__Software_Element_deskriptiv">0.03</span><span class="f_R_Tabellenzeile_Menue">: Aktuell eingestellte Betondeckung. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Betondeckung nach EC2</span><span class="f_R_Tabellenzeile_Menue">.</span></p>
+<p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue"><a href="rd_betondeckung-nach-ec2.htm" class="topiclink" title="Dialogbeschreibung / Auswahl der Expositionsklassen">&raquo; Betondeckung nach EC2</a></span></p>
+</td>
+</tr>
+<tr class="Reference_Menue">
+<td class="Reference_Menue" style="width:2.4167in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><img alt="B_Lg=0-00" style="margin:0;width:1.5729in;height:0.2292in;border:none" src="b_lg=0-00.png"/></p>
+</td>
+<td class="Reference_Menue" style="width:11.6667in; border:solid 0.0417in #ffffff; border-right:none; border-left:none;"><p class="p_R_Tabellenzeile_Menue"><span class="f_R_Tabellenzeile_Menue">Aktuelle L&auml;nge (in Eingabeeinheiten).</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

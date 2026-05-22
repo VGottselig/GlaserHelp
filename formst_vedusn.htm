@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Biegeform mit gleichen Durchmessern verlegen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Formstahl,Formstahl Biegeform mit gleichen Durchmessern im Schnitt verlegen,VeDuSn" />
+   <meta name="description" content="Alternativ: Mittlere Maustaste auf Durchmesser im Schnitt. " />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="des_verlegungen-im-schnitt.htm">Verlegung mit Schnittdarstellungen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_verlegung-bearbeiten_(positionen-im-schnitt).htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="des_verlegungen-im-schnitt.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_gleiche-durchmesser-in-schnittdarstellung-vorhandene-verlegung-bearbeiten.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Biegeform mit gleichen Durchmessern verlegen (in Schnittdarstellung)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="des_verlegungen-im-schnitt.htm" class="topiclink" title="Verlege-Methoden (Übersicht)"><img alt="Verlege-Methoden (Übersicht)" title="Verlege-Methoden (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_vedusn.png"/></a> </span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Alternativ: Mittlere Maustaste auf Durchmesser im Schnitt. </span></p>
+<p class="p_Aufruf" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Aufruf">Wenn </span><span class="f__Software_Element_deskriptiv">AutFol</span><span class="f_Aufruf"> (untere Men&uuml;leiste) eingestellt ist, werden die Verlegungen in Folie&nbsp;4 abgelegt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verlegen gleicher Biegeform-Durchmesser mit konstantem Abstand (wie bei einer Staffel). ISBCAD f&uuml;hrt Sie automatisch durch die ben&ouml;tigten Arbeitsschritte, beginnend mit der Auswahl einer Biegeform [</span><span class="f__Software_Element_deskriptiv">W&auml;hFor</span><span class="f_Task_Info">].</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die folgende Meldung erscheint nach dem Best&auml;tigen des Verlegefaktors, wenn eine neue Position mit einem gr&ouml;&szlig;eren Durchmesser erzeugt wird:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.5208in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="D_aendere_durchmesser_vedusn" style="margin:0;width:3.2292in;height:1.8854in;border:none" src="d_aendere_durchmesser_vedusn.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Listeneintrag" style="margin: 0.0313in 0 0.0833in 0.5208in;"><span class="f_L_Listeneintrag">Sie haben die M&ouml;glichkeit, die Hakenl&auml;ngen der Auszugsform an den neuen Durchmesser anzupassen. Um die Hakenl&auml;ngen anzupassen, w&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_L_Listeneintrag">. Wenn die aktuellen Hakenl&auml;ngen nicht angepasst werden sollen, w&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_L_Listeneintrag">.</span><br>
+<span class="f_L_Listeneintrag">Siehe: <a href="des_endhaken.htm" class="topiclink" title="Hakenlängen an den Stabdurchmesser anpassen">Hakenl&auml;ngen an den Stabdurchmesser anpassen</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Biegeform f&uuml;r die Verlegung w&auml;hlen [W&auml;hFor]</span></p>
+<p class="p_Step"><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Vkn an</span><span class="f_Step">, wenn Sie die Verlegung mit einer anderen Verlegung mit derselben Form verkn&uuml;pfen wollen. Klicken Sie die Verlegung an. [</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Siehe auch: <a href="formst_vestaf_vkn.htm" class="topiclink">Verlegungen verkn&uuml;pfen</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Vkn aus</span><span class="f_Step">, wenn Sie die Form nicht verkn&uuml;pfen wollen. [</span><span class="f__Abfrage">Welche Form</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie nach einer Verlegung die Verlegeform wechseln m&ouml;chten, schalten Sie den Verkn&uuml;pfungsmodus aus: <img alt="B-akt_VKN-aus" style="margin:0;width:1.1042in;height:0.1979in;border:none" src="b-akt_vkn-aus.png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie ein Element der Auszugsform an. Sie k&ouml;nnen auch die Texte anklicken. F&uuml;r die Verlegung steht dann nur die Information der Positionsnummer und der Durchmesser (wenn schon verlegt) zur Verf&uuml;gung.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Wenn Sie eine Verlegung oder Positionierung anklicken, steht neben der Positionsnummer auch der Durchmesser, die Anzahl bzw. der Abstand als auch die Verlegebreite zur Verf&uuml;gung.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen die Positionsnummer auch direkt in die Eingabe eingeben. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Durchmesser und Abstand bzw. Anzahl angeben [&oslash;/ab n]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Stababstand bzw. Anzahl der St&auml;be k&ouml;nnen automatisch anhand des erforderlichen Stahlquerschnittes </span><span class="f_R_Tabellenzeile">(</span><span class="f__Abfrage">erf.as(cm&sup2;/m </span><span class="f_R_Tabellenzeile">bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) </span><span class="f_ToDo_Info">und des gew&auml;hlten Stabdurchmessers ermittelt werden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.5208in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Bei der Formstahlverlegung wird nach Eingabe der Verlegebereichsl&auml;nge der wahre Abstand zwischen den St&auml;ben ermittelt. Wird dabei der zul&auml;ssige Mindestabstand unterschritten, werden Sie durch eine Meldung darauf hingewiesen. Erg&auml;nzende Hinweise unterst&uuml;tzen Sie bei der Probleml&ouml;sung. Wenn Sie die Meldung ignorieren, k&ouml;nnen Sie auch mit den gew&auml;hlten Einstellungen weiterarbeiten. </span><br>
+<span class="f_Hinweis_in_Tabelle">Um nicht fachgerechte Verlegungen zu vermeiden, empfehlen wir dringend, die Hinweise in der Meldung zu ber&uuml;cksichtigen. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die gew&uuml;nschte Berechnungsart oder &uuml;bernehmen Sie die Werte aus einer vorhandenen Verlegung (Schaltfl&auml;chen unter </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step">):</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Abstand" style="margin:0 auto 0 auto;width:0.9792in;height:0.2292in;border:none" src="b_abstand.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch den Stababstand f&uuml;r den pro Meter erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.as(cm&sup2;/m</span><span class="f_R_Tabellenzeile">). Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe des erforderlichen Stahlquerschnittes ist optional. Wird kein Wert oder 0 angegeben, muss der Abstand der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;</span><span class="f_R_Tabellenzeile">)] den gew&uuml;nschten Wert hat. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Anzahl" style="margin:0 auto 0 auto;width:0.9896in;height:0.2292in;border:none" src="b_anzahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Berechnet automatisch die f&uuml;r den erforderlichen Stahlquerschnitt (</span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">) ben&ouml;tigte Mindestanzahl der St&auml;be. Das Resultat kann sofort &uuml;bernommen oder individuell angepasst werden. Der resultierende Stahlquerschnitt wird zum Vergleich angezeigt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">]. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Die Angabe von </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_R_Tabellenzeile"> ist optional. Wird kein Wert oder 0 angegeben, muss die Anzahl der St&auml;be im Folgenden versuchsweise eingegeben werden, bis der resultierende Stahlquerschnitt [</span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;)</span><span class="f_R_Tabellenzeile">] den gew&uuml;nschten Wert hat.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An der Positionierung wird auch der nominelle Abstand angeschrieben.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_sowie_bew" style="margin:0 auto 0 auto;width:0.9792in;height:0.2188in;border:none" src="b_sowie_bew.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2083in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&Uuml;bernahme des Durchmessers, Abstands bzw. der Anzahl aus einer vorhandenen Verlegung. [</span><span class="f__Abfrage">So wie welche Verlegung?</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie die Verlegung an, deren Werte Sie &uuml;bernehmen m&ouml;chten. Je nach Berechnungsart wird </span><span class="f__Software_Element_deskriptiv">Abstand</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">Anzahl</span><span class="f_R_Tabellenzeile"> aktiviert. Die Abfrage wechselt zu [</span><span class="f__Abfrage">KOR?</span><span class="f_R_Tabellenzeile">] (s. weiter unten).</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis</span><span class="f_R_Tabellenzeile">: Eine Verlegung in Form von z. B. &quot;0 &#8960; 12&quot; kann nicht angeklickt werden. Die Verlegung muss eine Verlegeanzahl enthalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den erforderlichen Stahlquerschnitt ein und best&auml;tigen Sie die Angabe [</span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_Step"> bzw. </span><span class="f__Abfrage">erf.As(cm&sup2;)</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie in der Liste unter </span><span class="f__Abfrage">&oslash;</span><span class="f_Step"> per Mausklick den Stabdurchmesser.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn der erforderliche Stahlquerschnitt eingegeben wurde, berechnet ISBCAD automatisch den bestm&ouml;glichen Wert f&uuml;r den Abstand bzw. die Stabanzahl und schl&auml;gt diesen unter </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung">) vor. Der resultierende Stahlquerschnitt wird unter </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Wenn der resultierende Stahlquerschnitt</span><span class="f_Step_Anmerkung"> </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step"> gr&ouml;&szlig;er/gleich dem erforderlichen Stahlquerschnitt </span><span class="f__Abfrage">erf.As(cm&sup2;/m) </span><span class="f_Step">ist, k&ouml;nnen Sie den Wert f&uuml;r </span><span class="f__Abfrage">Abstand(&gt;0)</span><span class="f_Step_Anmerkung"> bzw. </span><span class="f__Abfrage">Anzahl(&gt;=1)</span><span class="f_Step_Anmerkung"> </span><span class="f_Step">best&auml;tigen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alternativ k&ouml;nnen Sie einen anderen Wert angeben (und best&auml;tigen) und den resultierenden Stahlquerschnitt </span><span class="f__Abfrage_Resultat">vorh.As(cm&sup2;/m)</span><span class="f_Step_Anmerkung"> pr&uuml;fen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Pr&uuml;fen Sie, ob das Resultat Ihren Anforderungen entspricht. </span><br>
+<span class="f_Step">Wollen Sie die Angaben &auml;ndern.</span><span class="f_ImageCaption"> </span><span class="f_Step">[</span><span class="f__Abfrage">KOR</span><span class="f_Step">]?</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B_Ja_Klein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b_ja_klein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Korrigieren Sie Ihre Angaben beginnend mit </span><span class="f__Abfrage">erf.As(cm&sup2;/m)</span><span class="f_R_Tabellenzeile"> (erforderlicher Stahlquerschnitt) oder verwenden Sie <img alt="B_--Bst" style="margin:0;width:0.6354in;height:0.1979in;border:none" src="b_--bst.png"/> (untere Men&uuml;leiste).</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1771in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="B-akt_Nein" style="margin:0 auto 0 auto;width:0.6979in;height:0.2396in;border:none" src="b-akt_nein.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:8.2188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der resultierende Stahlquerschnitt wird beibehalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Verlegebereich definieren [BerDef]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Wie bei der Staffelverlegung kann die Darstellung der Verlegung in verschiedener Form erfolgen. Entweder Sie stellen den ersten, einen mittleren und den letzten Durchmesser, die ersten und letzten drei oder alle Durchmesser dar. Zus&auml;tzlich besteht die M&ouml;glichkeit, z. B. bei einer gro&szlig;en Anzahl von Durchmessern, eine gew&auml;hlte Auswahl der Durchmesser zu zeichnen. Wenn noch keine Form gew&auml;hlt wurde, werden Sie durch eine Meldung dar&uuml;ber informiert.</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Bevor oder w&auml;hrend Sie eine Staffel verlegen, k&ouml;nnen Sie die Darstellung der Staffel individuell anpassen oder eine vorgegebene Form ausw&auml;hlen. Die Darstellungsoption stehen Ihnen bis zur Best&auml;tigung des Verlegefaktors zur Verf&uuml;gung.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um die Darstellung der Verlegestaffel anzupassen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">W&auml;hlen Sie im Funktionsbereich eine Darstellungsoption.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.1458in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_ImageCaption_zentriert"><img alt="B_111_VeDuSn" style="margin:0 auto 0 auto;width:0.7292in;height:0.2500in;border:none" src="b_111_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Je ein Stab am Anfang und am Ende; zus&auml;tzlich einer in der Mitte. </span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_ImageCaption_zentriert"><img alt="B_3plus3_VeDuSn" style="margin:0 auto 0 auto;width:0.7292in;height:0.2500in;border:none" src="b_3plus3_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Jeweils drei St&auml;be am Anfang und am Ende werden dargestellt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_ImageCaption_zentriert"><img alt="B_Alle_VeDuSn" style="margin:0 auto 0 auto;width:0.7500in;height:0.2500in;border:none" src="b_alle_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden alle St&auml;be dargestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: -0.7813in; line-height: 1.20; margin: 0 0 0 0.7813in;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Eine weitere M&ouml;glichkeit besteht darin, die St&auml;be mittels der Option </span><span class="f__Software_Element_deskriptiv">beliebige D.</span><span class="f_R_Tabellenzeile"> der Verlegung auszuw&auml;hlen, die gezeichnet werden sollen.</span></p>
+<p class="p_SA_Tabelle"><img alt="B_beliebige-D" style="margin:0;width:1.5729in;height:0.2292in;border:none" src="b_beliebige-d.png"/></p>
+<p class="p_SA_Tabelle"><span class="f_SA_Tabelle">Diese Schaltfl&auml;che erscheint, nachdem Sie einen Verlegebereich definiert haben und w&auml;hrend die Abfrage des Verlegefaktors aktiv ist. Wenn Sie diese Schaltfl&auml;che anklicken, werden wieder alle St&auml;be gezeigt.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die St&auml;be an, die nicht gezeigt werden sollen. [</span><span class="f__Abfrage">Welche Eisen nicht darstellen</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_SA_Tabelle"><span class="f_SA_Tabelle">Die ausgew&auml;hlten St&auml;be werden markiert. Wenn Sie einen markierten Stab erneut anklicken, wird die Markierung wieder aufgehoben. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.1458in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_R_Tabellenzeile" style="text-indent: -0.7813in; margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f__Software_Element_deskriptiv">Alle an</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Alle St&auml;be werden wieder dargestellt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_R_Tabellenzeile" style="text-indent: -0.7813in; margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f__Software_Element_deskriptiv">Alle aus</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es werden alle St&auml;be au&szlig;er dem ersten und dem letzten ausgeblendet.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.8542in;"><p class="p_R_Tabellenzeile" style="text-indent: -0.7813in; margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f__Software_Element_deskriptiv">umkehren</span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.9167in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Auswahl wird umgekehrt. Wenn viele St&auml;be in einer Verlegung liegen, klicken Sie nur die an, die sichtbar sein sollen. Durch das Umkehren werden dann alle nicht angeklickten St&auml;be markiert. Der erste und der letzte Stab werden immer dargestellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Best&auml;tigen Sie die Darstellung mit Rechtsklick oder <img alt="B_Beenden" style="margin:0;width:1.0833in;height:0.2188in;border:none" src="b_beenden.png"/>.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Um die Verlegestaffel zu bearbeiten und auszurichten</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nachdem Sie einen Verlegebereich definiert haben und w&auml;hrend die Abfrage des Verlegefaktors aktiv ist, k&ouml;nnen Sie die Darstellung der Verlegung &auml;ndern.</span></p>
+<p class="p_ImageCaption"><img alt="Z_Verlegebereich-definieren_Verlegefaktor_01" style="margin:0;width:6.2292in;height:1.6771in;border:none" src="z_verlegebereich-definieren_verlegefaktor_01.png"/></p>
+<h5 class="p_Heading5" style="margin: 0.1771in 0 0.0313in 0;"><span class="f_Heading5">Anfang und Ende der Verlegestaffel bearbeiten</span></h5>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Diese Optionen stehen erst zur Verf&uuml;gung, wenn der Durchmesser und der Abstand angegeben wurden. [</span><span class="f__Software_Element_deskriptiv">&Oslash; ab/n</span><span class="f_R_Tabellenzeile">]</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.6042in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.2604in;"><span class="f_A_Allgemein">(Anfang) </span><span class="f__Software_Element_deskriptiv">0 &nbsp;/ 0 </span><span class="f_A_Allgemein">(Ende)</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.7708in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.2604in;"><span class="f__Software_Element_deskriptiv">1 / 0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.8333in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.2604in;"><span class="f__Software_Element_deskriptiv">0 / 1</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.7917in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.2604in;"><span class="f__Software_Element_deskriptiv">1 / 1</span></p>
+</td>
+<td class="Optionen_Palette" style="width:0.8438in;"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.2188in;"><span class="f__Software_Element_deskriptiv">.5 / .5</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.20; margin: 0 0 0 0.2604in;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0521in 0 0.0625in 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7500in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0.2188in 0.0625in 0.2188in;"><span class="f__Software_Element_deskriptiv">0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">= Stab wird verlegt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7500in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0.2188in 0.0625in 0.2188in;"><span class="f__Software_Element_deskriptiv">1</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">= Stab wird nicht verlegt. Die Staffel beginnt/endet um einen Abstand versetzt.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:0.7500in;"><p class="p_Normal" style="text-align: center; margin: 0.0417in 0.2188in 0.0625in 0.2188in;"><span class="f__Software_Element_deskriptiv">.5</span></p>
+</td>
+<td class="Optionen_Palette" style="width:8.0417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">= Am Anfang und am Ende werden die St&auml;be um einen halben Abstand nach innen verschoben.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">So wird's gemacht:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie &uuml;ber die Schaltfl&auml;chen oben links (unter der Eingabezeile) die Art der Verlegung. </span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_gezielt" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_gezielt.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Verlegebereich wird &uuml;ber die X- und Y-Koordinate des Anfangs- und Endpunktes beschrieben.</span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldugezielt" class="topiclink">&raquo;&nbsp;gezielt</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Rand-Parallel" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_rand-parallel.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Verlegebereich wird auf eine Linie/Kreis = Rand bezogen. Am Kreis werden die St&auml;be radial verlegt. </span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldurandparallel" class="topiclink">&raquo;&nbsp;Rand/parallel</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_ImageCaption"><img alt="B_Rand-orthogonal" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_rand-orthogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Verlegebereich wird rechtwinklig von einer Bezugslinie = Rand weg definiert. </span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldurandortho" class="topiclink">&raquo;&nbsp;Rand/orthogonal</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_ImageCaption"><img alt="B_frei_(166px)" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_frei_(166px).png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Freie Definition des Verlegebereiches. </span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldufrei" class="topiclink">&raquo;&nbsp;frei</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Feld_VeDuSn" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_feld_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Verlegebereich wird in zwei Staffeln aufgeteilt, die kammartig ineinander greifen. Anfang und Ende werden durch zwei gegen&uuml;berliegende Linien bestimmt. &nbsp;</span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldufeld" class="topiclink">&raquo;&nbsp;Feld</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_Stuetzwand_VeDuSn" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_stuetzwand_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Der Verlegebereich wird durch zwei parallele Linien gebildet. Die St&auml;be werden mittig darauf angeordnet. &nbsp;</span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldustuetzwand" class="topiclink">&raquo;&nbsp;St&uuml;tzwand</a></span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.9792in;"><p class="p_R_Tabelle_Kopf"><img alt="B_frei-einzeln_VeDuSn" style="margin:0;width:1.7292in;height:0.2396in;border:none" src="b_frei-einzeln_vedusn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:10.5417in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Es wird kein Verlegebereich definiert, sondern die St&auml;be werden einzeln mit festgelegter Reihenfolge bzw. v&ouml;llig frei verlegt. &nbsp;</span><br>
+<span class="f_R_Tabellenzeile"><a href="formst_vedusn.htm#bformgldufreieinzeln" class="topiclink">&raquo;&nbsp;frei, einzeln</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step">&nbsp;</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Verlegeoptionen:</span></h5>
+<h5 class="p_Heading5"><a name="bformgldugezielt" class="hmanchor"></a><img alt="B-akt_gezielt" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_gezielt.png"/></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Verlegebereich wird &uuml;ber die X- und Y-Koordinate des Anfangs- und Endpunktes beschrieben. Liegt der Anfangs- oder Endpunkt der Staffel an einer schr&auml;gen Linie, ist es ratsam, das Arbeitskoordinatensystem zu drehen. Alternativ k&ouml;nnen Sie auch die Hilfsfunktion </span><span class="f__Software_Element_deskriptiv">S</span><span class="f_Task_Info"> [Schnitt] verwenden, um den Anfangs- und/oder Endpunkt an den Schnittpunkt zweier Linien zu setzen. Tippen Sie in das Eingabefeld ein </span><span class="f__Software_Element_deskriptiv">s</span><span class="f_Task_Info"> ein und klicken Sie anschlie&szlig;end die Bezugslinie an. Mit Rechtsklick k&ouml;nnen Sie die Betondeckung &uuml;bernehmen. Wenn Sie bei einem Parameter (X oder Y) f&uuml;r den Anfangs- und/oder Endpunkt die Hilfsfunktion verwenden, achten Sie darauf, auch beim anderen Parameter die Hilfsfunktion einzugeben!</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">XBer-Anf</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine Bezugslinie f&uuml;r den Anfangspunkt an.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Zu der angeklickten Linie wird ein Wert addiert oder subtrahiert, der sich aus dem halben Stabdurchmesser der gew&auml;hlten Form plus einem Zentimeter (1/2 &Oslash; + 1cm) zusammensetzt.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Linienkennung und die voreingestellte Betondeckung werden in die Eingabe geschrieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie nach der Linienkennung den Wert f&uuml;r die Betondeckung mit dem entsprechenden Vorzeichen ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Mit Rechtsklick k&ouml;nnen Sie die voreingestellte Betondeckung &uuml;bernehmen. Wenn kein Abstand angegeben werden soll, geben Sie als Differenz </span><span class="f__Tastatur">0</span><span class="f_Step_Anmerkung"> (Null) ein. </span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">YBer-Anf</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Gehen Sie f&uuml;r die Angabe des Y-Wertes wie bei [XBer-Anf] beschrieben vor.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Zeichenmarke wird an den Anfangspunkt gesetzt.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">XBer-Ende</span><span class="f_Step">]; [</span><span class="f__Abfrage">YBer-Ende</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie Bezugslinien f&uuml;r den Endpunkt wie bei [XBer-Anf] beschrieben an.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_01" style="margin:0;width:7.4479in;height:1.5833in;border:none" src="z_v-im-schnitt_01.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="bformgldurandparallel" class="hmanchor"></a><img alt="B-akt_Rand-parallel" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_rand-parallel.png"/></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Verlegebereich wird auf eine Linie/Kreis = Rand bezogen.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Welcher Rand</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Rand auf der Seite an, auf der die Staffel verlegt werden soll.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Randabstand</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Als Randabstand wird der Wert der Betondeckung [</span><span class="f__Software_Element_deskriptiv">nom&nbsp;c</span><span class="f_Step_Info">] + 1cm + 1/2 </span><span class="f_Task_Info">&Oslash;</span><span class="f_Step_Info"> vorgeschlagen. </span><span class="f_Task_Info">Mit Rechtsklick k&ouml;nnen Sie den in der Eingabe stehenden Wert &uuml;bernehmen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Wert ein. Wenn dieser negativ ist, wird der Abstand zur anderen Seite gemessen. Schlie&szlig;en Sie die Eingabe mit der Eingabetaste ab.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Eckab1</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]; [</span><span class="f__Abfrage">Eckab2</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Mit negativen Werten wird die Staffel &uuml;ber die Ecke hinaus verl&auml;ngert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Eine Bezugnahme auf andere Linien ist nicht m&ouml;glich. Die Eckabst&auml;nde beziehen sich auf die angeklickte Randlinie. Sie werden zur Linienmitte hin positiv gemessen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie jeweils beliebige Werte f&uuml;r die Abst&auml;nde am Anfang und am Ende ein. Schlie&szlig;en Sie die Eingabe jeweils mit der Eingabetaste ab</span><span class="f_Step_Anmerkung">. </span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, ein oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_02" style="margin:0;width:7.8333in;height:1.3125in;border:none" src="z_v-im-schnitt_02.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="bformgldurandortho" class="hmanchor"></a><img alt="B-akt_Rand-orthogonal" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_rand-orthogonal.png"/></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Verlegebereich wird rechtwinklig auf die Mitte einer Bezugslinie (= Rand) definiert.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Welcher Rand</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Rand auf der Seite an, auf der die Staffel angeordnet werden soll.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Randabstand</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Als Randabstand wird der Wert der Betondeckung [</span><span class="f__Software_Element_deskriptiv">nom&nbsp;c</span><span class="f_Step_Info">] + 2 cm vorgeschlagen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie einen Abstand zum Rand ein und best&auml;tigen Sie mit der Eingabetaste oder &uuml;bernehmen Sie den vorgeschlagenen Wert mit Rechtsklick.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Staffelbreite</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die Staffelbreite ein und best&auml;tigen Sie mit der Eingabetaste oder &uuml;bernehmen Sie den vorgeschlagenen Wert mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die Positionsnummer durch Anklicken einer vorhandenen Verlegung angegeben haben, wird hier die dort gespeicherte Verlegetiefe vorgeschlagen. Sie k&ouml;nnen den Wert mit Rechtsklick best&auml;tigen.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_03" style="margin:0;width:7.8125in;height:1.1771in;border:none" src="z_v-im-schnitt_03.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="bformgldufrei" class="hmanchor"></a><img alt="B-akt_frei_VeDuSn" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_frei_vedusn.png"/></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Freie Definition des Verlegebereiches.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlegebreite</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Staffel wird mit den zurzeit eingestellten Parametern am Cursor dargestellt. Wenn Sie bei Wahl der Position auf eine Verlegung klicken, wird die Breite dieser Verlegung vorgeschlagen. Mit Rechtsklick k&ouml;nnen Sie den vorgeschlagenen Wert &uuml;bernehmen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie die gew&uuml;nschte Breite ein und best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlegema&szlig;stab</span><span class="f_Step">]</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Es wird der Ma&szlig;stab vorgeschlagen, in dem die Auszugsform gezeichnet ist. Unter der Abfrage werden die Standardma&szlig;st&auml;be in einer Dropdown-Liste angeboten. Klicken Sie auf den gew&uuml;nschten Ma&szlig;stab, um diesen zu &uuml;bernehmen. Sie k&ouml;nnen auch eine Linie anklicken, dann wird der Ma&szlig;stab der Linie &uuml;bernommen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Ma&szlig;stab in das Eingabefeld ein und best&auml;tigen Sie mit der Eingabetaste. </span></p>
+<p class="p_Step"><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Verteilungsrichtung</span><span class="f_Step_Anmerkung">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Winkel direkt in das Eingabefeld ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="2"  style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Siehe auch: <a href="linien_linien-mit-konstruktionshilfen-zeichnen.htm#ausrichten" class="topiclink" title="Konstruktionshilfen; Ausrichtungsoptionen">Ausrichtungsoptionen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step"><span class="f_Step"> [</span><span class="f__Abfrage">Lage</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schieben Sie die Staffel an die gew&uuml;nschte Stelle und legen Sie die Staffel mit Linksklick ab.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_04" style="margin:0;width:7.2083in;height:1.4583in;border:none" src="z_v-im-schnitt_04.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="bformgldufeld" class="hmanchor"></a><img alt="B-akt_Feld_VeDuSn" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_feld_vedusn.png"/></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Der Verlegebereich wird in zwei Staffeln aufgeteilt. Anfang und Ende werden durch zwei gegen&uuml;berliegende Linien bestimmt. Die Verteilung der Durchmesser erfolgt abwechselnd zur einen und zur anderen Linie.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">1.Linie</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Linie</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die erste angeklickte Linie wird als Bezugslinie f&uuml;r die Staffeln benutzt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die zwei Linien an, zwischen denen die Feldbewehrung verlegt werden soll.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Eckab1</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]; [</span><span class="f__Abfrage">Eckab2</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Mit Rechtsklick k&ouml;nnen Sie den vorgeschlagenen Ma&szlig;stab &uuml;bernehmen.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Der Eckabstand1 wird an der zuerst angeklickten Linie in Verlegerichtung (positiv) gemessen. Soll der Staffelanfang &uuml;ber die Linie hinaus verschoben werden, m&uuml;ssen Sie den Wert negativ eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Der Eckabstand2 wird vom Ende der zuerst angeklickten Linie in Richtung auf den Anfangspunkt (positiv) gemessen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie jeweils einen Wert f&uuml;r den Abstand ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Aufl.1</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]; [</span><span class="f__Abfrage">Aufl.2</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">F&uuml;r die Auflagertiefe werden immer pauschal 10cm vorgeschlagen. Mit Rechtsklick k&ouml;nnen Sie den vorgeschlagenen Ma&szlig;stab &uuml;bernehmen.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Positive Werte gehen in Richtung Auflager.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie jeweils einen Wert f&uuml;r die Auflagertiefe ein und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_05" style="margin:0;width:7.8958in;height:1.4271in;border:none" src="z_v-im-schnitt_05.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><a name="bformgldustuetzwand" class="hmanchor"></a><img alt="B-akt_Stuetzwand_VeDuSn" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_stuetzwand_vedusn.png"/></h5>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Der Verlegebereich wird durch zwei parallele Linien gebildet. Die St&auml;be werden mittig dazwischen angeordnet.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">1.Linie</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]; [</span><span class="f__Abfrage">2.Linie</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Verlegebereich bezieht sich auf die zuerst angeklickte Linie.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie zwei Linien an. </span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Eckab1</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">];</span><span class="f__Abfrage"> </span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Eckab2</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span><br>
+<span class="f_Step_Anmerkung">Der erste bzw. letzte Stab wird markiert. Der Verlegebereich wird um das Ma&szlig; der Betondeckung nach innen vorgeschlagen. Mit negativen Werten k&ouml;nnen Sie den Verlegebereich &uuml;ber die L&auml;nge der ersten Linie hinaus verl&auml;ngern.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie den Vorschlagswert mit Rechtsklick oder geben Sie einen abweichenden Betrag ein und best&auml;tigen mit der Eingabetaste.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Versatz</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span><span class="f_Step"> </span><br>
+<span class="f_Step_Anmerkung">Durch die Angabe eines Versatzes werden zwei ineinander verzahnte Staffeln erzeugt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie den Vorschlag (0 = kein Versatz) mit Rechtsklick oder geben Sie ein Ma&szlig; f&uuml;r den L&auml;ngsversatz ein und best&auml;tigen mit der Eingabetaste.</span></p>
+<p class="p_Step"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">[</span><span class="f__Abfrage">Ausmitte</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">]</span><span class="f_Step"> </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Positive Werte verschieben den Schwerpunkt der Staffel(n) in Richtung der zweiten angeklickten Linie.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie den Vorschlag (0 = keine Ausmitte) mit Rechtsklick oder geben Sie einen Wert f&uuml;r die Verschiebung ein und best&auml;tigen mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_06" style="margin:0;width:7.8229in;height:1.1667in;border:none" src="z_v-im-schnitt_06.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><a name="bformgldufreieinzeln" class="hmanchor"></a><img alt="B-akt_frei-einzeln_VeDuSn" style="margin:0;width:2.9479in;height:0.2500in;border:none" src="b-akt_frei-einzeln_vedusn.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Es wird kein Verlegebereich definiert, sondern die St&auml;be werden einzeln mit festgelegter Reihenfolge bzw. v&ouml;llig frei verlegt.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Ma&szlig;stab</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Der Ma&szlig;stab wird vorgeschlagen, in dem der Auszug dargestellt ist. Sie k&ouml;nnen den vorgeschlagenen Wert mit Rechtsklick best&auml;tigen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Ma&szlig;stab an, in dem Sie die St&auml;be verlegen m&ouml;chten und best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">BerWi</span><span class="f_Step">]</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Winkel an, um den die Verlegerichtung gedreht werden soll.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">in Reihe</span><span class="f_Step">]</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.7083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">0 = Nein</span></p>
+</td>
+<td style="vertical-align:top; width:11.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Bedeutet, dass jeder Stab f&uuml;r sich an einer beliebigen Stelle abgelegt werden kann.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">1 = Ja</span></p>
+</td>
+<td style="vertical-align:top; width:11.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Hei&szlig;t, dass die St&auml;be exakt mit konstantem Abstand in einer Reihe verlegt werden. Als Wert wird der Betrag aus der Eingabe f&uuml;r Abstand genommen, auch wenn hier die Anzahl gew&auml;hlt wurde.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Tippen Sie die entsprechende Ziffer in die Eingabe und best&auml;tigen Sie mit der Eingabetaste. Mit Rechtsklick k&ouml;nnen Sie den Vorschlag best&auml;tigen.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Lage ankl.</span><span class="f_Step">]</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.7083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">In Reihe</span><br>
+<span class="f_R_Tabelle_Kopf">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:11.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Jeder Klick verlegt einen Stab. Die Verlegerichtung wird durch die Lage des Cursors in Bezug auf den ersten Stab bestimmt. Ist der Bereichswinkel 0&deg;, dann wird nach rechts verlegt, wenn der Cursor rechts vom ersten Stab liegt. Wenn die Verlegung nach links erfolgen soll, m&uuml;ssen Sie sich mit dem Cursor links vom ersten Stab befinden.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7083in; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Nicht in Reihe</span></p>
+</td>
+<td style="vertical-align:top; width:11.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">An jede Stelle, die Sie anklicken, wird ein Stab abgelegt. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ab dem 2. Durchmesser k&ouml;nnen Sie den </span><span class="f_Hervorhebung_Text">Orthogonalmodus</span><span class="f_R_Tabellenzeile"> aktivieren, um nachfolgende Durchmesser orthogonal zum Systemwinkel zu verlegen. Halten Sie hierf&uuml;r die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_R_Tabellenzeile"> (Shift) beim Absetzen gedr&uuml;ckt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie f&uuml;r jeden zu verlegenden Stab einmal die linke Maustaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Beenden Sie die Verlegung mit Rechtsklick.</span></p>
+<p class="p_Step"><span class="f_Step">[</span><span class="f__Abfrage">Verlege-Faktor</span><span class="f_Step">]</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Die Angabe des Verlege-Faktors ist f&uuml;r die jeweils erste Verlegung erforderlich. Handelt es sich um eine Wiederholung einer, an anderer Stelle gez&auml;hlten, Verlegung, k&ouml;nnen Sie auch den Wert </span><span class="f__Tastatur">0</span><span class="f_Step_Info"> (Null) eingeben.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Wenn diese Verlegung in der Stahlliste ber&uuml;cksichtigt werden soll, geben Sie einen Wert &#8805;</span><span class="f__Tastatur">1</span><span class="f_Step_Info"> ein. Der Auszugstext wird nach jeder &Auml;nderung aktualisiert.</span></p>
+<p class="p_Step_Info"><span class="f_Step_Info">Im linken Abfragebereich wird Ihnen der aktuell eingestellte Bauteilfaktor angezeigt. Diesen k&ouml;nnen Sie ggf. unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">nBautl</span><span class="f_Step_Info"> | </span><span class="f__Software_Element_deskriptiv">Voreinstellg</span><span class="f_Step_Info">] &auml;ndern. </span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Verlege-Faktor ein, mit dem die Anzahl der verlegten St&auml;be multipliziert werden soll, oder klicken Sie einen Wert in der Dropdown-Liste an und best&auml;tigen Sie mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Verlegebereich definieren.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption"><img alt="Z_V-im-Schnitt_07" style="margin:0;width:7.2708in;height:1.2813in;border:none" src="z_v-im-schnitt_07.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_gleiche-durchmesser-in-schnittdarstellung-vorhandene-verlegung-bearbeiten.htm" class="topiclink" title="Verlegung bearbeiten (Gleiche Durchmesser in Schnittdarstellung)">Verlegung bearbeiten (Gleiche Durchmesser in Schnittdarstellung)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="formst_vedusn_beldar.htm" class="topiclink" title="Darstellung der Staffel ändern">Darstellung der Staffel &auml;ndern</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_endhaken.htm" class="topiclink" title="Haken der Auszugsform an den Stabdurchmesser anpassen">Haken der Auszugsform an den Stabdurchmesser anpassen</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

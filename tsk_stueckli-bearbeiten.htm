@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Stücklisten verwalten</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Stückliste,Stückliste verwalten" />
+   <meta name="description" content="Bearbeiten der Stückliste. Öffnet den Dialog Stückliste Auswahlfenster." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="konst1_stueckliste2.htm">Stückliste</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="konst1_stueckliste2.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="konst1_stueckliste2.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="tsk_stueckli-text-setzen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">St&uuml;cklisten verwalten</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="konst1_stueckliste2.htm" class="topiclink" title="Stückliste (Funktionsübersicht)"><img alt="Stückliste (Funktionsübersicht)" title="Stückliste (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_stklis.png"/></a> </span><img alt="B-akt_Liste_StkListe" style="margin:0;width:1.0938in;height:0.2500in;border:none" src="b-akt_liste_stkliste.png"/></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Bearbeiten der St&uuml;ckliste. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">St&uuml;ckliste</span><span class="f_Task_Info"> </span><span class="f__Software_Element_deskriptiv">Auswahlfenster</span><span class="f_Task_Info">.</span></p>
+<p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;St&uuml;ckliste Auswahlfenster&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;" role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="D_Stueckliste-Auswahlfenster" style="margin:0;width:5.8125in;height:3.2396in;border:none" src="d_stueckliste-auswahlfenster.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Einbauteile</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in der Ordnerstruktur der Verzweigungsknoten als &quot;Plus (+)&quot; dargestellt wird, enth&auml;lt der Ordner weitere Unterordner oder Eintr&auml;ge. Klicken Sie auf das Plus-Symbol, um weitere Verzeichnungsebenen anzuzeigen. Um die Ebenen auszublenden, klicken Sie auf das Minus-Symbol (-).</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit der rechten Maustaste erscheint ein kontextabh&auml;ngiges Men&uuml;:</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option">Klick auf einen Ordner:</span><span class="f_R_Option_Beschreibung"> Hinzuf&uuml;gen von weiteren Unterordnern oder Einbauteilen bzw. L&ouml;schen oder &Auml;ndern.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#191919;text-decoration:none;">&#183;</span><span class="f_R_Option">Klick auf ein Einbauteil:</span><span class="f_R_Option_Beschreibung"> &Auml;ndern oder L&ouml;schen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Eintr&auml;ge werden alphabetisch sortiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Einbauteile in Zeichnung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zur &Uuml;bersicht werden hier die Einbauteile aufgelistet, die in der Zeichnung verwendet werden. Die Eintr&auml;ge werden alphabetisch sortiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Positionskreis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige des Textes f&uuml;r das markierte Einbauteil, der im Positionskreis erscheint. </span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text f&uuml;r St&uuml;ckliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anzeige des Textes f&uuml;r das markierte Einbauteil, der in der Tabelle erscheint.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&ouml;schen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht den markierten Eintrag.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Auml;ndern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet das Eingabefenster f&uuml;r den im Ordner </span><span class="f__Software_Element_deskriptiv">Einbauteile</span><span class="f_R_Option_Beschreibung"> oder </span><span class="f__Software_Element_deskriptiv">Einbauteile in Zeichnung</span><span class="f_R_Option_Beschreibung"> markierten Eintrag.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0.0313in; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0.4063in;"><img alt="D_Einbauteil-aendern" style="margin:0;width:4.1875in;height:2.3333in;border:none" src="d_einbauteil-aendern.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Positionskreis</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option">Ordner Einbauteile</span><span class="f_R_Option_Beschreibung">: &Auml;ndern Sie die Kennzeichnung des Einbauteils. Dieser Text wird in die Positionsumrandung geschrieben. Die Gr&ouml;&szlig;e der Umrandung ist abh&auml;ngig von der Anzahl der Zeichen. Bei mehr als drei Zeichen wird die Positionsumrandung entsprechend gr&ouml;&szlig;er.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r Sonderzeichen steht die Funktion </span><img alt="I_Sonderzeichen" style="margin:0;width:0.2708in;height:0.1979in;border:none" src="i_sonderzeichen.png"/><span class="f_R_Option_Beschreibung"> zur Verf&uuml;gung. Siehe: <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink">Sonderzeichen einf&uuml;gen</a>; [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Sonderzeichen</span><span class="f_R_Option_Beschreibung">].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option">Ordner Einbauteile in Zeichnung</span><span class="f_R_Option_Beschreibung">: Befindet sich das zu &auml;ndernde Einbauteil in der Zeichnung, wird nach dem Best&auml;tigen mit </span><span class="f__Software_Element_deskriptiv">Weiter</span><span class="f_R_Option_Beschreibung"> der Text in der Positionsumrandung angepasst. Sind in der Zeichnung mehrere Einbauteile desselben Typs vorhanden, werden alle Texte angepasst. Falls eine St&uuml;ckliste im Plan abgelegt ist, muss diese aktualisiert werden.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Auswahlfenster</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dieser Text wird im Ordner </span><span class="f__Software_Element_deskriptiv">Einbauteile</span><span class="f_R_Option_Beschreibung"> angezeigt und kann dort f&uuml;r den Eintrag ge&auml;ndert werden.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text f&uuml;r St&uuml;ckliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beschreibung des Einbauteils. Dieser Text wird in der St&uuml;ckliste geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vergebene Positionsnummern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn ein Eintrag im Ordner </span><span class="f__Software_Element_deskriptiv">Einbauteile</span><span class="f_R_Option_Beschreibung"> ge&auml;ndert wird, werden hier die Kennzeichnungen aufgelistet, die bereits f&uuml;r Positionsumrandungen definiert sind. Siehe Eingabe: </span><span class="f__Software_Element_deskriptiv">Text im Positionskreis</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Eintrag wird &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Aktion wird beendet, Eingaben werden verworfen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hinzuf&uuml;gen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hinzuf&uuml;gen eines Einbauteiles in den aktuellen gew&auml;hlten Ordner. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Einbauteil hinzuf&uuml;gen</span><span class="f_R_Option_Beschreibung">. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0.0313in; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0.4063in;"><img alt="D_Einbauteil-hinzufuegen" style="margin:0;width:4.1875in;height:2.3333in;border:none" src="d_einbauteil-hinzufuegen.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Positionskreis</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie als Text eine Kennzeichnung des Einbauteils ein. Dieser Text wird in die Positionsumrandung geschrieben. Die Gr&ouml;&szlig;e der Umrandung ist abh&auml;ngig von der Anzahl der Zeichen. Bei mehr als drei Zeichen wird die Positionsumrandung entsprechend gr&ouml;&szlig;er.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r Sonderzeichen steht die Funktion  </span><img alt="I_Sonderzeichen" style="margin:0;width:0.2708in;height:0.1979in;border:none" src="i_sonderzeichen.png"/><span class="f_R_Option_Beschreibung">  zur Verf&uuml;gung.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe: <a href="texte_sonderzeichen_einfuegen.htm" class="topiclink">Sonderzeichen einf&uuml;gen</a>; [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_R_Option_Beschreibung"> | </span><span class="f__Software_Element_deskriptiv">Sonderzeichen</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Auswahlfenster</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dieser Text wird im Ordner </span><span class="f__Software_Element_deskriptiv">Einbauteile</span><span class="f_R_Option_Beschreibung"> angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text f&uuml;r St&uuml;ckliste</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Beschreibung des Einbauteils. Dieser Text wird in der St&uuml;ckliste geschrieben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Vergebene Positionsnummern</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Listet die Kennzeichnungen auf, die bereits f&uuml;r Positionsumrandungen definiert sind. Siehe Eingabe: </span><span class="f__Software_Element_deskriptiv">Text im Positionskreis</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Eintrag wird &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Aktion wird beendet, Eingaben werden verworfen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Neuer Ordner</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Erstellen eines Unterordners im aktuell gew&auml;hlten Ordner. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Neuen Ordner erstellen</span><span class="f_R_Option_Beschreibung">. </span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0.0313in; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0.3854in;"><img alt="D_Neuen-Ordner-erstellen" style="margin:0;width:4.1875in;height:2.3333in;border:none" src="d_neuen-ordner-erstellen.png"/></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Text im Auswahlfenster</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie die Beschreibung des Unterordners an. Er wird eine Ebene unterhalb des markierten Ordners alphabetisch sortiert eingef&uuml;gt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">&Uuml;brige Eingabefelder</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Hier nicht aktiv, weil keine Positionen eingegeben werden k&ouml;nnen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Der Eintrag wird &uuml;bernommen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Aktion wird beendet, Eingaben werden verworfen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Tabelleneingabe ab und wechselt zur Funktion [</span><span class="f__Software_Element_deskriptiv">TxtSet</span><span class="f_R_Option_Beschreibung">].</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Weiter</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD wechselt zur Funktion [</span><span class="f__Software_Element_deskriptiv">TxtSet</span><span class="f_R_Option_Beschreibung">]. Das gew&auml;hlte Einbauteil kann in der Zeichnung positioniert werden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stueckli-text-setzen.htm" class="topiclink">St&uuml;cklistentext setzen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_stueckli-aktualisieren.htm" class="topiclink">St&uuml;ckliste auf dem Plan aktualisieren</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenz:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst1_stueckliste2.htm" class="topiclink">St&uuml;ckliste (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

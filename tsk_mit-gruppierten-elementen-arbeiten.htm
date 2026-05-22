@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gruppierte Elemente auswählen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Gruppe,Gruppe auswählen,Gruppe bearbeiten" />
+   <meta name="description" content="Auswählen von anwenderdefinierten Gruppen und deren Zeichenelementen." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-3.htm">Konstruktion 3</a> &gt; <a href="rm_gruppe.htm">Gruppe</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_gruppe-aufloesen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_gruppe.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_gruppenmanager.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Gruppierte Elemente ausw&auml;hlen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Ausw&auml;hlen von anwenderdefinierten Gruppen und deren Zeichenelementen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Gruppen sind hierarchisch gegliedert. Die Obergruppe vererbt vorgenommene &Auml;nderungen auf alle Untergruppen, wie z. B. Status = gesperrt/nicht gesperrt, eine &Auml;nderung des Ma&szlig;stabs oder der Stiftfarbe.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn eine Gruppe </span><span class="f_Hervorhebung_Text">nicht selektiert</span><span class="f_L_Listeneintrag"> oder nur teilweise selektiert wird, kann es daran liegen, dass Elemente im <a href="des_elemente-filter.htm" class="topiclink">Elemente-Filter</a> ausgeschlossen sind. Pr&uuml;fen Sie auch, ob die Elemente bzw. deren Folien im <a href="folienmanager.htm" class="topiclink">Folienmanager</a> gesperrt sind.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Gruppen und einzelne Gruppenelemente bilden nach dem Kopieren mit [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Kopier</span><span class="f_L_Listeneintrag">] und Duplizieren mit [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Dupliz</span><span class="f_L_Listeneintrag">] eine neue Gruppe. Der Gruppenname und die Beschreibung werden dabei aus der urspr&uuml;nglichen Gruppe &uuml;bernommen. Im </span><span class="f__Software_Element_deskriptiv">Gruppenmanager</span><span class="f_L_Listeneintrag"> k&ouml;nnen Sie alle erzeugten Gruppen einsehen und den Gruppennamen und die Beschreibung &auml;ndern.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um eine Gruppe auszuw&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie die Gruppe mit einem Linksklick aus.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie den Cursor &uuml;ber ein Gruppenelement bewegen, wird die gesamte Gruppe hervorgehoben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um Untergruppen und einzelne Elemente innerhalb einer Gruppe auszuw&auml;hlen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Sie k&ouml;nnen Untergruppen und einzelne Elemente in einer Gruppe ausw&auml;hlen.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Auswahl per Strg-Taste</span></p>
+<p class="p_Step"><span class="f_Step">Bei dieser Auswahlfunktion w&auml;hlen Sie einzelne Elemente innerhalb von Gruppen aus.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie eine Funktion, z. B. Verschieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die </span><span class="f__Tastatur">Strg</span><span class="f_Step">-Taste und f&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Klicken Sie ein oder mehrere Elemente nacheinander an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Ziehen Sie einen Rahmen um die Elemente. Wenn Sie den Rahmen von links nach rechts aufziehen, werden nur Elemente ausgew&auml;hlt, die sich vollst&auml;ndig im Rahmen befinden. Ziehen Sie den Rahmen umgekehrt auf, dann werden auch Elemente ausgew&auml;hlt, die vom Rahmen angeschnitten werden.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen Elemente wieder abw&auml;hlen, indem Sie auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung"> umschalten und bei gedr&uuml;ckter </span><span class="f__Tastatur">Strg</span><span class="f_Step">-Taste</span><span class="f_Step_Anmerkung"> die Elemente aus der Auswahl entfernen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Auswahl per Mehrfachklick</span></p>
+<p class="p_Step"><span class="f_Step">Bei dieser Auswahlfunktion f&uuml;hrt Sie jeder Klick eine Ebene tiefer in der Gruppenhierarchie.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.5313in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Beispiel:</span></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><br>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0.1146in;"><img alt="SCR_Gruppe_G1" style="margin:0;width:2.8333in;height:1.2292in;border:none" src="scr_gruppe_g1.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><p class="p_Normal">Die Gruppen G1, G2 und G3 sind in der Gruppe G4 zusammengefasst.</p>
+<p class="p_Normal">Daraus ergibt sich die folgende Gruppenhierarchie:</p>
+<p class="p_L_Listeneintrag"><span class="f_L_Listeneintrag">+ G4 (Obergruppe)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.5208in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listeneintrag">G1 (Untergruppe)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.5208in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listeneintrag">G2 (Untergruppe)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin: 0.0313in 0 0.0833in 0.5208in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_L_Listeneintrag">G3 (Untergruppe)</span></p></td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_Normal"><img alt="SCR_Gruppe_G3" style="margin:0;width:2.5000in;height:0.7292in;border:none" src="scr_gruppe_g3.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><p class="p_Normal">Ein Klick auf ein Gruppenelement selektiert alle Untergruppen der Gruppe G4. </p>
+<p class="p_Normal">Die angeklickten Elemente werden in der Farbe f&uuml;r &quot;Markieren&quot; [<span class="f__Software_Element_deskriptiv">Option</span> | <span class="f__Software_Element_deskriptiv">SysDat</span> | <span class="f__Software_Element_deskriptiv">Farbeinstellungen</span> | <span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span> &#8594; <span class="f__Software_Element_deskriptiv">Markieren</span>] dargestellt.</p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_Normal"><img alt="SCR_Gruppe_G4" style="margin:0;width:2.5000in;height:0.7292in;border:none" src="scr_gruppe_g4.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><p class="p_Normal">Ein weiterer Klick auf die Untergruppe G3 markiert diese. Diese Untergruppe kann jetzt unabh&auml;ngig von anderen Untergruppen bearbeitet werden.</p>
+<p class="p_Normal">Das Ergebnis entspricht der Auswahl per <span class="f__Tastatur">Strg</span> + Aufziehen eines Rahmens um die Gruppe.</p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_Normal"><img alt="SCR_Gruppe_G5" style="margin:0;width:2.5000in;height:0.7292in;border:none" src="scr_gruppe_g5.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><p class="p_Normal">Ein weiterer Klick auf ein einzelnes Element der Untergruppe G3 markiert dieses. Dieses Zeichenelement kann unabh&auml;ngig von anderen Gruppenelementen bearbeitet werden.</p>
+<p class="p_Normal">Das Ergebnis entspricht der Auswahl per <span class="f__Tastatur">Strg</span> + Klick auf die Linie.</p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="width:3.4479in;"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0.1979in;"><img alt="SCR_Gruppe_G6" style="margin:0;width:2.8125in;height:0.7083in;border:none" src="scr_gruppe_g6.png"/></p>
+</td>
+<td class="B_Bild_Tabelle" style="width:6.6667in;"><p class="p_Normal">Verschobene Einzellinie innerhalb der Untergruppe G3.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Gruppen und Folien</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie zur Bearbeitung eine Gruppe ausw&auml;hlen, die Elemente auf ausgeblendeten Folie enth&auml;lt, erhalten Sie die folgende Meldung:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.56; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="D_Folien" style="margin:0;width:3.0833in;height:1.8750in;border:none" src="d_folien.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Einleitung">Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Ja</span><span class="f_L_Einleitung"> klicken, wird die Aktion fortgesetzt und die ausgeblendeten Elemente werden bei der Bearbeitung nicht ber&uuml;cksichtigt.</span></p>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Einleitung">Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Nein</span><span class="f_L_Einleitung"> klicken, wird die Aktion abgebrochen und Sie k&ouml;nnen eine andere Funktion ausw&auml;hlen.</span></p>
+<p class="p_L_Einleitung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3125in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Einleitung">Wenn Sie auf </span><span class="f__Software_Element_deskriptiv">Folienmanager</span><span class="f_L_Einleitung"> klicken, wird der Dialog </span><span class="f__Software_Element_deskriptiv">Folienmanager</span><span class="f_L_Einleitung"> ge&ouml;ffnet. Sie k&ouml;nnen die Elemente auf den Folien einblenden, die bei der Bearbeitung ber&uuml;cksichtigt werden sollen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_gruppe-erzeugen.htm" class="topiclink" title="Gruppe erzeugen">Gruppe erzeugen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="tsk_gruppe-aufloesen.htm" class="topiclink" title="Gruppe auflösen">Gruppe aufl&ouml;sen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="ref_gruppenmanager.htm" class="topiclink" title="Gruppenmanager (Dialog)">Gruppenmanager</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="folienmanager.htm" class="topiclink" title="Folienmanager (Dialog)">Folienmanager</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_anzeige-auswahl-und-filterfunktionen.htm" class="topiclink">Auswahlfunktionen (Selektion)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

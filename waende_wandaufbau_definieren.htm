@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wanddefinition (Referenz)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Wand,Wand Wandaufbau definieren" />
+   <meta name="description" content="Auswahl/Konfiguration eines Wandaufbaus. Öffnet den Dialog Wanddefinition." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-2.htm">Konstruktion 2</a> &gt; <a href="waende.htm">Zeichnen von Wänden</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="waende_wand_zeichnen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="waende.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="positionskreise.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Wanddefinition (Referenz)</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-2.htm" class="topiclink" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 2 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst2.png"/></a><span class="f_Aufruf"> <a href="waende.htm" class="topiclink" title="Wände zeichnen (Funktionsübersicht)"><img alt="Wände zeichnen (Funktionsübersicht)" title="Wände zeichnen (Funktionsübersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_wandze.png"/></a> <img alt="B-akt_Defini_Wandze" style="margin:0;width:1.1667in;height:0.2396in;border:none" src="b-akt_defini_wandze.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Auswahl/Konfiguration eines Wandaufbaus. </span><span class="f_L_Listeneintrag">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Wanddefinition</span><span class="f_L_Listeneintrag">.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Wanddefinition" style="margin:0;width:9.2292in;height:3.1979in;border:none" src="d_wanddefinition.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Wandaufbau</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Liste der verf&uuml;gbaren Wandaufbauten mit Wandbezeichnung und Angabe der Schichtdicken. </span><br>
+<span class="f_R_Bereich_Info_Rahmen">(Beispiel: </span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">AW1&nbsp;0.115&nbsp;0.14&nbsp;0.175</span><span class="f_R_Bereich_Info_Rahmen"> f&uuml;r eine zweischalige Au&szlig;enwand mit entsprechenden Wandschichten).</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Attribute</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Darstellung der Linien f&uuml;r den in der </span><span class="f__Software_Element_deskriptiv">Wandaufbau</span><span class="f_R_Bereich_Info_Rahmen">-Liste gew&auml;hlten Wandaufbau.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Je nach Anzahl der Schichten, werden entsprechend viele Zeilen angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">StiftNr.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Aus der Liste k&ouml;nnen Sie die gew&uuml;nschte Stiftnummer ausw&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linientyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;r jede Linie wird der entsprechende Linientyp gew&auml;hlt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen jede Linie in eine gesonderte Folie zeichnen. Dazu w&auml;hlen Sie aus der Ausklappliste die gew&uuml;nschte Folie aus. Diese muss vorhanden sein und darf nicht ausgeblendet sein. Ist die Zielfolie nicht vorhanden, erscheint ein Hinweis. Sie k&ouml;nnen diese mit dem Folienmanager erzeugen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Vorschau</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Die Vorschau zeigt Ihnen direkt, wie der Wandaufbau in der Zeichnung aussehen wird.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Neu_01" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_neu_01.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anlegen eines neuen Wandaufbaus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Loeschen" style="margin:0;width:0.7604in;height:0.2604in;border:none" src="b_loeschen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">L&ouml;scht den markierten Wandaufbau.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_alle-zeilen-wie" style="margin:0;width:1.4271in;height:0.2604in;border:none" src="b_alle-zeilen-wie.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzt alle Attribute des gew&auml;hlten Wandaufbaus so, wie f&uuml;r Linie 1 definiert.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Folienmanager" style="margin:0;width:1.4271in;height:0.2604in;border:none" src="b_folienmanager.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Anlegen und Verwalten von Folien. &Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv"><a href="folienmanager.htm" class="topiclink" title="Folirnmanager">Folienmanager</a></span><span class="f_R_Option_Beschreibung">. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Siehe auch die Optionen [</span><span class="f__Software_Element_deskriptiv">FolAkz</span><span class="f_R_Option_Beschreibung">] und [</span><span class="f__Software_Element_deskriptiv">Follgn</span><span class="f_R_Option_Beschreibung">] im Funktionsbereich. </span><span class="f_Step"><a href="waende.htm" class="topiclink" title="Zeichnen von Wänden - Optionen">&raquo; Optionen</a></span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_OK" style="margin:0;width:0.7708in;height:0.2396in;border:none" src="b_ok.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Schlie&szlig;t den Dialog. &Uuml;bernimmt alle &Auml;nderungen und w&auml;hlt den in der Wandaufbau-Liste markierten Eintrag zum Zeichnen aus.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_Abbrechen" style="margin:0;width:0.7813in;height:0.2188in;border:none" src="b_abbrechen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle &Auml;nderungen werden verworfen und der Dialog geschlossen.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p_A_Allgemein" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_A_Allgemein"><a href="waende.htm" class="topiclink">Zeichnen von W&auml;nden (Men&uuml;)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

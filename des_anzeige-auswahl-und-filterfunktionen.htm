@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Auswahlfunktionen (Selektion)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Auswahlfunktion - Selektion,Elemente,Elemente auswählen,Elemente selektieren,Elementgruppen (ISBCAD Gruppen),Entfer,Hinzuf,ISBCAD Gruppen (Elementgruppen),Selektion" />
+   <meta name="description" content="Damit Sie in ISBCAD Elemente bearbeiten können, müssen Sie sie zunächst auswählen. In allen Menüs, in denen Zeichenelemente bearbeitet werden können, stehen Ihnen im..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_-isbcad-allgemeine-bedienung.htm">Grundlagen der Bedienung</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="des_abfrage-_und_eingabezeile.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_-isbcad-allgemeine-bedienung.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="des_bildausschnitt-zoomen-und-verschieben.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <h2 class="p_Heading2" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading2">Auswahlfunktionen (Selektion)</span></h2>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_A_Allgemein"><span class="f_A_Allgemein">Damit Sie in ISBCAD Elemente bearbeiten k&ouml;nnen, m&uuml;ssen Sie sie zun&auml;chst ausw&auml;hlen. In allen Men&uuml;s, in denen Zeichenelemente bearbeitet werden k&ouml;nnen, stehen Ihnen im Funktionsbereich verschiedene Funktionen zur Auswahl von Elementen zur Verf&uuml;gung. Sie k&ouml;nnen einzelne Elemente ausw&auml;hlen, beliebig viele Rahmen aufziehen und Gruppen sowie einzelne Elemente innerhalb von Gruppen selektieren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" style="border:none; border-spacing:0;">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_ImageCaption"><img alt="SCR_Auswahl" style="margin:0;width:2.6667in;height:0.8750in;border:none" src="scr_auswahl.png"/></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Auswahlmodus; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Auswahlfunktionen</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Auswahlmodus w&auml;hlen</a></span></p>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2917in;"><table class="Optionen_Palette"  role="presentation">
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile"><img alt="B_Hinzuf" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_hinzuf.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:13.5000in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Elemente ausw&auml;hlen oder zur Auswahl hinzuf&uuml;gen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie den Modus [</span><span class="f__Software_Element_deskriptiv">Hinzuf</span><span class="f_R_Tabellenzeile">] an. In diesem Modus k&ouml;nnen Sie mit einer beliebigen Auswahlfunktion Elemente ausw&auml;hlen. Solange die Funktion aktiv ist, k&ouml;nnen Sie weitere Elemente zur Auswahl hinzuf&uuml;gen und zwischen den verschiedenen Auswahlfunktionen wechseln.</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.1042in;"><p class="p_R_Tabellenzeile"><img alt="B_Entfer_Elementauswahl" style="margin:0;width:1.1042in;height:0.2500in;border:none" src="b_entfer_elementauswahl.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:13.5000in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Elemente aus der Auswahl entfernen</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie den Modus [</span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_R_Tabellenzeile">] an. In diesem Modus k&ouml;nnen Sie mit einer beliebigen Auswahlfunktion Elemente aus der Auswahl entfernen. Anstatt auf [</span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_R_Tabellenzeile">] umzustellen, k&ouml;nnen Sie durch Dr&uuml;cken der Umschalt-Taste vor&uuml;bergehend auf [</span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_R_Tabellenzeile">] wechseln. Dazu wird am Cursor ein Minuszeichen eingeblendet.</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_Minus" style="margin:0;width:1.3333in;height:0.8542in;border:none" src="scr_minus.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Auswahlfunktionen verwenden</a></span></p>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><h5 class="p_Heading5"><span class="f_Heading5">Elemente im Rechteck ausw&auml;hlen</span></h5>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Elemente-im-Rechteck" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">F&uuml;r die Auswahl von Zeichenelementen stehen Ihnen zwei Modi zur Verf&uuml;gung:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie den Rahmen von </span><span class="f_Hervorhebung_Text">links nach rechts</span><span class="f_L_Listeneintrag"> aufziehen, werden alle Elemente markiert, die sich vollst&auml;ndig im Rahmen befinden. </span><br>
+<span class="f_L_Listeneintrag">Vollst&auml;ndig bedeutet bei:</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Linien</span><span class="f_L_Listenunterpunkt">: Anfangs- und Endpunkt;</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Kreise/Teilkreise</span><span class="f_L_Listenunterpunkt">: komplett;</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Texte</span><span class="f_L_Listenunterpunkt">: der Punkt links unten am Textanfang;</span></p>
+<p class="p_L_Listenunterpunkt" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.6354in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hervorhebung_Text">Textfelder</span><span class="f_L_Listenunterpunkt">: der komplette Textrahmen.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wenn Sie den Rahmen von </span><span class="f_Hervorhebung_Text">rechts nach links</span><span class="f_L_Listeneintrag"> aufziehen, werden auch Elemente markiert, die sich nicht vollst&auml;ndig im Rahmen befinden.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0.0208in;">
+<tr>
+<td colspan="2"  style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Auswahl: links nach rechts</span></p>
+</td>
+<td colspan="2"  style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Auswahl: rechts nach links</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1354in; padding:0.0208in; border:none"><p class="p_ImageCaption_zentriert"><img alt="SCR_RahmenRL_01" style="margin:0 auto 0 auto;width:1.6458in;height:0.9792in;border:none" src="scr_rahmenrl_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_ImageCaption_zentriert"><img alt="SCR_RahmenRL_02" style="margin:0 auto 0 auto;width:1.6354in;height:0.9688in;border:none" src="scr_rahmenrl_02.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2708in; padding:0.0208in; border:none"><p class="p_ImageCaption_zentriert"><img alt="SCR_RahmenLR_01" style="margin:0 auto 0 auto;width:1.6250in;height:0.9583in;border:none" src="scr_rahmenlr_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_ImageCaption_zentriert"><img alt="SCR_RahmenLR_02" style="margin:0 auto 0 auto;width:1.6354in;height:0.9688in;border:none" src="scr_rahmenlr_02.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1354in; padding:0.0208in; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Rahmen von links nach rechts aufziehen</span></p>
+</td>
+<td style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Komplett im Rahmen liegende Elemente werden markiert</span></p>
+</td>
+<td style="vertical-align:top; width:2.2708in; padding:0.0208in; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Rahmen von rechts nach links aufziehen</span></p>
+</td>
+<td style="vertical-align:top; width:2.2813in; padding:0.0208in; border:none"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Alle angeschnittenen Elemente werden markiert</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Punkt an, von dem aus der rechteckige Rahmen aufgezogen werden soll. [</span><span class="f__Abfrage">1.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor, um die gew&uuml;nschte Rahmengr&ouml;&szlig;e zu erhalten, und klicken Sie den zweiten Punkt an. [</span><span class="f__Abfrage">1.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Elemente werden markiert. Sie k&ouml;nnen sofort einen weiteren Rahmen aufziehen, Elemente hinzuf&uuml;gen oder entfernen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit einem Rechtsklick.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Um [</span><span class="f__Software_Element_deskriptiv">Elemente &uuml;ber rechteckige Rahmen ausw&auml;hlen</span><span class="f_Hinweis_in_Tabelle">] als Standardfunktion zu verwenden, setzen Sie bei [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">Selektieren von Elementen nicht automatisch</span><span class="f_Hinweis_in_Tabelle">] einen Haken.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Elemente im Polygon ausw&auml;hlen</span></h5>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Elemente-im-Polygon" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-polygon.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf die Anfangsposition f&uuml;r das erste gerade Segment und klicken Sie ein zweites Mal auf die Position, an der das erste Segment enden und das n&auml;chste Segment anfangen soll. Klicken Sie weiter, um die n&auml;chsten Segmente zu erstellen. Sie k&ouml;nnen maximal 20 Punkte anklicken. [</span><span class="f__Abfrage">1.Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die rechte Maustaste, um den Polygonzug zu schlie&szlig;en.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort einen weiteren Rahmen bilden, Elemente hinzuf&uuml;gen oder entfernen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Einzelelemente ausw&auml;hlen</span></h5>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Einzelelemente" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_einzelelemente.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie nacheinander die zu bearbeitenden Elemente an. [</span><span class="f__Abfrage">Welches Element</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Elemente werden markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die rechte Maustaste, wenn Sie alle gew&uuml;nschten Elemente selektiert haben. </span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen sofort weitere Elemente selektieren.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Zuletzt markierte Elemente ausw&auml;hlen</span></h5>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_letzte-Markierung-aufnehmen" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_letzte-markierung-aufnehmen.png"/></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Aktivieren Sie diese Schaltfl&auml;che, um alle Elemente, die Sie zuvor ausgew&auml;hlt haben, erneut zu markieren.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Jetzt k&ouml;nnen Elemente hinzugef&uuml;gt oder entfernt werden.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Elemente einzeln oder &uuml;ber Rahmen ausw&auml;hlen (automatische Erkennung)</span></h5>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_Elemente-im-Rechteck-und-E-Element" style="margin:0;width:0.7292in;height:0.2500in;border:none" src="i_elemente-im-rechteck-und-e-element.png"/></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Es k&ouml;nnen Einzelelemente und Elemente im Rechteck gleichzeitig ausgew&auml;hlt werden. Wenn ein Element im Cursorbereich liegt, wird die Auswahlfunktion [</span><span class="f__Software_Element_deskriptiv">Einzelelemente ausw&auml;hlen</span><span class="f_Aufruf">]</span><span class="f_Task_Info"> aktiviert und das Element wird beim Anklicken markiert. Befindet sich der Cursor im &quot;leeren&quot; Zeichenbereich (kein Element wird gefangen), wird beim Anklicken automatisch ein Rechteck aufgezogen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Ziehen Sie einen Rahmen auf, der die Auswahl umschlie&szlig;t. [</span><span class="f__Abfrage">1.Punkt/Element</span><span class="f_Step">]; [</span><span class="f__Abfrage">2.Punkt</span><span class="f_Step">].</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin: 0.0521in 0 0.1042in 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Wenn Sie den Rahmen von </span><span class="f_Hinweis_in_Tabelle_Kopfzeile">links</span><span class="f_R_Tabellenzeile"> nach </span><span class="f_Hinweis_in_Tabelle_Kopfzeile">rechts</span><span class="f_R_Tabellenzeile"> aufziehen, werden alle Elemente markiert, die sich vollst&auml;ndig im Rahmen befinden.</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin: 0.0521in 0 0.1042in 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Wenn Sie den Rahmen von </span><span class="f_Hinweis_in_Tabelle_Kopfzeile">rechts</span><span class="f_R_Tabellenzeile"> nach </span><span class="f_Hinweis_in_Tabelle_Kopfzeile">links</span><span class="f_R_Tabellenzeile"> aufziehen, werden auch Elemente markiert, die sich nicht vollst&auml;ndig im Rahmen befinden.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">und/oder:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Markieren Sie Elemente, indem Sie diese anklicken.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die im Rahmen liegenden Elemente werden markiert. Die angeklickten Elemente werden ebenfalls markiert.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">F&uuml;llungen, Schraffuren und weitere Gruppen werden beim Anklicken wie Einzelelemente behandelt. Um zu vermeiden, dass beim Klicken z. B. eine F&uuml;llung markiert wird, schalten Sie auf [</span><span class="f__Software_Element_deskriptiv">Elemente &uuml;ber rechteckige Rahmen ausw&auml;hlen</span><span class="f_Hinweis_in_Tabelle">] um.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Sie k&ouml;nnen die automatische Erkennung als voreingestellte Auswahlfunktion abschalten. Setzen Sie hierf&uuml;r bei [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_Hinweis_in_Tabelle"> &#8594; </span><span class="f__Software_Element_deskriptiv">Selektieren von Elementen nicht automatisch</span><span class="f_Hinweis_in_Tabelle">] einen Haken. Als Standard bei der Auswahl wird dann [</span><span class="f__Software_Element_deskriptiv">Elemente &uuml;ber rechteckige Rahmen ausw&auml;hlen</span><span class="f_Hinweis_in_Tabelle">] verwendet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Elementgruppen und einzelne Elemente ausw&auml;hlen</a></span></p>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.32; padding: 0 0 0 0; margin: 0.1771in 0 0.0313in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><h5 class="p_Heading5"><span class="f_Heading5">Elementgruppen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">In ISBCAD werden Elemente, die in einer Abfrageroutine erzeugt worden sind, intern als Gruppe verwaltet. </span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Erzeugen Sie beispielsweise mit [Konst 2 | PosKre] einen Positionskreis, werden beim Anklicken eines Elements dieser Gruppe, z. B. des Positionstextes oder einer Linie, alle Elemente ausgew&auml;hlt, die zu diesem Positionskreis geh&ouml;ren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.3229in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Elementgruppe-Beispiel01" style="margin:0;width:2.8125in;height:1.1146in;border:none" src="z_elementgruppe-beispiel01.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.3750in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Elementgruppe-Beispiel02" style="margin:0;width:2.8125in;height:1.1146in;border:none" src="z_elementgruppe-beispiel02.png"/></p>
+</td>
+<td style="vertical-align:top; width:3.7292in; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="Z_Elementgruppe-Beispiel03" style="margin:0;width:2.8125in;height:1.1146in;border:none" src="z_elementgruppe-beispiel03.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3229in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile">Cursor am Positionstext</span></p>
+</td>
+<td style="vertical-align:top; width:3.3750in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile">Cursor am Erg&auml;nzungstext</span></p>
+</td>
+<td style="vertical-align:top; width:3.7292in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-align: center;"><span class="f_R_Tabellenzeile">Klick markiert die Elementgruppe &quot;Positionskreise&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Um Einzelelemente in Elementgruppen ausw&auml;hlen:</span></h5>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die </span><span class="f__Tastatur">Strg</span><span class="f_Step">-Taste und f&uuml;hren Sie einen der folgenden Schritte aus: </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Klicken Sie ein oder mehrere Elemente nacheinander an.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Elemente &uuml;ber das Aufziehen eines Rahmens ausw&auml;hlen:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.9792in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; width:10.8646in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Ziehen Sie den Rahmen von </span><span class="f_Hervorhebung_Text">links</span><span class="f_R_Tabellenzeile"> nach </span><span class="f_Hervorhebung_Text">rechts</span><span class="f_R_Tabellenzeile"> auf, wird die Gruppe markiert, wenn sich alle Gruppenelemente innerhalb des Rahmens befinden.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Ziehen Sie den Rahmen von </span><span class="f_Hervorhebung_Text">rechts</span><span class="f_R_Tabellenzeile"> nach </span><span class="f_Hervorhebung_Text">links</span><span class="f_R_Tabellenzeile"> um einen Teilbereich der Gruppe auf, werden alle Elemente der Gruppe markiert.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen Elemente wieder abw&auml;hlen, indem Sie auf </span><span class="f__Software_Element_deskriptiv">Entfer</span><span class="f_Step_Anmerkung"> umschalten und bei gedr&uuml;ckter </span><span class="f__Tastatur">Strg</span><span class="f_Step">-Taste</span><span class="f_Step_Anmerkung"> die Elemente aus der Auswahl entfernen.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">ISBCAD erzeugt die folgenden Elementgruppen automatisch:</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2604in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.1146in; padding:0; border:none"><p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ma&szlig;ketten</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Schraffuren </span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">F&uuml;llungen</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Symbole</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Koordinatensysteme </span><br>
+<span class="f_L_Listeneintrag">(Ursprung und verma&szlig;te Punkte)</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Positionskreise</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Verbindungsbilder</span></p></td>
+<td style="vertical-align:top; width:5.9167in; padding:0; border:none"><p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Sparrenverteilungen</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Mattenverlegungen</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ausz&uuml;ge inkl. aller Texte</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">D&uuml;belleisten</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Massenelemente</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">St&uuml;cklisten</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">komplette Verlegungen </span><br>
+<span class="f_L_Listeneintrag">(Staffeln, Formen, Durchmesser im Schnitt) einschlie&szlig;lich der Positionierung</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweis:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">In den Men&uuml;s [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Kopier</span><span class="f_Hinweis_in_Tabelle">] und [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_Hinweis_in_Tabelle"> | </span><span class="f__Software_Element_deskriptiv">Dupliz</span><span class="f_Hinweis_in_Tabelle">] ist die Auswahl einzelner Elemente in Elementgruppen mit der </span><span class="f__Tastatur">Strg</span><span class="f_Hinweis_in_Tabelle">-Taste oder die Abwahl mit </span><span class="f__Tastatur">Strg</span><span class="f_Hinweis_in_Tabelle"> + </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Hinweis_in_Tabelle"> nicht m&ouml;glich.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Anwenderdefinierte Gruppen und einzelne Elemente ausw&auml;hlen</a></span></p>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Die Selektion von Elementen in anwenderdefinierten Gruppen [</span><span class="f__Software_Element_deskriptiv">Konst 3</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Gruppe</span><span class="f_A_Allgemein">] verh&auml;lt sich analog zur Auswahl in Elementgruppen. Im Unterschied zu Elementgruppen definieren Sie selbst den Inhalt einer Gruppe. So lassen sich Elemente gezielt zusammenfassen, um diese einfacher ausw&auml;hlen zu k&ouml;nnen.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Siehe: <a href="tsk_mit-gruppierten-elementen-arbeiten.htm" class="topiclink" title="Gruppierte Elemente auswählen">Gruppierte Elemente ausw&auml;hlen</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Einzelne Punkte hinzuf&uuml;gen, entfernen oder Auswahl komplett r&uuml;ckg&auml;ngig machen</a></span></p>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein"><span class="f_A_Allgemein">In einigen Men&uuml;s, wie z. B. bei der Massen- und Schwerpunktermittlung oder beim Verma&szlig;en, stehen Ihnen weitere Funktionen zur Auswahl zur Verf&uuml;gung.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.7500in;"><p class="p_R_Tabellenzeile_zentriert" style="margin: 0.0521in 0 0.0625in 0.0104in;"><img alt="I_Punkte-hinzufuegen" style="margin:0 auto 0 auto;width:0.6979in;height:0.2188in;border:none" src="i_punkte-hinzufuegen.png"/><span class="f_ImageCaption"> <img alt="I_Punkte-entfernen" style="margin:0 auto 0 auto;width:0.6979in;height:0.2188in;border:none" src="i_punkte-entfernen.png"/> <img alt="I_Alle-Punkte-enfernen" style="margin:0 auto 0 auto;width:0.7188in;height:0.2188in;border:none" src="i_alle-punkte-enfernen.png"/></span></p>
+</td>
+<td class="Optionen_Palette" style="width:7.1875in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Optionen zur Auswahl einzelner Punkte.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">/+</span><span class="f_R_Tabellenzeile">: Punkte hinzuf&uuml;gen; </span><span class="f__Software_Element_deskriptiv">/-</span><span class="f_R_Tabellenzeile">: Punkte entfernen; </span><span class="f__Software_Element_deskriptiv">/x</span><span class="f_R_Tabellenzeile">: Alle Punkte entfernen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #333333; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a6','toggle0186a6_ICON')">Polygondarstellung</a></span></p>
+<div id="toggle0186a6" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn Sie Elemente selektiert haben, werden die zugeh&ouml;rigen Polygonpunkte und -linien dargestellt, unabh&auml;ngig davon, ob die <a href="des_polygondarstellung_um.htm" class="topiclink">Polygondarstellung</a> von Elementgruppen aktiviert oder deaktiviert ist. Die Polygone werden nach der Auswahl in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Markieren</span><span class="f_A_Allgemein"> hervorgehoben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle" >
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p_R_Tabellenzeile"><img alt="SCR_polygon_map" style="margin:0;width:1.1042in;height:0.8542in;border:none" src="scr_polygon_map.png"/></p>
+<p class="p__Bild_Legende_normal"><span class="f__Bild_Legende_normal">ISBCAD Polygontyp: Schraffuren und F&uuml;llungen.</span></p>
+</td>
+</tr>
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle" style="padding:0.0208in;"><p class="p__Bild_Legende_fett"><span class="f__Bild_Legende_fett">A. </span><span class="f__Bild_Legende_normal">Polygonpunkt; </span><span class="f__Bild_Legende_fett">B. </span><span class="f__Bild_Legende_normal">Verbindungslinie (Geometrie)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h5 class="p_Heading5"><span class="f_Heading5">Auswahlfunktionen (Kurz&uuml;bersicht)</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.2708in;"><table class="Referenztabelle" >
+<thead>
+<tr class="Referenztabelle">
+<th class="Referenztabelle" colspan="2"  style="width:4.3021in;" scope="colgroup"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Selektionsart</span></p>
+</th>
+<th class="Referenztabelle" style="width:10.7500in;" scope="col"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Ergebnis</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" rowspan="4"  style="vertical-align:middle; width:1.0521in; background-color:#FEFEFE;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Rahmen </span></p>
+</td>
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Rahmen links nach rechts oder Polygon</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert alle Elemente, die sich vollst&auml;ndig im Rahmen oder Polygon befinden</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Rahmen rechts nach links</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert alle Elemente, die sich vollst&auml;ndig im Rahmen befinden und vom Rahmen angeschnitten werden</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strg + Rahmen von links nach rechts</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert alle Bestandteile von Gruppen, die sich vollst&auml;ndig im Rahmen befinden</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strg + Rahmen von rechts nach links</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert alle Bestandteile von Gruppen, die sich vollst&auml;ndig im Rahmen befinden und vom Rahmen angeschnitten werden</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" rowspan="4"  style="vertical-align:middle; width:1.0521in; background-color:#F2F2F2;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Einzelklick</span></p>
+</td>
+<td class="Referenztabelle" style="width:3.1458in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Einzelklick</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert das Element oder die gesamte Gruppe</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Einzelklick auf anwenderdefinierte Gruppe</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">1. Klick - Markiert die Obergruppe</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">2. Klick - Markiert die Untergruppe</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">n. Klick - Markiert ein einzelnes Element</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Einzelklick auf eine Elementgruppe</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert die gesamte Gruppe</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strg + Klick</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#F2F2F2;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Markiert das angeklickte Element innerhalb einer Gruppe</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" rowspan="3"  style="vertical-align:middle; background-color:#FEFEFE;"><p class="p_R_Tabelle_Kopf_zentriert"><span class="f_R_Tabelle_Kopf_zentriert">Elemente aus Auswahl entfernen</span></p>
+</td>
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Umschalttaste + Klick</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt das Element aus der Auswahl</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strg + Umschalttaste + Rahmen von links nach rechts</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt alle Elemente, die sich vollst&auml;ndig im Rahmen befinden</span></p>
+</td>
+</tr>
+<tr class="Referenztabelle">
+<td class="Referenztabelle" style="width:3.1458in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Strg + Umschalttaste + Rahmen von rechts nach links</span></p>
+</td>
+<td class="Referenztabelle" style="width:10.7500in; background-color:#FEFEFE;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Entfernt alle Elemente, die sich vollst&auml;ndig im Rahmen befinden und vom Rahmen angeschnitten werden</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Hinweis" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_hinweis.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Hinweise:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn Sie Zeichenelemente ausw&auml;hlen und absetzen, z. B. beim Kopieren oder Verschieben, entspricht die Neigung des Auswahlrechtecks dem aktuell eingestellten <a href="des_systemwinkel.htm" class="topiclink" title="Systemwinkel - Dialogbeschreibung">Systemwinkel</a>.</span></p>
+<p class="p_Hinweis_in_Tabelle" style="text-indent: 0; page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Hinweis_in_Tabelle">Wenn Elemente beim Ausw&auml;hlen nicht markiert werden, kann es daran liegen, dass sie im <a href="des_elemente-filter.htm" class="topiclink">Elemente-Filter</a> ausgeschlossen sind. Pr&uuml;fen Sie auch, ob die Elemente bzw. deren Folien im <a href="folienmanager.htm" class="topiclink">Folienmanager</a> gesperrt sind.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_elementfang.htm" class="topiclink" title="Elemente fangen">Elemente fangen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst3_eleatr_elsper.htm" class="topiclink" title="Elemente sperren">Elemente sperren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_elemente-filter.htm" class="topiclink" title="Elemente-Filter (Dialog)">Elemente bei der Selektion ausschlie&szlig;en</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_gruppe.htm" class="topiclink" title="Elemente in Gruppen zusammenfassen">Elemente in Gruppen zusammenfassen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="konst1_attribute_von_elementen_aender.htm" class="topiclink" title="Elemente anhand gemeinsamer Eigenschaften auswählen und ändern">Elemente anhand gemeinsamer Eigenschaften ausw&auml;hlen und &auml;ndern</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="des_polygondarstellung_um.htm" class="topiclink" title="Polygondarstellung">Polygone ausgew&auml;hlter Elementgruppen anzeigen</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Farben für Zeichenhilfsmittel zuweisen (Systemdaten)">Farben f&uuml;r Zeichenhilfsmittel zuweisen (Systemdaten)</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a6\',\'toggle0186a6_ICON\')');
+HMInitToggle('toggle0186a6','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

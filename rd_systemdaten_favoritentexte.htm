@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Systemdaten - Favoritentexte</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Favoritentexte,Systemdaten,Systemdaten Favoritentexte,Textbausteine anlegen" />
+   <meta name="description" content="Speichern von häufig verwendeten Textbausteinen als Favoritentexte, die während der Texteingabe abgerufen werden können." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="optionen.htm">Listen, Systemeinstellungen und weitere Konstruktionsfunktionen</a> &gt; <a href="optionen_sysdat.htm">Systemdaten</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rd_systemdaten_ausgabeeinheiten.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="optionen_sysdat.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="rd_systemdaten_makrotexte.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Systemdaten - Favoritentexte</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="optionen.htm" class="topiclink" title="Option-Funktionen (Übersicht)"><img alt="Option-Funktionen (Übersicht)" title="Option-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_option.png"/></a><span class="f_Aufruf"> <a href="optionen_sysdat.htm" class="topiclink" title="Systemdaten"><img alt="Systemdaten" title="Systemdaten" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_sysdat.png"/></a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Speichern von h&auml;ufig verwendeten Textbausteinen als Favoritentexte, die w&auml;hrend der Texteingabe abgerufen werden k&ouml;nnen.</span></p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0 0.2917in;"><table style="border:none; border-spacing:0;" role="presentation">
+<thead>
+<tr>
+<th style="vertical-align:top; padding:0.0208in; border:none" scope="col"><p class="p_ImageCaption"><img alt="SCR_Favoritentext_SysDat" style="margin:0;width:5.1979in;height:3.9792in;border:none" src="scr_favoritentext_sysdat.png"/></p>
+</th>
+</tr>
+</thead>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Favoritentexte werden unter der Eingabe in einer Auswahlliste angeboten und k&ouml;nnen per Mausklick in die Eingabezeile &uuml;bernommen werden. In der Liste stehen sie immer an oberster Stelle, gefolgt von den zuletzt manuell eingegebenen Texten.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mit der Option </span><span class="f__Software_Element_deskriptiv">Maximum gleichzeitig sichtbarer Eintr&auml;ge</span><span class="f_R_Dialog_Info"> k&ouml;nnen Sie angeben, wie viele Favoritentexte beim &Ouml;ffnen der Auswahlliste zu sehen sein sollen. Ist die Eingabe geringer als die Anzahl der Eintr&auml;ge, erscheint am rechten Rand der Auswahlliste ein Scrollbalken. Klicken und ziehen Sie den Balken nach unten oder nutzen Sie das Mausrad, um zu den nicht sichtbaren Eintr&auml;gen zu scrollen.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Um die Liste der Favoriten oder Makrotexte unter der Abfrage einzuklappen, klicken Sie unter der Liste auf die Pfeil-Schaltfl&auml;che. Um sie auszuklappen, klicken Sie entweder eine der &Uuml;berschriften an (Favoriten, Makrotexte) oder klicken Sie auf die Pfeil-Schaltfl&auml;che. Mit der Stecknadel-Schaltfl&auml;che k&ouml;nnen Sie die Ansicht der Liste fixieren. Ob die Liste bei erneutem Aufruf ein- oder ausgeklappt angezeigt wird, wird sich f&uuml;r die jeweilige Funktion gemerkt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritentext_Texte" style="margin:0;width:4.1146in;height:2.8333in;border:none" src="scr_favoritentext_texte.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Die Favoritentexte stehen in folgenden Funktionen zur Verf&uuml;gung:</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Allgemeine Texte: [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">zeichn/&auml;ndern</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Ma&szlig;ketten Erg&auml;nzungstext: [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ket</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">ErgText</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">H&ouml;henkoten im Grundriss H&ouml;hentext: [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;ket</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">H&ouml;koGr</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Positionskreise Erg&auml;nzungstext: [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">PosKre</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">zeichn/&auml;ndern</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Wolke Erg&auml;nzungstext: [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Symbol</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Wolke</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Matten Kommentar: [</span><span class="f__Software_Element_deskriptiv">Matten</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">KomTxt</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Formstahl Kommentar: [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_L_Listeneintrag">]; [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">BiPos </span><span class="f_L_Listeneintrag">| </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_L_Listeneintrag">]</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Formmatten Kommentar: [</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_L_Listeneintrag">]; [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">BiPos </span><span class="f_L_Listeneintrag">| </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_L_Listeneintrag">]</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentext erstellen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie im linken Dialogbereich unter </span><span class="f__Software_Element_deskriptiv">Men&uuml;</span><span class="f_Step">, wo der Text hinzugef&uuml;gt werden soll.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in eine freie Tabellenzeile und tippen Sie den Text ein. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Beim Tippen werden W&ouml;rter und Ausdr&uuml;cke vorgeschlagen, die im selben oder einem anderen Men&uuml; definiert sind. Mit den Pfeiltasten (unten, oben) k&ouml;nnen Sie zwischen den Vorschl&auml;gen wechseln und den Text weiterbearbeiten. Setzen Sie hierf&uuml;r den Cursor an die gew&uuml;nschte Stelle. Mit der Eingabetaste oder durch das Anklicken eines Vorschlags k&ouml;nnen Sie diesen direkt &uuml;bernehmen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Hervorhebung_Text">Hochzahlen</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie &uuml;ber den Nummernblock Ihrer Tastatur einf&uuml;gen. Halten Sie die Taste </span><span class="f__Tastatur">Strg</span><span class="f_Step_Anmerkung"> gedr&uuml;ckt und tippen Sie die Ziffer ein. Der Nummernblock muss hierf&uuml;r aktiv sein (Taste </span><span class="f__Tastatur">Num</span><span class="f_Step_Anmerkung">).</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Hervorhebung_Text">Durchmesserzeichen</span><span class="f_Step_Anmerkung"> k&ouml;nnen Sie mit der Funktionstaste </span><span class="f__Tastatur">F10</span><span class="f_Step_Anmerkung"> einf&uuml;gen (Standardeinstellung).</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritentext_SysDat_Eingabe" style="margin:0;width:7.1042in;height:1.5208in;border:none" src="scr_favoritentext_sysdat_eingabe.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Tipp" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_tipp.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Tipp:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Beim Erstellen k&ouml;nnen Leerzeichen vor und nach dem Favoritentext hinzugef&uuml;gt werden. Diese werden beim Einf&uuml;gen ber&uuml;cksichtigt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Sonderzeichen einf&uuml;gen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Beachten Sie, dass nicht alle Schriftarten die gleichen Zeichen enthalten. Das kann dazu f&uuml;hren, dass bei einer nachtr&auml;glichen &Auml;nderungen der Schriftart bestimmte Sonderzeichen nicht dargestellt werden. Beispielsweise enth&auml;lt die Schriftart &quot;Arial&quot; Bruchzeichen, die Schriftart &quot;ISO&quot; hingegen nicht.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den zu bearbeitenden Text an, um ihn zu markieren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im unteren Dialogbereich auf </span><span class="f__Software_Element_deskriptiv">Sonderzeichen</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Setzen Sie den Cursor an die Stelle, an der Sie das Sonderzeichen einf&uuml;gen m&ouml;chten.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie in der Tabelle das Sonderzeichen an, um es an der Cursorposition einzuf&uuml;gen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Dialog ge&ouml;ffnet lassen, den Text weiterbearbeiten und weitere Sonderzeichen einf&uuml;gen. </span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Der Wechsel zu einem anderen Textbaustein oder in ein anderes Men&uuml; ist m&ouml;glich, um Sonderzeichen einzuf&uuml;gen. Der Dialog bleibt dabei ge&ouml;ffnet. Doppelklicken Sie einen Text an, um ihn bearbeiten zu k&ouml;nnen, und setzen Sie den Cursor an die Einf&uuml;geposition des Sonderzeichens. F&uuml;gen Sie anschlie&szlig;end das Sonderzeichen ein.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="D_Eingabe-Sonderzeichen-SysDat" style="margin:0;width:4.0938in;height:4.6875in;border:none" src="d_eingabe-sonderzeichen-sysdat.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Font</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Schriftart. Die Zeichentabelle zeigt die codierten Zeichen der Schriftart an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Kategorie</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl der Sprach- und Schreibsysteme.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn in der Kategorie-Auswahl </span><span class="f__Software_Element_deskriptiv">All</span><span class="f_R_Option_Beschreibung"> gew&auml;hlt ist, werden alle Zeichen einer Schriftart angezeigt. Wenn Sie eine abweichende Kategorie ausw&auml;hlen, werden nur die Zeichen dieser Kategorie angezeigt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Zeichentabelle</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn Sie ein Sonderzeichen anklicken, wird dieses in die Tabellenzeile &uuml;bernommen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Direkteingabe</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">U+</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Eingabe des Unicodes in hexadezimaler Schreibweise und Unicode-Anzeige des angeklickten Sonderzeichens. Eingaben k&ouml;nnen mit der Eingabetaste oder der Tabulatortaste best&auml;tigt werden. Das entsprechende Sonderzeichen wird in der Zeichentabelle hervorgehoben. Ob das entsprechende Zeichen vorhanden ist, h&auml;ngt von der jeweiligen Schriftart ab. Zul&auml;ssig sind Werte in den Bereichen 0 ... 9 und A ... F. Bei einer falschen Eingabe erscheint ein Warnhinweis </span><img alt="I_Sonderzeichen_Warnung" style="margin:0;width:0.1667in;height:0.1667in;border:none" src="i_sonderzeichen_warnung.png"/><span class="f_ImageCaption">.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einf&uuml;gen eines Durchmesserzeichens.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Hochzahlen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einf&uuml;gen von Hochzahlen.</span></p>
+<p class="p_R_Bereich"><span class="f_R_Bereich">Favoriten</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Ziehen Sie ein h&auml;ufig genutztes Zeichen per Drag&amp;Drop auf ein freies Feld. Ist das Feld belegt, wird das Zeichen ersetzt.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentext &auml;ndern</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den zu bearbeitenden Text an.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den neuen Text ein, um den ausgew&auml;hlten Text zu &auml;ndern, oder setzen Sie die Einf&uuml;gemarke durch Doppelklick an die Stelle, an der Sie den Text bearbeiten m&ouml;chten. Best&auml;tigen Sie die Eingabe mit der Eingabetaste.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentext kopieren und einf&uuml;gen</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Die Schaltfl&auml;che </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_ToDo_Info"> f&uuml;gt einen oder mehrere kopierte Texte immer in neue Zeilen nach der letzten Tabellenposition ein.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den oder die zu kopierenden Favoritentexte aus:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Favoritentext an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrfachauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Favoritentexte im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Favoritentexte auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt und w&auml;hlen Sie die Makrotexte aus.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los. Die Zeilen bleiben markiert.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step_Anmerkung">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Kopieren </span><span class="f_Step_Anmerkung">oder dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+C</span><span class="f_Step_Anmerkung">, um den Text in die Zwischenablage zu legen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen den Text in ein beliebiges Men&uuml; nach der letzten Tabellenposition einf&uuml;gen. W&auml;hlen Sie dazu das Men&uuml; aus und klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_Step_Anmerkung">.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen einen Text in einem beliebigen Men&uuml; ersetzen, indem Sie den Text durch einen Doppelklick markieren und mit </span><span class="f__Tastatur">Strg+V</span><span class="f_Step_Anmerkung"> die Kopie einf&uuml;gen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Bearbeitungsfunktionen im Kontextmen&uuml;</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Sie k&ouml;nnen auf die Funktionen </span><span class="f__Software_Element_deskriptiv">Kopieren</span><span class="f_R_Tabellenzeile">, </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_R_Tabellenzeile"> und </span><span class="f__Software_Element_deskriptiv">L&ouml;schen</span><span class="f_R_Tabellenzeile"> auch &uuml;ber ein Kontextmen&uuml; zugreifen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie in die erste Spalte oder rechts neben den Text, um die Tabellenzeile zu markieren.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">&Ouml;ffnen Sie das Kontextmen&uuml; mit einem Rechtsklick und w&auml;hlen Sie die gew&uuml;nschte Funktion aus.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.1458in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritentext_SysDat_Kontext" style="margin:0;width:7.1042in;height:1.5417in;border:none" src="scr_favoritentext_sysdat_kontext.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentext l&ouml;schen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie den oder die zu l&ouml;schenden Favoritentexte aus:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Klicken Sie einen Favoritentext an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrfachauswahl</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Favoritentexte im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Favoritentexte auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt und w&auml;hlen Sie die Makrotexte aus.</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: -0.0104in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Dr&uuml;cken Sie die Taste </span><span class="f__Tastatur">Entf</span><span class="f_Step"> oder klicken Sie auf </span><span class="f__Software_Element_deskriptiv">L&ouml;schen</span><span class="f_Step">, um den Text oder die Texte zu entfernen.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentexte in der Tabelle verschieben</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Durch &Auml;nderung der Reihenfolge im Dialog werden die Eintr&auml;ge in der Auswahlliste unter der Abfrage neu angeordnet.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Verschieben Sie eine einzelne oder mehrere Tabellenzeilen an eine neue Position:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Einzelne Tabellenzeile</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Halten Sie auf einer Tabellenzelle die linke Maustaste gedr&uuml;ckt, und ziehen Sie den Inhalt nach oben oder unten. </span><span class="f_SA_Tabelle">Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeile verschoben wird.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Lassen Sie die Maustaste an der Position los, an die der Inhalt verschoben werden soll.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.3229in; background-color:#E9E9E9;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Mehrere Tabellenzeilen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:18.1146in;"><p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um benachbarte Tabellenzeilen im Block auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> gedr&uuml;ckt und klicken Sie die erste Zelle an. Klicken Sie anschlie&szlig;end die zweite Zelle an, um den Tabellenbereich zwischen den angeklickten Zellen auszuw&auml;hlen. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Umschalttaste</span><span class="f_SA_Tabelle"> los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um nicht benachbarte Tabellenzeilen auszuw&auml;hlen:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Halten Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste gedr&uuml;ckt, und w&auml;hlen Sie die Favoritentexte nacheinander aus. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die </span><span class="f__Tastatur">Strg</span><span class="f_SA_Tabelle">-Taste los. Die Zeilen bleiben markiert.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_R_Tabellenzeile">Um die Tabellenzeilen zu verschieben:</span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Klicken Sie eine markierte Zelle an und halten Sie die linke Maustaste gedr&uuml;ckt. Ziehen Sie die Inhalte nach oben oder unten. Eine schwarze Linie zeigt Ihnen an, an welche Position die Zeilen verschoben werden. </span></p>
+<p class="p_SA_Tabelle" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.1458in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_SA_Tabelle">Lassen Sie die Maustaste an der Position los, an die die Inhalte verschoben werden sollen.</span><br>
+<span class="f_R_Tabellenzeile">Die Tabellenzeilen werden hintereinander abgesetzt.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Favoritentexte sortieren</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen die Favoritentexte so sortieren, dass die Texte in aufsteigender (A bis Z) oder absteigender (Z bis A) alphabetischer Reihenfolge angezeigt werden. Nummern werden alphanumerisch einsortiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie im unteren Dialogbereich entweder auf </span><span class="f__Software_Element_deskriptiv">Aufsteigend sortieren</span><span class="f_Step"> oder auf </span><span class="f__Software_Element_deskriptiv">Absteigend sortieren</span><span class="f_Step">.</span></p>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Beispiel: Favoritentext anwenden</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Eingabe von Favoritentexten in z. B. [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Task_Info"> | </span><span class="f__Software_Element_deskriptiv">BiPos </span><span class="f_Task_Info">| </span><span class="f__Software_Element_deskriptiv">Harfe</span><span class="f_Task_Info"> </span><span class="f_Step">&#8594; </span><span class="f__Abfrage">Textlage</span><span class="f_Task_Info">].</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.0313in 0 0.0833in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritentext_Formstahl_Kommentar" style="margin:0;width:4.7500in;height:0.9896in;border:none" src="scr_favoritentext_formstahl_kommentar.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Kommentar</span><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Die Favoritentexte werden anschlie&szlig;end unter der Eingabezeile in einer Auswahlliste angezeigt.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie einen Text an, um diesen in die Eingabe zu &uuml;bernehmen. Sie k&ouml;nnen einen weiteren Favoritentext hinzuf&uuml;gen oder Text manuell erg&auml;nzen. Die Eingabe von Sonderzeichen ist &uuml;ber die Schaltfl&auml;che <img alt="I_Sonderzeichen" style="margin:0;width:0.2708in;height:0.1979in;border:none" src="i_sonderzeichen.png"/> m&ouml;glich.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_R_Tabellenzeile"><img alt="SCR_Favoritentext_Formstahl" style="margin:0;width:2.0833in;height:2.1875in;border:none" src="scr_favoritentext_formstahl.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie mit der Eingabetaste oder mit Rechtsklick.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenz:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="optionen_sysdat.htm" class="topiclink" title="Allgemeine Voreinstellungen">Systemdaten</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

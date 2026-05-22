@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form auswählen und Verlegerichtung definieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Alternativer Aufruf: mittlere Maustaste auf Staffellinie." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a> &gt; <a href="formst_veform.htm">Verlegung mit Formdarstellung</a> &gt; <a href="tsk_formdarstellung-verlegen.htm">Biegeform mit Formdarstellung verlegen</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_formdarstellung-verlegen.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="tsk_formdarstellung-verlegen.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_veform_ab_n.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Biegeform ausw&auml;hlen und Verlegerichtung definieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_formstahl.htm" class="topiclink" title="Formstahl-Funktionen (Übersicht)"><img alt="Formstahl-Funktionen (Übersicht)" title="Formstahl-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_formst.png"/></a><span class="f_Aufruf"> <a href="formst_veform.htm" class="topiclink" title="Verlegen als Form"><img alt="Verlegen als Form" title="Verlegen als Form" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_veform.png"/></a> <img alt="B-akt_WaehFor" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_waehfor.png"/></span></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Alternativer Aufruf: mittlere Maustaste auf Staffellinie.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Form w&auml;hlen</span></p>
+<p class="p_Step"><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">a)</span><span class="f_Step">W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Vkn an</span><span class="f_Step">, wenn Sie die Verlegung mit einer anderen Verlegung mit derselben Form verkn&uuml;pfen wollen. Klicken Sie die Verlegung an. [</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Siehe auch: <a href="formst_vestaf_vkn.htm" class="topiclink">Verlegungen verkn&uuml;pfen</a></span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span class="f_Step" style="display:inline-block;width:0.2188in;margin-left:-0.2188in">b)</span><span class="f_Step">W&auml;hlen Sie </span><span class="f__Software_Element_deskriptiv">Vkn aus</span><span class="f_Step">, wenn Sie die Form nicht verkn&uuml;pfen wollen. [</span><span class="f__Abfrage">Welche Form</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Um die Verlegeform zu wechseln oder die Form mit einem anderen Durchmesser zu verlegen, schalten Sie den Verkn&uuml;pfungsmodus aus: <img alt="B-akt_VKN-aus" style="margin:0;width:1.1042in;height:0.1979in;border:none" src="b-akt_vkn-aus.png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie ein Element der Auszugsform an. Sie k&ouml;nnen auch die Texte anklicken. F&uuml;r die Verlegung steht dann nur die Information der Positionsnummer und der Durchmesser (wenn schon verlegt) zur Verf&uuml;gung.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Wenn Sie eine Verlegung oder Positionierung anklicken, steht neben der Positionsnummer auch der Durchmesser, die Anzahl bzw. der Abstand als auch die Tiefe zur Verf&uuml;gung.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.7813in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Garamond';font-style:normal;color:#000000;text-decoration:none;">&#45;</span><span class="f_Step_Anmerkung">Sie k&ouml;nnen die Positionsnummer auch direkt in die Eingabe eingeben. Best&auml;tigen Sie mit der Eingabetaste.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Setzen Sie die Auszugsform per Mausklick an einer beliebigen Stelle in der Zeichnung ab. [</span><span class="f__Abfrage">Form setzen</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie eine „3D-Form“ gew&auml;hlt haben [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">BiForm</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">ForTyp &#8594; 17 … 20</span><span class="f_Step_Anmerkung">]:</span></p>
+<div style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:4.5208in; padding:0; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="D_Ansichtsauswahl" style="margin:0;width:4.3021in;height:3.1042in;border:none" src="d_ansichtsauswahl.png"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Je nach gew&auml;hlter Form k&ouml;nnen Sie im Dialog entweder die 3D-Ansicht oder eine der anderen angebotenen Ansichten w&auml;hlen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Klicken Sie in der Vorschau die Teill&auml;ngen an, die in der Verlegung dargestellt oder nicht dargestellt werden sollen. Nicht dargestellte Teill&auml;ngen werden in der Farbe f&uuml;r </span><span class="f__Software_Element_deskriptiv">Elemente im Hintergrund</span><span class="f_R_Tabellenzeile"> angezeigt; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">SysDat</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Farbeinstellungen</span><span class="f_R_Tabellenzeile"> | </span><span class="f__Software_Element_deskriptiv">Konstruktionsprogramm</span><span class="f_R_Tabellenzeile">].</span></p>
+<p class="p_R_Tabellenzeile"><img alt="SCR_3D-Form_verlegen" style="margin:0;width:1.7396in;height:0.7604in;border:none" src="scr_3d-form_verlegen.png"/></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Best&auml;tigen Sie die Auswahl mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_R_Tabellenzeile">. ISBCAD speichert die Auswahl f&uuml;r zuk&uuml;nftige Verlegungen. </span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Angabe der Teill&auml;ngen (Schritt 2) wird &uuml;bersprungen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Teill&auml;ngen w&auml;hlen </span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Abh&auml;ngig von der gew&auml;hlten Biegeform. Gegebenenfalls wird die Abfrage &uuml;bersprungen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Teill&auml;nge(n)</span><span class="f_Step">, welche Teill&auml;ngen dargestellt werden sollen:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_1-Teillg" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_1-teillg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Darstellung einer Teill&auml;nge.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Teill&auml;nge an, die in der Verlegung dargestellt werden soll.</span><br>
+<span class="f_R_Tabellenzeile">Nicht gew&auml;hlte Teill&auml;ngen werden in der Zeichnung ausgeblendet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_n-Teillgn" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_n-teillgn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Darstellung mehrerer Teill&auml;ngen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die Teill&auml;ngen an, die dargestellt werden sollen, und best&auml;tigen Sie die Auswahl durch Rechtsklick.</span><br>
+<span class="f_R_Tabellenzeile">Nicht gew&auml;hlte Teill&auml;ngen werden in der Zeichnung ausgeblendet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_ganze-Form" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_ganze-form.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Darstellung aller Teill&auml;ngen.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eingabe: </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile"> (voreingestellt); stellt die ganze Form mit allen Teill&auml;ngen dar. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Im &Uuml;bersichtsfenster wird die Form zu einem Bezugsrand dargestellt.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_VeForm_Bezugsrand" style="margin:0;width:2.1979in;height:1.4271in;border:none" src="scr_veform_bezugsrand.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Biegeform ausrichten</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie</span><span class="f__Abfrage"> </span><span class="f_Step">den Drehwinkel zu dem Bezugsrand an oder best&auml;tigen Sie den Vorschlagswert mit Rechtsklick. [</span><span class="f__Abfrage">DrehWi</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Drehung der Biegeform erfolgt entgegen dem Uhrzeigersinn. (Mit negativem Wert wird im Uhrzeigersinn gedreht.)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.44;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.1875in"><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step_Anmerkung"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Optionen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.9688in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_0-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_0-grad.png"/><img alt="B_90-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_90-grad.png"/></p>
+<p class="p_ImageCaption_zentriert"><img alt="B_180-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_180-grad.png"/><img alt="B_270-Grad" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_270-grad.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Schnellauswahl. Drehung des Elements um die Systemlage (Systemwinkel beachten).</span></p>
+<p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.7813in;"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_P--parallel" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_p--parallel.png"/><img alt="B_O--orhogonal" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_o--orhogonal.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ausrichtung der Element-Grundlinie: </span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile">: Parallel zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile"><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile">: Orthogonal zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie entweder </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end ein beliebiges Zeichenelement an.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.7917in;"><p class="p_ImageCaption_zentriert"><img alt="B_PP" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_pp.png"/><img alt="B_OP" style="margin:0 auto 0 auto;width:0.6354in;height:0.2292in;border:none" src="b_op.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.8542in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Paralleles [</span><span class="f__Software_Element_deskriptiv">PP</span><span class="f_R_Tabellenzeile">] oder orthogonales [</span><span class="f__Software_Element_deskriptiv">OP</span><span class="f_R_Tabellenzeile">] Ausrichten zu einem Bezugselement.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie </span><span class="f__Software_Element_deskriptiv">PP</span><span class="f_R_Tabellenzeile"> oder </span><span class="f__Software_Element_deskriptiv">OP</span><span class="f_R_Tabellenzeile"> und anschlie&szlig;end eines der markierten Zeichenelemente an.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie das Zeichenelement an, zu dem das markierte Element parallel oder orthogonal ausgerichtet werden soll. Das Element wird ausgerichtet und kann ggf. weitergedreht werden.</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie die Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">PP</span><span class="f_Step_Anmerkung"> oder </span><span class="f__Software_Element_deskriptiv">OP</span><span class="f_Step_Anmerkung"> verwenden, k&ouml;nnen Sie die Form weiterdrehen. [</span><span class="f__Abfrage">Drehen</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie</span><span class="f__Abfrage"> </span><span class="f_Step">den Spiegelwinkel in Bezug auf den Verlegerand an oder best&auml;tigen Sie den Vorschlagswert mit Rechtsklick. [</span><span class="f__Abfrage">SpiegelWi</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Winkel f&uuml;r die Projektion der wahren Teill&auml;nge(n) an. [</span><span class="f__Abfrage">Projekt.Wi</span><span class="f_Step">].</span><br>
+<span class="f_Step_Anmerkung">Um den Bezug auf eine vorhandene (schr&auml;ge) Linie zu setzen: Verwenden Sie die Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_Step_Anmerkung"> (parallel) oder</span><span class="f_Step_Anmerkung" style="font-size: 9pt;"> </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step_Anmerkung"> (orthogonal), indem Sie zun&auml;chst eine der Funktionen w&auml;hlen und anschlie&szlig;end die Bezugslinie anklicken.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Nach Best&auml;tigung des Winkels wechselt ISBCAD automatisch zur Querschnittsangabe. [</span><span class="f__Software_Element_deskriptiv">&oslash;&nbsp;ab/n</span><span class="f_Task_Info">].</span><br>
+<span class="f_Task_Info">(s. <a href="formst_veform_ab_n.htm" class="topiclink">Stahlquerschnitt angeben/ermitteln</a>)</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0 0.2813in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:10.5521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Form wird zu Beginn in der Ausrichtung des Stahlauszuges dargestellt. Mit Drehen und Spiegeln wird die Ausrichtung angepasst.</span></p>
+<p class="p_ImageCaption"><img alt="Z_Form-drehen1" style="margin:0;width:4.2188in;height:0.9271in;border:none" src="z_form-drehen1.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:10.5521in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die zugeh&ouml;rigen Abbildungen werden in der &Uuml;bersicht (Funktionsbereich) den gew&auml;hlten Parametern angepasst.</span></p>
+<p class="p_ImageCaption"><img alt="Z_Form-drehen2" style="margin:0;width:4.2292in;height:1.1771in;border:none" src="z_form-drehen2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

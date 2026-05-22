@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Verlegung im Verknüpfungsmodus</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bewehrung verknüpfen,Bewehrung verknüpfen Formstahl,Verknüpfungsmodus,Verknüpfungsmodus Formstahl,Verlegung verknüpfen,Verlegung verknüpfen Formstahl" />
+   <meta name="description" content="Sie können Verlegungen, die dieselbe Bewehrung in unterschiedlichen Formen darstellen, miteinander verknüpfen, so dass eine Änderung an einer Darstellung automatisch auf die..." />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_bew_prog.htm">Bewehrungsprogramm</a> &gt; <a href="rm_formstahl.htm">Formstahl</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="tsk_verlegungung-bearbeiten_(durchmesser-in-schnittdarstellung).htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_formstahl.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="formst_ndirkt.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">Verlegung im Verkn&uuml;pfungsmodus</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Alle Inhalte aufklappen/schließen">Alle Inhalte aufklappen/schließen</a>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  </div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen Verlegungen, die dieselbe Bewehrung in unterschiedlichen Formen darstellen, miteinander verkn&uuml;pfen, so dass eine &Auml;nderung an einer Darstellung automatisch auf die andere &uuml;bertragen wird. Das verringert nicht nur die Bearbeitungszeit, sondern erh&ouml;ht auch die Sicherheit.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Der Verkn&uuml;pfungsmodus ist in den folgenden Verlegearten m&ouml;glich:</span></h5>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Task_Info">Verlegung mit Staffeldarstellung [</span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_Task_Info">]</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Task_Info">Verlegung mit Formdarstellung [</span><span class="f__Software_Element_deskriptiv">VeForm</span><span class="f_Task_Info">]</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Task_Info">Verlegung einer Biegeform mit gleichen Durchmessern im Schnitt [</span><span class="f__Software_Element_deskriptiv">VeDuSn</span><span class="f_Task_Info">]</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Funktionen zum Verkn&uuml;pfen von Verlegungen</span></h5>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">ISBCAD bietet Ihnen zwei M&ouml;glichkeiten, um Verlegungen miteinander zu verkn&uuml;pfen:</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Task_Info">Verkn&uuml;pfungsmodus [</span><span class="f__Software_Element_deskriptiv">VKN ein</span><span class="f_Task_Info">] bei Wahl der Biegeform [</span><span class="f__Abfrage">Welche Form</span><span class="f_Task_Info">] f&uuml;r eine Verlegung.</span><br>
+<span class="f_Task_Info">Mit dieser Funktion k&ouml;nnen Sie bereits bei der Erzeugung einer Verlegung diese mit einer vorhandenen Verlegung verkn&uuml;pfen.</span></p>
+<p class="p_Task_Info" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Task_Info">Verkn&uuml;pfungsmodus [</span><span class="f__Software_Element_deskriptiv">VKN</span><span class="f_Task_Info">] im jeweiligen Men&uuml; der Verlegeart.</span><br>
+<span class="f_Task_Info">Mit dieser Funktion k&ouml;nnen Sie Verlegungen nachtr&auml;glich verkn&uuml;pfen, Verkn&uuml;pfungen aufheben und abfragen, ob eine bestimmte Verlegung verkn&uuml;pft ist.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Verkn&uuml;pfungen k&ouml;nnen bei der Verlegung oder nachtr&auml;glich hergestellt werden. Im nachfolgenden Beispiel ist der Schnitt a - a noch nicht mit der Draufsicht verkn&uuml;pft. Der Schnitt b - b aber schon.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" colspan="3"  style="width:5.6146in;"><p class="p_ImageCaption"><img alt="SCR_VKN_komplett" style="margin:0;width:7.3542in;height:2.4375in;border:none" src="scr_vkn_komplett.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verlegefaktor der Staffel = 0</span></p>
+</td>
+<td class="Optionen_Palette" style="width:2.7813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Anzahl 8 &Oslash; 8 weicht von der Draufsicht ab! 6 &Oslash; 8.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:3.0521in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Anzahl stimmt mit der Draufsicht &uuml;berein.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Die Draufsicht wird mit dem Schnitt a - a verkn&uuml;pft:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.5104in;"><p class="p_R_Tabellenzeile"><img alt="SCR_VKN_Draufsicht_ver" style="margin:0;width:2.7813in;height:1.7708in;border:none" src="scr_vkn_draufsicht_ver.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:2.7813in;"><p class="p_R_Tabellenzeile"><img alt="SCR_VKN_Schnitt_aa_ver" style="margin:0;width:2.4896in;height:2.3958in;border:none" src="scr_vkn_schnitt_aa_ver.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:2.7917in;"><p class="p_R_Tabellenzeile"><img alt="SCR_VKN_Schnitt_aa_angepasst" style="margin:0;width:2.5313in;height:2.3854in;border:none" src="scr_vkn_schnitt_aa_angepasst.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.5104in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td class="Optionen_Palette" style="width:2.7813in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Vor der Verkn&uuml;pfung.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:2.7917in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nach der Verkn&uuml;pfung.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h5 class="p_Heading5"><span class="f_Heading5">Anzeige des Verkn&uuml;pfungsstatus</span></h5>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="SCR_VKN_Faktan" style="margin:0;width:1.7917in;height:0.8125in;border:none" src="scr_vkn_faktan.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">An der Positionierung kann der Verlegefaktor mit der Information, ob eine Verlegung verkn&uuml;pft ist, angeschrieben werden. Ist eine Verlegung verkn&uuml;pft, wird hinter dem Verlegefaktor der Hinweis &quot;</span><span class="f_Hervorhebung_Text">_VKN</span><span class="f_A_Allgemein">&quot; hinzugef&uuml;gt. Diese Information ist nur auf dem Plan sichtbar und wird nicht gedruckt. Aktivieren Sie die Angabe unter [</span><span class="f__Software_Element_deskriptiv">Formst</span><span class="f_A_Allgemein">/</span><span class="f__Software_Element_deskriptiv">Formma</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">BiPos</span><span class="f_A_Allgemein">], indem Sie im rechten Men&uuml; die Option [</span><span class="f__Software_Element_deskriptiv">FaktAn</span><span class="f_A_Allgemein">] einschalten.</span></p>
+<h5 class="p_Heading5"><span class="f_Heading5">Auslagern, Kopieren und Zwischenspeichern von Verkn&uuml;pfungen</span></h5>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Wenn die Hauptverlegung (Verlegefaktor &#8805; 1) zusammen mit mindestens einer oder allen verkn&uuml;pften Verlegungen (Verlegefaktor = 0) selektiert wird, bleiben diese Verkn&uuml;pfungen bei weiterer Bearbeitung erhalten. Wird nur die Hauptverlegung oder mindestens eine der verkn&uuml;pften Verlegungen ausgew&auml;hlt, wird die Verkn&uuml;pfung beim Auslagern, Kopieren oder Speichern in die ISBCAD-Zwischenablage aufgel&ouml;st. Die Verlegefaktoren bleiben unver&auml;ndert.</span></p>
+<p class="p_A_Allgemein"><span class="f_A_Allgemein">Mit [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_A_Allgemein"> | </span><span class="f__Software_Element_deskriptiv">Kopier</span><span class="f_A_Allgemein">] kann eine Kopie von Verlegungen erstellt werden, die miteinander verkn&uuml;pft sind. Diese Kopie hat keinen Bezug zu den kopierten Verlegungen und kann frei bearbeitet werden.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><h3 class="p_Heading3"><span class="f_Heading3">Verkn&uuml;pfungsfunktion [VKN ein] bei der Wahl der Biegeform</span></h3>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><a name="verlegbieg" class="hmanchor"></a><img id="toggle0186a1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a1','toggle0186a1_ICON')">Um eine Verkn&uuml;pfung zu erstellen</a></span></td></tr></table></div>
+<div id="toggle0186a1" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0417in 0 0.0625in 0.6146in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ToDo">Verlegung w&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den Verkn&uuml;pfungsmodus [</span><span class="f__Software_Element_deskriptiv">VKN ein</span><span class="f_Step">] unter der Abfrage an. </span><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Welche Form</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Abfrage wechselt zu [</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine Staffel- oder Formlinie oder einen Durchmesser der Verlegung, die in einer anderen Darstellungsart gezeichnet werden soll. </span><span class="f_Step_Anmerkung">[</span><span class="f__Abfrage">Welche Verlegung</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Sie k&ouml;nnen auch eine Harfen- bzw. F&auml;cherlinie oder den Text der Positionierung anklicken.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Setzen Sie die Form an einer geeigneten Stelle ab. [</span><span class="f__Abfrage">Form setzen</span><span class="f_Step">]. (Wird bei [</span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_Step">] und [</span><span class="f__Software_Element_deskriptiv">VeForm</span><span class="f_Step">] abgefragt).</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Angabe des Abstandes bzw. der Anzahl und des Durchmessers wird &uuml;bersprungen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter </span><span class="f__Abfrage">Teill&auml;nge(n)</span><span class="f_Step">, welche Teill&auml;ngen dargestellt werden sollen: (Wird bei [</span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_Step">] und [</span><span class="f__Software_Element_deskriptiv">VeForm</span><span class="f_Step">] abgefragt).</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Abh&auml;ngig von der gew&auml;hlten Biegeform. Gegebenenfalls wird die Abfrage &uuml;bersprungen.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; padding: 0 0 0 0; margin: 0.0625in 0 0.0938in 0.7813in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_1-Teillg" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_1-teillg.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Darstellung einer Teill&auml;nge.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die gew&uuml;nschte Teill&auml;nge an der abgesetzten Biegeform an.</span><br>
+<span class="f_Step_Anmerkung">Nicht gew&auml;hlte Teill&auml;ngen werden in der Zeichnung ausgeblendet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_n-Teillgn" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_n-teillgn.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Darstellung mehrerer Teill&auml;ngen.</span></p>
+<p class="p_R_Tabellenzeile" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_R_Tabellenzeile">Klicken Sie die gew&uuml;nschten Teill&auml;ngen an und best&auml;tigen Sie die Auswahl durch Rechtsklick.</span><br>
+<span class="f_Step_Anmerkung">Nicht gew&auml;hlte Teill&auml;ngen werden in der Zeichnung ausgeblendet.</span></p></td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:2.0833in;"><p class="p_ImageCaption"><img alt="B_ganze-Form" style="margin:0;width:1.5729in;height:0.2500in;border:none" src="b_ganze-form.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:7.6979in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Eingabe: </span><span class="f__Tastatur">0</span><span class="f_R_Tabellenzeile"> (voreingestellt); stellt die ganze Form mit allen Teill&auml;ngen dar.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ToDo">Projektionswinkel und Duplizierrichtung angeben (Wird bei [VeStaf] und [VeForm] abgefragt)</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie</span><span class="f__Abfrage"> </span><span class="f_Step">den Drehwinkel (Winkel zur Horizontalen) an oder best&auml;tigen Sie den Vorschlagswert mit Rechtsklick. [</span><span class="f__Abfrage">DrehWi</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Drehung der Biegeform erfolgt entgegen dem Uhrzeigersinn. (Mit negativem Wert wird im Uhrzeigersinn gedreht.) Wenn Sie die Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">PP</span><span class="f_Step_Anmerkung"> oder </span><span class="f__Software_Element_deskriptiv">OP</span><span class="f_Step_Anmerkung"> verwenden, k&ouml;nnen Sie die Form weiterdrehen. [</span><span class="f__Abfrage">Drehen</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie</span><span class="f__Abfrage"> </span><span class="f_Step">den Spiegelwinkel an oder best&auml;tigen Sie den Vorschlagswert mit oder Rechtsklick. [</span><span class="f__Abfrage">SpiegelWi</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Geben Sie den Winkel f&uuml;r die Projektion der wahren Teill&auml;nge(n), bezogen auf die Horizontale, an. [</span><span class="f__Abfrage">Projekt.Wi</span><span class="f_Step">].</span><br>
+<span class="f_Step_Anmerkung">Um den Bezug auf eine vorhandene (schr&auml;ge) Linie zu setzen: Verwenden Sie die Ausrichtungsoptionen </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_Step_Anmerkung"> (parallel) oder</span><span class="f_Step_Anmerkung" style="font-size: 9pt;"> </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step_Anmerkung"> (orthogonal), indem Sie zun&auml;chst eine der Funktionen w&auml;hlen und anschlie&szlig;end die Bezugslinie anklicken.</span></p>
+<p class="p_ToDo" style="text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none; padding-left: 0.2500in; margin-left: 0.2708in;"><span class="f_ToDo" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ToDo">Verlegebereich definieren</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bestimmen Sie den Verlegebereich, wie in [<a href="formst_vestaf_berdef.htm" class="topiclink" title="Verlegebereich definieren">VeStaf</a>], [<a href="formst_veform_vlgort.htm" class="topiclink" title="Verlegebereich definieren">VeForm</a>] und [<a href="formst_vedusn.htm" class="topiclink" title="Verlegeberich definieren">VeDuSn</a>] beschrieben.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Stimmen die Bereichsl&auml;ngen der urspr&uuml;nglichen und der neuen Verlegung nicht &uuml;berein, wird der Dialog </span><span class="f__Software_Element_deskriptiv">Verkn&uuml;pfung beachten</span><span class="f_Step_Anmerkung"> ge&ouml;ffnet. Im Dialog k&ouml;nnen Sie ausw&auml;hlen, welche Verteilerl&auml;nge bzw. -breite zutreffen soll. W&auml;hlen Sie dazu die Option mit der richtigen L&auml;nge und best&auml;tigen Sie mit </span><span class="f__Software_Element_deskriptiv">OK</span><span class="f_Step_Anmerkung">.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Verknuepfung-beachtenMatten" style="margin:0;width:3.2604in;height:1.6354in;border:none" src="d_verknuepfung-beachtenmatten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Wenn Sie </span><span class="f__Software_Element_deskriptiv">Abbruch</span><span class="f_Step_Anmerkung"> anklicken, gelangen Sie wieder zur Angabe des Verlegebereiches. Sie k&ouml;nnen die erforderlichen Korrekturen vornehmen, sodass die neue und alte Verlegung &uuml;bereinstimmen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Bevor Sie die gesperrte Eingabe des Faktors (*) best&auml;tigen, k&ouml;nnen Sie, je nach gew&auml;hlter Verlegemethode noch <a href="formst_vestaf_berdef.htm#verlegestaffelausrichten" class="topiclink" title="Darstellung der Verlegung anpassen">&Auml;nderungen</a> vornehmen (nur bei [</span><span class="f__Software_Element_deskriptiv">VeStaf</span><span class="f_Step_Anmerkung">] und [</span><span class="f__Software_Element_deskriptiv">VeDuSn</span><span class="f_Step_Anmerkung">]). An der urspr&uuml;nglichen Verlegung werden die &Auml;nderungen sofort &uuml;bernommen. Der Auszugstext enth&auml;lt die einfache Anzahl der verlegten St&auml;be.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Schlie&szlig;en Sie die Eingaben mit Rechtsklick ab.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verkn&uuml;pfung ist erstellt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3"><span class="f_Heading3">Verkn&uuml;pfungsfunktion [VKN] im jeweiligen Men&uuml; [VeStaf, VeForm, VeDuSn]</span></h3>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a2','toggle0186a2_ICON')">Um eine Verkn&uuml;pfung zu erstellen</a></span></td></tr></table></div>
+<div id="toggle0186a2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter der Abfrage </span><span class="f__Abfrage">Welche</span><span class="f_Step"> die Option <img alt="B-akt_erstellen" style="margin:0;width:1.6979in;height:0.2083in;border:none" src="b-akt_erstellen.png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die erste von zwei Verlegungen mit identischer Positionsnummer an, die miteinander verkn&uuml;pft werden sollen</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">. [</span><span class="f__Abfrage">Welche</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Die Verlegegruppe wird inkl. der Positionierung farbig markiert. Wenn Sie beim Anklicken kein Element der Verlegung getroffen haben, werden Sie dar&uuml;ber informiert. Klicken Sie in diesem Fall die rechte Maustaste, um zum Anfang zur&uuml;ckzukehren.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die zweite Verlegegruppe an. [(mit) </span><span class="f__Abfrage">welcher?</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Beide Gruppen werden farbig markiert. Bestehen schon mit anderen Verlegungen Verkn&uuml;pfungen, werden auch diese markiert.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Stellt das Programm fest, dass in beiden Verlegungen unterschiedliche Angaben vorliegen, haben Sie die M&ouml;glichkeit in dem folgenden Dialog die Parameter anzupassen.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.5521in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2188in"><img id="toggle0186a3_ICON" class="dropdown-toggle-icon" alt="Standard für Umrandung (Dialog)" title="Standard für Umrandung (Dialog)" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Step"><a class="dropdown-toggle" title="Standard für Umrandung (Dialog)" href="javascript:HMToggle('toggle','toggle0186a3','toggle0186a3_ICON')">Verkn&uuml;pfung beachten! (Dialog)</a></span></td></tr></table></div>
+<div id="toggle0186a3" class="dropdown-toggle-body" style="text-align: left; line-height: 1.38; padding: 0 0 0 0; margin: 0.0625in 0 0.0208in 0.7708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0;"><table class="B_Bild_Tabelle"  role="presentation">
+<tr class="B_Bild_Tabelle">
+<td class="B_Bild_Tabelle"><p class="p_ImageCaption"><img alt="D_Verknuepfung-beachten" style="margin:0;width:5.3333in;height:1.5313in;border:none" src="d_verknuepfung-beachten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Die erste Verlegung (Verlegung 1) ist die, die Sie zuerst angeklickt haben, nicht die, die zuerst erstellt wurde.</p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">L&auml;nge</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Bereichsl&auml;nge an, die bei der Verlegung eingegeben wurde.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Durchmesser</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Stabdurchmesser an.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt den Abstand an, sofern Sie diesen bei der Verlegung angegeben haben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Anzahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zeigt die Anzahl der St&auml;be in der Verlegung an. Entweder berechnet oder angegeben.</span></p>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0.4167in;"><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&curren;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl und &Uuml;bernahme der zutreffenden Werte bei Verlegung 1 oder Verlegung 2.</span></p>
+<p style="line-height: 1.20; margin: 0.1042in 0 0 0.4167in;"><span style="font-size: 10pt; font-family: Wingdings,Tidbits;">&iexcl;</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Keine &Uuml;bernahme der Werte.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">OK</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&auml;hrt mit den gew&auml;hlten Angaben fort.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Abbrechen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bricht die Verkn&uuml;pfung ab.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"></td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Verkn&uuml;pfung mit Rechtsklick. [</span><span class="f__Abfrage">Ergebnis</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Falls keine Parameter angepasst werden m&uuml;ssen, wird die Verkn&uuml;pfung sofort erstellt und das Ergebnis ausgegeben: &quot;Die markierten Gruppen sind jetzt verkn&uuml;pft&quot;. Die Anzahl am Formauszug enth&auml;lt nur einmal den Verlegefaktor.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a4','toggle0186a4_ICON')">Um eine Verkn&uuml;pfung aufzuheben</a></span></td></tr></table></div>
+<div id="toggle0186a4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter der Abfrage </span><span class="f__Abfrage">Welche</span><span class="f_Step"> die Option <img alt="B-akt_aufheben" style="margin:0;width:1.6979in;height:0.2083in;border:none" src="b-akt_aufheben.png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine verkn&uuml;pfte Verlegegruppe an. [</span><span class="f__Abfrage">Gruppe</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alle mit dieser Verlegung verkn&uuml;pften Gruppen werden markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie das Ergebnis „Die Verkn&uuml;pfung der markierten Gruppe wurde aufgehoben.“ mit Rechtsklick. [</span><span class="f__Abfrage">Ergebnis</span><span class="f_Step">].</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel: Verkn&uuml;pfung aufl&ouml;sen</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td colspan="3"  style="vertical-align:top; width:8.3646in; padding:0; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="Z_Verknüpfung-bearbeiten-2" style="margin:0;width:7.9167in;height:2.3542in;border:none" src="hmfile_hash_4c618177.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.7083in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Staffel ist mit den Durchmessern im Schnitt verkn&uuml;pft.</span></p>
+</td>
+<td style="vertical-align:top; width:2.7083in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Die Formverlegung ist mit der Staffel verkn&uuml;pft.</span></p>
+</td>
+<td style="vertical-align:top; width:2.7083in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Durch die Verkn&uuml;pfung der Staffel mit der Form sind die Durchmesser im Schnitt mit den beiden anderen Verlegungen verkn&uuml;pft.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td colspan="3"  style="vertical-align:top; width:8.3021in; padding:0; border:none"><p style="line-height: 1.20; margin: 0.1042in 0 0 0;"><img alt="Z_Verknüpfung-bearbeiten-3" style="margin:0;width:7.8750in;height:2.3125in;border:none" src="hmfile_hash_cd775166.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.1875in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Verkn&uuml;pfungen mit der Staffel werden gel&ouml;st.</span></p>
+</td>
+<td style="vertical-align:top; width:0.7708in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:4.0938in; padding:0; border:none"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Nicht betroffene Verkn&uuml;pfungen bleiben erhalten.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; page-break-after: avoid; border-color: #c0c0c0; border-style: solid; border-width: thin; border-top: none; border-right: none; border-bottom: none; border-left: none; background: #f9f9f9; padding: 0 0 0 0; margin: 0.1771in 0 0 0.3646in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.38;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.3125in"><img id="toggle0186a5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" style="margin:0;width:0.1563in;height:0.1563in;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_ToDo_Optional_Toggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #333399; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','toggle0186a5','toggle0186a5_ICON')">Um eine Verkn&uuml;pfung abzufragen</a></span></td></tr></table></div>
+<div id="toggle0186a5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table class="Toggle_Tabelle"  role="presentation">
+<tr class="Toggle_Tabelle">
+<td class="Toggle_Tabelle"><p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">W&auml;hlen Sie unter der Abfrage </span><span class="f__Abfrage">Welche</span><span class="f_Step"> die Option <img alt="B-akt_Info_(Verknuepfungen)" style="margin:0;width:1.7083in;height:0.2083in;border:none" src="b-akt_info_(verknuepfungen).png"/>.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie eine Verlegegruppe an, von der Sie wissen m&ouml;chten, mit welchen anderen Verlegungen Verkn&uuml;pfungen bestehen. [</span><span class="f__Abfrage">Gruppe</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Alle mit dieser Verlegung verkn&uuml;pften Bewehrungen werden markiert.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie das Ergebnis „Die markierten </span><span class="f__Eigenname">n</span><span class="f_Step"> Gruppen sind verkn&uuml;pft.“ mit Rechtsklick. [</span><span class="f__Abfrage">Ergebnis</span><span class="f_Step">].</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('toggle0186a1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a1\',\'toggle0186a1_ICON\')');
+HMInitToggle('toggle0186a1','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a2\',\'toggle0186a2_ICON\')');
+HMInitToggle('toggle0186a2','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a3\',\'toggle0186a3_ICON\')');
+HMInitToggle('toggle0186a3','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a4\',\'toggle0186a4_ICON\')');
+HMInitToggle('toggle0186a4','hm.type','dropdown','hm.state','0');
+HMInitToggle('toggle0186a5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'toggle0186a5\',\'toggle0186a5_ICON\')');
+HMInitToggle('toggle0186a5','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

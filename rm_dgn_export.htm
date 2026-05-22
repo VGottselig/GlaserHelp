@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>DGN Export</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content=".DGN,DGN Export" />
+   <meta name="description" content="Windows-Startmenü &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmenü &#8594; DGN Export" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="top_konfigurationsmodule.htm">Hauptmenü - Programmmodule</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="rm_dstv_import.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="top_konfigurationsmodule.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="listen_archiv.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_R_Menues_und_Funktionen" style="page-break-after: avoid;"><span class="f_R_Menues_und_Funktionen">DGN Export</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><img alt="I_DGN-Export-(Hauptmenue)" style="margin:0;width:0.3333in;height:0.3333in;border:none" src="i_dgn-export-(hauptmenue).png"/></p>
+<p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Aufruf">Windows-Startmen&uuml; &#8594; Programmgruppe ISBCAD 2026 &#8594; Hauptmen&uuml; &#8594; DGN Export</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">&Ouml;ffnet den </span><span class="f__Software_Element_deskriptiv">Dialog DGN Export</span><span class="f_R_Dialog_Info">.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">MicroStation&copy; ist ein 3D-CAD Programm f&uuml;r den Entwurf, Konstruktion und Betrieb von Geb&auml;uden. F&uuml;r die Datenkonvertierung ben&ouml;tigen Sie die Hinweise &uuml;ber die Datenstruktur des Empf&auml;ngers. In der Datenstruktur sind die Zielparameter aufgelistet.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Im folgenden Dialog gehen Sie bitte Schritt f&uuml;r Schritt [1] bis [6] vor.</span></p>
+<p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Siehe f&uuml;r weitere Informationen: <a href="https://www.bentley.com/de-DE/" target="_blank" class="weblink">https://www.bentley.com/de-DE/</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog" style="page-break-after: avoid;"><span class="f_R_Dialog">Optionen im Dialog &quot;DGN-Export&quot;</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; background: #ffffff; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.2708in;"><table class="R_Bereich_Rahmen"  role="presentation">
+<tr class="R_Bereich_Rahmen">
+<td class="R_Bereich_Rahmen" style="width:6.3021in;"><p class="p_ImageCaption"><img alt="D_DGN_Export" style="margin:0;width:8.4063in;height:5.6979in;border:none" src="d_dgn_export.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">[1] Seed-Datei</span></p>
+<p class="p_R_Bereich_Info_Rahmen" style="page-break-after: avoid; padding: 0.0208in 0.0208in 0.0208in 0.0208in; margin: 0.0208in 0.0208in 0.0417in 0.3333in;"><span class="f_R_Bereich_Info_Rahmen">Hierbei handelt es sich um eine leere DGN-Datei, in der Folien, Farb- und Linientypinformationen vom Auftraggeber enthalten sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">(Integrierte Seed-Dateien)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Microstation (2D / 3D); WSV (2D NB04 / 3D NB04).</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option" style="font-family: Wingdings,Tidbits;">&curren;</span><span class="f_R_Option"> Datei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl einer Seed-Datei, in der die erforderlichen Informationen enthalten sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Datei-entfernen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_datei-entfernen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ausgew&auml;hlte Datei entfernen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Seed-Datei-oeffnen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_seed-datei-oeffnen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Vorhandene Seed-Datei ausw&auml;hlen. Wird vom Auftraggeber gestellt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_akt-erzeugen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_akt-erzeugen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird eine leere ISBCAD Zeichnungsdatei (*.akt) mit Folienstruktur erzeugt.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">[2] Font Ressourcen</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">NB04</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Integrierte Fontdatei (WSV)</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option" style="font-family: Wingdings,Tidbits;">&curren;</span><span class="f_R_Option"> Datei</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl einer Seed-Datei, in der die erforderlichen Informationen enthalten sind.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Datei-entfernen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_datei-entfernen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl aufheben.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Seed-Datei-oeffnen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_seed-datei-oeffnen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Auswahl einer Datei, in der die Schriftarten enthalten sind.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">[3] Grundwerte</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Faktor f&uuml;r Skalierung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Einheiten pro Meter. Dieser Wert wird nach dem Ausw&auml;hlen einer Seed-Datei neu gesetzt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">ASCII-Wert f&uuml;r Durchmesserzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Austauschwert f&uuml;r das Durchmesserzeichen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Ma&szlig;stabsbereiche als Xref</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Es wird f&uuml;r jeden Ma&szlig;stabsbereich eine Zeichnung erstellt und eine Hauptdatei, die die einzelnen Dateien als Xref einf&uuml;gt.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe aus Folie &uuml;bernehmen (NB04)</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Zeichnungselemente erhalten die Farbe der Folienfarbe.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Mit Gau&szlig;/Kr&uuml;ger-Koordinaten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Ein erstelltes Koordinatensystem wird verwendet. Alle Elemente erhalten die Koordinaten des Bezugssystems.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">[4 / 6] Datei(en) Lesen / Speichern</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Datei-entfernen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_datei-entfernen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Dateiliste l&ouml;schen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_Seed-Datei-oeffnen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_seed-datei-oeffnen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">ISBCAD Zeichnungsdateien (*.akt) lesen. Mehrfachauswahl durch Mausklick bei gedr&uuml;ckter </span><span class="f__Tastatur">Strg</span><span class="f_R_Option_Beschreibung">-Taste. Markierung aller Dateien zwischen dem ersten und zweiten Mausklick bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalt</span><span class="f_R_Option_Beschreibung">-Taste. Alle Dateien k&ouml;nnen mit </span><span class="f__Tastatur">Strg</span><span class="f_R_Option_Beschreibung"> + </span><span class="f__Tastatur">A</span><span class="f_R_Option_Beschreibung"> markiert werden. Sie k&ouml;nnen Dateien nur aus einem Ordner ausw&auml;hlen.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="I_akt-erzeugen" style="margin:0;width:0.3021in;height:0.2604in;border:none" src="i_akt-erzeugen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">DGN-Dateien speichern.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Speichername wie Lesename / immer &uuml;berschreiben</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn das Speichern ohne R&uuml;ckfrage erfolgen soll, setzen Sie hier einen Haken. Wenn die Datei bereits vorhanden ist, wird sie automatisch &uuml;berschrieben.</span></p>
+<p class="p_R_Bereich_Varianten"><span class="f_R_Bereich_Varianten">[5] Zuordnung</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">nur Zuordnung anzeigen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Bereiche [1] - [4 / 6] werden ausgeblendet.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><img alt="B_uebernehmen" style="margin:0;width:0.8125in;height:0.2604in;border:none" src="b_uebernehmen.png"/></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Um vorgenommene &Auml;nderungen zu &uuml;bernehmen, klicken Sie auf diese Schaltfl&auml;che. Je nachdem, um welche Zuordnung es sich handelt, werden unterschiedliche Parameter rechts neben der Zuordnungstabelle eingeblendet. Klicken Sie auf </span><img alt="I_--nach-unten" style="margin:0;width:0.1771in;height:0.1771in;border:none" src="i_--nach-unten.png"/><span class="f_R_Option_Beschreibung">, um die Dropdown-Liste aufzuschlagen und einen Eintrag auszuw&auml;hlen. Alternativ k&ouml;nnen Sie den entsprechenden Eintrag mit den Pfeiltasten ausw&auml;hlen und durch Dr&uuml;cken der Eingabetaste die &Auml;nderung sofort &uuml;bernehmen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Werte k&ouml;nnen auch spaltenweise ge&auml;ndert werden. Klicken Sie dazu in die Spalten&uuml;berschrift, um alle Eintr&auml;ge zu markieren.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Folien AKT</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Sie k&ouml;nnen die Folien der Zeichnungen f&uuml;r die DGN-Datei angeben. Automatisch wird der benutzte Name vorgeschlagen. Sie k&ouml;nnen die Zuordnung &auml;ndern, indem Sie f&uuml;r eine markierte Zeile aus dem Auswahlfeld einen Eintrag anklicken.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Fonts</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Zuweisen der Schriftarten.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Farbe/Breite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Wenn die Farbe </span><span class="f__Hervorhebung">nicht</span><span class="f_R_Option_Beschreibung"> mit der Option </span><span class="f__Software_Element_deskriptiv">Farbe aus Folie &uuml;bernehmen (NB04)</span><span class="f_R_Option_Beschreibung"> aus der Folie &uuml;bernommen wird (siehe: [3] Grundwerte), k&ouml;nnen Sie die Einstellungen manuell vornehmen. W&auml;hlen Sie f&uuml;r die markierte Zeile die geforderte </span><span class="f__Software_Element_deskriptiv">Farbe </span><span class="f_R_Option_Beschreibung">und die </span><span class="f__Software_Element_deskriptiv">Breite </span><span class="f_R_Option_Beschreibung">in Pixel f&uuml;r die Darstellung am Bildschirm.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Linientyp</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Tragen Sie die Nummer des Linientyps [</span><span class="f__Software_Element_deskriptiv">LTyp</span><span class="f_R_Option_Beschreibung">] f&uuml;r die markierte Zeile in die Eingabe ein.</span></p>
+<p class="p_R_Option" style="page-break-after: avoid;"><span class="f_R_Option">Level DGN</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Alle Folien aus der Seed-Datei und der ISBCAD Zeichnung werden in Level &uuml;bertragen. Den Level kann zus&auml;tzlich eine </span><span class="f__Software_Element_deskriptiv">Farbe</span><span class="f_R_Option_Beschreibung">, </span><span class="f__Software_Element_deskriptiv">Breite</span><span class="f_R_Option_Beschreibung"> in Pixel und ein Linientyp [</span><span class="f__Software_Element_deskriptiv">LTyp</span><span class="f_R_Option_Beschreibung">] zugeordnet werden.</span></p>
+
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

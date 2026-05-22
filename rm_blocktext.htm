@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Textfeld einfügen</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Blocktext,Makrotext,Makrotext im Textfeld,Texte,Texte schreiben,Texte Textfeld einfügen,Textfeld" />
+   <meta name="description" content="Mit dieser Funktion fügen Sie ein Textfeld in die Zeichnung ein, in das Sie ein- oder mehrzeilige Texte schreiben können. Ein Textfeld kann beliebig lang sein, mehrere Absätz" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_texte.htm">Texte</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="texte_text_verschieben.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_texte.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="texte_suchen_und_ersetzen.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Textfeld einf&uuml;gen</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_texte.htm" class="topiclink" title="Textfunktionen (Übersicht)"><img alt="Textfunktionen (Übersicht)" title="Textfunktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_texte.png"/></a> <img alt="B-akt_Block_Texte" style="margin:0;width:1.1563in;height:0.2396in;border:none" src="b-akt_block_texte.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_R_Dialog_Info"><span class="f_R_Dialog_Info">Mit dieser Funktion f&uuml;gen Sie ein Textfeld in die Zeichnung ein, in das Sie ein- oder mehrzeilige Texte schreiben k&ouml;nnen. Ein Textfeld kann beliebig lang sein, mehrere Abs&auml;tze enthalten und verschiedene Textauszeichnungen verwenden. Sie k&ouml;nnen Texte wie in einem Textverarbeitungsprogramm mittels der Textbearbeitungsleiste bearbeiten.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Schriftgr&ouml;&szlig;e, Schriftart, Breitenfaktor und Stiftnummer sowie die Textauszeichnungen (fett, kursiv, unterstrichen und durchgestrichen) werden als Voreinstellungen automatisch aus dem Funktionsbereich &uuml;bernommen. Sie k&ouml;nnen vorab mit der </span><span class="f__Software_Element_deskriptiv">sowie</span><span class="f_L_Listeneintrag">-Funktion die Eigenschaften eines Textes &uuml;bernehmen. Alle Eigenschaften k&ouml;nnen nach dem Einf&uuml;gen eines Textfeldes ge&auml;ndert werden. Wenn ein Textfeld sp&auml;ter mit der Funktion [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_L_Listeneintrag">] bearbeitet wird, bleiben die urspr&uuml;nglich getroffenen Einstellungen erhalten.</span></p>
+<p class="p_L_Listeneintrag" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.3958in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_L_Listeneintrag">Die Auswahl verf&uuml;gbarer Schriftarten kann in den Systemdaten konfiguriert werden: </span><br>
+<span class="f_L_Listeneintrag">[</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_L_Listeneintrag"> | </span><span class="f__Software_Element_deskriptiv">Sysdat</span><span class="f_L_Listeneintrag"> &#8594; </span><span class="f__Software_Element_deskriptiv">Fontauswahl</span><span class="f_L_Listeneintrag">].</span></p>
+<p class="p_R_Dialog_Info"><span class="f_Hervorhebung_Text">Anmerkung</span><span class="f_R_Dialog_Info">: Blocktexte, die mit fr&uuml;heren ISBCAD Versionen erstellt worden sind, werden nach dem Anklicken mit der &Auml;ndern-Funktion [</span><span class="f__Software_Element_deskriptiv">Konst 1</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_R_Dialog_Info">] oder bei einer Ma&szlig;stabskorrektur [</span><span class="f__Software_Element_deskriptiv">Konst 2</span><span class="f_R_Dialog_Info"> | </span><span class="f__Software_Element_deskriptiv">Ma&szlig;Kor</span><span class="f_R_Dialog_Info">] automatisch in die neuen Textfelder konvertiert.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_txtf-einfuegen" class="hmanchor"></a><span class="f_Task">Textfeld einf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie auf der Zeichenfl&auml;che den ersten Diagonalpunkt und anschlie&szlig;end den zweiten Punkt an, um die Breite und H&ouml;he des Textfeldes zu bestimmen. Sie k&ouml;nnen auch Punkte fangen. [</span><span class="f__Abfrage">1. Punkt</span><span class="f_Step">]; [</span><span class="f__Abfrage">2. Punkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Winkel</span><span class="f_Step_Anmerkung">: Soll das Textfeld in einem bestimmten Winkel eingef&uuml;gt werden, klicken Sie auf </span><span class="f__Software_Element_deskriptiv">Winkel</span><span class="f_Step_Anmerkung"> und geben Sie den gew&uuml;nschten Wert ein oder w&auml;hlen Sie eine Winkelvorgabe. Mit </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_Step_Anmerkung"> richten Sie die Grundlinie des Textfeldes parallel oder orthogonal zu einem Bezugselement aus.</span></p>
+<p class="p_Step_Anmerkung"><a name="_textfeld_ausrichten" class="hmanchor"></a><span class="f_Heading5">Textfeld ausrichten</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Nach der Erstellung erscheint das Textfeld im gew&auml;hlten Winkel. Sofern es gedreht eingef&uuml;gt wurde, k&ouml;nnen Sie es zur besseren Textbearbeitung horizontal am Bildschirm ausrichten, indem Sie die Funktion </span><span class="f__Software_Element_deskriptiv">Textfeld horizontal ausrichten </span><span class="f_Step_Anmerkung">in der Textbearbeitungsleiste aktivieren. Die Zeichenfl&auml;che wird dabei vor&uuml;bergehend gedreht. Sie k&ouml;nnen die Funktion bei jeder Winkelanpassung des Textfeldes aktivieren oder deaktivieren.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">Textbearbeitungsleiste:</span></p>
+<p class="p_R_Tabellenzeile"><img alt="D_Textbearbeitungsleiste_drehen" style="margin:0;width:6.5000in;height:0.8438in;border:none" src="d_textbearbeitungsleiste_drehen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Tipp</span><span class="f_Step_Anmerkung">: Das horizontale Ausrichten kann als Standardverhalten festgelegt werden; [</span><span class="f__Software_Element_deskriptiv">Option</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Einste</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">Textfeld horizontal ausrichten</span><span class="f_Step_Anmerkung">].</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Text einf&uuml;gen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">F&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Hervorhebung_Text">Eingeben</span><span class="f_Step_Anmerkung">: Geben Sie den Text innerhalb des gestrichelten Rahmens ein.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Hervorhebung_Text">Kopieren und Einf&uuml;gen</span><span class="f_Step_Anmerkung">: Verwenden Sie </span><span class="f__Tastatur">Strg+C</span><span class="f_Step_Anmerkung">, um Text aus einer externen Quelle zu kopieren und </span><span class="f__Tastatur">Strg+V</span><span class="f_Step_Anmerkung">, um den Text in das Textfeld einzuf&uuml;gen.</span><br>
+<span class="f_Step_Anmerkung">Sie finden die Befehle </span><span class="f__Software_Element_deskriptiv">Kopieren</span><span class="f_Step_Anmerkung">, </span><span class="f__Software_Element_deskriptiv">Einf&uuml;gen</span><span class="f_Step_Anmerkung">, </span><span class="f__Software_Element_deskriptiv">Ausschneiden</span><span class="f_Step_Anmerkung"> und </span><span class="f__Software_Element_deskriptiv">L&ouml;schen</span><span class="f_Step_Anmerkung"> im Kontextmen&uuml;, das Sie mit einem Rechtsklick &ouml;ffnen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Hervorhebung_Text">Text-Zwischenablage</span><span class="f_Step_Anmerkung">: Bevor Sie ein Textfeld erstellen oder es &uuml;ber die Funktion [</span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_Step_Anmerkung">] bearbeiten, k&ouml;nnen Sie die Funktion [</span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Step_Anmerkung"> | </span><span class="f__Software_Element_deskriptiv">ZwiAbl</span><span class="f_Step_Anmerkung">] verwenden. Damit k&ouml;nnen Sie Texte aus einer ge&ouml;ffneten ISBCAD Zeichnung in die Zwischenablage legen. Dr&uuml;cken Sie anschlie&szlig;end im Textfeld </span><span class="f__Tastatur">Strg+V</span><span class="f_Step_Anmerkung">, um den Text an der Cursorposition einzuf&uuml;gen, oder </span><span class="f__Tastatur">Windows-Taste+V</span><span class="f_Step_Anmerkung">, um ihn &uuml;ber den Windows-Zwischenablageverlauf einzuf&uuml;gen. Siehe auch: <a href="texte_zwischenablage_windows.htm" class="topiclink">Texte in die Zwischenablage kopieren und einf&uuml;gen</a></span></p>
+<p class="p_Step"><span class="f_Hervorhebung_Text">Anmerkung</span><span class="f_Step">: Wenn Texte aus anderen Programmen (z. B. Word) oder &uuml;ber die Zwischenablage [</span><span class="f__Software_Element_deskriptiv">Texte</span><span class="f_Step"> | </span><span class="f__Software_Element_deskriptiv">ZwiAbl</span><span class="f_Step">] in ein Textfeld kopiert werden, werden sie gem&auml;&szlig; den Einstellungen in der Textbearbeitungsleiste eingef&uuml;gt.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_txtf-text-bearbeiten" class="hmanchor"></a><span class="f_ToDo">Texte zum Formatieren und Bearbeiten ausw&auml;hlen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Positionieren Sie die Einf&uuml;gemarke am oder im Text und f&uuml;hren Sie einen der folgenden Schritte aus:</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span><span class="f_Step_Anmerkung">W&auml;hlen Sie durch Anklicken und Ziehen ein oder mehrere Zeichen aus.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span><span class="f_Step_Anmerkung">Doppelklicken Sie auf ein Wort, um es auszuw&auml;hlen. Klicken Sie drei Mal auf ein Wort, um die gesamte Zeile auszuw&auml;hlen.</span></p>
+<p class="p_Step_Anmerkung" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.7813in;"><span class="f_Step_Anmerkung" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span><span class="f_Step_Anmerkung">Dr&uuml;cken Sie </span><span class="f__Tastatur">Strg+A</span><span class="f_Step_Anmerkung">, um den gesamten Text auszuw&auml;hlen.</span></p>
+<p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_textfeld_aendern" class="hmanchor"></a><span class="f_ToDo">Text formatieren und bearbeiten</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Mit der Textbearbeitungsleiste k&ouml;nnen Sie ausgew&auml;hlte Texte formatieren, Makro- und Favoritentexte einf&uuml;gen und die Gr&ouml;&szlig;e des Texfeldes an den Textinhalt anpassen.</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">W&auml;hlen Sie die Zeichen, Texte und Textabschnitte aus, die Sie formatieren m&ouml;chten.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.32; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0417in 0 0.0521in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><h5 class="p_Heading5"><span class="f_Heading5">Funktionen in der Textbearbeitungsleiste</span><br>
+<span class="f_Heading5">&nbsp;</span></h5>
+<p class="p_ImageCaption" style="margin: 0.0625in 0 0.0625in 0.2708in;"><img alt="D_Textbearbeitungsleiste" style="margin:0;width:6.2813in;height:1.7708in;border:none" src="d_textbearbeitungsleiste.png"/><br>
+<span class="f_ImageCaption">&nbsp;</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1.</span><span class="f_R_Option">Schriftauswahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klappen Sie die Liste auf und w&auml;hlen Sie eine Schriftart. ISBCAD Schriftarten (z. B. ISO) k&ouml;nnen nur bedingt formatiert werden.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2.</span><span class="f_R_Option">Textgr&ouml;&szlig;e in mm</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klappen Sie die Liste auf und w&auml;hlen Sie die Textgr&ouml;&szlig;e.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">3.</span><span class="f_R_Option">Textbreite</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klappen Sie die Liste auf und w&auml;hlen Sie den Breitenfaktor.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">4.</span><span class="f_R_Option">Stiftauswahl</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klappen Sie die Liste auf und w&auml;hlen Sie einen Stift.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">5.</span><span class="f_R_Option">Zeilenabstand</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Die Angabe des Zeilenabstandes wirkt sich immer auf das gesamte Textfeld aus. Verwenden Sie bedarfsweise Leerzeilen, indem Sie die Eingabetaste dr&uuml;cken, um Abs&auml;tze darzustellen.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">6.</span><span class="f_R_Option">Breite des Textfeldes in cm</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein und best&auml;tigen Sie mit der Eingabetaste. Wenn Text &uuml;ber das Textfeld hinaus dargestellt wird, bleibt er nach dem Best&auml;tigen des Textfeldes trotzdem erhalten. Es wird lediglich die Darstellung des Rahmens nicht angepasst. Setzen Sie bei </span><span class="f__Software_Element_deskriptiv">Auto</span><span class="f_R_Option_Beschreibung"> einen Haken, um die Breite automatisch an die l&auml;ngste Zeile anzupassen.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">7.</span><span class="f_R_Option">H&ouml;he des Textfeldes in cm</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Wert ein und best&auml;tigen Sie mit der Eingabetaste. Wenn Text &uuml;ber das Textfeld hinaus dargestellt wird, bleibt er nach dem Best&auml;tigen des Textfeldes trotzdem erhalten. Es wird lediglich die Darstellung des Rahmens nicht angepasst. Setzen Sie bei </span><span class="f__Software_Element_deskriptiv">Auto</span><span class="f_R_Option_Beschreibung"> einen Haken, um die H&ouml;he automatisch anzupassen. Kommt eine Zeile hinzu oder wird entfernt, passt sich die untere Rahmenlinie automatisch an.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">8.</span><span class="f_R_Option">Textformatierung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie eine Textformatierung: fett, kursiv, unterstrichen, durchgestrichen.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">9.</span><span class="f_R_Option">Tiefgestellt/Hochgestellt</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellen Sie einen Text tief oder hoch.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">10.</span><span class="f_R_Option"> &nbsp;Textausrichtung</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">W&auml;hlen Sie die Textausrichtung: linksb&uuml;ndig, zentriert, rechtsb&uuml;ndig.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">11.</span><span class="f_R_Option"> &nbsp;Listenoptionen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Formatiert den Text als Liste - mit Aufz&auml;hlungszeichen oder mit Nummerierung. Sie k&ouml;nnen mehrere Ebenen darstellen, indem Sie die Einf&uuml;gemarke vor oder in den Listeneintrag setzen und die </span><span class="f__Tastatur">TAB-Taste</span><span class="f_R_Option_Beschreibung"> dr&uuml;cken.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Bei mehreren Unterebenen werden Aufz&auml;hlungszeichen und das Nummerierungsformat (Ziffer/Buchstabe) abwechselnd verwendet.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4479in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Textfeld_Liste_a" style="margin:0 auto 0 auto;width:1.2708in;height:1.0417in;border:none" src="scr_textfeld_liste_a.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5104in;"><p class="p_R_Tabellenzeile_zentriert"><img alt="SCR_Textfeld_Liste_b" style="margin:0 auto 0 auto;width:1.1875in;height:1.0208in;border:none" src="scr_textfeld_liste_b.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:1.4479in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Aufz&auml;hlungszeichen</span></p>
+</td>
+<td class="Optionen_Palette" style="width:1.5104in;"><p class="p_R_Tabellenzeile_zentriert"><span class="f_R_Tabellenzeile_zentriert">Nummerierung</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">12.</span><span class="f_R_Option"> &nbsp;Zur&uuml;ck</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Setzt schrittweise die vorher abgeschlossenen Aktionen zur&uuml;ck (beginnend mit der zuletzt abgeschlossenen Aktion). </span><br>
+<span class="f_R_Option_Beschreibung">Nutzen Sie alternativ die Tastenkombination </span><span class="f__Tastatur">Strg+Z</span><span class="f_R_Option_Beschreibung">.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">13.</span><span class="f_R_Option"> &nbsp;Wiederherstellen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Stellt schrittweise die letzten Zur&uuml;ck- (Korrektur) Aktionen wieder her.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">14.</span><span class="f_R_Option"> &nbsp;Einf&uuml;gen von Favoritentexten und Makrotexten</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">F&uuml;gen Sie Favoritentexte und Makrotexte aus der Auswahlliste ein, indem Sie die entsprechende Registerkarte &ouml;ffnen und den Text anklicken. Der Text wird an die Position der Einf&uuml;gemarke gesetzt.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#191919;text-decoration:none;">&#45;</span><span class="f_R_Option_Beschreibung">Bei dynamischen Makrotexten haben Sie die M&ouml;glichkeit, die Formatierung anzupassen. Bearbeiten Sie dazu die Zeichenfolge nach dem $-Zeichen. Siehe: <a href="ref_dyn_makrotexte.htm" class="topiclink">Dynamische Makrotexte (Referenz)</a>.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#191919;text-decoration:none;">&#45;</span><span class="f_R_Option_Beschreibung">Der Dialog bleibt solange ge&ouml;ffnet, bis Sie ihn schlie&szlig;en. Sie k&ouml;nnen die Einf&uuml;gemarke daher jederzeit an eine andere Position setzen, um weitere Favoriten- und Makrotexte einzuf&uuml;gen.</span></p>
+<p class="p_R_Option_Beschreibung" style="text-indent: 0; page-break-after: avoid; padding-left: 0.1354in; margin-left: 0.4167in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Segoe UI';font-style:normal;color:#191919;text-decoration:none;">&#45;</span><span class="f_R_Option_Beschreibung">Wenn ein Makrotext im Textfeld angeklickt wird, dann wird er hervorgehoben.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; page-break-after: avoid; padding: 0 0 0 0; margin: 0 0 0.0625in 0.4167in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="D_Eingabe-Makro-Favoriten" style="margin:0;width:3.8542in;height:2.3854in;border:none" src="d_eingabe-makro-favoriten.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">15.</span><span class="f_R_Option"> &nbsp;Einf&uuml;gen von Sonderzeichen</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">&Ouml;ffnet den Dialog </span><span class="f__Software_Element_deskriptiv">Eingabe Sonderzeichen</span><span class="f_R_Option_Beschreibung">. Je nach Schriftart des zu bearbeitenden Textes, werden die verf&uuml;gbaren Sonderzeichen geladen.</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Klicken Sie Sonderzeichen an, um diese an der Position der Einf&uuml;gemarke einzuf&uuml;gen. Der Dialog bleibt solange ge&ouml;ffnet, bis Sie ihn schlie&szlig;en. Sie k&ouml;nnen die Einf&uuml;gemarke daher jederzeit an eine andere Position setzen, um weitere Sonderzeichen einzuf&uuml;gen.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">16.</span><span class="f_R_Option"> &nbsp;Winkel</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Geben Sie einen Drehwinkel ein oder w&auml;hlen Sie eine Vorgabe aus der Auswahlliste, um das Textfeld gedreht auf der Zeichenfl&auml;che zu platzieren. </span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Mit </span><span class="f__Software_Element_deskriptiv">P...</span><span class="f_R_Option_Beschreibung"> und </span><span class="f__Software_Element_deskriptiv">O...</span><span class="f_R_Option_Beschreibung"> richten Sie die Grundlinie des Textfeldes parallel oder orthogonal zu einem Bezugselement aus.</span></p>
+<p class="p_R_Option" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2083in; margin-left: 0.4167in;"><span class="f_R_Option" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">17.</span><span class="f_R_Option"> &nbsp;Ausrichten des Textfeldes</span></p>
+<p class="p_R_Option_Beschreibung" style="page-break-after: avoid;"><span class="f_R_Option_Beschreibung">Richtet das Textfeld horizontal am Bildschirm aus, sofern es gedreht ist.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_txtf-verschieben" class="hmanchor"></a><span class="f_Task">Textfeld verschieben</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen das Textfeld w&auml;hrend der Bearbeitung an eine andere Stelle verschieben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor &uuml;ber eine gestrichelte Rahmenlinie. Wenn sich der Cursor &auml;ndert, halten Sie die Maustaste gedr&uuml;ckt, und ziehen Sie den Rahmen an eine andere Stelle. Wenn die Position erreicht ist, lassen Sie die Maustaste los.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Hervorhebung_Text">Orthogonalmodus</span><span class="f_Step_Anmerkung">: Sind bereits Textfelder auf der Zeichnung vorhanden, k&ouml;nnen Sie den zu verschiebenden Rahmen bei gedr&uuml;ckter </span><span class="f__Tastatur">Umschalttaste</span><span class="f_Step_Anmerkung"> (Shift) an den eingeblendeten Hilfslinien einrasten lassen. Die Textfelder m&uuml;ssen hierf&uuml;r im selben Winkel erstellt worden sein. Sie k&ouml;nnen den Rahmen an die obere, mittlere und untere Grundlinie sowie an die seitlichen Rahmenlinien des Textfeldes verschieben, auf das Bezug genommen wird.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Textfeld_Verschieben" style="margin:0;width:5.1667in;height:2.4063in;border:none" src="scr_textfeld_verschieben.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabelle_Kopf"><span class="f_R_Tabelle_Kopf">In [Konst 1 | Texte | &auml;ndern]:</span></p>
+<p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Beim Verschieben und Ver&auml;ndern der Gr&ouml;&szlig;e wird die Position des anf&auml;nglich erstellten Rahmens dargestellt. Sie k&ouml;nnen diese Rahmenlinien oder die anderer Textfelder als Bezugselemente nutzen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_txtf-groesse" class="hmanchor"></a><span class="f_Task">Gr&ouml;&szlig;e des Textfelds &auml;ndern</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen die Gr&ouml;&szlig;e des Textfelds w&auml;hrend der Bearbeitung oder nachtr&auml;glich mit der Textfunktion </span><span class="f__Software_Element_deskriptiv">&auml;ndern</span><span class="f_Task_Info"> anpassen.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor &uuml;ber einen Griffpunkt. Wenn sich der Cursor &auml;ndert, halten Sie die Maustaste gedr&uuml;ckt, und ziehen Sie den Punkt in die gew&uuml;nschte Richtung. Wenn die Gr&ouml;&szlig;e passt, lassen Sie die Maustaste los.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Textfeld_Aendern" style="margin:0;width:1.6875in;height:1.0521in;border:none" src="scr_textfeld_aendern.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><a name="_txtf-drehen" class="hmanchor"></a><span class="f_Task">Textfeld drehen</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Sie k&ouml;nnen das Textfeld frei oder in 45&ordm;-Schritten um dessen Zentrum drehen. Alternativ k&ouml;nnen Sie einen Drehwinkel in der Textsymbolleiste im Feld </span><span class="f__Software_Element_deskriptiv">Winkel</span><span class="f_Task_Info"> eingeben.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Bewegen Sie den Cursor &uuml;ber den unteren Griffpunkt. Wenn sich der Cursor &auml;ndert, halten Sie die Maustaste gedr&uuml;ckt, und ziehen Sie den Punkt nach links oder rechts. Wenn der Drehwinkel erreicht ist, lassen Sie die Maustaste los.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Um das Textfeld in 45&ordm;-Schritten zu drehen, halten Sie die </span><span class="f__Tastatur">Umschalttaste (Shift)</span><span class="f_Step_Anmerkung"> gedr&uuml;ckt, </span><span class="f_Step">und ziehen Sie den Punkt nach links oder rechts. </span><span class="f_Step_Anmerkung">Lassen Sie die Taste und anschlie&szlig;end die Maustaste los, wenn der Drehwinkel erreicht ist.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.0104in 0 0.0833in 0.7813in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Textfeld_Drehen" style="margin:0;width:1.6667in;height:1.4167in;border:none" src="scr_textfeld_drehen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Bearbeitung abschlie&szlig;en</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Um die Bearbeitung abzuschlie&szlig;en, klicken Sie mit der rechten Maustaste in einen freien Bereich au&szlig;erhalb des Textfeldes. Das Textfeld wird auf der Zeichnung mit einem gestrichelten Rahmen dargestellt. Dieser Rahmen ist immer dann sichtbar, wenn Sie eine Funktion aufrufen, mit der auch Texte bearbeitet werden k&ouml;nnen wie z. B. Drehen, Verschieben oder Kopieren. Das hilft Ihnen bei der Selektion und Bearbeitung der entsprechenden Textfelder.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; page-break-inside: avoid; page-break-after: avoid; padding: 0 0 0 0; margin: 0.0521in 0 0.1042in 0.2708in;"><table style="border:none; border-spacing:0;" role="presentation">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_R_Tabellenzeile"><img alt="SCR_Textfeld_Absetzen" style="margin:0;width:3.2188in;height:0.9375in;border:none" src="scr_textfeld_absetzen.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Siehe auch:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="texte_texte_aendern.htm" class="topiclink">Text &auml;ndern</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_farbeinstellung.htm" class="topiclink" title="Systemdaten - Farbeinstellung">Farbeinstellungen f&uuml;r die Rahmenlinien</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_texte.htm" class="topiclink">Texte (Men&uuml;)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rd_systemdaten_fontauswahl.htm" class="topiclink">Systemdaten - Fontauswahl</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

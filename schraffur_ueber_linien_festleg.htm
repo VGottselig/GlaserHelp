@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Schraffurbereich über Linienelemente definieren</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Füllung,Füllung erzeugen,Schraffur,Schraffur erzeugen" />
+   <meta name="description" content="Erzeugen Sie Schraffuren und Füllungen durch Anklicken von Linien oder Teilkreisen. Die Schraffurattribute können über die Optionen im Funktionsbereich gewählt werden. » Schr" />
+   
+   <link type="text/css" href="isbcad_style.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0;
+        padding:0; 
+        background: #ffffff;
+      }
+       
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #fff;
+        background: #d5dbe1; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0px 38px 0px 0px;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+     img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+     #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+     #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+     #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+     #callout-table a {text-decoration: none; color: blue;}
+     #callout-table a:visited {text-decoration: none; color: blue;}
+     #overview-table a {text-decoration: none; color: black;}
+     #overview-table a:visited {text-decoration: none; color: black;}
+     #callout-table a:hover, #overview-table a:hover {text-decoration: underline;} 
+      p.crumbs { font-size: 9pt; margin: 0 0 0.0625in 0; color: #35383b }      
+      p.crumbs a { text-decoration: underline; color: #35383b }
+      p.crumbs a:hover{ color: #fff }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #ffffff; font-size: 9pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #fff; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }
+      ._Hinweis {margin-top: 30px; margin-bottom: 30px }
+      .Optionen-Palette {margin-top: 10px}
+      .Menue-Palette {margin-top: 10px}
+      .Reference_Menue {margin-top: 20px; margin-bottom: 20px}	  
+      
+      
+     a {color: #0000FF; text-decoration: none;}
+     a:hover {color: #E4641C; text-decoration: underline;}
+      
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     
+     <a href="con_allg_prog.htm">Konstruktionsprogramm</a> &gt; <a href="rm_konstruktion-1.htm">Konstruktion 1</a> &gt; <a href="rm_schraffur.htm">Schraffur</a>&nbsp;&gt;</p>
+
+     <div id="headernav">
+     <a href="schraffur_ueber_fenster_festle.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.png'" 
+        onmouseout="document.images.prev.src='btn_prev_n.png'"
+        ><img class="nav" name="prev" src="btn_prev_n.png" alt="Vorheriger Artikel" title="Vorherige Seite"
+        ></a><a href="rm_schraffur.htm"
+        onmouseover="document.images.main.src='btn_home_h.png'" 
+        onmouseout="document.images.main.src='btn_home_n.png'"><img class="nav" name="main" src="btn_home_n.png" alt="Kapitelübersicht" title="Kapitelübersicht"
+        ></a><a href="schraffur_ueber_rechteck_festl.htm"
+        onmouseover="document.images.next.src='btn_next_h.png'" 
+        onmouseout="document.images.next.src='btn_next_n.png'"><img class="nav" name="next" src="btn_next_n.png" alt="Nächster Artikel" title="Nächste Seite"
+        ></a>
+    </div>
+    <p class="p_Task" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Task">Schraffurbereich &uuml;ber Linienelemente definieren</span></p>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="p_Aufruf" style="page-break-inside: avoid; page-break-after: avoid;"><a href="rm_konstruktion-1.htm" class="topiclink" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)"><img alt="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" title="Menü Konstruktion 1 (häufig benötigte Zeichen- und Auswahlfunktionen)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_konst1.png"/></a><span class="f_Aufruf"> <a href="rm_schraffur.htm" class="topiclink" title="Schraffur-Funktionen (Übersicht)"><img alt="Schraffur-Funktionen (Übersicht)" title="Schraffur-Funktionen (Übersicht)" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_schraf.png"/></a> <img alt="B-akt_Linien_Schraf" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="b-akt_linien_schraf.png"/></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Erzeugen Sie Schraffuren und F&uuml;llungen durch Anklicken von Linien oder Teilkreisen. Die Schraffurattribute k&ouml;nnen &uuml;ber die Optionen im Funktionsbereich gew&auml;hlt werden. <a href="rm_schraffur.htm#schraffur-optionen" class="topiclink">&raquo;&nbsp;Schraffuren</a></span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Um das Schraffurbild an einem Ursprung auszurichten</span></p>
+<p class="p_Task_Info" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Task_Info">Wird beim Anlegen einer Fl&auml;chenschraffur kein Ursprung definiert, wird das Schraffurbild willk&uuml;rlich in der Fl&auml;che verteilt. Durch Angabe eines Ursprungs kann das Schraffurbild gezielt ausgerichtet werden. Der Ursprung definiert dabei die linke untere Ecke des Schraffurbildes.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0104in 0 0.0104in 0.2708in;"><table class="Optionen_Palette" >
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.7188in;"><p class="p_R_Tabellenzeile"><img alt="Z_Schraffur_Ursprung_01" style="margin:0;width:2.7917in;height:1.7083in;border:none" src="z_schraffur_ursprung_01.png"/></p>
+</td>
+<td class="Optionen_Palette" style="width:4.3438in;"><p class="p_R_Tabellenzeile"><img alt="Z_Schraffur_Ursprung_02" style="margin:0;width:3.6250in;height:1.7292in;border:none" src="z_schraffur_ursprung_02.png"/></p>
+</td>
+</tr>
+<tr class="Optionen_Palette">
+<td class="Optionen_Palette" style="width:3.7188in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Ohne Ursprung wird die Schraffur, hier am Beispiel des Kreuzverbandes, willk&uuml;rlich in der markierten Fl&auml;che verteilt.</span></p>
+</td>
+<td class="Optionen_Palette" style="width:4.3438in;"><p class="p_R_Tabellenzeile"><span class="f_R_Tabellenzeile">Wird der Ursprung verwendet, haben Sie die M&ouml;glichkeit, einen Punkt anzuklicken, bei dem die Schraffur beginnen soll.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_ToDo_Optional" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Optional">Ursprung festlegen</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie unterhalb der Abfrage auf </span><img alt="B_Ursprung" style="margin:0;width:1.4167in;height:0.2396in;border:none" src="b_ursprung.png"/><span class="f_Step">.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie den gew&uuml;nschten Ursprung an. [</span><span class="f__Abfrage">Ursprungspunkt</span><span class="f_Step">].</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Steht am gew&uuml;nschten Ursprung kein Zeichenpunkt zur Verf&uuml;gung, k&ouml;nnen Sie vorab einen Hilfspunkt setzen.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Das Schraffurbild wird im Folgenden mit der linken unteren Ecke am Ursprung ausgerichtet.</span></p>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_ToDo" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo">Schraffurbereich definieren</span></p>
+<p class="p_ToDo_Info" style="page-break-inside: avoid; page-break-after: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_ToDo_Info">Bei Linien werden die Schnittpunkte berechnet. Das hei&szlig;t, dass die Linien sich nicht tats&auml;chlich ber&uuml;hren m&uuml;ssen. Bei Teilkreisen werden die Anfangs- und Endpunkte genommen. Verschieben Sie die Punkte der Teilkreise gegebenenfalls auf die Begrenzungslinien.</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Klicken Sie die Begrenzungen im Uhrzeigersinn oder gegen den Uhrzeigersinn an. [</span><span class="f__Abfrage">Welche Linien n Punkte gefunden</span><span class="f_Step">].</span></p>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Um voneinander entfernt liegende oder ineinander geschachtelte Bereiche als eine Fl&auml;che mit gemeinsamer Schraffur zu definieren:</span><br>
+<span class="f_Step_Anmerkung">Klicken Sie nach Auswahl einer Teilfl&auml;che auf <img alt="B_naechstes-Polygon" style="margin:0;width:1.3125in;height:0.2083in;border:none" src="b_naechstes-polygon.png"/> und dann beliebige Linien f&uuml;r die n&auml;chste Teilfl&auml;che an.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.7604in;"><table class="_Hinweis" >
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in;"><p class="p_Icon"><img alt="20x20_Achtung" style="margin:0;width:0.1458in;height:0.1667in;border:none" src="20x20_achtung.png"/></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in;"><p class="p_Hinweis_in_Tabelle_Kopfzeile" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle_Kopfzeile">Wichtig:</span></p>
+</td>
+</tr>
+<tr class="_Hinweis">
+<td class="_Hinweis" style="width:0.1771in; background-color:#FFFFFF;"><p class="p_Icon"><span class="f_Icon">&nbsp;</span></p>
+</td>
+<td class="_Hinweis" style="width:14.9167in; background-color:#FFFFFF;"><p class="p_Hinweis_in_Tabelle" style="page-break-inside: avoid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><span class="f_Hinweis_in_Tabelle">Mehrere in einem Durchgang erzeugte Schraffuren und/oder F&uuml;llungen werden als eine zusammengeh&ouml;rige Fl&auml;che beim L&ouml;schen, &Auml;ndern usw. behandelt.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Step" style="text-indent: 0; padding-left: 0.2188in; margin-left: 0.5521in;"><span style="display:inline-block;width:0.2188in;margin-left:-0.2188in;font-size:11pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Step">Best&auml;tigen Sie die Auswahl mit Rechtsklick.</span></p>
+<p class="p_Step_Anmerkung"><span class="f_Step_Anmerkung">Der Polygonzug wird geschlossen und die entstandene Fl&auml;che mit der gew&auml;hlten Schraffur gezeichnet.</span></p>
+<p class="p_Beispiel"><span class="f_Beispiel">Beispiel:</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.62; padding: 0 0 0 0; margin: 0.1042in 0 0.1458in 0.2708in;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:3.0104in; padding:0; border:none"><p class="p_Normal" style="margin: 0.0417in 0 0.0625in 0.1771in;"><img alt="Z_Schraffur_Linie_01" style="margin:0;width:2.4063in;height:2.0104in;border:none" src="z_schraffur_linie_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0; border:none"><p class="p_Normal"><img alt="Z_Schraffur_Linie_02" style="margin:0;width:1.5833in;height:1.8125in;border:none" src="z_schraffur_linie_02.png"/></p>
+</td>
+<td style="vertical-align:top; width:2.6458in; padding:0; border:none"><p class="p_Normal"><img alt="Z_Schraffur_Linie_03" style="margin:0;width:1.8229in;height:1.8229in;border:none" src="z_schraffur_linie_03.png"/></p>
+</td>
+<td style="vertical-align:top; width:5.9063in; padding:0; border:none"><p class="p_Normal"><img alt="Z_Schraffur_Linie_04" style="margin:0;width:1.5833in;height:1.8229in;border:none" src="z_schraffur_linie_04.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.0104in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Klicken Sie die Linien der Reihe nach an.</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Die gefundenen Elemente werden markiert.</span></p>
+</td>
+<td style="vertical-align:top; width:2.6458in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Wechseln Sie vor, w&auml;hrend oder nach der Auswahl des zweiten Bereiches ggf. die Schraffurart.</span></p>
+</td>
+<td style="vertical-align:top; width:5.9063in; padding:0; border:none"><p class="p_R_Tabellenzeile" style="margin: 0.0521in 0 0.0625in 0.1458in;"><span class="f_R_Tabellenzeile">Zwei Bereiche sind schraffiert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#C0C0C0; border-width:0; background-color:#c0c0c0;"><p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Aufgaben:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_ueber_punkte_festleg.htm" class="topiclink" title="Schraffurbereich über Punkte definieren">Schraffurbereich &uuml;ber Punkte definieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_ueber_fenster_festle.htm" class="topiclink" title="Schraffurbereich über Fenster definieren">Schraffurbereich &uuml;ber Fenster definieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_ueber_rechteck_festl.htm" class="topiclink" title="Schraffurbereich über Rechteck definieren">Schraffurbereich &uuml;ber Rechteck definieren</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_an_einer_reihe_festl.htm" class="topiclink">Schraffur entlang einer Linie oder Kreisbogens zeichnen</a></span></p>
+<p class="p_A_Verlinkung"><span class="f_A_Verlinkung">Zugeh&ouml;rige Referenzen:</span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="rm_schraffur.htm" class="topiclink" title="Schraffurfunktionen">Schraffur (Men&uuml;)</a></span></p>
+<p class="p__seealso_list" style="text-indent: 0; padding-left: 0.1354in; margin-left: 0.2708in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:11pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f__seealso_list"><a href="schraffur_definieren.htm" class="topiclink" title="Schraffurtypen konfigurieren">Schraffurtypen konfigurieren</a></span></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>
