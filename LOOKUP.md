@@ -22,7 +22,7 @@ Format pro Eintrag:
 ### 1_teillaenge_an_der_auszugs-fo.htm
 - Titel: Teillänge ändern
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: Teillängen werden direkt mit den erforderlichen oder gewünschten Maßen versehen. Die Änderungen werden auch auf die Verlegung übertragen.
+- Beschreibung: Teillängen werden direkt mit den erforderlichen oder gewünschten Maßen versehen. Die Änderungen werden auch auf die Verlegung übertragen. Kontrollieren Sie nach dem Ändern der Teillänge die Verlegestellen. ...
 - Keywords: ändTlg, Biegeform bearbeiten, Teillängen ändern
 
 ### as-linien_ein-_und_ausschalten.htm
@@ -40,7 +40,7 @@ Format pro Eintrag:
 ### as-texte_ein-_und_ausschalten.htm
 - Titel: aS-Texte ein- und ausschalten
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > as-Werte aus FEM-Programmen einlesen
-- Beschreibung: Ein- und Ausschalten von aS-Texten. Sie können die Texte für einen FEM-Datensatz oder für mehrere ein- bzw. ausschalten.
+- Beschreibung: Ein- und Ausschalten von aS-Texten. Sie können die Texte für einen FEM-Datensatz oder für mehrere ein- bzw. ausschalten. Standardmäßig werden die Zahlenwerte nicht angeschrieben, denn je nach Größe der Elemente kann es sein, ...
 - Keywords: as-Werte
 
 ### as-werte_abziehen.htm
@@ -64,23 +64,23 @@ Format pro Eintrag:
 ### bauteilfaktor_formmatten.htm
 - Titel: Bauteilfaktor (nBautl) - Formmatten
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: oder Mit dieser Funktion können Sie die Anzahl der Bauteile für Stahlverlegungen angeben. Die Faktoren für die Verlegung und die Anzahl der Bauteile können an den Positioni
+- Beschreibung: Die am Stahlauszug angezeigte Anzahl der Formstahl- bzw. Formmatten-Bauteile wird nach folgender Formel berechnet: Mit dieser Funktion können Sie die Anzahl der Bauteile für Stahlverlegungen angeben. ...
 - Keywords: Anzahl der Bauteile - Bauteilfaktor, Bauteilfaktor, Faktor für Staffelverlegungen - Bauteilfaktor, Formmatten, nBautl - Bauteilfaktor
 
 ### beliebige_durchbrueche_eingebe.htm
-- Titel: FEM  Beliebige Durchbrüche eingeben
+- Titel: FEM – Beliebige Durchbrüche eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Optionen Beschreibung Auswahlmodus für Geometriedefinition Das Wechseln des Modus ist während der Eingabe nicht möglich. Punkte: Auswahl der Umrandung durch Anklicken
 
 ### beliebige_stuetzen_eingeben.htm
-- Titel: FEM  Beliebige Stützen eingeben
+- Titel: FEM – Beliebige Stützen eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Optionen Beschreibung Auswahlmodus für Geometriedefinition Das Wechseln des Modus ist während der Eingabe nicht möglich. Punkte: Auswahl der Umrandung durch Anklicken
 
 ### bewehrung_bearbeiten_bamtec.htm
 - Titel: BAMTEC (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > BAMTEC (Bewehrungsteppiche)
-- Beschreibung: Konfiguration und Start der BAMTEC-Berechnung. Sie können nach Bestätigung aller Angaben mit der Schaltfläche Fertig eine TEC-Datei erzeugen. Wenn Sie zuerst nur die Teppic
+- Beschreibung: Konfiguration und Start der BAMTEC-Berechnung. Sie können nach Bestätigung aller Angaben mit der Schaltfläche Fertig eine TEC-Datei erzeugen. Wenn Sie zuerst nur die Teppichgeometrie festlegen möchten, ohne die Bewehrung zu bearbeiten, ...
 - Keywords: TEC-Datei
 
 ### biegeform_an_der_schalkante_ab.htm
@@ -92,7 +92,7 @@ Format pro Eintrag:
 ### biegeform_aus_einer_typentabel.htm
 - Titel: Biegeform aus einer Typentabelle erzeugen
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: Eine Standard-Biegeform aus der hinterlegten Typentabelle übernehmen, Durchmesser und Teillängen definieren und als Auszugsform in der Zeichnung ablegen.
+- Beschreibung: Eine Standard-Biegeform aus der hinterlegten Typentabelle übernehmen, Durchmesser und Teillängen definieren und als Auszugsform in der Zeichnung ablegen. Es soll ein Eckwinkel erzeugt werden. ...
 - Keywords: 3D-Biegeform erzeugen, Biegeform erzeugen/ableiten, Formtyptabelle, ForTyp
 
 ### biegeform_aus_geometrie-polygo.htm
@@ -115,7 +115,7 @@ Format pro Eintrag:
 ### con_bew_prog.htm
 - Titel: Bewehrungsprogramm
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: Das Bewehrungsprogramm ist ein Bestandteil von ISBCAD. Es ergänzt die Basisfunktionen aus dem Konstruktionsprogramm um Funktionen zum Erstellen von Bewehrungsplänen.
+- Beschreibung: Das Bewehrungsprogramm ist ein Bestandteil von ISBCAD. Es ergänzt die Basisfunktionen aus dem Konstruktionsprogramm um Funktionen zum Erstellen von Bewehrungsplänen. Die Bewehrung kann sowohl aus Lager‑ oder Listenmatten als auch aus Rundstahl bestehen. ...
 
 ### con_fem.htm
 - Titel: Finite Elemente
@@ -132,7 +132,7 @@ Format pro Eintrag:
 ### con_formstahl.htm
 - Titel: Allgemeine Vorgehensweise
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Für Bewehrungen mit Formstahlelementen sind in der Regel folgende Arbeitsschritte notwendig:
+- Beschreibung: Für Bewehrungen mit Formstahlelementen sind in der Regel folgende Arbeitsschritte notwendig: Stäbe werden nebeneinander dargestellt. Die Biegeformen werden als Linien gezeichnet. Verlegung als Staffel (Bügelstaffel)
 - Keywords: Formstahl
 
 ### con_ifc-import.htm
@@ -161,7 +161,7 @@ Format pro Eintrag:
 ### dat_datei_einfuegen.htm
 - Titel: Zeichnung einfügen
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Einfügen einer ISBCAD Zeichnungs- oder Sicherungsdatei in die aktuelle Zeichnung, z. B.: ein Makro aus den GLASER Bibliotheken oder ein selbst gezeichnetes Detail.
+- Beschreibung: Einfügen einer ISBCAD Zeichnungs- oder Sicherungsdatei in die aktuelle Zeichnung, z. B.: ein Makro aus den GLASER Bibliotheken oder ein selbst gezeichnetes Detail. ...
 - Keywords: Datei, Folien, Import, Überlagerungskontrolle, ÜlaAn
 
 ### dat_datei_offnen.htm
@@ -173,7 +173,7 @@ Format pro Eintrag:
 ### dat_datei_speichern.htm
 - Titel: Zeichnung speichern
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Mit dieser Funktion können Sie eine neu erstellte Zeichnung unter einem beliebigen Dateinamen in einem bestimmten Verzeichnis speichern, eine Kopie der aktuellen Zeichnung u
+- Beschreibung: Mit dieser Funktion können Sie Die Zeichnung wird mit der Dateierweiterung *.akt gespeichert.
 - Keywords: Datei, Favoritenverzeichnisse (Zeichnung speichern), Zeichnung
 
 ### dat_drucken.htm
@@ -197,25 +197,25 @@ Format pro Eintrag:
 ### dat_drucken_blattr_ausgeben.htm
 - Titel: Blattrahmen ausgeben (Planschnitt)
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung
-- Beschreibung: Drucken oder Plotten eines oder mehrerer definierter Blattrahmen auf dem unter WINDOWS® eingestellten Standarddrucker.
+- Beschreibung: Drucken oder Plotten eines oder mehrerer definierter Blattrahmen auf dem unter WINDOWS® eingestellten Standarddrucker. Wenn Sie mehrere Blattrahmen mit der Funktion [RaEinf] auf der Zeichnung platziert haben, ...
 - Keywords: Blattrahmen, Drucken, Makrotext, Planschnitt ausgeben, RaAusg
 
 ### dat_drucken_blattr_einfuegen.htm
 - Titel: Blattrahmen einfügen
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung
-- Beschreibung: Einfügen eines zuvor definierten Blattrahmens. Öffnet den Dialog Blattrahmen hinzufügen.
+- Beschreibung: Einfügen eines zuvor definierten Blattrahmens. Öffnet den Dialog Blattrahmen hinzufügen. Sie können mehrere Blattrahmen einfügen, um nachträglich mit der Funktion [RaAusg] mehrere Planschnitte (Teilpläne) auszugeben. ...
 - Keywords: Blattrahmen, Druckbereich, Freibereich im Druck, RaEinf
 
 ### dat_drucken_blattr_verschieben.htm
 - Titel: Blattrahmen verschieben
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung
-- Beschreibung: Blattrahmen an eine neue Position verschieben. Klicken Sie ein Element des Blattrahmens an. [Welches Blatt]. Platzieren Sie den Blattrahmen per Mausklick an die neue Posit
+- Beschreibung: Blattrahmen an eine neue Position verschieben.
 - Keywords: Blattrahmen, RaVers
 
 ### dat_drucken_einstellungen.htm
 - Titel: Plotter-Konfiguration (Referenz)
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung
-- Beschreibung: / alternativ (aus dem ISBCAD Hauptmenü): Plotten ; Drucken Einstellungen für die Ausgabe einzelner oder mehrerer (Teil-)Zeichnungen. Optionen im Dialog "Plotter-Konfigu
+- Beschreibung: Einstellungen für die Ausgabe einzelner oder mehrerer (Teil-)Zeichnungen. Sie können einzelnen Folien Farben zuweisen. Die Farbe der Folie hat Vorrang vor der Farbe des Stiftes. Die Stiftbreite bleibt erhalten.
 - Keywords: Drucken, Linienbreite für Druckausgabe einstellen, Linienfarbe für Druckausgabe einstellen, Plotter-Konfiguration, Stiftbreite
 
 ### dat_drucken_fester_ausschnitt.htm
@@ -227,7 +227,7 @@ Format pro Eintrag:
 ### dat_drucken_punkte_verschieben.htm
 - Titel: Druckbereich und Freibereich ändern
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung
-- Beschreibung: Korrigieren des Druck- und Freibereiches. So wird's gemacht: Klicken Sie ein Element des Blattrahmens an. [Welches Blatt]. Der Druck- bzw. Freibereich wird dargestellt. A
+- Beschreibung: Korrigieren des Druck- und Freibereiches.
 - Keywords: Blattrahmen, Druckbereich, Freibereich im Druck, PuVers - Blattrahmen
 
 ### dat_drucken_rahmen_loeschen.htm
@@ -245,31 +245,31 @@ Format pro Eintrag:
 ### dat_drucken_zwischenablage.htm
 - Titel: Zwischenablage von Zeichnungen - [ZwiAbl]
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Die ISBCAD Zwischenablage kann zum schnellen Austausch von Zeichnungsinhalten in verschiedenen ISBCAD Zeichnungen genutzt werden. Die Inhalte stehen in allen zur gleichen...
+- Beschreibung: Die ISBCAD Zwischenablage kann zum schnellen Austausch von Zeichnungsinhalten in verschiedenen ISBCAD Zeichnungen genutzt werden. Die Inhalte stehen in allen zur gleichen Zeit geöffneten Instanzen von ISBCAD zur Verfügung. ...
 - Keywords: Datei, Import, m.Clip, o.Clip, Zeichnung
 
 ### dat_dwg_dxf_dateien_exportieren.htm
 - Titel: DWG/DXF Dateien exportieren
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Speichern der aktuellen Datei im DXF- oder DWG-Format. Öffnet den Dialog AutoCAD-Export.
+- Beschreibung: Speichern der aktuellen Datei im DXF- oder DWG-Format. Öffnet den Dialog AutoCAD-Export. Wenn Sie mehrere DWG/DXF-Dateien gleichzeitig umwandeln möchten, verwenden Sie das Modul [DXF/DWG Export] aus dem ISBCAD Hauptmenü.
 - Keywords: Datei, Drucken, DWG/DXF-Dateien (Zeichenprogramm), Export, Zeichnung
 
 ### dat_dwg_dxf_dateien_importieren.htm
 - Titel: DWG/DXF Dateien importieren
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Öffnen einer DXF- oder DWG-Datei. Die Dateiinhalte werden in das ISBCAD (*.AKT)-Format umgewandelt und können als solches gespeichert werden. Öffnet den Dialog Öffnen.
+- Beschreibung: Öffnen einer DXF- oder DWG-Datei. Die Dateiinhalte werden in das ISBCAD (*.AKT)-Format umgewandelt und können als solches gespeichert werden. Öffnet den Dialog Öffnen. ...
 - Keywords: .DWG, .DXF, Datei, DWG/DXF-Dateien, Import
 
 ### dat_grafik.htm
 - Titel: Grafik - [Grafik]
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Zeichnungsausschnitt als Grafik speichern und Grafiken einfügen.
+- Beschreibung: Zeichnungsausschnitt als Grafik speichern und Grafiken einfügen. BMP, JPG, JPEG, GIF, WMF, EMF, ICO, DIB, PNG, TIF
 - Keywords: Datei, Grafik, Import, mitMes, ohnMes
 
 ### dat_grafik_loeschen.htm
 - Titel: Grafik löschen
 - Pfad: Datei- und Ausgabefunktionen > Einfügen und Speichern von Grafiken
-- Beschreibung: Grafik (Pixelbild) per Mausklick aus der aktuellen Zeichnungsdatei entfernen.
+- Beschreibung: Grafik (Pixelbild) per Mausklick aus der aktuellen Zeichnungsdatei entfernen. Wenn Sie eine Grafik aus der Zeichnung entfernen, wird lediglich die Verknüpfung gelöscht. Die Bilddatei selbst bleibt erhalten.
 - Keywords: Bild, Grafik
 
 ### dat_grafik_speichern.htm
@@ -281,19 +281,19 @@ Format pro Eintrag:
 ### dat_grafikliste.htm
 - Titel: Grafikliste
 - Pfad: Datei- und Ausgabefunktionen > Einfügen und Speichern von Grafiken
-- Beschreibung: Verwaltung der Abbildungen, die als Grafiken mit der Zeichnung verknüpft sind. Die in der Liste markierte Grafik wird in der Zeichnung hervorgehoben.
+- Beschreibung: Verwaltung der Abbildungen, die als Grafiken mit der Zeichnung verknüpft sind. Die in der Liste markierte Grafik wird in der Zeichnung hervorgehoben. Fehlerhafte Verknüpfungen werden angezeigt, Grafiken können neu zugeordnet werden. ...
 - Keywords: Bild, Grafik, Grafikliste, Pixelbilder
 
 ### dat_neue_datei_erstellen.htm
 - Titel: Neue Zeichnung anlegen
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Legt eine neue, unbenannte Zeichnung an. ISBCAD wechselt in das Menü Konst 1.
+- Beschreibung: Legt eine neue, unbenannte Zeichnung an. ISBCAD wechselt in das Menü Konst 1. Klicken Sie in der ISBCAD Menüleiste auf Datei und wählen Sie den Eintrag Neu....
 - Keywords: Datei, Zeichnung
 
 ### dat_pdf_export.htm
 - Titel: PDF exportieren
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Erstellen einer PDF-Datei aus der aktuellen Zeichnung. Die Zeichnung wird als vektorisierte PDF-Datei exportiert, sodass Sie die Datei wieder in ISBCAD einlesen und enthaltene
+- Beschreibung: Erstellen einer PDF-Datei aus der aktuellen Zeichnung. Die Zeichnung wird als vektorisierte PDF-Datei exportiert, sodass Sie die Datei wieder in ISBCAD einlesen und enthaltene Linien, Kreise, Texte usw. weiterbearbeiten können.
 - Keywords: .PDF, Datei, Drucken, Export, PDF
 
 ### dat_pdf_import.htm
@@ -311,7 +311,7 @@ Format pro Eintrag:
 ### dat_zeichnung_per_e-mail_senden.htm
 - Titel: Zeichnung per E-Mail versenden
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Aktuelle Zeichnung als E-Mail-Anhang verschicken (ISBCAD oder AutoCAD-Format). Öffnet den Dialog Optionen für Dateianhang.
+- Beschreibung: Aktuelle Zeichnung als E-Mail-Anhang verschicken (ISBCAD oder AutoCAD-Format). Öffnet den Dialog Optionen für Dateianhang. Konfiguration der Attribut-Übernahme beim Export von AutoCAD-Dateien.
 - Keywords: Datei, E-Mail - Zeichnung senden, Zeichnung
 
 ### dat_zeichnung_plotten.htm
@@ -334,7 +334,7 @@ Format pro Eintrag:
 ### des_aktualisierung.htm
 - Titel: Aktualisierung (Revision)
 - Pfad: Konfiguration und Einrichtung
-- Beschreibung: ISBCAD unterliegt der ständigen Weiterentwicklung und Optimierung durch spezialisierte Ingenieure und Software-Entwickler.
+- Beschreibung: ISBCAD unterliegt der ständigen Weiterentwicklung und Optimierung durch spezialisierte Ingenieure und Software-Entwickler. Damit Sie schnellstmöglich von neuen oder überarbeiteten Funktionen, Berechnungsmethoden, ...
 - Keywords: Aktualisierung, Automatische Aktualisierung, Revision, Update
 
 ### des_anwenderprofile.htm
@@ -352,7 +352,7 @@ Format pro Eintrag:
 ### des_anzeige-auswahl-und-filterfunktionen.htm
 - Titel: Auswahlmodus wählen
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: Damit Sie in ISBCAD Elemente bearbeiten können, müssen Sie sie zunächst auswählen. In allen Menüs, in denen Zeichenelemente bearbeitet werden können, stehen Ihnen im...
+- Beschreibung: Für die Auswahl von Zeichenelementen stehen Ihnen zwei Modi zur Verfügung: Es können Einzelelemente und Elemente im Rechteck gleichzeitig ausgewählt werden. Wenn ein Element im Cursorbereich liegt, ...
 - Keywords: Auswahlfunktion - Selektion, Elemente, Elementgruppen (ISBCAD Gruppen), Entfer, Hinzuf
 
 ### des_auswahlfelder.htm
@@ -374,7 +374,7 @@ Format pro Eintrag:
 ### des_bildausschnitt-zoomen-und-verschieben.htm
 - Titel: Bildausschnitt - zoomen und verschieben
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: Zum Vergrößern, Verkleinern und Verschieben des Bildausschnitts stehen folgende Funktionen zur Verfügung.
+- Beschreibung: Zum Vergrößern, Verkleinern und Verschieben des Bildausschnitts stehen folgende Funktionen zur Verfügung. Sie können mit einer einfachen Mausbewegung die gewünschte Zoom- oder Verschiebefunktion aufrufen. Führen Sie z. B. ...
 - Keywords: Bildausschnitt, ZAb, ZAl, Zoomfunktionen, ZPf
 
 ### des_bkt.htm
@@ -434,7 +434,7 @@ Format pro Eintrag:
 ### des_elemente-filter.htm
 - Titel: Elemente-Filter (Dialog)
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: (untere Menüleiste) Ein- oder Ausschalten der Auswahl- und Fangen-Funktionen für bestimmte Elementgruppen. Öffnet den Dialog Elemente-Filter. Elemente-Filter Benutzen Sie de
+- Beschreibung: Benutzen Sie den Elemente-Filter, um bestimmte Elementgruppen bei der Bearbeitung auszuschließen. Sie können den Elemente-Filter sortieren, indem Sie eine Spaltenüberschrift anklicken.
 - Keywords: Auswahlfilter, Elemente, Filterfunktion
 
 ### des_elementfang.htm
@@ -470,13 +470,13 @@ Format pro Eintrag:
 ### des_hauptmenu_a.htm
 - Titel: ISBCAD Hauptmenü
 - Pfad: Willkommen bei ISBCAD 2026 > ISBCAD starten
-- Beschreibung: Über das Hauptmenü können Sie die für Sie freigeschalteten GLASER Module aufrufen. Im ISBCAD Hauptmenü können Sie die Grundeinstellungen von ISBCAD Ihren Anforderungen...
+- Beschreibung: Führen Sie einen der folgenden Schritte aus: Über das Hauptmenü können Sie die für Sie freigeschalteten GLASER Module aufrufen. Im ISBCAD Hauptmenü können Sie die Grundeinstellungen von ISBCAD Ihren Anforderungen entsprechend anpassen. ...
 - Keywords: Hauptmenü, ISBCAD Hauptmenü
 
 ### des_hilfsfunktionen.htm
 - Titel: Hilfsfunktionen
 - Pfad: Grundlagen der Bedienung > Konstruktionshilfen
-- Beschreibung: ·Winkel (w) - Linien von der Zeichenmarke aus mit einer bestimmten Neigung zeichnen.
+- Beschreibung: ·Winkel (w) - Linien von der Zeichenmarke aus mit einer bestimmten Neigung zeichnen. ·Schnitt (s) - Schnittpunkt zweier Linien bestimmen. An schrägen Linien zeichnen und Zeichenmarke setzen.
 - Keywords: Hilfsfunktion
 
 ### des_holzbautabellen.htm
@@ -500,7 +500,7 @@ Format pro Eintrag:
 ### des_ifc_einstellungen.htm
 - Titel: IFC Section Tool Einstellungen
 - Pfad: Datei- und Ausgabefunktionen > IFC Section Tool
-- Beschreibung: IFC Section Tool Menüleiste → Datei → Einstellungen
+- Beschreibung: Konfiguration der Programmoberfläche und des Programmverhaltens. Änderungen werden nach dem Schließen des Dialogs über in der rechten oberen Dialogecke wirksam.
 - Keywords: IFC Section Tool
 
 ### des_ifc_navigation.htm
@@ -542,7 +542,7 @@ Format pro Eintrag:
 ### des_konventionen.htm
 - Titel: Spezielle Formatierungen
 - Pfad: Willkommen bei ISBCAD 2026 > Verwenden der Kontexthilfe
-- Beschreibung: Die ISBCAD 2026 Kontexthilfe verwendet die folgenden gestalterischen Konventionen:
+- Beschreibung: Die ISBCAD 2026 Kontexthilfe verwendet die folgenden gestalterischen Konventionen: » Auswahlfunktionen
 
 ### des_lkt.htm
 - Titel: Schutzmechanismus - LKT
@@ -559,13 +559,13 @@ Format pro Eintrag:
 ### des_manuelle-aktualisierung.htm
 - Titel: Manuelle Aktualisierung
 - Pfad: Konfiguration und Einrichtung > Aktualisierung (Revision)
-- Beschreibung: Mit einer manuellen Aktualisierung können Sie Ihre ISBCAD Installation jederzeit auf den aktuellen Stand bringen. Im Downloadbereich unserer Website veröffentlichen wir in...
+- Beschreibung: Zum Installieren benötigen Sie Administrator-Rechte. Mit einer manuellen Aktualisierung können Sie Ihre ISBCAD Installation jederzeit auf den aktuellen Stand bringen. ...
 - Keywords: Aktualisierung, Revision
 
 ### des_matten-verlegearten.htm
 - Titel: Matten - Verlegearten
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: Verlegung im Rechteck [VerRec] Verlegung von Matten desselben Formates in regelmäßigen, geradlinig berandeten Bereichen. Verlegung im Polygon [VerPol] Verlegung von Matten des
+- Beschreibung: Verlegung von Matten desselben Formates in regelmäßigen, geradlinig berandeten Bereichen. Verlegung von Matten desselben Formates in unregelmäßigen, polygonalen Bereichen.
 
 ### des_menue.htm
 - Titel: Menüleiste
@@ -576,7 +576,7 @@ Format pro Eintrag:
 ### des_messen.htm
 - Titel: Messen
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: (untere Menüleiste) oder Verwenden Sie diese Funktion, um Längen, Abstände und Winkel zu ermitteln. Die Ergebnisse werden in der Info-Box Messen angezeigt. Mit einem Klick a
+- Beschreibung: Verwenden Sie diese Funktion, um Längen, Abstände und Winkel zu ermitteln. Die Ergebnisse werden in der Info-Box Messen angezeigt. Mit einem Klick auf ein Messergebnis kann dieses in eine aktive Abfrage übernommen werden. ...
 - Keywords: Genauigkeit, Messen, Winkel
 
 ### des_migration.htm
@@ -594,7 +594,7 @@ Format pro Eintrag:
 ### des_navigation.htm
 - Titel: Navigieren in der Hilfe
 - Pfad: Willkommen bei ISBCAD 2026 > Verwenden der Kontexthilfe
-- Beschreibung: 1 = Navigationselemente in der Menüleiste 2 = Inhaltsverzeichnis 3 = Navigationspfad 4 = Funktionspfad 5 = Navigationselemente im Anzeigebereich 1. Navigationselemente in de
+- Beschreibung: 1 = Navigationselemente in der Menüleiste 2 = Inhaltsverzeichnis 3 = Navigationspfad 4 = Funktionspfad 5 = Navigationselemente im Anzeigebereich Mithilfe der Schaltflächen Zurück und Vorwärts können Sie die Artikel in der Reihenfolge zurück- und vorblättern, ...
 
 ### des_ordnerstruktur.htm
 - Titel: Verwalten von Zeichnungen
@@ -616,7 +616,7 @@ Format pro Eintrag:
 ### des_pdf-parameter.htm
 - Titel: PDF-Parameter
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / In diesem Dialog konfigurieren Sie die Voreinstellungen für den Drucker eDocPrinter PDF Pro GLASER bei der PDF-Ausgabe mit den Funktionen Direktausgabe und [Ansicht → Druc
+- Beschreibung: In diesem Dialog konfigurieren Sie die Voreinstellungen für den Drucker eDocPrinter PDF Pro GLASER bei der PDF-Ausgabe mit den Funktionen Direktausgabe und [Ansicht → Druckparameter]. ...
 
 ### des_plankoepfe-nach-ec2.htm
 - Titel: Planköpfe in eine Zeichnung einfügen
@@ -627,7 +627,7 @@ Format pro Eintrag:
 ### des_polygondarstellung_um.htm
 - Titel: Polygondarstellung
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: (untere Menüleiste) Die Polygondarstellung ist eine unterstützende Funktion, die Ihnen die Selektion und Bearbeitung von Elementgruppen erleichtert. Verwenden Sie diese Funkt
+- Beschreibung: Die Polygondarstellung ist eine unterstützende Funktion, die Ihnen die Selektion und Bearbeitung von Elementgruppen erleichtert. Verwenden Sie diese Funktion, um bei der Bearbeitung (Verschieben, Kopieren, Dehnen usw.) besser zu erkennen, ...
 - Keywords: Maßkettenpunkte, Polygonpunkte einblenden
 
 ### des_positionskreise.htm
@@ -650,25 +650,25 @@ Format pro Eintrag:
 ### des_schnitt.htm
 - Titel: Schnittpunkt erzeugen
 - Pfad: Grundlagen der Bedienung > Konstruktionshilfen > Hilfsfunktionen
-- Beschreibung: Zeichnet eine Linie von der Zeichenmarke bis zum Schnittpunkt mit der angeklickten Linie. Die Zeichenmarke wird nach dem Zeichnen der Linie an den Schnittpunkt gesetzt.
+- Beschreibung: Zeichnet eine Linie von der Zeichenmarke bis zum Schnittpunkt mit der angeklickten Linie. Die Zeichenmarke wird nach dem Zeichnen der Linie an den Schnittpunkt gesetzt. Sie können die Schnittpunkt-Funktion im gesamten Bewehrungsprogramm nutzen, um z. B. ...
 - Keywords: Schnittpunkt erzeugen - Hilfsfunktion, Zeichenmarke
 
 ### des_schraffur_vorbemerkung.htm
 - Titel: Schraffur - Vorbemerkungen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Bei den Funktionen [Punkte → manuell], [Linien], [Rechte] und [1Reihe] werden in der Nähe des Cursors liegende Punkte bzw. Linien und Kreise gefangen. Achten Sie beim Anklicken von Zeichenelementen auf die Lage des Cursors  die Lage bestimmt die ...
+- Beschreibung: Bei den Funktionen [Punkte → manuell], [Linien], [Rechte] und [1Reihe] werden in der Nähe des Cursors liegende Punkte bzw. Linien und Kreise gefangen. Achten Sie beim Anklicken von Zeichenelementen auf die Lage des Cursors – die Lage bestimmt die ...
 - Keywords: Schraffur
 
 ### des_schraffuren-din.htm
 - Titel: Verfügbare Schraffurtypen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Hier finden Sie eine Übersicht der aktuellen Schraffurtypen in ISBCAD.
+- Beschreibung: Hier finden Sie eine Übersicht der aktuellen Schraffurtypen in ISBCAD. Nach der Erstinstallation von ISBCAD stehen Ihnen viele vorinstallierte Schraffurtypen zur Verfügung. ...
 - Keywords: .DAT, Schraff.dat, Schraffurtypen
 
 ### des_sicherung.htm
 - Titel: Sicherungsfunktionen
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: In ISBCAD stehen Ihnen drei Typen von Sicherungsfunktionen zur Verfügung, die standardmäßig automatisch erzeugt werden. Die Sicherungsdateien können Sie entweder über die ISBC
+- Beschreibung: In ISBCAD stehen Ihnen drei Typen von Sicherungsfunktionen zur Verfügung, die standardmäßig automatisch erzeugt werden. Die Sicherungsdateien können Sie entweder über die ISBCAD Startseite, ...
 - Keywords: .BKT, Backup-Dateien, BKT-Datei, Datensicherung, isbhelp.akt
 
 ### des_statusleiste.htm
@@ -685,7 +685,7 @@ Format pro Eintrag:
 ### des_systemanforderung.htm
 - Titel: Systemanforderungen
 - Pfad: Willkommen bei ISBCAD 2026
-- Beschreibung: Mindestanforderungen und Systemempfehlungen für das Ausführen von ISBCAD 2026.
+- Beschreibung: Mindestanforderungen und Systemempfehlungen für das Ausführen von ISBCAD 2026. Sie haben Fragen zu den technischen Voraussetzungen? Wir beraten Sie gerne.
 - Keywords: Systemanforderungen
 
 ### des_systemwinkel.htm
@@ -703,13 +703,13 @@ Format pro Eintrag:
 ### des_trassierung.htm
 - Titel: Trassierung
 - Pfad: Zusatzprogramme
-- Beschreibung: Erstellen eines Verkehrsweges (Trasse). Öffnet das Programm Eingabe für Straßenachsen.
+- Beschreibung: Erstellen eines Verkehrsweges (Trasse). Öffnet das Programm Eingabe für Straßenachsen. Mit Hilfe des Trassierungs- und Absteckprogramms lassen sich Absteckdaten im Allgemeinen Konstruktionsprogramm umsetzen. ...
 - Keywords: Trassierung (Variantenprogramm), Variantenprogramme
 
 ### des_uebersicht.htm
 - Titel: Übersichtsfenster
 - Pfad: Programmoberfläche
-- Beschreibung: Am unteren Rand des Funktionsbereichs ist das Übersichtsfenster eingeblendet und zeigt die aktuell geöffnete Zeichnung in der Totalen. Wenn Sie mit der Maus über das...
+- Beschreibung: Ziehen Sie im Übersichtsfenster einen Rahmen auf, indem Sie den ersten und zweiten Rahmenpunkt anklicken. Der gewählte Zoom-Ausschnitt wird in der Zeichnung angezeigt. Das Übersichtsfenster kann in einem separaten Fenster ausgeführt werden. ...
 - Keywords: Übersichtsfenster
 
 ### des_umenue.htm
@@ -739,7 +739,7 @@ Format pro Eintrag:
 ### des_winkel.htm
 - Titel: Winkel konstruieren
 - Pfad: Grundlagen der Bedienung > Konstruktionshilfen > Hilfsfunktionen
-- Beschreibung: Zeichnen einer Linie von der Zeichenmarke aus in einem bestimmten Winkel.
+- Beschreibung: Zeichnen einer Linie von der Zeichenmarke aus in einem bestimmten Winkel. Der Winkel wird in Grad eingegeben und geht immer von der Horizontalen des aktuell eingestellten Systemwinkels aus (0 ≤ α < 360°). Die Zeichenmarke stellt den Koordinatenursprung dar. ...
 - Keywords: Winkel
 
 ### des_x-koordinate.htm
@@ -757,7 +757,7 @@ Format pro Eintrag:
 ### drehen.htm
 - Titel: Drehen - [Drehen]
 - Pfad: Konstruktionsprogramm > Konstruktion 2
-- Beschreibung: Drehen und Verschieben von Elementen. Falls Folien ausgeblendet sind, erscheint ein Warnfenster. Mit dem Folienmanager können Sie Folien einschalten, die für diese Aktion wic
+- Beschreibung: Drehen und Verschieben von Elementen. Falls Folien ausgeblendet sind, erscheint ein Warnfenster. Mit dem Folienmanager können Sie Folien einschalten, die für diese Aktion wichtig sind. » Folienmanager
 - Keywords: Drehen, Elemente, Konstruktion 2
 
 ### drehen_frei_verschieben.htm
@@ -771,7 +771,7 @@ Format pro Eintrag:
 - Beschreibung: Drehen von Teilzeichnungen mit Angabe des Drehpunktes und des Drehwinkels.
 
 ### einzellasten_eingeben.htm
-- Titel: FEM  Einzellasten eingeben
+- Titel: FEM – Einzellasten eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Hinweise: Nicht alle FEM-Programme übernehmen die Lasten aus ISBCAD. Erkundigen Sie sich bei dem Programmhersteller. Nur die P-Lasten werden in unterschiedliche Lastfäl
 
@@ -784,17 +784,17 @@ Format pro Eintrag:
 ### faktor_fuer_as-linien.htm
 - Titel: Faktor für aS-Linien einstellen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > as-Werte aus FEM-Programmen einlesen
-- Beschreibung: Verändern der Größendarstellung aller aS-Vektoren, die auf der Zeichnung vorhanden sind.
+- Beschreibung: Verändern der Größendarstellung aller aS-Vektoren, die auf der Zeichnung vorhanden sind. Wenn die Linien bei kleinen Elementlängen ineinander übergehen, sollten Sie die Vektorendarstellung verkleinern. Der Standardwert ist 20. ...
 - Keywords: as-Werte
 
 ### fem-datei_einlesen.htm
 - Titel: FEM-Datei einlesen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > as-Werte aus FEM-Programmen einlesen
-- Beschreibung: Im Dialog FEM Datei lesen wird die FEM-Ergebnisdatei angegeben. Der Dateityp ist *.fem.
+- Beschreibung: Im Dialog FEM Datei lesen wird die FEM-Ergebnisdatei angegeben. Der Dateityp ist *.fem. Wenn Sie eine weitere FEM-Ergebnisdatei einlesen möchten, rufen Sie diese Funktion erneut auf.
 - Keywords: as-Werte
 
 ### flaechenlasten_eingeben.htm
-- Titel: FEM  Flächenlasten eingeben
+- Titel: FEM – Flächenlasten eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Hinweise: Nicht alle FEM-Programme übernehmen die Lasten aus ISBCAD. Erkundigen Sie sich bei dem Programmhersteller. Nur die P-Lasten werden in unterschiedliche Lastfäl
 
@@ -819,19 +819,19 @@ Format pro Eintrag:
 ### folie_wechseln_oder_neue_folie.htm
 - Titel: Folie wechseln
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Folien
-- Beschreibung: Wechseln in eine beliebige, eingeschaltete Folie oder Erzeugen einer neuen Folie. Die gewählte Folie wird als aktuelle Folie gesetzt (Folienautomatik wird ausgeschaltet).
+- Beschreibung: Wechseln in eine beliebige, eingeschaltete Folie oder Erzeugen einer neuen Folie. Die gewählte Folie wird als aktuelle Folie gesetzt (Folienautomatik wird ausgeschaltet). ...
 - Keywords: Folien
 
 ### folien_alle_folien_ausschalten.htm
 - Titel: Alle Folien ausblenden
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Folien
-- Beschreibung: Schaltet alle Folien aus. ISBCAD wechselt automatisch zur Funktion An/Aus (Folien an-/ausschalten). Sie können sofort einzelne Folien an-/ausschalten. Zugehörige Referenz
+- Beschreibung: Schaltet alle Folien aus. ISBCAD wechselt automatisch zur Funktion An/Aus (Folien an-/ausschalten). Sie können sofort einzelne Folien an-/ausschalten.
 - Keywords: Folien
 
 ### folien_alle_folien_zeigen.htm
 - Titel: Alle Folien zeigen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Folien
-- Beschreibung: Schaltet alle Folien an. ISBCAD wechselt automatisch zur Funktion An/Aus (Folien an-/ausschalten). Sie können sofort einzelne Folien an-/ausschalten. Zugehörige Referenze
+- Beschreibung: Schaltet alle Folien an. ISBCAD wechselt automatisch zur Funktion An/Aus (Folien an-/ausschalten). Sie können sofort einzelne Folien an-/ausschalten.
 - Keywords: Folien
 
 ### folien_elemente_in_andere_folie_trans.htm
@@ -849,7 +849,7 @@ Format pro Eintrag:
 ### folienliste_drucken.htm
 - Titel: Folienliste drucken
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Folien
-- Beschreibung: Druckt nach Bestätigung der Druckerbereitschaft eine Liste aller in der Zeichnung enthaltenen Folien auf dem unter Windows® eingestellten Standarddrucker.
+- Beschreibung: Druckt nach Bestätigung der Druckerbereitschaft eine Liste aller in der Zeichnung enthaltenen Folien auf dem unter Windows® eingestellten Standarddrucker. Der Standarddrucker kann über die Windows®-Einstellungen festgestellt werden: [Windows | Start | ...
 - Keywords: Folien
 
 ### folienmanager.htm
@@ -890,7 +890,7 @@ Format pro Eintrag:
 ### formma_bipos_defpos.htm
 - Titel: Positionierungsstil konfigurieren
 - Pfad: Bewehrungsprogramm > Formmatten > Erzeugen einer Positionierung (Formmatten)
-- Beschreibung: Einstellungen für die Darstellung der Formstahl- und Formmattenpositionierungen. Öffnet den Dialog Einstellungen für Positionierung mit der Registerkarte Formmatten.
+- Beschreibung: Einstellungen für die Darstellung der Formstahl- und Formmattenpositionierungen. Öffnet den Dialog Einstellungen für Positionierung mit der Registerkarte Formmatten. Konfiguration der Formstahl-Positionierungsstile (IDs).
 - Keywords: BiPos, Fächerpositionierung - Formmatten, Formmatten, Harfenpositionierung - Formmatten
 
 ### formma_bipos_faecher.htm
@@ -908,13 +908,13 @@ Format pro Eintrag:
 ### formma_bipos_loesch.htm
 - Titel: Positionierung löschen
 - Pfad: Bewehrungsprogramm > Formmatten > Erzeugen einer Positionierung (Formmatten)
-- Beschreibung: Löschen einzelner Positionierungen. Klicken Sie eine Linie oder einen Text der Positionierung an. [Pos.-Gruppe löschen]. Die zu der Gruppe gehörenden Positionierungen werd
+- Beschreibung: Löschen einzelner Positionierungen.
 - Keywords: BiPos, Fächerpositionierung - Formmatten, Formmatten, Harfenpositionierung - Formmatten, Positionierung löschen
 
 ### formma_bipos_rufrei_mafrei.htm
 - Titel: Rundstahl und Matten frei positionieren
 - Pfad: Bewehrungsprogramm > Formmatten > Erzeugen einer Positionierung (Formmatten)
-- Beschreibung: bzw. Beschriftung von Linien und Kreisen als Stabstahl- bzw. Mattenposition. Verwenden Sie diese Art der Beschriftung nur, wenn Harfe und Fächer nicht benutzt werden können.
+- Beschreibung: Beschriftung von Linien und Kreisen als Stabstahl- bzw. Mattenposition. Verwenden Sie diese Art der Beschriftung nur, wenn Harfe und Fächer nicht benutzt werden können. Stabstahl = [RuFrei]; Matten = [MaFrei].
 - Keywords: BiPos, Ergänzungstext - Formmatten-Positionierung, Formmatten, Kommentar, MaFrei - Formmatten
 
 ### formma_bipos_versch.htm
@@ -932,13 +932,13 @@ Format pro Eintrag:
 ### formmatten_biform.htm
 - Titel: Biegeform - [BiForm] Formmatten
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: Wählen Sie zur Erzeugung der Biegeform die Funktion [ForSch]. Diese Funktion bietet die meisten Möglichkeiten. Für übliche Bewehrungsformen steht Ihnen die Formtyptabelle für Standardtypen [ForTyp] zur Verfügung. ...
+- Beschreibung: Erzeugen, Ableiten und Bearbeiten einer Biegeform. Wählen Sie zur Erzeugung der Biegeform die Funktion [ForSch]. Diese Funktion bietet die meisten Möglichkeiten. ...
 - Keywords: Biegeform, BiForm, Formmatten
 
 ### formmatten_biform_summtx.htm
 - Titel: Summandentext für Auszüge anlegen
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: An den Stahlauszügen steht immer die Gesamtanzahl der verlegten Stäbe. Mit dem Befehl Summandentext können Sie einen Zusatztext schreiben, der die Summe in Summanden und Faktoren zerlegt.
+- Beschreibung: An den Stahlauszügen steht immer die Gesamtanzahl der verlegten Stäbe. Mit dem Befehl „Summandentext“ können Sie einen Zusatztext schreiben, der die Summe in Summanden und Faktoren zerlegt.
 - Keywords: Biegeform bearbeiten, Summandentexte
 
 ### formmatten_bipos.htm
@@ -962,19 +962,19 @@ Format pro Eintrag:
 ### formmatten_veform.htm
 - Titel: Verlegung als Form - Formmatten
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: Verlegung einer Biegeform mit Formdarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Typ/ab] bis zur Definition des
+- Beschreibung: Verlegung einer Biegeform mit Formdarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Typ/ab] bis zur Definition des Verlegebereiches [BerDef] automatisch durch die benötigten ...
 - Keywords: Bewehrung verlegen, Formmatten, Mattenverlegung, VeForm, Verlegung erzeugen - Formmatten
 
 ### formmatten_vemasn.htm
 - Titel: Verlegung mit Schnittdarstellung - Formmatten
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: Formmatten-Verlegung mit Schnittdarstellung (dachziegelförmige Anordnung). ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Ty
+- Beschreibung: Formmatten-Verlegung mit Schnittdarstellung (dachziegelförmige Anordnung). ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Typ/ab] bis zur Definition des Verlegebereichs [BerDef] automatisch durch die ...
 - Keywords: Bewehrung verlegen, Eisen im Querschnitt zeichnen, Formmatten, Mattenverlegung, Schnittdarstellung - Formmatten
 
 ### formmatten_vestaf.htm
 - Titel: Verlegung als Staffel - Formmatten
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: Formmatten-Verlegung mit Staffeldarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Typ/ab] bis zur Definition des V
+- Beschreibung: Formmatten-Verlegung mit Staffeldarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] über die Mattenauswahl und -verteilung [Typ/ab] bis zur Definition des Verlegebereichs [BerDef] automatisch durch die benötigten Arbeitsschritte/Funktionen.
 - Keywords: Bewehrung verlegen, Formmatten, Mattenverlegung, Verlegung erzeugen - Formmatten, VeStaf
 
 ### formst_aendpos.htm
@@ -1016,7 +1016,7 @@ Format pro Eintrag:
 ### formst_bewehrungsdetails.htm
 - Titel: Detail - [Detail]
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Folienbelegung: Wenn AutFol eingestellt ist, werden die Verlegungen auf Folie 4 und die Bewehrungsauszüge auf Folie 17 gezeichnet.
+- Beschreibung: Vordefinierte Bewehrungen inkl. Auszüge für Standardkonstruktionen. Teilweise mit Schnittdarstellung. Durch die Bewehrungsdetails können immer wiederkehrende Bewehrungsaufgaben schnell und sicher durchgeführt werden. ...
 - Keywords: Bewehrungsdetails, Detail, Formstahl
 
 ### formst_biform_add_tlg.htm
@@ -1040,7 +1040,7 @@ Format pro Eintrag:
 ### formst_biform_bearbeiten.htm
 - Titel: Biegeform - [BiForm] Formstahl
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: In den Systemdaten können Sie angeben, ob Hakenlängen an neu erzeugten Bewehrungsformen standardmäßig auf halbe oder ganze Zentimeter gerundet werden sollen. Voreingestellt ist das Runden auf halbe Zentimeter.
+- Beschreibung: Erzeugen, Ableiten und Bearbeiten einer Biegeform. » Systemdaten - Formstahl
 - Keywords: Biegeform, BiForm, Formstahl
 
 ### formst_biform_biedur.htm
@@ -1052,7 +1052,7 @@ Format pro Eintrag:
 ### formst_biform_bilitx.htm
 - Titel: Zusatztext für die Biegeliste hinzufügen
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Textergänzung für die Biegeliste - z. B. Querstäbe außen!. Der Zusatztext wird beim Verschieben des Auszugs mit verschoben.
+- Beschreibung: Textergänzung für die Biegeliste - z. B. „Querstäbe außen!“. Der Zusatztext wird beim Verschieben des Auszugs mit verschoben.
 - Keywords: Biegeform bearbeiten, Biegeliste - Zusatztexte, BiLiTx, Zusatztexte
 
 ### formst_biform_dehfor.htm
@@ -1070,7 +1070,7 @@ Format pro Eintrag:
 ### formst_biform_durchm_aendern.htm
 - Titel: Durchmesser ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Biegeform-Durchmesser am Auszug und an allen verknüpften Verlegungen ändern.
+- Beschreibung: Biegeform-Durchmesser am Auszug und an allen verknüpften Verlegungen ändern. Berechnung der Stahlmenge für eine Position in laufenden Metern. Es werden die Übergreifungslängen unter Berücksichtigung der Betongüte, ...
 - Keywords: Biegeform bearbeiten, Durchmesser (Stabdurchmesser), Laufende Meter, lfdm
 
 ### formst_biform_forabl.htm
@@ -1106,25 +1106,25 @@ Format pro Eintrag:
 ### formst_biform_guetumr.htm
 - Titel: Stahlgüte oder Umrandung ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Um Stäbe verschiedener Stahlsorten unterscheiden zu können oder Stäbe mit mechanischen Verbindungselementen erkennen zu können, ist es möglich, die unterschiedlichen Arten m
+- Beschreibung: Grundeinstellungen für die Positionsumrandung ändern. Öffnet den Dialog Standard für Umrandung. Stahlgüte einer Position ändern.
 - Keywords: Biegeform bearbeiten, GütUmr, Positionsumrandung, Stahlgüte/Umrandung ändern
 
 ### formst_biform_info.htm
 - Titel: Informationen zu Auszügen anzeigen
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Alternativ: (untere Menüleiste) Zum Überprüfen eines Bewehrungsplans auf Fehler und Inkonsistenzen werden alle Informationen zu den einzelnen Positionen angezeigt. In der
+- Beschreibung: Zum Überprüfen eines Bewehrungsplans auf Fehler und Inkonsistenzen werden alle Informationen zu den einzelnen Positionen angezeigt. Der Informationsdialog kann parallel zu jeder beliebigen aktiven Funktion geöffnet bleiben. ...
 - Keywords: Bewehrung kontrollieren, Biegeform bearbeiten, Info - Auszugsinformationen, Verlegung
 
 ### formst_biform_lfdm.htm
 - Titel: Laufende Meter "lfdm" angeben
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Position als laufende Meter erzeugen. Öffnet den Dialog Berechnung der lfdm nach EC2 zum Berechnen der Gesamtlänge und zur Angabe weiterer Optionen.
+- Beschreibung: Position als laufende Meter erzeugen. Öffnet den Dialog Berechnung der lfdm nach EC2 zum Berechnen der Gesamtlänge und zur Angabe weiterer Optionen. Berechnung der Stahlmenge für eine Position in laufenden Metern. ...
 - Keywords: Biegeform bearbeiten, Laufende Meter, lfdm
 
 ### formst_biform_loe_form.htm
 - Titel: Form komplett löschen
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Löschen eines oder mehrerer Auszüge und aller zugehörigen Elemente (Formstahl und Formmatten).
+- Beschreibung: Löschen eines oder mehrerer Auszüge und aller zugehörigen Elemente (Formstahl und Formmatten). Um Änderungen an der Bewehrung vorzunehmen, benutzen Sie die Funktionen "Position löschen" [lö Pos], "Durchmesser ändern" [änd. Ø] und "Form löschen" [lö Form]. ...
 - Keywords: Biegeform bearbeiten, lö Form
 
 ### formst_biform_loe_pos.htm
@@ -1142,7 +1142,7 @@ Format pro Eintrag:
 ### formst_biform_summtx.htm
 - Titel: Summandentext für Auszüge anlegen
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Mit dem Befehl Summandentext können Sie einen Zusatztext schreiben, der die Gesamtstückzahl am Auszug für jede einzelne Position in Form der Addition ihrer Verlegungen darstellt. Die Gesamtstückzahl (Summe) wird in Summanden und Faktoren zerlegt.
+- Beschreibung: Mit dem Befehl „Summandentext“ können Sie einen Zusatztext schreiben, der die Gesamtstückzahl am Auszug für jede einzelne Position in Form der Addition ihrer Verlegungen darstellt. Die Gesamtstückzahl (Summe) wird in Summanden und Faktoren zerlegt.
 - Keywords: Biegeform bearbeiten, Summandentexte, SummTx
 
 ### formst_bipos.htm
@@ -1154,13 +1154,13 @@ Format pro Eintrag:
 ### formst_bipos_defpos.htm
 - Titel: Positionierungsstil konfigurieren
 - Pfad: Bewehrungsprogramm > Formstahl > Erzeugen einer Positionierung (Formstahl)
-- Beschreibung: Einstellungen für die Darstellung der Formstahl- und Formmattenpositionierungen. Öffnet den Dialog Einstellungen für Positionierung mit der Registerkarte Formstahl.
+- Beschreibung: Einstellungen für die Darstellung der Formstahl- und Formmattenpositionierungen. Öffnet den Dialog Einstellungen für Positionierung mit der Registerkarte Formstahl. Konfiguration der Formstahl-Positionierungsstile (IDs).
 - Keywords: BiPos, Fächerpositionierung - Formstahl, Formstahl, Harfenpositionierung - Formstahl, Positionierung
 
 ### formst_bipos_faecher.htm
 - Titel: Fächer
 - Pfad: Bewehrungsprogramm > Formstahl > Erzeugen einer Positionierung (Formstahl)
-- Beschreibung: Fächerförmige Beschriftung. Die Zeigerlinien werden fächerförmig um den Positionskreis herum angeordnet. Es können mehrere Verlegungen mit derselben Positionsnummer angekli
+- Beschreibung: Fächerförmige Beschriftung. Die Zeigerlinien werden fächerförmig um den Positionskreis herum angeordnet. Es können mehrere Verlegungen mit derselben Positionsnummer angeklickt werden.
 - Keywords: BiPos, Ergänzungstext - Formstahl-Positionierung, Fächerpositionierung - Formstahl, Formstahl, Kommentar
 
 ### formst_bipos_gost.htm
@@ -1171,7 +1171,7 @@ Format pro Eintrag:
 ### formst_bipos_harfe.htm
 - Titel: Harfe
 - Pfad: Bewehrungsprogramm > Formstahl > Erzeugen einer Positionierung (Formstahl)
-- Beschreibung: Gradlinige Positionierung als Harfe oder Pfeil. Wenn eine Staffel positioniert wird, können die Endsymbole frei mit den Mittensymbolen kombiniert werden. Wird eine Formverle
+- Beschreibung: Gradlinige Positionierung als Harfe oder Pfeil. Wenn eine Staffel positioniert wird, können die Endsymbole frei mit den Mittensymbolen kombiniert werden. Wird eine Formverlegung positioniert, wird die Auswahl für die Mittensymbole ausgeblendet.
 - Keywords: BiPos, Ergänzungstext - Formstahl-Positionierung, Formstahl, Harfenpositionierung - Formstahl, Kommentar
 
 ### formst_bipos_loesch.htm
@@ -1183,7 +1183,7 @@ Format pro Eintrag:
 ### formst_bipos_rufrei_mafrei.htm
 - Titel: Rundstahl und Matten frei positionieren
 - Pfad: Bewehrungsprogramm > Formstahl > Erzeugen einer Positionierung (Formstahl)
-- Beschreibung: bzw. Beschriftung von Linien und Kreisen als Stabstahl- bzw. Mattenposition. Stabstahl = [RuFrei]; Matten = [MaFrei]. Tipps: Die Darstellung der Positionierung können
+- Beschreibung: Beschriftung von Linien und Kreisen als Stabstahl- bzw. Mattenposition. Stabstahl = [RuFrei]; Matten = [MaFrei].
 - Keywords: BiPos, Ergänzungstext - Formstahl-Positionierung, Formstahl, Kommentar - Positionierung / Formstahl, MaFrei - Formstahl
 
 ### formst_bipos_versch.htm
@@ -1195,25 +1195,25 @@ Format pro Eintrag:
 ### formst_bogenstaffel.htm
 - Titel: Bogenstaffel erzeugen - Detail
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Konzentrische Kreisbogen-Bewehrung. Eine neue Bogenstaffel erzeugen Eine vorhandene Bogenstaffel ändern Eine Bogenstaffel löschen Eine Bogenstaffel entflechten Zugehör
+- Beschreibung: Konzentrische Kreisbogen-Bewehrung.
 - Keywords: Bewehrungsdetails, Bogenstaffel erzeugen - Detail, Detail
 
 ### formst_deckenkonsole.htm
 - Titel: Deckenkonsolen bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Bewehrung mit Steckbügeln, Schlaufen und Längseisen.
+- Beschreibung: Bewehrung mit Steckbügeln, Schlaufen und Längseisen. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Deckenkonsole bewehren - Detail, Detail
 
 ### formst_echtdarstellung.htm
 - Titel: Echtdarstellung - [Echtda]
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Erzeugen von maßstäblichen Echtdarstellungen über die Auswahl einer verlegten Form.
+- Beschreibung: Erzeugen von maßstäblichen Echtdarstellungen über die Auswahl einer verlegten Form. Mit der Echtdarstellung können Sie prüfen, ob die geplanten Verlegungen mit der geometrischen Situation vereinbar sind. ...
 - Keywords: Echtdarstellung, Formstahl, bearbeiten, löschen
 
 ### formst_eckiger_durchbruch.htm
 - Titel: Rechteckige Durchbrüche bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Bewehrung rechteckiger Durchbrüche mittels Bügeln und Längsstäben.
+- Beschreibung: Bewehrung rechteckiger Durchbrüche mittels Bügeln und Längsstäben. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Durchbrüche bewehren - Detail
 
 ### formst_forzus.htm
@@ -1225,7 +1225,7 @@ Format pro Eintrag:
 ### formst_forzus_entflech.htm
 - Titel: Formen entflechten
 - Pfad: Bewehrungsprogramm > Formstahl > Zusammenfassen von Formstahl-Auszugsformen
-- Beschreibung: Verlegung aus Verband/Block herauslösen. Es lassen sich ebenfalls Auszugsformen von Gewindestabsverlegungen entflechten.
+- Beschreibung: Verlegung aus Verband/Block herauslösen. Es lassen sich ebenfalls Auszugsformen von Gewindestabsverlegungen entflechten. Zusatzauszüge dienen dazu, die Biegeform einer Verlegung in schematischer Weise ergänzend zum eigentlichen Stahlauszug darzustellen. ...
 - Keywords: Auszugsform, Auszugsformen entflechten, Formstahl, ForZus, Zusatzauszug
 
 ### formst_forzus_lfdm.htm
@@ -1237,13 +1237,13 @@ Format pro Eintrag:
 ### formst_forzus_pozufo.htm
 - Titel: Auszug zu Positionsnummer erzeugen
 - Pfad: Bewehrungsprogramm > Formstahl > Zusammenfassen von Formstahl-Auszugsformen
-- Beschreibung: Positionen mit einer Auszugsform aufteilen. Beim Verlegen einer Auszugsform mit verschiedenen Durchmessern werden die zusätzlichen Positionen unterhalb der schon vorhandenen
+- Beschreibung: Positionen mit einer Auszugsform aufteilen. Beim Verlegen einer Auszugsform mit verschiedenen Durchmessern werden die zusätzlichen Positionen unterhalb der schon vorhandenen angeordnet. Soll an einer Position eine Änderung vorgenommen werden, z. B. ...
 - Keywords: Auszugsformen aufteilen, Formstahl, ForZus
 
 ### formst_forzus_suchgl.htm
 - Titel: Gleiche Positionen suchen und zusammenfassen
 - Pfad: Bewehrungsprogramm > Formstahl > Zusammenfassen von Formstahl-Auszugsformen
-- Beschreibung: Formstahl-Auszüge mit identischen Abmessungen suchen und zu einem Formstahl-Auszug zusammenfassen. Öffnet den Dialog Gleiche Formen zusammenfassen.
+- Beschreibung: Formstahl-Auszüge mit identischen Abmessungen suchen und zu einem Formstahl-Auszug zusammenfassen. Öffnet den Dialog Gleiche Formen zusammenfassen. Falls in der Zeichnung keine gleichen Formen enthalten sind, erscheint eine entsprechende Meldung. ...
 - Keywords: Auszugsformen suchen, Formstahl, ForZus
 
 ### formst_forzus_zusamm.htm
@@ -1267,19 +1267,19 @@ Format pro Eintrag:
 ### formst_rahmenecke.htm
 - Titel: Rahmenecke bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Auswechselung mit drei Winkeleisen und einem Längseisen.
+- Beschreibung: Auswechselung mit drei Winkeleisen und einem Längseisen. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Rahmenecke bewehren - Detail
 
 ### formst_runde_dbr.htm
 - Titel: Runde Durchbrüche bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Auswechselung kreisförmiger Durchbrüche mittels Bügeln und Längsstäben.
+- Beschreibung: Auswechselung kreisförmiger Durchbrüche mittels Bügeln und Längsstäben. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Runde Durchbrüche bewehren - Detail
 
 ### formst_sturz.htm
 - Titel: Sturz bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Bewehrung eines einfachen Sturzes oder deckengleichen Unterzuges. Obere und untere Bewehrung sind verschieden, die Bügel können aus Stabstahl oder aus Matten gebildet werden.
+- Beschreibung: Bewehrung eines einfachen Sturzes oder deckengleichen Unterzuges. Obere und untere Bewehrung sind verschieden, die Bügel können aus Stabstahl oder aus Matten gebildet werden. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. ...
 - Keywords: Bewehrungsdetails, Detail, Sturz bewehren - Detail
 
 ### formst_vedusn.htm
@@ -1296,13 +1296,13 @@ Format pro Eintrag:
 ### formst_vedusn_aendere.htm
 - Titel: Verlegung ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Schnittdarstellungen > Biegeform mit gleichen Durchmessern) verlegen (in Schnittdarstellung) > Gleiche Durchmesser in Schnittdarstellung - Vorhandene Verlegung bearbeiten
-- Beschreibung: Beim Ändern einer Verlegung werden nacheinander alle Parameter abgefragt. Die Vorgabewerte entsprechen der aktuellen Einstellung.
+- Beschreibung: Beim Ändern einer Verlegung werden nacheinander alle Parameter abgefragt. Die Vorgabewerte entsprechen der aktuellen Einstellung. Nachdem Sie einen Verlegebereich definiert haben und während die Abfrage des Verlegefaktors aktiv ist, ...
 - Keywords: Verlegung ändern - Formstahl
 
 ### formst_vedusn_beldar.htm
 - Titel: Darstellung der Staffel ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Schnittdarstellungen > Biegeform mit gleichen Durchmessern) verlegen (in Schnittdarstellung) > Gleiche Durchmesser in Schnittdarstellung - Vorhandene Verlegung bearbeiten
-- Beschreibung: Darstellung der Staffel ändern. Klicken Sie die Stäbe an, die nicht gezeigt werden sollen. [Welche Eisen nicht darstellen]. Die ausgewählten Stäbe werden markiert. Wenn Si
+- Beschreibung: Darstellung der Staffel ändern.
 - Keywords: Staffeldarstellung ändern, Verlegung ändern - Formstahl
 
 ### formst_vedusn_generi.htm
@@ -1320,7 +1320,7 @@ Format pro Eintrag:
 ### formst_vedusn_luecke.htm
 - Titel: Lücke in einer Durchmesser-Verlegung erzeugen
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Schnittdarstellungen > Biegeform mit gleichen Durchmessern) verlegen (in Schnittdarstellung) > Gleiche Durchmesser in Schnittdarstellung - Vorhandene Verlegung bearbeiten
-- Beschreibung: Eine zusammenhängende Durchmesser-Verlegung in zwei Verlegungen aufteilen. Die neu erzeugten Verlegungen müssen jeweils aus mindestens zwei Durchmessern (Kreisen) bestehen.
+- Beschreibung: Eine zusammenhängende Durchmesser-Verlegung in zwei Verlegungen aufteilen. Die neu erzeugten Verlegungen müssen jeweils aus mindestens zwei Durchmessern (Kreisen) bestehen. ...
 - Keywords: Lücke in Verlegung erzeugen
 
 ### formst_vedusn_versch.htm
@@ -1337,24 +1337,24 @@ Format pro Eintrag:
 ### formst_veform.htm
 - Titel: Verlegung mit Formdarstellung - [VeForm]
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf Staffellinie.
+- Beschreibung: Verlegen einer Biegeform mit Formdarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] bis zur Definition des Verlegeortes [VlgOrt] automatisch durch die benötigten Arbeitsschritte/Funktionen.
 - Keywords: Bewehrung verlegen, Formstahl, VeForm, Verlegung erzeugen - Formstahl
 
 ### formst_veform_ab_n.htm
 - Titel: Stahlquerschnitt angeben/ermitteln
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Formdarstellung > Biegeform mit Formdarstellung verlegen
-- Beschreibung: Stababstand bzw. Anzahl der Stäbe können automatisch anhand des erforderlichen Stahlquerschnittes (erf.as(cm²/m bzw. erf.As(cm²)) und des gewählten Stabdurchmessers ermittelt
+- Beschreibung: Nach Angabe Stahlquerschnitts wechselt ISBCAD automatisch zur Definition des Verlegeortes. [VlgOrt]. (s. Verlegeort definieren)
 
 ### formst_veform_aendere.htm
 - Titel: Verlegung ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Formdarstellung
-- Beschreibung: An der Formverlegung kann z. B. der Durchmesser oder der Abstand geändert werden.
+- Beschreibung: An der Formverlegung kann z. B. der Durchmesser oder der Abstand geändert werden. Wenn mehrere Verlegungen übereinanderliegen, wird ein Auswahlfenster eingeblendet. ...
 - Keywords: Verlegung ändern - Formstahl
 
 ### formst_veform_loesche.htm
 - Titel: Verlegung löschen
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Formdarstellung
-- Beschreibung: Löschen einer oder mehrerer Verlegungen. Zusatzauszüge können mit dieser Funktion ebenfalls gelöscht werden.
+- Beschreibung: Löschen einer oder mehrerer Verlegungen. Zusatzauszüge können mit dieser Funktion ebenfalls gelöscht werden. Wenn mehrere Verlegungen übereinanderliegen, wird ein Auswahlfenster eingeblendet. ...
 - Keywords: Verlegung löschen, Zusatzauszug
 
 ### formst_veform_vkn.htm
@@ -1399,30 +1399,30 @@ Format pro Eintrag:
 ### formst_vestaf.htm
 - Titel: Verlegung als Staffel (Bügelstaffel) - [VeStaf]
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Alternativer Aufruf: Mittlere Maustaste auf Staffellinie
+- Beschreibung: Verlegen einer Biegeform mit Staffeldarstellung. ISBCAD führt Sie von der Auswahl einer Biegeform [WähFor] bis zur Definition des Verlegebereiches [BerDef] automatisch durch die benötigten Arbeitsschritte/Funktionen.
 - Keywords: Bewehrung verlegen, Bügelstaffel, Formstahl, Verlegung erzeugen - Formstahl, VeStaf
 
 ### formst_vestaf_ab_n.htm
 - Titel: Staffelverlegung - Stahlquerschnitt angeben/ermitteln (Formstahl)
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel) > Biegeform mit Staffeldarstellung verlegen
-- Beschreibung: Stababstand bzw. Anzahl der Stäbe können automatisch anhand des erforderlichen Stahlquerschnittes (erf.as(cm²/m bzw. erf.As(cm²)) und des gewählten Stabdurchmessers ermittelt
+- Beschreibung: Nach Angabe Stahlquerschnitts wechselt ISBCAD automatisch zur Definition des Verlegebereiches. [BerDef]. (s. Verlegebereich definieren)
 
 ### formst_vestaf_aendere.htm
 - Titel: Staffel-Verlegung ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel)
-- Beschreibung: Beim Ändern einer Verlegung werden nacheinander alle Parameter abgefragt. Die Vorgabewerte entsprechen der aktuellen Einstellung.
+- Beschreibung: Beim Ändern einer Verlegung werden nacheinander alle Parameter abgefragt. Die Vorgabewerte entsprechen der aktuellen Einstellung. Mit der Verlegeoption [frei, einzeln] verlegte Stäbe können nur im Durchmesser geändert werden.
 - Keywords: Verlegung ändern - Formstahl
 
 ### formst_vestaf_beldar.htm
 - Titel: Darstellung der Verlegung ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel)
-- Beschreibung: Individuelle Darstellung einer Verlegung. Das Ändern der Verlegungsdarstellung ist nur möglich, wenn alle Stäbe der Verlegung dargestellt werden. Um alle Stäbe darzustellen,
+- Beschreibung: Individuelle Darstellung einer Verlegung. Das Ändern der Verlegungsdarstellung ist nur möglich, wenn alle Stäbe der Verlegung dargestellt werden. Um alle Stäbe darzustellen, generieren Sie die Verlegung mit der Option .
 - Keywords: belDar, Staffeldarstellung ändern, Verlegung ändern - Formstahl
 
 ### formst_vestaf_berdef.htm
 - Titel: Staffelverlegung - Verlegebereich definieren
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel) > Biegeform mit Staffeldarstellung verlegen
-- Beschreibung: Definition des Verlegebereiches mittels verschiedener Verlegeoptionen.
+- Beschreibung: Definition des Verlegebereiches mittels verschiedener Verlegeoptionen. Der Verlegebereich wird über die X- und Y-Koordinate des Anfangs- und Endpunktes beschrieben. ...
 - Keywords: Formstahl
 
 ### formst_vestaf_generi.htm
@@ -1446,7 +1446,7 @@ Format pro Eintrag:
 ### formst_vestaf_versch.htm
 - Titel: Verlegebereich ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel)
-- Beschreibung: Nachdem Sie eine Staffel verlegt haben, kann es im Nachhinein erforderlich sein, die Staffel im Verlegebereich zu ändern. Die Positionierung passt sich automatisch an.
+- Beschreibung: Nachdem Sie eine Staffel verlegt haben, kann es im Nachhinein erforderlich sein, die Staffel im Verlegebereich zu ändern. Die Positionierung passt sich automatisch an. ...
 - Keywords: Verlegung verschieben
 
 ### formst_vestaf_vkn.htm
@@ -1480,7 +1480,7 @@ Format pro Eintrag:
 ### formst_vevout_lfdsta.htm
 - Titel: lfdm aus Staffel generieren
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel)
-- Beschreibung: Ermittlung der Stahlmenge (laufenden Meter) für Staffelverlegungen. Der berechnete Wert wird als Auszugstext (lfdm) bereitgestellt.
+- Beschreibung: Ermittlung der Stahlmenge (laufenden Meter) für Staffelverlegungen. Der berechnete Wert wird als Auszugstext (lfdm) bereitgestellt. Ermittlung der Gesamtlänge laufender Meter unter Berücksichtigung der Betongüte, des Verbundbereiches und weiterer Parameter. ...
 - Keywords: Generieren, Laufende Meter, lfdm
 
 ### formst_vevout_loesche.htm
@@ -1504,25 +1504,25 @@ Format pro Eintrag:
 ### formst_wandecke.htm
 - Titel: Wandecken bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Auswechselung mit zwei Steckbügeln und vier Längsstäben.
+- Beschreibung: Auswechselung mit zwei Steckbügeln und vier Längsstäben. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Wandecke bewehren - Detail
 
 ### formst_wandschlitz.htm
 - Titel: Wandschlitz bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Bewehrung von Wandschlitzen durch zwei Steckbügel, ein Wechseleisen und vertikale Eck- und Verteilerbewehrung.
+- Beschreibung: Bewehrung von Wandschlitzen durch zwei Steckbügel, ein Wechseleisen und vertikale Eck- und Verteilerbewehrung. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. ...
 - Keywords: Bewehrungsdetails, Detail, Wandschlitz - Detail
 
 ### formst_wendelbew.htm
 - Titel: Wendelbewehrung erzeugen
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Bewehrung runder oder rechteckiger Stützen und Pfähle mit unterschiedlicher Ganghöhe.
+- Beschreibung: Bewehrung runder oder rechteckiger Stützen und Pfähle mit unterschiedlicher Ganghöhe. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Wendelbewehrung erzeugen - Detail
 
 ### formst_zylindr_bew.htm
 - Titel: Zylindrische Bauteile bewehren
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Kreisförmige Bewehrung zylindrischer Bauteile mit Verteilung über die Höhe.
+- Beschreibung: Kreisförmige Bewehrung zylindrischer Bauteile mit Verteilung über die Höhe. Die Bearbeitung erfolgt schrittweise anhand der freigeschalteten Optionen. Nach Angabe der Geometrie haben Sie die Möglichkeit, einzelne Parameter zu definieren.
 - Keywords: Bewehrungsdetails, Detail, Zylindrische Bauteile bewehren - Detail
 
 ### formtyp_an_schalung_ableiten.htm
@@ -1538,18 +1538,18 @@ Format pro Eintrag:
 - Keywords: Biegeform bearbeiten, DehGeo, Dehnen
 
 ### geometrische_eingaben_oder_las.htm
-- Titel: FEM  Geometrische Eingaben oder Lasten löschen
+- Titel: FEM – Geometrische Eingaben oder Lasten löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: So wird's gemacht: Wählen Sie aus der Dropdown-Liste unterhalb der Abfrage den Elementtyp, der gelöscht werden soll. [Elementtyp]. Nur die gewählten Elemente können gelösch
 
 ### groessenfaktor_fuer_darstellun.htm
 - Titel: Größenfaktor für Darstellung einstellen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > as-Werte aus FEM-Programmen einlesen
-- Beschreibung: Verändern der Größendarstellung des Rechtecks, in dem die Knoten und aS-Werte enthalten sind.
+- Beschreibung: Verändern der Größendarstellung des Rechtecks, in dem die Knoten und aS-Werte enthalten sind. In der Regel werden die aS-Ergebnisse im Maßstab 1 : 100 gespeichert. ...
 - Keywords: as-Werte
 
 ### grundbelastung_eingeben.htm
-- Titel: FEM  Grundbelastung eingeben
+- Titel: FEM – Grundbelastung eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Die Grundlast wird auf die mit der Funktion [Umfahr] beschriebene Fläche angesetzt.
 
@@ -1567,7 +1567,7 @@ Format pro Eintrag:
 ### hilfspunkte_kreis_in_anzahl_teilen.htm
 - Titel: Kreis in Anzahl teilen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Hilfspunkte > Erweiterte Hilfspunkt-Palette
-- Beschreibung: Kreise in gleiche Abschnitte unterteilen. Hinweis: Die Startlinie ist immer die X-Achse. Diese Eingabe ist nur wirksam bei Kreisen. So wird's gemacht: Klicken Sie ei
+- Beschreibung: Kreise in gleiche Abschnitte unterteilen.
 
 ### hilfspunkte_letzte_hilfspunkte_entfernen.htm
 - Titel: Letzte Hilfspunkte entfernen
@@ -1582,13 +1582,13 @@ Format pro Eintrag:
 ### hilfspunkte_loeschen_r.htm
 - Titel: Hilfspunkt löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Hilfspunkte
-- Beschreibung: Löschen einzelner oder mehrerer Hilfspunkte. So wird's gemacht: Ziehen Sie einen Rahmen durch das Anklicken von zwei Punkten um die gewünschten Hilfspunkte oder klicken Sie
+- Beschreibung: Löschen einzelner oder mehrerer Hilfspunkte.
 - Keywords: Hilfspunkte
 
 ### hilfspunkte_loeschen_u.htm
 - Titel: Hilfspunkt löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Hilfspunkte > Erweiterte Hilfspunkt-Palette
-- Beschreibung: Löschen einzelner Hilfspunkte. Mit der Hilfspunkt-Funktion [lösche] im Funktionsbereich können Sie mehrere Hilfspunkte über die Rahmenauswahl gleichzeitig löschen. So wird's
+- Beschreibung: Löschen einzelner Hilfspunkte. Mit der Hilfspunkt-Funktion [lösche] im Funktionsbereich können Sie mehrere Hilfspunkte über die Rahmenauswahl gleichzeitig löschen.
 
 ### hilfspunkte_mittelpunkt.htm
 - Titel: Mittelpunkt markieren
@@ -1610,7 +1610,7 @@ Format pro Eintrag:
 ### hilfspunkte_rechtes_menue.htm
 - Titel: Hilfspunkte - [HilfPu]
 - Pfad: Konstruktionsprogramm > Konstruktion 1
-- Beschreibung: Folienbelegung: Wenn AutFol aktiviert ist, werden die Hilfspunkte in Folie 7 abgelegt.
+- Beschreibung: Über die Hilfspunkte-Palette stehen verschiedene Funktionen für die Bearbeitung von Hilfspunkten zur Verfügung.
 - Keywords: Hilfspunkte, Konstruktion 1
 
 ### hilfspunkte_schnittpunkt_ermitteln.htm
@@ -1621,7 +1621,7 @@ Format pro Eintrag:
 ### hilfspunkte_setzen.htm
 - Titel: Hilfspunkt setzen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
-- Beschreibung: Hilfspunkte für die FEM-Definition setzen. Punkt mit absoluten Koordinaten definieren In Bereichen mit schrägen Bezugslinien, verwenden Sie die Hilfsfunktion S [Schnitt]. G
+- Beschreibung: Hilfspunkte für die FEM-Definition setzen.
 
 ### hilfspunkte_strecke_in_abschnitte_teilen.htm
 - Titel: Strecke in Abschnitte teilen
@@ -1662,7 +1662,7 @@ Format pro Eintrag:
 ### hilfspunkte_untere_menueleiste.htm
 - Titel: Erweiterte Hilfspunkt-Palette - [HiP]
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Hilfspunkte
-- Beschreibung: (untere Menüleiste) Die erweiterte Hilfspunkt-Palette kann auch über die Pfeiltaste auf der Tastatur jederzeit und aus jedem Menü heraus aufgerufen werden und wird zunächst im
+- Beschreibung: Die erweiterte Hilfspunkt-Palette kann auch über die Pfeiltaste auf der Tastatur jederzeit und aus jedem Menü heraus aufgerufen werden und wird zunächst im Zeichenbereich rechts unten angezeigt.
 - Keywords: Hilfspunkte, Hilfspunkt-Palette - Untere Menüleiste
 
 ### holzbau.htm
@@ -1674,7 +1674,7 @@ Format pro Eintrag:
 ### informationen_ueber_rundstahla.htm
 - Titel: Informationen zu Auszügen anzeigen
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: Alternativ: (untere Menüleiste) Zum Überprüfen eines Bewehrungsplans auf Fehler und Inkonsistenzen werden alle Informationen zu den einzelnen Positionen angezeigt. In der
+- Beschreibung: Zum Überprüfen eines Bewehrungsplans auf Fehler und Inkonsistenzen werden alle Informationen zu den einzelnen Positionen angezeigt. Der Informationsdialog kann parallel zu jeder beliebigen aktiven Funktion geöffnet bleiben. ...
 - Keywords: Biegeform bearbeiten
 
 ### konfiguration_und_einrichtung.htm
@@ -1685,19 +1685,19 @@ Format pro Eintrag:
 ### konst1_alle_elemente_verschieben.htm
 - Titel: Alle Elemente verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Verschieben
-- Beschreibung: Verschieben aller Zeichenelemente. Die gesamte Zeichnung wird von einem Rechteck umschlossen. Elemente, die außerhalb der Plotfläche liegen, werden mitberücksichtigt.
+- Beschreibung: Verschieben aller Zeichenelemente. Die gesamte Zeichnung wird von einem Rechteck umschlossen. Elemente, die außerhalb der Plotfläche liegen, werden mitberücksichtigt. Die Auswahl erfolgt immer in einem Systemwinkel von 0°.
 - Keywords: Verschieben
 
 ### konst1_allgemein_dehnen.htm
 - Titel: Allgemein dehnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Dehnen
-- Beschreibung: Im Gegensatz zum Verschieben [Konst1 | Versch] werden beim Dehnen auch angehängte Elemente mitgezo­gen. Diese Elemente erfahren so eine Dehnung bzw. Stauchung.
+- Beschreibung: Im Gegensatz zum Verschieben [Konst1 | Versch] werden beim Dehnen auch angehängte Elemente mitgezo­gen. Diese Elemente erfahren so eine Dehnung bzw. Stauchung. Sie können die Beispielzeichnung mit [Konst1 | Linien] oder [Konst2 | Wandze] nachzeichnen.
 - Keywords: Dehnen - Konstruktion
 
 ### konst1_anschlag.htm
 - Titel: Anschlag erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Öffnungen
-- Beschreibung: Erzeugen der Darstellung der Türschlagrichtung mit Viertelkreis in Architekturgrundrissen.
+- Beschreibung: Erzeugen der Darstellung der Türschlagrichtung mit Viertelkreis in Architekturgrundrissen. Die Folie und der Maßstab werden aus der angeklickten Linie übernommen. Es wird immer mit Stift „1“ und dem Linientyp „DURCHG“ gezeichnet.
 
 ### konst1_attribute_von_elementen_aender.htm
 - Titel: Attribute von Elementen ändern
@@ -1708,13 +1708,13 @@ Format pro Eintrag:
 ### konst1_ausserhalb_der_plotflaeche_lie.htm
 - Titel: Außerhalb der Plotfläche liegende Elemente löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Elemente ändern
-- Beschreibung: Löschen aller Elemente, die vollständig außerhalb der Plotfläche liegen.
+- Beschreibung: Löschen aller Elemente, die vollständig außerhalb der Plotfläche liegen. Bestätigen Sie das Löschen mit Ja oder brechen Sie den Vorgang mit Nein ab. In beiden Fällen wird der Dialog geschlossen und die Funktion [StLiKri] aktiviert.
 - Keywords: FenÄnd, löauPl, Plotfläche
 
 ### konst1_bis_zu_einer_linie_oder_einem_.htm
 - Titel: Bis zu einer Linie oder einem Kreis dehnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Dehnen
-- Beschreibung: Verschieben von Linienpunkte auf eine Ziellinie, einen Kreis oder Teilkreis.
+- Beschreibung: Verschieben von Linienpunkte auf eine Ziellinie, einen Kreis oder Teilkreis. Die Punkte müssen nicht in einer Flucht liegen. Bei Kreisen muss es einen Schnittpunkt geben! Zur Ziellinie kann ein Parallelabstand eingegeben werden.
 - Keywords: Dehnen - Konstruktion
 
 ### konst1_breitenfaktor_von_texten_aende.htm
@@ -1732,7 +1732,7 @@ Format pro Eintrag:
 ### konst1_elemente_dehnen.htm
 - Titel: Dehnen - [Dehnen]
 - Pfad: Konstruktionsprogramm > Konstruktion 1
-- Beschreibung: Dehnen und Verzerren von Elementen. Achtung: Bewehrungen werden mit dieser Funktion u. U. nicht korrekt gedehnt. Verwenden Sie zum Dehnen oder Verzerren von Bewehrungen
+- Beschreibung: Dehnen und Verzerren von Elementen.
 - Keywords: Dehnen - Konstruktion, Elemente, Konstruktion 1
 
 ### konst1_elemente_und_masskettenpunkte_.htm
@@ -1744,25 +1744,25 @@ Format pro Eintrag:
 ### konst1_elementeigenschaften_aendern.htm
 - Titel: Elementeigenschaften ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Elementeigenschaften
-- Beschreibung: Ändern der Eigenschaften eines oder mehrerer Zeichenelemente. Öffnet den Dialog Eigenschaften zunächst ohne Inhalte (Dialogbeschreibung siehe weiter unten).
+- Beschreibung: Ändern der Eigenschaften eines oder mehrerer Zeichenelemente. Öffnet den Dialog Eigenschaften zunächst ohne Inhalte (Dialogbeschreibung siehe weiter unten). Die Anzahl der gewählten Elemente wird im Dialog nach Elementtypen gruppiert angezeigt. ...
 - Keywords: Elemente, Elementeigenschaften
 
 ### konst1_elementeigenschaften_anzeigen.htm
 - Titel: Elementeigenschaften anzeigen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Elementeigenschaften
-- Beschreibung: Abfragen der Eigenschaften eines Zeichenelements. Über die Elementeigenschaften-Funktion in der unteren Menüleiste können detaillierte Verlege-Informationen wie Verknüpfungs
+- Beschreibung: Abfragen der Eigenschaften eines Zeichenelements. Über die Elementeigenschaften-Funktion in der unteren Menüleiste können detaillierte Verlege-Informationen wie Verknüpfungsstatus, Bauteil- und Verlegefaktor abgefragt werden.
 - Keywords: Elementeigenschaften, Verlegung
 
 ### konst1_faktoren_verzerren.htm
 - Titel: Über Faktoren verzerren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Dehnen
-- Beschreibung: Verändern der Größe von Teilzeichnungen. Sie können Skizzen, Schrau­ben- und Schweißnahtsymbole und Übersichten anpassen. Die Zeichenelemente behalten den Maßstab. Texte kö
+- Beschreibung: Verändern der Größe von Teilzeichnungen. Sie können Skizzen, Schrau­ben- und Schweißnahtsymbole und Übersichten anpassen. Die Zeichenelemente behalten den Maßstab. Texte können mit den gleichen Faktoren verändert werden.
 - Keywords: Dehnen - Konstruktion
 
 ### konst1_fenster_und_tueren_assistent.htm
 - Titel: Öffnungen in Wänden zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Öffnungen > Fenster und Türen einbauen
-- Beschreibung: Die Benutzung des Assistenten eignet sich besonders, um Öffnungen in einschaligen Wänden zu zeichnen. Öffnet den Dialog Fensterassistent.
+- Beschreibung: Die Benutzung des Assistenten eignet sich besonders, um Öffnungen in einschaligen Wänden zu zeichnen. Öffnet den Dialog Fensterassistent. Das Klappen und Wechseln des Punktes können Sie beliebig kombinieren. Um ggf. ...
 
 ### konst1_fenster_und_tueren_aus_datei.htm
 - Titel: Fenstermakros einfügen
@@ -1779,31 +1779,31 @@ Format pro Eintrag:
 ### konst1_huellflaechen.htm
 - Titel: Hüllflächen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Wenn AutFol (untere Menüleiste) eingestellt ist, werden die die Texte und Umrandungen in Folie 5 abgelegt.
+- Beschreibung: Definition und Berechnung von Hüllflächen aus vorhandenen Ansichten und Grundrissen. Für die Erstellung des erhöhten Wärmeschutznachweises nach der neuen EnEV können über die Hüllflächenberechnung in ISBCAD die Hüllflächen automatisch ermittelt oder manuell ...
 - Keywords: Hüllflächen, Optionen
 
 ### konst1_kr_ellipsezeichnen.htm
 - Titel: Ellipse zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Zeichnen von polygonal angenäherten Ellipsen. Hinweis: Ellipsen bestehen aus einzelnen Liniensegmenten. Je höher die Anzahl der Liniensegmente, desto höher ist die Gena
+- Beschreibung: Zeichnen von polygonal angenäherten Ellipsen. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen werden.
 - Keywords: Ellipse, Kreise
 
 ### konst1_kr_kreis_2_kreise_mit_radius.htm
 - Titel: Kreis zeichnen, der an zwei Kreisen mit Radius anliegt
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: (Teil-)Kreise erzeugen, die an zwei vorhandenen Kreisen anliegen.
+- Beschreibung: (Teil-)Kreise erzeugen, die an zwei vorhandenen Kreisen anliegen. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen werden.
 - Keywords: Kreise, Radius
 
 ### konst1_kr_kreis_2_kreise_tangente.htm
 - Titel: Kreis zeichnen, der an zwei Kreisen und einer Tangente anliegt
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Mit dieser Funktion können Sie Kreise (Teilkreise) zeichnen, die an zwei Kreisen und einer Linie anliegen.
+- Beschreibung: Mit dieser Funktion können Sie Kreise (Teilkreise) zeichnen, die an zwei Kreisen und einer Linie anliegen. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen ...
 - Keywords: Kreise, Tangente
 
 ### konst1_kr_kreis_3_kreise.htm
 - Titel: Kreis zeichnen, der an drei Kreisen anliegt
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Mit dieser Funktion können Sie Kreise (Teilkreise) zeichnen, die an drei Kreisen anliegen.
+- Beschreibung: Mit dieser Funktion können Sie Kreise (Teilkreise) zeichnen, die an drei Kreisen anliegen. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen ...
 - Keywords: Kreise
 
 ### konst1_kr_kreis_teilkreis.htm
@@ -1815,19 +1815,19 @@ Format pro Eintrag:
 ### konst1_kr_kreisandreitangentenzeichnen.htm
 - Titel: Kreis an drei Tangenten zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Zeichnen eines Vollkreises, der sich an drei Tangenten anlehnt.
+- Beschreibung: Zeichnen eines Vollkreises, der sich an drei Tangenten anlehnt. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen werden.
 - Keywords: Kreise, Tangente
 
 ### konst1_kr_kreisanzweitangentenmitradiuszeichnen.htm
 - Titel: Kreis an zwei Tangenten mit Radius zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Zeichnen eines Vollkreises an zwei Tangenten mit Angabe des Radius oder freier Eingabe.
+- Beschreibung: Zeichnen eines Vollkreises an zwei Tangenten mit Angabe des Radius oder freier Eingabe. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen ...
 - Keywords: Kreise, Radius, Tangente
 
 ### konst1_kr_kreisoderteilkreislschen.htm
 - Titel: Kreis oder Teilkreis löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Löschen von (Teil-)Kreisen per Mausklick. Mit [Konst1 | FenÄnd | lösche] können Sie mehrere (Teil-)Kreise gleichzeitig löschen. So wird's gemacht: Klicken Sie den zu lös
+- Beschreibung: Löschen von (Teil-)Kreisen per Mausklick. Mit [Konst1 | FenÄnd | lösche] können Sie mehrere (Teil-)Kreise gleichzeitig löschen.
 - Keywords: Kreise, Teilkreis
 
 ### konst1_kr_kreisoderteilkreisndern.htm
@@ -1845,19 +1845,19 @@ Format pro Eintrag:
 ### konst1_kr_tangentezeichnendieanzweikreisenanliegt.htm
 - Titel: Tangente zeichnen, die an zwei Kreisen anliegt
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Mit diesem Programm können Sie Tangenten zeichnen, die an zwei Kreisen anliegen.
+- Beschreibung: Mit diesem Programm können Sie Tangenten zeichnen, die an zwei Kreisen anliegen. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen Element übernommen werden.
 - Keywords: Kreise, Tangente
 
 ### konst1_kr_teilkreis_2_punkte_radius.htm
 - Titel: Teilkreis durch zwei Punkte mit Radius erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Erzeugen von Teilkreisen durch zwei Punkte mit Angabe des Radius bzw. durch Anklicken eines Punktes oder frei.
+- Beschreibung: Erzeugen von Teilkreisen durch zwei Punkte mit Angabe des Radius bzw. durch Anklicken eines Punktes oder frei. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem anderen ...
 - Keywords: Kreise, Radius, Teilkreis
 
 ### konst1_kr_teilkreis_stichmas.htm
 - Titel: Teilkreis mit Stichmaß zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Teilkreis durch Angabe von zwei Punkten oder mittels Punktfang zeichnen. Das Stichmaß kann numerisch angegeben oder mittels Mauspositionierung definiert werden.
+- Beschreibung: Teilkreis durch Angabe von zwei Punkten oder mittels Punktfang zeichnen. Das Stichmaß kann numerisch angegeben oder mittels Mauspositionierung definiert werden. ...
 - Keywords: Kreise, Teilkreis
 
 ### konst1_kr_teilkreisdurchdreipunktezeichnen.htm
@@ -1875,7 +1875,7 @@ Format pro Eintrag:
 ### konst1_kr_teilkreismitstartpunktwinkelundradiuszeichnen.htm
 - Titel: Teilkreis mit Startpunkt, Winkel und Radius zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Zeichnen eines Teilkreises von einem Startpunkt aus, mit Angabe des Differenz- (=Öffnungs-) und des Tangentenwinkels.
+- Beschreibung: Zeichnen eines Teilkreises von einem Startpunkt aus, mit Angabe des Differenz- (=Öffnungs-) und des Tangentenwinkels. Strichtyp und Liniendarstellung (Stift) können über die Optionspaletten (im Funktionsbereich) gewählt oder mit der so wie-Funktion von einem ...
 - Keywords: Kreise, Radius, Teilkreis
 
 ### konst1_kr_teilkreiszwischenmarkierungenersetzen.htm
@@ -1886,7 +1886,7 @@ Format pro Eintrag:
 ### konst1_kr_teilkreiszwischenmarkierungenlschen.htm
 - Titel: Teilkreis zwischen Markierungen löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kreise
-- Beschreibung: Wie die Funktion "Teilkreis ersetzen" [Teiler]. Nur wird hier der Kreis- oder Teilkreisabschnitt gelöscht.
+- Beschreibung: Wie die Funktion "Teilkreis ersetzen" [Teiler]. Nur wird hier der Kreis- oder Teilkreisabschnitt gelöscht. Die Punkte, zwischen denen der Teilkreis gelöscht werden soll, müssen durch Hilfspunkte markiert oder durch Linien, Kreise oder Teilkreise begrenzt sein.
 - Keywords: Kreise, Teilkreis
 
 ### konst1_linie_parallel_verschieben.htm
@@ -1898,7 +1898,7 @@ Format pro Eintrag:
 ### konst1_linienpunkte_dehnen.htm
 - Titel: Linienpunkt dehnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Dehnen
-- Beschreibung: Mit dem Verschieben des Linienpunktes werden die an diesem Punkt anschließenden Linien mitgeführt.
+- Beschreibung: Mit dem Verschieben des Linienpunktes werden die an diesem Punkt anschließenden Linien mitgeführt. Die Richtung wird wie bei [Konst1 | Linien | Puvers] nicht verändert.
 - Keywords: Dehnen - Konstruktion
 
 ### konst1_linientyp_von_linien_und_kreis.htm
@@ -1910,13 +1910,13 @@ Format pro Eintrag:
 ### konst1_logische_elemente_aufloesen.htm
 - Titel: Logische Elemente auflösen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Elemente ändern
-- Beschreibung: Auflösen von ISBCAD Gruppen in einfache" Linien und Kreise.
+- Beschreibung: Auflösen von ISBCAD Gruppen in „einfache" Linien und Kreise. Wenn Sie Teilzeichnungen auslagern wollen, die Gruppen nur teilweise beinhalten, müssen Sie den Bereich mit der Clip-Funktion bearbeiten [Datei | Auslag]. ...
 - Keywords: Elemente, FenÄnd, Logische Elemente auflösen, lösLog
 
 ### konst1_oeffnungen.htm
 - Titel: Wandöffnungen - [Fenste]
 - Pfad: Konstruktionsprogramm > Konstruktion 3
-- Beschreibung: Erzeugen von Öffnungen (Durchbrüchen) in Wänden. Folienbelegung: Wenn AutFol eingestellt ist, werden die Linien in Folie 0 abgelegt. Funktionen Beschreibung Fenster un
+- Beschreibung: Erzeugen von Öffnungen (Durchbrüchen) in Wänden. Folienbelegung: Wenn AutFol eingestellt ist, werden die Linien in Folie 0 abgelegt.
 - Keywords: Konstruktion 3, Öffnungen erzeugen, Wanddurchbruch erzeugen
 
 ### konst1_ole-objekte.htm
@@ -1934,13 +1934,13 @@ Format pro Eintrag:
 ### konst1_stahlbau_varianten.htm
 - Titel: Stahlbau Varianten
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Erzeugen und Bearbeiten von Stahlbaukonstruktionen. Öffnet den Dialog isb Stahl zur Auswahl einer Stahlbau-Variante.
+- Beschreibung: Erzeugen und Bearbeiten von Stahlbaukonstruktionen. Öffnet den Dialog isb Stahl zur Auswahl einer Stahlbau-Variante. Alle Varianten können mit der Übergabe der Zeichnungen an das allgemeine Konstruktionsprogramm dort weiterbearbeitet und vervollständigt ...
 - Keywords: isb Stahl, Optionen, Stahlbau Varianten, Variantenprogramme
 
 ### konst1_stahlliste.htm
 - Titel: Stahlliste - [StlLis]
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Erzeugen von Stahllisten (Einzellisten oder Gesamtliste) für eine oder mehrere Bewehrungszeichnungen. (Abfrage [Bitte rechts auswählen]).
+- Beschreibung: Erzeugen von Stahllisten (Einzellisten oder Gesamtliste) für eine oder mehrere Bewehrungszeichnungen. (Abfrage [Bitte rechts auswählen]). Die Gesamtstahlliste beinhaltet eine Gewichtsliste, eine Gesamtliste sowie die Einzellisten für Rundstahl, Matten, ...
 - Keywords: .STL, Stahlliste
 
 ### konst1_stift_von_linien__kreisen_und_.htm
@@ -1952,7 +1952,7 @@ Format pro Eintrag:
 ### konst1_stueckliste2.htm
 - Titel: Stückliste - [StkLis]
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Erzeugen und Bearbeiten von Stücklisten. Sie können sich einen eigenen Bauteilkatalog (z. B. Einbauteile im Betonfertigteilbau) erstellen. Alle Bauteile des Katalogs erhalten
+- Beschreibung: Erzeugen und Bearbeiten von Stücklisten. Sie können sich einen eigenen Bauteilkatalog (z. B. Einbauteile im Betonfertigteilbau) erstellen. Alle Bauteile des Katalogs erhalten eine Positionsnummer und einen erläuternden Text. ...
 - Keywords: Einbauteile, Optionen, Stückliste
 
 ### konst1_teilzeichnung_frei_verschieben.htm
@@ -1964,7 +1964,7 @@ Format pro Eintrag:
 ### konst1_teilzeichnung_schieben.htm
 - Titel: Teilzeichnung sichtbar verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Verschieben
-- Beschreibung: Verschieben von Zeichenelementen. Wenn Notizen in der Auswahl enthalten sind, werden diese mitverschoben. Wenn Notizen nicht selektiert werden sollen, blenden Sie diese im N
+- Beschreibung: Verschieben von Zeichenelementen.
 - Keywords: Verschieben
 
 ### konst1_teilzeichnung_setzen.htm
@@ -2000,13 +2000,13 @@ Format pro Eintrag:
 ### konst1_ueber_referenzlinien_verzerren.htm
 - Titel: Über Referenzlinien verzerren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Dehnen
-- Beschreibung: Anpassen von Zeichenelementen über die Angabe der Länge von Referenzlinien. Ändern Sie mit dieser Funktion z. B. Quer­schnitte in Positions‑ und Schalplänen.
+- Beschreibung: Anpassen von Zeichenelementen über die Angabe der Länge von Referenzlinien. Ändern Sie mit dieser Funktion z. B. Quer­schnitte in Positions‑ und Schalplänen. Das Fundament soll von 4.0m auf 3.25m Seitenlänge verkleinert werden, ...
 - Keywords: Dehnen - Konstruktion
 
 ### konst1_uebereinander_liegende_element.htm
 - Titel: Übereinanderliegende Elemente löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Elemente ändern
-- Beschreibung: Optionen zur Umwandlung übereinanderliegender oder zusammenhängender Zeichenelemente (Linien, (Teil-)Kreise und Texte). Öffnet den Dialog Übereinanderliegende Elemente.
+- Beschreibung: Optionen zur Umwandlung übereinanderliegender oder zusammenhängender Zeichenelemente (Linien, (Teil-)Kreise und Texte). Öffnet den Dialog Übereinanderliegende Elemente. ...
 - Keywords: Elemente, FenÄnd, Linien, Übereinanderliegende Elemente löschen, Ülösch
 
 ### konst1_zeichnungsprotokoll.htm
@@ -2042,7 +2042,7 @@ Format pro Eintrag:
 ### konst2_durchbrueche_konfigurieren.htm
 - Titel: Durchbrüche konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Durchbrüche
-- Beschreibung: Stil-Konfiguration für die Darstellung von Durchbrüchen.
+- Beschreibung: Stil-Konfiguration für die Darstellung von Durchbrüchen. Öffnet den Dialog Einstellungen für Darstellung der Durchbrüche mit vordefinierten Durchbruchstilen.
 - Keywords: Durchbrüche
 
 ### konst2_durchbrueche_zeichnen.htm
@@ -2054,7 +2054,7 @@ Format pro Eintrag:
 ### konst2_elemente_duplizieren.htm
 - Titel: Duplizieren - [Dupliz]
 - Pfad: Konstruktionsprogramm > Konstruktion 2
-- Beschreibung: Duplizieren von Elementen. Beim Duplizieren werden alle Informationen der Elemente weitergegeben, auch die Folienzugehörigkeit, der Verlegefaktor für die Stahlliste und die I
+- Beschreibung: Duplizieren von Elementen.
 - Keywords: Duplizieren, Elemente, Konstruktion 2, Kopieren, Überlagerungskontrolle
 
 ### konst2_elemente_spiegeln.htm
@@ -2072,7 +2072,7 @@ Format pro Eintrag:
 ### konst3_bewdeh.htm
 - Titel: Bewehrung dehnen
 - Pfad: Bewehrungsprogramm > Formstahl > Bewehrung dehnen
-- Beschreibung: Geometrieelemente zusammen mit der Bewehrung dehnen (ausgenommen Kreise) und Bewehrungsformen (Stabstahl) gleichzeitig ändern.
+- Beschreibung: Geometrieelemente zusammen mit der Bewehrung dehnen (ausgenommen Kreise) und Bewehrungsformen (Stabstahl) gleichzeitig ändern. Führen Sie die Aktion in zwei Schritten, jeweils für X- und Y- getrennt durch, wenn nicht nur in eine Richtung gedehnt werden soll.
 - Keywords: DehBew, Elemente
 
 ### konst3_bewehrungsteppiche_bamtec.htm
@@ -2084,7 +2084,7 @@ Format pro Eintrag:
 ### konst3_blattr.htm
 - Titel: Blattrand - [Blattr]
 - Pfad: Konstruktionsprogramm > Konstruktion 3
-- Beschreibung: Folienbelegung: Wenn AutFol eingestellt ist, wird der Blattrand in Folie 0 abgelegt.
+- Beschreibung: Konfiguration und Erzeugen eines Blattrands. Öffnet den Dialog Blattrand. Wenn Sie die Plotfläche ändern, müssen Sie nachträglich auch den Blattrand anpassen.
 - Keywords: Blattrand, Faltmarken, Konstruktion 3
 
 ### konst3_dublei_aendern.htm
@@ -2102,7 +2102,7 @@ Format pro Eintrag:
 ### konst3_dublei_ecke.htm
 - Titel: Dübelleiste an einer Ecke verlegen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: Verlegen von Dübelleisten an einer Ecke. So wird's gemacht: Geben Sie die Anzahl der Dübelleisten an, die an einem Rand verlegt werden sollen und bestätigen Sie mit der Ein
+- Beschreibung: Verlegen von Dübelleisten an einer Ecke.
 - Keywords: Dübelleisten
 
 ### konst3_dublei_konfig.htm
@@ -2114,31 +2114,31 @@ Format pro Eintrag:
 ### konst3_dublei_kreis.htm
 - Titel: Dübelleiste am Kreisbogen verlegen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: Einbau von Dübelleisten am Kreisbogen. Beachten Sie, dass der gesamte Kreis als Bezug herangezogen wird. Teilen Sie ggfs. die Kreise so ein, dass die Eckabstände und Winkel
+- Beschreibung: Einbau von Dübelleisten am Kreisbogen. Beachten Sie, dass der gesamte Kreis als Bezug herangezogen wird. Teilen Sie ggfs. die Kreise so ein, dass die Eckabstände und Winkel aus dem angeklickten Element übernommen werden können.
 - Keywords: Dübelleisten
 
 ### konst3_dublei_liste.htm
 - Titel: Stückliste für Dübelleisten erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: In der Zeichnung verwendete Dübelleisten in einer Stückliste zusammenfassen.
+- Beschreibung: In der Zeichnung verwendete Dübelleisten in einer Stückliste zusammenfassen. Die Stückliste lässt sich auf Dübelleisten-Hersteller filtern und nach verschiedenen Kriterien sortieren. ...
 - Keywords: Dübelleisten
 
 ### konst3_dublei_loesche.htm
 - Titel: Dübelleiste und Beschriftung löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: Dübelleisten mit Beschriftung einzeln, gruppenweise oder innerhalb eines Bereiches löschen. Gewählte Elemente werden sofort, ohne Rückfrage gelöscht.
+- Beschreibung: Dübelleisten mit Beschriftung einzeln, gruppenweise oder innerhalb eines Bereiches löschen. Gewählte Elemente werden sofort, ohne Rückfrage gelöscht. Beschriftungen können mit der Funktion [einzeln] gelöscht werden.
 - Keywords: Dübelleisten
 
 ### konst3_dublei_rand.htm
 - Titel: Dübelleiste am Rand verlegen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: Alternativer Aufruf: Mittlere Maustaste auf eine Dübelleiste oder Dübelleistentext.
+- Beschreibung: Anordnung von Dübelleisten an geraden Rändern. Beachten Sie, dass die gesamte Linie als Bezug herangezogen wird. Teilen Sie ggfs. die Linien so ein, dass die Eckabstände und Winkel aus dem angeklickten Element übernommen werden können.
 - Keywords: Dübelleisten
 
 ### konst3_eleatr.htm
 - Titel: Elementattribute - [EleAtr]
 - Pfad: Konstruktionsprogramm > Konstruktion 3
-- Beschreibung: Anordnen oder Sperren von Elemente auf Ebenen, um Teilzeichnungen vor Veränderungen zu schützen. Die Auswahl erfolgt folienübergreifend.
+- Beschreibung: Anordnen oder Sperren von Elemente auf Ebenen, um Teilzeichnungen vor Veränderungen zu schützen. Die Auswahl erfolgt folienübergreifend. Mit dem Folienmanager können Sie Folien einschalten, die für diese Aktion wichtig sind. ...
 - Keywords: Elementattribute, Konstruktion 3
 
 ### konst3_eleatr_ebene.htm
@@ -2150,42 +2150,42 @@ Format pro Eintrag:
 ### konst3_eleatr_elfrei.htm
 - Titel: Element freigeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Elementattribute
-- Beschreibung: Entsperren von Zeichenelementen. Optionen Gesperrte Elemente werden in den normalen Farben, in denen sie gezeichnet sind, dargestellt. Um gesperrte Elemente leichter z
+- Beschreibung: Entsperren von Zeichenelementen.
 - Keywords: Elemente
 
 ### konst3_eleatr_elsper.htm
 - Titel: Element sperren
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Elementattribute
-- Beschreibung: Sperren von Zeichenelementen. Gesperrte Elemente können nicht verschoben, gedreht, verändert und gelöscht werden. Gesperrte Elemente werden nicht kopiert oder dupliziert, j
+- Beschreibung: Sperren von Zeichenelementen.
 - Keywords: Elemente
 
 ### konst3_fem.htm
 - Titel: as-Werte aus FEM einlesen - [FEM]
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente
-- Beschreibung: Die mit der Funktion [DatLes] eingefügten FEM-Daten können für die automatische Bewehrung [Formst | AutBew] sowie für die Bewehrung mit BAMTEC-Teppichen [Option | BAMTEC] verwendet werden. ...
+- Beschreibung: Sie können einzelne oder auch mehrere FEM-Datensätze in Form von aS-Werten in die Zeichnung einlesen und bearbeiten. Die FEM-Datensätze werden mit der Zeichnung gespeichert. ...
 - Keywords: FEM - Finite Elemente, FEM - Funktion, Konstruktion 3
 
 ### konst3_femdef.htm
 - Titel: Geometrie für FEM - [FemDef]
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente
-- Beschreibung: Dieses Programm erzeugt Daten, die von einigen FEM-Programmen gelesen werden können. Wenn die Geometriedaten von Ihrem FEM-Programm nicht erkannt werden, exportieren Sie diese
+- Beschreibung: Dieses Programm erzeugt Daten, die von einigen FEM-Programmen gelesen werden können. Wenn die Geometriedaten von Ihrem FEM-Programm nicht erkannt werden, exportieren Sie diese in eine DXF-Datei. ...
 - Keywords: .GEO, .RGE, FEM - Finite Elemente, FemDef, Geometriedaten erzeugen - FEM
 
 ### konst3_flaechenbew_autbew.htm
 - Titel: Flächen automatisch bewehren - [AutBew]
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Folienbelegung: Wenn AutFol (untere Menüleiste) eingestellt ist, werden Matten in Folie 3, die Stabstahlverlegungen in Folie 4 und die Stahlauszüge in Folie 17 abgelegt.
+- Beschreibung: Generierung eines Bewehrungsvorschlages für Platten oder Scheiben mit unregelmäßig geformten Umrissen, die mit FEM-Programmen berechnet wurden. Im Ergebnis wird die optimale Materialnutzung berücksichtigt.
 - Keywords: AutBew, Automatische Bewehrung - AutBew, Bewehrung automatisch verlegen, Bewehrung verlegen, Formstahl
 
 ### konst3_freihand.htm
 - Titel: Freihandlinie zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien > Linie zeichnen > Freihandlinien zeichnen
-- Beschreibung: Zeichnen von Freihandlinien. So wird's gemacht: Wählen Sie im Funktionsbereich eine Stiftnummer: Klicken Sie am Startpunkt auf die linke Maustaste. Wenn Sie die Maus
+- Beschreibung: Zeichnen von Freihandlinien.
 
 ### konst3_freihd.htm
 - Titel: Freihandlinie - [FreiHd]
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien > Linie zeichnen
-- Beschreibung: Wenn AutFol (untere Menüleiste) eingestellt ist, werden die Linien in Folie 13 abgelegt.
+- Beschreibung: Zeichnen von Freihandlinien. Diese Funktionen eignen sich zum „Durchzeichnen“ von gescannten Lageplänen. Wechseln Sie u. U. den Systemwinkel. Stellen Sie ggf. den Filter auf Geometrie.
 - Keywords: Freihandlinien zeichnen, Konstruktion 1, Linien
 
 ### konst3_freihd_linie.htm
@@ -2207,7 +2207,7 @@ Format pro Eintrag:
 ### konst3_massen_einste.htm
 - Titel: Massen-Darstellung - Konfiguration
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Konfiguration der Inhalte und Darstellung einer frei platzierten Massenangabe, eines Raumstempels, einer Massentabelle oder eines Schwerpunktsymbols. Öffnet den Dialog Einste
+- Beschreibung: Konfiguration der Inhalte und Darstellung einer frei platzierten Massenangabe, eines Raumstempels, einer Massentabelle oder eines Schwerpunktsymbols. Öffnet den Dialog Einstellungen.
 - Keywords: Massenermittlung
 
 ### konst3_massen_flaeche.htm
@@ -2237,7 +2237,7 @@ Format pro Eintrag:
 ### konst3_massen_wohnfl.htm
 - Titel: Wohnfläche berechnen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Übergabe der Massen-Angaben an das eigenständige Programm Flächen- und Volumenberechnung (Jeltsch/Marshall). Startet das Programm Flächen- und Volumenberechnung.
+- Beschreibung: Übergabe der Massen-Angaben an das eigenständige Programm Flächen- und Volumenberechnung (Jeltsch/Marshall). Startet das Programm Flächen- und Volumenberechnung. Das Programm Flächen- und Volumenberechnung muss auf dem Computer installiert sein. ...
 - Keywords: Massenermittlung, Wohnflächenberechnung
 
 ### konst3_planbe.htm
@@ -2267,19 +2267,19 @@ Format pro Eintrag:
 ### koorvm_darstellung_konfigurieren.htm
 - Titel: Stile für die Koordinatenvermaßung konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Koordinatenvermaßung
-- Beschreibung: Stil-Konfiguration für die Darstellung von Koordinatensystemen.
+- Beschreibung: Stil-Konfiguration für die Darstellung von Koordinatensystemen. Öffnet den Dialog Einstellung Koordinatenvermaßung mit vordefinierten Koordinatenvermaßungsstilen. ...
 - Keywords: Koordinatenvermaßung, Nachkommastellen
 
 ### koorvm_daten_exportieren.htm
 - Titel: Daten exportieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Koordinatenvermaßung
-- Beschreibung: Auslagern der Koordinaten und zugehörigen Daten in eine Textdatei.
+- Beschreibung: Auslagern der Koordinaten und zugehörigen Daten in eine Textdatei. Alle vorhandenen Koordinatenangaben stehen in der Tabelle.
 - Keywords: Koordinatenvermaßung
 
 ### koorvm_daten_importieren.htm
 - Titel: Daten importieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Koordinatenvermaßung
-- Beschreibung: Daten aus Fremdprogrammen übernehmen. Ruft den Dialog Öffnen auf.
+- Beschreibung: Daten aus Fremdprogrammen übernehmen. Ruft den Dialog Öffnen auf. Wählen Sie die zu importierende Datei aus.
 - Keywords: Koordinatenvermaßung
 
 ### koorvm_koordinatenangaben_generieren.htm
@@ -2333,7 +2333,7 @@ Format pro Eintrag:
 ### linien_aendern.htm
 - Titel: Linie ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Ändern der Stiftnummer und/oder des Strichtyps einer Linie.
+- Beschreibung: Ändern der Stiftnummer und/oder des Strichtyps einer Linie. Den Stiftnummern werden in den Systemdaten Farben zugeordnet. Es können bis zu 256 Stifte verwendet werden. Bildschirmfarbe und Ausgabefarbe können sich unterscheiden.
 - Keywords: Linien
 
 ### linien_ausschneiden.htm
@@ -2345,7 +2345,7 @@ Format pro Eintrag:
 ### linien_elemente_ausrunden.htm
 - Titel: Element ausrunden
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Ausrunden von Zeichenelementen. Es können sowohl Linien als auch Kreise bzw. Teilkreise durch einen Bogen verbunden werden. Die Elemente müssen sich dabei nicht berühren.
+- Beschreibung: Ausrunden von Zeichenelementen. Es können sowohl Linien als auch Kreise bzw. Teilkreise durch einen Bogen verbunden werden. Die Elemente müssen sich dabei nicht berühren. Klicken Sie die Linienenden, wie gezeigt, an. ...
 - Keywords: ausrun, Linien
 
 ### linien_linien-mit-konstruktionshilfen-zeichnen.htm
@@ -2369,7 +2369,7 @@ Format pro Eintrag:
 ### linien_linien_ohne_richtungslogik_zei.htm
 - Titel: Ohne Richtungslogik zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien > Linie zeichnen
-- Beschreibung: Zeichnen von Linien. Mit der Einstellung [oRiL] (ohne Richtungslogik) zeichnen Sie Linien in die Richtung, die Sie anklicken.
+- Beschreibung: Zeichnen von Linien. Mit der Einstellung [oRiL] (ohne Richtungslogik) zeichnen Sie Linien in die Richtung, die Sie anklicken. Im Funktionsbereich können Sie mit den Schaltflächen [Bewege] oder [Zeichn] die Zeichenmarke an eine bestimmte Position bewegen oder ...
 - Keywords: Linien, ohne Richtungslogik zeichnen, oRiL, Zeichnen
 
 ### linien_linien_parallel_verschieben.htm
@@ -2393,19 +2393,19 @@ Format pro Eintrag:
 ### linien_loeschen.htm
 - Titel: Linien löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Löschen einzelner Linien. Sollen nur Teillinien gelöscht werden, verwenden Sie die Funktionen Teili, aTeili und nTeili. Wenn Sie mehrere Linien gleichzeitig löschen möchten,
+- Beschreibung: Löschen einzelner Linien. Sollen nur Teillinien gelöscht werden, verwenden Sie die Funktionen Teili, aTeili und nTeili. Wenn Sie mehrere Linien gleichzeitig löschen möchten, verwenden Sie die Funktion [Konst1 | FenÄnd | lösche].
 - Keywords: Linien
 
 ### linien_n-fache_teillinie_bearbeiten.htm
 - Titel: n-fache Teillinie bearbeiten
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Abwechselndes Löschen oder Ersetzen von Linien. Die Linie wird gelöscht und vom angeklickten Ende aus neu erzeugt.
+- Beschreibung: Abwechselndes Löschen oder Ersetzen von Linien. Die Linie wird gelöscht und vom angeklickten Ende aus neu erzeugt. Strichtyp und Liniendarstellung (Stift) der parallelen Linie können im Funktionsbereich gewählt oder mit der so wie-Funktion von einem anderen ...
 - Keywords: Linien, nTeili
 
 ### linien_parallele_linien_erzeugen.htm
 - Titel: Parallele Linie erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Die Anfangs- und Endpunkte werden parallel zur Bezugslinie um den eingegebenen Betrag oder frei verschoben.
+- Beschreibung: Die Anfangs- und Endpunkte werden parallel zur Bezugslinie um den eingegebenen Betrag oder frei verschoben. Strichtyp und Liniendarstellung (Stift) der parallelen Linie können im Funktionsbereich gewählt oder mit der so wie-Funktion von einem anderen Element ...
 - Keywords: Linien, Parallele zeichnen
 
 ### linien_punkt_verschieben.htm
@@ -2435,24 +2435,24 @@ Format pro Eintrag:
 ### linien_teillinie_bearbeiten.htm
 - Titel: Teillinie bearbeiten
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Löschen oder Ersetzen einer Linie in einem bestimmten Teilbereich.
+- Beschreibung: Löschen oder Ersetzen einer Linie in einem bestimmten Teilbereich. Strichtyp und Liniendarstellung (Stift) der parallelen Linie können im Funktionsbereich gewählt oder mit der so wie-Funktion von einem anderen Element übernommen werden.
 - Keywords: Linien, Teili
 
 ### linien_vieleck_zeichnen.htm
 - Titel: Vieleck zeichnen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Linien
-- Beschreibung: Erzeugen von regelmäßigen Vielecken. Das Vieleck wird mithilfe eines Hilfskreises (innen oder außen) gebildet.
+- Beschreibung: Erzeugen von regelmäßigen Vielecken. Das Vieleck wird mithilfe eines Hilfskreises (innen oder außen) gebildet. Strichtyp und Liniendarstellung (Stift) der parallelen Linie können im Funktionsbereich gewählt oder mit der so wie-Funktion von einem anderen ...
 - Keywords: Linien, N-Eck zeichnen
 
 ### linienlasten_eingeben.htm
-- Titel: FEM  Linienlasten eingeben
+- Titel: FEM – Linienlasten eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Hinweise: Nicht alle FEM-Programme übernehmen die Lasten aus ISBCAD. Erkundigen Sie sich bei dem Programmhersteller. Nur die P-Lasten werden in unterschiedliche Lastfäl
 
 ### listen_archiv.htm
 - Titel: Archivieren
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → Archivieren.
+- Beschreibung: Entpacken von Archiv-Dateien (*.ARH), die mit ISBCAD 2025 oder früheren Versionen erstellt wurden.
 - Keywords: .ARH, Archiv-Dateien entpacken
 
 ### luecke.htm
@@ -2470,7 +2470,7 @@ Format pro Eintrag:
 ### masketten_kreise_teilkreise.htm
 - Titel: Kreis und Teilkreis bemaßen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Die Darstellung der Umfang- und Bogenvermaßung kann im Dialog DefMaß auf der Registerkarte Maßketten konfiguriert werden. Für die Maßtexte gelten die Einstellungen für Einzel
+- Beschreibung: Vermaßung der Umfangslänge von Teilkreisen. Angabe der Radien von Voll- und Teilkreisen.
 - Keywords: Bemaßung, Bogenvermaßung, Kreise, Maßketten, Radiusvermaßung
 
 ### masketten_winkelangaben_erstellen.htm
@@ -2488,13 +2488,13 @@ Format pro Eintrag:
 ### massketten_aendern.htm
 - Titel: Maßkette ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Bemaßungspunkte können hinzugefügt oder entfernt werden. Der Winkel und die Lage können geändert werden. Die Darstellung kann im Funktionsbereich geändert werden.
+- Beschreibung: Bemaßungspunkte können hinzugefügt oder entfernt werden. Der Winkel und die Lage können geändert werden. Die Darstellung kann im Funktionsbereich geändert werden. Ergänzungstexte, die zu einem Maß gehören, das neu berechnet wird, müssen neu zugeordnet werden.
 - Keywords: Bemaßung, Maßketten
 
 ### massketten_automatisch_erstell.htm
 - Titel: Maßkette mit relativen Maßen automatisch erstellen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Maßketten automatisch durch einen oder mehrere Schnitte erzeugen.
+- Beschreibung: Maßketten automatisch durch einen oder mehrere Schnitte erzeugen. Es werden nur geometrische Linien berücksichtigt. Die Linien müssen untereinander parallel verlaufen.
 - Keywords: Bemaßung, Maßketten
 
 ### massketten_durch_text_ergaenze.htm
@@ -2506,7 +2506,7 @@ Format pro Eintrag:
 ### massketten_generieren.htm
 - Titel: Maßkette generieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Ändern der Maßketten-Darstellung (ID). Die Darstellung der Maßketten können Sie vorab in den Maßketten-Einstellungen konfigurieren.
+- Beschreibung: Ändern der Maßketten-Darstellung (ID). Die Darstellung der Maßketten können Sie vorab in den Maßketten-Einstellungen konfigurieren. Alle Veränderungen, wie z. B. das Verlängern von Maßhilfslinien oder das Verschieben von Maßkettentexten, gehen verloren.
 - Keywords: Bemaßung, Generieren, Maßketten
 
 ### massketten_loeschen.htm
@@ -2518,31 +2518,31 @@ Format pro Eintrag:
 ### massketten_verschieben_2.htm
 - Titel: Maßkette verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Verschieben von ganzen Maßketten, eventuell mit Gesamtmaß, sowie einzelnen Höhenkoten.
+- Beschreibung: Verschieben von ganzen Maßketten, eventuell mit Gesamtmaß, sowie einzelnen Höhenkoten. Die Maßkette kann nur orthogonal zum entsprechenden Systemwinkel verschoben werden. ...
 - Keywords: Bemaßung, Maßketten
 
 ### masskettenpunkte_modifizieren.htm
 - Titel: Maßkettenpunkt modifizieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Durch das Löschen von Linien und Kreisen kann es vorkommen, dass Maßkettenpunkte auf der Zeichnung ohne offensichtlichen Elementbezug zurückbleiben.
+- Beschreibung: Durch das Löschen von Linien und Kreisen kann es vorkommen, dass Maßkettenpunkte auf der Zeichnung ohne offensichtlichen Elementbezug zurückbleiben. Diese Punkte können mit dieser Funktion entfernt oder auf die zugehörige Maßkette verschoben werden.
 - Keywords: Bemaßung, Maßkettenpunkte
 
 ### masskettenstil_konfigurieren.htm
 - Titel: Maßkettenstil konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Stil-Konfiguration für die Darstellung von Bemaßungen. Öffnet den Dialog Maßketten Einstellungen zur Bearbeitung von Maßkettenstilen.
+- Beschreibung: Stil-Konfiguration für die Darstellung von Bemaßungen. Öffnet den Dialog Maßketten Einstellungen zur Bearbeitung von Maßkettenstilen. Nutzen Sie die Optionen auf den verschiedenen Registerkarten, um die Darstellung von Bemaßungen zu definieren.
 - Keywords: Bemaßung, Höhenkote, Maßketten
 
 ### masskettentext_verschieben.htm
 - Titel: Maßkettentext verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Verschieben des Maßkettentextes. So wird's gemacht: Klicken Sie den Text an, der verschoben werden soll. [Welcher Text]. Schieben Sie den Text an die gewünschte Stelle und
+- Beschreibung: Verschieben des Maßkettentextes.
 - Keywords: Bemaßung, Maßketten, Maßkettentexte
 
 ### massstab_einstellen.htm
 - Titel: Maßstabseinstellungen
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: (untere Menüleiste) Angabe des Maßstabs für die Konstruktion von Elementen. Auf der Schaltfläche wird der aktuell gültige Maßstab angezeigt. Die Schaltfläche für die Maßstab
+- Beschreibung: Angabe des Maßstabs für die Konstruktion von Elementen. Auf der Schaltfläche wird der aktuell gültige Maßstab angezeigt. Die Schaltfläche für die Maßstabseinstellungen und die Festlegung der Maßstabsbereiche befindet sich in der unteren Menüleiste. ...
 
 ### matte_ueber_den_auszug_aendern.htm
 - Titel: Matte über den Auszug ändern
@@ -2590,7 +2590,7 @@ Format pro Eintrag:
 ### matten_dehnen.htm
 - Titel: Matten dehnen
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Mattenmaße bis zu ihren maximalen Abmessungen vergrößern oder beliebig verkleinern.
+- Beschreibung: Mattenmaße bis zu ihren maximalen Abmessungen vergrößern oder beliebig verkleinern. Sie können die neue Länge / Breite gezielt eingeben. Sie können auch Bezugslinien anklicken, ...
 - Keywords: Matten
 
 ### matten_durchbrueche_erzeugen.htm
@@ -2620,7 +2620,7 @@ Format pro Eintrag:
 ### matten_im_polygon_verlegen.htm
 - Titel: Matten im Polygon verlegen
 - Pfad: Bewehrungsprogramm > Matten > Mattenverlegung im Polygon
-- Beschreibung: Der Verlegebereich ist durch Linien und/oder Teilkreise begrenzt. An schrägen Linien und an Kreisbögen werden die Matten automatisch treppenförmig angepasst.
+- Beschreibung: Der Verlegebereich ist durch Linien und/oder Teilkreise begrenzt. An schrägen Linien und an Kreisbögen werden die Matten automatisch treppenförmig angepasst. Voreinstellungen für die Mattenverlegung im Polygon.
 
 ### matten_in_der_verlegung_anzeig.htm
 - Titel: Matten in der Verlegung anzeigen
@@ -2631,7 +2631,7 @@ Format pro Eintrag:
 ### matten_in_polygonalen_bereichen_verlegen.htm
 - Titel: Mattenverlegung im Polygon - [VerPol]
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Verlegen von Matten desselben Formats in unregelmäßigen, polygonalen Bereichen. Innerhalb eines Polygons verlegte Matten bilden eine Gruppe und können als solche editiert werden.
+- Beschreibung: Verlegen von Matten desselben Formats in unregelmäßigen, polygonalen Bereichen. Innerhalb eines Polygons verlegte Matten bilden eine Gruppe und können als solche editiert werden. Voreinstellungen für die Mattenverlegung im Polygon.
 - Keywords: Bewehrung verlegen, Matten, Mattenverlegung, VerPol
 
 ### matten_lage_des_mattentextes_festlege.htm
@@ -2643,13 +2643,13 @@ Format pro Eintrag:
 ### matten_listenmatten_editieren.htm
 - Titel: Listenmatteneditor
 - Pfad: Bewehrungsprogramm > Matten > Mattenverlegung im Rechteck
-- Beschreibung: Aufbau bereits verlegter Listenmatten festlegen. Öffnet den Dialog Listenmatten-Editor.
+- Beschreibung: Aufbau bereits verlegter Listenmatten festlegen. Öffnet den Dialog Listenmatten-Editor. Bearbeiten Sie zunächst die Angaben in der Tabelle, bevor Sie einzelne Stäbe oder Bereiche mit den Funktionen in der Menüleiste editieren. ...
 - Keywords: LiMaEd, Listenmatten, Matten
 
 ### matten_listenmattenprogramm_limacad-1.htm
 - Titel: Zeichnung an LIMACAD-1045 übergeben - [LIMCAD]
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Automatische Entwicklung und Verlegung von Listenmatten. Übernimmt die aktuelle Zeichnung in die separate Software-Anwendung LIMACAD-1045.
+- Beschreibung: Automatische Entwicklung und Verlegung von Listenmatten. Übernimmt die aktuelle Zeichnung in die separate Software-Anwendung LIMACAD-1045. Mit LIMACAD-1045 können automatisch Einachs- oder Zweiachslistenmatten entwickelt und verlegt werden. ...
 - Keywords: LIMACAD-1045, Matten
 
 ### matten_loeschen.htm
@@ -2661,7 +2661,7 @@ Format pro Eintrag:
 ### matten_main.htm
 - Titel: Formmatten - Menü
 - Pfad: Bewehrungsprogramm
-- Beschreibung: Folienbelegung: Wenn AutFol eingestellt ist, werden die Verlegungen in Folie 3 und die Auszugstexte in Folie 18 abgelegt.
+- Beschreibung: Erzeugen und Bearbeiten zwei- und dreidimensionaler Flächenbewehrungen. Nachdem der Plan fertiggestellt wurde, können sowohl eine Stahlliste, mit Ausgabe der Mattenpositionen, eine Biegeliste als auch eine Schneideskizze ausgegeben werden. ...
 - Keywords: Formmatten
 
 ### matten_unterstuetzungskoerbe.htm
@@ -2673,7 +2673,7 @@ Format pro Eintrag:
 ### matten_verlegebereich_aendern.htm
 - Titel: Mattenverlegung ändern
 - Pfad: Bewehrungsprogramm > Matten > Mattenverlegung im Rechteck
-- Beschreibung: Verlegebereiche, die mit ISBCAD 2014 oder später gezeichnet wurden, können geändert werden.
+- Beschreibung: Verlegebereiche, die mit ISBCAD 2014 oder später gezeichnet wurden, können geändert werden. Das bedeutet: Wurde die Geometrie mit den Mattenverlegungen verändert ([Konst1 | Dehnen | allgem] oder [Konst1 | Versch | setzen]), ...
 - Keywords: Matten
 
 ### matten_verschieben.htm
@@ -2685,13 +2685,13 @@ Format pro Eintrag:
 ### matten_vorratsmatten.htm
 - Titel: Vorratsmatten der Baustahlgewebe GmbH
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Vorratsmatten - B500A und B500B der Baustahlgewebe GmbH - werden wie Lagermatten verlegt. Aktuelle Informationen erhalten Sie unter (www.baustahlgewebe.com).
+- Beschreibung: Vorratsmatten - B500A und B500B der Baustahlgewebe GmbH - werden wie Lagermatten verlegt. Aktuelle Informationen erhalten Sie unter (www.baustahlgewebe.com). Durch die Gestaltung der Matten, Überstände einseitig, können „Ein-Ebenen-Stöße“ hergestellt werden. ...
 - Keywords: Matten, Vorratsmatten
 
 ### matten_zusammenfassen.htm
 - Titel: Matten zusammenfassen
 - Pfad: Bewehrungsprogramm > Matten > Mattenzusammenfassung
-- Beschreibung: Die zusammengefassten Matten erhalten eine Diagonale. Der Mattentext beinhaltet die Summe der erfassten Matten.
+- Beschreibung: Die zusammengefassten Matten erhalten eine Diagonale. Der Mattentext beinhaltet die Summe der erfassten Matten. Für das Zusammenfassen müssen mindestens zwei gleiche Matten ausgewählt werden. ...
 - Keywords: Matten
 
 ### mattendiagonale_drehen.htm
@@ -2715,7 +2715,7 @@ Format pro Eintrag:
 ### mattengruppe_genau_verlegen.htm
 - Titel: Mattengruppe genau verlegen
 - Pfad: Bewehrungsprogramm > Matten > Mattenverlegung im Rechteck
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Mattentext oder ein anderes Mattenelement.
+- Beschreibung: Matten desselben Mattentyps in einem vorhandenen, rechtwinkligen Bereich verlegen. Der Verlegebereich wird über die X- und Y-Koordinate des Anfangs- und Endpunktes beschrieben. ...
 - Keywords: GenVer, LisMat, Listenmatten
 
 ### mattenposition_aendern.htm
@@ -2733,7 +2733,7 @@ Format pro Eintrag:
 ### mattenreste.htm
 - Titel: Mattenreste - [Reste]
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Bearbeiten von Mattenresten. Funktionen Beschreibung Mattenrest verlegen. Mattenreste anzeigen. Mattenreste löschen. Optionen Beschreibung Optimierung mit klei
+- Beschreibung: Bearbeiten von Mattenresten.
 - Keywords: Mattenreste
 
 ### mattenreste_anzeigen.htm
@@ -2751,13 +2751,13 @@ Format pro Eintrag:
 ### mattentext_verschieben.htm
 - Titel: Mattentext verschieben
 - Pfad: Bewehrungsprogramm > Matten > Mattentexte
-- Beschreibung: Verschieben der Matten-, Größen- und Kommentartexte.
+- Beschreibung: Verschieben der Matten-, Größen- und Kommentartexte. Die Matten- und Größentexte können getrennt voneinander verschoben werden. Ein Mattentext wird zusammen mit dem zugehörigen Kommentartext verschoben. ...
 - Keywords: Mattentexte
 
 ### mattentexte.htm
 - Titel: Mattentexte - [Texte]
 - Pfad: Bewehrungsprogramm > Matten
-- Beschreibung: Hinzufügen von Matten- und Größentexten. Funktionen Beschreibung Mattentext verschieben. Lage des Mattentextes festlegen. Mattengrößentexte erzeugen. Kommentarte
+- Beschreibung: Hinzufügen von Matten- und Größentexten.
 - Keywords: Matten, Mattentexte, Texte - Matten
 
 ### mattentyp_aendern.htm
@@ -2791,7 +2791,7 @@ Format pro Eintrag:
 ### nagelbild_nagelbilder_aendern.htm
 - Titel: Nagelbilder ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Wenn der Durchmesser des Verbindungsmittels oder andere Parameter geändert werden müssen, können Sie die Eingabedialoge mit allen vorhandenen Eingaben durcharbeiten.
+- Beschreibung: Wenn der Durchmesser des Verbindungsmittels oder andere Parameter geändert werden müssen, können Sie die Eingabedialoge mit allen vorhandenen Eingaben durcharbeiten. ...
 - Keywords: Holzbau
 
 ### nagelbild_nagelbilder_loeschen.htm
@@ -2803,7 +2803,7 @@ Format pro Eintrag:
 ### oft_verwendete_bewehrungsdetai.htm
 - Titel: Definierte Querschnitt-Bewehrungen - Detail
 - Pfad: Bewehrungsprogramm > Formstahl > Detail
-- Beschreibung: Vordefinierte Querschnitt-Konstruktionen für automatisierte Bewehrung (Streifenfundamente, U-Schalen, Wandanschlüsse etc.). Öffnet den Dialog Querschnitt zur Auswahl einer Qu
+- Beschreibung: Vordefinierte Querschnitt-Konstruktionen für automatisierte Bewehrung (Streifenfundamente, U-Schalen, Wandanschlüsse etc.). Öffnet den Dialog Querschnitt zur Auswahl einer Querschnittsdarstellung.
 - Keywords: Bewehrungsdetails, Detail, Querschnitt-Darstellungen - Detail
 
 ### option_einstellungen.htm
@@ -2821,25 +2821,25 @@ Format pro Eintrag:
 ### optionen_sysdat.htm
 - Titel: Systemdaten - Dialog
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → Systemdaten.
+- Beschreibung: Konfiguration der Programmoberfläche, des Programmverhaltens sowie der Voreinstellungen für das Konstruktions- und Bewehrungsprogramm. Öffnet den Dialog Systemdaten. Um Änderungen zu übernehmen, klicken Sie im unteren Dialogbereich auf OK. ...
 - Keywords: Konstruktions- und Bewehrungsprogramm, Optionen, Systemdaten - Dialog
 
 ### pos_kre_positionierung_aendern.htm
 - Titel: Positionskreis ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Ändern der Lage, der Textangaben sowie der Spann- und Richtungslinien von statischen Positionen.
+- Beschreibung: Ändern der Lage, der Textangaben sowie der Spann- und Richtungslinien von statischen Positionen. Passen Sie in tabellarischer Form die Textergänzungen und Darstellung statischer Positionen an. Änderungen sind auf der Zeichenfläche sofort sichtbar. ...
 - Keywords: Positionskreise
 
 ### positionen_zusammenfassen_matten.htm
 - Titel: Positionen zusammenfassen
 - Pfad: Bewehrungsprogramm > Matten > Mattenzusammenfassung
-- Beschreibung: Matten eines Typs mit identischen Abmessungen aber unterschiedlichen Positionsnummern zu einer Position zusammenfassen.
+- Beschreibung: Matten eines Typs mit identischen Abmessungen aber unterschiedlichen Positionsnummern zu einer Position zusammenfassen. Durch das Zusammenstellen von Teilzeichnungen zu einem Gesamtplan kann es vorkommen, ...
 - Keywords: Matten
 
 ### positionskreise.htm
 - Titel: Positionskreise - [PosKre]
 - Pfad: Konstruktionsprogramm > Konstruktion 2
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Zeigerlinie oder einen Positionstext.
+- Beschreibung: Anlegen und Bearbeiten statischer Positionskreise. Siehe auch: Positionskreise (Beschreibung, Verwendung)
 - Keywords: Konstruktion 2, Positionskreise, PosKre, Statische Positionen (s. Positionskreise)
 
 ### poskre_fl_statik_link.htm
@@ -2851,7 +2851,7 @@ Format pro Eintrag:
 ### poskre_positionierung_erzeugen.htm
 - Titel: Positionskreis erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Zeigerlinie oder einen Positionstext.
+- Beschreibung: Positionskreise für statische Positionen anlegen und dem Bauelement zuweisen. Nach dem Erzeugen von statischen Positionen können Sie diesen zusätzliche Informationen mit den Tabellentexten zuweisen. ...
 - Keywords: Positionskreise
 
 ### poskre_positionierung_loeschen.htm
@@ -2869,13 +2869,13 @@ Format pro Eintrag:
 ### poskre_positionskreisstile_definieren.htm
 - Titel: Stile für statische Positionen konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Positionskreis-Stile für die Darstellung statischer Positionen. Öffnet den Dialog Einstellungen für statische Positionen.
+- Beschreibung: Positionskreis-Stile für die Darstellung statischer Positionen. Öffnet den Dialog Einstellungen für statische Positionen. Die Positionskreis-Stile (Positions ID- Nr.) 1 bis 10 haben originär die ID-Bezeichnung Standard.
 - Keywords: Positionskreise
 
 ### poskre_positionsuebersicht.htm
 - Titel: Positionsübersicht für statische Positionen anzeigen und ausgeben
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Liste der statischen Positionen mit Positionsnummern, Ergänzungs- und Tabellentexten.
+- Beschreibung: Liste der statischen Positionen mit Positionsnummern, Ergänzungs- und Tabellentexten. Öffnet den Dialog Positionsübersicht mit einer Zusammenstellung aller in der Zeichnung enthaltenen statischen Positionen und diesen zugeordneten Ergänzungs- und ...
 - Keywords: Info - Statische Positionen, Positionskreise, Positionsübersicht (stat. Positionen)
 
 ### poskre_programm_bautext.htm
@@ -2887,30 +2887,30 @@ Format pro Eintrag:
 ### poskre_tabelle_erzeugen_und_aktualisi.htm
 - Titel: Positionstabelle anlegen oder aktualisieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Tabellentexte der statischen Positionen in einer Positionstabelle zusammenfassen und als Legende in der Zeichnung platzieren bzw. die vorhandene Positionstabelle aktualisieren.
+- Beschreibung: Tabellentexte der statischen Positionen in einer Positionstabelle zusammenfassen und als Legende in der Zeichnung platzieren bzw. die vorhandene Positionstabelle aktualisieren. ...
 - Keywords: Positionsindex, Positionstabelle (stat. Positionen), TabAkt, Tabellentexte (stat. Positionen)
 
 ### poskre_tabellentexte_schreiben_ordnen.htm
 - Titel: Tabellentexte anlegen
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Statische Positionskreise
-- Beschreibung: Tabellentexte für statische Positionen anlegen und zuweisen. Alle Positionierungen, für die es schon Tabellentexte gibt, werden in der Zeichnung markiert.
+- Beschreibung: Tabellentexte für statische Positionen anlegen und zuweisen. Alle Positionierungen, für die es schon Tabellentexte gibt, werden in der Zeichnung markiert. Tabellentexte bieten die Möglichkeit, einem statischen Positionskreis weitere Informationen zuzuordnen. ...
 - Keywords: Positionskreise, Positionstabelle (stat. Positionen), Tabellentexte (stat. Positionen), TabTxt
 
 ### punkt_verschieben.htm
-- Titel: FEM  Punkt verschieben
+- Titel: FEM – Punkt verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Wenn sich die Wandachsen nicht berühren oder überschneiden, können Sie die Linienenden auf die anschließenden Wandachsen verschieben.
 
 ### rd_-isb-cad-druckoptionen.htm
 - Titel: ISBCAD Druckoptionen
 - Pfad: Datei- und Ausgabefunktionen > Drucken einer Zeichnung > Plotter-Konfiguration (Referenz)
-- Beschreibung: Alternativ (aus dem ISBCAD Hauptmenü): Plotten ; Drucken Einstellungen für die Druckausgabe. Bevor die eigentliche Druckausgabe startet, können Sie im Dialog ISBCAD Dru
+- Beschreibung: Einstellungen für die Druckausgabe. Bevor die eigentliche Druckausgabe startet, können Sie im Dialog ISBCAD Druckoption noch Einstellungen vornehmen.
 - Keywords: Druckoptionen
 
 ### rd_3d-treppe.htm
 - Titel: 3D-Treppe (Programm)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Treppe
-- Beschreibung: Das Programm 3D-Treppe kann sowohl als integraler Bestandteil von ISBCAD als auch als Standalone-Software genutzt werden. Es erleichtert dem Anwender die Konstruktionen von
+- Beschreibung: Das Programm 3D-Treppe kann sowohl als integraler Bestandteil von ISBCAD als auch als Standalone-Software genutzt werden. Es erleichtert dem Anwender die Konstruktionen von harmonischen Treppen. ...
 
 ### rd_achsabschnitt-bearbeiten.htm
 - Titel: Achsabschnitt bearbeiten (Dialog)
@@ -2930,13 +2930,13 @@ Format pro Eintrag:
 ### rd_betondeckung-nach-ec2.htm
 - Titel: Betonüberdeckung nach EC2
 - Pfad: Bewehrungsprogramm > Formstahl
-- Beschreibung: Berechnung und Angabe der Betondeckung über die Auswahl von Expositionsklasse, Betongüte und Durchmesser.
+- Beschreibung: Berechnung und Angabe der Betondeckung über die Auswahl von Expositionsklasse, Betongüte und Durchmesser. Parameter für die Berechnung der Betondeckung cv [m].
 - Keywords: Betondeckung nach EC 2, Eurocode 2 (EC2), Expositionsklassen, nom c
 
 ### rd_betrachter-fuer-zeichnungsdateien.htm
 - Titel: ISBVIEW Anwendungsoberfläche
 - Pfad: Zusatzprogramme > ISBVIEW
-- Beschreibung: Anwendung zum Betrachten und Ausgeben von ISBCAD Zeichnungen.
+- Beschreibung: Ausgabe als Zeichnung oder Plan auf einem Drucker/Plotter oder in eine druckbare Druckdatei. Sie können für die Ausgabe einen bestimmten Ausschnitt wählen und den Drucker/Plotter den Anforderungen entsprechend konfigurieren.
 
 ### rd_betrachter-fuer-zeichnungsdateien_2.htm
 - Titel: ISBVIEW öffnen
@@ -2951,34 +2951,34 @@ Format pro Eintrag:
 ### rd_einste_stahl_biegeliste.htm
 - Titel: Einstellungen Stahlliste (Biegeliste)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: In der Biegeliste werden den einzelnen Positionen alle für den Biegebetrieb notwendigen Hinweise zugeordnet: Biegeanweisungen für 3D-Formen, Vermaßungen, Biegerollendurchmesser, Biegelistentexte sowie weitere, spezifische Tabellen und Vermerke.
+- Beschreibung: Passen Sie in diesem Dialog die tabellarische Darstellung verschiedener Biegelisten-Elemente an. Um die "alte" Biegeliste zu deaktivieren, klicken Sie im Stahllisten-Dialog im Bereich Grundwerte auf Biegeliste und entfernen Sie den Haken bei alte Biegeliste ...
 - Keywords: Biegeliste
 
 ### rd_expositionsklasse.htm
 - Titel: Expositionsklasse (Dialog)
 - Pfad: Bewehrungsprogramm > Formstahl > Betondeckung nach EC2 (Dialog)
-- Beschreibung: Auswahl einer oder mehrerer Expositionsklassen für die Gefährdung durch Bewehrungskorrosion und Betonangriff.
+- Beschreibung: Auswahl einer oder mehrerer Expositionsklassen für die Gefährdung durch Bewehrungskorrosion und Betonangriff. Liegt eine Gefährdungsart vor, muss diese auf der entsprechenden Registerkarte aktiviert werden. ...
 
 ### rd_gerader-treppenlauf.htm
 - Titel: Gerader Treppenlauf
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Treppe
-- Beschreibung: Angabe der Treppenmaße (Registerkarte Geometrie) und gewünschten Bewehrung (Registerkarte Bewehrung).
+- Beschreibung: Änderungen der Eingabewerte führen zur sofortigen Anpassung der Skizze. Die einzelnen Bewehrungsformen werden verschieden farbig dargestellt, damit Sie in der Querschnittsanzeige erkennen können, wo die Form liegt.
 
 ### rd_gewendelte-treppe.htm
 - Titel: Gewendelte Treppe
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Treppe
-- Beschreibung: Konfiguration eines ¼-gewendelten Treppenverlaufes.
+- Beschreibung: Die variablen Werte sind gegenseitig voneinander abhängig. Wenn ein Wert geändert wird, passt sich die Geometrie der Treppe sofort diesen Änderungen an. Im Kreuzungsbereich der Längsbewehrung wird keine Querbewehrung berücksichtigt.
 
 ### rd_gruppenmanager.htm
 - Titel: Gruppenmanager: Gruppen erzeugen und verwalten
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Gruppe
-- Beschreibung: Erzeugen, Bearbeiten und Verwalten von individuell erzeugten Gruppen. Öffnet den Dialog Gruppenmanager.
+- Beschreibung: Erzeugen, Bearbeiten und Verwalten von individuell erzeugten Gruppen. Öffnet den Dialog Gruppenmanager. Während der Arbeit mit dem Gruppenmanager stehen Ihnen alle Funktionen der unteren Menüleiste zur Verfügung.
 - Keywords: Gruppe, Gruppenmanager
 
 ### rd_halbgewendelte-treppe.htm
 - Titel: Halbgewendelte Treppe
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Treppe
-- Beschreibung: Übergang von einem zum anderen geraden Teilstück durch einen Halbkreis.
+- Beschreibung: Die variablen Werte sind gegenseitig voneinander abhängig. Wenn ein Wert geändert wird, passt sich die Geometrie der Treppe sofort diesen Änderungen an. Im Kreuzungsbereich der Längsbewehrung wird keine Querbewehrung berücksichtigt.
 
 ### rd_holzbau-einstellungen_dachausmittlung.htm
 - Titel: Darstellung der Dachausmittlung (Dialog)
@@ -2988,7 +2988,7 @@ Format pro Eintrag:
 ### rd_holzbau-einstellungen_holzverbindung.htm
 - Titel: Darstellung der Holzverbindungen konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Einstellungen für die Darstellung des Holzverbindungsbildes mit Beschriftung und zugehörigen Hilfsmittel. Öffnet den Dialog Holzbau-Einstellungen.
+- Beschreibung: Einstellungen für die Darstellung des Holzverbindungsbildes mit Beschriftung und zugehörigen Hilfsmittel. Öffnet den Dialog Holzbau-Einstellungen. Voreinstellungen für die Darstellung automatisch ausgemittelter Dachlinien.
 - Keywords: Holzbau
 
 ### rd_holzbau-einstellungen_sparrenbeschriftung.htm
@@ -3022,7 +3022,7 @@ Format pro Eintrag:
 ### rd_nachtragsliste.htm
 - Titel: Stahlliste Nachtragsliste (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / In diesem Dialog können Sie die Stückzahlen und laufenden Meter (lfdm) ausgewählter Positionen anpassen oder auch Positionen löschen. Die Anpassungen werden an der Stahlli
+- Beschreibung: In diesem Dialog können Sie die Stückzahlen und laufenden Meter (lfdm) ausgewählter Positionen anpassen oder auch Positionen löschen. Die Anpassungen werden an der Stahlliste der im Stahllisten-Dialog markierten Datei vorgenommen und werden in der Biegeliste ...
 - Keywords: Stahlliste
 
 ### rd_parallelen-trasse.htm
@@ -3033,24 +3033,24 @@ Format pro Eintrag:
 ### rd_plotstil-tabelle-hinzufuegen.htm
 - Titel: Plotstil-Tabelle hinzufügen
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: → Registerkarte Optionen → Plotstil-Tabelle → Neu Assistent zum Erstellen einer neuen Plotstil-Tabelle. Plotstile sind Objekteigenschaften von AutoCAD-Zeichnungen. Mithilfe
+- Beschreibung: Assistent zum Erstellen einer neuen Plotstil-Tabelle. Plotstile sind Objekteigenschaften von AutoCAD-Zeichnungen. Mithilfe eines Plotstils können Eigenschaften (Farbe, Linientyp, Linienstärke) überschrieben werden. Holen Sie ggf. ...
 - Keywords: .CTB, .STB, Benannte Plotstile, Farbabhängige Plotstile, Plotstil-Tabelle hinzufügen
 
 ### rd_profilmanager_einstellungen.htm
 - Titel: Profileinstellungen übertragen
 - Pfad: Hauptmenü - Programmmodule > Profilmanager
-- Beschreibung: Verwenden Sie den Dialog Profileinstellungen übertragen, um Konfigurationsdateien (Einstellungen) aus einem Quellprofil in ein anderes oder in mehrere Zielprofile zu übertragen.
+- Beschreibung: Wenn das Übertragen von Profileinstellungen nicht möglich ist, erhalten Sie eine Meldung. Diese Meldung tritt in folgenden Fällen auf:
 - Keywords: Profileinstellungen übertragen
 
 ### rd_querschnitt.htm
 - Titel: Querschnitte
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: Auswahl einer Querschnittkonstruktion für die automatische Konstruktion und Bewehrung. Nach Auswahl einer Querschnittkonstruktion wird der Dialog Querschnittseingabe zur...
+- Beschreibung: Auswahl einer Querschnittkonstruktion für die automatische Konstruktion und Bewehrung. Nach Auswahl einer Querschnittkonstruktion wird der Dialog Querschnittseingabe zur Eingabe der benötigten Geometrie- und Bewehrungsangaben geöffnet.
 
 ### rd_querschnittseingabe_(allgemein).htm
 - Titel: Querschnittseingabe (Dialog)
 - Pfad: Bewehrungsprogramm > Formstahl > Detail > ..Mehr (Definierte Querschnitt-Darstellungen)
-- Beschreibung: Angaben für die automatische Konstruktion und Bewehrung vordefinierter Details. Maßangaben können direkt eingegeben oder aus der Zeichnung übernommen werden.
+- Beschreibung: Angaben für die automatische Konstruktion und Bewehrung vordefinierter Details. Maßangaben können direkt eingegeben oder aus der Zeichnung übernommen werden. Die Optionen auf den Registerkarten Geometrie, ...
 
 ### rd_services.htm
 - Titel: Services (Dialog)
@@ -3061,35 +3061,35 @@ Format pro Eintrag:
 ### rd_stahlliste-grundwerte-allgemein.htm
 - Titel: Stahlliste Grundwerte Allgemein (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / Angaben zu der Gestaltung von Stahllisten. Optionen im Dialog "Grundwerte Allgemein" Allgemein Nummer für Startseite Hier können Sie eine beliebige Startnummer einge
+- Beschreibung: Angaben zu der Gestaltung von Stahllisten.
 
 ### rd_stahlliste-grundwerte-biegeliste.htm
 - Titel: Stahlliste Grundwerte Biegeliste (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog) > Einstellungen Stahlliste (Biegeliste)
-- Beschreibung: Angaben zu der Gestaltung der Biegeliste. Optionen im Dialog "Grundwerte Biegeliste" 3D-Formen Wenn eine 3D-Form verlegt worden ist, dann wird der Position automatisch ein
+- Beschreibung: Angaben zu der Gestaltung der Biegeliste.
 
 ### rd_stahlliste-grundwerte-gesamtliste.htm
 - Titel: Stahlliste Grundwerte Gesamtliste (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / Angaben zu der Gestaltung der Gesamtliste. Optionen im Dialog "Grundwerte Gesamtliste" Gesamtstahlliste Gewichtsliste ausgeben Es wird eine Seite mit der tabellarisc
+- Beschreibung: Angaben zu der Gestaltung der Gesamtliste.
 - Keywords: Gesamtliste
 
 ### rd_stahlliste-grundwerte-listenmatten.htm
 - Titel: Stahlliste Grundwerte Listenmatten (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / Angaben zu der Gestaltung von Stahllisten für Listenmatten. Optionen im Dialog "Grundwerte Listenmatten" Bild: Elemente der Listenmatten-Darstellung Listenmatten S
+- Beschreibung: Angaben zu der Gestaltung von Stahllisten für Listenmatten.
 - Keywords: Listenmatten
 
 ### rd_stahlliste-grundwerte-schneideskizze.htm
 - Titel: Stahlliste Grundwerte Schneideskizze (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: / Angaben zu der Gestaltung der Schneideskizze. Optionen im Dialog "Grundwerte Schneideskizze" Schneideskizze X-Abstand Einzelmatte (cm) Horizontaler Abstand zwischen
+- Beschreibung: Angaben zu der Gestaltung der Schneideskizze.
 - Keywords: Schneideskizze
 
 ### rd_stahlliste_(zusammenstellung-der-inhalte).htm
 - Titel: Stahllisten
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → Stahllisten.
+- Beschreibung: Zusammenstellung und Definition der Stahllisten-Inhalte für die Druckausgabe. Öffnet den Dialog Stahlliste. Die Stahlliste setzt sich zusammen aus der Rundstahlliste, der Mattenliste, der U-Korbliste und der Gewindestahlliste. ...
 
 ### rd_stationsabschnitt.htm
 - Titel: Stationsabschnitt (Dialog)
@@ -3105,7 +3105,7 @@ Format pro Eintrag:
 ### rd_stl-anschriften.htm
 - Titel: Anschriften (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog) > Grundwerte Allgemein
-- Beschreibung: Sie können verschiedene Anschriften eingeben, die in die Listenköpfe übernommen werden. Die in der Tabelle markierte Anschrift wird für die Ausgabe der Stahlliste verwendet.
+- Beschreibung: Sie können verschiedene Anschriften eingeben, die in die Listenköpfe übernommen werden. Die in der Tabelle markierte Anschrift wird für die Ausgabe der Stahlliste verwendet. ...
 - Keywords: Kontaktdaten, Stahlliste
 
 ### rd_systemdatem_konstruktionsprogramm.htm
@@ -3171,24 +3171,24 @@ Format pro Eintrag:
 ### rd_systemdaten_formstahl.htm
 - Titel: Systemdaten - Formstahl
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Systemdaten
-- Beschreibung: Voreinstellungen für die Darstellung von Auszügen und Verlegungen für Rund(Form)-stahl und Formmatten.
+- Beschreibung: Voreinstellungen für die Darstellung von Auszügen und Verlegungen für Rund(Form)-stahl und Formmatten. Voreinstellungen für die Rundstahl-Auszüge.
 - Keywords: Ergänzungstext - Formmatten-Positionierung, Ergänzungstext - Formstahl-Positionierung, Formmatten Einstellungen (Systemdaten), Formstahl Einstellungen (Systemdaten), Positionierung
 
 ### rd_systemdaten_hotkeys.htm
 - Titel: Systemdaten - Hotkeys
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Systemdaten
-- Beschreibung: Im unteren Bereich des Dialogs wird angezeigt, ob die eingegebene Tastenkombination bereits einem anderen Befehl zugewiesen ist. Eine Meldung informiert darüber, wo die Tastenkombination aktuell verwendet wird, falls ein Konflikt besteht.
+- Beschreibung: Konfiguration der Tastaturbelegung. Hotkeys ermöglichen ein effizienteres Arbeiten in ISBCAD. Nutzen Sie die vordefinierten Hotkeys oder passen Sie sie auf dieser Registerkarte an Ihre Anforderungen an.
 - Keywords: Hotkeys, Systemdaten, Tastaturbefehle
 
 ### rd_systemdaten_makrotexte.htm
 - Titel: Systemdaten - Makrotexte
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Systemdaten
-- Beschreibung: Einstellungen für die Darstellung von Makrotexten in der Zeichnung. Die gewählten Einstellungen werden während Abfragen verwendet, in denen die Eingabe von Makrotexten möglich
+- Beschreibung: Einstellungen für die Darstellung von Makrotexten in der Zeichnung. Die gewählten Einstellungen werden während Abfragen verwendet, in denen die Eingabe von Makrotexten möglich ist.
 
 ### rd_systemdaten_plottflaeche.htm
 - Titel: Systemdaten - Plotfläche
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Systemdaten
-- Beschreibung: Voreinstellung der Größe der Plotfläche für neue Zeichnungen.
+- Beschreibung: Voreinstellung der Größe der Plotfläche für neue Zeichnungen. Die vorgenommene Änderung wird nach einem Neustart von ISBCAD wirksam und anschließend in der Statusleiste angezeigt.
 - Keywords: Plotfläche, Systemdaten
 
 ### rd_systemdaten_stiftfarben.htm
@@ -3200,13 +3200,13 @@ Format pro Eintrag:
 ### rd_systemdaten_strichtypen.htm
 - Titel: Systemdaten - Strichtypen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Systemdaten
-- Beschreibung: Konfiguration der Strichtypen. Insgesamt können 30 verschiedene Strichtypen definiert werden.
+- Beschreibung: 1.Markieren Sie den oder die gewünschten Einträge per Mausklick. 2.Verwenden Sie die Sortierpfeile rechts vom Tabellenfeld:
 - Keywords: Linien, Strichtyp, Systemdaten
 
 ### rd_tabelle_(massenermittlung).htm
 - Titel: Tabelle für Massen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Ausgabe ausgewählter Massen-Angaben in einer Tabelle. Öffnet den Dialog Tabelle. (Diese Funktion ist nur möglich, wenn in der Zeichnung Massen-Angaben enthalten sind.) Die Ta
+- Beschreibung: Ausgabe ausgewählter Massen-Angaben in einer Tabelle. Öffnet den Dialog Tabelle. (Diese Funktion ist nur möglich, wenn in der Zeichnung Massen-Angaben enthalten sind.) Die Tabelle kann auf der Zeichnung platziert oder in die Zwischenablage kopiert werden.
 - Keywords: Massenermittlung
 
 ### rd_teppichgeometrie.htm
@@ -3232,16 +3232,16 @@ Format pro Eintrag:
 ### rd_welche-folie-trennen.htm
 - Titel: Folienbelegung wählen
 - Pfad: Datei- und Ausgabefunktionen > Zeichnung einfügen
-- Beschreibung: Angaben zur Folienbelegung bei identischen Foliennummern. Die Folien des bestehenden Plans werden nicht geändert!
+- Beschreibung: Während der Bearbeitung ist der Folienmanager gesperrt. Angaben zur Folienbelegung bei identischen Foliennummern. Die Folien des bestehenden Plans werden nicht geändert!
 - Keywords: Folien
 
 ### rechteckige_durchbrueche_einge.htm
-- Titel: FEM  Rechteckige Durchbrüche eingeben
+- Titel: FEM – Rechteckige Durchbrüche eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: So wird's gemacht: Klicken Sie diagonal die Eckpunkte der Stützen an. [1. Eckpunkt 2.Eckpunkt]. Es wird ein Rechteck aufgezogen. Zugehörige Aufgaben: Wände eingeben Re
 
 ### rechteckige_stuetzen_eingeben.htm
-- Titel: FEM  Rechteckige Stützen eingeben
+- Titel: FEM – Rechteckige Stützen eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: So wird's gemacht: Klicken Sie diagonal die Eckpunkte der Stützen an. [1. Eckpunkt 2.Eckpunkt]. Es wird ein Rechteck aufgezogen. Zugehörige Aufgaben: Wände eingeben Be
 
@@ -3276,30 +3276,30 @@ Format pro Eintrag:
 ### ref_stahlliste_ansicht.htm
 - Titel: Stahlliste Ansicht (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: Um den Vorschaubereich anzupassen, fahren Sie mit dem Cursor an einen beliebigen Rand- oder Eckbereich des Dialogs. Ziehen Sie mit gedrückter Maustaste das Dialogfenster zusammen oder auseinander.
+- Beschreibung: Vorschau und Ausgabe der generierten Stahllisten in verschiedene Dateiformate oder auf der Zeichnung. Die folgende Meldung erscheint, wenn in den Biegelisten-Einstellungen Parameter eingestellt sind, ...
 - Keywords: Biegeliste, Gesamtliste, Listenmatten, Schneideskizze
 
 ### ref_stahlliste_einzelliste.htm
 - Titel: Stahlliste Einzelliste
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz) > Stahlliste (Dialog)
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → Stahllisten.
+- Beschreibung: Diese Funktion ist im Stahllisten-Dialog verfügbar, der über das ISBCAD Hauptmenü geöffnet wird. Sie können die Bewehrungsdaten der Datei anzeigen und bearbeiten, die in der Dateiliste des Dialogs Stahllisten markiert ist.
 
 ### ref_stlmain.htm
 - Titel: Stahlliste (Dialog)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste > Stahlliste (Referenz)
-- Beschreibung: / Konfiguration der Stahllistenausgabe. Optionen im Dialog "Stahlliste" Gesamtgewicht Hier wird die Summe der Rundstähle und Matten aller ausgewählten Zeichnungen erfas
+- Beschreibung: Konfiguration der Stahllistenausgabe. ·Positionen, deren Durchmesser, Typ oder Anzahl nicht definiert sind.
 - Keywords: Durchstanzbewehrung ausgeben, Einbauteile ausgeben, Einzelliste ausgeben, Gesamtliste ausgeben
 
 ### ref_tastaturbelegungen.htm
 - Titel: Hotkeys
 - Pfad: Grundlagen der Bedienung
-- Beschreibung: Durch das Verwenden von Hotkeys - auch Tastaturbefehle genannt - können Sie schneller bestimmte Programme oder Funktionen aufrufen und ersparen sich somit lange Wege mit der Maus.
+- Beschreibung: Durch das Verwenden von Hotkeys - auch Tastaturbefehle genannt - können Sie schneller bestimmte Programme oder Funktionen aufrufen und ersparen sich somit lange Wege mit der Maus. ...
 - Keywords: Hochzahlen eingeben, Hotkeys, Kurztasten, Shortcuts, Tastaturbefehle
 
 ### rm_bamtec.htm
 - Titel: Bewehrungsteppiche verlegen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > BAMTEC (Bewehrungsteppiche)
-- Beschreibung: Darstellung der FEM-Ergebnisdaten an den Maßstab der aktuellen Zeichnung anpassen. Öffnet den Dialog Faktor für as-Linien.
+- Beschreibung: Darstellung der FEM-Ergebnisdaten an den Maßstab der aktuellen Zeichnung anpassen. Öffnet den Dialog Faktor für as-Linien. Automatische Bewehrung mit BAMTEC®Teppichen. Öffnet den Dialog as-Werte.
 
 ### rm_bearbeiten.htm
 - Titel: Korrekturfunktionen
@@ -3310,7 +3310,7 @@ Format pro Eintrag:
 ### rm_betonstahltabelle.htm
 - Titel: Betonstahltabellen
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → Betonstahl Tabellen.
+- Beschreibung: Verwaltung der in ISBCAD verfügbaren Stahlelemente (Matten, Rundstähle, U-Körbe, Gewindestähle). Öffnet den Dialog Betonstahl Tabellen.
 - Keywords: .DAT, Betonstahltabellen, Bewehrung verwalten, Formmatten, Formstahl
 
 ### rm_bewehrung-dehnen.htm
@@ -3328,13 +3328,13 @@ Format pro Eintrag:
 ### rm_blocktext.htm
 - Titel: Textfeld einfügen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte
-- Beschreibung: Mit dieser Funktion fügen Sie ein Textfeld in die Zeichnung ein, in das Sie ein- oder mehrzeilige Texte schreiben können. Ein Textfeld kann beliebig lang sein, mehrere Absätz
+- Beschreibung: Mit der Textbearbeitungsleiste können Sie ausgewählte Texte formatieren, Makro- und Favoritentexte einfügen und die Größe des Texfeldes an den Textinhalt anpassen. Wählen Sie die Zeichen, Texte und Textabschnitte aus, die Sie formatieren möchten.
 - Keywords: Blocktext, Makrotext, Texte, Textfeld
 
 ### rm_darstellung-der-masseangaben-vereinheitlichen.htm
 - Titel: Massen-Angaben generieren
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Neuberechnung der Massen-Angaben nach Änderungen und Vereinheitlichung der Darstellung (frei platzierte Massen-Texte, Raumstempel und Schwerpunkte).
+- Beschreibung: Neuberechnung der Massen-Angaben nach Änderungen und Vereinheitlichung der Darstellung (frei platzierte Massen-Texte, Raumstempel und Schwerpunkte). Die Massen-Angaben werden entsprechend der aktuellen Konfiguration im Einstellungen-Dialog dargestellt und ...
 - Keywords: Generieren, Konstruktion 3, Massenermittlung
 
 ### rm_datei.htm
@@ -3346,31 +3346,31 @@ Format pro Eintrag:
 ### rm_dgn_export.htm
 - Titel: DGN Export
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → DGN Export
+- Beschreibung: Öffnet den Dialog DGN Export. MicroStation© ist ein 3D-CAD Programm für den Entwurf, Konstruktion und Betrieb von Gebäuden. Für die Datenkonvertierung benötigen Sie die Hinweise über die Datenstruktur des Empfängers. ...
 - Keywords: .DGN, DGN Export
 
 ### rm_drucken_(hauptmenue).htm
 - Titel: Drucken
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Die Quadrate sind mit beliebigen Füllfarben versehen. Die Füllungen wurden in dafür angelegte Folien transformiert.
+- Beschreibung: Drucken einer oder mehrerer Zeichnungen. Konfiguration der Druck-/Plot-Ausgabe. Öffnet den Dialog Plotter-Konfiguration. Einstellungen für die Ausgabe einzelner oder mehrerer (Teil-)Zeichnungen.
 - Keywords: Drucken, Steuersequenzen - Drucken
 
 ### rm_dstv_import.htm
 - Titel: DSTV Import
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Verändern Sie die Größe und die Ansicht so, dass drei Punkte einer Ebene eindeutig unterscheidbar sind. Klicken Sie die entsprechenden Punkte an, um die Ebene zu markieren.
+- Beschreibung: Öffnet den Dialog DSTV-Format einlesen. Aus bestimmten räumlichen Stabwerks‑Statik‑Programmen, u. a. RStab von Dlubal oder RST von Frilo Software GmbH etc. können die ermittelten Stahlprofile in ISBCAD übertragen werden. ...
 - Keywords: .STP, DSTV Import
 
 ### rm_dxf-dwg-export_(hauptmenue).htm
 - Titel: DXF/DWG Export (Hauptmenü)
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Windows-Startmenü → Programmgruppe ISBCAD 2026 → Hauptmenü → DXF/DWG Export.
+- Beschreibung: Speichern einer oder mehrerer ISBCAD Dateien im DXF- oder DWG-Format. Öffnet den Dialog Ausgabe im DXF/DWG-Format. Sie können mehrere ISBCAD Dateien im DXF- oder DWG-Format ausgeben, wenn diese im selben Verzeichnis liegen. ...
 - Keywords: DWG/DXF-Dateien (Hauptmenü)
 
 ### rm_dxf_dwg_import_(hauptmenue).htm
 - Titel: DXF/DWG Import
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: ·Sie können mehrere Dateien aus unterschiedlichen Ordnern umwandeln und anschließend einlesen
+- Beschreibung: Umwandlung einer oder mehrerer DXF- und DWG-Dateien in das GLASER ISBCAD AKT-Format. Öffnet den Dialog Mehrfaches Umwandeln von DXF/DWG-Dateien. Es können beliebig viele Dateien in einem Zuge umgewandelt werden. ...
 - Keywords: DWG/DXF-Dateien (Hauptmenü)
 
 ### rm_einstellungen-fuer-die-verlegung.htm
@@ -3380,9 +3380,9 @@ Format pro Eintrag:
 - Keywords: AutBew
 
 ### rm_einstellungen_(fem-definition).htm
-- Titel: FEM  Einstellungen
+- Titel: FEM – Einstellungen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
-- Beschreibung: Darstellung der mit Finite-Elemente-Methoden erzeugten Geometrien konfigurieren. Öffnet den Dialog Einstellungen für FEM Definition.
+- Beschreibung: Konfiguration der mit Finite-Elemente-Methoden erzeugten Geometrien. Darstellung der mit Finite-Elemente-Methoden erzeugten Geometrien konfigurieren. Öffnet den Dialog Einstellungen für FEM Definition.
 - Keywords: FemDef
 
 ### rm_element-abfragen.htm
@@ -3394,7 +3394,7 @@ Format pro Eintrag:
 ### rm_ende.htm
 - Titel: ISBCAD beenden - [Ende]
 - Pfad: Datei- und Ausgabefunktionen
-- Beschreibung: Alternativer Aufruf: Tastenkombination Alt+F4. Beendet die Bearbeitung der Zeichnung und schließt das Programm. Sie können ISBCAD auch über das in der rechten oberen Ecke de
+- Beschreibung: Beendet die Bearbeitung der Zeichnung und schließt das Programm. Sie können ISBCAD auch über das in der rechten oberen Ecke des Programmfensters beenden. Wenn der aktuelle Stand der Zeichnung noch nicht gespeichert wurde, erscheint eine entsprechende Meldung.
 
 ### rm_fenster-aendern.htm
 - Titel: Elemente ändern - [FenÄnd]
@@ -3417,7 +3417,7 @@ Format pro Eintrag:
 ### rm_gruppe.htm
 - Titel: Gruppe - [Gruppe]
 - Pfad: Konstruktionsprogramm > Konstruktion 3
-- Beschreibung: Beliebige Zeichenelemente in Gruppen zusammenfassen und Gruppen verwalten.
+- Beschreibung: Beliebige Zeichenelemente in Gruppen zusammenfassen und Gruppen verwalten. Wenn Sie mehrere Teilzeichnungen haben, kann es von Nutzen sein, diese in einzelne Gruppen zu gliedern. Alle gruppierten Zeichenelemente lassen sich z. B. ...
 - Keywords: Gruppe, Konstruktion 3
 
 ### rm_hilfe.htm
@@ -3441,7 +3441,7 @@ Format pro Eintrag:
 ### rm_info_(massstab).htm
 - Titel: Info
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Maßstabskorrektur
-- Beschreibung: In der Zeichnung verwendete Maßstabsangaben (ausgewählte Elemente oder alle Elemente) mit den enthaltenen Elementen abfragen und in der Zeichnung anzeigen. Öffnet den Dialog
+- Beschreibung: In der Zeichnung verwendete Maßstabsangaben (ausgewählte Elemente oder alle Elemente) mit den enthaltenen Elementen abfragen und in der Zeichnung anzeigen. Öffnet den Dialog Maßstabsinfo.
 - Keywords: Info - Maßstab, Maßstab
 
 ### rm_konstruktion-1.htm
@@ -3465,13 +3465,13 @@ Format pro Eintrag:
 ### rm_kopieren_(konst1).htm
 - Titel: Kopieren - [Kopier]
 - Pfad: Konstruktionsprogramm > Konstruktion 1
-- Beschreibung: Kopieren von Elementen mit Referenzpunkt oder frei.
+- Beschreibung: Kopieren von Elementen mit Referenzpunkt oder frei. Beim Kopieren werden alle Informationen der Elemente weitergegeben, auch die Folienzugehörigkeit, der Verlegefaktor für die Stahlliste und die Information, ob Elemente gesperrt sind.
 - Keywords: Elemente, Konstruktion 1, Kopieren, m.Clip, o.Clip
 
 ### rm_kreise.htm
 - Titel: Kreise - [Kreise]
 - Pfad: Konstruktionsprogramm > Konstruktion 1
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf einem Kreis.
+- Beschreibung: Konstruieren und Bearbeiten von (Teil-)Kreisen und Ellipsen.
 - Keywords: Konstruktion 1, Kreise
 
 ### rm_linien.htm
@@ -3495,7 +3495,7 @@ Format pro Eintrag:
 ### rm_matten.htm
 - Titel: Matten - Menü
 - Pfad: Bewehrungsprogramm
-- Beschreibung: Alternativer Aufruf: mittlere Maustaste auf eine Diagonale, Mattentext oder ein anderes Mattenelement.
+- Beschreibung: Erzeugen, Bearbeiten und Verlegen gleichgroßer Matten in rechteckigen oder polygonalen Bereichen. Alle Matten, die im Rechteck oder im Polygon verlegt werden, bilden jeweils eine Gruppe. ...
 - Keywords: Matten
 
 ### rm_notiz.htm
@@ -3507,19 +3507,19 @@ Format pro Eintrag:
 ### rm_plotten_(hauptmenue).htm
 - Titel: Plotten
 - Pfad: Hauptmenü - Programmmodule
-- Beschreibung: Die Quadrate sind mit beliebigen Füllfarben versehen. Die Füllungen wurden in dafür angelegte Folien transformiert.
+- Beschreibung: Drucken einer oder mehrerer Zeichnungen. Konfiguration der Druck-/Plot-Ausgabe. Öffnet den Dialog Plotter-Konfiguration. Einstellungen für die Ausgabe einzelner oder mehrerer (Teil-)Zeichnungen.
 - Keywords: Drucken, Steuersequenzen - Drucken
 
 ### rm_polygon-loeschen_(autbew).htm
 - Titel: Polygon löschen
 - Pfad: Bewehrungsprogramm > Formstahl > Automatische Bewehrung
-- Beschreibung: Wenn Sie diese Funktion ausführen, gehen alle Eingaben verloren. Löschen Sie ein Polygon nur, wenn sich etwas an der Geometrie ändert.
+- Beschreibung: Wenn Sie diese Funktion ausführen, gehen alle Eingaben verloren. Löschen Sie ein Polygon nur, wenn sich etwas an der Geometrie ändert. Ein Verlegebereich wird durch die Eckpunkte gespeichert. ...
 - Keywords: AutBew
 
 ### rm_raumstempel.htm
 - Titel: Raumstempel erzeugen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Erzeugen eines Raumstempels mit diversen Angaben, z. B. Raumbezeichnung, Wandlängen, Grundfläche, Volumen.
+- Beschreibung: Erzeugen eines Raumstempels mit diversen Angaben, z. B. Raumbezeichnung, Wandlängen, Grundfläche, Volumen. Grundflächen können aus einer oder mehreren, geschlossenen Formen bestehen (Polygone oder Kreise). ...
 - Keywords: Massenermittlung, Raumstempel - Massenermittlung
 
 ### rm_schraffur.htm
@@ -3555,13 +3555,13 @@ Format pro Eintrag:
 ### schraffur_definieren.htm
 - Titel: Schraffurtypen konfigurieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: → , , , Sie können den Schraffurwinkel und -faktor angeben, Ebenen zuweisen, Schraffuren entfernen, importieren und sortieren. Optionen im Dialog "Schraffur" Schraffurtyp
+- Beschreibung: Sie können den Schraffurwinkel und -faktor angeben, Ebenen zuweisen, Schraffuren entfernen, importieren und sortieren.
 - Keywords: Füllung, Schraffur, Schraffurfaktor einstellen, Schraffurwinkel einstellen
 
 ### schraffur_fuellung_loeschen.htm
 - Titel: Füllung löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Löschen von Füllungen. So wird's gemacht: Klicken Sie die Füllung an, die Sie löschen möchten. [Welche Füllung]. Liegen Schraffuren und Füllungen in einer Fläche, müssen S
+- Beschreibung: Löschen von Füllungen.
 - Keywords: Füllung
 
 ### schraffur_generieren.htm
@@ -3591,13 +3591,13 @@ Format pro Eintrag:
 ### schraffur_ueber_punkte_festleg.htm
 - Titel: Schraffurbereich über Punkte definieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Mit dieser Funktion erzeugen Sie Schraffuren oder Füllungen durch die Auswahl einer oder mehrerer geschlossener Flächen.
+- Beschreibung: Mit dieser Funktion erzeugen Sie Schraffuren oder Füllungen durch die Auswahl einer oder mehrerer geschlossener Flächen. Wird beim Anlegen einer Flächenschraffur kein Ursprung definiert, wird das Schraffurbild willkürlich in der Fläche verteilt. ...
 - Keywords: Füllung, Schraffur
 
 ### schraffur_ueber_rechteck_festl.htm
 - Titel: Schraffur über Rechteck festlegen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Erzeugen Sie Schraffuren und Füllungen durch Anklicken von zwei Diagonalpunkten.
+- Beschreibung: Erzeugen Sie Schraffuren und Füllungen durch Anklicken von zwei Diagonalpunkten. Flächen können aus mehreren Teilflächen zusammengesetzt werden, wobei die Schraffuren so ineinander übergehen, dass kein Ansatz zu sehen ist. ...
 - Keywords: Füllung, Schraffur
 
 ### schraffur_ursprung_festlegen.htm
@@ -3609,7 +3609,7 @@ Format pro Eintrag:
 ### schraffuren_loeschen.htm
 - Titel: Schraffur löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Schraffur
-- Beschreibung: Löschen von schraffierten Flächen. So wird's gemacht: Klicken Sie eine Schraffurlinie an. [Welche Schraffur]. Die Schraffur wird ohne Rückfrage gelöscht. Eine versehentlic
+- Beschreibung: Löschen von schraffierten Flächen.
 - Keywords: Schraffur
 
 ### schraffurtypen_definieren.htm
@@ -3669,13 +3669,13 @@ Format pro Eintrag:
 ### texte_breitenfaktor_einstellen.htm
 - Titel: Breitenfaktor einstellen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte
-- Beschreibung: Streckung oder Stauchung von Zeichen. Öffnet den Dialog Textparameter.
+- Beschreibung: Streckung oder Stauchung von Zeichen. Öffnet den Dialog Textparameter. ·Ein Breitenfaktor = 1 stellt das Zeichen unverzerrt dar.
 - Keywords: Breitenfaktor, Texte
 
 ### texte_freie_textgroesse_einstellen.htm
 - Titel: Freie Textgröße einstellen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte > Textgröße einstellen
-- Beschreibung: Definition einer freien Textgröße. Öffnet den Dialog Textparameter.
+- Beschreibung: Definition einer freien Textgröße. Öffnet den Dialog Textparameter. Die freie Textgröße wird auf der Textgrößennummer 8 gespeichert.
 - Keywords: Texte
 
 ### texte_loeschen_der_zeigerlinien.htm
@@ -3693,7 +3693,7 @@ Format pro Eintrag:
 ### texte_makrotexttabelle.htm
 - Titel: Makrotext definieren und bearbeiten (Makrotext-Editor)
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte > Verwenden von Makrotexten
-- Beschreibung: Sie können Makrotexte definieren, bearbeiten und löschen. Es ist möglich, beliebig viele Makrotexte zu definieren und in der Zeichnung zu verwenden.
+- Beschreibung: Sie können Makrotexte definieren, bearbeiten und löschen. Es ist möglich, beliebig viele Makrotexte zu definieren und in der Zeichnung zu verwenden. Im Makrotext-Editor entspricht die Anordnung der benutzerdefinierten Makrotexte der Reihenfolge, ...
 - Keywords: .ISBMAKRO, Makrotext, MkrEdt, MkrTbl, Texte
 
 ### texte_sonderzeichen_einfuegen.htm
@@ -3705,7 +3705,7 @@ Format pro Eintrag:
 ### texte_standardtextgroesse_auswaehlen.htm
 - Titel: Standardtextgröße auswählen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte > Textgröße einstellen
-- Beschreibung: Wahl einer vordefinierten Standardtextgröße. So wird's gemacht: Schlagen Sie die Liste mit Standardtextgrößen auf, indem Sie auf das Namen-Feld (z. B. "1,4 mm") klicken, un
+- Beschreibung: Wahl einer vordefinierten Standardtextgröße.
 - Keywords: Texte
 
 ### texte_suchen_und_ersetzen.htm
@@ -3723,7 +3723,7 @@ Format pro Eintrag:
 ### texte_text_verschieben.htm
 - Titel: Text verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte
-- Beschreibung: Verschieben von Texten. Befinden sich Unterstreichungs- und Zeigerlinien am Text, werden diese mit verschoben. Bei den Zeigerlinien sind die Endpunkte fixiert, sodass die Li
+- Beschreibung: Verschieben von Texten. Befinden sich Unterstreichungs- und Zeigerlinien am Text, werden diese mit verschoben. Bei den Zeigerlinien sind die Endpunkte fixiert, sodass die Linien gedehnt werden. ...
 - Keywords: Texte
 
 ### texte_texte_aendern.htm
@@ -3735,7 +3735,7 @@ Format pro Eintrag:
 ### texte_texte_loeschen.htm
 - Titel: Text löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte
-- Beschreibung: Löschen von Texten per Mausklick. Wenn die Unterstreichungslinie dem Originalzustand (Länge der Linie = Länge des Textes) entspricht, werden diese und die Zeigerlinien ebenf
+- Beschreibung: Löschen von Texten per Mausklick. Wenn die Unterstreichungslinie dem Originalzustand (Länge der Linie = Länge des Textes) entspricht, werden diese und die Zeigerlinien ebenfalls gelöscht.
 - Keywords: Texte
 
 ### texte_textgroesse_und_breitenfaktor_.htm
@@ -3753,7 +3753,7 @@ Format pro Eintrag:
 ### texte_zwischenablage_windows.htm
 - Titel: Texte in die Zwischenablage kopieren und einfügen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Texte
-- Beschreibung: Texte in die Windows®-Zwischenablage durch Rahmenauswahl kopieren, um diese in ein anderes Programm, z. B. Word, eine ISBCAD-Abfrage, ein Textfeld oder Dialogfeld zu übertragen.
+- Beschreibung: Texte in die Windows®-Zwischenablage durch Rahmenauswahl kopieren, um diese in ein anderes Programm, z. B. Word, eine ISBCAD-Abfrage, ein Textfeld oder Dialogfeld zu übertragen. Es können mehrere Rahmen nacheinander aufgezogen werden. ...
 - Keywords: Texte, Windows-Zwischenablage, Zwischenablage
 
 ### textlaenge_ueber_textgroesse_o.htm
@@ -3765,7 +3765,7 @@ Format pro Eintrag:
 ### top_-isbcad-allgemeine-bedienung.htm
 - Titel: Grundlagen der Bedienung
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: In diesem Abschnitt lernen Sie die allgemeine Bedienung und die Verwendung häufig benötigter Funktionen in ISBCAD kennen.
+- Beschreibung: In diesem Abschnitt lernen Sie die allgemeine Bedienung und die Verwendung häufig benötigter Funktionen in ISBCAD kennen. Verfügbarkeit, Anzeige und Reaktion können je nach Systemeinstellungen abweichen (vgl. Systemdaten (Dialog), Einstellungen (Dialog)).
 
 ### top_der-isbcad-viewer.htm
 - Titel: ISBVIEW
@@ -3776,12 +3776,12 @@ Format pro Eintrag:
 ### top_hilfe.htm
 - Titel: Kontexthilfe (Oberfläche)
 - Pfad: Willkommen bei ISBCAD 2026 > Verwenden der Kontexthilfe
-- Beschreibung: Die Oberfläche der Kontexthilfe gliedert sich in drei Hauptbereiche, die Menüleiste, den Navigationsbereich und den Anzeigebereich. Bei Bedarf lässt sich die Kontexthilfe an...
+- Beschreibung: 1 = Menüleiste 2 = Navigationsbereich (Registerkarten Inhalt, Index, Suchen, Favoriten) 3 = Anzeigebereich des im Inhaltsverzeichnis markierten Themas (Artikel) Die Oberfläche der Kontexthilfe gliedert sich in drei Hauptbereiche, die Menüleiste, ...
 
 ### top_historie.htm
 - Titel: Historie
 - Pfad: Neu in ISBCAD 2026
-- Beschreibung: Übersicht der Neuerungen in vorherigen ISBCAD Versionen.
+- Beschreibung: Voutenverlegung generieren Die Favoritentexte stehen in folgenden Funktionen zur Verfügung:
 - Keywords: Historie, Neuerungen, Versionshistorie
 
 ### top_konfigurationsmodule.htm
@@ -3803,13 +3803,13 @@ Format pro Eintrag:
 ### top_neuheiten.htm
 - Titel: Neu in ISBCAD 2026
 - Pfad: »Keine übergeordneten Inhalte gefunden«
-- Beschreibung: ISBCAD 2026 enthält eine Vielzahl neuer und erweiterter Funktionen. Hier finden Sie alles auf einen Blick.
+- Beschreibung: ISBCAD 2026 enthält eine Vielzahl neuer und erweiterter Funktionen. Hier finden Sie alles auf einen Blick. Schauen Sie sich auch Videos zu ausgewählten Neuerungen auf unserer Website an:
 - Keywords: Neuerungen
 
 ### top_planverwaltung.htm
 - Titel: Planverwaltung
 - Pfad: Zusatzprogramme
-- Beschreibung: Die Planverwaltung ist ein eigenständiges Programm aus unserer Produktpalette, das Sie erwerben können.
+- Beschreibung: Die Planverwaltung ist ein eigenständiges Programm aus unserer Produktpalette, das Sie erwerben können. Mit Hilfe der Planverwaltung erstellen Sie Listen, die der Übersichtlichkeit und Kontrolle Ihres gesamten Bauvorhabens dienen. ...
 - Keywords: Planverwaltung
 
 ### top_variantenprogramme.htm
@@ -3845,7 +3845,7 @@ Format pro Eintrag:
 ### tsk_as-loeschen.htm
 - Titel: as-Werte löschen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > as-Werte aus FEM-Programmen einlesen
-- Beschreibung: Löschen von einzelnen FEM-Datensätzen per Mausklick.
+- Beschreibung: Löschen von einzelnen FEM-Datensätzen per Mausklick. Die Daten können nach dem Löschen mit der Korrekturfunktion nicht wiederhergestellt werden.
 - Keywords: as-Werte
 
 ### tsk_attaend.htm
@@ -3869,7 +3869,7 @@ Format pro Eintrag:
 ### tsk_automatische_bewehrung_bearbei.htm
 - Titel: Automatische Bewehrung (allgemeiner Ablauf)
 - Pfad: Bewehrungsprogramm > Formstahl > Automatische Bewehrung
-- Beschreibung: An der Stelle des ersten/letzten Punktes der Umrissgeometrie befindet sich ein Hilfspunkt, damit über diesen die Bewehrungsdarstellung mit [Konst1 | Versch → Setzen (Retan)] an den Startpunkt verschoben werden kann.
+- Beschreibung: Die Bearbeitungsschritte werden an einem Ausschnitt aus einem Deckengrundriss beschrieben. Die notwendigen Bearbeitungsmöglichkeiten sind von Fall zu Fall unterschiedlich. Sie entscheiden wie die endgültige Bewehrung am Ende aussieht. ...
 - Keywords: AutBew
 
 ### tsk_bamtec_ablauf.htm
@@ -3909,7 +3909,7 @@ Format pro Eintrag:
 ### tsk_bogenstaffel_entflechten.htm
 - Titel: Bogenstaffel entflechten
 - Pfad: Bewehrungsprogramm > Formstahl > Detail > Bogenstaffel
-- Beschreibung: Eine Verlegung lässt sich nur ändern, wenn sie in einer eigenständigen Positionierung erfasst ist.
+- Beschreibung: Eine Verlegung lässt sich nur ändern, wenn sie in einer eigenständigen Positionierung erfasst ist. Ist die Verlegung zusammen mit anderen in einer gemeinsamen Positionsnummer erfasst, ...
 - Keywords: Bogenstaffel
 
 ### tsk_bruchkanten-erstellen.htm
@@ -3921,13 +3921,13 @@ Format pro Eintrag:
 ### tsk_buegelmatten-entflechten.htm
 - Titel: Bügelmatten entflechten
 - Pfad: Bewehrungsprogramm > Formmatten > Zusammenfassen von Formmatten-Auszügen
-- Beschreibung: Verlegung aus Verband/Block herauslösen. Beim Entflechten wird eine Kopie der Auszugsform erstellt. Die Auszugsform kann mit den Funktionen [Formst/Formma | BiForm → ändTlg/
+- Beschreibung: Verlegung aus Verband/Block herauslösen. Zusatzauszüge dienen dazu, die Biegeform einer Verlegung in schematischer Weise ergänzend zum eigentlichen Stahlauszug darzustellen. ...
 - Keywords: Auszugsform, Auszugsformen entflechten, ForZus, Zusatzauszug
 
 ### tsk_dach-ausmitteln.htm
 - Titel: Dach ausmitteln
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Dachlinien automatisch anhand bekannter Gebäudekanten, Dachneigungen und Dachkantenhöhen ermitteln.
+- Beschreibung: Dachlinien automatisch anhand bekannter Gebäudekanten, Dachneigungen und Dachkantenhöhen ermitteln. Wählen Sie die Einstellungen auf der Registerkarte Dachausmittlung:
 - Keywords: Dach, Holzbau
 
 ### tsk_datei-sichern.htm
@@ -3965,7 +3965,7 @@ Format pro Eintrag:
 ### tsk_duebelleisten_definieren.htm
 - Titel: Dübelleistentyp definieren
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Dübelleisten
-- Beschreibung: Definition der Art, Anzahl und Anordnung der Dübelleisten. Öffnet den Dialog Eigenschaften Dübelleisten.
+- Beschreibung: Definition der Art, Anzahl und Anordnung der Dübelleisten. Öffnet den Dialog Eigenschaften Dübelleisten. Verwenden Sie die Optionen auf den herstellerbezogenen Registerkarten. ...
 - Keywords: Dübelleisten, Halfen HDB, Schöck Bole
 
 ### tsk_dueblei_nbautl.htm
@@ -3983,13 +3983,13 @@ Format pro Eintrag:
 ### tsk_einzelflaechen-definieren.htm
 - Titel: Einzelflächen definieren
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Hüllflächen
-- Beschreibung: Definition von Einzelflächen für die Hüllflächenberechnung.
+- Beschreibung: Definition von Einzelflächen für die Hüllflächenberechnung. Siehe auch: Hinweise zur Übernahme von Hüllflächen aus DXF/DWG-Dateien
 - Keywords: Hüllflächen
 
 ### tsk_elemente_frei_kopieren.htm
 - Titel: Elemente frei kopieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kopieren
-- Beschreibung: Die markierten Elemente werden frei platziert. Dreh- und Spiegelachse können angegeben werden.
+- Beschreibung: Die markierten Elemente werden frei platziert. Dreh- und Spiegelachse können angegeben werden. Wenn Maßkettenelemente in der Auswahl enthalten sind, ist die Aktion nach Eingabe des Drehwinkels beendet.
 - Keywords: KoFrei
 
 ### tsk_folieninhalte-auslagern.htm
@@ -4006,13 +4006,13 @@ Format pro Eintrag:
 ### tsk_formdarstellung-verlegen_(formmatten).htm
 - Titel: Formmatten als Formdarstellung verlegen
 - Pfad: Bewehrungsprogramm > Formmatten > Verlegung als Form (Formmatten)
-- Beschreibung: Alternativ: Mittlere Maustaste auf Form Formmatten mit Formdarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginnend mit
+- Beschreibung: Formmatten mit Formdarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginnend mit der Auswahl einer Biegeform [WähFor]. Im Funktionsbereich wird jeweils die entsprechende Schaltfläche aktiviert.
 - Keywords: Formdarstellung - Formmatten
 
 ### tsk_formma_oertbie.htm
 - Titel: Örtlich zu biegende Bewehrung erzeugen / ändern
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: Mit dieser Funktion stellen Sie örtlich zu biegende Bewehrungsstäbe als zusätzliche Teillängen an der Biegeform dar.
+- Beschreibung: Mit dieser Funktion stellen Sie örtlich zu biegende Bewehrungsstäbe als zusätzliche Teillängen an der Biegeform dar. Für den Einbau müssen manche Biegeformen auf der Baustelle nachgebogen werden, weil sie sonst nicht eingebaut werden können. ...
 - Keywords: Aufbiegung an Biegeform erzeugen, Bewehrung vor Ort schließen, Biegeform vor Ort schließen, ÖrtBie, Örtlich zu biegende Bewehrung
 
 ### tsk_formma_oertbie_loesche.htm
@@ -4024,12 +4024,12 @@ Format pro Eintrag:
 ### tsk_formmatten-als-schnittdarstellung-verlegen.htm
 - Titel: Formmatten als Schnittdarstellung verlegen
 - Pfad: Bewehrungsprogramm > Formmatten > Verlegung mit Schnittdarstellung (Formmatten)
-- Beschreibung: Alternativ: Mittlere Maustaste auf Formmatte Formmatten in Schnittdarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginn
+- Beschreibung: Formmatten in Schnittdarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginnend mit der Auswahl einer Biegeform [WähFor]. Im Funktionsbereich wird jeweils die entsprechende Schaltfläche aktiviert.
 
 ### tsk_formmatten-als-staffeldarstellung-verlegen.htm
 - Titel: Formmatten als Staffeldarstellung verlegen
 - Pfad: Bewehrungsprogramm > Formmatten > Verlegung als Staffel (Formmatten)
-- Beschreibung: Alternativ: Mittlere Maustaste auf Formmatte Formmatten in Staffeldarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginn
+- Beschreibung: Formmatten in Staffeldarstellung verlegen. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginnend mit der Auswahl einer Biegeform [WähFor]. Im Funktionsbereich wird jeweils die entsprechende Schaltfläche aktiviert.
 - Keywords: Staffel verlegen - Formmatten
 
 ### tsk_formmatten-auszuege-zusammenfassen.htm
@@ -4041,7 +4041,7 @@ Format pro Eintrag:
 ### tsk_formst_oertbie.htm
 - Titel: Örtlich zu biegende Bewehrung erzeugen / ändern
 - Pfad: Bewehrungsprogramm > Formstahl > Biegeform
-- Beschreibung: Mit dieser Funktion stellen Sie örtlich zu biegende Bewehrungsstäbe als zusätzliche Teillängen an der Biegeform dar.
+- Beschreibung: Mit dieser Funktion stellen Sie örtlich zu biegende Bewehrungsstäbe als zusätzliche Teillängen an der Biegeform dar. Für den Einbau müssen manche Biegeformen auf der Baustelle nachgebogen werden, weil sie sonst nicht eingebaut werden können. ...
 - Keywords: Aufbiegung an Biegeform erzeugen, Bewehrung vor Ort schließen, Biegeform vor Ort schließen, ÖrtBie, Örtlich zu biegende Bewehrung
 
 ### tsk_formst_oertbie_loesche.htm
@@ -4053,7 +4053,7 @@ Format pro Eintrag:
 ### tsk_gewichte-ermitteln.htm
 - Titel: Gewicht ermitteln
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Massenermittlung
-- Beschreibung: Ermittlung der Gewichtskraft eines Objekts. Hinweise: Falls die Kontur des Polygons aus unterschiedlichen Maßstäben besteht, werden Sie nach dem Bestätigen des Polygons
+- Beschreibung: Ermittlung der Gewichtskraft eines Objekts.
 - Keywords: Gewichtskraft - Massenermittlung, Massenermittlung
 
 ### tsk_gleiche-durchmesser-in-schnittdarstellung-vorhandene-verlegung-bearbeiten.htm
@@ -4064,7 +4064,7 @@ Format pro Eintrag:
 ### tsk_gleiche-formen-suchen_(formmaten).htm
 - Titel: Gleiche Formen suchen und zusammenfassen
 - Pfad: Bewehrungsprogramm > Formmatten > Zusammenfassen von Formmatten-Auszügen
-- Beschreibung: Formmatten-Auszüge mit identischen Abmessungen suchen und zu einem Formmatten-Auszug zusammenfassen. Öffnet den Dialog Gleiche Formen zusammenfassen.
+- Beschreibung: Formmatten-Auszüge mit identischen Abmessungen suchen und zu einem Formmatten-Auszug zusammenfassen. Öffnet den Dialog Gleiche Formen zusammenfassen. Falls in der Zeichnung keine gleichen Formen enthalten sind, erscheint eine entsprechende Meldung. ...
 - Keywords: Auszugsformen suchen, Formmatten, ForZus
 
 ### tsk_gruppe-aufloesen.htm
@@ -4082,7 +4082,7 @@ Format pro Eintrag:
 ### tsk_hoekogr_mket.htm
 - Titel: Höhenkote im Grundriss setzen
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Maßketten
-- Beschreibung: Darstellung von Höhenkoten im Grundriss. Höhenkotensymbol wählen Optional: Sie können die ID und das Symbol einer vorhandenen Höhenkote übernehmen. Klicken Sie dazu auf sow
+- Beschreibung: Darstellung von Höhenkoten im Grundriss.
 - Keywords: Bemaßung, Höhenkote im Grundriss, Maßketten
 
 ### tsk_huellflaechen-beschriftung-konfigurieren.htm
@@ -4106,7 +4106,7 @@ Format pro Eintrag:
 ### tsk_huellflaechen_atrribute-aenden-(bauteilbezogen).htm
 - Titel: Flächenattribute ändern (bauteilbezogen)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Hüllflächen
-- Beschreibung: Attribute eines in der Zeichnung definierten Bauteils ändern. Der Bauteiltyp kann nicht geändert werden.
+- Beschreibung: Attribute eines in der Zeichnung definierten Bauteils ändern. Der Bauteiltyp kann nicht geändert werden. Konfiguration eines neuen Hüllflächen-Bauteils bzw. Änderung einzelner Bauteilattribute für das in der Zeichnung gewählte Hüllflächen-Bauteil.
 - Keywords: Hüllflächen
 
 ### tsk_huellflaechen_positionen-eines-bauteiltyps-neu-nummerieren.htm
@@ -4130,7 +4130,7 @@ Format pro Eintrag:
 ### tsk_ifc_schnitt-export.htm
 - Titel: Schnitt exportieren
 - Pfad: Datei- und Ausgabefunktionen > IFC Section Tool
-- Beschreibung: IFC Section Tool Menüleiste → Schnitt exportieren Export aller eingeblendeten Schnitte nach ISBCAD. Vor dem Export können Sie in den Export-Einstellungen die Darstellung der
+- Beschreibung: Das Ergebnis des IFC-Exports besteht aus Zeichenelementen (Linien, Kreise, Bögen und Texte), die standardmäßig in folgende Folien gelegt werden: Siehe auch: Export-Einstellungen
 - Keywords: IFC Section Tool
 
 ### tsk_ifc_schnitt.htm
@@ -4142,7 +4142,7 @@ Format pro Eintrag:
 ### tsk_im_bogen_duplizieren.htm
 - Titel: Im Bogen duplizieren
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Duplizieren
-- Beschreibung: Zeichenelemente um den Mittelpunkt eines Bogens zeichnen. Die Elemente werden über den Mittelpunkt und Winkel oder die Bogenlänge dupliziert.
+- Beschreibung: Zeichenelemente um den Mittelpunkt eines Bogens zeichnen. Die Elemente werden über den Mittelpunkt und Winkel oder die Bogenlänge dupliziert. Der rechte Fensteranschlag soll mit dem gleichen Öffnungsmaß übertragen werden.
 - Keywords: Duplizieren
 
 ### tsk_isbcad_call.htm
@@ -4165,7 +4165,7 @@ Format pro Eintrag:
 ### tsk_log_per_email.htm
 - Titel: E-Mail an Support senden
 - Pfad: Support
-- Beschreibung: ISBCAD Menüleiste → Support ISBCAD kann eine E-Mail an den ISBCAD Kundensupport erstellen, an die ihre aktuelle Zeichnung, das verwendete Profil sowie eine Protokolldatei...
+- Beschreibung: ISBCAD kann eine E-Mail an den ISBCAD Kundensupport erstellen, an die ihre aktuelle Zeichnung, das verwendete Profil sowie eine Protokolldatei angehängt werden kann. ...
 - Keywords: E-Mail an Support senden, Profil
 
 ### tsk_luecke-einfuegen.htm
@@ -4188,7 +4188,7 @@ Format pro Eintrag:
 ### tsk_mattentyp-aendern_(formmatten).htm
 - Titel: Mattentyp und/oder Verlegefaktor ändern (Formmatten-Verlegung)
 - Pfad: Bewehrungsprogramm > Formmatten > Ändern von Verlegungen
-- Beschreibung: oder oder Mattentyp und/oder Verlegefaktor einer Formmatten-Verlegung ändern. So wird's gemacht: Klicken Sie die gewünschte Formmatten-Verlegung an. [Welche Matten-Grupp
+- Beschreibung: Mattentyp und/oder Verlegefaktor einer Formmatten-Verlegung ändern.
 - Keywords: Verlegung ändern - Formmatten
 
 ### tsk_mehrfach-kopieren.htm
@@ -4200,13 +4200,13 @@ Format pro Eintrag:
 ### tsk_mit-gruppierten-elementen-arbeiten.htm
 - Titel: Gruppierte Elemente auswählen
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Gruppe
-- Beschreibung: Auswählen von anwenderdefinierten Gruppen und deren Zeichenelementen.
+- Beschreibung: Auswählen von anwenderdefinierten Gruppen und deren Zeichenelementen. Wenn Sie zur Bearbeitung eine Gruppe auswählen, die Elemente auf ausgeblendeten Folie enthält, erhalten Sie die folgende Meldung:
 - Keywords: Gruppe
 
 ### tsk_mit_festen_werten_kopieren.htm
 - Titel: Mit festen Werten kopieren
 - Pfad: Konstruktionsprogramm > Konstruktion 1 > Kopieren
-- Beschreibung: Die markierten Elemente werden über einen Bezugspunkt neu platziert. Dreh- und Spiegelachse können angegeben werden.
+- Beschreibung: Die markierten Elemente werden über einen Bezugspunkt neu platziert. Dreh- und Spiegelachse können angegeben werden. In der Beispielzeichnung soll das Fenster kopiert werden. Wichtig ist die Hilfslinie im Bereich der Leibung. ...
 - Keywords: KoFest
 
 ### tsk_mstab_einstellen.htm
@@ -4224,19 +4224,19 @@ Format pro Eintrag:
 ### tsk_ole-aendern.htm
 - Titel: Dokument ändern
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Dokumenteinbettung
-- Beschreibung: Inhaltliches Ändern des eingebetteten Dokuments. Die Anwendung, mit der das Dokument erstellt worden ist, muss auf dem Computer installiert sein, damit es im zugehörigen Pro
+- Beschreibung: Inhaltliches Ändern des eingebetteten Dokuments. Bei Grafiken muss der entsprechenden Dateiendung (z. B. .png, .jpg etc.) eine Standardapp (z. B. Adobe Photoshop) zugeordnet werden, um diese bearbeiten zu können. ...
 - Keywords: Dokumenteinbettung, Excel (Dokument), PDF (Dokument), Word (Dokument)
 
 ### tsk_ole-einfuegen.htm
 - Titel: Dokument einfügen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Dokumenteinbettung
-- Beschreibung: Öffnet den Dialog Dokument auswählen. Das eingebettete Dokument bildet nach dem Einfügen eine Gruppe. Um einzelne Seiten innerhalb der Gruppe zu bearbeiten, klicken Sie die
+- Beschreibung: Öffnet den Dialog Dokument auswählen. Das eingebettete Dokument bildet nach dem Einfügen eine Gruppe. Um einzelne Seiten innerhalb der Gruppe zu bearbeiten, klicken Sie die einzelnen Seiten mit gedrückter Strg-Taste nacheinander an (Strg + LM).
 - Keywords: Dokumenteinbettung, Excel (Dokument), PDF (Dokument), Word (Dokument)
 
 ### tsk_ole-loeschen.htm
 - Titel: Dokument löschen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Dokumenteinbettung
-- Beschreibung: Entfernen des gesamten Dokuments mit allen enthaltenen Seiten aus der Zeichnung.
+- Beschreibung: Entfernen des gesamten Dokuments mit allen enthaltenen Seiten aus der Zeichnung. Das Dokument wird lediglich aus der Zeichnung entfernt - es bleibt auf dem Datenträger erhalten. Sie können daher aus der Zeichnung gelöschte Dokumente wieder einfügen.
 - Keywords: Bild, Dokumenteinbettung, Excel (Dokument), Grafik, PDF (Dokument)
 
 ### tsk_open_ifc.htm
@@ -4248,7 +4248,7 @@ Format pro Eintrag:
 ### tsk_pixelbild-einfuegen.htm
 - Titel: Grafik einfügen
 - Pfad: Datei- und Ausgabefunktionen > Einfügen und Speichern von Grafiken
-- Beschreibung: Wenn AutFol aktiviert ist (s. Untere Menüleiste), werden Pixelbilder in Folie 19 abgelegt.
+- Beschreibung: Die Grafik wird nicht in der Zeichnung gespeichert, sondern nur mit dieser verknüpft. In der Zeichnung selbst wird somit nur der Dateipfad zur Grafik gespeichert. ...
 - Keywords: Bild, Grafik
 
 ### tsk_position-in-reihe.htm
@@ -4260,7 +4260,7 @@ Format pro Eintrag:
 ### tsk_profil-wechseln.htm
 - Titel: Profil wechseln
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen
-- Beschreibung: Sie können während der Zeichnungsbearbeitung zwischen verfügbaren Profilen wechseln. Dadurch werden die Einstellungen des gewählten Profils auf die aktuelle ISBCAD Instanz übe
+- Beschreibung: Sie können während der Zeichnungsbearbeitung zwischen verfügbaren Profilen wechseln. Dadurch werden die Einstellungen des gewählten Profils auf die aktuelle ISBCAD Instanz übertragen. Nach dem Wechsel werden neue Zeichnungen mit dem gewählten Profil erstellt.
 - Keywords: Profil
 
 ### tsk_profile-anlegen.htm
@@ -4307,7 +4307,7 @@ Format pro Eintrag:
 ### tsk_sparren-verschieben.htm
 - Titel: Sparren verschieben
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Einzelne Sparren an neue Positionen verschieben. So wird's gemacht: Die Richtung der Verschiebung wird aus der Lage der Cursormitte zur angeklickten Linienseite bestimmt (g
+- Beschreibung: Einzelne Sparren an neue Positionen verschieben.
 - Keywords: Dach, Holzbau, Sparren
 
 ### tsk_sparren-verteilen.htm
@@ -4325,13 +4325,13 @@ Format pro Eintrag:
 ### tsk_sparrenbild-oder-einzelsparren-aendern.htm
 - Titel: Sparrenbild oder Einzelsparren ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Einzelne Sparren oder ganze Sparrengruppen ändern.
+- Beschreibung: Einzelne Sparren oder ganze Sparrengruppen ändern. Wenn Sie einzelne Sparren verschoben oder in der Breite geändert haben, gehen diese Änderungen verloren.
 - Keywords: Dach, Holzbau, Sparren
 
 ### tsk_sparrenlaenge-aendern.htm
 - Titel: Sparrenlänge ändern
 - Pfad: Konstruktionsprogramm > Konstruktion 2 > Holzbau
-- Beschreibung: Wenn Sparren verschoben wurden und die Länge angepasst werden muss, können Sie einzelne Sparren oder Sparrengruppen auswählen.
+- Beschreibung: Wenn Sparren verschoben wurden und die Länge angepasst werden muss, können Sie einzelne Sparren oder Sparrengruppen auswählen. Liegen Sparren außerhalb des Hilfspolygons, werden sie gelöscht.
 - Keywords: Dach, Holzbau, Sparren
 
 ### tsk_staffel-anpassen.htm
@@ -4342,30 +4342,30 @@ Format pro Eintrag:
 ### tsk_staffeldarstellung-verlegen.htm
 - Titel: Biegeform mit Staffeldarstellung verlegen
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung als Staffel (Bügelstaffel)
-- Beschreibung: Alternativ: Mittlere Maustaste auf Staffellinie Verlegen einer Biegeform als Staffel. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginne
+- Beschreibung: Verlegen einer Biegeform als Staffel. ISBCAD führt Sie automatisch durch die benötigten Arbeitsschritte/Funktionen, beginnend mit der Auswahl einer Biegeform [WähFor]. Im Funktionsbereich wird jeweils die entsprechende Schaltfläche aktiviert.
 - Keywords: Staffel verlegen - Formstahl
 
 ### tsk_stahlliste-direkt-ausgeben.htm
 - Titel: Stahlliste direkt ausgeben
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste
-- Beschreibung: Der PDF-Drucker eDocPrinter PDF Pro GLASER muss für diese Funktion eingerichtet sein. Die PDF-Datei wird anhand der Voreinstellungen im Dialog PDF-Parameter erzeugt.
+- Beschreibung: Der PDF-Drucker eDocPrinter PDF Pro GLASER muss für diese Funktion eingerichtet sein. Die PDF-Datei wird anhand der Voreinstellungen im Dialog PDF-Parameter erzeugt. ...
 - Keywords: Direktausgabe (Stahlliste), Stahlliste
 
 ### tsk_stahlliste_ausgeben.htm
 - Titel: Stahlliste ausgeben
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste
-- Beschreibung: Öffnet den Dialog Ansicht, wenn eine Stahlliste auf der Zeichnung abgelegt ist.
+- Beschreibung: Öffnet den Dialog Ansicht, wenn eine Stahlliste auf der Zeichnung abgelegt ist. Sie können mit dieser Funktion die Stahlliste im Ansichtsfenster öffnen, um diese auszudrucken oder in einem verfügbaren Format abzuspeichern. ...
 - Keywords: Stahlliste
 
 ### tsk_stahlliste_plotflaeche.htm
 - Titel: Plotfläche anpassen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste
-- Beschreibung: Anpassen der Plotfläche beim Ablegen der Stahlliste auf der Zeichnung.
+- Beschreibung: Anpassen der Plotfläche beim Ablegen der Stahlliste auf der Zeichnung. Siehe: Plotfläche anpassen; [Konst 3 | PlotFl].
 
 ### tsk_stahlliste_stzahl-kontroll.htm
 - Titel: Stückzahl kontrollieren
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste
-- Beschreibung: Übersicht der Stückzahldifferenzen. Bevor Sie die Stahlliste erzeugen, können Sie durch die Stückzahlkontrolle feststellen, ob es Differenzen zwischen der Summe der Verlegun
+- Beschreibung: Übersicht der Stückzahldifferenzen. Bevor Sie die Stahlliste erzeugen, können Sie durch die Stückzahlkontrolle feststellen, ob es Differenzen zwischen der Summe der Verlegungen und der Gesamtanzahl am Stahlauszug gibt. ...
 - Keywords: Stahlliste, Stückzahl kontrollieren, Verlegung
 
 ### tsk_stahlliste_teil-erzeugen.htm
@@ -4377,7 +4377,7 @@ Format pro Eintrag:
 ### tsk_stahlliste_vorlage-erzeuge.htm
 - Titel: Stahllistenvorlage erzeugen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stahlliste
-- Beschreibung: Gestalten von Vorlagen für die Ausgabe der Stahlliste. Öffnet den Dialog Stahllisten Vorlage für den Rahmen.
+- Beschreibung: Gestalten von Vorlagen für die Ausgabe der Stahlliste. Öffnet den Dialog Stahllisten Vorlage für den Rahmen. Wenn Sie Textvariablen übernehmen, werden bei der Ausführung die Inhalte aus verschiedenen Quellen verwendet:
 - Keywords: Stahllistenvorlage, Vorlage für Stahlliste erzeugen
 
 ### tsk_stahllisten-erzeugen-und_ausgeben.htm
@@ -4431,13 +4431,13 @@ Format pro Eintrag:
 ### tsk_stueckli-konfigurieren.htm
 - Titel: Positionierungsstil und Tabelle konfigurieren
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stückliste
-- Beschreibung: Stücklisten-Textstile für die Darstellung der Stücklistentexte. Öffnet den Dialog Einstellungen für Stücklistentexte.
+- Beschreibung: Stücklisten-Textstile für die Darstellung der Stücklistentexte. Öffnet den Dialog Einstellungen für Stücklistentexte. Die Positionskreis-Stile (Positions ID- Nr.) 1 bis 10 haben originär die ID-Bezeichnung Standard.
 - Keywords: Stückliste
 
 ### tsk_stueckli-tab-exportieren.htm
 - Titel: Stücklistentabelle exportieren
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Stückliste
-- Beschreibung: Die Stückliste wird als Textdatei mit Trennzeichen (Tabulator) in eine eigene Datei (.txt) geschrieben. Die Text-Datei kann in andere Programme importiert werden.
+- Beschreibung: Die Stückliste wird als Textdatei mit Trennzeichen (Tabulator) in eine eigene Datei (.txt) geschrieben. Die Text-Datei kann in andere Programme importiert werden. Öffnet den Dialog Speichername Textdatei.
 - Keywords: Stückliste
 
 ### tsk_stueckli-text-loeschen.htm
@@ -4461,7 +4461,7 @@ Format pro Eintrag:
 ### tsk_tec-datei.htm
 - Titel: TEC-Datei nach Änderung neu erzeugen
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > BAMTEC (Bewehrungsteppiche)
-- Beschreibung: Nach einer Bearbeitung mit dem Bewehrungsprogramm kann eine neue TEC-Datei geschrieben werden. Sie können auf das Einlesen der Ergebnisdatei verzichten.
+- Beschreibung: Nach einer Bearbeitung mit dem Bewehrungsprogramm kann eine neue „TEC-Datei“ geschrieben werden. Sie können auf das Einlesen der Ergebnisdatei verzichten.
 - Keywords: TEC-Datei
 
 ### tsk_textbaustein_erstellen.htm
@@ -4472,7 +4472,7 @@ Format pro Eintrag:
 ### tsk_thema-drucken.htm
 - Titel: Drucken eines Artikels
 - Pfad: Willkommen bei ISBCAD 2026 > Verwenden der Kontexthilfe
-- Beschreibung: In der Kontexthilfe können Sie jederzeit ein oder mehrere Artikel auf ihrem Drucker oder in einer PDF-Datei ausgeben.
+- Beschreibung: In der Kontexthilfe können Sie jederzeit ein oder mehrere Artikel auf ihrem Drucker oder in einer PDF-Datei ausgeben. Voraussetzung für das Drucken oder Ausgeben in einer PDF-Datei ist, ...
 
 ### tsk_tipps-suche.htm
 - Titel: Tipps für die Suche
@@ -4487,36 +4487,36 @@ Format pro Eintrag:
 ### tsk_verlegebereich-aendern_(formmatten).htm
 - Titel: Verlegebereich und/oder Mattenverteilung ändern (Formmatten)
 - Pfad: Bewehrungsprogramm > Formmatten > Ändern von Verlegungen
-- Beschreibung: oder oder Wenn die Verlegung mit [Fächer] positioniert worden ist, werden nach der Bereichsänderung alle zugehörigen Fächerpositionierungen zu Harfenpositionierungen. So
+- Beschreibung: Wenn die Verlegung mit [Fächer] positioniert worden ist, werden nach der Bereichsänderung alle zugehörigen Fächerpositionierungen zu Harfenpositionierungen.
 - Keywords: Verlegung ändern - Formmatten
 
 ### tsk_verlegung-aendern_(formmatten).htm
 - Titel: Verlegung ändern (Formmatten)
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: oder oder Ändern einer Formmatten-Verlegung in Staffel-, Form- oder Schnittdarstellung. Die Vorgehensweise ist unabhängig von der Art der Darstellung (Form-, Staffel- oder S
+- Beschreibung: Mattentyp und/oder Verlegefaktor einer Formmatten-Verlegung ändern. Wenn die Verlegung mit [Fächer] positioniert worden ist, werden nach der Bereichsänderung alle zugehörigen Fächerpositionierungen zu Harfenpositionierungen.
 - Keywords: Formmatten, Verlegung ändern - Formmatten
 
 ### tsk_verlegung-bearbeiten_(positionen-im-schnitt).htm
 - Titel: Positionen in Schnittdarstellung - Vorhandene Verlegung bearbeiten
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Schnittdarstellungen > Verschiedene Positionen verlegen (in Schnittdarstellung)
-- Beschreibung: Um einen einzelnen Querschnitt zu verschieben Einzelnen Querschnitt einer Verlegegruppe verschieben. Klicken Sie erst den zu verschiebenden Durchmesser [Welcher ø] und da
+- Beschreibung: Einzelnen Querschnitt einer Verlegegruppe verschieben. Einzelne Durchmesser-Gruppen in Schnittdarstellungen per Mausklick aus der Zeichnung entfernen.
 - Keywords: Generieren, Verlegung ändern - Formstahl, Verlegung generieren, Verlegung löschen, Verlegung verschieben
 
 ### tsk_verlegung-loeschen_(formmatten).htm
 - Titel: Verlegung löschen (Formmatten)
 - Pfad: Bewehrungsprogramm > Formmatten > Ändern von Verlegungen
-- Beschreibung: oder oder Formmatten-Gruppe (Form-, Staffel- oder Schnittdarstellung) inklusive der Beschriftungen löschen. Solange Sie die lösche-Funktion nicht verlassen, können die ge
+- Beschreibung: Formmatten-Gruppe (Form-, Staffel- oder Schnittdarstellung) inklusive der Beschriftungen löschen. Solange Sie die lösche-Funktion nicht verlassen, können die gelöschten Formmatten-Gruppen über die Korrekturfunktion schrittweise wiederhergestellt werden.
 
 ### tsk_verlegungung-bearbeiten_(durchmesser-in-schnittdarstellung).htm
 - Titel: Durchmesser in Schnittdarstellung - Verlegung bearbeiten
 - Pfad: Bewehrungsprogramm > Formstahl > Verlegung mit Schnittdarstellungen > Biegeform mit verschiedenen Durchmessern verlegen (Schnittdarstellung)
-- Beschreibung: Um einen einzelnen Querschnitt zu verschieben Einzelnen Querschnitt einer Verlegegruppe verschieben. Klicken Sie erst den zu verschiebenden Durchmesser [Welcher ø] und dan
+- Beschreibung: Einzelnen Querschnitt einer Verlegegruppe verschieben. Einzelne Durchmesser-Gruppen in Schnittdarstellungen per Mausklick aus der Zeichnung entfernen.
 - Keywords: Generieren, Verlegung ändern - Formstahl, Verlegung generieren, Verlegung löschen, Verlegung verschieben
 
 ### tsk_vorgabewert-fuer-die-betonueberdeckung-aendern.htm
 - Titel: Betondeckung
 - Pfad: Bewehrungsprogramm > Formmatten
-- Beschreibung: Voreinstellung für die Betondeckung ändern. Geben Sie unter Grund-Betonüberdeckung den gewünschten Wert ein und bestätigen Sie mit der Eingabetaste. Beachten Sie die Eingabee
+- Beschreibung: Voreinstellung für die Betondeckung ändern.
 - Keywords: Betondeckung nach EC 2, nom c
 
 ### tsk_voute-generieren.htm
@@ -4539,7 +4539,7 @@ Format pro Eintrag:
 ### tsk_zeichnungsteile-aus-der-isbcad-zwischenablage-einfuegen.htm
 - Titel: Zeichnungsteile aus der ISBCAD Zwischenablage einfügen
 - Pfad: Datei- und Ausgabefunktionen > Zwischenablage von Zeichnungen
-- Beschreibung: Zeichnungsteil aus der ISBCAD Zwischenablage in eine geöffnete ISBCAD Zeichnung einfügen.
+- Beschreibung: Zeichnungsteil aus der ISBCAD Zwischenablage in eine geöffnete ISBCAD Zeichnung einfügen. Wenn in der eingefügten Zeichnung bereits Makrotexte mit derselben Bezeichnung definiert sind, können Sie die kollidierenden Makros anpassen. ...
 
 ### tsk_zeichnungsteile-in-die-isbcad-zwischenablage-kopieren.htm
 - Titel: Zeichnungsteile in die ISBCAD Zwischenablage kopieren
@@ -4549,7 +4549,7 @@ Format pro Eintrag:
 ### tsk_zone-erzeugen.htm
 - Titel: Zone erzeugen (Zonierung)
 - Pfad: Listen, Systemeinstellungen und weitere Konstruktionsfunktionen > Hüllflächen
-- Beschreibung: Einteilung eines Gebäudes in Zonen. Klicken Sie die Flächenbezeichnung des Raumes an, den Sie einer Zone zuweisen möchten. [Flächenbezeichnung anklicken]. Geben Sie die Bez
+- Beschreibung: Einteilung eines Gebäudes in Zonen.
 - Keywords: Hüllflächen
 
 ### tsk_zone-loeschen.htm
@@ -4559,7 +4559,7 @@ Format pro Eintrag:
 - Keywords: Hüllflächen
 
 ### umfahrung_eingeben.htm
-- Titel: FEM  Geometrie umfahren
+- Titel: FEM – Geometrie umfahren
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
 - Beschreibung: Geometriedefinition für FEM-Berechnungen durch Umfahrung (Angabe von Element- oder Eckpunkten).
 
@@ -4578,13 +4578,13 @@ Format pro Eintrag:
 ### waende.htm
 - Titel: Wände zeichnen - [Wandze]
 - Pfad: Konstruktionsprogramm > Konstruktion 2
-- Beschreibung: Folienbelegung: Wenn AutFol und Follgn eingestellt sind, werden die Elemente in Folie 0 abgelegt.
+- Beschreibung: Konstruieren und Bearbeiten von Wänden. Mit dieser Funktion können nicht nur Wände im engeren Sinn gezeichnet werden, sondern alle Geometrien, die aus mehreren parallelen Linien bestehen.
 - Keywords: Konstruktion 2
 
 ### waende_eingeben.htm
-- Titel: FEM  Wände eingeben
+- Titel: FEM – Wände eingeben
 - Pfad: Konstruktionsprogramm > Konstruktion 3 > Finite Elemente > Geometrie für Finite Elemente definieren
-- Beschreibung: Wände für FEM-Berechnung eingeben. Optionen Beschreibung Auswahlmodus für Geometriedefinition Das Wechseln des Modus ist während der Eingabe nicht möglich. Punkte: A
+- Beschreibung: Wände für FEM-Berechnung eingeben.
 
 ### waende_wand_zeichnen.htm
 - Titel: Wand zeichnen
@@ -4607,5 +4607,5 @@ Format pro Eintrag:
 ### zusatztext_fuer_biegeliste_ein.htm
 - Titel: Zusatztext für die Biegeliste hinzufügen
 - Pfad: Bewehrungsprogramm > Formmatten > Biegeform
-- Beschreibung: Textergänzung für die Biegeliste - z. B. Erst auf der Baustelle biegen!. Der Zusatztext wird beim Verschieben des Auszugs mit verschoben.
+- Beschreibung: Textergänzung für die Biegeliste - z. B. „Erst auf der Baustelle biegen!“. Der Zusatztext wird beim Verschieben des Auszugs mit verschoben.
 - Keywords: Biegeform bearbeiten, Biegeliste - Zusatztexte, BiLiTx, Zusatztexte

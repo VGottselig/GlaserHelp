@@ -63,6 +63,11 @@ RE_P_A_ALLG    = re.compile(
     r'<p\s+class="p_A_Allgemein"[^>]*>(.*?)</p>',
     re.IGNORECASE | re.DOTALL,
 )
+# Dialog-Beschreibungen tragen oft die beste Funktionsbeschreibung
+RE_P_DIALOG    = re.compile(
+    r'<p\s+class="p_R_Dialog_Info"[^>]*>(.*?)</p>',
+    re.IGNORECASE | re.DOTALL,
+)
 RE_TAGS      = re.compile(r"<[^>]+>")
 RE_WS        = re.compile(r"\s+")
 
@@ -90,13 +95,18 @@ def strip_tags(s: str) -> str:
 
 
 def read_file(path: Path) -> str:
-    """Liest mit Fallback-Encodings (Dateien sind ISO-8859-1)."""
-    for enc in ("iso-8859-1", "cp1252", "utf-8"):
+    """
+    Liest mit Fallback-Encodings.
+    Help & Manual deklariert ISO-8859-1, schreibt aber in Wirklichkeit
+    Windows-1252 (z.B. 0x96 = en-dash '–', 0x91/92 = Smart Quotes).
+    Daher cp1252 zuerst — als Superset von ISO-8859-1 fuer Druckzeichen.
+    """
+    for enc in ("utf-8", "cp1252", "iso-8859-1"):
         try:
             return path.read_text(encoding=enc)
         except UnicodeDecodeError:
             continue
-    return path.read_bytes().decode("iso-8859-1", errors="replace")
+    return path.read_bytes().decode("cp1252", errors="replace")
 
 
 def extract_crumbs(raw: str) -> str:
@@ -134,25 +144,54 @@ def extract_title(raw: str, meta_title: str) -> str:
     return strip_tags(meta_title)
 
 
+def _meta_is_truncated(meta: str) -> bool:
+    """Help&Manual schneidet meta-Description bei ~160 Zeichen ab."""
+    if not meta:
+        return False
+    # Endet ohne sauberen Satzabschluss -> wahrscheinlich abgeschnitten
+    if meta.endswith("...") or meta.endswith("…"):
+        return True
+    last = meta.rstrip()[-1:]
+    return len(meta) >= 150 and last not in ".!?:)"
+
+
+def _meta_is_noisy(meta: str) -> bool:
+    """
+    Manche meta-Descriptions starten mit Icon-Beschriftungen aus dem
+    p_Aufruf-Bereich (z.B. 'oder', 'B-akt_...').
+    """
+    return bool(re.match(r"^(oder|B-akt|Icon|\s)", meta))
+
+
 def extract_description(raw: str, meta_desc: str) -> str:
     """
-    Waehlt den vollstaendigsten Beschreibungstext.
-    Meta-Description ist haeufig auf ~160 Zeichen abgeschnitten;
-    der Body-Absatz ist meist vollstaendig.
+    Waehlt den vollstaendigsten Beschreibungstext aus:
+      1. Body-Paragraphen (p_Task_Info, p_R_Dialog_Info, p_A_Allgemein),
+         ggf. die ersten 2 zusammengesetzt.
+      2. meta-Description, sofern sauber und vollstaendig.
     """
     meta = strip_tags(meta_desc)
+
     body_candidates: list[str] = []
-    for rx in (RE_P_TASK_INFO, RE_P_A_ALLG):
+    for rx in (RE_P_TASK_INFO, RE_P_DIALOG, RE_P_A_ALLG):
         for m in rx.finditer(raw):
             t = strip_tags(m.group(1))
-            if t:
+            if t and len(t) > 10:
                 body_candidates.append(t)
 
-    body = body_candidates[0] if body_candidates else ""
-    # Wenn der Body-Text deutlich vollstaendiger ist als die meta-Description
-    # (meist auf 160 Zeichen vom Help&Manual abgeschnitten), nimm den Body.
-    chosen = body if len(body) >= len(meta) else meta
-    if not chosen:
+    # Kombiniere bis zu 2 Body-Absaetze, sofern Platz da ist
+    body = ""
+    if body_candidates:
+        body = body_candidates[0]
+        if len(body) < 180 and len(body_candidates) > 1:
+            body = (body + " " + body_candidates[1]).strip()
+
+    # Entscheidungs-Logik
+    if body and (_meta_is_truncated(meta) or _meta_is_noisy(meta)):
+        chosen = body
+    elif body and len(body) >= len(meta):
+        chosen = body
+    else:
         chosen = meta or body
 
     return shorten(chosen, max_chars=260)
